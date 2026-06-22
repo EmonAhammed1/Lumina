@@ -6,146 +6,132 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
-    "0b30ed92-eb34-4adc-a194-3b7d43f393ce": {
-      "type": "parallax-banner",
-      "blocks": {
-        "template--21109129412888__0b30ed92-eb34-4adc-a194-3b7d43f393ce-sub_title-1": {
-          "type": "sub_title",
-          "settings": {
-            "subtitle": "Echipa Noastră"
-          }
-        },
-        "template--21109129412888__0b30ed92-eb34-4adc-a194-3b7d43f393ce-heading-1": {
-          "type": "heading",
-          "settings": {
-            "title": "Ne mândrim cu",
-            "size_text": "h1"
-          }
-        },
-        "template--21109129412888__0b30ed92-eb34-4adc-a194-3b7d43f393ce-paragraph-1": {
-          "type": "paragraph",
-          "settings": {
-            "subtext": "Our team brings a wealth of experience from some of the world’s most formidable production studios, agencies and startups."
-          }
-        }
-      },
-      "block_order": [
-        "template--21109129412888__0b30ed92-eb34-4adc-a194-3b7d43f393ce-sub_title-1",
-        "template--21109129412888__0b30ed92-eb34-4adc-a194-3b7d43f393ce-heading-1",
-        "template--21109129412888__0b30ed92-eb34-4adc-a194-3b7d43f393ce-paragraph-1"
-      ],
-      "settings": {
-        "animation": "",
-        "setwidth": "container",
-        "bgsection": "#ffffff",
-        "parrallax_enable": true,
-        "image": "shopify://shop_images/04_ToMamaWithLove_ProductActivation_2.jpg",
-        "height_section": "550",
-        "height_section_mobile": "450",
-        "align": "center",
-        "position_text": "mid-center",
-        "bg_box": "#ffffff",
-        "opacity_bgbox": 0,
-        "title_color": "#ffffff",
-        "bg_overlay": "#000000",
-        "gradient_bg": "",
-        "opacity_bg_overlay": 0.4,
-        "paddingsection": "0px 0px 0px 0px",
-        "marginsection": "0px 0px 0px 0px"
-      }
-    },
     "main": {
-      "type": "s_team_member",
+      "type": "s_team_member_premium",
       "blocks": {
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2": {
+        "member_1": {
           "type": "member",
           "settings": {
-            "image": "shopify://shop_images/team7_800x_8849cc82-6544-436c-bd70-9c547218e08c.jpg",
-            "name": "Michella Ore",
-            "position": "Developer",
-            "twitter": "https://twitter.com/",
-            "google": "https://plus.google.com",
-            "facebook": "https://www.facebook.com/",
-            "linkedin": "https://www.linkedin.com/"
+            "role": "FONDATOR & DIRECTOR ȘTIINȚIFIC",
+            "name": "Dr. Elena Marin",
+            "description": "Cu peste 15 ani de experiență în cercetare dermatologică și nanotehnologie, Dr. Marin a fondat Lumina Europa cu viziunea de a transforma îngrijirea pielii prin inovație științifică.",
+            "exp_title_1": "15+ Ani de Cercetare",
+            "exp_desc_1": "Expert in dermatologie și stiința pielii",
+            "exp_icon_1": "flask",
+            "exp_title_2": "Specialist în Tehnologia Nanofibrelor",
+            "exp_desc_2": "Pionier în sisteme avansate de livrare a ingredientelor",
+            "exp_icon_2": "molecule",
+            "exp_title_3": "Lider în Inovație",
+            "exp_desc_3": "Dezvoltă formule revoluționare bazate pe știință",
+            "exp_icon_3": "award"
           }
         },
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1": {
+        "member_2": {
           "type": "member",
           "settings": {
-            "image": "shopify://shop_images/team4_800x_56578c51-1687-4b3c-a9d5-1d1e1c296c58.jpg",
-            "name": "Vera Duncan",
-            "position": "Producer",
-            "twitter": "https://twitter.com/",
-            "google": "https://plus.google.com",
-            "facebook": "https://www.facebook.com/",
-            "linkedin": "https://www.linkedin.com/"
+            "role": "ȘEF DE DEZVOLTARE PRODUSE",
+            "name": "Alexandra Ionescu",
+            "description": "Alexandra conduce inovația produselor cu o pasiune pentru frumusețe curată și formule performante care oferă rezultate vizibile și reale.",
+            "exp_title_1": "Expert în Inovația Produselor",
+            "exp_desc_1": "Specialist în formule avansate de îngrijire a pielii",
+            "exp_icon_1": "flask",
+            "exp_title_2": "10+ Ani Experiență",
+            "exp_desc_2": "În chimia cosmetică și dezvoltarea produselor",
+            "exp_icon_2": "molecule",
+            "exp_title_3": "Avocat al Frumuseții Curate",
+            "exp_desc_3": "Dedicată siguranței, eficienței și sustenabilității",
+            "exp_icon_3": "leaf"
           }
         },
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0": {
+        "member_3": {
           "type": "member",
           "settings": {
-            "image": "shopify://shop_images/team7_800x_8849cc82-6544-436c-bd70-9c547218e08c.jpg",
-            "name": "Abdul Khalek",
-            "position": "CEO și Fondator",
-            "twitter": "https://twitter.com/",
-            "google": "https://plus.google.com",
-            "facebook": "https://www.facebook.com/",
-            "linkedin": "https://www.linkedin.com/"
+            "role": "RESPONSABIL CERCETARE CLINICĂ",
+            "name": "Maria Popescu",
+            "description": "Maria supraveghează toate studiile clinice și protocoalele de testare pentru a se asigura că fiecare produs îndeplinește cele mai înalte standarde de siguranță și eficacitate.",
+            "exp_title_1": "Expert în Cercetare Clinică",
+            "exp_desc_1": "Proiectează și gestionează studii clinice riguroase",
+            "exp_icon_1": "shield",
+            "exp_title_2": "Background Dermatologic",
+            "exp_desc_2": "Asigură siguranța și eficacitatea produselor",
+            "exp_icon_2": "shield",
+            "exp_title_3": "Decizii Bazate pe Dovezi",
+            "exp_desc_3": "Rezultate susținute de date și teste transparente",
+            "exp_icon_3": "chart"
           }
         },
-        "ef393f42-f5c0-45d5-a2a1-4b393bd9d289": {
+        "member_4": {
           "type": "member",
-          "disabled": true,
           "settings": {
-            "name": "Jennifer C.",
-            "position": "Designer",
-            "twitter": "#",
-            "google": "#",
-            "facebook": "#",
-            "linkedin": "#"
+            "role": "SPECIALIST ÎN NANOTEHNOLOGIE",
+            "name": "Andrei Dumitru",
+            "description": "Andrei este mintea din spatele tehnologiei nanofibrelor, dezvoltând sisteme avansate de livrare pentru o absorbție superioară și eficiență maximă.",
+            "exp_title_1": "Expert în Nanotehnologie",
+            "exp_desc_1": "Specialist în nanofibre și știința materialelor",
+            "exp_icon_1": "molecule",
+            "exp_title_2": "Sisteme Avansate de Livrare",
+            "exp_desc_2": "Îmbunătățește potența și biodisponibilitatea ingredientelor",
+            "exp_icon_2": "molecule",
+            "exp_title_3": "Cercetare & Dezvoltare",
+            "exp_desc_3": "Focalizat pe inovație continuuă",
+            "exp_icon_3": "award"
           }
         },
-        "f919b4ce-0fea-4c28-abf7-e08700202918": {
+        "member_5": {
           "type": "member",
-          "disabled": true,
           "settings": {
-            "name": "Slava Fedutik",
-            "position": "Designer",
-            "twitter": "#",
-            "google": "#",
-            "facebook": "#",
-            "linkedin": "#"
+            "role": "DIRECTOR EXPERIENȚĂ CLIENȚI",
+            "name": "Bianca Stan",
+            "description": "Bianca se asigură că fiecare client are o experiență excepțională cu Lumina Europa, de la descoperire până la rezultate pe termen lung.",
+            "exp_title_1": "Expert în Experiența Clienților",
+            "exp_desc_1": "Construiește relații de încredere și loialitate",
+            "exp_icon_1": "heart",
+            "exp_title_2": "Consultant în Îngrijirea Pielii",
+            "exp_desc_2": "Pasionată să ajute clienții să atingă obiectivele lor",
+            "exp_icon_2": "chat",
+            "exp_title_3": "Angajament pentru Calitate",
+            "exp_desc_3": "Dedicată satisfacției și încrederii clienților",
+            "exp_icon_3": "star"
+          }
+        },
+        "member_6": {
+          "type": "member",
+          "settings": {
+            "role": "MANAGER OPERAȚIONAL",
+            "name": "Vlad Popa",
+            "description": "Vlad asigură că toate operațiunile noastre decurg impecabil, menținând cele mai înalte standarde de calitate și eficiență în fiecare etapă a procesului.",
+            "exp_title_1": "Expert în Operațiuni",
+            "exp_desc_1": "Optimizează procesele pentru eficiență maximă",
+            "exp_icon_1": "cog",
+            "exp_title_2": "Asigurarea Calității",
+            "exp_desc_2": "Menține cele mai înalte standarde în fiecare etapă",
+            "exp_icon_2": "shield",
+            "exp_title_3": "Lider de Echipă",
+            "exp_desc_3": "Construiește și motivează echipe performante",
+            "exp_icon_3": "award"
           }
         }
       },
       "block_order": [
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-2",
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-1",
-        "template--16716887458110__abb14abe-2a33-4a6b-aaa1-d36d5422d78d-1666689151286d1fe7-0",
-        "ef393f42-f5c0-45d5-a2a1-4b393bd9d289",
-        "f919b4ce-0fea-4c28-abf7-e08700202918"
+        "member_1",
+        "member_2",
+        "member_3",
+        "member_4",
+        "member_5",
+        "member_6"
       ],
       "settings": {
-        "animation": "fade",
-        "setwidth": "container",
-        "bgsection": "",
-        "title_top": "Top Team",
-        "title": "O echipă de profesioniști",
-        "des": "",
-        "align-heading": "center",
-        "items": "3",
-        "layout": "2",
-        "paddingsection": "60px 0px 40px 0px",
-        "paddingmobile": "60px 0px 40px 0px",
-        "marginsection": "0px 0px 0px 0px",
-        "marginmobile": "0px 0px 0px 0px"
+        "bgsection": "#000000",
+        "title_top": "ECHIPA NOASTRĂ",
+        "title": "Specialiștii din spatele Lumina Europa",
+        "des": "O echipă de oameni de știință, inovatori și specialiști în îngrijirea pielii dedicați să aducă tehnologia nanofibrelor la cele mai inalte standarde."
       }
     }
   },
   "order": [
-    "0b30ed92-eb34-4adc-a194-3b7d43f393ce",
     "main"
   ]
 }

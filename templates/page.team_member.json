@@ -15,8 +15,9 @@
         "member_1": {
           "type": "member",
           "settings": {
+            "image": "shopify://shop_images/Founder.webp",
             "role": "FONDATOR & DIRECTOR ȘTIINȚIFIC",
-            "name": "Dr. Elena Marin",
+            "name": "Paul",
             "description": "Cu peste 15 ani de experiență în cercetare dermatologică și nanotehnologie, Dr. Marin a fondat Lumina Europa cu viziunea de a transforma îngrijirea pielii prin inovație științifică.",
             "exp_title_1": "15+ Ani de Cercetare",
             "exp_desc_1": "Expert in dermatologie și stiința pielii",
@@ -32,6 +33,7 @@
         "member_2": {
           "type": "member",
           "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-03-31_at_15.38.29.png",
             "role": "ȘEF DE DEZVOLTARE PRODUSE",
             "name": "Alexandra Ionescu",
             "description": "Alexandra conduce inovația produselor cu o pasiune pentru frumusețe curată și formule performante care oferă rezultate vizibile și reale.",
@@ -49,6 +51,7 @@
         "member_3": {
           "type": "member",
           "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-03-31_at_15.37.07_430x_05b938d8-e642-4393-90bd-50a305515a7c.webp",
             "role": "RESPONSABIL CERCETARE CLINICĂ",
             "name": "Maria Popescu",
             "description": "Maria supraveghează toate studiile clinice și protocoalele de testare pentru a se asigura că fiecare produs îndeplinește cele mai înalte standarde de siguranță și eficacitate.",
@@ -66,6 +69,7 @@
         "member_4": {
           "type": "member",
           "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-03-31_at_14.26.19_430x_f348fd8c-e4e8-46b6-bcde-1060ef1275ca.webp",
             "role": "SPECIALIST ÎN NANOTEHNOLOGIE",
             "name": "Andrei Dumitru",
             "description": "Andrei este mintea din spatele tehnologiei nanofibrelor, dezvoltând sisteme avansate de livrare pentru o absorbție superioară și eficiență maximă.",
@@ -100,6 +104,7 @@
         "member_6": {
           "type": "member",
           "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-03-31_at_14.31.38.png",
             "role": "MANAGER OPERAȚIONAL",
             "name": "Vlad Popa",
             "description": "Vlad asigură că toate operațiunile noastre decurg impecabil, menținând cele mai înalte standarde de calitate și eficiență în fiecare etapă a procesului.",

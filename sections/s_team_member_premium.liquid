@@ -80,7 +80,11 @@
                     {%- if block.settings.exp_title_1 != blank -%}
                       <div class="steam-member-premium__exp-item">
                         <div class="steam-member-premium__exp-icon-wrap">
-                          {%- render 'premium-icons', icon_name: block.settings.exp_icon_1 -%}
+                          {%- if block.settings.exp_image_1 != blank -%}
+                            <img src="{{ block.settings.exp_image_1 | image_url: width: 60 }}" alt="{{ block.settings.exp_title_1 }}" style="width: 18px; height: 18px; object-fit: contain; filter: brightness(0) saturate(100%) invert(84%) sepia(21%) saturate(1512%) hue-rotate(5deg) brightness(93%) contrast(85%);">
+                          {%- else -%}
+                            {%- render 'premium-icons', icon_name: block.settings.exp_icon_1 -%}
+                          {%- endif -%}
                         </div>
                         <div class="steam-member-premium__exp-text">
                           <h4 class="steam-member-premium__exp-title">{{ block.settings.exp_title_1 }}</h4>
@@ -92,7 +96,11 @@
                     {%- if block.settings.exp_title_2 != blank -%}
                       <div class="steam-member-premium__exp-item">
                         <div class="steam-member-premium__exp-icon-wrap">
-                          {%- render 'premium-icons', icon_name: block.settings.exp_icon_2 -%}
+                          {%- if block.settings.exp_image_2 != blank -%}
+                            <img src="{{ block.settings.exp_image_2 | image_url: width: 60 }}" alt="{{ block.settings.exp_title_2 }}" style="width: 18px; height: 18px; object-fit: contain; filter: brightness(0) saturate(100%) invert(84%) sepia(21%) saturate(1512%) hue-rotate(5deg) brightness(93%) contrast(85%);">
+                          {%- else -%}
+                            {%- render 'premium-icons', icon_name: block.settings.exp_icon_2 -%}
+                          {%- endif -%}
                         </div>
                         <div class="steam-member-premium__exp-text">
                           <h4 class="steam-member-premium__exp-title">{{ block.settings.exp_title_2 }}</h4>
@@ -104,7 +112,11 @@
                     {%- if block.settings.exp_title_3 != blank -%}
                       <div class="steam-member-premium__exp-item">
                         <div class="steam-member-premium__exp-icon-wrap">
-                          {%- render 'premium-icons', icon_name: block.settings.exp_icon_3 -%}
+                          {%- if block.settings.exp_image_3 != blank -%}
+                            <img src="{{ block.settings.exp_image_3 | image_url: width: 60 }}" alt="{{ block.settings.exp_title_3 }}" style="width: 18px; height: 18px; object-fit: contain; filter: brightness(0) saturate(100%) invert(84%) sepia(21%) saturate(1512%) hue-rotate(5deg) brightness(93%) contrast(85%);">
+                          {%- else -%}
+                            {%- render 'premium-icons', icon_name: block.settings.exp_icon_3 -%}
+                          {%- endif -%}
                         </div>
                         <div class="steam-member-premium__exp-text">
                           <h4 class="steam-member-premium__exp-title">{{ block.settings.exp_title_3 }}</h4>
@@ -1000,6 +1012,11 @@
           ]
         },
         {
+          "type": "image_picker",
+          "id": "exp_image_1",
+          "label": "Expertise 1 Custom Icon (Overrides default)"
+        },
+        {
           "type": "header",
           "content": "Expertise Item 2"
         },
@@ -1032,6 +1049,11 @@
           ]
         },
         {
+          "type": "image_picker",
+          "id": "exp_image_2",
+          "label": "Expertise 2 Custom Icon (Overrides default)"
+        },
+        {
           "type": "header",
           "content": "Expertise Item 3"
         },
@@ -1062,6 +1084,11 @@
             { "value": "chat", "label": "Chat/Consult" },
             { "value": "cog", "label": "Cog/Operations" }
           ]
+        },
+        {
+          "type": "image_picker",
+          "id": "exp_image_3",
+          "label": "Expertise 3 Custom Icon (Overrides default)"
         }
       ]
     }

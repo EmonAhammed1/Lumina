@@ -1,0 +1,138 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "Footer group",
+  "sections": {
+    "newsletter-footer": {
+      "type": "newsletter-footer",
+      "settings": {
+        "enable_newletter_footer": false,
+        "animation": "",
+        "setwidth": "container",
+        "bgsection": "#000000",
+        "newletter_color": "#ff6f2e",
+        "colorborder": "#e9e9e9",
+        "e_size": "cover",
+        "e_repeat": "no-repeat",
+        "title_top": "",
+        "title": "Subscrible & Get <span class=\"text-theme\">10% </span> Discount",
+        "des": "",
+        "html_left": false,
+        "html_left_block": "",
+        "paddingsection": "60px 0px 0px 0px",
+        "paddingmobile": "30px 0px 30px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "1595696762386": {
+          "type": "text",
+          "settings": {
+            "logofooter": "shopify://shop_images/Logo.jpg",
+            "widthlogofooter": 320,
+            "title": "",
+            "text": "Strălucirea începe cu o piele sănătoasă. Creăm măști de înfrumusețare de înaltă calitate, concepute pentru a hrăni, hidrata și revitaliza pielea — ajutându-vă să arătați proaspătă, radiantă și încrezătoare în fiecare zi.",
+            "width": "25%"
+          }
+        },
+        "b68420a7-353e-422d-9a28-2dba5275c372": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "widthlogofooter": 130,
+            "title": "",
+            "text": "",
+            "width": "16%"
+          }
+        },
+        "cc3564b0-a994-4c33-affb-158751f7bac5": {
+          "type": "menu",
+          "settings": {
+            "link_list": "customer-account-main-menu",
+            "width": "16%"
+          }
+        },
+        "1562342622030": {
+          "type": "menu",
+          "settings": {
+            "link_list": "footer",
+            "width": "16%"
+          }
+        },
+        "1567410176792": {
+          "type": "menu",
+          "settings": {
+            "link_list": "",
+            "width": "16%"
+          }
+        },
+        "ec49d85b-17bb-4b65-a49f-3086aa5430cd": {
+          "type": "newsletter",
+          "settings": {
+            "bg_new": "rgba(0,0,0,0)",
+            "border_new": "#b8963e",
+            "btn_bg_new": "#b8963e",
+            "btn_cl_new": "#010101",
+            "btn_cl_new_hover": "#ffffff",
+            "title": "Sign up & save 15%",
+            "subheading": "<p>Get a 15% discount on your first order.</p>",
+            "enablesocial": true,
+            "width": "25%"
+          }
+        }
+      },
+      "block_order": [
+        "1595696762386",
+        "b68420a7-353e-422d-9a28-2dba5275c372",
+        "cc3564b0-a994-4c33-affb-158751f7bac5",
+        "1562342622030",
+        "1567410176792",
+        "ec49d85b-17bb-4b65-a49f-3086aa5430cd"
+      ],
+      "settings": {
+        "setwidth": "container-fluid",
+        "background": "#010101",
+        "border_headfooter": "rgba(0,0,0,0)",
+        "border-copryright": "#1c1c1e",
+        "text": "#faf6f0",
+        "text_hover": "#b8963e",
+        "title": "#b8963e",
+        "footer_align_title": "left",
+        "enable_border": false,
+        "footer_font_family": "--g-font-2",
+        "footer_font_size_title": 16,
+        "footer_font_weight": "600",
+        "footer_spacing": 0,
+        "footer_typetext": "uppercase",
+        "acc_mobile": true,
+        "e_ft_currency": true,
+        "enable_image": true,
+        "enable_name": true,
+        "enable_language_selector": true,
+        "payment_info": "svg",
+        "copyright": false,
+        "link_list_bottom": "",
+        "customcopyright": "© 2023 - Activewear. Powered by Shopify",
+        "padding_top": 64,
+        "padding_bottom": 32,
+        "m_padding_top": 32,
+        "m_padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "newsletter-footer",
+    "footer"
+  ]
+}

@@ -1,0 +1,745 @@
+<!-- sections/experience-alchemy.liquid -->
+{%- liquid
+  assign setwidth = section.settings.setwidth
+  assign gold_color = section.settings.gold_color | default: '#c5a059'
+  assign animation = section.settings.animation
+  assign card_bg = section.settings.card_bg | default: '#0d0d0f'
+  assign text_color = section.settings.text_color | default: '#ffffff'
+  assign desc_color = section.settings.desc_color | default: '#cccccc'
+-%}
+
+{%- render 'style-section' -%}
+
+<style>
+  .custom-alchemy-{{ section.id }} {
+    background-color: #000000;
+    color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    overflow: hidden;
+  }
+  
+  .alchemy-header-{{ section.id }} {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .alchemy-title-{{ section.id }} {
+    font-family: var(--g-font-2), "Cormorant Garamond", serif;
+    font-size: 38px;
+    font-weight: 400;
+    color: {{ gold_color }};
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    margin-bottom: 15px;
+  }
+  
+  .alchemy-sep-{{ section.id }} {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
+  }
+  
+  .alchemy-sep-line-{{ section.id }} {
+    flex: 1;
+    height: 1px;
+    background-color: rgba(197, 160, 89, 0.2);
+  }
+  
+  .alchemy-sep-sparkle-{{ section.id }} {
+    width: 14px;
+    height: 14px;
+    color: {{ gold_color }};
+  }
+
+  .alchemy-subtitle-{{ section.id }} {
+    font-size: 13px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: {{ gold_color }};
+    font-weight: 700;
+    font-family: var(--g-font-2), sans-serif;
+    margin-bottom: 15px;
+    display: inline-block;
+  }
+
+  .alchemy-desc-{{ section.id }} {
+    color: {{ desc_color }};
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  /* Swiper Main Wrap */
+  .alchemy-swiper-wrap-{{ section.id }} {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  .swiper-container-alchemy-{{ section.id }} {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 12px;
+  }
+
+  /* Unified Card Container */
+  .alchemy-card-{{ section.id }} {
+    background-color: {{ card_bg }};
+    border: 1px solid rgba(197, 160, 89, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    transition: all 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .alchemy-card-{{ section.id }}:hover {
+    border-color: {{ gold_color }};
+    box-shadow: 0 25px 50px rgba(197, 160, 89, 0.15);
+  }
+
+  /* Image Wrap */
+  .alchemy-card-image-wrap-{{ section.id }} {
+    width: 100%;
+    height: 480px;
+    overflow: hidden;
+    position: relative;
+    border-bottom: 1px solid rgba(197, 160, 89, 0.15);
+  }
+
+  .alchemy-card-image-{{ section.id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+    transition: transform 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .alchemy-card-{{ section.id }}:hover .alchemy-card-image-{{ section.id }} {
+    transform: scale(1.02);
+  }
+
+  /* Card Grid Content */
+  .alchemy-card-content-{{ section.id }} {
+    padding: 40px;
+  }
+
+  .alchemy-card-grid-{{ section.id }} {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+
+  /* Box Styles inside Grid */
+  .alchemy-card-box-{{ section.id }} {
+    text-align: center;
+    padding: 25px 20px;
+    background-color: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    border-radius: 8px;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .alchemy-card-box-{{ section.id }}:hover {
+    transform: translateY(-5px);
+    background-color: rgba(197, 160, 89, 0.04);
+    border-color: {{ gold_color }};
+    box-shadow: 0 10px 25px rgba(197, 160, 89, 0.1);
+  }
+
+  .alchemy-box-subtitle-{{ section.id }} {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: {{ gold_color }};
+    font-weight: 700;
+    font-family: var(--g-font-2), sans-serif;
+    margin-bottom: 12px;
+    display: inline-block;
+  }
+
+  .alchemy-box-title-{{ section.id }} {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: 0.03em;
+    font-family: var(--g-font-2), sans-serif;
+    line-height: 1.35;
+  }
+
+  .alchemy-box-desc-{{ section.id }} {
+    font-size: 13px;
+    line-height: 1.6;
+    color: {{ desc_color }};
+    margin: 0;
+    font-family: var(--g-font-2), sans-serif;
+    font-weight: 350;
+  }
+
+  /* Navigation Buttons */
+  .alchemy-nav-btn-{{ section.id }} {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(197, 160, 89, 0.35);
+    color: {{ gold_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
+
+  .alchemy-nav-btn-{{ section.id }}:hover {
+    background: {{ gold_color }};
+    color: #000000;
+    border-color: {{ gold_color }};
+    box-shadow: 0 0 15px rgba(197, 160, 89, 0.5);
+  }
+
+  .alchemy-prev-{{ section.id }} {
+    left: 20px;
+  }
+
+  .alchemy-next-{{ section.id }} {
+    right: 20px;
+  }
+
+  .alchemy-nav-btn-{{ section.id }} svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    stroke-width: 2.5;
+    fill: none;
+  }
+
+  /* Pagination Dots */
+  .alchemy-pagination-{{ section.id }} {
+    position: relative;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .alchemy-pagination-{{ section.id }} .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 1;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin: 0 !important;
+  }
+
+  .alchemy-pagination-{{ section.id }} .swiper-pagination-bullet-active {
+    background: {{ gold_color }};
+    width: 28px;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(197, 160, 89, 0.5);
+  }
+
+  /* Responsive styling */
+  @media (max-width: 1199px) {
+    .alchemy-card-image-wrap-{{ section.id }} {
+      height: 400px;
+    }
+  }
+
+  @media (max-width: 991px) {
+    .alchemy-card-image-wrap-{{ section.id }} {
+      height: 320px;
+    }
+    .alchemy-card-grid-{{ section.id }} {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .alchemy-card-content-{{ section.id }} {
+      padding: 30px;
+    }
+    .alchemy-nav-btn-{{ section.id }} {
+      display: none; /* touch swiping is preferred on mobile/tablets */
+    }
+  }
+
+  @media (max-width: 575px) {
+    .custom-alchemy-{{ section.id }} {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+    .alchemy-title-{{ section.id }} {
+      font-size: 30px;
+    }
+    .alchemy-card-image-wrap-{{ section.id }} {
+      height: 240px;
+    }
+    .alchemy-card-grid-{{ section.id }} {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 15px;
+    }
+    .alchemy-card-content-{{ section.id }} {
+      padding: 20px 15px;
+    }
+    .alchemy-card-box-{{ section.id }} {
+      padding: 20px 15px;
+    }
+  }
+</style>
+
+<div class="custom-alchemy-{{ section.id }}" data-aos="{{ animation }}">
+  <div class="{{ setwidth }}">
+    
+    <!-- Title Area -->
+    <div class="alchemy-header-{{ section.id }}">
+      {%- if section.settings.section_title != blank -%}
+        <h2 class="alchemy-title-{{ section.id }}">{{ section.settings.section_title }}</h2>
+      {%- endif -%}
+      
+      {%- if section.settings.show_separator -%}
+        <div class="alchemy-sep-{{ section.id }}">
+          <span class="alchemy-sep-line-{{ section.id }}"></span>
+          <svg class="alchemy-sep-sparkle-{{ section.id }}" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2l3 7 7 3-7 3-3 7-3-7-7-3 7-3 3-7z"/>
+          </svg>
+          <span class="alchemy-sep-line-{{ section.id }}"></span>
+        </div>
+      {%- endif -%}
+
+      {%- if section.settings.subtitle != blank -%}
+        <span class="alchemy-subtitle-{{ section.id }}">{{ section.settings.subtitle }}</span>
+      {%- endif -%}
+
+      {%- if section.settings.desc != blank -%}
+        <div class="alchemy-desc-{{ section.id }} font-family-2">
+          {{ section.settings.desc }}
+        </div>
+      {%- endif -%}
+    </div>
+
+    <!-- Swiper Wrap -->
+    <div class="alchemy-swiper-wrap-{{ section.id }}">
+      
+      <!-- Nav Buttons -->
+      <button class="alchemy-nav-btn-{{ section.id }} alchemy-prev-{{ section.id }}" id="alchemy-prev-{{ section.id }}" aria-label="Previous Slide">
+        <svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      
+      <button class="alchemy-nav-btn-{{ section.id }} alchemy-next-{{ section.id }}" id="alchemy-next-{{ section.id }}" aria-label="Next Slide">
+        <svg viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+
+      <div class="swiper-container swiper-container-alchemy-{{ section.id }}" id="swiper-{{ section.id }}">
+        <div class="swiper-wrapper">
+          {%- for block in section.blocks -%}
+            <div class="swiper-slide" {{ block.shopify_attributes }}>
+              
+              <!-- Unified Card -->
+              <div class="alchemy-card-{{ section.id }}">
+                
+                <!-- Card Image -->
+                <div class="alchemy-card-image-wrap-{{ section.id }}">
+                  {%- if block.settings.image != blank -%}
+                    <img src="{{ block.settings.image | image_url: width: 1400 }}" 
+                         alt="{{ block.settings.card_1_title | escape }}" 
+                         class="alchemy-card-image-{{ section.id }}" 
+                         loading="lazy" 
+                         width="{{ block.settings.image.width }}" 
+                         height="{{ block.settings.image.height }}">
+                  {%- else -%}
+                    <img src="{{ 'trans-alchemy.jpg' | asset_url }}" 
+                         alt="Alchimia" 
+                         class="alchemy-card-image-{{ section.id }}" 
+                         loading="lazy">
+                  {%- endif -%}
+                </div>
+
+                <!-- 4 Boxes -->
+                <div class="alchemy-card-content-{{ section.id }}">
+                  <div class="alchemy-card-grid-{{ section.id }}">
+                    
+                    <!-- Box 1 -->
+                    {%- if block.settings.card_1_enable -%}
+                      <div class="alchemy-card-box-{{ section.id }}">
+                        {%- if block.settings.card_1_subtitle != blank -%}
+                          <span class="alchemy-box-subtitle-{{ section.id }}">{{ block.settings.card_1_subtitle }}</span>
+                        {%- endif -%}
+                        {%- if block.settings.card_1_title != blank -%}
+                          <h3 class="alchemy-box-title-{{ section.id }}">{{ block.settings.card_1_title }}</h3>
+                        {%- endif -%}
+                        {%- if block.settings.card_1_description != blank -%}
+                          <p class="alchemy-box-desc-{{ section.id }}">{{ block.settings.card_1_description }}</p>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+
+                    <!-- Box 2 -->
+                    {%- if block.settings.card_2_enable -%}
+                      <div class="alchemy-card-box-{{ section.id }}">
+                        {%- if block.settings.card_2_subtitle != blank -%}
+                          <span class="alchemy-box-subtitle-{{ section.id }}">{{ block.settings.card_2_subtitle }}</span>
+                        {%- endif -%}
+                        {%- if block.settings.card_2_title != blank -%}
+                          <h3 class="alchemy-box-title-{{ section.id }}">{{ block.settings.card_2_title }}</h3>
+                        {%- endif -%}
+                        {%- if block.settings.card_2_description != blank -%}
+                          <p class="alchemy-box-desc-{{ section.id }}">{{ block.settings.card_2_description }}</p>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+
+                    <!-- Box 3 -->
+                    {%- if block.settings.card_3_enable -%}
+                      <div class="alchemy-card-box-{{ section.id }}">
+                        {%- if block.settings.card_3_subtitle != blank -%}
+                          <span class="alchemy-box-subtitle-{{ section.id }}">{{ block.settings.card_3_subtitle }}</span>
+                        {%- endif -%}
+                        {%- if block.settings.card_3_title != blank -%}
+                          <h3 class="alchemy-box-title-{{ section.id }}">{{ block.settings.card_3_title }}</h3>
+                        {%- endif -%}
+                        {%- if block.settings.card_3_description != blank -%}
+                          <p class="alchemy-box-desc-{{ section.id }}">{{ block.settings.card_3_description }}</p>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+
+                    <!-- Box 4 -->
+                    {%- if block.settings.card_4_enable -%}
+                      <div class="alchemy-card-box-{{ section.id }}">
+                        {%- if block.settings.card_4_subtitle != blank -%}
+                          <span class="alchemy-box-subtitle-{{ section.id }}">{{ block.settings.card_4_subtitle }}</span>
+                        {%- endif -%}
+                        {%- if block.settings.card_4_title != blank -%}
+                          <h3 class="alchemy-box-title-{{ section.id }}">{{ block.settings.card_4_title }}</h3>
+                        {%- endif -%}
+                        {%- if block.settings.card_4_description != blank -%}
+                          <p class="alchemy-box-desc-{{ section.id }}">{{ block.settings.card_4_description }}</p>
+                        {%- endif -%}
+                      </div>
+                    {%- endif -%}
+
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          {%- endfor -%}
+        </div>
+        
+        <!-- Pagination dots -->
+        <div class="alchemy-pagination-{{ section.id }}" id="alchemy-pagination-{{ section.id }}"></div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<script>
+  (function() {
+    function initAlchemySwiper(sectionId) {
+      if (typeof Swiper === 'undefined') {
+        console.warn('[Alchemy Swiper] Swiper is not loaded, retrying in 200ms...');
+        setTimeout(() => initAlchemySwiper(sectionId), 200);
+        return;
+      }
+      
+      new Swiper('#swiper-' + sectionId, {
+        slidesPerView: 1,
+        spaceBetween: 40,
+        loop: true,
+        {%- if section.settings.autoplay -%}
+        autoplay: {
+          delay: {{ section.settings.autoplay_speed | default: 5000 }},
+          disableOnInteraction: false,
+        },
+        {%- endif -%}
+        navigation: {
+          nextEl: '#alchemy-next-' + sectionId,
+          prevEl: '#alchemy-prev-' + sectionId,
+        },
+        pagination: {
+          el: '#alchemy-pagination-' + sectionId,
+          clickable: true,
+        }
+      });
+      console.log('[Alchemy Swiper] Initialized successfully for section: ' + sectionId);
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      initAlchemySwiper('{{ section.id }}');
+    });
+
+    document.addEventListener('shopify:section:load', (e) => {
+      if (e.detail.sectionId === '{{ section.id }}') {
+        initAlchemySwiper('{{ section.id }}');
+      }
+    });
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Experience Alchemy Detail",
+  "class": "index-section-experience-alchemy",
+  "max_blocks": 6,
+  "settings": [
+    {
+      "type": "select",
+      "id": "animation",
+      "options": [
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "zoom-in", "label": "Zoom In" }
+      ],
+      "default": "fade-up",
+      "label": "Select Animation"
+    },
+    {
+      "type": "select",
+      "id": "setwidth",
+      "label": "Section Width",
+      "default": "container-fluid",
+      "options": [
+        { "value": "container", "label": "Box" },
+        { "value": "container-fluid", "label": "Container Fluid" },
+        { "value": "full", "label": "Full" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "gold_color",
+      "label": "Gold Highlight Color",
+      "default": "#c5a059"
+    },
+    {
+      "type": "text",
+      "id": "section_title",
+      "label": "Section Title",
+      "default": "Alchimia"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_separator",
+      "label": "Show Sparkle Separator",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "INGREDIENTE CHEIE"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Description",
+      "default": "<p>Formule pure cu ingrediente active concentrate, livrate direct în derm prin structura nanofibrelor.</p>"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Enable Autoplay",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "autoplay_speed",
+      "label": "Autoplay Speed (ms)",
+      "min": 2000,
+      "max": 8000,
+      "step": 500,
+      "default": 5000
+    },
+    {
+      "type": "color",
+      "id": "card_bg",
+      "label": "Card Background Color",
+      "default": "#0d0d0f"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "desc_color",
+      "label": "Description Color",
+      "default": "#cccccc"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Main Big Image"
+        },
+        {
+          "type": "header",
+          "content": "Box 1"
+        },
+        {
+          "type": "checkbox",
+          "id": "card_1_enable",
+          "label": "Enable Box 1",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "card_1_subtitle",
+          "label": "Subtitle 1",
+          "default": "LUMEA INGREDIENTELOR"
+        },
+        {
+          "type": "text",
+          "id": "card_1_title",
+          "label": "Title 1",
+          "default": "Peisaj de Cristale de Acid Salicilic"
+        },
+        {
+          "type": "textarea",
+          "id": "card_1_description",
+          "label": "Description 1",
+          "default": "Structuri cristaline elegante ce reprezintă elementele de bază ale acidului salicilic."
+        },
+        {
+          "type": "header",
+          "content": "Box 2"
+        },
+        {
+          "type": "checkbox",
+          "id": "card_2_enable",
+          "label": "Enable Box 2",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "card_2_subtitle",
+          "label": "Subtitle 2",
+          "default": "PARTICULE"
+        },
+        {
+          "type": "text",
+          "id": "card_2_title",
+          "label": "Title 2",
+          "default": "Particule Luminoase de Acid Salicilic"
+        },
+        {
+          "type": "textarea",
+          "id": "card_2_description",
+          "label": "Description 2",
+          "default": "La contact, particulele active de acid salicilic sunt eliberate și dispersate."
+        },
+        {
+          "type": "header",
+          "content": "Box 3"
+        },
+        {
+          "type": "checkbox",
+          "id": "card_3_enable",
+          "label": "Enable Box 3",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "card_3_subtitle",
+          "label": "Subtitle 3",
+          "default": "PLASĂ DE NANOFIBRE"
+        },
+        {
+          "type": "text",
+          "id": "card_3_title",
+          "label": "Title 3",
+          "default": "Împletire cu Nanofibre"
+        },
+        {
+          "type": "textarea",
+          "id": "card_3_description",
+          "label": "Description 3",
+          "default": "Particulele de acid salicilic se integrează în matricea de nanofibre pentru o livrare optimă."
+        },
+        {
+          "type": "header",
+          "content": "Box 4"
+        },
+        {
+          "type": "checkbox",
+          "id": "card_4_enable",
+          "label": "Enable Box 4",
+          "default": true
+        },
+        {
+          "type": "text",
+          "id": "card_4_subtitle",
+          "label": "Subtitle 4",
+          "default": "FLUX DE LUMINĂ"
+        },
+        {
+          "type": "text",
+          "id": "card_4_title",
+          "label": "Title 4",
+          "default": "Flux Elegant de Lumină cu Acid Salicilic"
+        },
+        {
+          "type": "textarea",
+          "id": "card_4_description",
+          "label": "Description 4",
+          "default": "Acidul salicilic activ este livrat într-un flux de lumină pentru exfoliere, rafinarea porilor și reînnoirea vizibilă a pielii."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Experience Alchemy Detail",
+      "category": "Custom Sections",
+      "blocks": [
+        {
+          "type": "slide",
+          "settings": {
+            "card_1_subtitle": "LUMEA INGREDIENTELOR",
+            "card_1_title": "Peisaj de Cristale de Acid Salicilic",
+            "card_1_description": "Structuri cristaline elegante ce reprezintă elementele de bază ale acidului salicilic.",
+            "card_2_subtitle": "PARTICULE",
+            "card_2_title": "Particule Luminoase de Acid Salicilic",
+            "card_2_description": "La contact, particulele active de acid salicilic sunt eliberate și dispersate.",
+            "card_3_subtitle": "PLASĂ DE NANOFIBRE",
+            "card_3_title": "Împletire cu Nanofibre",
+            "card_3_description": "Particulele de acid salicilic se integrează în matricea de nanofibre pentru o livrare optimă.",
+            "card_4_subtitle": "FLUX DE LUMINĂ",
+            "card_4_title": "Flux Elegant de Lumină cu Acid Salicilic",
+            "card_4_description": "Acidul salicilic activ este livrat într-un flux de lumină pentru exfoliere, rafinarea porilor și reînnoirea vizibilă a pielii."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

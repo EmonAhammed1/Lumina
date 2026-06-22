@@ -1,0 +1,14 @@
+# Shopify CLI temp pull directories
+temp_pull_*
+temp_pull_dev
+temp_pull_dev_all
+temp_pull_dev_current
+temp_pull_live
+temp_pull_live_product
+temp_pull_main
+
+# OS generated files
+.DS_Store
+Thumbs.db
+node_modules/
+.shopify/

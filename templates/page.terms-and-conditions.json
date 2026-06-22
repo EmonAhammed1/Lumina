@@ -1,0 +1,135 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-terms",
+      "blocks": {
+        "term-1": {
+          "type": "term",
+          "settings": {
+            "title": "Informații generale",
+            "content": "<p>Prin accesarea sau utilizarea site-ului Lumina Europa, sunteți de acord să respectați acești Termeni și Condiții. Dacă nu sunteți de acord cu orice parte a acestor termeni, vă rugăm să nu utilizați site-ul sau serviciile noastre.</p>",
+            "icon": "document"
+          }
+        },
+        "term-2": {
+          "type": "term",
+          "settings": {
+            "title": "Produse și utilizare",
+            "content": "<p>Produsele noastre sunt formulate cu tehnologie avansată de nanofibre doar pentru uz extern. Descrierile și imaginile produselor au scop informativ și pot fi actualizate fără notificare prealabilă.</p>",
+            "icon": "jar"
+          }
+        },
+        "term-3": {
+          "type": "term",
+          "settings": {
+            "title": "Declinarea responsabilității științifice și cosmetice",
+            "content": "<p>Produsele noastre sunt de natură cosmetică și nu sunt destinate diagnosticării, tratării, vindecării sau prevenirii niciunei boli. Rezultatele pot varia în funcție de tipul și starea individuală a pielii.</p>",
+            "icon": "shield"
+          }
+        },
+        "term-4": {
+          "type": "term",
+          "settings": {
+            "title": "Comenzi și plăți",
+            "content": "<p>Toate comenzile sunt supuse disponibilității și confirmării. Ne rezervăm dreptul de a refuza sau anula orice comandă la discreția noastră. Prețurile sunt exprimate în EUR și includ taxele aplicabile.</p>",
+            "icon": "card"
+          }
+        },
+        "term-5": {
+          "type": "term",
+          "settings": {
+            "title": "Livrare și transport",
+            "content": "<p>Procesăm comenzile în termen de 1-2 zile lucrătoare. Termenele de livrare pot varia în funcție de locație și de factori externi. Lumina Europa nu este responsabilă pentru întârzierile vamale.</p>",
+            "icon": "truck"
+          }
+        },
+        "term-6": {
+          "type": "term",
+          "settings": {
+            "title": "Retururi și rambursări",
+            "content": "<p>Datorită naturii igienice a produselor noastre cosmetice cu nanofibre, retururile sunt acceptate doar pentru articolele sigilate, nedeschise, în ambalajul lor original, în termen de 14 zile de la livrare.</p>",
+            "icon": "return"
+          }
+        },
+        "term-7": {
+          "type": "term",
+          "settings": {
+            "title": "Proprietate intelectuală",
+            "content": "<p>Toate conținuturile, tehnologiile, formulările de nanofibre, mărcile comerciale, designul și proprietatea intelectuală de pe acest site sunt proprietatea exclusivă a Lumina Europa.</p>",
+            "icon": "copyright"
+          }
+        },
+        "term-8": {
+          "type": "term",
+          "settings": {
+            "title": "Limitarea răspunderii",
+            "content": "<p>Lumina Europa nu va fi răspunzătoare pentru niciun fel de daune directe, indirecte, accidentale sau rezultate din utilizarea sau imposibilitatea de a utiliza produsele sau site-ul nostru.</p>",
+            "icon": "warning"
+          }
+        },
+        "term-9": {
+          "type": "term",
+          "settings": {
+            "title": "Confidențialitate și date",
+            "content": "<p>Apreciem confidențialitatea dvs. și vă protejăm datele personale în conformitate cu GDPR și cu Politica noastră de confidențialitate. Nu vindem și nu partajăm datele dvs. cu terțe părți neautorizate.</p>",
+            "icon": "lock"
+          }
+        },
+        "term-10": {
+          "type": "term",
+          "settings": {
+            "title": "Legea aplicabilă",
+            "content": "<p>Acești Termeni și Condiții vor fi guvernați și interpretați în conformitate cu legile din România și Uniunea Europeană, fără a ține cont de principiile conflictelor de legi.</p>",
+            "icon": "law"
+          }
+        },
+        "term-11": {
+          "type": "term",
+          "settings": {
+            "title": "Informații de contact",
+            "content": "<p>Pentru orice întrebări, solicitări sau asistență referitoare la acești termeni, vă rugăm să ne contactați la info@luminaeuropa.eu sau prin canalele noastre oficiale de contact.</p>",
+            "icon": "contact"
+          }
+        }
+      },
+      "block_order": [
+        "term-1",
+        "term-2",
+        "term-3",
+        "term-4",
+        "term-5",
+        "term-6",
+        "term-7",
+        "term-8",
+        "term-9",
+        "term-10",
+        "term-11"
+      ],
+      "settings": {
+        "header_image": "shopify://shop_images/banner-terms-conditon.png",
+        "setwidth": "container",
+        "gold_color": "#c5a059",
+        "card_bg": "#0d0d0f",
+        "border_color": "#c5a05926",
+        "text_color": "#ffffff",
+        "desc_color": "#cccccc",
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

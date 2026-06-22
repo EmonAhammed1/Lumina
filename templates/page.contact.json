@@ -1,0 +1,255 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "get-in-touch": {
+      "type": "get-in-touch",
+      "blocks": {
+        "card_1": {
+          "type": "card",
+          "settings": {
+            "title": "Foarte specializat",
+            "description": "Specialiștii noștri sunt aici pentru a vă ajuta cu sfaturi și soluții de specialitate.",
+            "icon": "check"
+          }
+        },
+        "card_2": {
+          "type": "card",
+          "settings": {
+            "title": "Răspuns Rapid",
+            "description": "Ne propunem să răspundem în termen de 24 de ore, astfel încât să nu fie nevoie să așteptați mult timp.",
+            "icon": "bolt"
+          }
+        },
+        "card_3": {
+          "type": "card",
+          "settings": {
+            "title": "Tehnologie Fiabilă",
+            "description": "Suntem susținuți de știința modernă și de inovația continuă.",
+            "icon": "star"
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ],
+      "custom_css": [],
+      "settings": {
+        "setwidth": "container",
+        "bgsection": "#0d0d0d",
+        "text_color": "#999999",
+        "heading_color": "#e5b869",
+        "title": "Contactează-ne",
+        "subtitle": "Suntem aici pentru a vă ajuta. Contactați-ne oricând.",
+        "card_bg": "#121212",
+        "card_border": "#222222",
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "e7285e43-2bb7-46e5-a5e4-538568d8723e": {
+      "type": "image-content",
+      "blocks": {
+        "template--16736981025086__e7285e43-2bb7-46e5-a5e4-538568d8723e-1666759876b5fa9979-0": {
+          "type": "image_block",
+          "settings": {}
+        },
+        "template--16736981025086__e7285e43-2bb7-46e5-a5e4-538568d8723e-1666759876b5fa9979-1": {
+          "type": "text_block",
+          "settings": {
+            "width": "75%",
+            "bgtext": "rgba(0,0,0,0)",
+            "title_color": "rgba(0,0,0,0)",
+            "subtitle": "Questions?",
+            "title": "Suntem aici să vă ajutăm cu mărimi, stiluri și orice altceva.",
+            "size_text": "h3",
+            "text": "",
+            "answer_content": "",
+            "style_btn": "btn-theme",
+            "button": "Citește Întrebări Frecvente",
+            "link": "shopify://pages/faqs",
+            "enable_padding": false,
+            "align": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--16736981025086__e7285e43-2bb7-46e5-a5e4-538568d8723e-1666759876b5fa9979-0",
+        "template--16736981025086__e7285e43-2bb7-46e5-a5e4-538568d8723e-1666759876b5fa9979-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "full",
+        "bgsection": "#f7f7f7",
+        "rangebg": 0,
+        "bgbefore": "rgba(0,0,0,0)",
+        "bg_pos": "left",
+        "enable_padding": false,
+        "align_center": true,
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "0px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "863c2be4-cbba-4ba1-ba39-64e0fe639fc6": {
+      "type": "contact-form",
+      "custom_css": [
+        ".customstyletemplate--30552431755603__c025329d-7132-4163-b678-b778c06ac8f9 .border-customSpecificity: (0,2,0) {border-color: #cd5454 !important;}"
+      ],
+      "settings": {
+        "animation": "",
+        "bgsection": "#0D0D0D",
+        "title_top": "",
+        "title": "Aveți întrebări?",
+        "des": "Utilizați formularul de mai jos pentru a contacta echipa de vânzări",
+        "align-heading": "center",
+        "answer_content": "",
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "e47bb256-2659-485f-9896-382aaec96e87": {
+      "type": "map",
+      "settings": {
+        "heading": "Magazinul nostru",
+        "address": "<p>123 Fake St.<br/>Toronto, Canada</p><p>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 9pm<br/>Sunday, 11am - 5pm</p>",
+        "map_address": "301 Front St W, Toronto",
+        "button_text": "Obține indicații",
+        "show_pin": true,
+        "api_key": "",
+        "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=CN%20Tower,%20301%20Front%20St%20W,%20Toronto,%20ON%20M5V%202T6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>\n<a href=\"https://www.embedgooglemap.net\">google maps code generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>\n</div></div>",
+        "background_image_position": "center center"
+      }
+    },
+    "contact-info-glow": {
+      "type": "contact-info-glow",
+      "blocks": {
+        "item_1": {
+          "type": "info_item",
+          "settings": {
+            "title": "Sună-ne",
+            "value": "+41 44 123 4567",
+            "link": "tel:+41441234567",
+            "icon": "phone"
+          }
+        },
+        "item_2": {
+          "type": "info_item",
+          "settings": {
+            "title": "Open",
+            "value": "Lun-Vin: 9:00 – 18:00",
+            "link": "",
+            "icon": "clock"
+          }
+        },
+        "item_3": {
+          "type": "info_item",
+          "settings": {
+            "title": "E-mail",
+            "value": "hello@rmgbrand.com",
+            "link": "mailto:hello@rmgbrand.com",
+            "icon": "mail"
+          }
+        }
+      },
+      "block_order": [
+        "item_1",
+        "item_2",
+        "item_3"
+      ],
+      "settings": {
+        "bgsection": "#050505",
+        "box_bg": "#0d0d0d",
+        "box_border": "#e5b86933",
+        "text_color": "#ffffff",
+        "heading_color": "#e5b869",
+        "paddingsection": "50px 0px 50px 0px",
+        "paddingmobile": "30px 0px 30px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "a1490854-4f8f-471c-864a-2fb0e79e264b": {
+      "type": "faq-accordion",
+      "blocks": {
+        "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-0": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Cât timp va dura livrarea?",
+            "faq_des": "<p>Toate comenzile sunt expediate în termen de 12-36 de ore de la depozitul nostru. Timpul de livrare depinde de opțiunea aleasă, dar toate comenzile sunt urmărite până la ușa dumneavoastră.</p>"
+          }
+        },
+        "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-1": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "How do I know if my order is confirmed?",
+            "faq_des": "<p>Acesta este un exemplu de răspuns pe care l-ați putea oferi. Este bine să fiți cât mai detaliat posibil în răspunsuri pentru a spori încrederea generală.</p>"
+          }
+        },
+        "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-2": {
+          "type": "faq",
+          "settings": {
+            "faq_title": "Pot schimba adresa de livrare după ce am plasat comanda?",
+            "faq_des": "<p>Acesta este un exemplu de răspuns pe care l-ați putea oferi. Este bine să fiți cât mai detaliat posibil în răspunsuri pentru a spori încrederea generală.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-0",
+        "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-1",
+        "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-2"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "bgsection": "#0D0D0D",
+        "e_size": "auto",
+        "e_repeat": "no-repeat",
+        "e_pos": "center center",
+        "title_top": "",
+        "title": "FAQs",
+        "des": "Mai jos sunt câteva dintre întrebările noastre frecvente",
+        "align-heading": "center",
+        "title_size": "h6",
+        "e_first_open": false,
+        "e_reverse": true,
+        "e_small": true,
+        "left_html": "",
+        "e_right": false,
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "60px 0px 60px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "get-in-touch",
+    "e7285e43-2bb7-46e5-a5e4-538568d8723e",
+    "863c2be4-cbba-4ba1-ba39-64e0fe639fc6",
+    "e47bb256-2659-485f-9896-382aaec96e87",
+    "contact-info-glow",
+    "a1490854-4f8f-471c-864a-2fb0e79e264b"
+  ]
+}

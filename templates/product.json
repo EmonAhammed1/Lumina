@@ -1,0 +1,513 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "exp-promise": {
+      "type": "experience-benefits",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "bg_text_col": "#010101",
+        "bg_stats_box": "#0d0d0f",
+        "bgsection": "#010101",
+        "color_heading": "#b8963e",
+        "color_text": "#cccccc",
+        "paddingsection": "0px 0px 0px 0px",
+        "paddingmobile": "0px 0px 0px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "main": {
+      "type": "experience-product",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "gold_color": "#c5a059",
+        "rating_val": "4.9",
+        "reviews_count": "128 recenzii",
+        "slogan": "Volum. Hidratare. Strălucire.",
+        "app_time": "8 minute pentru a-ți transforma pielea",
+        "show_gift_button": true,
+        "show_routine_button": true,
+        "why_love_title": "De ce o vei iubi",
+        "why_love_content": "<p>Hidratează profund, oferă volum și redă strălucirea pielii în doar 8 minute. Perfectă pentru o revigorare rapidă a tenului sau un ritual săptămânal de îngrijire de lux.</p>",
+        "nano_title": "Tehnologia Nanofibre",
+        "nano_content": "<p>Nanofibrele special concepute se activează doar la contactul cu pielea umedă, livrând ingredientele active direct acolo unde este cea mai mare nevoie de ele. Matricea ultra-fină de nanofibre asigură o absorbție maximă și o respirabilitate optimă.</p>",
+        "ingredients_title": "Ingrediente Cheie",
+        "ingredients_content": "<p><strong>Acid Hialuronic, Niacinamidă, Pantenol, Ectoină, Alantoină, Beta-Glucan.</strong><br><br>Formulat fără parabeni, parfumuri, uleiuri minerale și siliconi.</p>"
+      }
+    },
+    "product-requently": {
+      "type": "product-bundle",
+      "settings": {
+        "animation": "fade-up",
+        "bgsection": "#ffffff",
+        "bundle_title": "Cumpărate frecvent împreună",
+        "size_text": "h4",
+        "limit_bundle": 3,
+        "enable_border": true,
+        "btn_add": "Add selected items",
+        "paddingsection": "40px 0px 40px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "product-content": {
+      "type": "product-content",
+      "blocks": {
+        "6889c9ba-caef-4edd-9757-6711505cb095": {
+          "type": "description",
+          "settings": {
+            "title_tab": "Descriere",
+            "enable_special": true,
+            "left_heading": "Hidratare intensă. Transformare vizibilă.",
+            "left_desc": "<p>Masca noastră de hidratare și recuperare oferă o hidratare profundă și de lungă durată în doar 8 minute. Bazată pe tehnologia brevetată a nanofibrelor, aceasta se activează la contactul cu pielea umedă pentru a livra ingrediente pure exact acolo unde pielea are cea mai mare nevoie de ele.</p>",
+            "feat_1_icon": "water",
+            "feat_1_text": "Hidratare profundă și regenerare",
+            "feat_2_icon": "sparkle",
+            "feat_2_text": "Întărește și calmează",
+            "feat_3_icon": "wave",
+            "feat_3_text": "Redă strălucirea și confortul",
+            "feat_4_icon": "leaf",
+            "feat_4_text": "Perfect pentru toate tipurile de ten, inclusiv cel sensibil",
+            "mid_image": "shopify://shop_images/result_-_7_3a96c0a5-e331-4ed1-9777-7d00101e2443.webp",
+            "card_1_title": "TRANSFORMARE ÎN 8 MINUTE",
+            "card_1_time": "08:00",
+            "timeline_val_1": "01:00",
+            "timeline_lbl_1": "Activare",
+            "timeline_val_2": "04:00",
+            "timeline_lbl_2": "Absorbție",
+            "timeline_val_3": "08:00",
+            "timeline_lbl_3": "Transformare",
+            "card_2_title": "PERFECT PENTRU",
+            "perfect_1": "Ten deshidratat și obosit",
+            "perfect_2": "După călătorii sau zboruri lungi",
+            "perfect_3": "Înainte de evenimente speciale",
+            "perfect_4": "Când tenul tău are nevoie de o recuperare instantanee"
+          }
+        },
+        "b69a53cf-5bc1-4b18-add3-92af436f966c": {
+          "type": "content",
+          "settings": {
+            "title_tab": "Cum se utilizează",
+            "answer_content": "<p>Când utilizați șamponul nostru delicat, udați părul, apoi masați scalpul prin mișcări circulare. Săpuniți și clătiți.</p>",
+            "page": ""
+          }
+        },
+        "450a0011-a13e-4bad-9fbb-454bc0a862b4": {
+          "type": "content",
+          "settings": {
+            "title_tab": "Ingrediente cheie",
+            "answer_content": "<p><strong>Squalanul completează ceea ce au la naștere</strong></p><p>La nașterea bebelușilor, pielea lor este hrănită de squalene, un ingredient hidratant supererou și cea mai bună protecție pe care o poate oferi Mama Natură. Prin chimie curată, am creat o versiune proprie de squalene derivată din trestie de zahăr, numită squal<em>ane</em>. În șamponul nostru pe bază de plante, squalanul acționează ca un netezitor fără silicon, oferind părului și scalpului o hidratare naturală și ultra-ușoară.</p>",
+            "page": ""
+          }
+        },
+        "f4c1b859-6506-4354-b686-25d6efffda01": {
+          "type": "content",
+          "settings": {
+            "title_tab": "Rezultate clinice",
+            "answer_content": "<ul><li><strong>96% </strong>felt Daily Nourishing Shampoo thoroughly cleansed without stripping natural moisture.* </li><li><strong>92%</strong> felt Daily Nourishing Shampoo worked for their/their child's hair type.* </li><li><strong>94%</strong> felt Daily Nourishing Shampoo left their/their child's hair feeling soft and clean.* </li><li><strong>96%</strong> felt Daily Nourishing Shampoo was gentle yet effective in cleansing hair.* </li><li><strong>92%</strong> felt their/their child's hair looked shiny and healthy after using Daily Nourishing Shampoo.* </li><li><strong>96%</strong> felt their/their child's scalp felt clean and replenished after using Daily Nourishing Shampoo.*</li></ul>",
+            "page": ""
+          }
+        },
+        "147e9960-c5fe-44f4-8469-9583a9752a0a": {
+          "type": "review",
+          "disabled": true,
+          "settings": {
+            "title_tab": "Reviews"
+          }
+        },
+        "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc": {
+          "type": "related-product",
+          "settings": {
+            "title_heading": "Cumpără cu",
+            "size_text": "h6",
+            "product_limit": 3
+          }
+        }
+      },
+      "block_order": [
+        "6889c9ba-caef-4edd-9757-6711505cb095",
+        "b69a53cf-5bc1-4b18-add3-92af436f966c",
+        "450a0011-a13e-4bad-9fbb-454bc0a862b4",
+        "f4c1b859-6506-4354-b686-25d6efffda01",
+        "147e9960-c5fe-44f4-8469-9583a9752a0a",
+        "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "tab_size": "full",
+        "enable_left": true,
+        "paddingsection": "48px 0px 20px 0px",
+        "paddingmobile": "32px 0px 32px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px",
+        "show_social_right": true,
+        "social_right_text": "Imaginile artistice (TBC) pot fi asociate cu postările de pe rețelele sociale.",
+        "social_img_1": "shopify://shop_images/PEPTIDE.webp",
+        "social_img_2": "shopify://shop_images/CENTELLA.webp",
+        "social_img_3": "shopify://shop_images/HYALURONIC.webp"
+      }
+    },
+    "exp-transformation": {
+      "type": "experience-transformation",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "gold_color": "#c5a059",
+        "section_title": "Transformarea în 8 minute",
+        "show_separator": true,
+        "col_1_time": "01:00",
+        "col_1_title": "DIFUZIE ACTIVĂ PURĂ",
+        "col_1_text": "<p><strong>Tehnologie uscată</strong> - Nanofibrele se activează doar la contactul cu pielea umedă, eliminând risipa de produs.</p>",
+        "col_2_time": "04:00",
+        "col_2_title": "TRANSFER PUR",
+        "col_2_text": "<p>Transfer direct al ingredientelor în derm, oferind rezultate de 10x mai rapide decât măștile clasice.</p>",
+        "col_3_time": "08:00",
+        "col_3_title": "PUR PRIN DESIGN",
+        "col_3_text": "<p>Formula pură, fără parabeni, parfumuri sau conservanți. Ideală pentru tenul sensibil.</p>",
+        "bottom_text": "8 MINUTE CARE SCHIMBĂ TOTUL. REZULTATE VIZIBILE CARE DUREAZĂ."
+      }
+    },
+    "exp-alchemy": {
+      "type": "experience-alchemy",
+      "blocks": {
+        "slide_cUptC9": {
+          "type": "slide",
+          "settings": {
+            "card_1_enable": true,
+            "card_1_subtitle": "LUMEA INGREDIENTELOR",
+            "card_1_title": "Peisaj de Cristale de Acid Salicilic",
+            "card_1_description": "Structuri cristaline elegante ce reprezintă elementele de bază ale acidului salicilic.",
+            "card_2_enable": true,
+            "card_2_subtitle": "PARTICULE",
+            "card_2_title": "Particule Luminoase de Acid Salicilic",
+            "card_2_description": "La contact, particulele active de acid salicilic sunt eliberate și dispersate.",
+            "card_3_enable": true,
+            "card_3_subtitle": "PLASĂ DE NANOFIBRE",
+            "card_3_title": "Împletire cu Nanofibre",
+            "card_3_description": "Particulele de acid salicilic se integrează în matricea de nanofibre pentru o livrare optimă.",
+            "card_4_enable": true,
+            "card_4_subtitle": "FLUX DE LUMINĂ",
+            "card_4_title": "Flux Elegant de Lumină cu Acid Salicilic",
+            "card_4_description": "Acidul salicilic activ este livrat într-un flux de lumină pentru exfoliere, rafinarea porilor și reînnoirea vizibilă a pielii."
+          }
+        }
+      },
+      "block_order": [
+        "slide_cUptC9"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "gold_color": "#c5a059",
+        "section_title": "Alchimia",
+        "show_separator": true,
+        "subtitle": "INGREDIENTE CHEIE",
+        "desc": "<p>Formule pure cu ingrediente active concentrate, livrate direct în derm prin structura nanofibrelor.</p>",
+        "autoplay": true,
+        "autoplay_speed": 5000,
+        "card_bg": "#0d0d0f",
+        "text_color": "#ffffff",
+        "desc_color": "#cccccc"
+      }
+    },
+    "exp-video": {
+      "type": "experience-video",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container-fluid",
+        "gold_color": "#c5a059",
+        "section_title": "Transformarea în timp real",
+        "show_separator": true,
+        "subtitle": "DEMONSTRAȚIE TEHNOLOGICĂ",
+        "desc": "<p>Urmăriți modul în care nanofibrele noastre se transformă la contactul cu pielea, livrând ingredientele active direct în profunzime.</p>",
+        "link_video": "https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4",
+        "video_url": "",
+        "autoplay": true,
+        "muted": true,
+        "loop": true,
+        "controls": false,
+        "aspect_ratio": "16-9",
+        "desc_color": "#cccccc"
+      }
+    },
+    "exp-rituals": {
+      "type": "experience-rituals",
+      "blocks": {
+        "ritual_1": {
+          "type": "ritual",
+          "settings": {
+            "product": "nano-beauty-pro",
+            "item_type": "product",
+            "title": "",
+            "subtitle": "MASK 01",
+            "price": "",
+            "link": ""
+          }
+        },
+        "ritual_2": {
+          "type": "ritual",
+          "settings": {
+            "product": "after-sun-gel",
+            "item_type": "product",
+            "title": "",
+            "subtitle": "MASK 02",
+            "price": "",
+            "link": "",
+            "image": "shopify://shop_images/skinsotthing_back.png"
+          }
+        },
+        "ritual_3": {
+          "type": "ritual",
+          "settings": {
+            "product": "baby-balm",
+            "item_type": "product",
+            "title": "",
+            "subtitle": "MASK 03",
+            "price": "",
+            "link": "",
+            "image": "shopify://shop_images/iluminare_back_-_copie.png"
+          }
+        },
+        "ritual_4": {
+          "type": "ritual",
+          "settings": {
+            "product": "belly-butter",
+            "item_type": "product",
+            "title": "",
+            "subtitle": "MASK 04",
+            "price": "",
+            "link": "",
+            "image": "shopify://shop_images/masca_A.A._neck_back.png"
+          }
+        },
+        "ritual_5": {
+          "type": "ritual",
+          "settings": {
+            "product": "baby-essentials-kit",
+            "item_type": "bundle",
+            "title": "",
+            "subtitle": "RITUAL 01",
+            "price": "",
+            "link": "",
+            "image": "shopify://shop_images/masca_A.A._neck_front.png"
+          }
+        },
+        "ritual_6": {
+          "type": "ritual",
+          "settings": {
+            "product": "aloha-t-shirt",
+            "item_type": "product",
+            "title": "",
+            "subtitle": "MASK 05",
+            "price": "",
+            "link": "",
+            "image": "shopify://shop_images/masca_regenerare_back.png"
+          }
+        }
+      },
+      "block_order": [
+        "ritual_1",
+        "ritual_2",
+        "ritual_3",
+        "ritual_4",
+        "ritual_5",
+        "ritual_6"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "bg_color": "#000000",
+        "gold_color": "#c5a059",
+        "card_bg": "#0d0d0f",
+        "subtitle": "REVEAL MORE RITUALS",
+        "title": "Your Journey, Your Rituals",
+        "description": "Every skin has its moment. Discover the perfect rituals designed to support your skin – and your life.",
+        "center_image": "{{ product.featured_image }}",
+        "center_title": "LUMINA EUROPA",
+        "center_name": "HYDRATING RECOVERY MASK",
+        "center_sub": "8-MINUTE TRANSFORMATION",
+        "center_link": "",
+        "btn_label": "DISCOVER ALL RITUALS",
+        "btn_link": ""
+      }
+    },
+    "experience_under_microscope_pHQJR3": {
+      "type": "experience-under-microscope",
+      "blocks": {
+        "feature_YgWBWY": {
+          "type": "feature",
+          "settings": {
+            "icon": "molecule",
+            "title": "TEHNOLOGIE PATENTATĂ DE NANOFIBRE",
+            "description": "Nanofibrele ultra-fine creează o structură inteligentă care rămâne uscată și stabilă până la activare."
+          }
+        },
+        "feature_hctX3w": {
+          "type": "feature",
+          "settings": {
+            "icon": "delivery",
+            "title": "LIVRARE ACTIVĂ",
+            "description": "La contactul cu pielea umedă, fibrele se dizolvă instantaneu, livrând ingredientele active direct acolo unde este cea mai mare nevoie."
+          }
+        },
+        "feature_MYLLkH": {
+          "type": "feature",
+          "settings": {
+            "icon": "leaf",
+            "title": "FORMAT FĂRĂ CONSERVANȚI",
+            "description": "Formatul nostru uscat elimină necesitatea parabenilor, parfumurilor adăugate și conservanților inutili - perfect pentru pielea sensibilă."
+          }
+        }
+      },
+      "block_order": [
+        "feature_YgWBWY",
+        "feature_hctX3w",
+        "feature_MYLLkH"
+      ],
+      "name": "Experience Microscope Explorer",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "subtitle": "SUB MICROSCOP",
+        "title": "Știință pe care o poți vedea. Rezultate pe care le poți simți.",
+        "desc": "<p>Tehnologia noastră patentată de nanofibre este proiectată pentru livrare precisă, activându-se doar la contactul cu pielea umedă – asigurând performanța maximă a fiecărui ingredient pur.</p>",
+        "scroll_label": "DERULAȚI PENTRU A EXPLORA",
+        "stage_1_label": "MICRO",
+        "stage_1_title": "Structură de Nanofibre",
+        "stage_1_video_url": "https://cdn.shopify.com/videos/c/o/v/a3f8b7ec2b264fbda558acd951f1b106.mp4",
+        "stage_2_label": "ACTIVE",
+        "stage_2_title": "Livrare de Ingrediente",
+        "stage_2_video_url": "",
+        "stage_3_label": "DEEP",
+        "stage_3_title": "Penetrare în Piele",
+        "stage_3_video_url": "",
+        "stage_4_label": "RESULT",
+        "stage_4_title": "Transformare Vizibilă",
+        "stage_4_video_url": "",
+        "btn_label": "DESCOPERĂ TEHNOLOGIA",
+        "btn_link": "",
+        "bg_color": "#010101",
+        "accent_color": "#b8963e",
+        "text_color": "#af9552",
+        "desc_color": "#cccccc",
+        "border_color": "#ffffff14"
+      }
+    },
+    "exp-trust": {
+      "type": "experience-promise",
+      "blocks": {
+        "shipping_block": {
+          "type": "promise",
+          "settings": {
+            "icon_type": "shipping",
+            "custom_svg": "",
+            "title": "LIVRARE GRATUITĂ",
+            "description": "Bucurați-vă de livrare rapidă și asigurată direct la ușa dumneavoastră pentru toate comenzile.",
+            "link": ""
+          }
+        },
+        "circle_block": {
+          "type": "promise",
+          "settings": {
+            "icon_type": "circle",
+            "custom_svg": "",
+            "title": "LUMINA CIRCLE",
+            "description": "Alăturați-vă clubului nostru exclusiv pentru a primi acces prioritar, cadouri speciale și oferte dedicate.",
+            "link": ""
+          }
+        },
+        "payment_block": {
+          "type": "promise",
+          "settings": {
+            "icon_type": "payment",
+            "custom_svg": "",
+            "title": "PLATĂ SECURIZATĂ",
+            "description": "Tranzacții 100% sigure prin intermediul procesatoarelor de plăți de top și criptare SSL avansată.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "shipping_block",
+        "circle_block",
+        "payment_block"
+      ],
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "subtitle": "PROMISIUNEA NOASTRĂ",
+        "section_title": "The Lumina Promise",
+        "bgsection": "#010101",
+        "card_bg": "#0d0d0fb8",
+        "border_color": "#ffffff0d",
+        "title_color": "#ffffff",
+        "text_color": "#cccccc",
+        "accent_color": "#c5a059",
+        "paddingsection": "80px 0px 80px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "animation": "fade-up",
+        "setwidth": "container",
+        "heading": "S-ar putea să-ți placă și",
+        "heading_size": "h3",
+        "heading_align": "center",
+        "products_to_show": 10,
+        "spaceBetween": 30,
+        "perviewDesktop": 4,
+        "nowrap": true,
+        "arrows": true,
+        "scrollbar": true,
+        "padding_top": 80,
+        "padding_bottom": 32
+      }
+    },
+    "product-recent": {
+      "type": "recently-viewed",
+      "settings": {
+        "enable": true,
+        "animation": "fade-up",
+        "setwidth": "container",
+        "title_top": "",
+        "title": "Vizualizate recent",
+        "des": "",
+        "align-heading": "center",
+        "limit": 6,
+        "paddingsection": "0px 0px 60px 0px",
+        "paddingmobile": "40px 0px 40px 0px",
+        "marginsection": "0px 0px 0px 0px",
+        "marginmobile": "0px 0px 0px 0px"
+      }
+    }
+  },
+  "order": [
+    "exp-promise",
+    "main",
+    "product-requently",
+    "product-content",
+    "exp-transformation",
+    "exp-alchemy",
+    "exp-video",
+    "exp-rituals",
+    "experience_under_microscope_pHQJR3",
+    "exp-trust",
+    "product-recommendations",
+    "product-recent"
+  ]
+}

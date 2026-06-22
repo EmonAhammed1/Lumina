@@ -41,30 +41,33 @@
                 <!-- Left Side: Portrait Image -->
                 <div class="steam-member-premium__portrait">
                   <div class="steam-member-premium__image-wrapper">
-                    {%- if block.settings.image != blank -%}
-                      <img src="{{ block.settings.image | image_url: width: 600 }}" 
-                           alt="{{ block.settings.name }}" 
-                           loading="lazy"
-                           class="steam-member-premium__img">
-                    {%- else -%}
-                      {%- liquid
-                        case forloop.index
-                          when 1
-                            assign fallback_img = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=600'
-                          when 2
-                            assign fallback_img = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'
-                          when 3
-                            assign fallback_img = 'https://images.unsplash.com/photo-1581579438747-1dc8d1e0ca96?auto=format&fit=crop&q=80&w=600'
-                          when 4
-                            assign fallback_img = 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600'
-                          when 5
-                            assign fallback_img = 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600'
-                          else
-                            assign fallback_img = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600'
-                        endcase
-                      -%}
-                      <img src="{{ fallback_img }}" alt="{{ block.settings.name }}" loading="lazy" class="steam-member-premium__img">
-                    {%- endif -%}
+                    {%- liquid
+                      case forloop.index
+                        when 1
+                          assign fallback_img = 'https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&q=80&w=600'
+                        when 2
+                          assign fallback_img = 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=600'
+                        when 3
+                          assign fallback_img = 'https://images.unsplash.com/photo-1581579438747-1dc8d1e0ca96?auto=format&fit=crop&q=80&w=600'
+                        when 4
+                          assign fallback_img = 'https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=600'
+                        when 5
+                          assign fallback_img = 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=600'
+                        else
+                          assign fallback_img = 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=600'
+                      endcase
+
+                      if block.settings.image != blank
+                        assign img_url = block.settings.image | image_url: width: 600
+                      else
+                        assign img_url = fallback_img
+                      endif
+                    -%}
+                    <img src="{{ img_url }}" 
+                         alt="{{ block.settings.name }}" 
+                         loading="lazy"
+                         class="steam-member-premium__img"
+                         onerror="this.onerror=null; this.src='{{ fallback_img }}';">
                     <div class="steam-member-premium__image-overlay"></div>
                   </div>
                 </div>
@@ -182,19 +185,32 @@
 <!-- STYLES -->
 <style>
   /* Header customization for this template */
-  body:has(#section-{{ section.id }}) .site-header {
+  body:has(#section-{{ section.id }}) .site-header,
+  body:has(#section-{{ section.id }}) .site-header .header-bottom,
+  body:has(#section-{{ section.id }}) .site-header .header-bottom__right,
+  body:has(#section-{{ section.id }}) .site-header .toggle-menu-mobile {
     background: transparent !important;
-    border-bottom: 1px solid rgba(212, 175, 55, 0.15) !important;
+    background-color: transparent !important;
+    border-bottom: none !important;
     transition: background 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94), backdrop-filter 0.4s ease, border-color 0.4s ease !important;
+  }
+  
+  body:has(#section-{{ section.id }}) .site-header {
+    border-bottom: 1px solid rgba(212, 175, 55, 0.15) !important;
     position: absolute !important;
     width: 100% !important;
     z-index: 1000 !important;
   }
   
-  body:has(#section-{{ section.id }}) .site-header.scrolled-custom {
+  body:has(#section-{{ section.id }}) .site-header.scrolled-custom,
+  body:has(#section-{{ section.id }}) .site-header.scrolled-custom .header-bottom {
     background: rgba(0, 0, 0, 0.85) !important;
+    background-color: rgba(0, 0, 0, 0.85) !important;
     backdrop-filter: blur(12px) !important;
     -webkit-backdrop-filter: blur(12px) !important;
+  }
+  
+  body:has(#section-{{ section.id }}) .site-header.scrolled-custom {
     border-bottom: 1px solid rgba(212, 175, 55, 0.35) !important;
   }
 
@@ -233,9 +249,9 @@
 
   /* Container */
   .steam-premium__container {
-    max-width: 1200px;
+    max-width: 1520px !important;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 4% !important;
     width: 100%;
     box-sizing: border-box;
   }
@@ -253,7 +269,7 @@
 
   /* Hero Section styling */
   .steam-premium__hero {
-    padding: 80px 0 60px;
+    padding: 180px 0 60px !important; /* Pushes content down so tag and title are fully visible below the absolute header */
     position: relative;
   }
 
@@ -660,7 +676,7 @@
     }
 
     .steam-premium__hero {
-      padding: 40px 0 20px;
+      padding: 80px 0 20px !important;
     }
 
     .steam-premium__hero-title {

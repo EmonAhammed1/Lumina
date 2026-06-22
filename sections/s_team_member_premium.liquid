@@ -249,10 +249,18 @@
 
   /* Container */
   .steam-premium__container {
-    max-width: 100% !important;
-    padding: 0 30px !important;
     width: 100%;
+    margin-left: auto;
+    margin-right: auto;
     box-sizing: border-box;
+    padding: 0 20px !important;
+  }
+  @media only screen and (min-width: 990px) {
+    .steam-premium__container {
+      max-width: 1600px !important;
+      padding-left: var(--g-gutter, 30px) !important;
+      padding-right: var(--g-gutter, 30px) !important;
+    }
   }
 
   /* Global helper classes */
@@ -263,12 +271,12 @@
   /* Section Wrapper */
   .steam-premium__section-wrapper {
     overflow: hidden;
-    padding-top: 100px; /* offset absolute header */
+    padding-top: 0 !important;
   }
 
   /* Hero Section styling */
   .steam-premium__hero {
-    padding: 120px 0 40px !important; /* Pushes content down so tag and title are fully visible below the absolute header with an elegant gap */
+    padding: 110px 0 40px !important; /* Elegant gap below absolute header */
     position: relative;
   }
 
@@ -671,7 +679,7 @@
 
   @media (max-width: 767px) {
     .steam-premium__section-wrapper {
-      padding-top: 80px;
+      padding-top: 0 !important;
     }
 
     .steam-premium__hero {

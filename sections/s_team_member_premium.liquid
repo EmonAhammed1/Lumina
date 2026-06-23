@@ -801,12 +801,6 @@
       const canvas = document.getElementById('hero-particles-canvas');
       if (!canvas) return;
 
-      // Disable canvas particles on heavy/low-end mobile devices to conserve memory/power
-      if (window.innerWidth < 768) {
-        canvas.style.display = 'none';
-        return;
-      }
-
       const ctx = canvas.getContext('2d');
       let animationFrameId;
 
@@ -820,7 +814,9 @@
       });
 
       const particles = [];
-      const particleCount = 60;
+      // Adjust particle count for mobile screens to ensure smooth performance
+      const isMobile = window.innerWidth < 768;
+      const particleCount = isMobile ? 25 : 60;
       const goldPalette = ['rgba(212, 175, 55, 0.4)', 'rgba(247, 213, 96, 0.25)', 'rgba(184, 150, 62, 0.35)', 'rgba(255, 255, 255, 0.2)'];
 
       class Particle {

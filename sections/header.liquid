@@ -30,9 +30,6 @@
           <div class="d-flex align-items-center w-100">
             <div class="d-flex toggle-menu-mobile align-items-center">
               {%- render 'button-toggle-menu-mobile' -%}
-              <span class="modal__toggle-search-mobile d-lg-none" aria-hidden="true" focusable="false" role="presentation" style="margin-left: 15px;">
-                {% render 'icon-search' %}
-              </span>
             </div>
             <div class="d-flex align-items-center justify-content-center justify-content-lg-start col-logo" style="margin-left: 20px;">
               {%- render 'site-logo' -%}
@@ -67,6 +64,9 @@
               {%- render 'block-wishlist' -%}
               {%- render 'block-cart' -%}
               
+              <!-- Hidden Mobile Search Trigger to prevent JS errors -->
+              <span class="modal__toggle-search-mobile" style="display: none !important;"></span>
+
               <!-- Custom Account Drawer Trigger -->
               <button type="button" class="btn btn-link p-0 js-drawer-open-account d-flex align-items-center ml-4" aria-label="Account" style="color: #b8963e; box-shadow: none;">
                 <svg aria-hidden="true" fill="none" focusable="false" width="28" height="28" class="svg-user" viewBox="0 0 24 24">

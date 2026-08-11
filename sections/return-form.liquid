@@ -368,6 +368,55 @@
     font-style: italic;
   }
 
+  /* File Upload Area */
+  .lrf-file-wrap {
+    position: relative;
+    border: 1px dashed rgba(183,148,72,0.4);
+    padding: 28px 20px;
+    text-align: center;
+    background: rgba(183,148,72,0.02);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-bottom: 8px;
+  }
+  .lrf-file-wrap:hover {
+    border-color: var(--gh-golden);
+    background: rgba(183,148,72,0.06);
+  }
+  .lrf-file-icon {
+    width: 32px;
+    height: 32px;
+    stroke: var(--gh-golden);
+    fill: none;
+    stroke-width: 1.5;
+    margin-bottom: 8px;
+  }
+  .lrf-file-label {
+    font-size: 12px;
+    color: var(--gh-golden);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  .lrf-file-sub {
+    font-size: 11px;
+    color: rgba(229,229,229,0.55);
+  }
+  .lrf-file-input-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+  }
+  .lrf-file-list {
+    font-size: 12px;
+    color: rgba(229,229,229,0.85);
+  }
+
   /* Success Screen */
   .lrf-success {
     text-align: center;
@@ -423,7 +472,7 @@
         </p>
       </div>
     {% else %}
-      {% form 'contact' %}
+      {% form 'contact', enctype: 'multipart/form-data' %}
         <div class="lrf-form-wrap">
 
           <!-- 1. Datele clientului -->
@@ -605,11 +654,20 @@
               <span class="lrf-sec-title">Fotografii / documente (Opțional)</span>
             </div>
             <p class="lrf-sec-hint">
-              În cazul unui produs <strong>deteriorat, defect, incorect, expirat, cu ambalaj compromis</strong> sau altfel neconform, vă rugăm să atașați detalii mai jos sau să trimiteți fotografii pe email la <strong>office@markeu.eu</strong> (fotografii ale produsului, ambalajului, numărului de lot/batch).
+              În cazul unui produs <strong>deteriorat, defect, incorect, expirat, cu ambalaj compromis</strong> sau altfel neconform, vă rugăm să atașați fotografii mai jos sau să le trimiteți pe email la <strong>office@markeu.eu</strong> (fotografii ale produsului, ambalajului, numărului de lot/batch).
             </p>
-            <div class="lrf-form-group">
+            
+            <div class="lrf-file-wrap" id="lrf-file-box">
+              <svg class="lrf-file-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              <div class="lrf-file-label">Atașează fotografii sau documente</div>
+              <div class="lrf-file-sub">Apasă aici sau trage pozele (JPG, PNG, WEBP, PDF)</div>
+              <input class="lrf-file-input-hidden" type="file" id="lrf-photos" name="contact[Fotografii atasae]" accept="image/*,.pdf" multiple onchange="lrfUpdateFileList(this)">
+            </div>
+            <div class="lrf-file-list" id="lrf-file-display"></div>
+
+            <div class="lrf-form-group" style="margin-top: 16px;">
               <label class="lrf-label" for="lrf-photo-desc">Descriere fotografii / detalii lot batch</label>
-              <textarea class="lrf-textarea" id="lrf-photo-desc" name="contact[Detalii fotografii si lot]" placeholder="Introduceți numărul de lot / detalii poze trimise pe e-mail..."></textarea>
+              <textarea class="lrf-textarea" id="lrf-photo-desc" name="contact[Detalii fotografii si lot]" placeholder="Introduceți numărul de lot / detalii poze atașate..."></textarea>
             </div>
           </div>
 
@@ -663,6 +721,21 @@
 </div>
 
 <script>
+  function lrfUpdateFileList(input) {
+    var display = document.getElementById('lrf-file-display');
+    if (!display) return;
+    if (input.files && input.files.length > 0) {
+      var listHtml = '<div style="color:var(--gh-golden); margin-top:10px; font-weight:600;">Fișiere selectate (' + input.files.length + '):</div><ul style="margin:6px 0 0 16px; padding:0; list-style:none;">';
+      for (var i = 0; i < input.files.length; i++) {
+        listHtml += '<li style="margin-bottom:4px;">📷 ' + input.files[i].name + ' <span style="opacity:0.6; font-size:11px;">(' + Math.round(input.files[i].size/1024) + ' KB)</span></li>';
+      }
+      listHtml += '</ul>';
+      display.innerHTML = listHtml;
+    } else {
+      display.innerHTML = '';
+    }
+  }
+
   document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.lrf-wrap input[type="date"]').forEach(function(input) {
       input.addEventListener('click', function(e) {

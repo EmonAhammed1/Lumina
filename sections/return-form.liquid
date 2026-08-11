@@ -884,6 +884,38 @@
       }, 5000);
     }
 
+    var IMGBB_API_KEY = '8470ad1e1efac3794019da4740bfc7cf';
+
+    async function lrfUploadToImgBB(file) {
+      try {
+        var formData = new FormData();
+        formData.append('image', file);
+        var res = await fetch('https://api.imgbb.com/1/upload?key=' + IMGBB_API_KEY, {
+          method: 'POST',
+          body: formData
+        });
+        var json = await res.json();
+        if (json && json.data && (json.data.url || json.data.url_viewer)) {
+          return json.data.url || json.data.url_viewer;
+        }
+      } catch(e) {
+        console.error('ImgBB upload error:', e);
+      }
+      try {
+        var formData2 = new FormData();
+        formData2.append('file', file);
+        var res2 = await fetch('https://tmpfiles.org/api/v1/upload', {
+          method: 'POST',
+          body: formData2
+        });
+        var json2 = await res2.json();
+        if (json2 && json2.data && json2.data.url) {
+          return json2.data.url.replace('tmpfiles.org/', 'tmpfiles.org/dl/');
+        }
+      } catch(err2) {}
+      return null;
+    }
+
     async function lrfUploadFilesAndBuildBody() {
       var bodyInput = document.getElementById('lrf-contact-body');
       if (!bodyInput) return;
@@ -893,21 +925,9 @@
       if (photoInput && photoInput.files && photoInput.files.length > 0) {
         for (var i = 0; i < photoInput.files.length; i++) {
           var file = photoInput.files[i];
-          try {
-            var formData = new FormData();
-            formData.append('file', file);
-            var res = await fetch('https://tmpfiles.org/api/v1/upload', {
-              method: 'POST',
-              body: formData
-            });
-            var json = await res.json();
-            if (json && json.data && json.data.url) {
-              // Convert page URL to direct image view URL (tmpfiles.org/123 -> tmpfiles.org/dl/123)
-              var directUrl = json.data.url.replace('tmpfiles.org/', 'tmpfiles.org/dl/');
-              uploadedLinks.push({ name: file.name, url: directUrl });
-            }
-          } catch(err) {
-            console.error('File upload error:', err);
+          var imgUrl = await lrfUploadToImgBB(file);
+          if (imgUrl) {
+            uploadedLinks.push({ name: file.name, url: imgUrl });
           }
         }
       }
@@ -944,7 +964,7 @@
 
       var photosText = "";
       if (uploadedLinks.length > 0) {
-        photosText = "\n• FOTOGRAFII ATAȘATE (" + uploadedLinks.length + " poze încărcate):\n";
+        photosText = "\n• FOTOGRAFII ATAȘATE (" + uploadedLinks.length + " poze încărcate ImgBB):\n";
         for (var k = 0; k < uploadedLinks.length; k++) {
           photosText += "  - " + uploadedLinks[k].name + ":\n    " + uploadedLinks[k].url + "\n";
         }

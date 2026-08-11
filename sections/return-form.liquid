@@ -575,6 +575,7 @@
 
     <div id="lrf-form-container" style="{% if form.posted_successfully? %}display:none;{% else %}display:block;{% endif %}">
       {% form 'contact', id: 'lrf-contact-form' %}
+        <input type="hidden" name="contact[body]" id="lrf-contact-body" value="Cerere de retur noua">
         {% if form.errors %}
           <div style="padding:16px; border:1px solid #e07070; background:rgba(224,112,112,0.1); color:#ff8080; margin-bottom:24px; font-size:13px; border-radius:2px;">
             {{ form.errors | default_errors }}
@@ -591,7 +592,7 @@
             <div class="lrf-form-row">
               <div class="lrf-form-group">
                 <label class="lrf-label" for="lrf-name">Nume și prenume <span>*</span></label>
-                <input class="lrf-input" type="text" id="lrf-name" name="contact[Nume si prenume]" placeholder="ex. Maria Ionescu" required>
+                <input class="lrf-input" type="text" id="lrf-name" name="contact[name]" placeholder="ex. Maria Ionescu" required>
               </div>
               <div class="lrf-form-group">
                 <label class="lrf-label" for="lrf-email">Adresă de email <span>*</span></label>
@@ -600,7 +601,7 @@
             </div>
             <div class="lrf-form-group">
               <label class="lrf-label" for="lrf-phone">Număr de telefon</label>
-              <input class="lrf-input" type="tel" id="lrf-phone" name="contact[Telefon]" placeholder="ex. +40 712 345 678">
+              <input class="lrf-input" type="tel" id="lrf-phone" name="contact[phone]" placeholder="ex. +40 712 345 678">
             </div>
           </div>
 
@@ -874,12 +875,75 @@
       }, 5000);
     }
 
+    function buildContactBody() {
+      var bodyInput = document.getElementById('lrf-contact-body');
+      if (!bodyInput) return;
+
+      var name = (document.getElementById('lrf-name') || {}).value || '';
+      var email = (document.getElementById('lrf-email') || {}).value || '';
+      var phone = (document.getElementById('lrf-phone') || {}).value || '';
+      var orderNum = (document.getElementById('lrf-order-num') || {}).value || '';
+      var dateOrder = (document.getElementById('lrf-date-order') || {}).value || '';
+      var dateReceive = (document.getElementById('lrf-date-receive') || {}).value || '';
+      var prodName = (document.getElementById('lrf-prod-name') || {}).value || '';
+      var prodQty = (document.getElementById('lrf-prod-qty') || {}).value || '';
+      var prodMulti = (document.getElementById('lrf-prod-multi') || {}).value || '';
+
+      var reasons = [];
+      document.querySelectorAll('.lrf-checkbox-card-custom:checked').forEach(function(cb) {
+        if (cb.parentNode) {
+          reasons.push(cb.parentNode.innerText.trim());
+        }
+      });
+      var otherReason = (document.getElementById('lrf-other-reason') || {}).value || '';
+
+      var stateVal = '';
+      var checkedState = document.querySelector('input[name="contact[Starea produsului]"]:checked');
+      if (checkedState) stateVal = checkedState.value;
+      var otherState = (document.getElementById('lrf-other-state') || {}).value || '';
+
+      var solVal = '';
+      var checkedSol = document.querySelector('input[name="contact[Solutia solicitata]"]:checked');
+      if (checkedSol) solVal = checkedSol.value;
+      var otherSol = (document.getElementById('lrf-other-sol') || {}).value || '';
+
+      var photoDesc = (document.getElementById('lrf-photo-desc') || {}).value || '';
+
+      var bodyText = "--- FORMULAR DE RETUR / RETRAGERE NOU ---\n\n" +
+        "1. DATE CLIENT:\n" +
+        "• Nume complet: " + name + "\n" +
+        "• Email: " + email + "\n" +
+        "• Telefon: " + phone + "\n\n" +
+        "2. DETALII COMANDĂ:\n" +
+        "• Număr Comandă: " + orderNum + "\n" +
+        "• Data Plasării: " + (dateOrder || "Nespecificat") + "\n" +
+        "• Data Primirii: " + (dateReceive || "Nespecificat") + "\n\n" +
+        "3. PRODUSE RETURNATE:\n" +
+        "• Produs: " + prodName + " (Cantitate: " + prodQty + ")\n" +
+        (prodMulti ? "• Alte Produse: " + prodMulti + "\n" : "") + "\n" +
+        "4. MOTIVUL RETURULUI:\n" +
+        "• Motive: " + (reasons.length > 0 ? reasons.join(", ") : "Nespecificat") + "\n" +
+        (otherReason ? "• Alt Motiv: " + otherReason + "\n" : "") + "\n" +
+        "5. STAREA PRODUSULUI:\n" +
+        "• Stare: " + stateVal + "\n" +
+        (otherState ? "• Altă Situație: " + otherState + "\n" : "") + "\n" +
+        "6. SOLUȚIA SOLICITATĂ:\n" +
+        "• Soluție: " + solVal + "\n" +
+        (otherSol ? "• Altă Soluție: " + otherSol + "\n" : "") + "\n" +
+        "7. DETALII FOTOGRAFII / LOT BATCH:\n" +
+        "• Detalii: " + (photoDesc || "Niciun detaliu suplimentar") + "\n\n" +
+        "8. Acord Retragere: DA (Bifat)";
+
+      bodyInput.value = bodyText;
+    }
+
     if (searchStr.indexOf('contact_posted') > -1 || searchStr.indexOf('posted=true') > -1 || hashStr.indexOf('contact_form') > -1) {
       triggerFiveSecThankYou();
     }
 
     if (contactForm) {
       contactForm.addEventListener('submit', function() {
+        buildContactBody();
         setTimeout(function() {
           triggerFiveSecThankYou();
         }, 350);

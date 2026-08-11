@@ -418,18 +418,21 @@
   .customstyle{{ section.id }} .tech-card-header {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
+    align-items: flex-start;
+    margin-bottom: 10px;
   }
   .customstyle{{ section.id }} .tech-card-title {
-    font-size: 15px;
+    font-size: 18px;
     font-weight: 700;
-    color: #ffffff;
+    color: {{ color_heading }};
     margin: 0;
     font-family: var(--g-font-2), sans-serif;
+    letter-spacing: 0.04em;
+    line-height: 1.35;
+    text-transform: uppercase;
   }
   .customstyle{{ section.id }} .tech-card-number {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 700;
     font-style: italic;
     color: {{ color_heading }};
@@ -437,10 +440,11 @@
     opacity: 0.8;
   }
   .customstyle{{ section.id }} .tech-card-desc {
-    font-size: 13px;
-    line-height: 1.5;
-    color: {{ color_text }};
+    font-size: 15px;
+    line-height: 1.65;
+    color: #e5e5e5;
     margin: 0;
+    font-weight: 400;
   }
 
   @media (max-width: 991px) {

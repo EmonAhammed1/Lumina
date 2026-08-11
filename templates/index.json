@@ -140,8 +140,8 @@
           "settings": {
             "show_icon": false,
             "number": "",
-            "title": "",
-            "description": "TEHNOLOGIE AVANSATĂ CU NANOFIBRE\nPrin electrofilare, ingredientele active sunt integrate într-o matrice uscată de nanofibre care, la contactul cu apa, permite un transfer de până la 92% al ingredientelor active în piele"
+            "title": "TEHNOLOGIE AVANSATĂ CU NANOFIBRE DARIUS",
+            "description": "Prin electrofilare, ingredientele active sunt integrate într-o matrice uscată de nanofibre care, la contactul cu apa, permite un transfer de până la 92% al ingredientelor active în piele"
           }
         }
       },
@@ -154,7 +154,7 @@
         "subtitle": "TEHNOLOGIE AVANSATĂ",
         "heading_1": "Tehnologia cu nanofibre care",
         "heading_2": "transformă îngrijirea pielii",
-        "des": "<p>Inspirată din estetica medicală și dermatologia avansată, tehnologia cu nanofibre asigură absorbția rapidă a ingredientelor active și o eficiență vizibilă în doar 5–8 minute.</p>",
+        "des": "",
         "button_label": "EXPLOREAZĂ TEHNOLOGIA →",
         "button_link": "shopify://collections/all",
         "watch_label": "",

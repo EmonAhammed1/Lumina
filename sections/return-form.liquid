@@ -557,24 +557,29 @@
     <div class="lrf-company-sub">{{ section.settings.company_sub }}</div>
     <p class="lrf-subtitle">{{ section.settings.subtitle }}</p>
 
-    {% if form.posted_successfully? %}
-      <div class="lrf-success-wrap" id="lrf-success-message">
-        <div class="lrf-success-badge">
-          <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-        </div>
-        <div class="lrf-success-eyebrow">MARKEU S.R.L. / LUMINA EUROPA</div>
-        <h2 class="lrf-success-title">Vă mulțumim pentru solicitare!</h2>
-        <p class="lrf-success-text">
-          Formularul dumneavoastră de retur a fost recepționat și înregistrat cu succes.<br>
-          Echipa noastră va analiza detaliile furnizate și vă va transmite instrucțiunile complete de retur pe e-mail în cel mult <strong>24–48 de ore lucrătoare</strong>.
-        </p>
-        <a href="/" class="lrf-success-btn">
-          Înapoi la magazin
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-        </a>
+    <div class="lrf-success-wrap" id="lrf-success-message" style="{% if form.posted_successfully? %}display:block;{% else %}display:none;{% endif %}">
+      <div class="lrf-success-badge">
+        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
       </div>
-    {% else %}
-      {% form 'contact', enctype: 'multipart/form-data' %}
+      <div class="lrf-success-eyebrow">MARKEU S.R.L. / LUMINA EUROPA</div>
+      <h2 class="lrf-success-title">Vă mulțumim pentru solicitare!</h2>
+      <p class="lrf-success-text">
+        Formularul dumneavoastră de retur a fost recepționat și înregistrat cu succes.<br>
+        Echipa noastră va analiza detaliile furnizate și vă va transmite instrucțiunile complete de retur pe e-mail în cel mult <strong>24–48 de ore lucrătoare</strong>.
+      </p>
+      <a href="/" class="lrf-success-btn">
+        Înapoi la magazin
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div id="lrf-form-container" style="{% if form.posted_successfully? %}display:none;{% else %}display:block;{% endif %}">
+      {% form 'contact', id: 'lrf-contact-form' %}
+        {% if form.errors %}
+          <div style="padding:16px; border:1px solid #e07070; background:rgba(224,112,112,0.1); color:#ff8080; margin-bottom:24px; font-size:13px; border-radius:2px;">
+            {{ form.errors | default_errors }}
+          </div>
+        {% endif %}
         <div class="lrf-form-wrap">
 
           <!-- 1. Datele clientului -->
@@ -795,7 +800,7 @@
 
         </div>
       {% endform %}
-    {% endif %}
+    </div>
 
     <!-- Legal & Return Address Footer Card -->
     <div class="lrf-company-card">
@@ -839,6 +844,34 @@
   }
 
   document.addEventListener('DOMContentLoaded', function() {
+    var successMsg = document.getElementById('lrf-success-message');
+    var formContainer = document.getElementById('lrf-form-container');
+    var searchStr = window.location.search.toLowerCase();
+    var hashStr = window.location.hash.toLowerCase();
+
+    if (searchStr.indexOf('contact_posted') > -1 || searchStr.indexOf('posted=true') > -1 || hashStr.indexOf('contact_form') > -1) {
+      if (successMsg && formContainer) {
+        successMsg.style.display = 'block';
+        formContainer.style.display = 'none';
+        setTimeout(function() {
+          successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 200);
+      }
+    }
+
+    var contactForm = document.getElementById('lrf-contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function() {
+        if (successMsg && formContainer) {
+          setTimeout(function() {
+            successMsg.style.display = 'block';
+            formContainer.style.display = 'none';
+            successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }, 400);
+        }
+      });
+    }
+
     document.querySelectorAll('.lrf-wrap input[type="date"]').forEach(function(input) {
       input.addEventListener('click', function(e) {
         if (typeof this.showPicker === 'function') {

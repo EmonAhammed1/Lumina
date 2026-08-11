@@ -229,6 +229,34 @@
     background: var(--gh-golden);
     border-radius: 50%;
   }
+  .lrf-checkbox-card-custom {
+    width: 16px;
+    height: 16px;
+    min-width: 16px;
+    border: 1px solid rgba(183,148,72,0.5);
+    border-radius: 2px;
+    margin-top: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    cursor: pointer;
+    position: relative;
+  }
+  .lrf-checkbox-card-custom:checked {
+    border-color: var(--gh-golden);
+    background: rgba(183,148,72,0.15);
+  }
+  .lrf-checkbox-card-custom:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 5px;
+    height: 8px;
+    border: 2px solid var(--gh-golden);
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+  }
   .lrf-option-text {
     font-size: 13px;
     color: rgba(229,229,229,0.85);
@@ -551,27 +579,27 @@
 
             <div class="lrf-options-grid">
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Motivul returului]" value="M-am răzgândit">
+                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: M-am razgandit]" value="Da">
                 <span class="lrf-option-text">M-am răzgândit</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Motivul returului]" value="Am comandat produsul greșit">
+                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Am comandat produs gresit]" value="Da">
                 <span class="lrf-option-text">Am comandat produsul greșit</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Motivul returului]" value="Produsul primit nu este cel comandat">
+                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Produs primit incorect]" value="Da">
                 <span class="lrf-option-text">Produsul primit nu este cel comandat</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Motivul returului]" value="Produsul a ajuns deteriorat">
+                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Produs deteriorat]" value="Da">
                 <span class="lrf-option-text">Produsul a ajuns deteriorat</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Motivul returului]" value="Produsul pare defect / neconform">
+                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Produs defect neconform]" value="Da">
                 <span class="lrf-option-text">Produsul pare defect / neconform</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Motivul returului]" value="Ambalajul a fost deteriorat">
+                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Ambalaj deteriorat]" value="Da">
                 <span class="lrf-option-text">Ambalajul a fost deteriorat</span>
               </label>
             </div>

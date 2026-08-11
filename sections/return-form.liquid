@@ -614,15 +614,15 @@
             <div class="lrf-form-row three">
               <div class="lrf-form-group">
                 <label class="lrf-label" for="lrf-order-num">Număr comandă <span>*</span></label>
-                <input class="lrf-input" type="text" id="lrf-order-num" name="contact[Numar comanda]" placeholder="ex. #1234" required>
+                <input class="lrf-input" type="text" id="lrf-order-num" placeholder="ex. #1234" required>
               </div>
               <div class="lrf-form-group">
                 <label class="lrf-label" for="lrf-date-order">Data plasării comenzii</label>
-                <input class="lrf-input" type="date" id="lrf-date-order" name="contact[Data plasarii comenzii]" onclick="if(typeof this.showPicker === 'function'){ try{this.showPicker();}catch(e){} }">
+                <input class="lrf-input" type="date" id="lrf-date-order" onclick="if(typeof this.showPicker === 'function'){ try{this.showPicker();}catch(e){} }">
               </div>
               <div class="lrf-form-group">
                 <label class="lrf-label" for="lrf-date-receive">Data primirii comenzii</label>
-                <input class="lrf-input" type="date" id="lrf-date-receive" name="contact[Data primirii comenzii]" onclick="if(typeof this.showPicker === 'function'){ try{this.showPicker();}catch(e){} }">
+                <input class="lrf-input" type="date" id="lrf-date-receive" onclick="if(typeof this.showPicker === 'function'){ try{this.showPicker();}catch(e){} }">
               </div>
             </div>
           </div>
@@ -636,16 +636,16 @@
             <div class="lrf-form-row">
               <div class="lrf-form-group">
                 <label class="lrf-label" for="lrf-prod-name">Denumirea produsului <span>*</span></label>
-                <input class="lrf-input" type="text" id="lrf-prod-name" name="contact[Denumirea produsului]" placeholder="ex. Mască Nanofibre Hydrate" required>
+                <input class="lrf-input" type="text" id="lrf-prod-name" placeholder="ex. Mască Nanofibre Hydrate" required>
               </div>
               <div class="lrf-form-group">
                 <label class="lrf-label" for="lrf-prod-qty">Cantitate <span>*</span></label>
-                <input class="lrf-input" type="number" id="lrf-prod-qty" min="1" value="1" name="contact[Cantitate]" required>
+                <input class="lrf-input" type="number" id="lrf-prod-qty" min="1" value="1" required>
               </div>
             </div>
             <div class="lrf-form-group">
               <label class="lrf-label" for="lrf-prod-multi">Dacă returnați mai multe produse</label>
-              <textarea class="lrf-textarea" id="lrf-prod-multi" name="contact[Produse suplimentare]" placeholder="Enumerați alte produse pe care doriți să le returnați (Denumire + Cantitate)..."></textarea>
+              <textarea class="lrf-textarea" id="lrf-prod-multi" placeholder="Enumerați alte produse pe care doriți să le returnați (Denumire + Cantitate)..."></textarea>
             </div>
           </div>
 
@@ -659,34 +659,34 @@
 
             <div class="lrf-options-grid">
               <label class="lrf-option-card">
-                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: M-am razgandit]" value="Da">
+                <input class="lrf-checkbox-card-custom" type="checkbox" value="M-am răzgândit">
                 <span class="lrf-option-text">M-am răzgândit</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Am comandat produs gresit]" value="Da">
+                <input class="lrf-checkbox-card-custom" type="checkbox" value="Am comandat produsul greșit">
                 <span class="lrf-option-text">Am comandat produsul greșit</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Produs primit incorect]" value="Da">
+                <input class="lrf-checkbox-card-custom" type="checkbox" value="Produsul primit nu este cel comandat">
                 <span class="lrf-option-text">Produsul primit nu este cel comandat</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Produs deteriorat]" value="Da">
+                <input class="lrf-checkbox-card-custom" type="checkbox" value="Produsul a ajuns deteriorat">
                 <span class="lrf-option-text">Produsul a ajuns deteriorat</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Produs defect neconform]" value="Da">
+                <input class="lrf-checkbox-card-custom" type="checkbox" value="Produsul pare defect / neconform">
                 <span class="lrf-option-text">Produsul pare defect / neconform</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-checkbox-card-custom" type="checkbox" name="contact[Motiv: Ambalaj deteriorat]" value="Da">
+                <input class="lrf-checkbox-card-custom" type="checkbox" value="Ambalajul a fost deteriorat">
                 <span class="lrf-option-text">Ambalajul a fost deteriorat</span>
               </label>
             </div>
 
             <div class="lrf-form-group">
               <label class="lrf-label" for="lrf-other-reason">Alt motiv / Mențiuni privind motivul</label>
-              <input class="lrf-input" type="text" id="lrf-other-reason" name="contact[Alt motiv retur]" placeholder="Precizați dacă este cazul...">
+              <input class="lrf-input" type="text" id="lrf-other-reason" placeholder="Precizați dacă este cazul...">
             </div>
           </div>
 
@@ -700,26 +700,26 @@
 
             <div class="lrf-options-grid">
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Starea produsului]" value="Produsul este sigilat / nedesigilat" required>
+                <input class="lrf-radio-custom" type="radio" name="starea_produsului" value="Produsul este sigilat / nedesigilat" required>
                 <span class="lrf-option-text">Produsul este sigilat / nedesigilat</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Starea produsului]" value="Ambalajul exterior deschis, sigiliu igienic intact">
+                <input class="lrf-radio-custom" type="radio" name="starea_produsului" value="Ambalajul exterior deschis, sigiliu igienic intact">
                 <span class="lrf-option-text">Ambalajul exterior deschis, dar sigiliul igienic este intact</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Starea produsului]" value="Sigiliul igienic a fost deschis">
+                <input class="lrf-radio-custom" type="radio" name="starea_produsului" value="Sigiliul igienic a fost deschis">
                 <span class="lrf-option-text">Sigiliul igienic a fost deschis</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Starea produsului]" value="Produsul este deteriorat / neconform">
+                <input class="lrf-radio-custom" type="radio" name="starea_produsului" value="Produsul este deteriorat / neconform">
                 <span class="lrf-option-text">Produsul este deteriorat / neconform</span>
               </label>
             </div>
 
             <div class="lrf-form-group">
               <label class="lrf-label" for="lrf-other-state">Altă situație privind starea produsului</label>
-              <input class="lrf-input" type="text" id="lrf-other-state" name="contact[Alta situatie starea produsului]" placeholder="Precizați dacă este cazul...">
+              <input class="lrf-input" type="text" id="lrf-other-state" placeholder="Precizați dacă este cazul...">
             </div>
 
             <div class="lrf-callout-box">
@@ -739,18 +739,18 @@
 
             <div class="lrf-options-grid">
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Solutia solicitata]" value="Rambursare" required>
+                <input class="lrf-radio-custom" type="radio" name="solutia_solicitata" value="Rambursare" required>
                 <span class="lrf-option-text">Rambursare</span>
               </label>
               <label class="lrf-option-card">
-                <input class="lrf-radio-custom" type="radio" name="contact[Solutia solicitata]" value="Înlocuire (dacă este aplicabilă și disponibilă)">
+                <input class="lrf-radio-custom" type="radio" name="solutia_solicitata" value="Înlocuire (dacă este aplicabilă și disponibilă)">
                 <span class="lrf-option-text">Înlocuire (dacă este aplicabilă și disponibilă)</span>
               </label>
             </div>
 
             <div class="lrf-form-group">
               <label class="lrf-label" for="lrf-other-sol">Altă soluție solicitată</label>
-              <input class="lrf-input" type="text" id="lrf-other-sol" name="contact[Alta solutie solicitata]" placeholder="Precizați dacă este cazul...">
+              <input class="lrf-input" type="text" id="lrf-other-sol" placeholder="Precizați dacă este cazul...">
             </div>
             <p class="lrf-sec-hint" style="margin-bottom: 0;">Pentru un retur standard în baza dreptului de retragere, rambursarea se efectuează conform legislației aplicabile și Politicii de Livrare și Retur.</p>
           </div>
@@ -769,13 +769,13 @@
               <svg class="lrf-file-icon" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
               <div class="lrf-file-label">Atașează fotografii sau documente</div>
               <div class="lrf-file-sub">Apasă aici sau trage pozele (JPG, PNG, WEBP, PDF)</div>
-              <input class="lrf-file-input-hidden" type="file" id="lrf-photos" name="contact[Fotografii atasae]" accept="image/*,.pdf" multiple onchange="lrfUpdateFileList(this)">
+              <input class="lrf-file-input-hidden" type="file" id="lrf-photos" accept="image/*,.pdf" multiple onchange="lrfUpdateFileList(this)">
             </div>
             <div class="lrf-file-list" id="lrf-file-display"></div>
 
             <div class="lrf-form-group" style="margin-top: 16px;">
               <label class="lrf-label" for="lrf-photo-desc">Descriere fotografii / detalii lot batch</label>
-              <textarea class="lrf-textarea" id="lrf-photo-desc" name="contact[Detalii fotografii si lot]" placeholder="Introduceți numărul de lot / detalii poze atașate..."></textarea>
+              <textarea class="lrf-textarea" id="lrf-photo-desc" placeholder="Introduceți numărul de lot / detalii poze atașate..."></textarea>
             </div>
           </div>
 
@@ -787,7 +787,7 @@
             </div>
 
             <label class="lrf-checkbox-wrap">
-              <input class="lrf-checkbox-input" type="checkbox" name="contact[Declaratie retragere]" value="Da, declar ca doresc sa ma retrag din contract" required>
+              <input class="lrf-checkbox-input" type="checkbox" id="lrf-agreement" required>
               <span class="lrf-checkbox-label">
                 Prin transmiterea acestui formular, vă informez cu privire la decizia mea de a mă retrage din contractul de vânzare pentru produsul/produsele indicate mai sus, atunci când dreptul legal de retragere este aplicabil. <span style="color:rgba(183,148,72,0.6)">*</span>
               </span>
@@ -829,13 +829,35 @@
 </div>
 
 <script>
+  var lrfImageFilesData = [];
+
   function lrfUpdateFileList(input) {
     var display = document.getElementById('lrf-file-display');
     if (!display) return;
+    lrfImageFilesData = [];
     if (input.files && input.files.length > 0) {
       var listHtml = '<div style="color:var(--gh-golden); margin-top:10px; font-weight:600;">Fișiere selectate (' + input.files.length + '):</div><ul style="margin:6px 0 0 16px; padding:0; list-style:none;">';
       for (var i = 0; i < input.files.length; i++) {
-        listHtml += '<li style="margin-bottom:4px;">📷 ' + input.files[i].name + ' <span style="opacity:0.6; font-size:11px;">(' + Math.round(input.files[i].size/1024) + ' KB)</span></li>';
+        var file = input.files[i];
+        listHtml += '<li style="margin-bottom:4px;">📷 ' + file.name + ' <span style="opacity:0.6; font-size:11px;">(' + Math.round(file.size/1024) + ' KB)</span></li>';
+        
+        (function(f) {
+          var reader = new FileReader();
+          reader.onload = function(e) {
+            lrfImageFilesData.push({
+              name: f.name,
+              dataUrl: e.target.result
+            });
+          };
+          if (f.type.indexOf('image/') === 0 && f.size < 4 * 1024 * 1024) {
+            reader.readAsDataURL(f);
+          } else {
+            lrfImageFilesData.push({
+              name: f.name,
+              dataUrl: '(Fișier: ' + f.name + ' - ' + Math.round(f.size/1024) + ' KB)'
+            });
+          }
+        })(file);
       }
       listHtml += '</ul>';
       display.innerHTML = listHtml;
@@ -859,13 +881,13 @@
         successMsg.scrollIntoView({ behavior: 'smooth', block: 'center' });
       }, 150);
 
-      // Auto hide thank you message and show form again after 5 seconds (5000 ms)
       setTimeout(function() {
         successMsg.style.display = 'none';
         formContainer.style.display = 'block';
         if (contactForm) {
           contactForm.reset();
         }
+        lrfImageFilesData = [];
         var fileDisp = document.getElementById('lrf-file-display');
         if (fileDisp) fileDisp.innerHTML = '';
         if (window.history && window.history.replaceState) {
@@ -898,41 +920,57 @@
       var otherReason = (document.getElementById('lrf-other-reason') || {}).value || '';
 
       var stateVal = '';
-      var checkedState = document.querySelector('input[name="contact[Starea produsului]"]:checked');
+      var checkedState = document.querySelector('input[name="starea_produsului"]:checked');
       if (checkedState) stateVal = checkedState.value;
       var otherState = (document.getElementById('lrf-other-state') || {}).value || '';
 
       var solVal = '';
-      var checkedSol = document.querySelector('input[name="contact[Solutia solicitata]"]:checked');
+      var checkedSol = document.querySelector('input[name="solutia_solicitata"]:checked');
       if (checkedSol) solVal = checkedSol.value;
       var otherSol = (document.getElementById('lrf-other-sol') || {}).value || '';
 
       var photoDesc = (document.getElementById('lrf-photo-desc') || {}).value || '';
 
-      var bodyText = "--- FORMULAR DE RETUR / RETRAGERE NOU ---\n\n" +
+      var photosText = "";
+      if (lrfImageFilesData && lrfImageFilesData.length > 0) {
+        photosText = "\n• FOTOGRAFII ATAȘATE (" + lrfImageFilesData.length + " fișiere):\n";
+        for (var k = 0; k < lrfImageFilesData.length; k++) {
+          photosText += "  - [" + lrfImageFilesData[k].name + "]:\n    " + lrfImageFilesData[k].dataUrl + "\n\n";
+        }
+      } else {
+        photosText = "\n• FOTOGRAFII ATAȘATE: Nicio fotografie atașată";
+      }
+
+      var bodyText = "==================================================\n" +
+        "          FORMULAR NOU DE RETUR / RETRAGERE        \n" +
+        "                 Lumina Europa – MARKEU S.R.L.     \n" +
+        "==================================================\n\n" +
         "1. DATE CLIENT:\n" +
-        "• Nume complet: " + name + "\n" +
-        "• Email: " + email + "\n" +
-        "• Telefon: " + phone + "\n\n" +
+        "  • Nume complet: " + name + "\n" +
+        "  • Email: " + email + "\n" +
+        "  • Telefon: " + (phone || "Nespecificat") + "\n\n" +
         "2. DETALII COMANDĂ:\n" +
-        "• Număr Comandă: " + orderNum + "\n" +
-        "• Data Plasării: " + (dateOrder || "Nespecificat") + "\n" +
-        "• Data Primirii: " + (dateReceive || "Nespecificat") + "\n\n" +
+        "  • Număr Comandă: " + orderNum + "\n" +
+        "  • Data Plasării: " + (dateOrder || "Nespecificat") + "\n" +
+        "  • Data Primirii: " + (dateReceive || "Nespecificat") + "\n\n" +
         "3. PRODUSE RETURNATE:\n" +
-        "• Produs: " + prodName + " (Cantitate: " + prodQty + ")\n" +
-        (prodMulti ? "• Alte Produse: " + prodMulti + "\n" : "") + "\n" +
+        "  • Denumire Produs: " + prodName + "\n" +
+        "  • Cantitate: " + prodQty + "\n" +
+        (prodMulti ? "  • Alte Produse: " + prodMulti + "\n" : "") + "\n" +
         "4. MOTIVUL RETURULUI:\n" +
-        "• Motive: " + (reasons.length > 0 ? reasons.join(", ") : "Nespecificat") + "\n" +
-        (otherReason ? "• Alt Motiv: " + otherReason + "\n" : "") + "\n" +
+        "  • Motive Selectate: " + (reasons.length > 0 ? reasons.join(", ") : "Nespecificat") + "\n" +
+        (otherReason ? "  • Alt Motiv: " + otherReason + "\n" : "") + "\n" +
         "5. STAREA PRODUSULUI:\n" +
-        "• Stare: " + stateVal + "\n" +
-        (otherState ? "• Altă Situație: " + otherState + "\n" : "") + "\n" +
+        "  • Stare Produs: " + (stateVal || "Nespecificat") + "\n" +
+        (otherState ? "  • Altă Situație: " + otherState + "\n" : "") + "\n" +
         "6. SOLUȚIA SOLICITATĂ:\n" +
-        "• Soluție: " + solVal + "\n" +
-        (otherSol ? "• Altă Soluție: " + otherSol + "\n" : "") + "\n" +
-        "7. DETALII FOTOGRAFII / LOT BATCH:\n" +
-        "• Detalii: " + (photoDesc || "Niciun detaliu suplimentar") + "\n\n" +
-        "8. Acord Retragere: DA (Bifat)";
+        "  • Soluție Solicitată: " + (solVal || "Nespecificat") + "\n" +
+        (otherSol ? "  • Altă Soluție: " + otherSol + "\n" : "") + "\n" +
+        "7. FOTOGRAFII & DETALII BATCH:\n" +
+        "  • Descriere / Lot Batch: " + (photoDesc || "Nespecificat") + photosText + "\n\n" +
+        "8. DECLARAȚIE RETRAGERE:\n" +
+        "  • Statut: Declarat și acceptat (Bifat)\n\n" +
+        "==================================================";
 
       bodyInput.value = bodyText;
     }

@@ -163,6 +163,16 @@
     color: rgba(229,229,229,0.3);
     font-size: 13px;
   }
+  .lrf-input[type="date"] {
+    cursor: pointer;
+    color-scheme: dark;
+  }
+  .lrf-input[type="date"]::-webkit-calendar-picker-indicator {
+    cursor: pointer;
+    filter: invert(0.8) sepia(1) saturate(5) hue-rotate(5deg);
+    width: 20px;
+    height: 20px;
+  }
   .lrf-select {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23b79448' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
@@ -451,11 +461,11 @@
               </div>
               <div class="lrf-form-group">
                 <label class="lrf-label" for="lrf-date-order">Data plasării comenzii</label>
-                <input class="lrf-input" type="date" id="lrf-date-order" name="contact[Data plasarii comenzii]">
+                <input class="lrf-input" type="date" id="lrf-date-order" name="contact[Data plasarii comenzii]" onclick="if(typeof this.showPicker === 'function'){ try{this.showPicker();}catch(e){} }">
               </div>
               <div class="lrf-form-group">
                 <label class="lrf-label" for="lrf-date-receive">Data primirii comenzii</label>
-                <input class="lrf-input" type="date" id="lrf-date-receive" name="contact[Data primirii comenzii]">
+                <input class="lrf-input" type="date" id="lrf-date-receive" name="contact[Data primirii comenzii]" onclick="if(typeof this.showPicker === 'function'){ try{this.showPicker();}catch(e){} }">
               </div>
             </div>
           </div>
@@ -651,6 +661,23 @@
 
   </div>
 </div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('.lrf-wrap input[type="date"]').forEach(function(input) {
+      input.addEventListener('click', function(e) {
+        if (typeof this.showPicker === 'function') {
+          try { this.showPicker(); } catch(err) {}
+        }
+      });
+      input.addEventListener('focus', function(e) {
+        if (typeof this.showPicker === 'function') {
+          try { this.showPicker(); } catch(err) {}
+        }
+      });
+    });
+  });
+</script>
 
 {% schema %}
 {

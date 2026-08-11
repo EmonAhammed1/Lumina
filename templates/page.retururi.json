@@ -1,4 +1,4 @@
-﻿/*
+/*
  * ------------------------------------------------------------
  * IMPORTANT: The contents of this file are auto-generated.
  *
@@ -6,10 +6,14 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */
-{
+ */{
   "sections": {
-    "return-form": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "return_form": {
       "type": "return-form",
       "settings": {
         "eyebrow": "RETUR PRODUS",
@@ -19,6 +23,7 @@
     }
   },
   "order": [
-    "return-form"
+    "main",
+    "return_form"
   ]
 }

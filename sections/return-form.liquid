@@ -884,9 +884,33 @@
       }, 5000);
     }
 
-    function buildContactBody() {
+    async function lrfUploadFilesAndBuildBody() {
       var bodyInput = document.getElementById('lrf-contact-body');
       if (!bodyInput) return;
+
+      var uploadedLinks = [];
+      var photoInput = document.getElementById('lrf-photos');
+      if (photoInput && photoInput.files && photoInput.files.length > 0) {
+        for (var i = 0; i < photoInput.files.length; i++) {
+          var file = photoInput.files[i];
+          try {
+            var formData = new FormData();
+            formData.append('file', file);
+            var res = await fetch('https://tmpfiles.org/api/v1/upload', {
+              method: 'POST',
+              body: formData
+            });
+            var json = await res.json();
+            if (json && json.data && json.data.url) {
+              // Convert page URL to direct image view URL (tmpfiles.org/123 -> tmpfiles.org/dl/123)
+              var directUrl = json.data.url.replace('tmpfiles.org/', 'tmpfiles.org/dl/');
+              uploadedLinks.push({ name: file.name, url: directUrl });
+            }
+          } catch(err) {
+            console.error('File upload error:', err);
+          }
+        }
+      }
 
       var name = (document.getElementById('lrf-name') || {}).value || '';
       var email = (document.getElementById('lrf-email') || {}).value || '';
@@ -919,7 +943,12 @@
       var photoDesc = (document.getElementById('lrf-photo-desc') || {}).value || '';
 
       var photosText = "";
-      if (lrfImageFilesData && lrfImageFilesData.length > 0) {
+      if (uploadedLinks.length > 0) {
+        photosText = "\n• FOTOGRAFII ATAȘATE (" + uploadedLinks.length + " poze încărcate):\n";
+        for (var k = 0; k < uploadedLinks.length; k++) {
+          photosText += "  - " + uploadedLinks[k].name + ":\n    " + uploadedLinks[k].url + "\n";
+        }
+      } else if (lrfImageFilesData && lrfImageFilesData.length > 0) {
         photosText = "\n• FOTOGRAFII ATAȘATE (" + lrfImageFilesData.length + " fișiere):\n";
         for (var k = 0; k < lrfImageFilesData.length; k++) {
           photosText += "  - " + lrfImageFilesData[k].name + " (" + lrfImageFilesData[k].sizeStr + ")\n";
@@ -967,8 +996,23 @@
     }
 
     if (contactForm) {
-      contactForm.addEventListener('submit', function() {
-        buildContactBody();
+      contactForm.addEventListener('submit', function(e) {
+        var photoInput = document.getElementById('lrf-photos');
+        if (photoInput && photoInput.files && photoInput.files.length > 0 && !contactForm.dataset.uploaded) {
+          e.preventDefault();
+          var btn = contactForm.querySelector('.lrf-submit-btn');
+          if (btn) {
+            btn.disabled = true;
+            btn.innerHTML = 'Se încarcă fotografiile... ⏳';
+          }
+          lrfUploadFilesAndBuildBody().then(function() {
+            contactForm.dataset.uploaded = 'true';
+            contactForm.submit();
+            triggerFiveSecThankYou();
+          });
+          return false;
+        }
+        lrfUploadFilesAndBuildBody();
         setTimeout(function() {
           triggerFiveSecThankYou();
         }, 350);

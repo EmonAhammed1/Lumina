@@ -839,25 +839,12 @@
       var listHtml = '<div style="color:var(--gh-golden); margin-top:10px; font-weight:600;">Fișiere selectate (' + input.files.length + '):</div><ul style="margin:6px 0 0 16px; padding:0; list-style:none;">';
       for (var i = 0; i < input.files.length; i++) {
         var file = input.files[i];
-        listHtml += '<li style="margin-bottom:4px;">📷 ' + file.name + ' <span style="opacity:0.6; font-size:11px;">(' + Math.round(file.size/1024) + ' KB)</span></li>';
-        
-        (function(f) {
-          var reader = new FileReader();
-          reader.onload = function(e) {
-            lrfImageFilesData.push({
-              name: f.name,
-              dataUrl: e.target.result
-            });
-          };
-          if (f.type.indexOf('image/') === 0 && f.size < 4 * 1024 * 1024) {
-            reader.readAsDataURL(f);
-          } else {
-            lrfImageFilesData.push({
-              name: f.name,
-              dataUrl: '(Fișier: ' + f.name + ' - ' + Math.round(f.size/1024) + ' KB)'
-            });
-          }
-        })(file);
+        var sz = Math.round(file.size/1024) + ' KB';
+        listHtml += '<li style="margin-bottom:4px;">📷 ' + file.name + ' <span style="opacity:0.6; font-size:11px;">(' + sz + ')</span></li>';
+        lrfImageFilesData.push({
+          name: file.name,
+          sizeStr: sz
+        });
       }
       listHtml += '</ul>';
       display.innerHTML = listHtml;
@@ -935,7 +922,7 @@
       if (lrfImageFilesData && lrfImageFilesData.length > 0) {
         photosText = "\n• FOTOGRAFII ATAȘATE (" + lrfImageFilesData.length + " fișiere):\n";
         for (var k = 0; k < lrfImageFilesData.length; k++) {
-          photosText += "  - [" + lrfImageFilesData[k].name + "]:\n    " + lrfImageFilesData[k].dataUrl + "\n\n";
+          photosText += "  - " + lrfImageFilesData[k].name + " (" + lrfImageFilesData[k].sizeStr + ")\n";
         }
       } else {
         photosText = "\n• FOTOGRAFII ATAȘATE: Nicio fotografie atașată";

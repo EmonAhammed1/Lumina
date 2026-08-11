@@ -143,15 +143,7 @@
     transform: scale(1.05);
     opacity: 1;
   }
-  .tm-syn-number {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    font-size: 24px;
-    color: var(--gh-golden);
-    font-family: serif;
-    font-weight: 300;
-  }
+
   .tm-syn-card-title {
     font-size: 13px;
     letter-spacing: 0.1em;
@@ -194,7 +186,7 @@
               {% else %}
                 {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
               {% endif %}
-              <div class="tm-syn-number">{{ block.settings.number }}</div>
+
             </div>
             <div class="tm-syn-card-title">{{ block.settings.title }}</div>
             <div class="tm-syn-card-desc">{{ block.settings.text }}</div>

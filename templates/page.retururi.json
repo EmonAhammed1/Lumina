@@ -1,0 +1,13 @@
+﻿{
+  "sections": {
+    "return-form": {
+      "type": "return-form",
+      "settings": {
+        "eyebrow": "RETUR PRODUS",
+        "title": "Solicita un retur.",
+        "subtitle": "Satisfactia ta este prioritatea noastra. Daca nu esti multumit de produs, completeaza formularul de mai jos si echipa noastra va gestiona returul tau in cel mai scurt timp posibil."
+      }
+    }
+  },
+  "order": ["return-form"]
+}

@@ -1,0 +1,383 @@
+﻿{% render 'golden-hour-vars' %}
+<style>
+  .lrf-wrap {
+    background-color: #000;
+    min-height: 100vh;
+    padding: 80px 24px 100px;
+    position: relative;
+    overflow: hidden;
+  }
+  .lrf-wrap::before {
+    content: '';
+    position: absolute;
+    top: -200px;
+    right: -200px;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(183,148,72,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .lrf-container {
+    max-width: 780px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+  }
+  .lrf-eyebrow {
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    color: var(--gh-golden);
+    text-transform: uppercase;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .lrf-eyebrow::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--gh-border-gold);
+    max-width: 60px;
+  }
+  .lrf-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    color: var(--gh-golden);
+    font-family: serif;
+    font-weight: 300;
+    line-height: 1.15;
+    margin-bottom: 16px;
+  }
+  .lrf-subtitle {
+    font-size: 14px;
+    color: rgba(229,229,229,0.7);
+    line-height: 1.7;
+    margin-bottom: 50px;
+    max-width: 560px;
+  }
+  .lrf-policy-strip {
+    display: flex;
+    gap: 0;
+    margin-bottom: 50px;
+    border: 1px solid var(--gh-border-gold);
+    background: rgba(183,148,72,0.04);
+  }
+  .lrf-policy-item {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    padding: 24px 16px;
+    border-right: 1px solid var(--gh-border-gold);
+  }
+  .lrf-policy-item:last-child { border-right: none; }
+  .lrf-policy-item svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--gh-golden);
+    fill: none;
+    stroke-width: 1.5;
+  }
+  .lrf-policy-label {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    color: var(--gh-golden);
+    text-transform: uppercase;
+  }
+  .lrf-policy-value {
+    font-size: 12px;
+    color: rgba(229,229,229,0.65);
+    line-height: 1.5;
+  }
+  .lrf-form-wrap {
+    border: 1px solid var(--gh-border-gold);
+    padding: 48px;
+    background: rgba(255,255,255,0.02);
+  }
+  .lrf-form-title {
+    font-size: 13px;
+    letter-spacing: 0.15em;
+    color: var(--gh-golden);
+    text-transform: uppercase;
+    margin-bottom: 36px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--gh-border-gold);
+  }
+  .lrf-form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 20px;
+  }
+  .lrf-form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+  }
+  .lrf-label {
+    font-size: 10px;
+    letter-spacing: 0.15em;
+    color: var(--gh-golden);
+    text-transform: uppercase;
+  }
+  .lrf-label span { color: rgba(183,148,72,0.5); margin-left: 2px; }
+  .lrf-input, .lrf-select, .lrf-textarea {
+    background: transparent;
+    border: 1px solid rgba(183,148,72,0.3);
+    color: #e5e5e5;
+    font-size: 14px;
+    font-family: inherit;
+    padding: 14px 16px;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 0;
+  }
+  .lrf-input:focus, .lrf-select:focus, .lrf-textarea:focus {
+    border-color: var(--gh-golden);
+    background: rgba(183,148,72,0.04);
+  }
+  .lrf-input::placeholder, .lrf-textarea::placeholder {
+    color: rgba(229,229,229,0.3);
+    font-size: 13px;
+  }
+  .lrf-select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23b79448' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 44px;
+    cursor: pointer;
+  }
+  .lrf-select option { background: #111; color: #e5e5e5; }
+  .lrf-textarea { resize: vertical; min-height: 130px; line-height: 1.6; }
+  .lrf-checkbox-wrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 36px;
+    cursor: pointer;
+  }
+  .lrf-checkbox-input {
+    width: 18px;
+    height: 18px;
+    min-width: 18px;
+    border: 1px solid rgba(183,148,72,0.4);
+    background: transparent;
+    cursor: pointer;
+    margin-top: 2px;
+    appearance: none;
+    -webkit-appearance: none;
+    position: relative;
+    transition: border-color 0.3s;
+  }
+  .lrf-checkbox-input:checked {
+    border-color: var(--gh-golden);
+    background: rgba(183,148,72,0.15);
+  }
+  .lrf-checkbox-input:checked::after {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 1px;
+    width: 6px;
+    height: 10px;
+    border: 2px solid var(--gh-golden);
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+  }
+  .lrf-checkbox-label {
+    font-size: 12px;
+    color: rgba(229,229,229,0.6);
+    line-height: 1.6;
+  }
+  .lrf-checkbox-label a { color: var(--gh-golden); text-decoration: underline; }
+  .lrf-submit-btn {
+    width: 100%;
+    background: transparent;
+    border: 1px solid var(--gh-golden);
+    color: var(--gh-golden);
+    font-size: 11px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    padding: 18px 32px;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+  .lrf-submit-btn:hover {
+    background: rgba(183,148,72,0.1);
+    letter-spacing: 0.25em;
+  }
+  .lrf-submit-btn svg {
+    width: 16px;
+    height: 16px;
+    stroke: var(--gh-golden);
+    fill: none;
+    stroke-width: 1.5;
+    transition: transform 0.3s;
+  }
+  .lrf-submit-btn:hover svg { transform: translateX(4px); }
+  .lrf-success {
+    text-align: center;
+    padding: 60px 40px;
+    border: 1px solid var(--gh-border-gold);
+    background: rgba(183,148,72,0.04);
+  }
+  .lrf-success svg {
+    width: 48px;
+    height: 48px;
+    stroke: var(--gh-golden);
+    fill: none;
+    stroke-width: 1.5;
+    margin-bottom: 24px;
+  }
+  .lrf-success-title {
+    font-size: 22px;
+    color: var(--gh-golden);
+    font-family: serif;
+    font-weight: 300;
+    margin-bottom: 14px;
+  }
+  .lrf-success-text {
+    font-size: 13px;
+    color: rgba(229,229,229,0.65);
+    line-height: 1.8;
+  }
+  @media (max-width: 768px) {
+    .lrf-form-wrap { padding: 28px 20px; }
+    .lrf-form-row { grid-template-columns: 1fr; }
+    .lrf-policy-strip { flex-direction: column; }
+    .lrf-policy-item { border-right: none; border-bottom: 1px solid var(--gh-border-gold); flex-direction: row; text-align: left; gap: 16px; }
+    .lrf-policy-item:last-child { border-bottom: none; }
+  }
+</style>
+
+<div class="lrf-wrap">
+  <div class="lrf-container">
+
+    <div class="lrf-eyebrow">{{ section.settings.eyebrow }}</div>
+    <h1 class="lrf-title">{{ section.settings.title }}</h1>
+    <p class="lrf-subtitle">{{ section.settings.subtitle }}</p>
+
+    <div class="lrf-policy-strip">
+      <div class="lrf-policy-item">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <div>
+          <div class="lrf-policy-label">Perioadă de Retur</div>
+          <div class="lrf-policy-value">30 de zile de la livrare</div>
+        </div>
+      </div>
+      <div class="lrf-policy-item">
+        <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        <div>
+          <div class="lrf-policy-label">Condiție Produs</div>
+          <div class="lrf-policy-value">Neutilizat & sigilat original</div>
+        </div>
+      </div>
+      <div class="lrf-policy-item">
+        <svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+        <div>
+          <div class="lrf-policy-label">Rambursare</div>
+          <div class="lrf-policy-value">În 5–10 zile lucrătoare</div>
+        </div>
+      </div>
+    </div>
+
+    {% if form.posted_successfully? %}
+      <div class="lrf-success">
+        <svg viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        <div class="lrf-success-title">Cererea ta a fost trimisă cu succes!</div>
+        <p class="lrf-success-text">Echipa noastră va analiza solicitarea și te va contacta<br>în cel mult <strong>2 zile lucrătoare</strong> la adresa de e-mail furnizată.</p>
+      </div>
+    {% else %}
+      {% form 'contact' %}
+        <div class="lrf-form-wrap">
+          <div class="lrf-form-title">Completează formularul de retur</div>
+
+          <div class="lrf-form-row">
+            <div class="lrf-form-group">
+              <label class="lrf-label" for="return-name">Nume complet <span>*</span></label>
+              <input class="lrf-input" type="text" id="return-name" name="contact[Nume complet]" placeholder="ex. Maria Ionescu" required>
+            </div>
+            <div class="lrf-form-group">
+              <label class="lrf-label" for="return-email">Adresă de e-mail <span>*</span></label>
+              <input class="lrf-input" type="email" id="return-email" name="contact[email]" placeholder="ex. maria@gmail.com" required>
+            </div>
+          </div>
+
+          <div class="lrf-form-row">
+            <div class="lrf-form-group">
+              <label class="lrf-label" for="return-phone">Număr de telefon</label>
+              <input class="lrf-input" type="tel" id="return-phone" name="contact[Telefon]" placeholder="ex. 0712 345 678">
+            </div>
+            <div class="lrf-form-group">
+              <label class="lrf-label" for="return-order">Numărul comenzii <span>*</span></label>
+              <input class="lrf-input" type="text" id="return-order" name="contact[Numarul comenzii]" placeholder="ex. #1234" required>
+            </div>
+          </div>
+
+          <div class="lrf-form-group">
+            <label class="lrf-label" for="return-product">Produsul de returnat <span>*</span></label>
+            <input class="lrf-input" type="text" id="return-product" name="contact[Produs]" placeholder="ex. Masca Nanofibre Hydrate" required>
+          </div>
+
+          <div class="lrf-form-group">
+            <label class="lrf-label" for="return-reason">Motivul returului <span>*</span></label>
+            <select class="lrf-select" id="return-reason" name="contact[Motivul returului]" required>
+              <option value="" disabled selected>Selecteaza motivul</option>
+              <option value="Produs deteriorat sau defect">Produs deteriorat / defect</option>
+              <option value="Produs gresit livrat">Produs gresit livrat</option>
+              <option value="Nu corespunde descrierii">Nu corespunde descrierii</option>
+              <option value="Reactie alergica">Reactie alergica</option>
+              <option value="M-am razgandit">M-am razgandit</option>
+              <option value="Altul">Altul</option>
+            </select>
+          </div>
+
+          <div class="lrf-form-group">
+            <label class="lrf-label" for="return-details">Detalii suplimentare</label>
+            <textarea class="lrf-textarea" id="return-details" name="contact[Detalii]" placeholder="Descrie pe scurt situatia pentru a accelera procesul de retur..."></textarea>
+          </div>
+
+          <label class="lrf-checkbox-wrap">
+            <input class="lrf-checkbox-input" type="checkbox" name="contact[Acord GDPR]" value="Da" required>
+            <span class="lrf-checkbox-label">
+              Am citit si sunt de acord cu <a href="{{ section.settings.policy_url | default: '/policies/refund-policy' }}">Politica de Retur</a> si cu procesarea datelor mele personale in scopul gestionarii acestei cereri. <span style="color:rgba(183,148,72,0.5)">*</span>
+            </span>
+          </label>
+
+          <button class="lrf-submit-btn" type="submit">
+            Trimite cererea de retur
+            <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </button>
+
+        </div>
+      {% endform %}
+    {% endif %}
+
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Formular de Retur",
+  "settings": [
+    { "type": "text", "id": "eyebrow", "label": "Eyebrow text", "default": "RETUR PRODUS" },
+    { "type": "text", "id": "title", "label": "Titlu principal", "default": "Solicita un retur." },
+    { "type": "textarea", "id": "subtitle", "label": "Subtitlu", "default": "Satisfactia ta este prioritatea noastra. Daca nu esti multumit de produs, completeaza formularul de mai jos si echipa noastra va gestiona returul tau in cel mai scurt timp." },
+    { "type": "url", "id": "policy_url", "label": "URL Politica de Retur" }
+  ],
+  "presets": [{ "name": "Formular de Retur" }]
+}
+{% endschema %}

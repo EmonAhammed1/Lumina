@@ -1,0 +1,142 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "s_team_member_premium",
+      "blocks": {
+        "member_1": {
+          "type": "member",
+          "settings": {
+            "image": "shopify://shop_images/Founder.webp",
+            "role": "FONDATOR & DIRECTOR ȘTIINȚIFIC",
+            "name": "Paul",
+            "description": "Cu peste 15 ani de experiență în cercetare dermatologică și nanotehnologie, Dr. Marin a fondat Lumina Europa cu viziunea de a transforma îngrijirea pielii prin inovație științifică.",
+            "exp_title_1": "15+ Ani de Cercetare",
+            "exp_desc_1": "Expert in dermatologie și stiința pielii",
+            "exp_icon_1": "flask",
+            "exp_title_2": "Specialist în Tehnologia Nanofibrelor",
+            "exp_desc_2": "Pionier în sisteme avansate de livrare a ingredientelor",
+            "exp_icon_2": "molecule",
+            "exp_title_3": "Lider în Inovație",
+            "exp_desc_3": "Dezvoltă formule revoluționare bazate pe știință",
+            "exp_icon_3": "award"
+          }
+        },
+        "member_2": {
+          "type": "member",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-03-31_at_15.38.29.png",
+            "role": "ȘEF DE DEZVOLTARE PRODUSE",
+            "name": "Alexandra Ionescu",
+            "description": "Alexandra conduce inovația produselor cu o pasiune pentru frumusețe curată și formule performante care oferă rezultate vizibile și reale.",
+            "exp_title_1": "Expert în Inovația Produselor",
+            "exp_desc_1": "Specialist în formule avansate de îngrijire a pielii",
+            "exp_icon_1": "flask",
+            "exp_title_2": "10+ Ani Experiență",
+            "exp_desc_2": "În chimia cosmetică și dezvoltarea produselor",
+            "exp_icon_2": "molecule",
+            "exp_title_3": "Avocat al Frumuseții Curate",
+            "exp_desc_3": "Dedicată siguranței, eficienței și sustenabilității",
+            "exp_icon_3": "leaf"
+          }
+        },
+        "member_3": {
+          "type": "member",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-03-31_at_15.37.07_430x_05b938d8-e642-4393-90bd-50a305515a7c.webp",
+            "role": "RESPONSABIL CERCETARE CLINICĂ",
+            "name": "Maria Popescu",
+            "description": "Maria supraveghează toate studiile clinice și protocoalele de testare pentru a se asigura că fiecare produs îndeplinește cele mai înalte standarde de siguranță și eficacitate.",
+            "exp_title_1": "Expert în Cercetare Clinică",
+            "exp_desc_1": "Proiectează și gestionează studii clinice riguroase",
+            "exp_icon_1": "shield",
+            "exp_title_2": "Background Dermatologic",
+            "exp_desc_2": "Asigură siguranța și eficacitatea produselor",
+            "exp_icon_2": "shield",
+            "exp_title_3": "Decizii Bazate pe Dovezi",
+            "exp_desc_3": "Rezultate susținute de date și teste transparente",
+            "exp_icon_3": "chart"
+          }
+        },
+        "member_4": {
+          "type": "member",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-03-31_at_14.26.19_430x_f348fd8c-e4e8-46b6-bcde-1060ef1275ca.webp",
+            "role": "SPECIALIST ÎN NANOTEHNOLOGIE",
+            "name": "Andrei Dumitru",
+            "description": "Andrei este mintea din spatele tehnologiei nanofibrelor, dezvoltând sisteme avansate de livrare pentru o absorbție superioară și eficiență maximă.",
+            "exp_title_1": "Expert în Nanotehnologie",
+            "exp_desc_1": "Specialist în nanofibre și știința materialelor",
+            "exp_icon_1": "molecule",
+            "exp_title_2": "Sisteme Avansate de Livrare",
+            "exp_desc_2": "Îmbunătățește potența și biodisponibilitatea ingredientelor",
+            "exp_icon_2": "molecule",
+            "exp_title_3": "Cercetare & Dezvoltare",
+            "exp_desc_3": "Focalizat pe inovație continuuă",
+            "exp_icon_3": "award"
+          }
+        },
+        "member_5": {
+          "type": "member",
+          "settings": {
+            "role": "DIRECTOR EXPERIENȚĂ CLIENȚI",
+            "name": "Bianca Stan",
+            "description": "Bianca se asigură că fiecare client are o experiență excepțională cu Lumina Europa, de la descoperire până la rezultate pe termen lung.",
+            "exp_title_1": "Expert în Experiența Clienților",
+            "exp_desc_1": "Construiește relații de încredere și loialitate",
+            "exp_icon_1": "heart",
+            "exp_title_2": "Consultant în Îngrijirea Pielii",
+            "exp_desc_2": "Pasionată să ajute clienții să atingă obiectivele lor",
+            "exp_icon_2": "chat",
+            "exp_title_3": "Angajament pentru Calitate",
+            "exp_desc_3": "Dedicată satisfacției și încrederii clienților",
+            "exp_icon_3": "star"
+          }
+        },
+        "member_6": {
+          "type": "member",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2026-03-31_at_14.31.38.png",
+            "role": "MANAGER OPERAȚIONAL",
+            "name": "Vlad Popa",
+            "description": "Vlad asigură că toate operațiunile noastre decurg impecabil, menținând cele mai înalte standarde de calitate și eficiență în fiecare etapă a procesului.",
+            "exp_title_1": "Expert în Operațiuni",
+            "exp_desc_1": "Optimizează procesele pentru eficiență maximă",
+            "exp_icon_1": "cog",
+            "exp_title_2": "Asigurarea Calității",
+            "exp_desc_2": "Menține cele mai înalte standarde în fiecare etapă",
+            "exp_icon_2": "shield",
+            "exp_title_3": "Lider de Echipă",
+            "exp_desc_3": "Construiește și motivează echipe performante",
+            "exp_icon_3": "award"
+          }
+        }
+      },
+      "block_order": [
+        "member_1",
+        "member_2",
+        "member_3",
+        "member_4",
+        "member_5",
+        "member_6"
+      ],
+      "settings": {
+        "bgsection": "#000000",
+        "title_top": "ECHIPA NOASTRĂ",
+        "title": "Specialiștii din spatele Lumina Europa",
+        "des": "O echipă de oameni de știință, inovatori și specialiști în îngrijirea pielii dedicați să aducă tehnologia nanofibrelor la cele mai inalte standarde."
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

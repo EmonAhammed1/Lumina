@@ -1,0 +1,403 @@
+{% render 'golden-hour-vars' %}
+{%- style -%}
+  #shopify-section-{{ section.id }} .gh-hero-wrap {
+    position: relative;
+    width: 100%;
+    max-width: {{ section.settings.max_width }}px;
+    margin: 0 auto;
+    height: {{ section.settings.height_desktop }}vh;
+    min-height: 500px;
+    background-color: var(--gh-dark-bg);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5%;
+  }
+  @media screen and (max-width: 1024px) {
+    #shopify-section-{{ section.id }} .gh-hero-wrap {
+      padding: 0 40px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    #shopify-section-{{ section.id }} .gh-hero-wrap {
+      height: {{ section.settings.height_mobile }}vh;
+      padding: 0 20px 50px 20px;
+      align-items: flex-end;
+    }
+  }
+  .gh-hero-video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  .gh-hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .gh-hero-desktop-video { display: block; }
+  .gh-hero-mobile-video { display: none; }
+  @media screen and (max-width: 768px) {
+    .gh-hero-desktop-video { display: none; }
+    .gh-hero-mobile-video { display: block; }
+  }
+  
+  .gh-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(17, 16, 15, 0.8) 0%, rgba(17, 16, 15, 0.4) 50%, rgba(17, 16, 15, 0) 100%);
+    z-index: 2;
+  }
+  @media screen and (max-width: 768px) {
+    .gh-hero-overlay {
+      background: linear-gradient(to top, rgba(17, 16, 15, 0.8) 0%, rgba(17, 16, 15, 0.5) 50%, rgba(17, 16, 15, 0) 100%);
+    }
+  }
+
+  .gh-hero-content {
+    position: relative;
+    z-index: 3;
+    max-width: 600px;
+    margin-top: -50px;
+  }
+  .gh-hero-subtitle {
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    color: var(--gh-text-muted);
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-weight: 400;
+  }
+  .gh-hero-title {
+    font-size: {{ section.settings.title_size_desktop }}px;
+    font-weight: 300;
+    color: var(--gh-golden);
+    margin-bottom: 24px;
+    font-family: serif;
+  }
+  @media screen and (max-width: 1024px) {
+    .gh-hero-title {
+      font-size: 60px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .gh-hero-title {
+      font-size: 48px;
+    }
+    .gh-hero-content { margin-top: 0; }
+  }
+  .gh-hero-text {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--gh-text-light);
+    margin-bottom: 40px;
+  }
+  .gh-hero-btn {
+    display: inline-block;
+    padding: 15px 31px;
+    background-color: var(--gh-golden);
+    color: var(--gh-dark-bg);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    border: 1px solid var(--gh-golden);
+    transition: var(--gh-transition);
+  }
+  .gh-hero-btn:hover {
+    background-color: transparent;
+    color: #fff;
+    transform: translateY(-2px);
+  }
+  @media screen and (max-width: 768px) {
+    .gh-hero-btn {
+      padding: 12px 24px;
+      font-size: 13px;
+    }
+    .gh-hero-subtitle,
+    .gh-hero-text,
+    .gh-hero-btn {
+      display: none !important;
+    }
+  }
+
+
+
+  .gh-audio-toggle {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 42px;
+    height: 42px;
+    background: transparent;
+    border: 1px solid {{ section.settings.button_color }};
+    color: {{ section.settings.button_color }};
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: var(--gh-transition);
+    z-index: 3;
+  }
+  .gh-audio-toggle:hover {
+    background: rgba(249, 226, 156, 0.15);
+  }
+  @media screen and (max-width: 768px) {
+    .gh-audio-toggle {
+      display: none;
+    }
+  }
+{%- endstyle -%}
+
+<div class="gh-hero-wrap" id="{{ section.id | split: '__' | last }}" data-section-id="{{ section.id }}">
+  <div class="gh-hero-video-container">
+    {%- if section.settings.video != blank -%}
+      {{ section.settings.video | video_tag: autoplay: true, loop: true, playsinline: true, class: 'gh-hero-video gh-hero-desktop-video', id: 'gh-video-desktop', image_size: '1920x' }}
+    {%- elsif section.settings.bg_image_desktop != blank -%}
+      <img src="{{ section.settings.bg_image_desktop | image_url: width: 1920 }}" class="gh-hero-video gh-hero-desktop-video" alt="{{ section.settings.title }}">
+    {%- else -%}
+      <video class="gh-hero-video gh-hero-desktop-video" id="gh-video-desktop" autoplay loop playsinline poster="{{ section.settings.poster | image_url: width: 1920 }}">
+        <source src="{{ 'The Golden Hour HERO.mp4' | asset_url }}" type="video/mp4">
+      </video>
+    {%- endif -%}
+
+    {%- if section.settings.video_mobile != blank -%}
+      {{ section.settings.video_mobile | video_tag: autoplay: true, loop: true, playsinline: true, class: 'gh-hero-video gh-hero-mobile-video', id: 'gh-video-mobile', image_size: '800x' }}
+    {%- elsif section.settings.bg_image_mobile != blank -%}
+      <img src="{{ section.settings.bg_image_mobile | image_url: width: 800 }}" class="gh-hero-video gh-hero-mobile-video" alt="{{ section.settings.title }}">
+    {%- else -%}
+      <video class="gh-hero-video gh-hero-mobile-video" id="gh-video-mobile" autoplay loop playsinline poster="{{ section.settings.poster_mobile | image_url: width: 800 }}">
+        <source src="{{ 'The Golden Hour HERO mobile phone format.mp4' | asset_url }}" type="video/mp4">
+      </video>
+    {%- endif -%}
+  </div>
+
+  <div class="gh-hero-overlay"></div>
+
+  <div class="gh-hero-content">
+    {%- if section.settings.subtitle != blank -%}
+      <div class="gh-hero-subtitle">{{ section.settings.subtitle }}</div>
+    {%- endif -%}
+    {%- if section.settings.title != blank -%}
+      <h1 class="gh-hero-title">{{ section.settings.title }}</h1>
+    {%- endif -%}
+    {%- if section.settings.text != blank -%}
+      <div class="gh-hero-text">{{ section.settings.text }}</div>
+    {%- endif -%}
+    {%- if section.settings.button_label != blank -%}
+      <a href="{{ section.settings.button_link | default: '#' }}" class="gh-hero-btn">{{ section.settings.button_label }}</a>
+    {%- endif -%}
+  </div>
+
+
+
+  <button type="button" class="gh-audio-toggle" id="gh-audio-toggle-{{ section.id }}" aria-label="Toggle audio">
+    <svg class="gh-scroll-arrow-icon" viewBox="0 0 24 24" id="gh-icon-muted">
+      <path d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6"/>
+    </svg>
+    <svg class="gh-scroll-arrow-icon" viewBox="0 0 24 24" id="gh-icon-unmuted" style="display:none;">
+      <path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/>
+    </svg>
+  </button>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const toggleBtn = document.getElementById('gh-audio-toggle-{{ section.id }}');
+    const desktopVideo = document.getElementById('gh-video-desktop');
+    const mobileVideo = document.getElementById('gh-video-mobile');
+    const iconMuted = document.getElementById('gh-icon-muted');
+    const iconUnmuted = document.getElementById('gh-icon-unmuted');
+
+    const activeVideo = window.innerWidth > 768 ? desktopVideo : mobileVideo;
+    
+    // Attempt to play unmuted at 30% volume on load
+    if (activeVideo && activeVideo.tagName === 'VIDEO') {
+      activeVideo.volume = 0.1;
+      activeVideo.muted = false;
+      
+      const playPromise = activeVideo.play();
+      if (playPromise !== undefined) {
+        playPromise.then(() => {
+          // Autoplay started with sound
+          if (iconMuted && iconUnmuted) {
+            iconMuted.style.display = 'none';
+            iconUnmuted.style.display = 'block';
+          }
+        }).catch(error => {
+          // Autoplay was prevented by browser. Fallback to muted.
+          activeVideo.muted = true;
+          activeVideo.play();
+          if (iconMuted && iconUnmuted) {
+            iconMuted.style.display = 'block';
+            iconUnmuted.style.display = 'none';
+          }
+        });
+      }
+    }
+
+    if (toggleBtn) {
+      toggleBtn.addEventListener('click', function() {
+        const currentVideo = window.innerWidth > 768 ? desktopVideo : mobileVideo;
+        if (currentVideo && currentVideo.tagName === 'VIDEO') {
+          currentVideo.muted = !currentVideo.muted;
+          if (!currentVideo.muted) {
+            currentVideo.volume = 0.1; // Ensure it's 10% when unmuted
+          }
+          if (currentVideo.muted) {
+            iconMuted.style.display = 'block';
+            iconUnmuted.style.display = 'none';
+          } else {
+            iconMuted.style.display = 'none';
+            iconUnmuted.style.display = 'block';
+          }
+        }
+      });
+    }
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Golden Hour - Hero",
+  "settings": [
+    {
+      "type": "range",
+      "id": "max_width",
+      "label": "Maximum Width (px)",
+      "min": 1000,
+      "max": 4000,
+      "step": 500,
+      "default": 4000
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "subtitle",
+      "label": "Subtitle",
+      "default": "A MOMENT THAT BELONGS ONLY TO YOU."
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "GOLDEN HOUR"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text",
+      "default": "<p>Există un moment în fiecare zi în care lumina devine mai blândă, mai caldă și mai aproape de piele.</p><p>Lumina Golden Hour este comunitatea celor care descoperă ritualurile, noutățile și experiențele Lumina înaintea tuturor.</p>"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button Label",
+      "default": "PĂSTREAZĂ LUMINA APROAPE DE TINE"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Desktop Settings"
+    },
+    {
+      "type": "video",
+      "id": "video",
+      "label": "Video (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image_desktop",
+      "label": "Fallback Image (Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "poster",
+      "label": "Video Poster Image (Desktop)"
+    },
+    {
+      "type": "range",
+      "id": "height_desktop",
+      "label": "Height (Desktop % of Viewport)",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "button_bottom_desktop",
+      "label": "Scroll Button Bottom Offset (Desktop px)",
+      "min": 20,
+      "max": 120,
+      "step": 5,
+      "default": 50
+    },
+    {
+      "type": "header",
+      "content": "Mobile Settings"
+    },
+    {
+      "type": "video",
+      "id": "video_mobile",
+      "label": "Video (Mobile)"
+    },
+    {
+      "type": "image_picker",
+      "id": "bg_image_mobile",
+      "label": "Fallback Image (Mobile)"
+    },
+    {
+      "type": "image_picker",
+      "id": "poster_mobile",
+      "label": "Video Poster Image (Mobile)"
+    },
+    {
+      "type": "range",
+      "id": "height_mobile",
+      "label": "Height (Mobile % of Viewport)",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "button_bottom_mobile",
+      "label": "Scroll Button Bottom Offset (Mobile px)",
+      "min": 10,
+      "max": 100,
+      "step": 5,
+      "default": 30
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Controls Color",
+      "default": "#F9E29C"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Golden Hour - Hero"
+    }
+  ]
+}
+{% endschema %}

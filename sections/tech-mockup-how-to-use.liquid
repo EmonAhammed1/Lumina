@@ -84,9 +84,9 @@
     content: '→';
     position: absolute;
     right: -14px;
-    top: 30px; /* Aligned with the center of the 60x60 icon */
+    top: 50px; /* Aligned with the center of the 100x100 icon */
     transform: translateY(-50%);
-    font-size: 14px;
+    font-size: 16px;
     color: rgba(249, 226, 156, 0.5);
   }
   @media screen and (max-width: 1200px) {
@@ -96,17 +96,29 @@
     .tm-htu-step:nth-child(2n)::after { display: none; }
   }
   .tm-htu-icon {
-    width: 60px;
-    height: 60px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  @media screen and (max-width: 768px) {
+    .tm-htu-icon {
+      width: 80px;
+      height: 80px;
+    }
+    .tm-htu-step:not(:last-child)::after {
+      top: 40px;
+    }
   }
   .tm-htu-icon img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
+    object-fit: cover;
+    border-radius: 8px;
   }
   .tm-htu-icon svg {
     width: 100%;
@@ -155,7 +167,7 @@
           <div class="tm-htu-step" {{ block.shopify_attributes }}>
             <div class="tm-htu-icon">
               {% if block.settings.image != blank %}
-                <img src="{{ block.settings.image | image_url: width: 120 }}" alt="{{ block.settings.title }}" loading="lazy">
+                <img src="{{ block.settings.image | image_url: width: 300 }}" alt="{{ block.settings.title }}" loading="lazy">
               {% else %}
                 <svg viewBox="0 0 24 24">
                   <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>

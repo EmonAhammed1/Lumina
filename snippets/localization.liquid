@@ -40,21 +40,15 @@
         {% render 'icon-caret' %}
         </button>
         <div class="disclosure__list-wrapper {{ header-left }}" hidden>
-        <ul id="{{ idCountryList }}" role="list" class="disclosure__list list-unstyled {% unless enable_name %} disable_name {% endunless %}">
+        <ul id="{{ id | default: 'HeaderCountryList' }}List" role="list" class="disclosure__list list-unstyled">
             {%- for country in localization.available_countries -%}
             <li class="disclosure__item" tabindex="-1">
                 <a class="disclosure__link caption-large{% if country.iso_code == localization.country.iso_code %} link disclosure__link--active{% endif %} focus-inset" href="#"{% if country.iso_code == localization.country.iso_code %} aria-current="true"{% endif %} data-value="{{ country.iso_code }}">
-                    {%- if enable_image -%}
                     <img class="mr-2 lazyload" 
                         loading="lazy"
                         src="{{ country.iso_code | append: '.svg' | asset_url }}" 
                         data-src="{{ country.iso_code | append: '.svg' | asset_url }}" width="20" alt="{{country.iso_code}}" height="15">
-                    {%- endif -%}
-                    {%- if enable_name -%}
-                     {{ country.name }}  <span class="localization-form__currency"> ({{ country.currency.iso_code }} {{ country.currency.symbol }})</span>
-                     {%- else -%}
-                        <span class="localization-form__currency"> {{ country.currency.iso_code }} {{ country.currency.symbol }}</span>
-                    {%- endif -%}
+                    {{ country.name }} <span class="localization-form__currency" style="opacity: 0.7; margin-left: 4px;">({{ country.currency.iso_code }} {{ country.currency.symbol }})</span>
                 </a>
             </li>
             {%- endfor -%}

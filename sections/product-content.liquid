@@ -29,6 +29,39 @@
     endfor
 -%}
 <style>
+  .descriere-left-text, .product-content .tab-content .tab-pane {
+    font-size: {{ section.settings.tab_text_size_desktop | default: 16 }}px !important;
+    line-height: 1.7 !important;
+    color: rgba(245, 235, 215, 0.95);
+  }
+  .descriere-left-text p, .product-content .tab-content .tab-pane p {
+    font-size: {{ section.settings.tab_text_size_desktop | default: 16 }}px !important;
+    line-height: 1.7 !important;
+    margin-bottom: 14px;
+  }
+  .descriere-left-text ul, .descriere-left-text ol, .product-content .tab-content .tab-pane ul, .product-content .tab-content .tab-pane ol {
+    margin-top: 10px;
+    margin-bottom: 14px;
+    padding-left: 20px;
+  }
+  .descriere-left-text li, .product-content .tab-content .tab-pane li {
+    font-size: calc({{ section.settings.tab_text_size_desktop | default: 16 }}px - 0.5px) !important;
+    line-height: 1.65 !important;
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: 767px) {
+    .descriere-left-text, .product-content .tab-content .tab-pane {
+      font-size: {{ section.settings.tab_text_size_mobile | default: 14 }}px !important;
+    }
+    .descriere-left-text p, .product-content .tab-content .tab-pane p {
+      font-size: {{ section.settings.tab_text_size_mobile | default: 14 }}px !important;
+    }
+    .descriere-left-text li, .product-content .tab-content .tab-pane li {
+      font-size: {{ section.settings.tab_text_size_mobile | default: 14 }}px !important;
+    }
+  }
+
   @media (min-width:768px){
     .product-related.product-block{
         padding: 0rem 0rem 0rem 2rem;
@@ -473,7 +506,7 @@
                                                 {{ product.metafields.custom[mf_source] | metafield_tag }}
                                               </div>
                                             {%- endif -%}
-
+                                            
                                             <div class="special-desc-sep">
                                               <span class="sep-line"></span>
                                               <svg class="sep-diamond" viewBox="0 0 24 24" fill="currentColor">
@@ -515,7 +548,9 @@
                                           <!-- Middle Column: Portrait Image -->
                                           <div class="col-12 col-lg-4 col-xl-4 text-center special-desc-col-mid">
                                             <div class="special-desc-img-wrap">
-                                              {%- if block.settings.mid_image != blank -%}
+                                              {%- if product.metafields.custom.descriere_image != blank -%}
+                                                <img src="{{ product.metafields.custom.descriere_image | image_url: width: 600 }}" alt="{{ product.title | escape }}" loading="lazy">
+                                              {%- elsif block.settings.mid_image != blank -%}
                                                 <img src="{{ block.settings.mid_image | image_url: width: 600 }}" alt="" loading="lazy">
                                               {%- else -%}
                                                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
@@ -568,11 +603,29 @@
                                         </div>
                                       </div>
                                     {%- else -%}
-                                      {%- assign mf_source = block.settings.metafield_source -%}
-                                      {%- if mf_source != blank and product.metafields.custom[mf_source] != blank -%}
-                                        {{ product.metafields.custom[mf_source] | metafield_tag }}
+                                      {%- if product.metafields.custom.descriere_image != blank -%}
+                                         <div class="row align-items-center descriere-2col-wrap" style="margin-top: 10px;">
+                                           <div class="col-12 col-lg-8 col-xl-8 descriere-left-text">
+                                             {%- assign mf_source = block.settings.metafield_source -%}
+                                             {%- if mf_source != blank and product.metafields.custom[mf_source] != blank -%}
+                                               {{ product.metafields.custom[mf_source] | metafield_tag }}
+                                             {%- else -%}
+                                               {{ product.description }}
+                                             {%- endif -%}
+                                           </div>
+                                           <div class="col-12 col-lg-4 col-xl-4 text-center descriere-right-image mt-4 mt-lg-0">
+                                             <div class="descriere-img-box" style="padding: 5px; text-align: center;">
+                                               <img src="{{ product.metafields.custom.descriere_image | image_url: width: 700 }}" alt="{{ product.title | escape }}" loading="lazy" style="max-width: 380px; width: 100%; height: auto; object-fit: cover; border-radius: 14px; border: 1px solid rgba(226, 215, 195, 0.35); box-shadow: 0 8px 30px rgba(0,0,0,0.25); display: inline-block;">
+                                             </div>
+                                           </div>
+                                         </div>
                                       {%- else -%}
-                                        {{ product.description }}
+                                        {%- assign mf_source = block.settings.metafield_source -%}
+                                        {%- if mf_source != blank and product.metafields.custom[mf_source] != blank -%}
+                                          {{ product.metafields.custom[mf_source] | metafield_tag }}
+                                        {%- else -%}
+                                          {{ product.description }}
+                                        {%- endif -%}
                                       {%- endif -%}
                                     {%- endif -%}
                                 </div>
@@ -583,11 +636,47 @@
                             {%- when 'content' -%}
                                 <div class="tab-pane fade {{ activetab }}" id="gtab{{ block.id }}" role="tabpanel" >
                                     {%- assign mf_source = block.settings.metafield_source -%}
-                                    {%- if mf_source != blank and product.metafields.custom[mf_source] != blank -%}
-                                        {{ product.metafields.custom[mf_source] | metafield_tag }}
+                                    {%- assign mf_img_key = mf_source | append: '_image' -%}
+                                    {%- if mf_source == 'mod_utilizare' and product.metafields.custom.cum_se_utilizeaza_image != blank -%}
+                                      {%- assign active_img = product.metafields.custom.cum_se_utilizeaza_image -%}
+                                    {%- elsif product.metafields.custom[mf_img_key] != blank -%}
+                                      {%- assign active_img = product.metafields.custom[mf_img_key] -%}
                                     {%- else -%}
-                                        {{ block.settings.answer_content }}
-                                        {{ block.settings.page.content }}
+                                      {%- assign active_img = nil -%}
+                                    {%- endif -%}
+
+                                    {%- assign txt_val = nil -%}
+                                    {%- if mf_source != blank and product.metafields.custom[mf_source] != blank -%}
+                                      {%- assign txt_val = product.metafields.custom[mf_source] -%}
+                                    {%- elsif mf_source == 'mod_utilizare' and product.metafields.custom.cum_se_utilizeaza != blank -%}
+                                      {%- assign txt_val = product.metafields.custom.cum_se_utilizeaza -%}
+                                    {%- elsif mf_source == 'cum_se_utilizeaza' and product.metafields.custom.mod_utilizare != blank -%}
+                                      {%- assign txt_val = product.metafields.custom.mod_utilizare -%}
+                                    {%- endif -%}
+                                    
+                                    {%- if active_img != blank -%}
+                                      <div class="row align-items-center descriere-2col-wrap" style="margin-top: 10px;">
+                                        <div class="col-12 col-lg-8 col-xl-8 descriere-left-text">
+                                          {%- if txt_val != blank -%}
+                                            {{ txt_val | metafield_tag }}
+                                          {%- else -%}
+                                            {{ block.settings.answer_content }}
+                                            {{ block.settings.page.content }}
+                                          {%- endif -%}
+                                        </div>
+                                        <div class="col-12 col-lg-4 col-xl-4 text-center descriere-right-image mt-4 mt-lg-0">
+                                          <div class="descriere-img-box" style="padding: 5px; text-align: center;">
+                                            <img src="{{ active_img | image_url: width: 700 }}" alt="{{ product.title | escape }}" loading="lazy" style="max-width: 380px; width: 100%; height: auto; object-fit: cover; border-radius: 14px; border: 1px solid rgba(226, 215, 195, 0.35); box-shadow: 0 8px 30px rgba(0,0,0,0.25); display: inline-block;">
+                                          </div>
+                                        </div>
+                                      </div>
+                                    {%- else -%}
+                                      {%- if txt_val != blank -%}
+                                        {{ txt_val | metafield_tag }}
+                                      {%- else -%}
+                                          {{ block.settings.answer_content }}
+                                          {{ block.settings.page.content }}
+                                      {%- endif -%}
                                     {%- endif -%}
                                 </div>
                             {%- when 'review' -%}
@@ -658,6 +747,30 @@
   "tag": "section",
   "class": "section",
   "settings": [
+    {
+      "type": "header",
+      "content": "Tab Text Font Size Settings"
+    },
+    {
+      "type": "range",
+      "id": "tab_text_size_desktop",
+      "min": 12,
+      "max": 28,
+      "step": 1,
+      "unit": "px",
+      "label": "Tab Content Text Size (Desktop)",
+      "default": 16
+    },
+    {
+      "type": "range",
+      "id": "tab_text_size_mobile",
+      "min": 10,
+      "max": 24,
+      "step": 1,
+      "unit": "px",
+      "label": "Tab Content Text Size (Mobile)",
+      "default": 14
+    },
     {
       "type": "select",
       "id": "animation",
@@ -937,6 +1050,8 @@
           "options": [
             { "value": "", "label": "None (use default text)" },
             { "value": "descriere", "label": "Descriere (custom.descriere)" },
+            { "value": "inainte_de_utilizare", "label": "Înainte de utilizare (custom.inainte_de_utilizare)" },
+            { "value": "cum_se_utilizeaza", "label": "Cum se utilizează (custom.cum_se_utilizeaza)" },
             { "value": "mod_utilizare", "label": "Cum se utilizează (custom.mod_utilizare)" },
             { "value": "ingrediente_cheie", "label": "Ingrediente cheie (custom.ingrediente_cheie)" },
             { "value": "rezultate_clinice", "label": "Rezultate clinice (custom.rezultate_clinice)" }
@@ -1152,6 +1267,8 @@
           "options": [
             { "value": "", "label": "None (use default text below)" },
             { "value": "descriere", "label": "Descriere (custom.descriere)" },
+            { "value": "inainte_de_utilizare", "label": "Înainte de utilizare (custom.inainte_de_utilizare)" },
+            { "value": "cum_se_utilizeaza", "label": "Cum se utilizează (custom.cum_se_utilizeaza)" },
             { "value": "mod_utilizare", "label": "Cum se utilizează (custom.mod_utilizare)" },
             { "value": "ingrediente_cheie", "label": "Ingrediente cheie (custom.ingrediente_cheie)" },
             { "value": "rezultate_clinice", "label": "Rezultate clinice (custom.rezultate_clinice)" }

@@ -1,1 +1,57 @@
-{%- if itemName contains '[' and itemName contains ']' -%}{{ itemName | escape | split: '[' | first }}{%- else -%}{{itemName | escape}}{%- endif -%}
+{%- liquid
+  assign raw_name = itemName
+  if itemName contains '[' and itemName contains ']'
+    assign raw_name = itemName | split: '[' | first
+  endif
+  assign clean_name = raw_name | strip
+  assign name_dn = clean_name | downcase
+  
+  case name_dn
+    when 'what are nanofibres' or 'what are nanofibers'
+      echo 'CE SUNT NANOFIBRELE'
+    when 'technology and formula' or 'technology & formula'
+      echo 'TEHNOLOGIE ȘI FORMULĂ'
+    when 'how to use'
+      echo 'MOD DE UTILIZARE'
+    when 'ritual synergies'
+      echo 'SINERGII DE RITUAL'
+    when 'scientific foundation and awards' or 'scientific foundation & awards' or 'scientific foundation'
+      echo 'BAZĂ ȘTIINȚIFICĂ ȘI PREMII'
+    when 'conversations'
+      echo 'Conversații'
+    when 'articles'
+      echo 'Articole'
+    when 'blog'
+      echo 'Blog'
+    when 'journal'
+      echo 'Jurnal'
+    when 'films' or 'film'
+      echo 'Filme'
+    when 'gallery'
+      echo 'Galerie'
+    when 'follow lumina'
+      echo 'Urmărește Lumina'
+    when 'meet the team'
+      echo 'Echipa Noastră'
+    when 'about' or 'about us'
+      echo 'Despre Noi'
+    when 'contact' or 'contact us'
+      echo 'Contactează-ne'
+    when 'faq' or 'faqs'
+      echo 'Întrebări Frecvente'
+    when 'shipping policy'
+      echo 'Politica de Livrare'
+    when 'returns' or 'return policy'
+      echo 'Politica de Retur'
+    when 'terms' or 'terms of service' or 'terms and conditions'
+      echo 'Termeni și Condiții'
+    when 'privacy policy'
+      echo 'Politica de Confidențialitate'
+    when 'all products'
+      echo 'Toate Produsele'
+    when 'home'
+      echo 'Acasă'
+    else
+      echo clean_name | escape
+  endcase
+-%}

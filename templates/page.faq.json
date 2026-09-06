@@ -2595,7 +2595,16 @@
         "faq_234"
       ],
       "settings": {
+        "hero_bg": "shopify://shop_images/ChatGPT_Image_Aug_12_2026_04_48_36_PM_8cf62e62-b2c3-466e-b552-55c22a4aff30.webp",
+        "content_bg": "#f9f6f1",
+        "hero_padding_top_desktop": 85,
+        "hero_padding_bottom_desktop": 65,
+        "hero_padding_top_mobile": 55,
+        "hero_padding_bottom_mobile": 45,
         "title": "Întrebări Frecvente",
+        "title_size_desktop": 54,
+        "question_size_desktop": 20,
+        "pill_size_desktop": 15,
         "subtitle": "Cu ce vă putem ajuta?",
         "search_placeholder": "Căutați după cuvinte cheie...",
         "show_view_more": true,

@@ -6023,3 +6023,85 @@ $(document).ready(function() {
     }
   });
 });
+
+/* ================ LOCALIZATION FORM ================ */
+class LocalizationForm extends HTMLElement {
+  constructor() {
+    super();
+    this.elements = {
+      input: this.querySelector('input[name="locale_code"], input[name="country_code"]'),
+      button: this.querySelector('button.disclosure__button, button.localization-form__select, button'),
+      panel: this.querySelector('.disclosure__list-wrapper')
+    };
+
+    if (this.elements.button) {
+      this.elements.button.addEventListener('click', this.toggleSelector.bind(this));
+    }
+    this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
+
+    this.querySelectorAll('a.disclosure__link, a[data-value]').forEach(item => {
+      item.addEventListener('click', this.onItemClick.bind(this));
+    });
+
+    this._onDocumentClick = this.onDocumentClick.bind(this);
+    document.addEventListener('click', this._onDocumentClick);
+  }
+
+  disconnectedCallback() {
+    document.removeEventListener('click', this._onDocumentClick);
+  }
+
+  onDocumentClick(event) {
+    if (!this.contains(event.target)) {
+      this.hidePanel();
+    }
+  }
+
+  hidePanel() {
+    if (!this.elements.button || !this.elements.panel) return;
+    this.elements.button.setAttribute('aria-expanded', 'false');
+    this.elements.panel.setAttribute('hidden', '');
+  }
+
+  onContainerKeyUp(event) {
+    if (event.code && event.code.toUpperCase() !== 'ESCAPE') return;
+    this.hidePanel();
+    if (this.elements.button) this.elements.button.focus();
+  }
+
+  onItemClick(event) {
+    event.preventDefault();
+    const val = event.currentTarget.getAttribute('data-value');
+    const form = this.querySelector('form');
+    if (this.elements.input && val) {
+      this.elements.input.value = val;
+      if (form) form.submit();
+    }
+  }
+
+  toggleSelector(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    if (!this.elements.panel || !this.elements.button) return;
+
+    document.querySelectorAll('localization-form').forEach(other => {
+      if (other !== this && typeof other.hidePanel === 'function') {
+        other.hidePanel();
+      }
+    });
+
+    const isHidden = this.elements.panel.hasAttribute('hidden');
+    if (isHidden) {
+      this.elements.panel.removeAttribute('hidden');
+      this.elements.button.setAttribute('aria-expanded', 'true');
+    } else {
+      this.elements.panel.setAttribute('hidden', '');
+      this.elements.button.setAttribute('aria-expanded', 'false');
+    }
+  }
+}
+
+if (!customElements.get('localization-form')) {
+  customElements.define('localization-form', LocalizationForm);
+}
+

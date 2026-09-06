@@ -1266,12 +1266,47 @@
               "bg_button_hover_2": "#ff6f2e",
               "color_button_hover_2": "#ffffff"
             }
+          },
+          "image_3gFqHc": {
+            "type": "image",
+            "settings": {
+              "image": "shopify://shop_images/ChatGPT_Image_Sep_6_2026_03_09_17_PM.png",
+              "width_image": 600,
+              "alignment": "center center",
+              "text_alignment": "left top",
+              "bgwrap": "#000000",
+              "show_overlay": false,
+              "gradient_overlay": false,
+              "bg_overlay": "#000000",
+              "opacity_overlay": 0.1,
+              "slide_toptitle": "",
+              "slide_toptitle_color": "#999999",
+              "slide_title": "Strălucire europeană. <br>Ritualul.",
+              "slide_title_color": "#F5E08F",
+              "subheading": "",
+              "subheading_color": "#ffffff",
+              "button_label": "",
+              "button_link": "",
+              "stylebtns": "btn-theme",
+              "bg_button": "#000000",
+              "color_button": "#ffffff",
+              "bg_button_hover": "#ff6f2e",
+              "color_button_hover": "#ffffff",
+              "button_label_2": "",
+              "button_link_2": "",
+              "stylebtns_2": "btn-theme",
+              "bg_button_2": "#000000",
+              "color_button_2": "#ffffff",
+              "bg_button_hover_2": "#ff6f2e",
+              "color_button_hover_2": "#ffffff"
+            }
           }
         },
         "block_order": [
           "image_LcNmpJ",
           "1590404620420",
-          "1590405549465"
+          "1590405549465",
+          "image_3gFqHc"
         ],
         "settings": {
           "enable_slideshow": true,
@@ -2530,9 +2565,15 @@
         "type": "shopify://apps/whatsapp-chat/blocks/whatsapp-chat-embed/019be5b3-ddb7-72e9-ab02-aef07c5497b8",
         "disabled": false,
         "settings": {
-          "phone_number": "+1898123456",
+          "phone_number": "+40747282174",
           "button_text": "Chat with us",
+          "button_background_color": "#25D366",
+          "button_text_color": "#FFFFFF",
           "position": "right",
+          "desktop_x_offset": 20,
+          "desktop_y_offset": 20,
+          "mobile_x_offset": 20,
+          "mobile_y_offset": 20,
           "mobile_icon_only": false
         }
       }

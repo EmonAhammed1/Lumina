@@ -59,7 +59,24 @@
                 <ul class="side-menu__tablist list-unstyled d-flex flex-column">
                     {% for childlink in link.links %}
                     <li class="side-menu__dropdown-container side-menu__second-level">
+                        {% assign t = childlink.title | downcase %}
+                        {% if t contains 'team' or t contains 'echip' %}
+                          {% continue %}
+                        {% endif %}
                         {% assign childlink_url = childlink.url %}
+                        {% if t contains 'conversat' %}
+                          {% assign childlink_url = '/pages/lumina-world#conversations' %}
+                        {% elsif t contains 'articl' or t contains 'articol' %}
+                          {% assign childlink_url = '/pages/lumina-world#articles' %}
+                        {% elsif t contains 'journal' or t contains 'jurnal' or t contains 'blog' %}
+                          {% assign childlink_url = '/pages/lumina-world#journal' %}
+                        {% elsif t contains 'film' or t contains 'manifest' %}
+                          {% assign childlink_url = '/pages/lumina-world#films' %}
+                        {% elsif t contains 'galler' or t contains 'galeri' %}
+                          {% assign childlink_url = '/pages/lumina-world#gallery' %}
+                        {% elsif t contains 'follow' or t contains 'urmar' or t contains 'social' %}
+                          {% assign childlink_url = '/pages/lumina-world#follow-lumina' %}
+                        {% endif %}
                         {%- liquid
                             assign hasMega_lv2 = false
                             assign titleCheckMega_lv2 = childlink.title | strip | split: '[' | first | downcase | handle
@@ -87,7 +104,8 @@
                         -%}
                         {% if childlink.links != blank %}
                         <a href="{{ childlink_url }}" class="d-flex side-menu__tablist_link side-menu__tablist-second-level" {% if childlink.active %} aria-current="page"{% endif %}>
-                            {{ childlink.title }}
+                            {%- render 'processMenuTitle' , itemName: childlink.title -%}
+                            {%- render 'processMenuLabel' , itemName: childlink.title -%}
                             {% render 'icon-arrow-right' %}
                         </a>
                         <div class="side-menu__dropdown side-menu__dropdown--third-level">
@@ -96,7 +114,8 @@
                                     {% for grandchildlink in childlink.links %}
                                     <li class="side-menu__third-level">
                                     <a href="{{ grandchildlink.url }}" class="side-menu__link py-1 d-flex"{% if grandchildlink.active %} aria-current="page"{% endif %}>
-                                    {{ grandchildlink.title }}
+                                    {%- render 'processMenuTitle' , itemName: grandchildlink.title -%}
+                                    {%- render 'processMenuLabel' , itemName: grandchildlink.title -%}
                                     </a>
                                     </li>
                                     {% endfor %}
@@ -175,7 +194,8 @@
                         </div>
                         {% else %}
                         <a href="{{ childlink_url }}" class="d-flex side-menu__tablist_link side-menu__tablist-second-level"{% if childlink.active %} aria-current="page"{% endif %}>
-                            {{ childlink.title }}
+                            {%- render 'processMenuTitle' , itemName: childlink.title -%}
+                            {%- render 'processMenuLabel' , itemName: childlink.title -%}
                         </a>
                         {% endif %}
                     </li>

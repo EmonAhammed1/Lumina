@@ -575,7 +575,7 @@
 
     <div id="lrf-form-container" style="{% if form.posted_successfully? %}display:none;{% else %}display:block;{% endif %}">
       {% form 'contact', id: 'lrf-contact-form' %}
-        <input type="hidden" name="contact[body]" id="lrf-contact-body" value="Cerere de retur noua">
+        <textarea name="contact[body]" id="lrf-contact-body" style="display:none;">Cerere de retur nouă</textarea>
         {% if form.errors %}
           <div style="padding:16px; border:1px solid #e07070; background:rgba(224,112,112,0.1); color:#ff8080; margin-bottom:24px; font-size:13px; border-radius:2px;">
             {{ form.errors | default_errors }}
@@ -829,27 +829,93 @@
 </div>
 
 <script>
-  var lrfImageFilesData = [];
+  var lrfUploadedFilesMap = [];
+  var lrfActivePromises = [];
+
+  function lrfEscapeHtml(str) {
+    return String(str).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
+  }
 
   function lrfUpdateFileList(input) {
     var display = document.getElementById('lrf-file-display');
     if (!display) return;
-    lrfImageFilesData = [];
+    lrfUploadedFilesMap = [];
+    lrfActivePromises = [];
+
     if (input.files && input.files.length > 0) {
-      var listHtml = '<div style="color:var(--gh-golden); margin-top:10px; font-weight:600;">Fișiere selectate (' + input.files.length + '):</div><ul style="margin:6px 0 0 16px; padding:0; list-style:none;">';
+      var listHtml = '<div style="color:var(--gh-golden); margin-top:14px; margin-bottom:8px; font-weight:600; font-size:12px; letter-spacing:0.05em;">Fișiere selectate (' + input.files.length + '):</div>' +
+                     '<div style="display:flex; flex-direction:column; gap:8px;">';
       for (var i = 0; i < input.files.length; i++) {
         var file = input.files[i];
-        var sz = Math.round(file.size/1024) + ' KB';
-        listHtml += '<li style="margin-bottom:4px;">📷 ' + file.name + ' <span style="opacity:0.6; font-size:11px;">(' + sz + ')</span></li>';
-        lrfImageFilesData.push({
+        var sz = Math.round(file.size / 1024) + ' KB';
+        lrfUploadedFilesMap.push({
+          id: i,
           name: file.name,
-          sizeStr: sz
+          sizeStr: sz,
+          url: null,
+          status: 'uploading'
         });
+
+        listHtml += '<div id="lrf-file-card-' + i + '" style="background:rgba(183,148,72,0.04); border:1px solid rgba(183,148,72,0.25); padding:10px 14px; font-size:12px; border-radius:2px; transition:all 0.3s ease;">' +
+                      '<div style="display:flex; align-items:center; justify-content:space-between; gap:10px; flex-wrap:wrap;">' +
+                        '<div><span style="color:#fff; font-weight:500;">📷 ' + lrfEscapeHtml(file.name) + '</span> <span style="opacity:0.6; font-size:11px; color:rgba(229,229,229,0.7);">(' + sz + ')</span></div>' +
+                        '<div id="lrf-file-status-' + i + '" style="color:var(--gh-golden); font-size:11px; display:flex; align-items:center; gap:6px;">' +
+                          '<span class="lrf-spin" style="display:inline-block; animation:lrfSpin 0.9s linear infinite;">⏳</span> Se încarcă...</div>' +
+                      '</div>' +
+                      '<div id="lrf-file-link-' + i + '" style="margin-top:4px; display:none; font-size:11px; word-break:break-all;"></div>' +
+                    '</div>';
       }
-      listHtml += '</ul>';
+      listHtml += '</div>';
       display.innerHTML = listHtml;
+
+      // Start background uploads immediately on selection
+      for (var j = 0; j < input.files.length; j++) {
+        (function(index, fileObj) {
+          var p = lrfUploadToImgBB(fileObj).then(function(imgUrl) {
+            var statusEl = document.getElementById('lrf-file-status-' + index);
+            var linkEl = document.getElementById('lrf-file-link-' + index);
+            var cardEl = document.getElementById('lrf-file-card-' + index);
+
+            if (imgUrl) {
+              lrfUploadedFilesMap[index].url = imgUrl;
+              lrfUploadedFilesMap[index].status = 'success';
+
+              var photosInput = document.getElementById('lrf-contact-photos');
+              if (photosInput) {
+                var validUrls = [];
+                for (var u = 0; u < lrfUploadedFilesMap.length; u++) {
+                  if (lrfUploadedFilesMap[u].status === 'success' && lrfUploadedFilesMap[u].url) {
+                    validUrls.push(lrfUploadedFilesMap[u].url);
+                  }
+                }
+                photosInput.value = validUrls.join("\n");
+              }
+
+              if (cardEl) cardEl.style.borderColor = 'rgba(74, 222, 128, 0.4)';
+              if (statusEl) {
+                statusEl.style.color = '#4ADE80';
+                statusEl.innerHTML = '✓ Încărcat cu succes';
+              }
+              if (linkEl) {
+                linkEl.style.display = 'block';
+                linkEl.innerHTML = '<span style="color:rgba(229,229,229,0.5);">Link direct: </span><a href="' + imgUrl + '" target="_blank" style="color:var(--gh-golden); text-decoration:underline;">' + imgUrl + '</a>';
+              }
+            } else {
+              lrfUploadedFilesMap[index].status = 'error';
+              if (cardEl) cardEl.style.borderColor = 'rgba(239, 68, 68, 0.4)';
+              if (statusEl) {
+                statusEl.style.color = '#EF4444';
+                statusEl.innerHTML = '⚠️ Încărcare eșuată';
+              }
+            }
+          });
+          lrfActivePromises.push(p);
+        })(j, input.files[j]);
+      }
     } else {
       display.innerHTML = '';
+      var photosInput = document.getElementById('lrf-contact-photos');
+      if (photosInput) photosInput.value = "Nicio fotografie încărcată";
     }
   }
 
@@ -874,7 +940,8 @@
         if (contactForm) {
           contactForm.reset();
         }
-        lrfImageFilesData = [];
+        lrfUploadedFilesMap = [];
+        lrfActivePromises = [];
         var fileDisp = document.getElementById('lrf-file-display');
         if (fileDisp) fileDisp.innerHTML = '';
         if (window.history && window.history.replaceState) {
@@ -884,23 +951,31 @@
       }, 5000);
     }
 
-    var IMGBB_API_KEY = '8470ad1e1efac3794019da4740bfc7cf';
+    var IMGBB_API_KEY = {{ section.settings.imgbb_api_key | default: '8470ad1e1efac3794019da4740bfc7cf' | json }};
 
     async function lrfUploadToImgBB(file) {
-      try {
-        var formData = new FormData();
-        formData.append('image', file);
-        var res = await fetch('https://api.imgbb.com/1/upload?key=' + IMGBB_API_KEY, {
-          method: 'POST',
-          body: formData
-        });
-        var json = await res.json();
-        if (json && json.data && (json.data.url || json.data.url_viewer)) {
-          return json.data.url || json.data.url_viewer;
+      if (IMGBB_API_KEY) {
+        try {
+          var formData = new FormData();
+          formData.append('image', file);
+          var res = await fetch('https://api.imgbb.com/1/upload?key=' + encodeURIComponent(IMGBB_API_KEY), {
+            method: 'POST',
+            body: formData
+          });
+          if (res.ok) {
+            var json = await res.json();
+            if (json && json.data && (json.data.url || json.data.url_viewer)) {
+              return json.data.url || json.data.url_viewer;
+            }
+          } else {
+            console.warn('ImgBB API upload non-OK status:', res.status);
+          }
+        } catch(e) {
+          console.error('ImgBB upload error:', e);
         }
-      } catch(e) {
-        console.error('ImgBB upload error:', e);
       }
+
+      // Secure Fallback: tmpfiles.org
       try {
         var formData2 = new FormData();
         formData2.append('file', file);
@@ -908,27 +983,44 @@
           method: 'POST',
           body: formData2
         });
-        var json2 = await res2.json();
-        if (json2 && json2.data && json2.data.url) {
-          return json2.data.url.replace('tmpfiles.org/', 'tmpfiles.org/dl/');
+        if (res2.ok) {
+          var json2 = await res2.json();
+          if (json2 && json2.data && json2.data.url) {
+            return json2.data.url.replace('tmpfiles.org/', 'tmpfiles.org/dl/');
+          }
         }
-      } catch(err2) {}
+      } catch(err2) {
+        console.error('tmpfiles upload error:', err2);
+      }
       return null;
     }
 
+    window.lrfUploadToImgBB = lrfUploadToImgBB;
+
     async function lrfUploadFilesAndBuildBody() {
       var bodyInput = document.getElementById('lrf-contact-body');
+      var photoHiddenInput = document.getElementById('lrf-contact-photos');
       if (!bodyInput) return;
 
+      if (lrfActivePromises && lrfActivePromises.length > 0) {
+        await Promise.all(lrfActivePromises);
+      }
+
       var uploadedLinks = [];
-      var photoInput = document.getElementById('lrf-photos');
-      if (photoInput && photoInput.files && photoInput.files.length > 0) {
-        for (var i = 0; i < photoInput.files.length; i++) {
-          var file = photoInput.files[i];
-          var imgUrl = await lrfUploadToImgBB(file);
-          if (imgUrl) {
-            uploadedLinks.push({ name: file.name, url: imgUrl });
+      if (lrfUploadedFilesMap && lrfUploadedFilesMap.length > 0) {
+        for (var i = 0; i < lrfUploadedFilesMap.length; i++) {
+          var item = lrfUploadedFilesMap[i];
+          if (item.status === 'success' && item.url) {
+            uploadedLinks.push({ name: item.name, url: item.url });
           }
+        }
+      }
+
+      if (photoHiddenInput) {
+        if (uploadedLinks.length > 0) {
+          photoHiddenInput.value = uploadedLinks.map(function(l) { return l.url; }).join("\n");
+        } else {
+          photoHiddenInput.value = "Nicio fotografie încărcată";
         }
       }
 
@@ -948,6 +1040,10 @@
           reasons.push(cb.parentNode.innerText.trim());
         }
       });
+      var reasonsHidden = document.getElementById('lrf-contact-reasons');
+      if (reasonsHidden) {
+        reasonsHidden.value = reasons.length > 0 ? reasons.join(', ') : 'Nespecificat';
+      }
       var otherReason = (document.getElementById('lrf-other-reason') || {}).value || '';
 
       var stateVal = '';
@@ -964,14 +1060,14 @@
 
       var photosText = "";
       if (uploadedLinks.length > 0) {
-        photosText = "\n• FOTOGRAFII ATAȘATE (" + uploadedLinks.length + " poze încărcate ImgBB):\n";
+        photosText = "\n• FOTOGRAFII ATAȘATE (" + uploadedLinks.length + " poze încărcate cu succes):\n";
         for (var k = 0; k < uploadedLinks.length; k++) {
           photosText += "  - " + uploadedLinks[k].name + ":\n    " + uploadedLinks[k].url + "\n";
         }
-      } else if (lrfImageFilesData && lrfImageFilesData.length > 0) {
-        photosText = "\n• FOTOGRAFII ATAȘATE (" + lrfImageFilesData.length + " fișiere):\n";
-        for (var k = 0; k < lrfImageFilesData.length; k++) {
-          photosText += "  - " + lrfImageFilesData[k].name + " (" + lrfImageFilesData[k].sizeStr + ")\n";
+      } else if (lrfUploadedFilesMap && lrfUploadedFilesMap.length > 0) {
+        photosText = "\n• FOTOGRAFII ATAȘATE (" + lrfUploadedFilesMap.length + " fișiere selectate):\n";
+        for (var k = 0; k < lrfUploadedFilesMap.length; k++) {
+          photosText += "  - " + lrfUploadedFilesMap[k].name + " (" + lrfUploadedFilesMap[k].sizeStr + ")\n";
         }
       } else {
         photosText = "\n• FOTOGRAFII ATAȘATE: Nicio fotografie atașată";
@@ -1017,25 +1113,26 @@
 
     if (contactForm) {
       contactForm.addEventListener('submit', function(e) {
-        var photoInput = document.getElementById('lrf-photos');
-        if (photoInput && photoInput.files && photoInput.files.length > 0 && !contactForm.dataset.uploaded) {
+        if (!contactForm.dataset.submitting) {
           e.preventDefault();
+          contactForm.dataset.submitting = 'true';
+
           var btn = contactForm.querySelector('.lrf-submit-btn');
           if (btn) {
             btn.disabled = true;
-            btn.innerHTML = 'Se încarcă fotografiile... ⏳';
+            btn.innerHTML = 'Se trimite formularul... ⏳';
           }
+
           lrfUploadFilesAndBuildBody().then(function() {
-            contactForm.dataset.uploaded = 'true';
+            console.log('Submitting return form payload to Shopify:', document.getElementById('lrf-contact-body') ? document.getElementById('lrf-contact-body').value : '');
             contactForm.submit();
-            triggerFiveSecThankYou();
+          }).catch(function(err) {
+            console.error('Error submitting form:', err);
+            contactForm.submit();
           });
+
           return false;
         }
-        lrfUploadFilesAndBuildBody();
-        setTimeout(function() {
-          triggerFiveSecThankYou();
-        }, 350);
       });
     }
 
@@ -1061,7 +1158,8 @@
     { "type": "text", "id": "eyebrow", "label": "Eyebrow text", "default": "PROCEDURĂ DE RETUR" },
     { "type": "text", "id": "title", "label": "Titlu principal", "default": "FORMULAR DE RETUR / RETRAGERE" },
     { "type": "text", "id": "company_sub", "label": "Subtitlu companie", "default": "Lumina Europa – MARKEU S.R.L." },
-    { "type": "textarea", "id": "subtitle", "label": "Descriere", "default": "Vă rugăm să completați acest formular dacă doriți să returnați unul sau mai multe produse achiziționate de pe www.luminaeuropa.eu." }
+    { "type": "textarea", "id": "subtitle", "label": "Descriere", "default": "Vă rugăm să completați acest formular dacă doriți să returnați unul sau mai multe produse achiziționate de pe www.luminaeuropa.eu." },
+    { "type": "text", "id": "imgbb_api_key", "label": "ImgBB API Key (Optional)", "default": "8470ad1e1efac3794019da4740bfc7cf", "info": "Cheia API pentru ImgBB. Dacă este goală sau invalidă, se folosește automat serviciul secundar de încărcare securizată." }
   ],
   "presets": [{ "name": "Formular de Retur Official" }]
 }

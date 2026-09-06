@@ -114,12 +114,21 @@
             "perfect_4": "{{ product.metafields.custom.perfect_pentru_item_4.value }}"
           }
         },
+        "inainte_de_utilizare_tab": {
+          "type": "content",
+          "settings": {
+            "title_tab": "Înainte de utilizare",
+            "metafield_source": "inainte_de_utilizare",
+            "answer_content": "",
+            "page": ""
+          }
+        },
         "b69a53cf-5bc1-4b18-add3-92af436f966c": {
           "type": "content",
           "settings": {
             "title_tab": "Cum se utilizează",
-            "metafield_source": "mod_utilizare",
-            "answer_content": "<p>{{ block.settings.page.metafields.custom.cum_se_utilizeaza | metafield_tag }}</p>",
+            "metafield_source": "cum_se_utilizeaza",
+            "answer_content": "",
             "page": ""
           }
         },
@@ -128,7 +137,7 @@
           "settings": {
             "title_tab": "Ingrediente cheie",
             "metafield_source": "ingrediente_cheie",
-            "answer_content": "<p>{{ block.settings.page.metafields.custom.ingrediente_cheie | metafield_tag }}</p>",
+            "answer_content": "",
             "page": ""
           }
         },
@@ -137,7 +146,7 @@
           "settings": {
             "title_tab": "Rezultate clinice",
             "metafield_source": "rezultate_clinice",
-            "answer_content": "<p>{{ block.settings.page.metafields.custom.rezultate_clinice | metafield_tag }}</p>",
+            "answer_content": "",
             "page": ""
           }
         },
@@ -152,12 +161,15 @@
       },
       "block_order": [
         "6889c9ba-caef-4edd-9757-6711505cb095",
+        "inainte_de_utilizare_tab",
         "b69a53cf-5bc1-4b18-add3-92af436f966c",
         "450a0011-a13e-4bad-9fbb-454bc0a862b4",
         "f4c1b859-6506-4354-b686-25d6efffda01",
         "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc"
       ],
       "settings": {
+        "tab_text_size_desktop": 18,
+        "tab_text_size_mobile": 14,
         "animation": "fade-up",
         "setwidth": "container-fluid",
         "tab_size": "full",

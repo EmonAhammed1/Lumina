@@ -11265,19 +11265,29 @@ blockquote::before {
   height: 10px;
 }
 #HeaderCountryForm .disclosure__list-wrapper, 
-#HeaderLanguageForm .disclosure__list-wrapper,
-#HeaderLanguageFormMobile .disclosure__list-wrapper,
-#HeaderCountryFormMobile .disclosure__list-wrapper{
+#HeaderLanguageForm .disclosure__list-wrapper{
   top:100%;
   bottom:auto;
   transform: translateY(1rem);
   right:0;
   border: 1px solid var(--g-input-border);
 }
+#HeaderLanguageFormMobile .disclosure__list-wrapper,
+#HeaderCountryFormMobile .disclosure__list-wrapper{
+  top:auto;
+  bottom:100%;
+  transform: translateY(-0.5rem);
+  left:0;
+  right:auto;
+  background-color: #141414;
+  border: 1px solid rgba(184, 150, 62, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.95);
+  z-index: 1000;
+  min-width: 200px;
+}
 #HeaderCountryForm .disclosure__list-wrapper.header-left, 
-#HeaderLanguageForm .disclosure__list-wrapper.header-left,
-#HeaderLanguageFormMobile .disclosure__list-wrapper.header-left,
-#HeaderCountryFormMobile .disclosure__list-wrapper.header-left{
+#HeaderLanguageForm .disclosure__list-wrapper.header-left{
   left:0;
   right:auto;
 }

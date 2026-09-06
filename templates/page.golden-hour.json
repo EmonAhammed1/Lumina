@@ -320,6 +320,18 @@
         "body_size_mobile": 15
       }
     },
+    "tech_mockup_hero_YmgBGP": {
+      "type": "tech-mockup-hero",
+      "settings": {
+        "bg_video": "shopify://files/videos/kling_20260723_VIDEO_1__Subject_568_0.mp4",
+        "overlay_opacity": 0,
+        "subtitle": "MAI MULT DECÂT FRUMUSEȚE",
+        "title": "LUMINA GOLDEN HOUR",
+        "text": "Un timp pe care ți-l oferi. Ritualuri, povești, experiențe și privilegii create pentru cei care aleg să facă din îngrijire un moment al lor.",
+        "btn_label": "DESCOPERĂ LUMINA GOLDEN HOUR →",
+        "btn_link": ""
+      }
+    },
     "faq": {
       "type": "golden-hour-faq",
       "blocks": {
@@ -452,6 +464,7 @@
     "rewards",
     "moments",
     "community",
+    "tech_mockup_hero_YmgBGP",
     "faq",
     "tiers",
     "ctas"

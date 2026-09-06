@@ -14,11 +14,11 @@
       "settings": {
         "bg_video": "shopify://files/videos/WhatsApp Video 2026-08-10 at 15.00.17.mp4",
         "overlay_opacity": 0,
-        "subtitle": "UNDE ȘTIINȚA",
-        "title": "DEVINE\nRITUAL",
-        "text": "Tehnologia nanofibrelor Lumina oferă ingrediente active încapsulate cu precizie, puritate și scop bine definit.",
-        "btn_label": "EXPLOREAZĂ TEHNOLOGIA",
-        "btn_link": ""
+        "subtitle": "FRUMUSEȚEA ARE MAI MULTE POVEȘTI",
+        "title": "LUMINA WORLD",
+        "text": "Explorăm frumusețea dincolo de oglindă — prin știință, cultură, ritual, istorie, artă și oameni. Un loc pentru idei care merită mai mult decât câteva secunde de atenție.",
+        "btn_label": "INTRĂ ÎN LUMINA WORLD →",
+        "btn_link": "shopify://collections"
       }
     },
     "lumina_world_hero": {
@@ -52,10 +52,11 @@
       "settings": {
         "section_label": "CONVERSAȚIE ÎN PRIM-PLAN",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/1fb4e74b7ace4ca59697582166b7e86a.mp4",
+        "cover_image": "shopify://shop_images/Katerina-Vodsedalkova.jpg",
         "eyebrow": "ȘTIINȚĂ ȘI LONGEVITATE",
         "title": "Noua știință a longevității pielii",
-        "subtitle": "cu Prof. Dr. Friedrich W. Bauer",
-        "description": "O conversație despre inteligența celulară, epigenetică și viitorul îmbătrânirii armonioase.",
+        "subtitle": "Ing. Kateřina Vodseďálková, Ph.D.",
+        "description": "O conversație cu Katerina, CEO NanoPharma, despre nanofibre, inovație și ce înseamnă să construiești tehnologie de frumusețe din interiorul științei.",
         "btn_1_label": "URMĂREȘTE CONVERSAȚIA",
         "btn_1_link": "/",
         "btn_2_label": "CITEȘTE TRANSCRIPTUL",
@@ -65,68 +66,74 @@
     "lumina_talk_slider": {
       "type": "lumina-world-conversations-slider",
       "blocks": {
+        "conversation_MaQfeM": {
+          "type": "conversation",
+          "settings": {
+            "image": "shopify://shop_images/Katerina-Vodsedalkova.jpg",
+            "video_url": "",
+            "category": "ȘTIINȚĂ",
+            "name": "Ing. Kateřina Vodseďálková, Ph.D.",
+            "role": "CEO NanoPharma a.s."
+          }
+        },
         "speaker_1": {
           "type": "conversation",
           "settings": {
+            "image": "shopify://shop_images/Johana-Kulhankova-1.jpg",
             "video_url": "",
             "category": "ȘTIINȚĂ",
-            "name": "Dr. Anaya Petrescu",
-            "role": "Dermatolog"
+            "name": "Ing. Johana Kulhánková, Ph.D.",
+            "role": "Product Manager NanoPharma a.s."
           }
         },
         "speaker_2": {
           "type": "conversation",
           "settings": {
+            "image": "shopify://shop_images/IMG_8533-1-e1769960555292-640x690.png",
             "video_url": "",
-            "category": "ARTĂ ȘI CULTURĂ",
-            "name": "Andrei Mărgăritescu",
-            "role": "Artist contemporan"
+            "category": "ȘTIINȚĂ",
+            "name": "Ing. Marek Cihak",
+            "role": "Marketing Manager, NanoPharma a.s."
           }
         },
         "speaker_3": {
           "type": "conversation",
           "settings": {
+            "image": "shopify://shop_images/coming-soon-background-with-focus-light-effect-design_1017-27277.avif",
             "video_url": "",
-            "category": "ARHITECTURĂ",
-            "name": "Ioana Ardelean",
-            "role": "Arhitect"
+            "category": "",
+            "name": "",
+            "role": ""
           }
         },
-        "speaker_4": {
+        "conversation_XTX4Jf": {
           "type": "conversation",
           "settings": {
+            "image": "shopify://shop_images/coming-soon-background-with-focus-light-effect-design_1017-27277.avif",
             "video_url": "",
-            "category": "PERFORMANȚĂ",
-            "name": "David Popovici",
-            "role": "Campion olimpic"
+            "category": "",
+            "name": "",
+            "role": ""
           }
         },
-        "speaker_5": {
+        "conversation_734iXF": {
           "type": "conversation",
           "settings": {
+            "image": "shopify://shop_images/coming-soon-background-with-focus-light-effect-design_1017-27277.avif",
             "video_url": "",
-            "category": "LITERATURĂ",
-            "name": "Simona Sora",
-            "role": "Scriitoare"
-          }
-        },
-        "speaker_6": {
-          "type": "conversation",
-          "settings": {
-            "video_url": "",
-            "category": "MEDICINĂ",
-            "name": "Dr. Radu Tudosie",
-            "role": "Medicină funcțională"
+            "category": "",
+            "name": "",
+            "role": ""
           }
         }
       },
       "block_order": [
+        "conversation_MaQfeM",
         "speaker_1",
         "speaker_2",
         "speaker_3",
-        "speaker_4",
-        "speaker_5",
-        "speaker_6"
+        "conversation_XTX4Jf",
+        "conversation_734iXF"
       ],
       "settings": {
         "section_title": "ULTIMELE CONVERSAȚII",

@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "main": {
       "type": "list-collections-template",
@@ -77,12 +78,12 @@
         "4ca26696-8c69-457b-b768-8f4ea309d003",
         "b86a326b-4e5c-4ff4-8312-15fa764d2fdb"
       ],
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "full",
         "bgsection": "#ffffff",
         "parrallax_enable": true,
-        "image": "shopify://shop_images/110523_HPBanner_Desktop_OmniCampaign_BundleAndSave_01.webp",
         "height_section": "550",
         "height_section_mobile": "450",
         "align": "left",
@@ -99,6 +100,7 @@
     },
     "166340581364695c71": {
       "type": "product-list-swiper",
+      "disabled": true,
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",

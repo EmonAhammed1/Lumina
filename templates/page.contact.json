@@ -9,6 +9,18 @@
  */
 {
   "sections": {
+    "tech_mockup_hero_m8kPrc": {
+      "type": "tech-mockup-hero",
+      "settings": {
+        "bg_video": "shopify://files/videos/kling_20260723_VIDEO_1__Subject_602_0.mp4",
+        "overlay_opacity": 0,
+        "subtitle": "SĂ VORBIM",
+        "title": "INTRĂ ÎN LUMINA",
+        "text": "Pentru întrebări, colaborări, presă sau pur și simplu pentru a ne scrie, suntem aici. Alege motivul mesajului tău, iar acesta va ajunge la persoana potrivită.",
+        "btn_label": "CONTACTEAZĂ-NE →",
+        "btn_link": "shopify://collections"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -244,6 +256,7 @@
     }
   },
   "order": [
+    "tech_mockup_hero_m8kPrc",
     "main",
     "get-in-touch",
     "e7285e43-2bb7-46e5-a5e4-538568d8723e",

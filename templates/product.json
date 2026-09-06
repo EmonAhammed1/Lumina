@@ -634,6 +634,19 @@
         "button_text": "Descoperă",
         "show_button_icon": true
       }
+    },
+    "tech_mockup_hero_tiBdYQ": {
+      "type": "tech-mockup-hero",
+      "name": "Mockup - Hero",
+      "settings": {
+        "bg_video": "shopify://files/videos/WhatsApp Video 2026-08-10 at 15.05.00.mp4",
+        "overlay_opacity": 30,
+        "subtitle": "DESCOPERĂ LUMINA",
+        "title": "ÎNCEPE CU UN RITUAL",
+        "text": "Nanofibre. Ingrediente active. Ritualuri create pentru momentele în care alegi să ai grijă de tine. Descoperă colecția Lumina Europa și găsește ritualul potrivit pentru tine.",
+        "btn_label": "EXPLOREAZĂ COLECȚIA",
+        "btn_link": "shopify://collections"
+      }
     }
   },
   "order": [
@@ -651,6 +664,7 @@
     "product-recommendations",
     "product-recent",
     "continua_ritualul_K3qkFh",
-    "protocoale_complete_7L7mXw"
+    "protocoale_complete_7L7mXw",
+    "tech_mockup_hero_tiBdYQ"
   ]
 }

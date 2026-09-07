@@ -136,25 +136,48 @@
     position: absolute;
     bottom: 30px;
     right: 30px;
-    width: 42px;
-    height: 42px;
-    background: transparent;
-    border: 1px solid {{ section.settings.button_color }};
-    color: {{ section.settings.button_color }};
+    width: 44px;
+    height: 44px;
+    background: rgba(17, 16, 15, 0.6);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1.5px solid {{ section.settings.button_color | default: '#F9E29C' }};
+    color: {{ section.settings.button_color | default: '#F9E29C' }};
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: var(--gh-transition);
-    z-index: 3;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 0;
   }
   .gh-audio-toggle:hover {
-    background: rgba(249, 226, 156, 0.15);
+    background: rgba(249, 226, 156, 0.2);
+    transform: scale(1.05);
+  }
+  .gh-audio-toggle:active {
+    transform: scale(0.95);
+  }
+  .gh-audio-toggle svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: block;
   }
   @media screen and (max-width: 768px) {
     .gh-audio-toggle {
-      display: none;
+      display: flex !important;
+      bottom: 24px;
+      right: 20px;
+      width: 44px;
+      height: 44px;
+      background: rgba(17, 16, 15, 0.7);
     }
   }
 {%- endstyle -%}
@@ -199,72 +222,145 @@
     {%- endif -%}
   </div>
 
-
-
   <button type="button" class="gh-audio-toggle" id="gh-audio-toggle-{{ section.id }}" aria-label="Toggle audio">
-    <svg class="gh-scroll-arrow-icon" viewBox="0 0 24 24" id="gh-icon-muted">
-      <path d="M11 5L6 9H2v6h4l5 4V5zM23 9l-6 6M17 9l6 6"/>
+    <svg viewBox="0 0 24 24" id="gh-icon-muted" aria-hidden="true">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+      <line x1="23" y1="9" x2="17" y2="15"></line>
+      <line x1="17" y1="9" x2="23" y2="15"></line>
     </svg>
-    <svg class="gh-scroll-arrow-icon" viewBox="0 0 24 24" id="gh-icon-unmuted" style="display:none;">
-      <path d="M11 5L6 9H2v6h4l5 4V5zM19.07 4.93a10 10 0 010 14.14M15.54 8.46a5 5 0 010 7.07"/>
+    <svg viewBox="0 0 24 24" id="gh-icon-unmuted" style="display:none;" aria-hidden="true">
+      <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+      <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
     </svg>
   </button>
 </div>
 
 <script>
-  document.addEventListener('DOMContentLoaded', function() {
-    const toggleBtn = document.getElementById('gh-audio-toggle-{{ section.id }}');
-    const desktopVideo = document.getElementById('gh-video-desktop');
-    const mobileVideo = document.getElementById('gh-video-mobile');
-    const iconMuted = document.getElementById('gh-icon-muted');
-    const iconUnmuted = document.getElementById('gh-icon-unmuted');
+  (function() {
+    function initGoldenHourHeroAudio() {
+      const section = document.querySelector('[data-section-id="{{ section.id }}"]');
+      if (!section) return;
 
-    const activeVideo = window.innerWidth > 768 ? desktopVideo : mobileVideo;
-    
-    // Attempt to play unmuted at 30% volume on load
-    if (activeVideo && activeVideo.tagName === 'VIDEO') {
-      activeVideo.volume = 0.1;
-      activeVideo.muted = false;
-      
-      const playPromise = activeVideo.play();
-      if (playPromise !== undefined) {
-        playPromise.then(() => {
-          // Autoplay started with sound
-          if (iconMuted && iconUnmuted) {
-            iconMuted.style.display = 'none';
-            iconUnmuted.style.display = 'block';
+      const toggleBtn = section.querySelector('#gh-audio-toggle-{{ section.id }}');
+      const desktopVideo = section.querySelector('#gh-video-desktop');
+      const mobileVideo = section.querySelector('#gh-video-mobile');
+      const iconMuted = section.querySelector('#gh-icon-muted');
+      const iconUnmuted = section.querySelector('#gh-icon-unmuted');
+
+      let userExplicitlyMuted = false;
+      let hasUserInteracted = false;
+
+      function getActiveVideo() {
+        const isMobile = window.innerWidth <= 768;
+        if (isMobile) {
+          if (desktopVideo && !desktopVideo.paused) {
+            desktopVideo.muted = true;
           }
-        }).catch(error => {
-          // Autoplay was prevented by browser. Fallback to muted.
-          activeVideo.muted = true;
-          activeVideo.play();
-          if (iconMuted && iconUnmuted) {
-            iconMuted.style.display = 'block';
-            iconUnmuted.style.display = 'none';
+          return mobileVideo || desktopVideo;
+        } else {
+          if (mobileVideo && !mobileVideo.paused) {
+            mobileVideo.muted = true;
+          }
+          return desktopVideo || mobileVideo;
+        }
+      }
+
+      function updateIcon(isMuted) {
+        if (!iconMuted || !iconUnmuted) return;
+        if (isMuted) {
+          iconMuted.style.display = 'block';
+          iconUnmuted.style.display = 'none';
+        } else {
+          iconMuted.style.display = 'none';
+          iconUnmuted.style.display = 'block';
+        }
+      }
+
+      function tryPlayWithSound(video) {
+        if (!video || userExplicitlyMuted) return;
+        video.muted = false;
+        video.volume = 0.25;
+        const playPromise = video.play();
+        if (playPromise !== undefined) {
+          playPromise.then(function() {
+            updateIcon(false);
+          }).catch(function() {
+            // Browser restricted unmuted autoplay, fallback to muted autoplay
+            video.muted = true;
+            video.play().catch(function() {});
+            updateIcon(true);
+          });
+        }
+      }
+
+      function onFirstUserGesture() {
+        if (hasUserInteracted) return;
+        hasUserInteracted = true;
+        const currentVideo = getActiveVideo();
+        if (currentVideo && !userExplicitlyMuted && currentVideo.muted) {
+          currentVideo.muted = false;
+          currentVideo.volume = 0.25;
+          currentVideo.play().then(function() {
+            updateIcon(false);
+          }).catch(function() {});
+        }
+        window.removeEventListener('touchstart', onFirstUserGesture);
+        window.removeEventListener('click', onFirstUserGesture);
+        window.removeEventListener('scroll', onFirstUserGesture);
+      }
+
+      // Initial autoplay attempt
+      const activeVideo = getActiveVideo();
+      if (activeVideo) {
+        tryPlayWithSound(activeVideo);
+      }
+
+      // Unlock sound on first touch / tap / interaction on mobile
+      window.addEventListener('touchstart', onFirstUserGesture, { passive: true, once: true });
+      window.addEventListener('click', onFirstUserGesture, { passive: true, once: true });
+      window.addEventListener('scroll', onFirstUserGesture, { passive: true, once: true });
+
+      // Toggle button click listener
+      if (toggleBtn) {
+        toggleBtn.addEventListener('click', function(e) {
+          e.preventDefault();
+          e.stopPropagation();
+          hasUserInteracted = true;
+          const currentVideo = getActiveVideo();
+          if (!currentVideo) return;
+
+          if (currentVideo.muted) {
+            userExplicitlyMuted = false;
+            currentVideo.muted = false;
+            currentVideo.volume = 0.25;
+            currentVideo.play().then(function() {
+              updateIcon(false);
+            }).catch(function(err) {
+              console.log('Video play error:', err);
+            });
+          } else {
+            userExplicitlyMuted = true;
+            currentVideo.muted = true;
+            updateIcon(true);
           }
         });
       }
-    }
 
-    if (toggleBtn) {
-      toggleBtn.addEventListener('click', function() {
-        const currentVideo = window.innerWidth > 768 ? desktopVideo : mobileVideo;
-        if (currentVideo && currentVideo.tagName === 'VIDEO') {
-          currentVideo.muted = !currentVideo.muted;
-          if (!currentVideo.muted) {
-            currentVideo.volume = 0.1; // Ensure it's 10% when unmuted
-          }
-          if (currentVideo.muted) {
-            iconMuted.style.display = 'block';
-            iconUnmuted.style.display = 'none';
-          } else {
-            iconMuted.style.display = 'none';
-            iconUnmuted.style.display = 'block';
-          }
+      // Sync on resize
+      window.addEventListener('resize', function() {
+        const currentVideo = getActiveVideo();
+        if (currentVideo) {
+          updateIcon(currentVideo.muted);
         }
       });
     }
-  });
+
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initGoldenHourHeroAudio);
+    } else {
+      initGoldenHourHeroAudio();
+    }
+  })();
 </script>
 
 {% schema %}

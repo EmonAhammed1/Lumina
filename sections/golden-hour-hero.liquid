@@ -237,6 +237,21 @@
 
 <script>
   (function() {
+    let audioContext = null;
+    let userExplicitlyMuted = false;
+
+    function getAudioContext() {
+      if (!audioContext && (window.AudioContext || window.webkitAudioContext)) {
+        try {
+          audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        } catch (e) {}
+      }
+      if (audioContext && audioContext.state === 'suspended') {
+        audioContext.resume().catch(function() {});
+      }
+      return audioContext;
+    }
+
     function initGoldenHourHeroAudio() {
       const section = document.querySelector('[data-section-id="{{ section.id }}"]');
       if (!section) return;
@@ -246,9 +261,6 @@
       const mobileVideo = section.querySelector('#gh-video-mobile');
       const iconMuted = section.querySelector('#gh-icon-muted');
       const iconUnmuted = section.querySelector('#gh-icon-unmuted');
-
-      let userExplicitlyMuted = false;
-      let hasUserInteracted = false;
 
       function getActiveVideo() {
         const isMobile = window.innerWidth <= 768;
@@ -276,81 +288,123 @@
         }
       }
 
-      function tryPlayWithSound(video) {
-        if (!video || userExplicitlyMuted) return;
-        video.muted = false;
-        video.volume = 0.25;
-        const playPromise = video.play();
+      function playActiveVideoWithSound() {
+        if (userExplicitlyMuted) return;
+        getAudioContext();
+        const vid = getActiveVideo();
+        if (!vid) return;
+
+        vid.muted = false;
+        vid.volume = 0.35;
+        vid.loop = true;
+
+        const playPromise = vid.play();
         if (playPromise !== undefined) {
           playPromise.then(function() {
             updateIcon(false);
           }).catch(function() {
-            // Browser restricted unmuted autoplay, fallback to muted autoplay
-            video.muted = true;
-            video.play().catch(function() {});
+            // Autoplay unmuted was restricted by browser on cold load
+            // Keep video playing and unmute immediately on any touch/interaction
+            vid.muted = true;
+            vid.play().catch(function() {});
             updateIcon(true);
           });
         }
       }
 
-      function onFirstUserGesture() {
-        if (hasUserInteracted) return;
-        hasUserInteracted = true;
-        const currentVideo = getActiveVideo();
-        if (currentVideo && !userExplicitlyMuted && currentVideo.muted) {
-          currentVideo.muted = false;
-          currentVideo.volume = 0.25;
-          currentVideo.play().then(function() {
+      function forceUnmuteAndPlay() {
+        if (userExplicitlyMuted) return;
+        getAudioContext();
+        const vid = getActiveVideo();
+        if (vid) {
+          vid.muted = false;
+          vid.volume = 0.35;
+          vid.play().then(function() {
             updateIcon(false);
           }).catch(function() {});
         }
-        window.removeEventListener('touchstart', onFirstUserGesture);
-        window.removeEventListener('click', onFirstUserGesture);
-        window.removeEventListener('scroll', onFirstUserGesture);
       }
 
-      // Initial autoplay attempt
-      const activeVideo = getActiveVideo();
-      if (activeVideo) {
-        tryPlayWithSound(activeVideo);
+      // Continuous loop protection - keeps playing continuously
+      [desktopVideo, mobileVideo].forEach(function(v) {
+        if (v) {
+          v.addEventListener('ended', function() {
+            if (!userExplicitlyMuted) {
+              v.currentTime = 0;
+              v.play().catch(function() {});
+            }
+          });
+          v.addEventListener('pause', function() {
+            if (!userExplicitlyMuted && !document.hidden) {
+              setTimeout(function() {
+                if (!userExplicitlyMuted && v.paused) {
+                  v.play().catch(function() {});
+                }
+              }, 150);
+            }
+          });
+        }
+      });
+
+      // Immediate attempt on load
+      playActiveVideoWithSound();
+
+      // Multi-layer interaction capture for instant sound start on touch/scroll
+      const interactionEvents = [
+        'touchstart', 'touchend', 'touchmove',
+        'pointerdown', 'pointerup', 'pointermove',
+        'click', 'mousedown', 'mouseup',
+        'scroll', 'wheel', 'keydown',
+        'pageshow', 'visibilitychange'
+      ];
+
+      function handleUserGesture() {
+        if (userExplicitlyMuted) return;
+        const vid = getActiveVideo();
+        if (vid && vid.muted) {
+          forceUnmuteAndPlay();
+        }
       }
 
-      // Unlock sound on first touch / tap / interaction on mobile
-      window.addEventListener('touchstart', onFirstUserGesture, { passive: true, once: true });
-      window.addEventListener('click', onFirstUserGesture, { passive: true, once: true });
-      window.addEventListener('scroll', onFirstUserGesture, { passive: true, once: true });
+      interactionEvents.forEach(function(evt) {
+        window.addEventListener(evt, handleUserGesture, { capture: true, passive: true });
+        document.addEventListener(evt, handleUserGesture, { capture: true, passive: true });
+      });
 
       // Toggle button click listener
       if (toggleBtn) {
         toggleBtn.addEventListener('click', function(e) {
           e.preventDefault();
           e.stopPropagation();
-          hasUserInteracted = true;
-          const currentVideo = getActiveVideo();
-          if (!currentVideo) return;
+          getAudioContext();
+          const vid = getActiveVideo();
+          if (!vid) return;
 
-          if (currentVideo.muted) {
+          if (vid.muted) {
             userExplicitlyMuted = false;
-            currentVideo.muted = false;
-            currentVideo.volume = 0.25;
-            currentVideo.play().then(function() {
+            vid.muted = false;
+            vid.volume = 0.35;
+            vid.play().then(function() {
               updateIcon(false);
             }).catch(function(err) {
-              console.log('Video play error:', err);
+              console.log('Audio play error:', err);
             });
           } else {
             userExplicitlyMuted = true;
-            currentVideo.muted = true;
+            vid.muted = true;
             updateIcon(true);
           }
         });
       }
 
-      // Sync on resize
+      // Sync state on window resize
       window.addEventListener('resize', function() {
-        const currentVideo = getActiveVideo();
-        if (currentVideo) {
-          updateIcon(currentVideo.muted);
+        const vid = getActiveVideo();
+        if (vid) {
+          if (!userExplicitlyMuted && !vid.muted) {
+            vid.play().catch(function() {});
+          }
+          updateIcon(vid.muted);
         }
       });
     }

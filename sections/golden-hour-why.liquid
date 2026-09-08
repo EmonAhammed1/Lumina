@@ -65,15 +65,21 @@
 {%- endstyle -%}
 
 <div class="gh-why-wrap" id="{{ section.id | split: '__' | last }}" data-section-id="{{ section.id }}">
-  {%- if section.settings.video != blank -%}
+  {%- if section.settings.video != blank and section.settings.video.sources != blank -%}
     {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, class: 'gh-why-bg-video' }}
+  {%- elsif section.settings.video != blank -%}
+    <video class="gh-why-bg-video" autoplay loop muted playsinline poster="{{ 'section-bg.png' | asset_url }}">
+      <source src="{% if section.settings.video contains 'http' %}{{ section.settings.video }}{% else %}{{ section.settings.video | file_url }}{% endif %}" type="video/mp4">
+      <source src="{{ 'video 2 walking down the hillmp4.mp4' | file_url }}" type="video/mp4">
+      <source src="{{ 'video_2_walking_down_the_hillmp4.mp4' | file_url }}" type="video/mp4">
+      <source src="{{ 'kling_20260710_VIDEO_Cinematic__2868_0.mp4' | file_url }}" type="video/mp4">
+    </video>
   {%- else -%}
     <video class="gh-why-bg-video" autoplay loop muted playsinline poster="{{ 'section-bg.png' | asset_url }}">
       <source src="{{ 'video 2 walking down the hillmp4.mp4' | file_url }}" type="video/mp4">
       <source src="{{ 'video_2_walking_down_the_hillmp4.mp4' | file_url }}" type="video/mp4">
-      <source src="{{ '1_golden_hour_hero.mp4' | file_url }}" type="video/mp4">
-      <source src="{{ 'daa8f8991d7e47419cbd9ff37f3f6f05.mp4' | file_url }}" type="video/mp4">
-      <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
+      <source src="{{ 'kling_20260710_VIDEO_Cinematic__2868_0.mp4' | file_url }}" type="video/mp4">
+      <source src="{{ 'The Golden Hour HERO.mp4' | file_url }}" type="video/mp4">
     </video>
   {%- endif -%}
 

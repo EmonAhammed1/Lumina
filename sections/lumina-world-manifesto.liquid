@@ -235,13 +235,16 @@
         <div class="lwm-media-box">
           {%- if section.settings.video_url != blank -%}
             <video autoplay loop muted playsinline poster="{{ section.settings.image | image_url: width: 1200 }}">
-              <source src="{{ section.settings.video_url }}" type="video/mp4">
+              <source src="{% if section.settings.video_url contains 'http' %}{{ section.settings.video_url }}{% else %}{{ section.settings.video_url | file_url }}{% endif %}" type="video/mp4">
+              <source src="{{ '3_lumina_world_manifesto_talk.mp4' | file_url }}" type="video/mp4">
+              <source src="{{ 'video 1 presentation.mp4' | file_url }}" type="video/mp4">
             </video>
           {%- elsif section.settings.image != blank -%}
             <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.title | escape }}" loading="lazy">
           {%- else -%}
             <video autoplay loop muted playsinline poster="{{ 'lumina-experience-reborn.png' | asset_url }}">
               <source src="{{ '3_lumina_world_manifesto_talk.mp4' | file_url }}" type="video/mp4">
+              <source src="{{ 'video 1 presentation.mp4' | file_url }}" type="video/mp4">
               <source src="https://cdn.shopify.com/videos/c/o/v/06637b7d08654c609c15feae7fb90035.mp4" type="video/mp4">
             </video>
           {%- endif -%}

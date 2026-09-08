@@ -195,12 +195,15 @@
             {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
           {% else %}
             <video autoplay loop muted playsinline preload="metadata">
-              <source src="{{ section.settings.video }}" type="video/mp4">
+              <source src="{% if section.settings.video contains 'http' %}{{ section.settings.video }}{% else %}{{ section.settings.video | file_url }}{% endif %}" type="video/mp4">
+              <source src="{{ 'kling_20260710_VIDEO_Cinematic__2868_0.mp4' | file_url }}" type="video/mp4">
+              <source src="{{ '6_experience_technology_player.mp4' | file_url }}" type="video/mp4">
             </video>
           {% endif %}
         {% elsif section.settings.video_url != blank %}
           <video autoplay loop muted playsinline preload="metadata">
-            <source src="{{ section.settings.video_url }}" type="video/mp4">
+            <source src="{% if section.settings.video_url contains 'http' %}{{ section.settings.video_url }}{% else %}{{ section.settings.video_url | file_url }}{% endif %}" type="video/mp4">
+            <source src="{{ 'kling_20260710_VIDEO_Cinematic__2868_0.mp4' | file_url }}" type="video/mp4">
           </video>
         {% elsif section.settings.image != blank %}
           <img src="{{ section.settings.image | image_url: width: 800 }}" alt="Scientist" loading="lazy">

@@ -149,17 +149,23 @@
   <div class="gh-what-image-col">
     {%- if section.settings.main_image != blank -%}
       <img src="{{ section.settings.main_image | image_url: width: 1600 }}" class="gh-what-video" alt="{{ section.settings.heading | escape }}" loading="lazy">
-    {%- elsif section.settings.video != blank -%}
+    {%- elsif section.settings.video != blank and section.settings.video.sources != blank -%}
       {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, class: 'gh-what-video' }}
+    {%- elsif section.settings.video != blank -%}
+      <video class="gh-what-video" autoplay loop muted playsinline poster="{{ 'The Golden Hour Mock.png' | asset_url }}">
+        <source src="{% if section.settings.video contains 'http' %}{{ section.settings.video }}{% else %}{{ section.settings.video | file_url }}{% endif %}" type="video/mp4">
+        <source src="{{ 'video 3 natural light on the skin.mp4' | file_url }}" type="video/mp4">
+        <source src="{{ 'video_3_natural_light_on_the_skin.mp4' | file_url }}" type="video/mp4">
+        <source src="{{ 'demonstrative animation.mp4' | file_url }}" type="video/mp4">
+        <source src="{{ 'video 1 presentation.mp4' | file_url }}" type="video/mp4">
+      </video>
     {%- else -%}
       <video class="gh-what-video" autoplay loop muted playsinline poster="{{ 'The Golden Hour Mock.png' | asset_url }}">
+        <source src="{{ 'video 3 natural light on the skin.mp4' | file_url }}" type="video/mp4">
+        <source src="{{ 'video_3_natural_light_on_the_skin.mp4' | file_url }}" type="video/mp4">
         <source src="{{ 'demonstrative animation.mp4' | file_url }}" type="video/mp4">
         <source src="{{ 'demonstrative_animation.mp4' | file_url }}" type="video/mp4">
         <source src="{{ 'video 1 presentation.mp4' | file_url }}" type="video/mp4">
-        <source src="{{ 'video_1_presentation.mp4' | file_url }}" type="video/mp4">
-        <source src="{{ '2_nanofibre_activation_rewards.mp4' | file_url }}" type="video/mp4">
-        <source src="{{ 'a3f8b7ec2b264fbda558acd951f1b106.mp4' | file_url }}" type="video/mp4">
-        <source src="https://cdn.shopify.com/videos/c/o/v/a3f8b7ec2b264fbda558acd951f1b106.mp4" type="video/mp4">
       </video>
     {%- endif -%}
   </div>

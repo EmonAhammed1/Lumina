@@ -132,7 +132,10 @@
       {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, class: 'gh-rewards-video' }}
     {%- else -%}
       <video class="gh-rewards-video" autoplay loop muted playsinline poster="{{ 'pure_transfer.jpg' | asset_url }}">
+        <source src="{{ 'video 3 natural light on the skin.mp4' | file_url }}" type="video/mp4">
+        <source src="{{ 'video_3_natural_light_on_the_skin.mp4' | file_url }}" type="video/mp4">
         <source src="{{ '2_nanofibre_activation_rewards.mp4' | file_url }}" type="video/mp4">
+        <source src="{{ 'a3f8b7ec2b264fbda558acd951f1b106.mp4' | file_url }}" type="video/mp4">
         <source src="https://cdn.shopify.com/videos/c/o/v/a3f8b7ec2b264fbda558acd951f1b106.mp4" type="video/mp4">
       </video>
     {%- endif -%}

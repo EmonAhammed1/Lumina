@@ -524,19 +524,27 @@
             
             <!-- Slide 1 (MICRO) -->
             <div class="media-slide active" data-slide="1">
-              {%- if section.settings.stage_1_video_url != blank -%}
-                <video src="{% if section.settings.stage_1_video_url contains 'http' %}{{ section.settings.stage_1_video_url }}{% else %}{{ section.settings.stage_1_video_url | file_url }}{% endif %}" autoplay loop muted playsinline class="bg-media"></video>
+              {%- if section.settings.stage_1_video_url != blank and section.settings.stage_1_video_url contains 'http' -%}
+                <video src="{{ section.settings.stage_1_video_url }}" autoplay loop muted playsinline class="bg-media"></video>
+              {%- elsif section.settings.stage_1_video_url != blank -%}
+                <video src="{{ section.settings.stage_1_video_url | file_url }}" autoplay loop muted playsinline class="bg-media"></video>
               {%- elsif section.settings.stage_1_image != blank -%}
                 <img src="{{ section.settings.stage_1_image | image_url: width: 1000 }}" alt="Microscope view - Micro" class="bg-media" loading="lazy">
               {%- else -%}
-                <img src="{{ 'nano-fiber-stracture.webp' | asset_url }}" alt="Microscope view - Micro" class="bg-media" loading="lazy">
+                <video autoplay loop muted playsinline class="bg-media" poster="{{ 'nano-fiber-stracture.webp' | asset_url }}">
+                  <source src="{{ '2_nanofibre_activation_rewards.mp4' | file_url }}" type="video/mp4">
+                  <source src="{{ 'a3f8b7ec2b264fbda558acd951f1b106.mp4' | file_url }}" type="video/mp4">
+                  <source src="https://cdn.shopify.com/videos/c/o/v/a3f8b7ec2b264fbda558acd951f1b106.mp4" type="video/mp4">
+                </video>
               {%- endif -%}
             </div>
             
             <!-- Slide 2 (ACTIVE) -->
             <div class="media-slide" data-slide="2">
-              {%- if section.settings.stage_2_video_url != blank -%}
-                <video src="{% if section.settings.stage_2_video_url contains 'http' %}{{ section.settings.stage_2_video_url }}{% else %}{{ section.settings.stage_2_video_url | file_url }}{% endif %}" autoplay loop muted playsinline class="bg-media"></video>
+              {%- if section.settings.stage_2_video_url != blank and section.settings.stage_2_video_url contains 'http' -%}
+                <video src="{{ section.settings.stage_2_video_url }}" autoplay loop muted playsinline class="bg-media"></video>
+              {%- elsif section.settings.stage_2_video_url != blank -%}
+                <video src="{{ section.settings.stage_2_video_url | file_url }}" autoplay loop muted playsinline class="bg-media"></video>
               {%- elsif section.settings.stage_2_image != blank -%}
                 <img src="{{ section.settings.stage_2_image | image_url: width: 1000 }}" alt="Microscope view - Active" class="bg-media" loading="lazy">
               {%- else -%}
@@ -546,8 +554,10 @@
             
             <!-- Slide 3 (DEEP) -->
             <div class="media-slide" data-slide="3">
-              {%- if section.settings.stage_3_video_url != blank -%}
-                <video src="{% if section.settings.stage_3_video_url contains 'http' %}{{ section.settings.stage_3_video_url }}{% else %}{{ section.settings.stage_3_video_url | file_url }}{% endif %}" autoplay loop muted playsinline class="bg-media"></video>
+              {%- if section.settings.stage_3_video_url != blank and section.settings.stage_3_video_url contains 'http' -%}
+                <video src="{{ section.settings.stage_3_video_url }}" autoplay loop muted playsinline class="bg-media"></video>
+              {%- elsif section.settings.stage_3_video_url != blank -%}
+                <video src="{{ section.settings.stage_3_video_url | file_url }}" autoplay loop muted playsinline class="bg-media"></video>
               {%- elsif section.settings.stage_3_image != blank -%}
                 <img src="{{ section.settings.stage_3_image | image_url: width: 1000 }}" alt="Microscope view - Deep" class="bg-media" loading="lazy">
               {%- else -%}
@@ -557,8 +567,10 @@
             
             <!-- Slide 4 (RESULT) -->
             <div class="media-slide" data-slide="4">
-              {%- if section.settings.stage_4_video_url != blank -%}
-                <video src="{% if section.settings.stage_4_video_url contains 'http' %}{{ section.settings.stage_4_video_url }}{% else %}{{ section.settings.stage_4_video_url | file_url }}{% endif %}" autoplay loop muted playsinline class="bg-media"></video>
+              {%- if section.settings.stage_4_video_url != blank and section.settings.stage_4_video_url contains 'http' -%}
+                <video src="{{ section.settings.stage_4_video_url }}" autoplay loop muted playsinline class="bg-media"></video>
+              {%- elsif section.settings.stage_4_video_url != blank -%}
+                <video src="{{ section.settings.stage_4_video_url | file_url }}" autoplay loop muted playsinline class="bg-media"></video>
               {%- elsif section.settings.stage_4_image != blank -%}
                 <img src="{{ section.settings.stage_4_image | image_url: width: 1000 }}" alt="Microscope view - Result" class="bg-media" loading="lazy">
               {%- else -%}

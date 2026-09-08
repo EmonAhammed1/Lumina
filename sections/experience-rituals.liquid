@@ -800,9 +800,9 @@
             assign item_image = block.settings.image | default: block_product.featured_image
             assign item_link = block.settings.link | default: block_product.url
           else
-            assign item_title = block.settings.title | default: "Name Produs"
-            assign item_price = block.settings.price | default: "€16,99"
-            assign item_image = block.settings.image
+            assign item_title = block.settings.title | default: "Product Name"
+            assign item_subtitle = block.settings.subtitle | default: "Formula activa"
+            assign item_price = block.settings.price | default: "€150"
             assign item_link = block.settings.link | default: "#"
           endif
         -%}
@@ -854,7 +854,7 @@
     <!-- Mobile Panel Container -->
     <div class="orbit-mobile-info-panel-{{ section.id }} d-md-none" id="orbit-mobile-panel-{{ section.id }}">
       <div class="orbit-mobile-info-content-{{ section.id }}" id="orbit-mobile-content-{{ section.id }}">
-        <span class="orbit-mobile-type-{{ section.id }}">PRODUS</span>
+        <span class="orbit-mobile-type-{{ section.id }}">PRODUCT</span>
         <h4 class="orbit-mobile-title-{{ section.id }}">{{ section.settings.center_name }}</h4>
         <p class="orbit-mobile-sub-{{ section.id }}">{{ section.settings.center_sub }}</p>
         <a href="{{ section.settings.center_link | default: '#' }}" class="orbit-mobile-link-{{ section.id }}">DISCOVER</a>
@@ -1351,12 +1351,12 @@
           const panelContent = document.getElementById('orbit-mobile-content-{{ section.id }}');
           if (panelContent) {
             const isBundle = node.dataset.itemType === 'bundle';
-            const type = isBundle ? 'RITUAL / SET BUNDLE' : 'PRODUS INDIVIDUAL';
+            const type = isBundle ? 'RITUAL / SET PROTOCOL' : 'INDIVIDUAL PRODUCT';
             const title = node.dataset.title;
             const sub = node.dataset.subtitle;
             const price = node.dataset.price;
             const link = node.dataset.link;
-            const linkText = isBundle ? 'VEZI RITUAL' : 'DISCOVER PRODUS';
+            const linkText = isBundle ? 'EXPLORE RITUAL' : 'EXPLORE PRODUCT';
             
             panelContent.style.opacity = 0;
             setTimeout(() => {

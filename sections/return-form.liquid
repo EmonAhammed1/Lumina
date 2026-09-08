@@ -774,7 +774,7 @@
             <div class="lrf-file-list" id="lrf-file-display"></div>
 
             <div class="lrf-form-group" style="margin-top: 16px;">
-              <label class="lrf-label" for="lrf-photo-desc">Description fotografii / detalii lot batch</label>
+              <label class="lrf-label" for="lrf-photo-desc">Photo Description / Batch Lot Details</label>
               <textarea class="lrf-textarea" id="lrf-photo-desc" placeholder="Enter batch number / attached photo details..."></textarea>
             </div>
           </div>
@@ -794,7 +794,7 @@
             </label>
 
             <button class="lrf-submit-btn" type="submit">
-              Submit form de retur
+              Submit Return Form
               <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </button>
           </div>
@@ -1074,31 +1074,31 @@
       }
 
       var bodyText = "==================================================\n" +
-        "          FORMULAR NOU DE RETUR / RETRAGERE        \n" +
+        "          NEW RETURN / WITHDRAWAL REQUEST        \n" +
         "                 Lumina Europa – MARKEU S.R.L.     \n" +
         "==================================================\n\n" +
-        "1. DATE CLIENT:\n" +
-        "  • Name complet: " + name + "\n" +
+        "1. CUSTOMER INFORMATION:\n" +
+        "  • Full Name: " + name + "\n" +
         "  • Email: " + email + "\n" +
         "  • Phone: " + (phone || "Not specified") + "\n\n" +
         "2. ORDER DETAILS:\n" +
         "  • Order Number: " + orderNum + "\n" +
         "  • Order Date: " + (dateOrder || "Not specified") + "\n" +
-        "  • Data Primirii: " + (dateReceive || "Not specified") + "\n\n" +
-        "3. PRODUSE RETURNATE:\n" +
-        "  • Denumire Produs: " + prodName + "\n" +
+        "  • Delivery Date: " + (dateReceive || "Not specified") + "\n\n" +
+        "3. RETURNED PRODUCTS:\n" +
+        "  • Product Name: " + prodName + "\n" +
         "  • Quantity: " + prodQty + "\n" +
-        (prodMulti ? "  • Alte Produse: " + prodMulti + "\n" : "") + "\n" +
-        "4. MOTIVUL RETURULUI:\n" +
-        "  • Motive Selectate: " + (reasons.length > 0 ? reasons.join(", ") : "Not specified") + "\n" +
-        (otherReason ? "  • Alt Motiv: " + otherReason + "\n" : "") + "\n" +
-        "5. STAREA PRODUSULUI:\n" +
-        "  • Stare Produs: " + (stateVal || "Not specified") + "\n" +
+        (prodMulti ? "  • Additional Products: " + prodMulti + "\n" : "") + "\n" +
+        "4. REASON FOR RETURN:\n" +
+        "  • Selected Reasons: " + (reasons.length > 0 ? reasons.join(", ") : "Not specified") + "\n" +
+        (otherReason ? "  • Other Reason: " + otherReason + "\n" : "") + "\n" +
+        "5. PRODUCT CONDITION:\n" +
+        "  • Condition: " + (stateVal || "Not specified") + "\n" +
         (otherState ? "  • Other Condition: " + otherState + "\n" : "") + "\n" +
         "6. REQUESTED RESOLUTION:\n" +
         "  • Requested Resolution: " + (solVal || "Not specified") + "\n" +
         (otherSol ? "  • Other Resolution: " + otherSol + "\n" : "") + "\n" +
-        "7. FOTOGRAFII & DETALII BATCH:\n" +
+        "7. PHOTOGRAPHS & BATCH DETAILS:\n" +
         "  • Description / Lot Batch: " + (photoDesc || "Not specified") + photosText + "\n\n" +
         "8. WITHDRAWAL DECLARATION:\n" +
         "  • Status: Declared and accepted (Checked)\n\n" +
@@ -1120,7 +1120,7 @@
           var btn = contactForm.querySelector('.lrf-submit-btn');
           if (btn) {
             btn.disabled = true;
-            btn.innerHTML = 'Se trimite formularul... ⏳';
+            btn.innerHTML = 'Submitting return request... ⏳';
           }
 
           lrfUploadFilesAndBuildBody().then(function() {

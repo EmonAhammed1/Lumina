@@ -53,9 +53,9 @@
         "app_time": "5 minutes to transform your skin",
         "show_gift_button": false,
         "show_routine_button": true,
-        "why_love_title": "De ce o vei iubi",
+        "why_love_title": "Why you will love it",
         "why_love_content": "<p> Deeply hydrates, volumizes and restores skin radiance in just 5 minutes. Perfect for a quick skin refresh or a weekly luxury skin care ritual. </p>",
-        "nano_title": "Tehnologia Nanofibre",
+        "nano_title": "Nanofiber Technology",
         "nano_content": "<p> Specially designed nanofibers activate only on contact with wet skin, delivering active ingredients directly to where they are needed most. The ultra-fine nanofiber matrix ensures maximum absorption and optimal breathability. </p>",
         "ingredients_title": "Key Ingredients",
         "ingredients_content": "<p><strong>Hyaluronic Acid, Niacinamide, Panthenol, Ectoin, Allantoin, Beta-Glucan.</strong><br/><br/>Formulated without parabens, fragrances, mineral oils and silicones. </p>"
@@ -83,7 +83,7 @@
         "6889c9ba-caef-4edd-9757-6711505cb095": {
           "type": "description",
           "settings": {
-            "title_tab": "Descriere",
+            "title_tab": "Description",
             "enable_special": true,
             "left_heading": "Intense hydration. Visible transformation.",
             "metafield_source": "descriere",
@@ -567,7 +567,7 @@
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 50,
         "top_icon": "",
-        "heading": "Ritualuri complete",
+        "heading": "Complete Rituals",
         "heading_color": "#d4af6a",
         "heading_size_desktop": 48,
         "heading_size_tablet": 38,

@@ -276,7 +276,7 @@
           "type": "article_card",
           "settings": {
             "article": "news/de-ce-sa-alegi-masti-de-fata-cu-nanofibre",
-            "category": "SUSTENABILITATE",
+            "category": "SUSTAINABILITY",
             "date": "20 APRILIE 2025",
             "title": "Beauty and responsibility",
             "excerpt": "Why authentic luxury respects the world we come from.",
@@ -292,7 +292,7 @@
       ],
       "settings": {
         "eyebrow": "LUMINA WORLD",
-        "title": "ARTICOLE",
+        "title": "ARTICLES",
         "subtitle": "Ideas. Perspectives. Conversations that shape the world we live in.",
         "view_all_label": "ALL ARTICLES",
         "view_all_link": "/"

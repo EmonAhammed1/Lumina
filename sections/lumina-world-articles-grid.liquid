@@ -318,14 +318,14 @@
     <!-- Filter Tabs Bar -->
     <div class="lwag-filter-bar">
       <div class="lwag-nav-tabs">
-        <button class="lwag-tab-btn active" onclick="filterLuminaArticles('toate', this)">TOATE</button>
+        <button class="lwag-tab-btn active" onclick="filterLuminaArticles('all', this)">ALL</button>
         <button class="lwag-tab-btn" onclick="filterLuminaArticles('science', this)">SCIENCE</button>
         <button class="lwag-tab-btn" onclick="filterLuminaArticles('culture', this)">CULTURE</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('oameni', this)">OAMENI</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('societate', this)">SOCIETATE</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('people', this)">PEOPLE</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('society', this)">SOCIETY</button>
         <button class="lwag-tab-btn" onclick="filterLuminaArticles('travel', this)">TRAVEL</button>
         <button class="lwag-tab-btn" onclick="filterLuminaArticles('wellness', this)">WELLNESS</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('sustenabilitate', this)">SUSTENABILITATE</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('sustainability', this)">SUSTAINABILITY</button>
       </div>
 
       {%- if section.settings.view_all_label != blank -%}
@@ -452,19 +452,19 @@
       "type": "text",
       "id": "title",
       "label": "Main Title",
-      "default": "ARTICOLE"
+      "default": "ARTICLES"
     },
     {
       "type": "textarea",
       "id": "subtitle",
       "label": "Subtitle",
-      "default": "Ideas. Perspectives. Conversations that shape the world we live in."
+      "default": "Dialogues, perspectives and scientific insights exploring light, skin, time and life."
     },
     {
       "type": "text",
       "id": "view_all_label",
       "label": "View All Link Label",
-      "default": "ALL ARTICLES"
+      "default": "VIEW ALL"
     },
     {
       "type": "url",
@@ -480,40 +480,53 @@
         {
           "type": "article",
           "id": "article",
-          "label": "Select Shopify Article",
-          "info": "Selecting a Shopify article automatically loads its image, title, excerpt, date, and link."
+          "label": "Select Shopify Article (Optional)"
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Custom Image (Override)"
+          "label": "Fallback Card Image"
         },
         {
           "type": "text",
           "id": "category",
-          "label": "Category Eyebrow",
+          "label": "Category / Tag",
           "default": "SCIENCE"
         },
         {
           "type": "text",
           "id": "date",
-          "label": "Published Date Text",
-          "default": "12 MAI 2025"
+          "label": "Date String",
+          "default": "MAY 12, 2025"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Custom Title (Override)"
+          "label": "Article Title",
+          "default": "Skin barrier: More than a shield"
         },
         {
           "type": "textarea",
           "id": "excerpt",
-          "label": "Custom Excerpt (Override)"
+          "label": "Short Excerpt",
+          "default": "Why understanding the skin barrier changes everything in skin care."
+        },
+        {
+          "type": "text",
+          "id": "author",
+          "label": "Author Name",
+          "default": "Dr. Elena Vance"
+        },
+        {
+          "type": "text",
+          "id": "read_time",
+          "label": "Reading Time",
+          "default": "5 min read"
         },
         {
           "type": "url",
-          "id": "link",
-          "label": "Custom URL (Override)"
+          "id": "custom_url",
+          "label": "Custom URL (if no article selected)"
         }
       ]
     }
@@ -526,7 +539,7 @@
           "type": "article_card",
           "settings": {
             "category": "SCIENCE",
-            "date": "12 MAI 2025",
+            "date": "MAY 12, 2025",
             "title": "Skin barrier: More than a shield",
             "excerpt": "Why understanding the skin barrier changes everything in skin care."
           }
@@ -535,7 +548,7 @@
           "type": "article_card",
           "settings": {
             "category": "CULTURE",
-            "date": "5 MAI 2025",
+            "date": "MAY 5, 2025",
             "title": "Timeless cities, ageless beauty",
             "excerpt": "What European cities teach us about beauty, heritage and time."
           }
@@ -543,8 +556,8 @@
         {
           "type": "article_card",
           "settings": {
-            "category": "OAMENI",
-            "date": "28 APRILIE 2025",
+            "category": "PEOPLE",
+            "date": "APRIL 28, 2025",
             "title": "The voices of a new generation",
             "excerpt": "Young Europeans on identity, purpose and future."
           }
@@ -552,8 +565,8 @@
         {
           "type": "article_card",
           "settings": {
-            "category": "SUSTENABILITATE",
-            "date": "20 APRILIE 2025",
+            "category": "SUSTAINABILITY",
+            "date": "APRIL 20, 2025",
             "title": "Beauty and responsibility",
             "excerpt": "Why authentic luxury respects the world we come from."
           }

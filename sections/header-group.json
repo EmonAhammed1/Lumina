@@ -39,15 +39,15 @@
         "a00daf6f-fb1c-4351-80dc-24e405bf630e": {
           "type": "Item",
           "settings": {
-            "code": "Livrare gratuita peste 150 lei",
-            "button_text": "Shop now",
+            "code": "Complimentary shipping on orders over €150",
+            "button_text": "Shop Now",
             "button_link": "shopify://collections"
           }
         },
         "afb084a9-2a31-4207-9d23-694c0f6b1281": {
           "type": "Item",
           "settings": {
-            "code": "Transport in 24h",
+            "code": "Express Worldwide Delivery",
             "button_text": "Shop Now",
             "button_link": "shopify://collections/best-seller"
           }
@@ -55,7 +55,7 @@
         "afb084a9-2a31-4207-9d23-694c0f6b1282": {
           "type": "Item",
           "settings": {
-            "code": "Retur gratuit 30 zile",
+            "code": "30-Day Insured Returns",
             "button_text": "Shop Now",
             "button_link": "shopify://collections/all"
           }

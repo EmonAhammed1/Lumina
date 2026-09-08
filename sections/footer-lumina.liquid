@@ -416,8 +416,9 @@
     <div class="lf-col-links-wrapper">
       <!-- COLUMN 1 -->
       <div class="lf-col-links">
+        {% assign col1_heading = section.settings.col1_title | default: 'DISCOVER LUMINA' %}
         <h4 class="lf-col-title js-accordion-trigger">
-          {{ section.settings.col1_title | default: 'DISCOVER LUMINA' }}
+          {% render 'processMenuTitle', itemName: col1_heading %}
           <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
@@ -425,15 +426,15 @@
             {% assign col1_menu = linklists[section.settings.col1_menu] %}
             {% if col1_menu != blank and col1_menu.links.size > 0 %}
               {% for link in col1_menu.links %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col1_link1_text != blank %}<li><a href="{{ section.settings.col1_link1_url | default: '#' }}">{{ section.settings.col1_link1_text }}</a></li>{% endif %}
-              {% if section.settings.col1_link2_text != blank %}<li><a href="{{ section.settings.col1_link2_url | default: '#' }}">{{ section.settings.col1_link2_text }}</a></li>{% endif %}
-              {% if section.settings.col1_link3_text != blank %}<li><a href="{{ section.settings.col1_link3_url | default: '#' }}">{{ section.settings.col1_link3_text }}</a></li>{% endif %}
-              {% if section.settings.col1_link4_text != blank %}<li><a href="{{ section.settings.col1_link4_url | default: '#' }}">{{ section.settings.col1_link4_text }}</a></li>{% endif %}
-              {% if section.settings.col1_link5_text != blank %}<li><a href="{{ section.settings.col1_link5_url | default: '#' }}">{{ section.settings.col1_link5_text }}</a></li>{% endif %}
-              {% if section.settings.col1_link6_text != blank %}<li><a href="{{ section.settings.col1_link6_url | default: '#' }}">{{ section.settings.col1_link6_text }}</a></li>{% endif %}
+              {% if section.settings.col1_link1_text != blank %}<li><a href="{{ section.settings.col1_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link1_text %}</a></li>{% endif %}
+              {% if section.settings.col1_link2_text != blank %}<li><a href="{{ section.settings.col1_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link2_text %}</a></li>{% endif %}
+              {% if section.settings.col1_link3_text != blank %}<li><a href="{{ section.settings.col1_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link3_text %}</a></li>{% endif %}
+              {% if section.settings.col1_link4_text != blank %}<li><a href="{{ section.settings.col1_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link4_text %}</a></li>{% endif %}
+              {% if section.settings.col1_link5_text != blank %}<li><a href="{{ section.settings.col1_link5_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link5_text %}</a></li>{% endif %}
+              {% if section.settings.col1_link6_text != blank %}<li><a href="{{ section.settings.col1_link6_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link6_text %}</a></li>{% endif %}
             {% endif %}
           </ul>
         </div>
@@ -441,41 +442,42 @@
       
       <!-- COLUMN 2 -->
       <div class="lf-col-links">
+        {% assign col2_heading = section.settings.col2_title | default: 'COLLECTIONS & RITUALS' %}
         <h4 class="lf-col-title js-accordion-trigger">
-          {{ section.settings.col2_title | default: 'COLLECTIONS & RITUALS' }}
-          <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
+          {% render 'processMenuTitle', itemName: col2_heading %}
+          <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
           {% if section.settings.col2_sub1_title != blank %}
-            <div class="lf-col-subtitle">{{ section.settings.col2_sub1_title }}</div>
+            <div class="lf-col-subtitle">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_title %}</div>
           {% endif %}
           <ul class="lf-menu-list">
             {% assign col2_sub1_menu = linklists[section.settings.col2_sub1_menu] %}
             {% if col2_sub1_menu != blank and col2_sub1_menu.links.size > 0 %}
               {% for link in col2_sub1_menu.links %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col2_sub1_link1_text != blank %}<li><a href="{{ section.settings.col2_sub1_link1_url | default: '#' }}">{{ section.settings.col2_sub1_link1_text }}</a></li>{% endif %}
-              {% if section.settings.col2_sub1_link2_text != blank %}<li><a href="{{ section.settings.col2_sub1_link2_url | default: '#' }}">{{ section.settings.col2_sub1_link2_text }}</a></li>{% endif %}
-              {% if section.settings.col2_sub1_link3_text != blank %}<li><a href="{{ section.settings.col2_sub1_link3_url | default: '#' }}">{{ section.settings.col2_sub1_link3_text }}</a></li>{% endif %}
-              {% if section.settings.col2_sub1_link4_text != blank %}<li><a href="{{ section.settings.col2_sub1_link4_url | default: '#' }}">{{ section.settings.col2_sub1_link4_text }}</a></li>{% endif %}
+              {% if section.settings.col2_sub1_link1_text != blank %}<li><a href="{{ section.settings.col2_sub1_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_link1_text %}</a></li>{% endif %}
+              {% if section.settings.col2_sub1_link2_text != blank %}<li><a href="{{ section.settings.col2_sub1_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_link2_text %}</a></li>{% endif %}
+              {% if section.settings.col2_sub1_link3_text != blank %}<li><a href="{{ section.settings.col2_sub1_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_link3_text %}</a></li>{% endif %}
+              {% if section.settings.col2_sub1_link4_text != blank %}<li><a href="{{ section.settings.col2_sub1_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_link4_text %}</a></li>{% endif %}
             {% endif %}
           </ul>
 
           {% if section.settings.col2_sub2_title != blank %}
-            <div class="lf-col-subtitle">{{ section.settings.col2_sub2_title }}</div>
+            <div class="lf-col-subtitle">{% render 'processMenuTitle', itemName: section.settings.col2_sub2_title %}</div>
           {% endif %}
           <ul class="lf-menu-list">
             {% assign col2_sub2_menu = linklists[section.settings.col2_sub2_menu] %}
             {% if col2_sub2_menu != blank and col2_sub2_menu.links.size > 0 %}
               {% for link in col2_sub2_menu.links %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col2_sub2_link1_text != blank %}<li><a href="{{ section.settings.col2_sub2_link1_url | default: '#' }}">{{ section.settings.col2_sub2_link1_text }}</a></li>{% endif %}
-              {% if section.settings.col2_sub2_link2_text != blank %}<li><a href="{{ section.settings.col2_sub2_link2_url | default: '#' }}">{{ section.settings.col2_sub2_link2_text }}</a></li>{% endif %}
-              {% if section.settings.col2_sub2_link3_text != blank %}<li><a href="{{ section.settings.col2_sub2_link3_url | default: '#' }}">{{ section.settings.col2_sub2_link3_text }}</a></li>{% endif %}
+              {% if section.settings.col2_sub2_link1_text != blank %}<li><a href="{{ section.settings.col2_sub2_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub2_link1_text %}</a></li>{% endif %}
+              {% if section.settings.col2_sub2_link2_text != blank %}<li><a href="{{ section.settings.col2_sub2_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub2_link2_text %}</a></li>{% endif %}
+              {% if section.settings.col2_sub2_link3_text != blank %}<li><a href="{{ section.settings.col2_sub2_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub2_link3_text %}</a></li>{% endif %}
             {% endif %}
           </ul>
         </div>
@@ -483,8 +485,9 @@
       
       <!-- COLUMN 3 -->
       <div class="lf-col-links">
+        {% assign col3_heading = section.settings.col3_title | default: 'HELP & CONCIERGE' %}
         <h4 class="lf-col-title js-accordion-trigger">
-          {{ section.settings.col3_title | default: 'AJUTOR' }}
+          {% render 'processMenuTitle', itemName: col3_heading %}
           <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
@@ -492,15 +495,15 @@
             {% assign col3_menu = linklists[section.settings.col3_menu] %}
             {% if col3_menu != blank and col3_menu.links.size > 0 %}
               {% for link in col3_menu.links %}
-                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col3_link1_text != blank %}<li><a href="{{ section.settings.col3_link1_url | default: '#' }}">{{ section.settings.col3_link1_text }}</a></li>{% endif %}
-              {% if section.settings.col3_link2_text != blank %}<li><a href="{{ section.settings.col3_link2_url | default: '#' }}">{{ section.settings.col3_link2_text }}</a></li>{% endif %}
-              {% if section.settings.col3_link3_text != blank %}<li><a href="{{ section.settings.col3_link3_url | default: '#' }}">{{ section.settings.col3_link3_text }}</a></li>{% endif %}
-              {% if section.settings.col3_link4_text != blank %}<li><a href="{{ section.settings.col3_link4_url | default: '#' }}">{{ section.settings.col3_link4_text }}</a></li>{% endif %}
-              {% if section.settings.col3_link5_text != blank %}<li><a href="{{ section.settings.col3_link5_url | default: '#' }}">{{ section.settings.col3_link5_text }}</a></li>{% endif %}
-              {% if section.settings.col3_link6_text != blank %}<li><a href="{{ section.settings.col3_link6_url | default: '#' }}">{{ section.settings.col3_link6_text }}</a></li>{% endif %}
+              {% if section.settings.col3_link1_text != blank %}<li><a href="{{ section.settings.col3_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link1_text %}</a></li>{% endif %}
+              {% if section.settings.col3_link2_text != blank %}<li><a href="{{ section.settings.col3_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link2_text %}</a></li>{% endif %}
+              {% if section.settings.col3_link3_text != blank %}<li><a href="{{ section.settings.col3_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link3_text %}</a></li>{% endif %}
+              {% if section.settings.col3_link4_text != blank %}<li><a href="{{ section.settings.col3_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link4_text %}</a></li>{% endif %}
+              {% if section.settings.col3_link5_text != blank %}<li><a href="{{ section.settings.col3_link5_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link5_text %}</a></li>{% endif %}
+              {% if section.settings.col3_link6_text != blank %}<li><a href="{{ section.settings.col3_link6_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link6_text %}</a></li>{% endif %}
             {% endif %}
           </ul>
         </div>
@@ -508,8 +511,9 @@
       
       <!-- COLUMN 4 -->
       <div class="lf-col-links">
+        {% assign col4_heading = section.settings.col4_title | default: 'LEGAL' %}
         <h4 class="lf-col-title js-accordion-trigger">
-          {{ section.settings.col4_title | default: 'LEGAL' }}
+          {% render 'processMenuTitle', itemName: col4_heading %}
           <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
@@ -518,21 +522,21 @@
             {% if col4_menu != blank and col4_menu.links.size > 0 %}
               {% for link in col4_menu.links %}
                 <li>
-                  <a href="{{ link.url }}">{{ link.title }}</a>
+                  <a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a>
                   {% if link.url contains 'anpc.ro' %}
                     <svg class="lf-icon-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
                   {% endif %}
                 </li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col4_link1_text != blank %}<li><a href="{{ section.settings.col4_link1_url | default: '#' }}">{{ section.settings.col4_link1_text }}</a></li>{% endif %}
-              {% if section.settings.col4_link2_text != blank %}<li><a href="{{ section.settings.col4_link2_url | default: '#' }}">{{ section.settings.col4_link2_text }}</a></li>{% endif %}
-              {% if section.settings.col4_link3_text != blank %}<li><a href="{{ section.settings.col4_link3_url | default: '#' }}">{{ section.settings.col4_link3_text }}</a></li>{% endif %}
-              {% if section.settings.col4_link4_text != blank %}<li><a href="{{ section.settings.col4_link4_url | default: '#' }}">{{ section.settings.col4_link4_text }}</a></li>{% endif %}
-              {% if section.settings.col4_link5_text != blank %}<li><a href="{{ section.settings.col4_link5_url | default: '#' }}">{{ section.settings.col4_link5_text }}</a></li>{% endif %}
+              {% if section.settings.col4_link1_text != blank %}<li><a href="{{ section.settings.col4_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link1_text %}</a></li>{% endif %}
+              {% if section.settings.col4_link2_text != blank %}<li><a href="{{ section.settings.col4_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link2_text %}</a></li>{% endif %}
+              {% if section.settings.col4_link3_text != blank %}<li><a href="{{ section.settings.col4_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link3_text %}</a></li>{% endif %}
+              {% if section.settings.col4_link4_text != blank %}<li><a href="{{ section.settings.col4_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link4_text %}</a></li>{% endif %}
+              {% if section.settings.col4_link5_text != blank %}<li><a href="{{ section.settings.col4_link5_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link5_text %}</a></li>{% endif %}
               {% if section.settings.col4_link6_text != blank %}
                 <li>
-                  <a href="{{ section.settings.col4_link6_url | default: 'https://anpc.ro/' }}" {% if section.settings.col4_link6_url contains 'anpc.ro' or section.settings.col4_link6_url == blank %}target="_blank"{% endif %}>{{ section.settings.col4_link6_text }}</a>
+                  <a href="{{ section.settings.col4_link6_url | default: 'https://anpc.ro/' }}" {% if section.settings.col4_link6_url contains 'anpc.ro' or section.settings.col4_link6_url == blank %}target="_blank"{% endif %}>{% render 'processMenuTitle', itemName: section.settings.col4_link6_text %}</a>
                   <svg class="lf-icon-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
                 </li>
               {% endif %}
@@ -629,17 +633,17 @@
       {% assign bottom_menu = linklists[section.settings.bottom_menu] %}
       {% if bottom_menu != blank and bottom_menu.links.size > 0 %}
         {% for link in bottom_menu.links %}
-          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+          <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
         {% endfor %}
       {% else %}
-        {% if section.settings.bm_link1_text != blank %}<li><a href="{{ section.settings.bm_link1_url | default: '#' }}">{{ section.settings.bm_link1_text }}</a></li>{% endif %}
-        {% if section.settings.bm_link2_text != blank %}<li><a href="{{ section.settings.bm_link2_url | default: '#' }}">{{ section.settings.bm_link2_text }}</a></li>{% endif %}
-        {% if section.settings.bm_link3_text != blank %}<li><a href="{{ section.settings.bm_link3_url | default: '#' }}">{{ section.settings.bm_link3_text }}</a></li>{% endif %}
-        {% if section.settings.bm_link4_text != blank %}<li><a href="{{ section.settings.bm_link4_url | default: '#' }}">{{ section.settings.bm_link4_text }}</a></li>{% endif %}
-        {% if section.settings.bm_link5_text != blank %}<li><a href="{{ section.settings.bm_link5_url | default: '#' }}">{{ section.settings.bm_link5_text }}</a></li>{% endif %}
-        {% if section.settings.bm_link6_text != blank %}<li><a href="{{ section.settings.bm_link6_url | default: '#' }}">{{ section.settings.bm_link6_text }}</a></li>{% endif %}
-        {% if section.settings.bm_link7_text != blank %}<li><a href="{{ section.settings.bm_link7_url | default: '#' }}">{{ section.settings.bm_link7_text }}</a></li>{% endif %}
-        {% if section.settings.bm_link8_text != blank %}<li><a href="{{ section.settings.bm_link8_url | default: '#' }}">{{ section.settings.bm_link8_text }}</a></li>{% endif %}
+        {% if section.settings.bm_link1_text != blank %}<li><a href="{{ section.settings.bm_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link1_text %}</a></li>{% endif %}
+        {% if section.settings.bm_link2_text != blank %}<li><a href="{{ section.settings.bm_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link2_text %}</a></li>{% endif %}
+        {% if section.settings.bm_link3_text != blank %}<li><a href="{{ section.settings.bm_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link3_text %}</a></li>{% endif %}
+        {% if section.settings.bm_link4_text != blank %}<li><a href="{{ section.settings.bm_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link4_text %}</a></li>{% endif %}
+        {% if section.settings.bm_link5_text != blank %}<li><a href="{{ section.settings.bm_link5_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link5_text %}</a></li>{% endif %}
+        {% if section.settings.bm_link6_text != blank %}<li><a href="{{ section.settings.bm_link6_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link6_text %}</a></li>{% endif %}
+        {% if section.settings.bm_link7_text != blank %}<li><a href="{{ section.settings.bm_link7_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link7_text %}</a></li>{% endif %}
+        {% if section.settings.bm_link8_text != blank %}<li><a href="{{ section.settings.bm_link8_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link8_text %}</a></li>{% endif %}
       {% endif %}
     </ul>
   </div>
@@ -706,7 +710,7 @@
     },
     {
       "type": "header",
-      "content": "Column 1: Descopera Lumina"
+      "content": "Column 1: Discover Lumina"
     },
     {
       "type": "text",
@@ -723,7 +727,7 @@
       "type": "text",
       "id": "col1_link1_text",
       "label": "Link 1 Text",
-      "default": "Despre Lumina Europa"
+      "default": "About Lumina Europa"
     },
     {
       "type": "url",
@@ -734,7 +738,7 @@
       "type": "text",
       "id": "col1_link2_text",
       "label": "Link 2 Text",
-      "default": "Tehnologia Nanofiberslor"
+      "default": "Nanofiber Technology"
     },
     {
       "type": "url",
@@ -745,7 +749,7 @@
       "type": "text",
       "id": "col1_link3_text",
       "label": "Link 3 Text",
-      "default": "How to use it"
+      "default": "How to Use"
     },
     {
       "type": "url",
@@ -799,7 +803,7 @@
       "type": "text",
       "id": "col2_sub1_title",
       "label": "Subgroup 1 Title",
-      "default": "PRODUSE"
+      "default": "PRODUCTS"
     },
     {
       "type": "link_list",
@@ -809,52 +813,52 @@
     {
       "type": "text",
       "id": "col2_sub1_link1_text",
-      "label": "Produse Link 1 Text",
-      "default": "Masks with Nanofibers"
+      "label": "Products Link 1 Text",
+      "default": "Nanofiber Masks"
     },
     {
       "type": "url",
       "id": "col2_sub1_link1_url",
-      "label": "Produse Link 1 URL"
+      "label": "Products Link 1 URL"
     },
     {
       "type": "text",
       "id": "col2_sub1_link2_text",
-      "label": "Produse Link 2 Text",
-      "default": "Sprayuri pentru Face"
+      "label": "Products Link 2 Text",
+      "default": "Face Sprays"
     },
     {
       "type": "url",
       "id": "col2_sub1_link2_url",
-      "label": "Produse Link 2 URL"
+      "label": "Products Link 2 URL"
     },
     {
       "type": "text",
       "id": "col2_sub1_link3_text",
-      "label": "Produse Link 3 Text",
-      "default": "Seturi & Protocoale"
+      "label": "Products Link 3 Text",
+      "default": "Sets & Protocols"
     },
     {
       "type": "url",
       "id": "col2_sub1_link3_url",
-      "label": "Produse Link 3 URL"
+      "label": "Products Link 3 URL"
     },
     {
       "type": "text",
       "id": "col2_sub1_link4_text",
-      "label": "Produse Link 4 Text",
-      "default": "Toate Produsele"
+      "label": "Products Link 4 Text",
+      "default": "All Products"
     },
     {
       "type": "url",
       "id": "col2_sub1_link4_url",
-      "label": "Produse Link 4 URL"
+      "label": "Products Link 4 URL"
     },
     {
       "type": "text",
       "id": "col2_sub2_title",
       "label": "Subgroup 2 Title",
-      "default": "RITUALURI"
+      "default": "RITUALS"
     },
     {
       "type": "link_list",
@@ -864,45 +868,45 @@
     {
       "type": "text",
       "id": "col2_sub2_link1_text",
-      "label": "Ritualuri Link 1 Text",
+      "label": "Rituals Link 1 Text",
       "default": "Morning Ritual"
     },
     {
       "type": "url",
       "id": "col2_sub2_link1_url",
-      "label": "Ritualuri Link 1 URL"
+      "label": "Rituals Link 1 URL"
     },
     {
       "type": "text",
       "id": "col2_sub2_link2_text",
-      "label": "Ritualuri Link 2 Text",
+      "label": "Rituals Link 2 Text",
       "default": "Evening Ritual"
     },
     {
       "type": "url",
       "id": "col2_sub2_link2_url",
-      "label": "Ritualuri Link 2 URL"
+      "label": "Rituals Link 2 URL"
     },
     {
       "type": "text",
       "id": "col2_sub2_link3_text",
-      "label": "Ritualuri Link 3 Text",
-      "default": "Ritual Rapid"
+      "label": "Rituals Link 3 Text",
+      "default": "Express Ritual"
     },
     {
       "type": "url",
       "id": "col2_sub2_link3_url",
-      "label": "Ritualuri Link 3 URL"
+      "label": "Rituals Link 3 URL"
     },
     {
       "type": "header",
-      "content": "Column 3: Ajutor"
+      "content": "Column 3: Help & Concierge"
     },
     {
       "type": "text",
       "id": "col3_title",
       "label": "Column 3 Title",
-      "default": "AJUTOR"
+      "default": "HELP & CONCIERGE"
     },
     {
       "type": "link_list",
@@ -913,7 +917,7 @@
       "type": "text",
       "id": "col3_link1_text",
       "label": "Link 1 Text",
-      "default": "Contul Meu"
+      "default": "My Account"
     },
     {
       "type": "url",
@@ -924,7 +928,7 @@
       "type": "text",
       "id": "col3_link2_text",
       "label": "Link 2 Text",
-      "default": "Comenzile Mele"
+      "default": "My Orders"
     },
     {
       "type": "url",
@@ -935,7 +939,7 @@
       "type": "text",
       "id": "col3_link3_text",
       "label": "Link 3 Text",
-      "default": "Livrare"
+      "default": "Shipping Policy"
     },
     {
       "type": "url",
@@ -946,7 +950,7 @@
       "type": "text",
       "id": "col3_link4_text",
       "label": "Link 4 Text",
-      "default": "Retururi"
+      "default": "Returns & Refunds"
     },
     {
       "type": "url",
@@ -968,7 +972,7 @@
       "type": "text",
       "id": "col3_link6_text",
       "label": "Link 6 Text",
-      "default": "Contact"
+      "default": "Contact Us"
     },
     {
       "type": "url",
@@ -1016,7 +1020,7 @@
       "type": "text",
       "id": "col4_link3_text",
       "label": "Link 3 Text",
-      "default": "Politica Cookies"
+      "default": "Cookie Policy"
     },
     {
       "type": "url",
@@ -1049,7 +1053,7 @@
       "type": "text",
       "id": "col4_link6_text",
       "label": "Link 6 Text",
-      "default": "ANPC"
+      "default": "Consumer Protection (ANPC)"
     },
     {
       "type": "url",

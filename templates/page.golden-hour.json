@@ -119,7 +119,7 @@
           "settings": {
             "image_icon": "shopify://shop_images/leaf.png",
             "icon": "star",
-            "title": "Ritualuri sezoniere",
+            "title": "Seasonal Rituals",
             "description": "Receive recommendations and rituals adapted to the needs of your skin, in harmony with each season."
           }
         },
@@ -172,7 +172,7 @@
       ],
       "settings": {
         "max_width": 2000,
-        "heading": "Beneficii",
+        "heading": "Benefits",
         "background_image_desktop": "shopify://shop_images/Beneficii.png",
         "title_size_desktop": 36,
         "padding_top_desktop": 40,

@@ -18,10 +18,10 @@
         "text": "",
         "button_label": "PĂSTREAZĂ LUMINA APROAPE DE TINE",
         "button_link": "",
-        "video": "The Golden Hour HERO.mp4",
+        "video": "",
         "height_desktop": 100,
         "button_bottom_desktop": 50,
-        "video_mobile": "The Golden Hour HERO mobile phone format.mp4",
+        "video_mobile": "",
         "height_mobile": 100,
         "button_bottom_mobile": 30,
         "button_color": "#f9e29c"
@@ -48,7 +48,7 @@
       "type": "golden-hour-why",
       "settings": {
         "max_width": 2000,
-        "video": "video 2 walking down the hillmp4.mp4",
+        "video": "",
         "text": "<p>Golden Hour was created for those who choose intention over noise.</p>",
         "overlay_opacity": 55,
         "min_height_desktop": 100,
@@ -62,7 +62,7 @@
       "settings": {
         "max_width": 2000,
         "image_width_percent": 42,
-        "video": "video 3 natural light on the skin.mp4",
+        "video": "",
         "decorative_image": "shopify://shop_images/section-i.png",
         "graphic_width": 500,
         "graphic_height": 370,
@@ -201,7 +201,7 @@
         "content": "<p>Fiecare ritual spune o poveste. Iar fiecare alegere de a reveni în universul Lumina merită răsplătită.</p><p>Golden Rewards este modul prin care îți mulțumim că faci parte din comunitatea noastră. Pe măsură ce descoperi noi ritualuri și revii alături de noi, deblochezi beneficii create pentru a transforma fiecare experiență într-una și mai specială.</p><p>De la cadouri atent alese și transport gratuit, până la acces prioritar la lansări, ediții limitate și invitații la experiențe Lumina, fiecare pas te aduce mai aproape de universul nostru.</p>",
         "link_label": "DESCOPERĂ GOLDEN REWARDS",
         "link_url": "",
-        "video": "video 4 nanofiber mask on the face.mp4",
+        "video": "",
         "section_height_desktop": 600,
         "heading_size_desktop": 36,
         "body_size_desktop": 18,
@@ -310,7 +310,7 @@
         "content": "<p>În spatele fiecărui ritual există un moment de liniște, o intenție și o alegere de a pune grija pentru tine pe primul loc.</p><p>Golden Hour este comunitatea celor care cred că frumusețea începe în aceste gesturi simple și continuă prin poveștile pe care le împărtășim împreună.</p>",
         "link_label": "ÎNSCRIE-TE ÎN COMUNITATE",
         "link_url": "",
-        "video": "Video 5 petals white flowers.mp4",
+        "video": "",
         "section_height_desktop": 600,
         "heading_size_desktop": 36,
         "body_size_desktop": 18,
@@ -322,7 +322,7 @@
     "tech_mockup_hero_YmgBGP": {
       "type": "tech-mockup-hero",
       "settings": {
-        "bg_video": "Visual 1. What are nanofibres_.mov",
+        "bg_video": "",
         "overlay_opacity": 0,
         "subtitle": "MAI MULT DECÂT FRUMUSEȚE",
         "title": "LUMINA GOLDEN HOUR",
@@ -434,7 +434,7 @@
       "type": "golden-hour-ctas",
       "settings": {
         "max_width": 2000,
-        "video": "video 6 starting the ritual.mp4",
+        "video": "",
         "overlay_opacity": 50,
         "heading": "Un loc unde grija pentru tine devine artă.",
         "primary_label": "Devino membru LUMINA GOLDEN HOUR",

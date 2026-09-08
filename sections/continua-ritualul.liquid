@@ -596,6 +596,29 @@
           {% endcase %}
         {% endfor %}
 
+      {% elsif collections.all.products.size > 0 %}
+        {% for cr_product in collections.all.products limit: 4 %}
+          <div class="cr-card">
+            <div class="cr-card-image-wrap">
+              {% if cr_product.featured_image %}
+                {{ cr_product.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', alt: cr_product.title, class: 'cr-card-image' }}
+              {% else %}
+                <img src="{{ 'ChatGPT_Image_Aug_10_2026_03_22_12_PM.png' | asset_url }}" class="cr-card-image" alt="{{ cr_product.title }}" loading="lazy">
+              {% endif %}
+            </div>
+            <div class="cr-card-content">
+              <h3 class="cr-card-title">{{ cr_product.title }}</h3>
+              <div class="cr-card-price">{{ cr_product.price | money }}</div>
+              <a href="{{ cr_product.url }}" class="cr-card-btn">
+                <span>{{ section.settings.button_text | default: 'Descoperă' }}</span>
+                {% if section.settings.show_button_icon %}
+                  <svg class="cr-btn-icon" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                {% endif %}
+              </a>
+            </div>
+          </div>
+        {% endfor %}
+
       {% endif %}
       </div>
 

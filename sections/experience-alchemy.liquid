@@ -399,17 +399,22 @@
               </div>
             {%- endfor -%}
           {%- else -%}
-            <!-- Fallback if no ingredients -->
-            <div class="swiper-slide">
-              <div class="alchemy-card-{{ section.id }}">
-                <div class="alchemy-card-image-wrap-{{ section.id }}" style="border-bottom: none;">
-                  <img src="{{ 'trans-alchemy.jpg' | asset_url }}" 
-                       alt="Alchimia" 
-                       class="alchemy-card-image-{{ section.id }}" 
-                       loading="lazy">
+            <!-- Fallback demo ingredient slides -->
+            {%- assign demo_ingredients = "HYALURONIC ACID,CENTELLA ASIATICA,VITAMIN C,NIACINAMIDE" | split: "," -%}
+            {%- for ing in demo_ingredients -%}
+              {%- assign ing_file = ing | replace: ' ', '_' | append: '.png' -%}
+              <div class="swiper-slide">
+                <div class="alchemy-card-{{ section.id }}">
+                  <div class="alchemy-card-image-wrap-{{ section.id }}" style="border-bottom: none;">
+                    <img src="{{ ing_file | asset_url }}" 
+                         alt="{{ ing }}" 
+                         class="alchemy-card-image-{{ section.id }}" 
+                         loading="lazy"
+                         onError="this.onerror=null; this.src='{{ 'trans-alchemy.jpg' | asset_url }}';">
+                  </div>
                 </div>
               </div>
-            </div>
+            {%- endfor -%}
           {%- endif -%}
         </div>
         

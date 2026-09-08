@@ -654,29 +654,52 @@
                                       {%- assign txt_val = product.metafields.custom.mod_utilizare -%}
                                     {%- endif -%}
                                     
+                                    {%- assign default_img = nil -%}
+                                    {%- assign default_txt = nil -%}
+                                    {%- case mf_source -%}
+                                      {%- when 'inainte_de_utilizare' -%}
+                                        {%- assign default_txt = '<p>Curățați delicat tenul înainte de aplicare. Asigurați-vă că fața este curată și ușor umezită cu apă călduță sau mist facial pentru a activa nanofibrele în profunzime.</p>' -%}
+                                        {%- assign default_img = '2._activate.png' | asset_url -%}
+                                      {%- when 'cum_se_utilizeaza', 'mod_utilizare' -%}
+                                        {%- assign default_txt = '<p>1. Desfaceți masca uscată și aplicați-o pe tenul umezit.<br/>2. Lăsați nanofibrele să se dizolve și să elibereze formula activă timp de 5 minute.<br/>3. Îndepărtați suportul și masați ușor excesul de ser până la absorbția completă.</p>' -%}
+                                        {%- assign default_img = '3apply.jpg' | asset_url -%}
+                                      {%- when 'ingrediente_cheie' -%}
+                                        {%- assign default_txt = '<p><strong>Acid Hialuronic:</strong> Hidratare profundă pe mai multe niveluri celulare.<br/><strong>Niacinamidă (Vitamina B3):</strong> Uniformizează tonul pielii și fortifică bariera.<br/><strong>Centella Asiatica:</strong> Calmează, regenerează și reduce inflamația.<br/><strong>Peptide Active:</strong> Stimulează producția naturală de colagen.</p>' -%}
+                                        {%- assign default_img = 'PEPTIDE.webp' | asset_url -%}
+                                      {%- when 'rezultate_clinice' -%}
+                                        {%- assign default_txt = '<p>✦ <strong>98%</strong> dintre participante au observat o hidratare imediată după prima utilizare.<br/>✦ <strong>92%</strong> absorbție mai rapidă și mai eficientă a ingredientelor active.<br/>✦ <strong>0%</strong> conservanți, parabeni sau parfumuri sintetice.</p>' -%}
+                                        {%- assign default_img = 'pure_transfer_5_min.jpg' | asset_url -%}
+                                    {%- endcase -%}
+
                                     {%- if active_img != blank -%}
+                                      {%- assign display_img = active_img | image_url: width: 700 -%}
+                                    {%- elsif default_img != blank -%}
+                                      {%- assign display_img = default_img -%}
+                                    {%- else -%}
+                                      {%- assign display_img = nil -%}
+                                    {%- endif -%}
+
+                                    {%- if txt_val != blank -%}
+                                      {%- capture display_content %}{{ txt_val | metafield_tag }}{% endcapture -%}
+                                    {%- elsif block.settings.answer_content != blank or block.settings.page.content != blank -%}
+                                      {%- capture display_content %}{{ block.settings.answer_content }}{{ block.settings.page.content }}{% endcapture -%}
+                                    {%- else -%}
+                                      {%- assign display_content = default_txt -%}
+                                    {%- endif -%}
+                                    
+                                    {%- if display_img != blank -%}
                                       <div class="row align-items-center descriere-2col-wrap" style="margin-top: 10px;">
                                         <div class="col-12 col-lg-8 col-xl-8 descriere-left-text">
-                                          {%- if txt_val != blank -%}
-                                            {{ txt_val | metafield_tag }}
-                                          {%- else -%}
-                                            {{ block.settings.answer_content }}
-                                            {{ block.settings.page.content }}
-                                          {%- endif -%}
+                                          {{ display_content }}
                                         </div>
                                         <div class="col-12 col-lg-4 col-xl-4 text-center descriere-right-image mt-4 mt-lg-0">
                                           <div class="descriere-img-box" style="padding: 5px; text-align: center;">
-                                            <img src="{{ active_img | image_url: width: 700 }}" alt="{{ product.title | escape }}" loading="lazy" style="max-width: 380px; width: 100%; height: auto; object-fit: cover; border-radius: 14px; border: 1px solid rgba(226, 215, 195, 0.35); box-shadow: 0 8px 30px rgba(0,0,0,0.25); display: inline-block;">
+                                            <img src="{{ display_img }}" alt="{{ product.title | escape }}" loading="lazy" style="max-width: 380px; width: 100%; height: auto; object-fit: cover; border-radius: 14px; border: 1px solid rgba(226, 215, 195, 0.35); box-shadow: 0 8px 30px rgba(0,0,0,0.25); display: inline-block;">
                                           </div>
                                         </div>
                                       </div>
                                     {%- else -%}
-                                      {%- if txt_val != blank -%}
-                                        {{ txt_val | metafield_tag }}
-                                      {%- else -%}
-                                          {{ block.settings.answer_content }}
-                                          {{ block.settings.page.content }}
-                                      {%- endif -%}
+                                      {{ display_content }}
                                     {%- endif -%}
                                 </div>
                             {%- when 'review' -%}

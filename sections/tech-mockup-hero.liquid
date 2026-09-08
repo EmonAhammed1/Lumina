@@ -212,11 +212,23 @@
     </div>
     <div class="tm-hero-media">
       {% if section.settings.bg_video != blank %}
-        {{ section.settings.bg_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
+        {% if section.settings.bg_video.sources != blank %}
+          {{ section.settings.bg_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
+        {% else %}
+          <video autoplay loop muted playsinline preload="metadata">
+            <source src="{{ section.settings.bg_video }}" type="video/mp4">
+          </video>
+        {% endif %}
+      {% elsif section.settings.bg_video_url != blank %}
+        <video autoplay loop muted playsinline preload="metadata">
+          <source src="{{ section.settings.bg_video_url }}" type="video/mp4">
+        </video>
       {% elsif section.settings.bg_image != blank %}
         <img src="{{ section.settings.bg_image | image_url: width: 1200 }}" alt="Hero Graphic">
       {% else %}
-        <img src="{{ 'Screenshot_2026-03-31_at_15.38.29.png' | asset_url }}" alt="Hero Graphic">
+        <video autoplay loop muted playsinline preload="metadata" poster="{{ 'Screenshot_2026-03-31_at_15.38.29.png' | asset_url }}">
+          <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
+        </video>
       {% endif %}
     </div>
   </div>

@@ -122,7 +122,17 @@
     
     <div class="tm-form-center">
       {% if section.settings.video != blank %}
-        {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true, class: 'tm-form-center-img' }}
+        {% if section.settings.video.sources != blank %}
+          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true, class: 'tm-form-center-img' }}
+        {% else %}
+          <video autoplay loop muted playsinline preload="metadata" class="tm-form-center-img">
+            <source src="{{ section.settings.video }}" type="video/mp4">
+          </video>
+        {% endif %}
+      {% elsif section.settings.video_url != blank %}
+        <video autoplay loop muted playsinline preload="metadata" class="tm-form-center-img">
+          <source src="{{ section.settings.video_url }}" type="video/mp4">
+        </video>
       {% elsif section.settings.image != blank %}
         <img src="{{ section.settings.image | image_url: width: 800 }}" alt="Formula" class="tm-form-center-img" loading="lazy">
       {% else %}

@@ -184,7 +184,7 @@
                         {%- else -%}
                             <div class="tab-image__big">
                                 <div class="image-content__image">
-                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                                    <img class="image-content__image scale-in lazyload" src="{{ 'img-1.png' | asset_url }}" alt="Lumina" loading="lazy">
                                 </div>
                             </div>
                         {%- endif -%}
@@ -209,7 +209,7 @@
                         {%- else -%}
                             <div class="tab-image__small">
                                 <div class="image-content__image">
-                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+                                    <img class="image-content__image scale-in lazyload" src="{{ 'img-2.png' | asset_url }}" alt="Lumina" loading="lazy">
                                 </div>
                             </div>
                         {%- endif -%}

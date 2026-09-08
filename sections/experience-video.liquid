@@ -296,10 +296,13 @@
           </iframe>
         {%- endif -%}
       {%- else -%}
-        <!-- Fallback Placeholder -->
-        <div class="video-element-{{ section.id }} d-flex align-items-center justify-content-center" style="background-color: #111;">
-          {{ 'lifestyle-2' | placeholder_svg_tag: 'video-element-' | append: section.id }}
-        </div>
+        <!-- Fallback Video -->
+        <video id="video-{{ section.id }}" 
+               class="video-element-{{ section.id }}"
+               src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4"
+               autoplay muted loop playsinline
+               poster="{{ 'test-5.png' | asset_url }}">
+        </video>
       {%- endif -%}
 
     </div>

@@ -185,7 +185,13 @@
 <div class="gh-hero-wrap" id="{{ section.id | split: '__' | last }}" data-section-id="{{ section.id }}">
   <div class="gh-hero-video-container">
     {%- if section.settings.video != blank -%}
-      {{ section.settings.video | video_tag: autoplay: true, loop: true, playsinline: true, class: 'gh-hero-video gh-hero-desktop-video', id: 'gh-video-desktop', image_size: '1920x' }}
+      {%- if section.settings.video.sources != blank -%}
+        {{ section.settings.video | video_tag: autoplay: true, loop: true, playsinline: true, muted: true, class: 'gh-hero-video gh-hero-desktop-video', id: 'gh-video-desktop', image_size: '1920x' }}
+      {%- else -%}
+        <video class="gh-hero-video gh-hero-desktop-video" id="gh-video-desktop" autoplay loop muted playsinline poster="{{ 'test-5.png' | asset_url }}">
+          <source src="{{ section.settings.video }}" type="video/mp4">
+        </video>
+      {%- endif -%}
     {%- elsif section.settings.bg_image_desktop != blank -%}
       <img src="{{ section.settings.bg_image_desktop | image_url: width: 1920 }}" class="gh-hero-video gh-hero-desktop-video" alt="{{ section.settings.title }}">
     {%- else -%}
@@ -195,7 +201,13 @@
     {%- endif -%}
 
     {%- if section.settings.video_mobile != blank -%}
-      {{ section.settings.video_mobile | video_tag: autoplay: true, loop: true, playsinline: true, muted: true, class: 'gh-hero-video gh-hero-mobile-video', id: 'gh-video-mobile', image_size: '800x' }}
+      {%- if section.settings.video_mobile.sources != blank -%}
+        {{ section.settings.video_mobile | video_tag: autoplay: true, loop: true, playsinline: true, muted: true, class: 'gh-hero-video gh-hero-mobile-video', id: 'gh-video-mobile', image_size: '800x' }}
+      {%- else -%}
+        <video class="gh-hero-video gh-hero-mobile-video" id="gh-video-mobile" autoplay loop muted playsinline poster="{{ 'test-5.png' | asset_url }}">
+          <source src="{{ section.settings.video_mobile }}" type="video/mp4">
+        </video>
+      {%- endif -%}
     {%- elsif section.settings.bg_image_mobile != blank -%}
       <img src="{{ section.settings.bg_image_mobile | image_url: width: 800 }}" class="gh-hero-video gh-hero-mobile-video" alt="{{ section.settings.title }}">
     {%- else -%}

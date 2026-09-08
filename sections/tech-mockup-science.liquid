@@ -191,7 +191,17 @@
     <div class="tm-science-right">
       <div class="tm-science-image">
         {% if section.settings.video != blank %}
-          {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
+          {% if section.settings.video.sources != blank %}
+            {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
+          {% else %}
+            <video autoplay loop muted playsinline preload="metadata">
+              <source src="{{ section.settings.video }}" type="video/mp4">
+            </video>
+          {% endif %}
+        {% elsif section.settings.video_url != blank %}
+          <video autoplay loop muted playsinline preload="metadata">
+            <source src="{{ section.settings.video_url }}" type="video/mp4">
+          </video>
         {% elsif section.settings.image != blank %}
           <img src="{{ section.settings.image | image_url: width: 800 }}" alt="Scientist" loading="lazy">
         {% else %}

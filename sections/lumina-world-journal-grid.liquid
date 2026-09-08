@@ -772,7 +772,7 @@
     </button>
 
     {% form 'contact', id: 'LuminaJournalSubmissionForm', class: 'lwj-modal-form' %}
-      <input type="hidden" name="contact[Tip Formular]" value="Trimitere Articol / Poveste Jurnal - Lumina World">
+      <input type="hidden" name="contact[Tip Formular]" value="Article Submission / Journal Story - Lumina World">
 
       {%- if form.posted_successfully? -%}
         <div class="lwj-form-success">
@@ -824,7 +824,7 @@
 
           <div class="lwj-field-group full-width">
             <label class="lwj-label" for="lwj-title">Journal / Article Title <span class="lwj-req">*</span></label>
-            <input type="text" id="lwj-title" name="contact[Titlu Jurnal]" class="lwj-input" placeholder="What is your story about?" required>
+            <input type="text" id="lwj-title" name="contact[Journal Title]" class="lwj-input" placeholder="What is your story about?" required>
           </div>
 
           <div class="lwj-field-group full-width">
@@ -934,7 +934,7 @@
       "type": "text",
       "id": "section_title",
       "label": "Section Label",
-      "default": "JURNAL"
+      "default": "JOURNAL"
     },
     {
       "type": "text",

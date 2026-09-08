@@ -92,7 +92,7 @@
           "settings": {
             "image_icon": "shopify://shop_images/key.png",
             "icon": "key",
-            "title": "Acces prioritar",
+            "title": "Priority Access",
             "description": "Be among the first to discover Lumina's new releases, seasonal collections and limited editions."
           }
         },
@@ -101,7 +101,7 @@
           "settings": {
             "image_icon": "shopify://shop_images/gift-box.png",
             "icon": "star",
-            "title": "Cadouri exclusive",
+            "title": "Exclusive Gifts",
             "description": "Enjoy carefully selected surprises and gifts, created especially for the Golden Hour community."
           }
         },
@@ -110,7 +110,7 @@
           "settings": {
             "image_icon": "shopify://shop_images/tag.png",
             "icon": "star",
-            "title": "Oferte dedicate",
+            "title": "Curated Offers",
             "description": "Access benefits and offers available exclusively to Golden Hour members."
           }
         },
@@ -137,7 +137,7 @@
           "settings": {
             "image_icon": "shopify://shop_images/calendar.png",
             "icon": "star",
-            "title": "Evenimente",
+            "title": "Exclusive Events",
             "description": "Receive invitations to launches, experiences and events dedicated to the Lumina community."
           }
         },
@@ -306,7 +306,7 @@
       "type": "golden-hour-community",
       "settings": {
         "max_width": 2000,
-        "heading": "Fiecare ritual spune o poveste",
+        "heading": "Every ritual tells a story",
         "content": "<p> Behind every ritual is a moment of stillness, an intention, and a choice to put self-care first.</p><p> Golden Hour is the community of those who believe that beauty begins in these simple gestures and continues through the stories we share together. </p>",
         "link_label": "JOIN THE COMMUNITY",
         "link_url": "",

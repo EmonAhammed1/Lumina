@@ -21,7 +21,7 @@
   {{ 'cart-draw.css' | asset_url | stylesheet_tag }}
   <span class="site-header__link site-header__cart js-mini-cart {% unless template contains 'cart' %}  cardraw {% endunless %}  " data-cartmini="{{ cartdraw }}">
     <span class="js-toggle-cart custom-cart-rect header-cart-{{ section.settings.icon_cart }}" title="{{ 'cart.general.title' | t }}">
-      <span class="cart-title">COS</span>
+      <span class="cart-title">CART</span>
       <span class="js-cart-count {{ iconclass }}">{{ cart.item_count }}</span>
     </span>
     <div class="mini-cart-content shadow text-center px-4 d-flex flex-column" style="background-color: #000 !important; color: #fff !important;">
@@ -289,7 +289,7 @@
   </style>
   <span class="site-header__link site-header__cart js-mini-cart">
     <span class="js-toggle-cart custom-cart-rect" title="{{ 'cart.general.title' | t }}">
-      <span class="cart-title">COS</span>
+      <span class="cart-title">CART</span>
       <span class="js-cart-count site-header__cart-indicator">{{ cart.item_count }}</span>
     </span>
     <div class="mini-cart-content shadow text-left">

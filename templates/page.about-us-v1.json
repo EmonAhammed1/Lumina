@@ -457,7 +457,7 @@
         "animation": "fade-up",
         "bgsection": "rgba(0,0,0,0)",
         "title_top": "Questions?",
-        "title": "Trimite-ne un e-mail",
+        "title": "Send us an email",
         "des": "",
         "align-heading": "center",
         "answer_content": "<p> This site is protected by reCAPTCHA,<a href=\"https://policies.google.com/privacy\">Privacy Policy</a>and<a href=\"https://policies.google.com/terms\">Terms of Use</a>Google apply. </p>",

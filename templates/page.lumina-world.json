@@ -208,7 +208,7 @@
         "article_6"
       ],
       "settings": {
-        "section_title": "JURNAL",
+        "section_title": "JOURNAL",
         "explore_label": "EXPLORE THE JOURNAL",
         "explore_link": "/",
         "featured_article": "news/de-ce-lumina-europa",
@@ -218,15 +218,15 @@
         "featured_link": "/",
         "show_submission_btn": true,
         "submission_btn_text": "SUBMIT YOUR STORY",
-        "modal_eyebrow": "FII PARTE DIN JURNAL",
-        "modal_title": "Trimite Povestea Ta",
-        "modal_desc": "Share your own perspective, experience or research to be published in Jurnalul Lumina."
+        "modal_eyebrow": "BE PART OF THE JOURNAL",
+        "modal_title": "Submit Your Story",
+        "modal_desc": "Share your own perspective, experience or research to be published in Lumina Journal."
       }
     },
     "lumina_europe_light": {
       "type": "lumina-world-europe-light",
       "settings": {
-        "eyebrow": "PROIECT EDITORIAL SPECIAL",
+        "eyebrow": "SPECIAL EDITORIAL PROJECT",
         "image_top": "shopify://shop_images/005fd866-af00-4ebb-9929-c91ff4b2f104.webp",
         "image_bottom": "shopify://shop_images/3d4be4d0-8c8a-470b-a9ac-d81885c71637.webp",
         "paragraph_1": "<p><strong>Europe Under the Same Light</strong>is a journey through Europe, told through the people who call it home. Starting<strong>November 2026</strong>, the project will take to the streets of European cities to listen, ask questions and discover what connects us across borders, languages ​​and generations. </p>",
@@ -473,7 +473,7 @@
           "type": "share_feature",
           "settings": {
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M4 7h3l1.5-2h7L17 7h3a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"3.5\"></circle>\n</svg>",
-            "title": "SURPRINDE",
+            "title": "CAPTURE",
             "text": "Authentic<br>moments from your everyday life."
           }
         },
@@ -481,7 +481,7 @@
           "type": "share_feature",
           "settings": {
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z\"></path>\n  <circle cx=\"12\" cy=\"10\" r=\"2.5\"></circle>\n</svg>",
-            "title": "SPUNE-NE UNDE",
+            "title": "TELL US WHERE",
             "text": "City, country<br>and a few words."
           }
         },
@@ -489,7 +489,7 @@
           "type": "share_feature",
           "settings": {
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M22 2L11 13\"></path>\n  <path d=\"M22 2L15 22L11 13L2 9L22 2Z\"></path>\n</svg>",
-            "title": "TRIMITE",
+            "title": "SUBMIT",
             "text": "We will look into it and<br>contact you."
           }
         },
@@ -528,7 +528,7 @@
         "load_more_url": "shopify://pages/gallery",
         "upload_btn_label": "SUBMIT YOUR PHOTO",
         "share_bg_color": "#050505",
-        "share_subheading": "FII PARTE DIN POVESTE",
+        "share_subheading": "BE PART OF THE STORY",
         "share_heading": "Share the Light",
         "share_text": "Send us your moments from all over Europe. The light you see. The stories you live. We can include them in our gallery.",
         "share_btn_text": "SUBMIT YOUR PHOTO ->"

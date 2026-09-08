@@ -20,6 +20,13 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  {% else %}
+  #shopify-section-{{ section.id }} .gh-tiers-wrap {
+    background-image: url('{{ "section-back.png" | asset_url }}');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   {% endif %}
   @media screen and (max-width: 768px) {
     #shopify-section-{{ section.id }} .gh-tiers-wrap {

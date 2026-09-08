@@ -486,7 +486,7 @@
               {% if cr_product.featured_image %}
                 {{ cr_product.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', alt: cr_display_title, class: 'cr-card-image' }}
               {% else %}
-                <div class="cr-card-image-placeholder">{{ 'product-1' | placeholder_svg_tag: 'cr-placeholder-svg' }}</div>
+                <img src="{{ 'ChatGPT_Image_Aug_10_2026_03_22_12_PM.png' | asset_url }}" loading="lazy" alt="{{ cr_display_title }}" class="cr-card-image">
               {% endif %}
             </div>
 
@@ -546,7 +546,7 @@
                 {% if cr_product and cr_product.featured_image %}
                   {{ cr_product.featured_image | image_url: width: 800 | image_tag: loading: 'lazy', alt: cr_product.title, class: 'cr-card-image' }}
                 {% else %}
-                  <div class="cr-card-image-placeholder">{{ 'product-1' | placeholder_svg_tag: 'cr-placeholder-svg' }}</div>
+                  <img src="{{ 'ChatGPT_Image_Aug_10_2026_03_22_12_PM.png' | asset_url }}" loading="lazy" alt="Lumina Product" class="cr-card-image">
                 {% endif %}
               </div>
 

@@ -543,6 +543,8 @@
                    src="{{ video_url }}" 
                    {% if section.settings.poster_image != blank %}
                      poster="{{ section.settings.poster_image | image_url: width: 1080 }}"
+                   {% else %}
+                     poster="{{ 'Screenshot_2026-03-31_at_15.38.29.png' | asset_url }}"
                    {% endif %}
                    loop 
                    playsinline>

@@ -372,7 +372,9 @@
               {%- if block.settings.image != blank -%}
                 <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.name | escape }}" loading="lazy" draggable="false">
               {%- else -%}
-                <img src="{{ 'lumina-world-hero-4.png' | asset_url }}" alt="{{ block.settings.name | escape }}" loading="lazy" draggable="false">
+                {%- assign mod_idx = forloop.index | modulo: 5 | plus: 1 -%}
+                {%- assign fallback_speaker = 'lumina-world-hero-' | append: mod_idx | append: '.png' -%}
+                <img src="{{ fallback_speaker | asset_url }}" alt="{{ block.settings.name | escape }}" loading="lazy" draggable="false">
               {%- endif -%}
 
               <div class="lwcs-play-btn" onclick="event.stopPropagation(); openLuminaVideoModal('{{ block.settings.video_url | default: 'https://cdn.shopify.com/videos/c/o/v/a0e1078ed2404e90890a56396e95bf08.mp4' }}')">

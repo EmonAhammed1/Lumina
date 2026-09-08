@@ -378,7 +378,9 @@
             {%- if card_image != blank -%}
               <img src="{{ card_image | image_url: width: 600 }}" alt="{{ card_title | escape }}" loading="lazy">
             {%- else -%}
-              <img src="{{ 'lumina-world-hero-4.png' | asset_url }}" alt="{{ card_title | escape }}" loading="lazy">
+              {%- assign article_img_mod = forloop.index | modulo: 5 | plus: 1 -%}
+              {%- assign fallback_art_img = 'lumina-world-hero-' | append: article_img_mod | append: '.png' -%}
+              <img src="{{ fallback_art_img | asset_url }}" alt="{{ card_title | escape }}" loading="lazy">
             {%- endif -%}
           </div>
 

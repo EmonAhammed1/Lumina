@@ -773,7 +773,12 @@
                width="80"
                height="80">
         {%- else -%}
-          <div style="font-size: 24px; margin-bottom: 8px;">✨</div>
+          <img src="{{ 'ChatGPT_Image_Sep_6_2026_03_09_17_PM.png' | asset_url }}" 
+               alt="{{ section.settings.center_name | default: 'Lumina Center' }}"
+               class="orbit-center-img-{{ section.id }}"
+               loading="lazy"
+               width="80"
+               height="80">
         {%- endif -%}
         
         <span class="orbit-center-brand-{{ section.id }}">{{ section.settings.center_title }}</span>
@@ -823,7 +828,14 @@
                    width="36"
                    height="36">
             {%- else -%}
-              <span style="font-size: 14px; color: {{ gold_color }}">✨</span>
+              {%- assign orb_mod = forloop.index | modulo: 5 | plus: 1 -%}
+              {%- assign fallback_orb_thumb = 'orb-' | append: orb_mod | append: '.png' -%}
+              <img src="{{ fallback_orb_thumb | asset_url }}" 
+                   alt="{{ item_title | escape }}" 
+                   class="orbit-capsule-img-{{ section.id }}"
+                   loading="lazy"
+                   width="36"
+                   height="36">
             {%- endif -%}
           </div>
 

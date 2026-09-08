@@ -717,7 +717,9 @@
             {%- if card_image != blank -%}
               <img src="{{ card_image | image_url: width: 600 }}" alt="{{ card_title | escape }}" class="lwj-card-bg" loading="lazy">
             {%- else -%}
-              <img src="{{ 'lumina-world-hero-1.png' | asset_url }}" alt="{{ card_title | escape }}" class="lwj-card-bg" loading="lazy">
+              {%- assign journal_img_mod = forloop.index | modulo: 5 | plus: 1 -%}
+              {%- assign fallback_journal_img = 'lumina-world-hero-' | append: journal_img_mod | append: '.png' -%}
+              <img src="{{ fallback_journal_img | asset_url }}" alt="{{ card_title | escape }}" class="lwj-card-bg" loading="lazy">
             {%- endif -%}
 
             <div class="lwj-card-overlay"></div>

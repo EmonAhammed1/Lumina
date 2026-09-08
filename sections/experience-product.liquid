@@ -450,21 +450,40 @@
           <!-- Left Column - Main Image -->
           <div class="col-12 col-lg-9 col-xl-9">
             <div class="main-image-wrapper">
-              <img id="mainProductImage-{{ section.id }}" 
-                   src="{{ main_image | image_url: width: 800 }}" 
-                   alt="{{ product.title | escape }}"
-                   loading="lazy">
+              {% if main_image != blank %}
+                <img id="mainProductImage-{{ section.id }}" 
+                     src="{{ main_image | image_url: width: 800 }}" 
+                     alt="{{ product.title | escape }}"
+                     loading="lazy">
+              {% else %}
+                <img id="mainProductImage-{{ section.id }}" 
+                     src="{{ 'masca_A.A._neck_front.png' | asset_url }}" 
+                     alt="{{ product.title | default: 'Lumina Product' | escape }}"
+                     loading="lazy">
+              {% endif %}
             </div>
           </div>
           
           <!-- Center Column - Thumbnails -->
           <div class="col-12 col-lg-3 col-xl-3 middle-gallery-col">
             <div class="middle-gallery">
-              {%- for image in product.images -%}
-                <div class="gallery-thumb{% if forloop.first %} active{% endif %}" data-large-src="{{ image | image_url: width: 800 }}">
-                  <img src="{{ image | image_url: width: 250 }}" alt="{{ image.alt | escape }}" loading="lazy">
+              {%- if product.images.size > 0 -%}
+                {%- for image in product.images -%}
+                  <div class="gallery-thumb{% if forloop.first %} active{% endif %}" data-large-src="{{ image | image_url: width: 800 }}">
+                    <img src="{{ image | image_url: width: 250 }}" alt="{{ image.alt | escape }}" loading="lazy">
+                  </div>
+                {%- endfor -%}
+              {%- else -%}
+                <div class="gallery-thumb active" data-large-src="{{ 'masca_A.A._neck_front.png' | asset_url }}">
+                  <img src="{{ 'masca_A.A._neck_front.png' | asset_url }}" alt="Lumina Front" loading="lazy">
                 </div>
-              {%- endfor -%}
+                <div class="gallery-thumb" data-large-src="{{ 'masca_A.A._neck_back.png' | asset_url }}">
+                  <img src="{{ 'masca_A.A._neck_back.png' | asset_url }}" alt="Lumina Back" loading="lazy">
+                </div>
+                <div class="gallery-thumb" data-large-src="{{ 'masca_regenerare_back.png' | asset_url }}">
+                  <img src="{{ 'masca_regenerare_back.png' | asset_url }}" alt="Lumina Regenerare" loading="lazy">
+                </div>
+              {%- endif -%}
             </div>
           </div>
           

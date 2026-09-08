@@ -166,7 +166,7 @@
                     {%- when 4 -%}
                       <img class="benefit-img lazyload" src="{{ 'ChatGPT_Image_Aug_10_2026_03_22_12_PM.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
                     {%- else -%}
-                      {{ 'image' | placeholder_svg_tag: 'benefit-img placeholder-svg' }}
+                      <img class="benefit-img lazyload" src="{{ 'img-1.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
                   {%- endcase -%}
                 {%- endif -%}
               </div>

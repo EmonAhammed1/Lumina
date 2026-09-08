@@ -6,6 +6,10 @@
       background-image: url('{{ section.settings.background_image_desktop | image_url: width: 2000 }}');
       background-size: cover;
       background-position: center;
+    {% else %}
+      background-image: url('{{ "Beneficii.png" | asset_url }}');
+      background-size: cover;
+      background-position: center;
     {% endif %}
     color: var(--gh-text-light);
     padding: {{ section.settings.padding_top_desktop }}px 24px {{ section.settings.padding_bottom_desktop }}px;
@@ -19,6 +23,10 @@
       padding: {{ section.settings.padding_top_mobile }}px 16px {{ section.settings.padding_bottom_mobile }}px;
       {% if section.settings.background_image_mobile %}
         background-image: url('{{ section.settings.background_image_mobile | image_url: width: 1000 }}');
+        background-size: cover;
+        background-position: center;
+      {% else %}
+        background-image: url('{{ "Beneficii-m.png" | asset_url }}');
         background-size: cover;
         background-position: center;
       {% endif %}

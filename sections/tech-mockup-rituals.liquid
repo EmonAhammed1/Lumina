@@ -173,7 +173,8 @@
               {% if block.settings.image != blank %}
                 <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.title }}" loading="lazy">
               {% else %}
-                {% assign rit_fallback = 'img-' | append: forloop.index | plus: 6 | append: '.png' %}
+                {% assign img_idx = forloop.index | plus: 6 %}
+                {% assign rit_fallback = 'img-' | append: img_idx | append: '.png' %}
                 <img src="{{ rit_fallback | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
               {% endif %}
             </div>

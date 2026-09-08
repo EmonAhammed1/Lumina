@@ -132,8 +132,8 @@
     {%- if section.settings.video != blank -%}
       {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, class: 'gh-comm-video' }}
     {%- else -%}
-      <video class="gh-comm-video" autoplay loop muted playsinline>
-        <source src="{{ 'Video 5 petals white flowers.mp4' | asset_url }}" type="video/mp4">
+      <video class="gh-comm-video" autoplay loop muted playsinline poster="{{ 'Johana-Kulhankova-1.jpg' | asset_url }}">
+        <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
       </video>
     {%- endif -%}
   </div>

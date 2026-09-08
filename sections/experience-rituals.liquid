@@ -800,7 +800,7 @@
             assign item_image = block.settings.image | default: block_product.featured_image
             assign item_link = block.settings.link | default: block_product.url
           else
-            assign item_title = block.settings.title | default: "Nume Produs"
+            assign item_title = block.settings.title | default: "Name Produs"
             assign item_price = block.settings.price | default: "€16,99"
             assign item_image = block.settings.image
             assign item_link = block.settings.link | default: "#"
@@ -857,7 +857,7 @@
         <span class="orbit-mobile-type-{{ section.id }}">PRODUS</span>
         <h4 class="orbit-mobile-title-{{ section.id }}">{{ section.settings.center_name }}</h4>
         <p class="orbit-mobile-sub-{{ section.id }}">{{ section.settings.center_sub }}</p>
-        <a href="{{ section.settings.center_link | default: '#' }}" class="orbit-mobile-link-{{ section.id }}">DESCOPERĂ</a>
+        <a href="{{ section.settings.center_link | default: '#' }}" class="orbit-mobile-link-{{ section.id }}">DISCOVER</a>
       </div>
     </div>
 
@@ -1356,7 +1356,7 @@
             const sub = node.dataset.subtitle;
             const price = node.dataset.price;
             const link = node.dataset.link;
-            const linkText = isBundle ? 'VEZI RITUAL' : 'DESCOPERĂ PRODUS';
+            const linkText = isBundle ? 'VEZI RITUAL' : 'DISCOVER PRODUS';
             
             panelContent.style.opacity = 0;
             setTimeout(() => {
@@ -1451,7 +1451,7 @@
 
 {% schema %}
 {
-  "name": "Ritualuri Constelație",
+  "name": "Constellation Rituals",
   "class": "index-section-experience-rituals",
   "max_blocks": 12,
   "settings": [
@@ -1459,10 +1459,22 @@
       "type": "select",
       "id": "animation",
       "options": [
-        { "value": "", "label": "None" },
-        { "value": "fade", "label": "Fade" },
-        { "value": "fade-up", "label": "Fade Up" },
-        { "value": "zoom-in", "label": "Zoom In" }
+        {
+          "value": "",
+          "label": "None"
+        },
+        {
+          "value": "fade",
+          "label": "Fade"
+        },
+        {
+          "value": "fade-up",
+          "label": "Fade Up"
+        },
+        {
+          "value": "zoom-in",
+          "label": "Zoom In"
+        }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -1566,8 +1578,14 @@
           "id": "item_type",
           "label": "Item Type",
           "options": [
-            { "value": "product", "label": "Product (Mask)" },
-            { "value": "bundle", "label": "Bundle (Ritual)" }
+            {
+              "value": "product",
+              "label": "Product (Mask)"
+            },
+            {
+              "value": "bundle",
+              "label": "Bundle (Ritual)"
+            }
           ],
           "default": "product"
         },

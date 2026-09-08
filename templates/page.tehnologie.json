@@ -14,10 +14,10 @@
       "settings": {
         "bg_video": "",
         "overlay_opacity": 30,
-        "subtitle": "UNDE ȘTIINȚA",
+        "subtitle": "WHERE SCIENCE",
         "title": "DEVINE\nRITUAL",
-        "text": "Tehnologia nanofibrelor Lumina oferă ingrediente active încapsulate cu precizie, puritate și scop bine definit.",
-        "btn_label": "EXPLOREAZĂ TEHNOLOGIA",
+        "text": "Lumina nanofiber technology provides active ingredients encapsulated with precision, purity and well-defined purpose.",
+        "btn_label": "EXPLORE THE TECHNOLOGY",
         "btn_link": "shopify://collections"
       }
     },
@@ -29,8 +29,8 @@
           "settings": {
             "image": "shopify://shop_images/orb-1.png",
             "number": "01",
-            "title": "NĂSCUTĂ",
-            "text": "Creată cu precizie la scară nanometrică."
+            "title": "BORN",
+            "text": "Created with precision at the nanometer scale."
           }
         },
         "node_2": {
@@ -38,8 +38,8 @@
           "settings": {
             "image": "shopify://shop_images/orb-2.png",
             "number": "02",
-            "title": "ACTIVATĂ",
-            "text": "Trezirea structurii cu apă sau spray hidratant."
+            "title": "ON",
+            "text": "Waking up the structure with water or moisturizing spray."
           }
         },
         "node_3": {
@@ -47,8 +47,8 @@
           "settings": {
             "image": "shopify://shop_images/orb-3.png",
             "number": "03",
-            "title": "DIZOLVATĂ",
-            "text": "Nanofibrele se dizolvă în câteva secunde, eliberând ingredientele active încapsulate."
+            "title": "dissolve",
+            "text": "The nanofibers dissolve in seconds, releasing the encapsulated active ingredients."
           }
         },
         "node_4": {
@@ -56,8 +56,8 @@
           "settings": {
             "image": "shopify://shop_images/orb-4.png",
             "number": "04",
-            "title": "LIVRATĂ",
-            "text": "Substanțele active sunt livrate uniform și în profunzimea pielii."
+            "title": "livery",
+            "text": "The active substances are delivered evenly and deep into the skin."
           }
         },
         "node_5": {
@@ -65,8 +65,8 @@
           "settings": {
             "image": "shopify://shop_images/orb-5.png",
             "number": "05",
-            "title": "TRANSFORMATĂ",
-            "text": "Pielea este hidratată, revitalizată și vizibil reînnoită."
+            "title": "transformer",
+            "text": "The skin is hydrated, revitalized and visibly renewed."
           }
         }
       },
@@ -78,9 +78,9 @@
         "node_5"
       ],
       "settings": {
-        "subtitle": "CĂLĂTORIA NANOFIBRELOR",
-        "title": "Într-o lume\npe care nu o poți vedea.",
-        "text": "O singură fibră. Mii de posibilități. Proiectată la nivel microscopic pentru a-ți transforma pielea la nivel uman."
+        "subtitle": "THE JOURNEY OF NANOFIBERS",
+        "title": "In a world\nwhich you cannot see.",
+        "text": "A single fiber. Thousands of possibilities. Microscopically engineered to transform your skin on a human level."
       }
     },
     "how_it_works": {
@@ -91,8 +91,8 @@
           "settings": {
             "image": "shopify://shop_images/ENCAPSULATED.png",
             "number": "1",
-            "title": "ÎNCAPSULAT",
-            "text": "Substanțele active sunt protejate în siguranță în matricea de nanofibre."
+            "title": "ENCAPSULATED",
+            "text": "The active substances are safely protected in the nanofiber matrix."
           }
         },
         "stage_2": {
@@ -101,7 +101,7 @@
             "image": "shopify://shop_images/ACTIVATED.png",
             "number": "2",
             "title": "ACTIVAT",
-            "text": "Apa sau spray-ul hidratant activează matricea."
+            "text": "Water or moisturizing spray activates the matrix."
           }
         },
         "stage_3": {
@@ -110,7 +110,7 @@
             "image": "shopify://shop_images/RELEASED.png",
             "number": "3",
             "title": "ELIBERAT",
-            "text": "Fibrele se dizolvă, eliberând substanțele active."
+            "text": "The fibers dissolve, releasing the active substances."
           }
         },
         "stage_4": {
@@ -119,7 +119,7 @@
             "image": "shopify://shop_images/APPLIED.png",
             "number": "4",
             "title": "APLICAT",
-            "text": "Formula aderă perfect și uniform pe piele."
+            "text": "The formula adheres perfectly and evenly to the skin."
           }
         },
         "stage_5": {
@@ -128,7 +128,7 @@
             "image": "shopify://shop_images/EXPERIENCED.png",
             "number": "5",
             "title": "EXPERIMENTAT",
-            "text": "Pielea se simte reînnoită, hidratată și luminoasă."
+            "text": "The skin feels renewed, hydrated and luminous."
           }
         }
       },
@@ -140,9 +140,9 @@
         "stage_5"
       ],
       "settings": {
-        "subtitle": "CUM FUNCȚIONEAZĂ",
-        "title": "Cinci etape.\nO singură tehnologie inteligentă.",
-        "btn_label": "DESCOPERĂ MAI MULT",
+        "subtitle": "HOW IT WORKS",
+        "title": "Five stages.\nOne smart technology.",
+        "btn_label": "DISCOVER MORE",
         "btn_link": ""
       }
     },
@@ -154,8 +154,8 @@
           "settings": {
             "image": "shopify://shop_images/PRECISION_14200954-852b-47f9-b7ef-365e61f7615a.png",
             "title": "PRECIZIE",
-            "text": "Fibrele extrem de subțiri creează o potrivire ca o a doua piele pentru o livrare optimă.",
-            "btn_label": "AFLĂ MAI MULTE",
+            "text": "Ultra-fine fibers create a second-skin fit for optimal delivery.",
+            "btn_label": "LEARN MORE",
             "btn_link": ""
           }
         },
@@ -163,9 +163,9 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/FRESHNESS_1a2a98e2-3c45-41dd-bf37-23d057a00f74.png",
-            "title": "PROSPEȚIME",
-            "text": "Ingredientele active sunt protejate până în momentul exact al activării.",
-            "btn_label": "AFLĂ MAI MULTE",
+            "title": "FRESHNESS",
+            "text": "The active ingredients are protected until the exact moment of activation.",
+            "btn_label": "LEARN MORE",
             "btn_link": ""
           }
         },
@@ -173,9 +173,9 @@
           "type": "card",
           "settings": {
             "image": "shopify://shop_images/EXPERIENCEE.png",
-            "title": "EXPERIENȚĂ",
-            "text": "Tehnologia avansată întâlnește luxul senzorial în fiecare ritual.",
-            "btn_label": "AFLĂ MAI MULTE",
+            "title": "EXPERIENCE",
+            "text": "Advanced technology meets sensory luxury in every ritual.",
+            "btn_label": "LEARN MORE",
             "btn_link": ""
           }
         }
@@ -195,21 +195,21 @@
         "feat_1": {
           "type": "feature",
           "settings": {
-            "title": "ACTIVE CU PURITATE RIDICATĂ",
-            "text": "Selectate clinic pentru eficacitate maximă"
+            "title": "HIGH PURITY ASSETS",
+            "text": "Clinically selected for maximum effectiveness"
           }
         },
         "feat_2": {
           "type": "feature",
           "settings": {
-            "title": "LIVRARE STABILĂ",
-            "text": "Protejate în interiorul matricei de fibre"
+            "title": "STABLE DELIVERY",
+            "text": "Protected inside the fiber matrix"
           }
         },
         "feat_3": {
           "type": "feature",
           "settings": {
-            "title": "AFINITATE PENTRU PIELE",
+            "title": "SKIN AFFINITY",
             "text": "Biocompatibil, delicat, non-iritant"
           }
         },
@@ -217,7 +217,7 @@
           "type": "feature",
           "settings": {
             "title": "REZULTATE VIZIBILE",
-            "text": "Piele hidratată, mai netedă și mai luminoasă"
+            "text": "Hydrated, smoother and brighter skin"
           }
         }
       },
@@ -228,9 +228,9 @@
         "feat_4"
       ],
       "settings": {
-        "subtitle": "TEHNOLOGIE & FORMULĂ",
-        "title": "Proiectat pentru puritate.\nCreat pentru performanță.",
-        "text": "Structura noastră exclusivă de nanofibre întâlnește ingrediente active de înaltă performanță, atent selecționate pentru puritatea, stabilitatea și compatibilitatea lor cu pielea.",
+        "subtitle": "TECHNOLOGY & FORMULA",
+        "title": "Designed for purity.\nBuilt for performance.",
+        "text": "Our exclusive nanofiber structure meets high-performance active ingredients carefully selected for their purity, stability and skin compatibility.",
         "video": ""
       }
     },
@@ -242,17 +242,17 @@
           "settings": {
             "image": "shopify://shop_images/VITAMIN_C.png",
             "title": "VITAMIN C",
-            "text": "Amplifică luminozitatea pielii",
+            "text": "Amplifies the brightness of the skin",
             "products": [
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-decolteu",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-gat",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-ochi",
+              "nano-beauty-pro-anti-aging-mask-for-décolletage",
+              "nano-beauty-pro-anti-aging-neck-mask",
+              "nano-beauty-pro-anti-aging-eye-mask",
               "nano-beauty-pro-anty-aging-sheet-mask",
               "nano-beauty-pro",
               "nano-beauty-pro-brightening-sheet-mask",
-              "nano-beauty-pro-masca-șervețel-intensiva-pentru-luminozitate",
+              "nano-beauty-pro-intensive-wipe-mask-for-luminosity",
               "nano-beauty-pro-regenerating-sheet-mask",
-              "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
+              "nano-beauty-pro-collagen-face-mask-for-lifting"
             ]
           }
         },
@@ -261,10 +261,10 @@
           "settings": {
             "image": "shopify://shop_images/VITAMIN_A.png",
             "title": "VITAMIN A",
-            "text": "Susține reînnoirea celulară a pielii",
+            "text": "Supports skin cell renewal",
             "products": [
               "nano-beauty-pro-regenerating-sheet-mask",
-              "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
+              "nano-beauty-pro-collagen-face-mask-for-lifting"
             ]
           }
         },
@@ -273,7 +273,7 @@
           "settings": {
             "image": "shopify://shop_images/UREA.png",
             "title": "UREA",
-            "text": "Calmează și hidratează pielea uscată",
+            "text": "Soothes and hydrates dry skin",
             "products": [
               "nano-beauty-pro-hydrating-sheet-mask",
               "nano-beauty-pro-hydro-mist-cu-acid-hialuronic"
@@ -285,18 +285,18 @@
           "settings": {
             "image": "shopify://shop_images/TOCOPHERYL_ACETATE.png",
             "title": "TOCOPHERYL ACETATE",
-            "text": "Protecție antioxidantă intensă",
+            "text": "Intense antioxidant protection",
             "products": [
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-decolteu",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-gat",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-ochi",
+              "nano-beauty-pro-anti-aging-mask-for-décolletage",
+              "nano-beauty-pro-anti-aging-neck-mask",
+              "nano-beauty-pro-anti-aging-eye-mask",
               "nano-beauty-pro-anty-aging-sheet-mask",
               "nano-beauty-pro",
               "nano-beauty-pro-brightening-sheet-mask",
-              "nano-beauty-pro-masca-șervețel-intensiva-pentru-luminozitate",
+              "nano-beauty-pro-intensive-wipe-mask-for-luminosity",
               "nano-beauty-pro-hydrating-sheet-mask",
               "nano-beauty-pro-regenerating-sheet-mask",
-              "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
+              "nano-beauty-pro-collagen-face-mask-for-lifting"
             ]
           }
         },
@@ -305,10 +305,10 @@
           "settings": {
             "image": "shopify://shop_images/RETINYL_PALMITATE.png",
             "title": "RETINYL PALMITATE",
-            "text": "Susține producția naturală de colagen",
+            "text": "Supports natural collagen production",
             "products": [
               "nano-beauty-pro-regenerating-sheet-mask",
-              "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
+              "nano-beauty-pro-collagen-face-mask-for-lifting"
             ]
           }
         },
@@ -317,7 +317,7 @@
           "settings": {
             "image": "shopify://shop_images/PANTHENOL.png",
             "title": "PANTHENOL",
-            "text": "Menține hidratarea și bariera cutanată",
+            "text": "Maintains hydration and skin barrier",
             "products": [
               "nano-beauty-pro-regenerating-sheet-mask"
             ]
@@ -328,10 +328,10 @@
           "settings": {
             "image": "shopify://shop_images/NIACINAMIDE_82eed169-40d6-4fc7-b67e-9ad404f25789.png",
             "title": "NIACINAMIDE",
-            "text": "Uniformizează și luminează tonul pielii",
+            "text": "Evens out and brightens skin tone",
             "products": [
               "nano-beauty-pro-brightening-sheet-mask",
-              "nano-beauty-pro-masca-șervețel-intensiva-pentru-luminozitate",
+              "nano-beauty-pro-intensive-wipe-mask-for-luminosity",
               "nano-beauty-pro-regenerating-sheet-mask",
               "nano-beauty-pro-hydro-mist-cu-acid-hialuronic"
             ]
@@ -342,9 +342,9 @@
           "settings": {
             "image": "shopify://shop_images/LIFTONIN_QI.png",
             "title": "LIFTONIN® QI",
-            "text": "Suport anti-îmbătrânire și lifting",
+            "text": "Anti-aging and lifting support",
             "products": [
-              "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
+              "nano-beauty-pro-collagen-face-mask-for-lifting"
             ]
           }
         },
@@ -353,18 +353,18 @@
           "settings": {
             "image": "shopify://shop_images/LACTOBIONIC_ACID.png",
             "title": "LACTOBIONIC ACID",
-            "text": "Întărește bariera protectoare a pielii",
+            "text": "Strengthens the skin's protective barrier",
             "products": [
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-decolteu",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-gat",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-ochi",
+              "nano-beauty-pro-anti-aging-mask-for-décolletage",
+              "nano-beauty-pro-anti-aging-neck-mask",
+              "nano-beauty-pro-anti-aging-eye-mask",
               "nano-beauty-pro-anty-aging-sheet-mask",
               "nano-beauty-pro",
               "nano-beauty-pro-brightening-sheet-mask",
-              "nano-beauty-pro-masca-șervețel-intensiva-pentru-luminozitate",
+              "nano-beauty-pro-intensive-wipe-mask-for-luminosity",
               "nano-beauty-pro-hydrating-sheet-mask",
               "nano-beauty-pro-regenerating-sheet-mask",
-              "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
+              "nano-beauty-pro-collagen-face-mask-for-lifting"
             ]
           }
         },
@@ -373,19 +373,19 @@
           "settings": {
             "image": "shopify://shop_images/HYDROLYZED_POLYVINYL_ACETATE.png",
             "title": "HYDROLYZED POLYVINYL ACETATE",
-            "text": "Aderență sporită a măștii pe ten",
+            "text": "Increased adhesion of the mask to the skin",
             "products": [
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-decolteu",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-gat",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-ochi",
+              "nano-beauty-pro-anti-aging-mask-for-décolletage",
+              "nano-beauty-pro-anti-aging-neck-mask",
+              "nano-beauty-pro-anti-aging-eye-mask",
               "nano-beauty-pro-anty-aging-sheet-mask",
               "nano-beauty-pro",
               "nano-beauty-pro-brightening-sheet-mask",
-              "nano-beauty-pro-masca-șervețel-intensiva-pentru-luminozitate",
+              "nano-beauty-pro-intensive-wipe-mask-for-luminosity",
               "nano-beauty-pro-hydrating-sheet-mask",
               "nano-beauty-pro-regenerating-sheet-mask",
               "nano-beauty-pro-skin-smoothing-sheet-mask",
-              "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
+              "nano-beauty-pro-collagen-face-mask-for-lifting"
             ]
           }
         },
@@ -394,10 +394,10 @@
           "settings": {
             "image": "shopify://shop_images/HYALURONIC_ACID.png",
             "title": "HYALURONIC ACID",
-            "text": "Hidratare profundă și efect de umplere",
+            "text": "Deep hydration and filling effect",
             "products": [
               "nano-beauty-pro-hydrating-sheet-mask",
-              "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting",
+              "nano-beauty-pro-collagen-face-mask-for-lifting",
               "nano-beauty-pro-hydro-mist-cu-acid-hialuronic"
             ]
           }
@@ -407,12 +407,12 @@
           "settings": {
             "image": "shopify://shop_images/GLUCONOLACTONE.png",
             "title": "GLUCONOLACTONE",
-            "text": "Piele netedă, catifelată și radiantă",
+            "text": "Smooth, velvety and radiant skin",
             "products": [
               "nano-beauty-pro-skin-smoothing-sheet-mask",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-decolteu",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-gat",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-ochi",
+              "nano-beauty-pro-anti-aging-mask-for-décolletage",
+              "nano-beauty-pro-anti-aging-neck-mask",
+              "nano-beauty-pro-anti-aging-eye-mask",
               "nano-beauty-pro-anty-aging-sheet-mask",
               "nano-beauty-pro"
             ]
@@ -423,10 +423,10 @@
           "settings": {
             "image": "shopify://shop_images/COLLAGEN_AMINO_ACIDS.png",
             "title": "COLLAGEN AMINO ACIDS",
-            "text": "Hidratare profundă și fermitate",
+            "text": "Deep hydration and firmness",
             "products": [
               "nano-beauty-pro-hydrating-sheet-mask",
-              "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
+              "nano-beauty-pro-collagen-face-mask-for-lifting"
             ]
           }
         },
@@ -435,7 +435,7 @@
           "settings": {
             "image": "shopify://shop_images/CENTELLA_ASIATICA.png",
             "title": "CENTELLA ASIATICA",
-            "text": "Reparare și regenerare cutanată",
+            "text": "Skin repair and regeneration",
             "products": [
               "nano-beauty-pro-skin-smoothing-sheet-mask",
               "nano-beauty-pro-hydrating-sheet-mask"
@@ -447,11 +447,11 @@
           "settings": {
             "image": "shopify://shop_images/ARGININE.png",
             "title": "ARGININE",
-            "text": "Regenerare și revitalizare a tenului",
+            "text": "Regeneration and revitalization of the skin",
             "products": [
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-decolteu",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-gat",
-              "nano-beauty-pro-masca-anti-imbatranire-pentru-ochi",
+              "nano-beauty-pro-anti-aging-mask-for-décolletage",
+              "nano-beauty-pro-anti-aging-neck-mask",
+              "nano-beauty-pro-anti-aging-eye-mask",
               "nano-beauty-pro-anty-aging-sheet-mask",
               "nano-beauty-pro"
             ]
@@ -462,7 +462,7 @@
           "settings": {
             "image": "shopify://shop_images/ALLANTOINE.png",
             "title": "ALLANTOINE",
-            "text": "Calmant și reconfortant pentru piele",
+            "text": "Soothing and comforting for the skin",
             "products": [
               "nano-beauty-pro-hydrating-sheet-mask"
             ]
@@ -488,9 +488,9 @@
         "ingredient_mrDWVc"
       ],
       "settings": {
-        "subtitle": "INGREDIENTE",
+        "subtitle": "INGREDIENTS",
         "title": "Puternice. Pure. Cu un scop precis.",
-        "btn_label": "VEZI TOATE INGREDIENTELE",
+        "btn_label": "VIEW ALL INGREDIENTS",
         "btn_link": ""
       }
     },
@@ -501,7 +501,7 @@
           "type": "stat",
           "settings": {
             "value": "NanoPharma",
-            "label": "Dezvoltat de NANOPHARMA REPUBLICA CEHĂ"
+            "label": "Developed by NANOPHARMA CZECH REPUBLIC"
           }
         },
         "stat_2": {
@@ -525,13 +525,13 @@
         "stat_3"
       ],
       "settings": {
-        "subtitle": "BAZĂ ȘTIINȚIFICĂ",
-        "title": "Susținut de știință.\nCondus de rezultate.",
-        "text": "Dezvoltată de NanoPharma, tehnologia noastră de nanofibre este susținută de cercetări riguroase, studii clinice și inovație continuă.",
-        "btn_label": "EXPLOREAZĂ CERCETAREA",
+        "subtitle": "SCIENTIFIC BASIS",
+        "title": "Backed by science.\nResults driven.",
+        "text": "Developed by NanoPharma, our nanofiber technology is backed by rigorous research, clinical trials and continuous innovation.",
+        "btn_label": "EXPLORE RESEARCH",
         "btn_link": "",
         "video": "",
-        "caption": "Evaluare clinică a măștii cu nanofibre realizată de un institut independent."
+        "caption": "Clinical evaluation of the nanofiber mask by an independent institute."
       }
     },
     "how_to_use": {
@@ -541,7 +541,7 @@
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/1._unfold.png",
-            "title": "DESFĂȘOARĂ",
+            "title": "HELD",
             "text": "Scoate masca din plic."
           }
         },
@@ -549,40 +549,40 @@
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/2._activate.png",
-            "title": "ACTIVEAZĂ",
-            "text": "Pulverizează cu apă sau Lumina Mist."
+            "title": "Enable",
+            "text": "Spray with water or Lumina Mist."
           }
         },
         "step_3": {
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/3.jpg",
-            "title": "APLICĂ",
-            "text": "Așază pe fața curată și netezește delicat."
+            "title": "APPLY",
+            "text": "Place on clean face and gently smooth."
           }
         },
         "step_4": {
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/3apply.jpg",
-            "title": "RELAXEAZĂ-TE",
-            "text": "Relaxează-te timp de 15-20 de minute."
+            "title": "RELAX",
+            "text": "Relax for 15-20 minutes."
           }
         },
         "step_5": {
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/5._remove.png",
-            "title": "ÎNDEPĂRTEAZĂ",
-            "text": "Desprinde masca și arunc-o."
+            "title": "removes",
+            "text": "Peel off the mask and throw it away."
           }
         },
         "step_6": {
           "type": "step",
           "settings": {
             "image": "shopify://shop_images/6._finish.png",
-            "title": "CONTINUĂ",
-            "text": "Tamponează ușor esența rămasă. Fără clătire."
+            "title": "CONTINUE",
+            "text": "Gently dab the remaining essence. No rinsing."
           }
         }
       },
@@ -595,9 +595,9 @@
         "step_6"
       ],
       "settings": {
-        "subtitle": "MOD DE UTILIZARE",
+        "subtitle": "HOW TO USE",
         "title": "Un ritual simplu. Rezultate remarcabile.",
-        "btn_label": "VEZI GHIDUL VIDEO",
+        "btn_label": "WATCH VIDEO GUIDE",
         "btn_link": ""
       }
     },
@@ -609,8 +609,8 @@
           "settings": {
             "product": "nano-beauty-pro-hydrating-sheet-mask",
             "title": "HIDRATARE",
-            "frequency": "De 2-3 ori pe săptămână",
-            "text": "Amplifică hidratarea și luminozitatea."
+            "frequency": "2-3 times a week",
+            "text": "Amplifies hydration and brightness."
           }
         },
         "freq_2": {
@@ -618,8 +618,8 @@
           "settings": {
             "product": "nano-beauty-pro-skin-smoothing-sheet-mask",
             "title": "RECUPERARE",
-            "frequency": "De 2-3 ori pe săptămână",
-            "text": "Revigorează și fortifică bariera pielii."
+            "frequency": "2-3 times a week",
+            "text": "Revitalizes and strengthens the skin barrier."
           }
         },
         "freq_3": {
@@ -627,8 +627,8 @@
           "settings": {
             "product": "nano-beauty-pro-hydrating-sheet-mask",
             "title": "LUMINOZITATE",
-            "frequency": "De 2-3 ori pe săptămână",
-            "text": "Revitalizează tenul tern și obosit."
+            "frequency": "2-3 times a week",
+            "text": "Revitalizes dull and tired skin."
           }
         },
         "freq_4": {
@@ -636,8 +636,8 @@
           "settings": {
             "product": "nano-beauty-pro-regenerating-sheet-mask",
             "title": "REGENERARE",
-            "frequency": "De 1-2 ori pe săptămână",
-            "text": "Rafinează textura și tonul pielii."
+            "frequency": "1-2 times a week",
+            "text": "Refines skin texture and tone."
           }
         }
       },
@@ -648,8 +648,8 @@
         "freq_4"
       ],
       "settings": {
-        "subtitle": "FRECVENȚĂ RECOMANDATĂ",
-        "title": "Alege-ți ritualul.<br>Urmează-ți ritmul."
+        "subtitle": "RECOMMENDED FREQUENCY",
+        "title": "Choose your ritual.<br>Go at your own pace."
       }
     },
     "synergies": {
@@ -660,8 +660,8 @@
           "settings": {
             "image": "shopify://shop_images/Hydrate.jpg",
             "number": "1",
-            "title": "HIDRATEAZĂ",
-            "text": "Reface hidratarea și creează\n baza pentru o piele care se simte\n confortabilă și suplă.\n\nIdeal când pielea se simte uscată,\n tensionată sau obosită."
+            "title": "HYDRATING",
+            "text": "Restores hydration and creates\n the foundation for a skin that feels\n comfortable and supple.\n\nIdeal when the skin feels dry,\n tense or tired."
           }
         },
         "syn_2": {
@@ -669,8 +669,8 @@
           "settings": {
             "image": "shopify://shop_images/Sooth.jpg",
             "number": "2",
-            "title": "CALMEAZĂ",
-            "text": "Oferă pielii un moment de liniște\n atunci când confortul și simplitatea\n contează cel mai mult.\n\nIdeal când pielea este sensibilă,\n reactivă sau stresată."
+            "title": "SOOTHE",
+            "text": "It gives the skin a moment of peace\n when comfort and simplicity\n matters most.\n\nIdeal when the skin is sensitive,\n reactive or stressed."
           }
         },
         "syn_3": {
@@ -678,8 +678,8 @@
           "settings": {
             "image": "shopify://shop_images/Brighten.jpg",
             "number": "3",
-            "title": "ILUMINEAZĂ",
-            "text": "Aduce luminozitate în ritual\n atunci când tenul pare\n obosit sau neuniform.\n\nIdeal când pielea pare ternă,\n lipsită de strălucire."
+            "title": "illuminate",
+            "text": "Brings light into the ritual\n when the skin looks\n tired or uneven.\n\nIdeal when the skin looks dull,\n lack luster."
           }
         },
         "syn_4": {
@@ -687,8 +687,8 @@
           "settings": {
             "image": "shopify://shop_images/Renew.jpg",
             "number": "4",
-            "title": "REGENEREAZĂ",
-            "text": "Introduce o îngrijire țintită anti-age\n ca parte a unei rutine echilibrate\n și cuprinzătoare.\n\nIdeal când pielea are nevoie de susținere,\n fermitate și reziliență."
+            "title": "regenerate",
+            "text": "Introduces targeted anti-aging care\n as part of a balanced routine\n and comprehensive.\n\nIdeal when the skin needs support,\n firmness and resilience."
           }
         }
       },
@@ -700,9 +700,9 @@
       ],
       "settings": {
         "subtitle": "SINERGII DE RITUAL",
-        "title": "O singură piele.<br>Mai mult de<br>o singură nevoie.",
-        "text": "Pielea ta se schimbă odată cu timpul, anotimpurile,\n mediul și ritmul vieții tale.\n Un ritual atent conceput evoluează odată cu ea.\nMăștile Lumina Europa sunt create\n pentru a funcționa în armonie — fiecare cu un\n scop distinct, toate concepute pentru a se\n completa reciproc.",
-        "btn_label": "DESCOPERĂ PACHETELE DE RITUAL",
+        "title": "One skin.<br>More than<br>one need.",
+        "text": "Your skin changes with time, the seasons,\n the environment and pace of your life.\n A carefully designed ritual evolves with it.\nLumina Europa masks are created\n to function in harmony—each with one\n distinct purpose, all designed to se\n complement each other.",
+        "btn_label": "DISCOVER RITUAL BUNDLES",
         "btn_link": "shopify://collections/bundles"
       }
     },
@@ -713,16 +713,16 @@
           "type": "ritual",
           "settings": {
             "image": "shopify://shop_images/MORNINGG.png",
-            "title": "CLARITATE DE DIMINEAȚĂ",
-            "text": "Trezire. Hidratare. Pregătește-ți pielea pentru ziua ce urmează."
+            "title": "MORNING CLARITY",
+            "text": "Awakening. Hydration. Prepare your skin for the day ahead."
           }
         },
         "rit_2": {
           "type": "ritual",
           "settings": {
             "image": "shopify://shop_images/EVENINGG.png",
-            "title": "RECUPERARE DE SEARĂ",
-            "text": "Calm. Refacere. Eliberează tensiunea zilei și resetează tenul."
+            "title": "EVENING RECOVERY",
+            "text": "Calm. Restoration. It releases the tension of the day and resets the complexion."
           }
         },
         "rit_3": {
@@ -730,23 +730,23 @@
           "settings": {
             "image": "shopify://shop_images/RADIANCEe.png",
             "title": "RITUAL DE LUMINOZITATE",
-            "text": "Strălucire. Rafinament. Pentru evenimente și momente speciale."
+            "text": "Shine. Refinement. For events and special moments."
           }
         },
         "rit_4": {
           "type": "ritual",
           "settings": {
             "image": "shopify://shop_images/WEEKLY.png",
-            "title": "RESETARE SĂPTĂMÂNALĂ",
-            "text": "Detoxifiere. Reînnoire. Îngrijire profundă pentru un ten echilibrat."
+            "title": "WEEKLY RESET",
+            "text": "Detoxification. Renewal. Deep care for a balanced complexion."
           }
         },
         "rit_5": {
           "type": "ritual",
           "settings": {
             "image": "shopify://shop_images/WINTERR.png",
-            "title": "CONFORT DE IARNĂ",
-            "text": "Protecție. Hrănire. Apără-ți pielea împotriva intemperiilor."
+            "title": "WINTER COMFORT",
+            "text": "Protection. Feeding. Protect your skin from the elements."
           }
         }
       },
@@ -758,15 +758,15 @@
         "rit_5"
       ],
       "settings": {
-        "subtitle": "DESCOPERĂ-ȚI RITUALUL",
+        "subtitle": "DISCOVER YOUR RITUAL",
         "title": "Fiecare moment.<br>Un ritual."
       }
     },
     "cta": {
       "type": "tech-mockup-cta",
       "settings": {
-        "title": "TEHNOLOGIA CONTEAZĂ DOAR ATUNCI CÂND DEVINE PARTE DIN RITUALUL TĂU.",
-        "btn_label": "DESCOPERĂ COLECȚIA LUMINA",
+        "title": "TECHNOLOGY ONLY MATTER WHEN IT BECOME PART OF YOUR RITUAL.",
+        "btn_label": "DISCOVER THE LUMINA COLLECTION",
         "btn_link": "",
         "image": "shopify://shop_images/section-back.png"
       }

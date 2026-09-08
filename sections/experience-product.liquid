@@ -545,7 +545,7 @@
                         {% unless current_variant.available %}disabled="disabled"{% endunless %}>
                   <span>
                     {%- if current_variant.available -%}
-                      ADAUGĂ ÎN RITUAL
+                      ADD TO RITUAL
                     {%- else -%}
                       {{ 'products.product.sold_out' | t }}
                     {%- endif -%}
@@ -571,7 +571,7 @@
                     <line x1="12" y1="7.5" x2="12" y2="20"/>
                   </svg>
                   <div class="btn-gift-content-stack">
-                    <span class="btn-gift-title">DĂRUIEȘTE ACEST RITUAL</span>
+                    <span class="btn-gift-title">GIFT THIS RITUAL</span>
                     <span class="btn-gift-subtitle">£1 / 5 RON</span>
                   </div>
                 </a>
@@ -583,7 +583,7 @@
           {%- if section.settings.show_routine_button -%}
             <a href="{{ section.settings.routine_button_link | default: '#' }}" class="btn-routine-box">
               <div class="btn-routine-text">
-                <span class="btn-routine-title">{{ section.settings.routine_button_title | default: 'CREEAZĂ-ȚI RUTINA' }}</span>
+                <span class="btn-routine-title">{{ section.settings.routine_button_title | default: 'CREATE YOUR ROUTINE' }}</span>
                 <span class="btn-routine-desc">{{ section.settings.routine_button_desc | default: 'Seturi & rutine personalizate' }}</span>
               </div>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -614,7 +614,7 @@
               </div>
             </details>
             
-            <!-- Accordion 2: Nanofibre Technology -->
+            <!-- Accordion 2: Nanofibers Technology -->
             <details class="accordion-details">
               <summary class="accordion-summary">
                 <span>{{ section.settings.nano_title }}</span>
@@ -716,10 +716,22 @@
       "type": "select",
       "id": "animation",
       "options": [
-        { "value": "", "label": "None" },
-        { "value": "fade", "label": "Fade" },
-        { "value": "fade-up", "label": "Fade Up" },
-        { "value": "fade-down", "label": "Fade Down" }
+        {
+          "value": "",
+          "label": "None"
+        },
+        {
+          "value": "fade",
+          "label": "Fade"
+        },
+        {
+          "value": "fade-up",
+          "label": "Fade Up"
+        },
+        {
+          "value": "fade-down",
+          "label": "Fade Down"
+        }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -730,9 +742,18 @@
       "label": "Full Width Wrapper",
       "default": "container",
       "options": [
-        { "value": "container", "label": "Box" },
-        { "value": "container-fluid", "label": "Container Fluid" },
-        { "value": "full", "label": "Full" }
+        {
+          "value": "container",
+          "label": "Box"
+        },
+        {
+          "value": "container-fluid",
+          "label": "Container Fluid"
+        },
+        {
+          "value": "full",
+          "label": "Full"
+        }
       ]
     },
     {
@@ -757,13 +778,13 @@
       "type": "text",
       "id": "slogan",
       "label": "Product Slogan",
-      "default": "Volum. Hidratare. Strălucire."
+      "default": "Volume. Hydration. Shine."
     },
     {
       "type": "text",
       "id": "app_time",
       "label": "Application Time Info",
-      "default": "8 minute pentru a-ți transforma pielea"
+      "default": "8 minutes to transform your skin"
     },
     {
       "type": "checkbox",
@@ -786,7 +807,7 @@
       "type": "text",
       "id": "routine_button_title",
       "label": "Routine Button Title",
-      "default": "CREEAZĂ-ȚI RUTINA"
+      "default": "CREATE YOUR ROUTINE"
     },
     {
       "type": "text",
@@ -808,19 +829,19 @@
       "type": "richtext",
       "id": "why_love_content",
       "label": "Accordion 1 Content",
-      "default": "<p>Hidratează profund, oferă volum și redă strălucirea pielii în doar 8 minute. Perfectă pentru o revigorare rapidă a tenului sau un ritual săptămânal de îngrijire de lux.</p>"
+      "default": "<p>Deeply hydrates, volumizes and restores skin radiance in just 8 minutes. Perfect for a quick skin refresh or a weekly luxury care ritual.</p>"
     },
     {
       "type": "text",
       "id": "nano_title",
       "label": "Accordion 2 Title",
-      "default": "Tehnologia Nanofibre"
+      "default": "Tehnologia Nanofibers"
     },
     {
       "type": "richtext",
       "id": "nano_content",
       "label": "Accordion 2 Content",
-      "default": "<p>Nanofibrele special concepute se activează doar la contactul cu pielea umedă, livrând ingredientele active direct acolo unde este cea mai mare nevoie de ele. Matricea ultra-fină de nanofibre asigură o absorbție maximă și o respirabilitate optimă.</p>"
+      "default": "<p>Specially designed nanofibers activate only on contact with wet skin, delivering active ingredients directly to where they are most needed. The ultra-fine nanofiber matrix ensures maximum absorption and optimal breathability.</p>"
     },
     {
       "type": "text",
@@ -832,7 +853,7 @@
       "type": "richtext",
       "id": "ingredients_content",
       "label": "Accordion 3 Content",
-      "default": "<p><strong>Acid Hialuronic, Niacinamidă, Pantenol, Ectoină, Alantoină, Beta-Glucan.</strong><br><br>Formulat fără parabeni, parfumuri, uleiuri minerale și siliconi.</p>"
+      "default": "<p><strong>Hyaluronic Acid, Niacinamide, Panthenol, Ectoin, Allantoin, Beta-Glucan.</strong><br><br>Formulated without parabens, perfumes, mineral oils and silicones.</p>"
     }
   ],
   "blocks": [

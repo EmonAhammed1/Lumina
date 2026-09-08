@@ -40,13 +40,13 @@
             "fake_view_max": 30,
             "fake_view_duration": 3,
             "fake_view_text_prefix": "👀",
-            "fake_view_text_suffix": "clienți vizualizează acest produs"
+            "fake_view_text_suffix": "customers view this product"
           }
         },
         "2cf20ef7-ba29-4dd5-8c98-df0b96ba3c5b": {
           "type": "text",
           "settings": {
-            "text": "🔥 30 vândute în ultimele 18 ore",
+            "text": "🔥 30 sold in the last 18 hours",
             "text_style": "body"
           }
         },
@@ -81,11 +81,11 @@
           "settings": {
             "block_style": "ver",
             "icon_1": "truck",
-            "icon_text_1": "Livrare gratuită",
+            "icon_text_1": "Free delivery",
             "icon_2": "lock",
-            "icon_text_2": "Plată securizată",
+            "icon_text_2": "Secure payment",
             "icon_3": "shield",
-            "icon_text_3": "2 ani garanție",
+            "icon_text_3": "2 years warranty",
             "icon_4": "none",
             "icon_text_4": ""
           }
@@ -94,7 +94,7 @@
           "type": "block_banner",
           "settings": {
             "banner_text": "Rewards",
-            "banner_des": "Alătură-te pentru a câștiga 84 de puncte la acest produs",
+            "banner_des": "Join to earn 84 points on this product",
             "banner_icon_svg": "<svg role=\"presentation\" fill=\"none\" focusable=\"false\" stroke-width=\"0.8\" width=\"24\" height=\"24\" class=\"icon icon-picto-percent\" viewbox=\"0 0 24 24\">\n        <path d=\"M12 22.714c6.857 0 10.714-3.857 10.714-10.714S18.857 1.286 12 1.286 1.286 5.143 1.286 12 5.143 22.714 12 22.714Z\" fill=\"currentColor\" fill-opacity=\".12\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n        <path d=\"m7.714 16.286 8.571-8.572\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n        <path d=\"M8.571 9.429a.857.857 0 1 0 0-1.715.857.857 0 0 0 0 1.715v0ZM15.428 16.286a.857.857 0 1 0 0-1.715.857.857 0 0 0 0 1.715Z\" fill=\"currentColor\" stroke=\"currentColor\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n      </svg>",
             "banner_txt_color": "#094a6e",
             "banner_bg_color": "linear-gradient(180deg, rgba(238, 247, 241, 1), rgba(238, 247, 241, 1) 100%)",
@@ -104,7 +104,7 @@
         "11f6643a-6bb6-4db9-a512-9c0eefc8c3b8": {
           "type": "countdown",
           "settings": {
-            "title_heading": "🔥 Reducerea se termină în !"
+            "title_heading": "🔥 Discount ends in !"
           }
         },
         "1431e891-e819-4fa1-8416-0cb3956f0e39": {
@@ -119,9 +119,9 @@
           "type": "tabcustom",
           "disabled": true,
           "settings": {
-            "title_tab": "Informații de livrare",
+            "title_tab": "Delivery information",
             "icon": "truck",
-            "answer_content": "<p>- Fără taxe vamale în UE.<br/>- Expediere în 1-2 zile lucrătoare.<br/>- Livrat în cutiile noastre ecologice reciclabile și biodegradabile.</p>",
+            "answer_content": "<p> - No customs duties in the EU.<br/>- Ships in 1-2 business days.<br/>- Shipped in our eco-friendly recyclable and biodegradable boxes. </p>",
             "page": ""
           }
         },
@@ -129,9 +129,9 @@
           "type": "tabcustom",
           "disabled": true,
           "settings": {
-            "title_tab": "Ghid de îngrijire",
+            "title_tab": "Care guide",
             "icon": "leaf",
-            "answer_content": "<p>Spălare manuală la cald. Uscare la temperatură scăzută. Acest produs a fost spălat în fabrică după coasere pentru a minimiza contractarea materialului.</p>",
+            "answer_content": "<p> Hand wash warm. Dry at low temperature. This product has been factory washed after sewing to minimize material shrinkage. </p>",
             "page": ""
           }
         },
@@ -148,7 +148,7 @@
           "disabled": true,
           "settings": {
             "icon": "lock",
-            "free_word": "Plată securizată"
+            "free_word": "Secure payment"
           }
         },
         "842b653e-7ccb-4f45-ad7c-8619b58f56ee": {
@@ -174,7 +174,7 @@
           "type": "salepoint",
           "settings": {
             "icon": "globe",
-            "free_word": "Livrare estimată: 12-26 zile (Internațional), 3-6 zile (SUA)"
+            "free_word": "Estimated Delivery: 12-26 days (International), 3-6 days (US)"
           }
         },
         "1be7473b-00b2-4ad9-a7c0-356b86de67a7": {
@@ -184,14 +184,14 @@
         "83a6f5b6-88e4-4eb3-9899-a085ea9c58bd": {
           "type": "shippingtime",
           "settings": {
-            "shipping_button": "Informații de livrare",
+            "shipping_button": "Delivery information",
             "page_shipping": "delivery-service"
           }
         },
         "883720d7-3346-4495-85a0-add8b3d7a51f": {
           "type": "trust-badge",
           "settings": {
-            "trust-heading": "Garanția unei finalizări securizate",
+            "trust-heading": "The guarantee of a secure completion",
             "width_image": 66
           }
         },
@@ -221,7 +221,7 @@
           "type": "related-product",
           "disabled": true,
           "settings": {
-            "title_heading": "Produse înrudite",
+            "title_heading": "Related products",
             "size_text": "h6",
             "product_limit": 3
           }
@@ -265,11 +265,11 @@
         "enable_video_looping": true,
         "stock_enable": true,
         "sizeguide_enable": false,
-        "sizeguide_title": "Ghid de mărimi",
+        "sizeguide_title": "Size guide",
         "sizeguide_page": "size-guide",
-        "crosssell_title": "Vânzare încrucișată",
+        "crosssell_title": "Cross selling",
         "upsell_accept": "Add to cart",
-        "upsell_decline": "Nu, mulțumesc",
+        "upsell_decline": "No thanks",
         "upsell_time": 3,
         "enable": true,
         "mix_1": "#094a6e",
@@ -285,7 +285,7 @@
       "settings": {
         "animation": "fade-up",
         "bgsection": "#ffffff",
-        "bundle_title": "Cumpărate frecvent împreună",
+        "bundle_title": "Frequently purchased together",
         "size_text": "h4",
         "limit_bundle": 3,
         "enable_border": true,
@@ -308,16 +308,16 @@
         "b69a53cf-5bc1-4b18-add3-92af436f966c": {
           "type": "content",
           "settings": {
-            "title_tab": "Cum se utilizează",
-            "answer_content": "<p>Când utilizați șamponul nostru delicat, udați părul, apoi masați scalpul prin mișcări circulare. Săpuniți și clătiți.</p>",
+            "title_tab": "How to use",
+            "answer_content": "<p> When using our gentle shampoo, wet the hair, then massage the scalp in circular motions. Soap and rinse. </p>",
             "page": ""
           }
         },
         "450a0011-a13e-4bad-9fbb-454bc0a862b4": {
           "type": "content",
           "settings": {
-            "title_tab": "Ingrediente cheie",
-            "answer_content": "<p><strong>Squalanul completează ceea ce au la naștere</strong></p><p>La nașterea bebelușilor, pielea lor este hrănită de squalene, un ingredient hidratant supererou și cea mai bună protecție pe care o poate oferi Mama Natură. Prin chimie curată, am creat o versiune proprie de squalene derivată din trestie de zahăr, numită squal<em>ane</em>. În șamponul nostru pe bază de plante, squalanul acționează ca un netezitor fără silicon, oferind părului și scalpului o hidratare naturală și ultra-ușoară.</p>",
+            "title_tab": "Key ingredients",
+            "answer_content": "<p><strong>Squalane supplements what they were born with</strong></p><p>When babies are born, their skin is nourished by squalene, a superhero moisturizing ingredient and the best protection Mother Nature can provide. Through pure chemistry, we created our own version of squalene derived from sugar cane, called squal<em>ane</em>. In our plant-based shampoo, squalane acts as a silicone-free emollient, providing hair and scalp with natural, ultra-light hydration. </p>",
             "page": ""
           }
         },
@@ -339,7 +339,7 @@
         "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc": {
           "type": "related-product",
           "settings": {
-            "title_heading": "Cumpără cu",
+            "title_heading": "Buy with",
             "size_text": "h6",
             "product_limit": 3
           }
@@ -390,7 +390,7 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
-        "heading": "S-ar putea să-ți placă și",
+        "heading": "You might also like",
         "heading_size": "h3",
         "heading_align": "center",
         "products_to_show": 10,

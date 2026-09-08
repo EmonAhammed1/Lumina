@@ -18,7 +18,7 @@
         "save_allproducts": true,
         "img_bannercollection": "shopify://shop_images/110523_HPBanner_Desktop_OmniCampaign_BundleAndSave_01.webp",
         "title_all": "All Products",
-        "des_all": "<p>Cumpără acum, nu mai amâna. Răsfoiește cele mai bune stiluri și branduri la reducere.</p>",
+        "des_all": "<p> Buy now, don't delay. Browse the best styles and brands on sale. </p>",
         "style_banner": "split",
         "heading_size": "h3",
         "img_height": "350px",
@@ -111,7 +111,7 @@
         "4aae42f0-8564-4ba9-bf69-e0db437bad2b": {
           "type": "heading",
           "settings": {
-            "title": "Reduceri de vară",
+            "title": "Summer discounts",
             "size_text": "h4"
           }
         },
@@ -124,7 +124,7 @@
         "71224ca7-db08-44d5-8f55-df529ccb46af": {
           "type": "button",
           "settings": {
-            "button": "Cumpără acum",
+            "button": "Shop Now",
             "link": "#",
             "style_btn": "btn-outline"
           }

@@ -21,9 +21,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "01",
-            "category": "Produse și Tehnologie",
-            "question": "Ce este Lumina Europa?",
-            "answer": "<p>Lumina Europa este un brand european de îngrijire a pielii axat pe tehnologia avansată a nanofibrelor, formulare atentă și ideea că îngrijirea pielii poate fi atât eficientă, cât și un adevărat ritual. Produsele noastre sunt concepute pentru a aduce ingrediente atent selecționate în contact strâns și uniform cu pielea.</p>",
+            "category": "Products & Technology",
+            "question": "What is Europa Light?",
+            "answer": "<p> Lumina Europa is a European skincare brand focused on advanced nanofibre technology, careful formulation and the idea that skincare can be both effective and a true ritual. Our products are designed to bring carefully selected ingredients into close and uniform contact with the skin. </p>",
             "open_by_default": true
           }
         },
@@ -31,9 +31,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "02",
-            "category": "Produse și Tehnologie",
-            "question": "Prin ce se diferențiază Lumina Europa de o mască șervețel tradițională?",
-            "answer": "<p>Măștile șervețel tradiționale sunt de obicei fabricate din țesătură sau hidrogel îmbibat în ser. Măștile cu nanofibre Lumina folosesc o structură extrem de fină de fibre, concepută pentru a se mula perfect pe conturul natural al feței. Acest lucru creează o experiență de aplicare complet diferită și permite livrarea formulei active fără senzația grea și umedă a unei măști convenționale.</p>",
+            "category": "Products & Technology",
+            "question": "How does Lumina Europa differ from a traditional tissue mask?",
+            "answer": "<p> Traditional sheet masks are usually made from fabric or serum-soaked hydrogel. Lumina nanofiber masks use an extremely fine fiber structure, designed to perfectly mold to the natural contour of the face. This creates a completely different application experience and allows the active formula to be delivered without the heavy, wet feel of a conventional mask. </p>",
             "open_by_default": true
           }
         },
@@ -41,9 +41,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "03",
-            "category": "Produse și Tehnologie",
-            "question": "Ce sunt nanofibrele?",
-            "answer": "<p>Nanofibrele sunt fibre excepțional de fine, create folosind tehnologii specializate de fabricație. Diametrul lor redus le permite să formeze o structură ușoară și extrem de adaptabilă, care se așază perfect pe suprafața pielii.</p>",
+            "category": "Products & Technology",
+            "question": "What are nanofibers?",
+            "answer": "<p> Nanofibers are exceptionally fine fibers created using specialized manufacturing technologies. Their small diameter allows them to form a light and highly adaptable structure that sits perfectly on the surface of the skin. </p>",
             "open_by_default": false
           }
         },
@@ -51,9 +51,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "04",
-            "category": "Produse și Tehnologie",
-            "question": "Înseamnă „nanofibră” că produsul conține nanoparticule?",
-            "answer": "<p>Nu neapărat. „Nanofibră” descrie structura fizică a materialului din fibre. Nu trebuie interpretat ca însemnând că fiecare ingredient din formulare este un nanomaterial sau o nanoparticulă.</p>",
+            "category": "Products & Technology",
+            "question": "Does \"nanofiber\" mean the product contains nanoparticles?",
+            "answer": "<p> Not necessarily. \"Nanofiber\" describes the physical structure of the fiber material. It should not be construed to mean that every ingredient in the formulation is a nanomaterial or a nanoparticle. </p>",
             "open_by_default": false
           }
         },
@@ -61,9 +61,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "05",
-            "category": "Produse și Tehnologie",
-            "question": "Cum funcționează masca cu nanofibre?",
-            "answer": "<p>Când masca este activată conform instrucțiunilor, structura de nanofibre interacționează cu umiditatea și permite formulei conținute în fibre să se transfere pe piele.</p>",
+            "category": "Products & Technology",
+            "question": "How does the nanofiber mask work?",
+            "answer": "<p> When the mask is activated as directed, the nanofiber structure interacts with moisture and allows the formula contained in the fibers to transfer to the skin. </p>",
             "open_by_default": false
           }
         },
@@ -71,9 +71,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "06",
-            "category": "Produse și Tehnologie",
-            "question": "De ce este important contactul strâns cu pielea?",
-            "answer": "<p>Pielea nu este perfect plană. Structura fină a fibrelor poate urmări conturul ei natural mult mai îndeaproape, ajutând la asigurarea unui contact mai uniform între mască și suprafața pielii.</p>",
+            "category": "Products & Technology",
+            "question": "Why is close skin contact important?",
+            "answer": "<p> The skin is not perfectly flat. The fine structure of the fibers can follow its natural contour much more closely, helping to ensure more even contact between the mask and the skin's surface. </p>",
             "open_by_default": false
           }
         },
@@ -81,9 +81,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "07",
-            "category": "Produse și Tehnologie",
-            "question": "Se dizolvă masca?",
-            "answer": "<p>În funcție de produsul și formularea specifică, structura de nanofibre este concepută să se transforme în timpul utilizării, pe măsură ce intră în contact cu mediul de activare și cu pielea. Urmați întotdeauna instrucțiunile furnizate cu fiecare produs individual.</p>",
+            "category": "Products & Technology",
+            "question": "Does the mask dissolve?",
+            "answer": "<p> Depending on the specific product and formulation, the nanofiber structure is designed to transform during use as it comes into contact with the activation medium and the skin. Always follow the instructions provided with each individual product. </p>",
             "open_by_default": false
           }
         },
@@ -91,9 +91,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "08",
-            "category": "Produse și Tehnologie",
-            "question": "Ce înseamnă „transfer de până la 92%”?",
-            "answer": "<p>Acolo unde este afișată această cifră, ea se referă la testele efectuate pe tehnologia cu nanofibre în condiții definite. Transferul real poate varia în funcție de formulare, ingredientele active și condițiile de utilizare. Nu trebuie înțeles ca o garanție că exact 92% din fiecare ingredient va pătrunde în piele.</p>",
+            "category": "Products & Technology",
+            "question": "What does \"up to 92% transfer\" mean?",
+            "answer": "<p> Where this figure is shown, it refers to tests performed on nanofiber technology under defined conditions. Actual transfer may vary depending on formulations, active ingredients and conditions of use. It should not be taken as a guarantee that exactly 92% of each ingredient will penetrate the skin. </p>",
             "open_by_default": false
           }
         },
@@ -101,9 +101,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "09",
-            "category": "Produse și Tehnologie",
-            "question": "Sunt produsele Lumina tratamente medicale?",
-            "answer": "<p>Nu. Produsele Lumina Europa sunt cosmetice. Ele sunt destinate îngrijirii și îmbunătățirii aspectului și stării pielii și nu sunt destinate diagnosticării, tratării sau vindecării afecțiunilor medicale.</p>",
+            "category": "Products & Technology",
+            "question": "Are Lumina products medical treatments?",
+            "answer": "<p> Nope. Lumina Europa products are cosmetics. They are intended to care for and improve the appearance and condition of the skin and are not intended to diagnose, treat or cure medical conditions. </p>",
             "open_by_default": false
           }
         },
@@ -111,9 +111,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "10",
-            "category": "Produse și Tehnologie",
-            "question": "Sunt toate măștile Lumina la fel?",
-            "answer": "<p>Nu. Fiecare mască este concepută în jurul unui obiectiv diferit de îngrijire a pielii. De exemplu, unele formulări se concentrează pe hidratare, calmare, luminozitate sau regenerare.</p>",
+            "category": "Products & Technology",
+            "question": "Are all Lumina masks the same?",
+            "answer": "<p> Nope. Each mask is designed around a different skin care goal. For example, some formulations focus on hydration, soothing, brightness or regeneration. </p>",
             "open_by_default": false
           }
         },
@@ -121,9 +121,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "11",
-            "category": "Mod de Utilizare",
-            "question": "Cum folosesc o mască cu nanofibre Lumina?",
-            "answer": "<p>Începeți cu pielea curată și urmați instrucțiunile furnizate cu masca dumneavoastră specifică. Activarea și aplicarea corectă sunt importante, deoarece măștile cu nanofibre se comportă diferit față de măștile tradiționale umede de tip șervețel.</p>",
+            "category": "How to Use & Rituals",
+            "question": "How do I use a Lumina nanofiber mask?",
+            "answer": "<p> Start with clean skin and follow the directions provided with your specific mask. Proper activation and application is important because nanofiber masks behave differently than traditional wet wipe masks. </p>",
             "open_by_default": false
           }
         },
@@ -131,9 +131,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "12",
-            "category": "Mod de Utilizare",
-            "question": "Ar trebui ca pielea mea să fie curată înainte de aplicare?",
-            "answer": "<p>Da. Recomandăm aplicarea măștii pe pielea proaspăt curățată, astfel încât machiajul, crema de protecție solară, excesul de sebum sau alte produse să nu interfereze cu aplicarea.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Should my skin be clean before application?",
+            "answer": "<p> Yes. We recommend applying the mask to freshly cleansed skin so that make-up, sunscreen, excess sebum or other products do not interfere with application. </p>",
             "open_by_default": false
           }
         },
@@ -141,9 +141,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "13",
-            "category": "Mod de Utilizare",
-            "question": "Pot folosi toner sau ser înainte de mască?",
-            "answer": "<p>Acest lucru depinde de produsul individual și de rutina dumneavoastră. În general, păstrați pielea curată și evitați aplicarea produselor grele sau uleioase imediat înainte de a folosi masca, cu excepția cazului în care instrucțiunile produsului indică altfel.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I use toner or serum before the mask?",
+            "answer": "<p> This depends on the individual product and your routine. In general, keep the skin clean and avoid applying heavy or oily products immediately before using the mask, unless the product instructions indicate otherwise. </p>",
             "open_by_default": false
           }
         },
@@ -151,9 +151,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "14",
-            "category": "Mod de Utilizare",
-            "question": "Cât timp ar trebui să las masca pe față?",
-            "answer": "<p>Urmați timpul de aplicare menționat pe ambalaj sau pe pagina produsului. O aplicare mai lungă nu este neapărat mai bună.</p>",
+            "category": "How to Use & Rituals",
+            "question": "How long should I leave the mask on my face?",
+            "answer": "<p> Follow the application time stated on the packaging or product page. Longer application is not necessarily better. </p>",
             "open_by_default": false
           }
         },
@@ -161,9 +161,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "15",
-            "category": "Mod de Utilizare",
-            "question": "Ar trebui să mă clătesc pe față după aceea?",
-            "answer": "<p>Cu excepția cazului în care instrucțiunile produsului individual specifică altfel, în general nu este nevoie să clătiți ingredientele de îngrijire rămase după utilizare.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Should I rinse my face afterwards?",
+            "answer": "<p> Unless the individual product instructions state otherwise, there is generally no need to rinse off the remaining care ingredients after use. </p>",
             "open_by_default": false
           }
         },
@@ -171,9 +171,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "16",
-            "category": "Mod de Utilizare",
-            "question": "Ce ar trebui să aplic după mască?",
-            "answer": "<p>Puteți continua cu restul rutinei dumneavoastră obișnuite de îngrijire a pielii. În funcție de pielea dumneavoastră și de masca utilizată, aceasta poate include o cremă hidratantă și, în timpul zilei, protecție solară.</p>",
+            "category": "How to Use & Rituals",
+            "question": "What should I apply after the mask?",
+            "answer": "<p> You can continue with the rest of your regular skin care routine. Depending on your skin and the mask used, this may include a moisturizer and, during the day, sunscreen. </p>",
             "open_by_default": false
           }
         },
@@ -181,9 +181,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "17",
-            "category": "Mod de Utilizare",
-            "question": "Cât de des pot folosi măștile Lumina?",
-            "answer": "<p>Frecvența depinde de formulare și de pielea dumneavoastră. Urmați instrucțiunile pentru fiecare produs și ajustați utilizarea în funcție de modul în care răspunde pielea dumneavoastră.</p>",
+            "category": "How to Use & Rituals",
+            "question": "How often can I use Lumina masks?",
+            "answer": "<p> Frequency depends on the formulation and your skin. Follow the directions for each product and adjust usage based on how your skin responds. </p>",
             "open_by_default": false
           }
         },
@@ -191,9 +191,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "18",
-            "category": "Mod de Utilizare",
-            "question": "Pot combina măști Lumina diferite în aceeași rutină?",
-            "answer": "<p>Potențial, da. Mști diferite pot juca roluri complementare într-un ritual de îngrijire a pielii. Totuși, mai multe produse nu înseamnă automat rezultate mai bune. Luați în considerare nevoile pielii dumneavoastră și evitați rutinele inutil de intensive.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I combine different Lumina masks in the same routine?",
+            "answer": "<p> Potentially, yes. Different masks can play complementary roles in a skincare ritual. However, more products do not automatically mean better results. Consider your skin's needs and avoid unnecessarily intensive routines. </p>",
             "open_by_default": false
           }
         },
@@ -201,9 +201,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "19",
-            "category": "Mod de Utilizare",
-            "question": "Pot folosi măștile dimineața?",
-            "answer": "<p>Da, cu condiția ca formularea individuală să fie potrivită pentru rutina dumneavoastră. Urmați cu o îngrijire adecvată de zi și protecție solară acolo unde este cazul.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I use the masks in the morning?",
+            "answer": "<p> Yes, provided the individual formulation is suitable for your routine. Follow with appropriate day care and sun protection where appropriate. </p>",
             "open_by_default": false
           }
         },
@@ -211,9 +211,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "20",
-            "category": "Mod de Utilizare",
-            "question": "Le pot folosi noaptea?",
-            "answer": "<p>Da. Multe persoane pot prefera să folosească o mască ca parte a unui ritual de seară de îngrijire a pielii, când au mai mult timp pentru a lăsa produsul să se așeze confortabil pe piele.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I use them at night?",
+            "answer": "<p> Yes. Many people may prefer to use a mask as part of an evening skincare ritual when they have more time to let the product sit comfortably on the skin. </p>",
             "open_by_default": false
           }
         },
@@ -221,9 +221,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "21",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Sunt produsele Lumina potrivite pentru pielea sensibilă?",
-            "answer": "<p>Adecvarea depinde de formularea individuală și de persoana care le utilizează. Dacă aveți o piele deosebit de sensibilă, consultați cu atenție lista de ingrediente și luați în considerare testarea unei cantități mici de produs de activare sau de formulare asociată, acolo unde este cazul.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Are Lumina products suitable for sensitive skin?",
+            "answer": "<p> Suitability depends on the individual formulation and the person using them. If you have particularly sensitive skin, read the ingredients list carefully and consider testing a small amount of the activator product or associated formulation where appropriate. </p>",
             "open_by_default": false
           }
         },
@@ -231,9 +231,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "22",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Unde pot găsi ingredientele?",
-            "answer": "<p>Lista de ingrediente pentru fiecare produs cosmetic este afișată pe ambalaj și/sau pe pagina produsului. Consultați întotdeauna produsul în sine pentru cele mai actualizate informații despre ingrediente.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Where can I find the ingredients?",
+            "answer": "<p> The list of ingredients for each cosmetic product is displayed on the packaging and/or on the product page. Always refer to the product itself for the most up-to-date ingredient information. </p>",
             "open_by_default": false
           }
         },
@@ -241,9 +241,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "23",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Ce ar trebui să fac dacă sunt alergic la un ingredient cosmetic?",
-            "answer": "<p>Nu utilizați un produs care conține un ingredient la care știți că sunteți alergic sau sensibil. Consultați lista de ingrediente INCI înainte de utilizare.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "What should I do if I am allergic to a cosmetic ingredient?",
+            "answer": "<p> Do not use a product that contains an ingredient that you know you are allergic or sensitive to. Consult the INCI ingredient list before use. </p>",
             "open_by_default": false
           }
         },
@@ -251,9 +251,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "24",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Pot folosi produsele Lumina dacă am o afecțiune a pielii?",
-            "answer": "<p>Dacă aveți o afecțiune a pielii diagnosticată, urmați un tratament dermatologic sau nu sunteți sigur dacă un produs cosmetic este potrivit pentru dumneavoastră, discutați cu un cadru medical calificat înainte de utilizare.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Can I use Lumina products if I have a skin condition?",
+            "answer": "<p> If you have a diagnosed skin condition, are undergoing dermatological treatment, or are unsure whether a cosmetic product is right for you, consult a qualified healthcare professional before use. </p>",
             "open_by_default": false
           }
         },
@@ -261,9 +261,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "25",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Pot folosi produsele Lumina în timpul sarcinii sau al alăptării?",
-            "answer": "<p>Adecvarea produselor cosmetice depinde de formularea specifică și de circumstanțele dumneavoastră individuale. Dacă sunteți însărcinată, alăptați sau ați fost sfătuită să evitați anumite ingrediente cosmetice, consultați cadrul medical și verificați lista de ingrediente înainte de utilizare.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Can I use Lumina products during pregnancy or breastfeeding?",
+            "answer": "<p> The suitability of cosmetic products depends on the specific formulation and your individual circumstances. If you are pregnant, breastfeeding or have been advised to avoid certain cosmetic ingredients, consult your healthcare provider and check the ingredient list before use. </p>",
             "open_by_default": false
           }
         },
@@ -271,9 +271,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "26",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Ce ar trebui să fac dacă apare o iritație?",
-            "answer": "<p>Opriți utilizarea produsului. Dacă iritația persistă, devine severă sau provoacă îngrijorare, solicitați sfatul medicului.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "What should I do if irritation occurs?",
+            "answer": "<p> Stop using the product. If irritation persists, becomes severe or causes concern, seek medical advice. </p>",
             "open_by_default": false
           }
         },
@@ -281,9 +281,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "27",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Pot folosi o mască Lumina pe pielea lezată sau iritată?",
-            "answer": "<p>Cu excepția cazului în care se specifică altfel în mod expres, evitați aplicarea măștilor cosmetice pe pielea lezată, puternic iritată sau compromisă.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Can I use a Lumina mask on damaged or irritated skin?",
+            "answer": "<p> Unless otherwise expressly stated, avoid applying cosmetic masks to damaged, severely irritated or compromised skin. </p>",
             "open_by_default": false
           }
         },
@@ -291,9 +291,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "28",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Sunt produsele Lumina testate pentru siguranță?",
-            "answer": "<p>Produsele cosmetice introduse pe piața relevantă trebuie să fie supuse evaluării obligatorii de siguranță și procesului de reglementare aplicabil pe acea piață.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Are Lumina products tested for safety?",
+            "answer": "<p> Cosmetic products introduced into the relevant market must be subject to the mandatory safety assessment and regulatory process applicable to that market. </p>",
             "open_by_default": false
           }
         },
@@ -301,9 +301,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "29",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Sunt produsele Lumina potrivite pentru toate nuanțele de ten?",
-            "answer": "<p>Filosofia noastră de îngrijire a pielii nu este construită în jurul unui singur ten sau al unui singur ideal de frumusețe. Adecvarea produsului este determinată în primul rând de formulare, de nevoile individuale ale pielii și de compatibilitatea ingredientelor, mai degrabă decât de nuanța tenului.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Are Lumina products suitable for all skin tones?",
+            "answer": "<p> Our skincare philosophy isn't built around one complexion or one beauty ideal. Product suitability is primarily determined by formulation, individual skin needs and ingredient compatibility, rather than skin tone. </p>",
             "open_by_default": false
           }
         },
@@ -311,9 +311,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "30",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Sunt produsele Lumina destinate exclusiv femeilor?",
-            "answer": "<p>Nu. Pielea este piele. Produsele Lumina Europa sunt concepute pentru toată lumea, indiferent de gen.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Are Lumina products exclusively for women?",
+            "answer": "<p> Nope. Leather is leather. Lumina Europa products are designed for everyone, regardless of gender. </p>",
             "open_by_default": false
           }
         },
@@ -321,9 +321,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "31",
-            "category": "Comenzi și Livrare",
-            "question": "Unde pot cumpăra produsele Lumina Europa?",
-            "answer": "<p>Produsele Lumina Europa pot fi achiziționate direct de pe site-urile noastre oficiale și prin intermediul partenerilor autorizați, profesionali sau de retail, acolo unde este cazul.</p>",
+            "category": "Orders & Shipping",
+            "question": "Where can I buy Lumina Europa products?",
+            "answer": "<p> Lumina Europa products can be purchased directly from our official websites and through authorized professional or retail partners where applicable. </p>",
             "open_by_default": false
           }
         },
@@ -331,9 +331,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "32",
-            "category": "Comenzi și Livrare",
-            "question": "Este LuminaEuropa.eu un marketplace?",
-            "answer": "<p>Nu. LuminaEuropa.eu este operat ca un magazin online de retail. Produsele vândute prin intermediul site-ului sunt vândute de compania identificată în Termenii și Condițiile site-ului, și nu de vânzători independenți dintr-un marketplace.</p>",
+            "category": "Orders & Shipping",
+            "question": "Is LuminaEuropa.eu a marketplace?",
+            "answer": "<p> Nope. LuminaEuropa.eu is operated as an online retail store. Products sold through the Site are sold by the company identified in the Site Terms and Conditions, and not by independent sellers in a marketplace. </p>",
             "open_by_default": false
           }
         },
@@ -341,9 +341,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "33",
-            "category": "Comenzi și Livrare",
-            "question": "În ce țări livrați?",
-            "answer": "<p>Destinațiile disponibile sunt afișate în timpul finalizării comenzii. Disponibilitatea livrării poate varia în funcție de piață și de serviciul de logistică.</p>",
+            "category": "Orders & Shipping",
+            "question": "Which countries do you deliver to?",
+            "answer": "<p> Available destinations are displayed during checkout. Delivery availability may vary by market and logistics service. </p>",
             "open_by_default": false
           }
         },
@@ -351,9 +351,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "34",
-            "category": "Comenzi și Livrare",
-            "question": "Ce curieri folosiți în România și în UE?",
-            "answer": "<p>În funcție de destinație și de metoda de livrare, comenzile pot fi livrate folosind Sameday, Poșta Română, DPD sau alți parteneri logistici.</p>",
+            "category": "Orders & Shipping",
+            "question": "What couriers do you use in Romania and in the EU?",
+            "answer": "<p> Depending on the destination and delivery method, orders can be delivered using Sameday, Romanian Post, DPD or other logistics partners. </p>",
             "open_by_default": false
           }
         },
@@ -361,9 +361,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "35",
-            "category": "Comenzi și Livrare",
-            "question": "Cât costă transportul?",
-            "answer": "<p>Costurile de transport sunt calculate și afișate înainte de a finaliza comanda. Acestea pot varia în funcție de destinație, caracteristicile coletului și opțiunea de livrare selectată.</p>",
+            "category": "Orders & Shipping",
+            "question": "How much is shipping?",
+            "answer": "<p> Shipping costs are calculated and displayed before you complete your order. They may vary depending on the destination, the characteristics of the package and the selected delivery option. </p>",
             "open_by_default": false
           }
         },
@@ -371,9 +371,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "36",
-            "category": "Comenzi și Livrare",
-            "question": "În cât timp va ajunge comanda mea?",
-            "answer": "<p>Informațiile estimate privind livrarea sunt afișate în timpul finalizării comenzii sau în secțiunea de livrare aplicabilă destinației dumneavoastră. Timpii de livrare sunt estimativi și pot fi ocazional afectați de operațiunile curierului, sărbătorile legale, vreme sau circumstanțe dincolo de controlul nostru rezonabil.</p>",
+            "category": "Orders & Shipping",
+            "question": "How long will it take for my order to arrive?",
+            "answer": "<p> Estimated delivery information is displayed during checkout or in the delivery section applicable to your destination. Delivery times are estimates and may occasionally be affected by courier operations, bank holidays, weather or circumstances beyond our reasonable control. </p>",
             "open_by_default": false
           }
         },
@@ -381,9 +381,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "37",
-            "category": "Comenzi și Livrare",
-            "question": "Voi primi informații de urmărire (tracking)?",
-            "answer": "<p>Acolo unde urmărirea este disponibilă, veți primi un link de urmărire sau un număr de AWB odată ce coletul dumneavoastră a fost pregătit și predat partenerului de livrare.</p>",
+            "category": "Orders & Shipping",
+            "question": "Will I receive tracking information?",
+            "answer": "<p> Where tracking is available, you will receive a tracking link or AWB number once your package has been prepared and handed over to your delivery partner. </p>",
             "open_by_default": false
           }
         },
@@ -391,9 +391,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "38",
-            "category": "Comenzi și Livrare",
-            "question": "Ce ar trebui să fac dacă coletul meu întârzie?",
-            "answer": "<p>Verificați mai întâi informațiile de urmărire. Dacă nu a existat nicio actualizare semnificativă timp de câteva zile sau coletul pare să fie întârziat considerabil, contactați-ne și vom investiga situația împreună cu partenerul de livrare.</p>",
+            "category": "Orders & Shipping",
+            "question": "What should I do if my package is delayed?",
+            "answer": "<p> Please check your tracking information first. If there has been no significant update for several days or the package appears to be significantly delayed, please contact us and we will investigate the situation with the delivery partner. </p>",
             "open_by_default": false
           }
         },
@@ -401,9 +401,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "39",
-            "category": "Comenzi și Livrare",
-            "question": "Ce fac dacă coletul meu ajunge deteriorat?",
-            "answer": "<p>Contactați-ne cât mai curând posibil cu numărul dumneavoastră de comandă și, unde este posibil, fotografii clare ale coletului, ambalajului și produsului afectat, astfel încât să putem evalua situația.</p>",
+            "category": "Orders & Shipping",
+            "question": "What do I do if my package arrives damaged?",
+            "answer": "<p> Contact us as soon as possible with your order number and, where possible, clear photographs of the parcel, packaging and affected product so that we can assess the situation. </p>",
             "open_by_default": false
           }
         },
@@ -411,9 +411,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "40",
-            "category": "Comenzi și Livrare",
-            "question": "Ce fac dacă primesc produsul greșit?",
-            "answer": "<p>Contactați echipa noastră de suport clienți cu numărul dumneavoastră de comandă și detaliile articolului primit. Vă vom ajuta să aranjăm soluția potrivită.</p>",
+            "category": "Orders & Shipping",
+            "question": "What if I receive the wrong product?",
+            "answer": "<p> Contact our customer support team with your order number and details of the item received. We will help you arrange the right solution. </p>",
             "open_by_default": false
           }
         },
@@ -421,9 +421,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "41",
-            "category": "Retururi și Rambursări",
-            "question": "Îmi pot returna comanda dacă mă răzgândesc?",
-            "answer": "<p>Acolo unde se aplică dreptul legal de retragere, consumatorii eligibili pot anula de obicei o achiziție la distanță în termenul legal aplicabil. Pentru consumatorii din UE, acesta este în general de 14 zile, cu excepțiile prevăzute de lege.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can I return my order if I change my mind?",
+            "answer": "<p> Where the statutory right of withdrawal applies, eligible consumers can usually cancel a distance purchase within the applicable statutory period. For EU consumers, this is generally 14 days, with exceptions provided by law. </p>",
             "open_by_default": false
           }
         },
@@ -431,9 +431,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "42",
-            "category": "Retururi și Rambursări",
-            "question": "Pot fi returnate produsele cosmetice desigilate?",
-            "answer": "<p>Nu orice produs cosmetic desigilat este exclus automat de la returnare. Anumite produse sigilate pot pierde dreptul de retragere după desigilare acolo unde se aplică excepția privind protecția sănătății sau igiena. Împrejurările specifice și ambalajul produsului contează.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can unsealed cosmetic products be returned?",
+            "answer": "<p> Not every unsealed cosmetic product is automatically excluded from return. Certain sealed products may lose the right of withdrawal after unsealing where the health protection or hygiene exception applies. The specific circumstances and packaging of the product matter. </p>",
             "open_by_default": false
           }
         },
@@ -441,9 +441,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "43",
-            "category": "Retururi și Rambursări",
-            "question": "Cum solicit un retur?",
-            "answer": "<p>Urmați instrucțiunile de retur furnizate pe site sau contactați serviciul de asistență pentru clienți cu detaliile comenzii dumneavoastră. Vă vom oferi informațiile necesare pentru a returna produsele eligibile.</p>",
+            "category": "Returns & Refunds",
+            "question": "How do I request a return?",
+            "answer": "<p> Follow the returns instructions provided on the website or contact customer service with your order details. We will provide you with the necessary information to return eligible products. </p>",
             "open_by_default": false
           }
         },
@@ -451,9 +451,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "44",
-            "category": "Retururi și Rambursări",
-            "question": "Cine plătește costul de livrare al returului?",
-            "answer": "<p>Acest lucru depinde de motivul returului și de legislația aplicabilă. Pentru un retur standard prin răzgândire, consumatorul poate fi responsabil pentru costul returului acolo unde legea permite. În cazul produselor defecte, incorecte sau neconforme, se aplică reguli diferite.</p>",
+            "category": "Returns & Refunds",
+            "question": "Who pays the return shipping cost?",
+            "answer": "<p> This depends on the reason for the return and applicable law. For a standard change of mind return, the consumer may be responsible for the cost of the return where permitted by law. In the case of defective, incorrect or non-compliant products, different rules apply. </p>",
             "open_by_default": false
           }
         },
@@ -461,9 +461,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "45",
-            "category": "Retururi și Rambursări",
-            "question": "Cum voi primi rambursarea?",
-            "answer": "<p>Rambursările se fac de obicei folosind metoda originală de plată, cu excepția cazului în care este necesară sau convenită o altă metodă.</p>",
+            "category": "Returns & Refunds",
+            "question": "How will I receive my refund?",
+            "answer": "<p> Refunds are usually made using the original payment method, unless another method is required or agreed upon. </p>",
             "open_by_default": false
           }
         },
@@ -471,9 +471,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "46",
-            "category": "Retururi și Rambursări",
-            "question": "Cât timp durează o rambursare?",
-            "answer": "<p>Odată ce o rambursare a fost procesată, timpul necesar pentru a apărea în contul dumneavoastră poate depinde de bancă sau de furnizorul dumneavoastră de plăți.</p>",
+            "category": "Returns & Refunds",
+            "question": "How long does a refund take?",
+            "answer": "<p> Once a refund has been processed, the time it takes to appear in your account may depend on your bank or payment provider. </p>",
             "open_by_default": false
           }
         },
@@ -481,9 +481,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "47",
-            "category": "Retururi și Rambursări",
-            "question": "Ce se întâmplă dacă produsul este defect sau nu este conform descrierii?",
-            "answer": "<p>Vă rugăm să ne contactați. Drepturile dumneavoastră legale privind produsele defecte, deteriorate, incorecte sau neconforme rămân neafectate de politica noastră standard de retur.</p>",
+            "category": "Returns & Refunds",
+            "question": "What if the product is defective or not as described?",
+            "answer": "<p> Please contact us. Your legal rights regarding faulty, damaged, incorrect or non-conforming products remain unaffected by our standard returns policy. </p>",
             "open_by_default": false
           }
         },
@@ -491,9 +491,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "48",
-            "category": "Despre Lumina Europa",
-            "question": "Unde își are sediul Lumina Europa?",
-            "answer": "<p>Lumina Europa operează prin entități comerciale europene și din Marea Britanie pentru piețele relevante. Vânzătorul legal aplicabil achiziției dumneavoastră este identificat în Termenii și Condițiile și în informațiile de checkout ale site-ului pe care îl utilizați.</p>",
+            "category": "About Lumina Europa",
+            "question": "Where is Lumina Europa based?",
+            "answer": "<p> Lumina Europa operates through European and UK trading entities for relevant markets. The legal seller applicable to your purchase is identified in the Terms and Conditions and checkout information of the site you are using. </p>",
             "open_by_default": false
           }
         },
@@ -501,9 +501,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "49",
-            "category": "Despre Lumina Europa",
-            "question": "De ce brandul se numește Lumina Europa?",
-            "answer": "<p>„Lumina” evocă lumina — nu doar ca iluminare, ci ca o revelație. Brandul explorează relația dintre lumină, piele, știință și ritualurile prin care avem grijă de noi înșine.</p>",
+            "category": "About Lumina Europa",
+            "question": "Why is the brand called Lumina Europa?",
+            "answer": "<p> \"Light\" evokes light—not just as illumination, but as revelation. The brand explores the relationship between light, skin, science and the rituals through which we take care of ourselves. </p>",
             "open_by_default": false
           }
         },
@@ -511,9 +511,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "50",
-            "category": "Despre Lumina Europa",
-            "question": "Ce înseamnă „Lumina is You”?",
-            "answer": "<p>Reflectă o idee simplă: frumusețea nu ar trebui să ceară oamenilor să devină altcineva. Lumina celebrează fețele, vârstele, nuanțele de ten și identitățile individuale, mai degrabă decât să prezinte un singur model de perfecțiune.</p>",
+            "category": "About Lumina Europa",
+            "question": "What does \"Light is You\" mean?",
+            "answer": "<p> It reflects a simple idea: beauty shouldn't require people to become someone else. Light celebrates faces, ages, skin tones and individual identities rather than presenting a single model of perfection. </p>",
             "open_by_default": false
           }
         },
@@ -521,9 +521,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "51",
-            "category": "Despre Lumina Europa",
-            "question": "Care este ideea din spatele chipurilor folosite de Lumina Europa?",
-            "answer": "<p>Chipurile reprezintă individualitatea. Trăsături, generații și medii diferite aparțin aceleiași lumi vizuale pentru că subiectul central al brandului Lumina nu este un chip idealizat — ci persoana.</p>",
+            "category": "About Lumina Europa",
+            "question": "What is the idea behind the faces used by Lumina Europa?",
+            "answer": "<p> Faces represent individuality. Different features, generations and backgrounds belong to the same visual world because the central subject of the Lumina brand is not an idealized face — but the person. </p>",
             "open_by_default": false
           }
         },
@@ -531,9 +531,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "52",
-            "category": "Despre Lumina Europa",
-            "question": "Ce este ritualul Lumina?",
-            "answer": "<p>Ritualul Lumina este modul nostru de a gândi îngrijirea pielii ca mai mult decât o succesiune de produse. Combină tehnologia, formularea și momentul deliberat pe care îl creați pentru pielea dumneavoastră.</p>",
+            "category": "About Lumina Europa",
+            "question": "What is the Light ritual?",
+            "answer": "<p> The Lumina Ritual is our way of thinking about skin care as more than a succession of products. It combines technology, formulation and the deliberate moment you create for your skin. </p>",
             "open_by_default": false
           }
         },
@@ -541,9 +541,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "53",
-            "category": "Despre Lumina Europa",
-            "question": "Ce sunt pachetele Ritual Bundles?",
-            "answer": "<p>Pachetele Ritual Bundles aduc laolaltă produse Lumina complementare în jurul diferitelor nevoi de îngrijire a pielii. Intenția este de a crea o rutină coerentă, mai degrabă decât de a crește pur și simplu numărul de produse utilizate.</p>",
+            "category": "About Lumina Europa",
+            "question": "What are Ritual Bundles?",
+            "answer": "<p> Ritual Bundles bring together complementary Lumina products around different skin care needs. The intention is to create a consistent routine rather than simply increasing the number of products used. </p>",
             "open_by_default": false
           }
         },
@@ -551,9 +551,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "54",
-            "category": "Despre Lumina Europa",
-            "question": "Ce înseamnă HYDRATE, SOOTHE, BRIGHTEN și RENEW?",
-            "answer": "<p>Ele reprezintă roluri diferite de îngrijire a pielii în universul Lumina. În funcție de produsele disponibile, ele ajută clienții să navigheze în colecție conform nevoilor pe care doresc să le adreseze.</p>",
+            "category": "About Lumina Europa",
+            "question": "What do HYDRATE, SOOTHE, BRIGHTEN and RENEW mean?",
+            "answer": "<p> They represent different skin care roles in the Lumina universe. Depending on the products available, they help customers navigate the collection according to the needs they want to address. </p>",
             "open_by_default": false
           }
         },
@@ -561,9 +561,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "55",
-            "category": "Despre Lumina Europa",
-            "question": "Ce este Golden Hour?",
-            "answer": "<p>Golden Hour este o parte din lumea extinsă Lumina. Detaliile vor fi dezvăluite pe măsură ce conceptul se dezvoltă și devine disponibil.</p>",
+            "category": "About Lumina Europa",
+            "question": "What is Golden Hour?",
+            "answer": "<p> Golden Hour is part of the expanded world Lumina. Details will be revealed as the concept develops and becomes available. </p>",
             "open_by_default": false
           }
         },
@@ -571,9 +571,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "56",
-            "category": "Despre Lumina Europa",
-            "question": "Unde pot afla mai multe despre tehnologia Lumina?",
-            "answer": "<p>Vizitați secțiunea Tehnologie a site-ului pentru o explicație mai profundă a platformei de nanofibre, a modului în care masca interacționează cu pielea și a științei din spatele experienței.</p>",
+            "category": "About Lumina Europa",
+            "question": "Where can I learn more about Lumina technology?",
+            "answer": "<p> Visit the Technology section of the site for a deeper explanation of the nanofiber platform, how the mask interacts with the skin, and the science behind the experience. </p>",
             "open_by_default": false
           }
         },
@@ -581,9 +581,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "57",
-            "category": "Despre Lumina Europa",
-            "question": "Unde pot afla mai multe despre ingrediente?",
-            "answer": "<p>Fiecare pagină de produs oferă informații despre ingredientele sale cheie, în timp ce declarația completă a ingredientelor cosmetice apare în lista INCI asociată produsului.</p>",
+            "category": "About Lumina Europa",
+            "question": "Where can I learn more about ingredients?",
+            "answer": "<p> Each product page provides information on its key ingredients, while the full cosmetic ingredient statement appears in the INCI list associated with the product. </p>",
             "open_by_default": false
           }
         },
@@ -591,9 +591,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "58",
-            "category": "Despre Lumina Europa",
-            "question": "Cum pot contacta Lumina Europa?",
-            "answer": "<p>Puteți contacta echipa de asistență pentru clienți folosind informațiile de contact afișate pe site-ul destinat pieței din care cumpărați.</p>",
+            "category": "About Lumina Europa",
+            "question": "How can I contact Lumina Europa?",
+            "answer": "<p> You can contact our customer support team using the contact information displayed on the website for the market you are buying from. </p>",
             "open_by_default": false
           }
         },
@@ -601,9 +601,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "59",
-            "category": "Produse și Tehnologie",
-            "question": "Din ce este făcută o mască cu nanofibre?",
-            "answer": "<p>Compoziția exactă depinde de produsul individual. Fiecare pagină de produs și ambalajul său oferă informațiile relevante despre materiale și ingrediente. Tehnologia cu nanofibre Lumina folosește o structură de fibre excepțional de fină concepută pentru a purta și livra formularea cosmetică în timpul utilizării.</p>",
+            "category": "Products & Technology",
+            "question": "What is a nanofiber mask made of?",
+            "answer": "<p> The exact composition depends on the individual product. Each product page and its packaging provides the relevant information about materials and ingredients. Lumina Nanofiber Technology uses an exceptionally fine fiber structure designed to carry and deliver the cosmetic formulation during use. </p>",
             "open_by_default": false
           }
         },
@@ -611,9 +611,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "60",
-            "category": "Produse și Tehnologie",
-            "question": "Sunt măștile cu nanofibre la fel ca măștile cu hidrogel?",
-            "answer": "<p>Nu. Tehnologiile cu hidrogel și nanofibre folosesc structuri diferite și se comportă diferit când sunt aplicate pe piele.</p>",
+            "category": "Products & Technology",
+            "question": "Are nanofiber masks the same as hydrogel masks?",
+            "answer": "<p> Nope. Hydrogel and nanofiber technologies use different structures and behave differently when applied to the skin. </p>",
             "open_by_default": false
           }
         },
@@ -621,9 +621,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "61",
-            "category": "Produse și Tehnologie",
-            "question": "Sunt măștile Lumina umede în interiorul ambalajului?",
-            "answer": "<p>Măștile cu nanofibre pot fi simțite foarte diferit față de măștile convenționale îmbibate în ser. Urmați instrucțiunile pentru produsul individual, inclusiv orice pas de activare necesar înainte de aplicare.</p>",
+            "category": "Products & Technology",
+            "question": "Are the Lumina masks wet inside the packaging?",
+            "answer": "<p> Nanofiber masks can feel very different than conventional serum-soaked masks. Follow the instructions for the individual product, including any activation steps required before application. </p>",
             "open_by_default": false
           }
         },
@@ -631,9 +631,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "62",
-            "category": "Produse și Tehnologie",
-            "question": "De ce masca arată atât de subțire?",
-            "answer": "<p>Structura sa fină este parte din tehnologie. Scopul este de a crea un contact strâns și uniform cu conturul natural al pielii fără a depinde de o țesătură groasă.</p>",
+            "category": "Products & Technology",
+            "question": "Why does the mask look so thin?",
+            "answer": "<p> Its fine structure is part of the technology. The goal is to create a close and even contact with the natural contour of the skin without depending on a thick fabric. </p>",
             "open_by_default": false
           }
         },
@@ -641,9 +641,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "63",
-            "category": "Produse și Tehnologie",
-            "question": "Pot vedea nanofibrele cu ochiul liber?",
-            "answer": "<p>Fibrele individuale sunt extrem de fine, deși stratul complet de nanofibre este vizibil ca un material structurat.</p>",
+            "category": "Products & Technology",
+            "question": "Can I see the nanofibers with the naked eye?",
+            "answer": "<p> The individual fibers are extremely fine, although the complete layer of nanofibers is visible as a structured material. </p>",
             "open_by_default": false
           }
         },
@@ -651,9 +651,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "64",
-            "category": "Produse și Tehnologie",
-            "question": "Este tehnologia cu nanofibre nouă?",
-            "answer": "<p>Tehnologia cu nanofibre are aplicații în numeroase domenii științifice și tehnice. Lumina folosește acest tip de tehnologie specific în cadrul produselor cosmetice de îngrijire a pielii.</p>",
+            "category": "Products & Technology",
+            "question": "Is nanofiber technology new?",
+            "answer": "<p> Nanofiber technology has applications in numerous scientific and technical fields. Lumina uses this specific type of technology in skin care cosmetics. </p>",
             "open_by_default": false
           }
         },
@@ -661,9 +661,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "65",
-            "category": "Produse și Tehnologie",
-            "question": "Pătrunde nanofibra în piele?",
-            "answer": "<p>Produsul cosmetic este conceput pentru aplicare topică. Referințele la tehnologia cu nanofibre descriu structura de livrare și nu trebuie interpretate ca o afirmație că materialul din fibre în sine este destinat să pătrundă adânc în corp.</p>",
+            "category": "Products & Technology",
+            "question": "Does nanofiber penetrate the skin?",
+            "answer": "<p> The cosmetic product is designed for topical application. References to nanofiber technology describe the delivery structure and should not be construed as a claim that the fiber material itself is intended to penetrate deep into the body. </p>",
             "open_by_default": false
           }
         },
@@ -671,9 +671,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "66",
-            "category": "Produse și Tehnologie",
-            "question": "Înseamnă un procent mai mare de transfer al ingredientelor automat o îngrijire mai bună a pielii?",
-            "answer": "<p>Nu. Performanța depinde de mult mai mult decât de transferul în sine. Calitatea formulei, concentrația ingredientelor, compatibilitatea cu pielea, aplicarea și pielea fiecărui utilizator contează.</p>",
+            "category": "Products & Technology",
+            "question": "Does a higher percentage transfer of ingredients automatically mean better skin care?",
+            "answer": "<p> Nope. Performance depends on much more than the transfer itself. Formula quality, ingredient concentration, skin compatibility, application and each user's skin matter. </p>",
             "open_by_default": false
           }
         },
@@ -681,9 +681,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "67",
-            "category": "Produse și Tehnologie",
-            "question": "Este o mască cu nanofibre mai eficientă decât orice mască tradițională?",
-            "answer": "<p>Nu neapărat. Tehnologii diferite au avantaje diferite. Lumina folosește tehnologia cu nanofibre datorită experienței de aplicare și contactului strâns pe care îl poate crea cu pielea.</p>",
+            "category": "Products & Technology",
+            "question": "Is a nanofiber mask more effective than any traditional mask?",
+            "answer": "<p> Not necessarily. Different technologies have different advantages. Lumina uses nanofiber technology for the application experience and close contact it can create with the skin. </p>",
             "open_by_default": false
           }
         },
@@ -691,9 +691,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "68",
-            "category": "Produse și Tehnologie",
-            "question": "De ce Lumina vorbește atât despre știință, cât și despre ritual?",
-            "answer": "<p>Pentru că îngrijirea pielii are atât o dimensiune funcțională, cât și una umană. Tehnologia explică modul în care funcționează un produs; ritualul descrie momentul deliberat de îngrijire din jurul utilizării sale.</p>",
+            "category": "Products & Technology",
+            "question": "Why does the Light speak of both science and ritual?",
+            "answer": "<p> Because skin care has both a functional and a human dimension. Technology explains how a product works; ritual describes the deliberate moment of care surrounding its use. </p>",
             "open_by_default": false
           }
         },
@@ -701,9 +701,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "69",
-            "category": "Produse și Tehnologie",
-            "question": "Lumina fabrică singură tehnologia cu nanofibre?",
-            "answer": "<p>Lumina operează în cadrul unui lanț specializat de aprovizionare cu tehnologie și producție cosmetică. Informațiile specifice de fabricație pot varia în funcție de produs și de relația cu furnizorul.</p>",
+            "category": "Products & Technology",
+            "question": "Does light manufacture itself with nanofiber technology?",
+            "answer": "<p> Lumina operates within a specialized technology supply chain and cosmetic production. Specific manufacturing information may vary by product and supplier relationship. </p>",
             "open_by_default": false
           }
         },
@@ -711,9 +711,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "70",
-            "category": "Produse și Tehnologie",
-            "question": "Sunt toate produsele Lumina bazate pe tehnologia cu nanofibre?",
-            "answer": "<p>Nu neapărat. Tehnologia cu nanofibre este centrală pentru conceptul actual Lumina, dar produsele viitoare pot folosi alte formate acolo unde deservesc mai bine scopul de îngrijire a pielii.</p>",
+            "category": "Products & Technology",
+            "question": "Are all Lumina products based on nanofiber technology?",
+            "answer": "<p> Not necessarily. Nanofiber technology is central to the current Lumina concept, but future products may use other formats where they better serve the skin care purpose. </p>",
             "open_by_default": false
           }
         },
@@ -721,9 +721,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "71",
-            "category": "Despre Lumina Europa",
-            "question": "În cât timp voi vedea rezultate?",
-            "answer": "<p>Unele efecte cosmetice, cum ar fi îmbunătățirea senzației pielii sau aspectul de hidratare, pot fi vizibile rapid. Alte modificări depind de formulare, regularitatea utilizării și pielea individuală.</p>",
+            "category": "About Lumina Europa",
+            "question": "How soon will I see results?",
+            "answer": "<p> Some cosmetic effects, such as improving the feel of the skin or the appearance of hydration, can be seen quickly. Other changes depend on the formulation, regularity of use and individual skin. </p>",
             "open_by_default": false
           }
         },
@@ -731,9 +731,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "72",
-            "category": "Despre Lumina Europa",
-            "question": "Îmi va transforma o singură mască pielea?",
-            "answer": "<p>Îngrijirea pielii nu ar trebui prezentată ca o transformare instantanee. O singură utilizare poate contribui la aspectul și senzația pielii, dar rezultatele durabile depind în general de o rutină consecventă.</p>",
+            "category": "About Lumina Europa",
+            "question": "Will one mask transform my skin?",
+            "answer": "<p> Skin care should not be presented as an instant transformation. A single use can help your skin look and feel, but lasting results generally depend on a consistent routine. </p>",
             "open_by_default": false
           }
         },
@@ -741,9 +741,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "73",
-            "category": "Despre Lumina Europa",
-            "question": "Va obține toată lumea același rezultat?",
-            "answer": "<p>Nu. Pielea diferă de la o persoană la alta, iar rezultatele cosmetice pot varia.</p>",
+            "category": "About Lumina Europa",
+            "question": "Will everyone get the same result?",
+            "answer": "<p> Nope. Skin differs from person to person and cosmetic results may vary. </p>",
             "open_by_default": false
           }
         },
@@ -751,9 +751,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "74",
-            "category": "Despre Lumina Europa",
-            "question": "Utilizarea măștii pentru mai mult timp îmbunătățește rezultatul?",
-            "answer": "<p>Nu neapărat. Urmați timpul de aplicare recomandat. O expunere mai lungă nu crește automat eficacitatea și poate fi inadecvată pentru unele formulări.</p>",
+            "category": "About Lumina Europa",
+            "question": "Does using the mask for a longer time improve the result?",
+            "answer": "<p> Not necessarily. Follow the recommended application time. Longer exposure does not automatically increase efficacy and may be inappropriate for some formulations. </p>",
             "open_by_default": false
           }
         },
@@ -761,9 +761,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "75",
-            "category": "Despre Lumina Europa",
-            "question": "Pot folosi mai mult de o mască într-o zi?",
-            "answer": "<p>Acest lucru depinde de formulele specifice și de pielea dumneavoastră. Cu excepția cazului în care există un motiv clar, o utilizare mai intensivă nu este neapărat benefică.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can I use more than one mask in a day?",
+            "answer": "<p> This depends on the specific formulas and your skin. Unless there is a clear reason, more intensive use is not necessarily beneficial. </p>",
             "open_by_default": false
           }
         },
@@ -771,9 +771,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "76",
-            "category": "Despre Lumina Europa",
-            "question": "Ce se întâmplă dacă folosesc masca incorect?",
-            "answer": "<p>Este posibil ca produsul să nu funcționeze așa cum este prevăzut. Urmați cu atenție instrucțiunile, în special ghidul privind activarea, poziționarea și timpul de aplicare.</p>",
+            "category": "About Lumina Europa",
+            "question": "What happens if I use the mask incorrectly?",
+            "answer": "<p> Product may not function as intended. Follow the instructions carefully, especially the guide on activation, positioning and application time. </p>",
             "open_by_default": false
           }
         },
@@ -781,9 +781,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "77",
-            "category": "Despre Lumina Europa",
-            "question": "De ce experiența poate fi diferită de la o utilizare la alta?",
-            "answer": "<p>Starea pielii, umiditatea, produsele aplicate înainte, tehnica de activare și alți factori de mediu pot afecta modul în care se comportă un produs cosmetic.</p>",
+            "category": "About Lumina Europa",
+            "question": "Why might the experience be different from one use to another?",
+            "answer": "<p> Skin condition, humidity, products applied before, activation technique and other environmental factors can affect how a cosmetic product performs. </p>",
             "open_by_default": false
           }
         },
@@ -791,9 +791,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "78",
-            "category": "Despre Lumina Europa",
-            "question": "Poate Lumina garanta un anumit rezultat cosmetic?",
-            "answer": "<p>Niciun produs de îngrijire a pielii nu poate garanta în mod responsabil rezultate identice pentru fiecare persoană.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can Lumina guarantee a certain cosmetic result?",
+            "answer": "<p> No skin care product can responsibly guarantee identical results for every person. </p>",
             "open_by_default": false
           }
         },
@@ -801,9 +801,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "79",
-            "category": "Despre Lumina Europa",
-            "question": "Ce mască Lumina ar trebui să aleg?",
-            "answer": "<p>Alegeți în funcție de nevoile actuale ale pielii dumneavoastră, nu doar de tipul de ten. Descrierile produselor noastre și ghidul de ritual vă pot ajuta să identificați cea mai potrivită opțiune.</p>",
+            "category": "About Lumina Europa",
+            "question": "Which Lumina mask should I choose?",
+            "answer": "<p> Choose based on your skin's current needs, not just your skin type. Our product descriptions and ritual guide can help you identify the most suitable option. </p>",
             "open_by_default": false
           }
         },
@@ -811,9 +811,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "80",
-            "category": "Despre Lumina Europa",
-            "question": "Care este diferența dintre HYDRATE, SOOTHE, BRIGHTEN și RENEW?",
-            "answer": "<p>Ele descriu intenții diferite de îngrijire a pielii în sistemul Lumina: HYDRATE — susține hidratarea și confortul. SOOTHE — se concentrează pe o experiență de calmare. BRIGHTEN — se concentrează pe luminozitate și strălucire. RENEW — se concentrează pe un ten împrospătat și revitalizat. Pagina fiecărui produs oferă formularea exactă.</p>",
+            "category": "About Lumina Europa",
+            "question": "What is the difference between HYDRATE, SOOTHE, BRIGHTEN and RENEW?",
+            "answer": "<p> They describe different skin care intentions in the Lumina system: HYDRATE — supports hydration and comfort. SOOTHE — focuses on a soothing experience. BRIGHTEN — focuses on brightness and brilliance. RENEW — focuses on a refreshed and revitalized complexion. Each product page provides the exact wording. </p>",
             "open_by_default": false
           }
         },
@@ -821,9 +821,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "81",
-            "category": "Despre Lumina Europa",
-            "question": "Pielea mea poate avea nevoie de mai mult de un ritual?",
-            "answer": "<p>Da. Nevoile pielii se pot schimba în funcție de sezon, mediu, rutină, stres și alți factori.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can my skin need more than one ritual?",
+            "answer": "<p> Yes. Skin needs can change with season, environment, routine, stress and other factors. </p>",
             "open_by_default": false
           }
         },
@@ -831,9 +831,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "82",
-            "category": "Despre Lumina Europa",
-            "question": "Ce fac dacă nu îmi cunosc tipul de ten?",
-            "answer": "<p>Nu trebuie neapărat să vă definiți permanent un singur tip de ten. Începeți cu preocupările actuale — de exemplu uscăciune, ten tern sau sensibilitate — și alegeți în consecință.</p>",
+            "category": "About Lumina Europa",
+            "question": "What do I do if I don't know my skin type?",
+            "answer": "<p> You don't necessarily have to permanently define your skin type. Start with your current concerns—for example, dryness, dullness, or sensitivity—and choose accordingly. </p>",
             "open_by_default": false
           }
         },
@@ -841,9 +841,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "83",
-            "category": "Despre Lumina Europa",
-            "question": "Tenul gras poate avea nevoie de hidratare?",
-            "answer": "<p>Da. Producția de sebum și hidratarea sunt caracteristici diferite ale pielii.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can oily skin need hydration?",
+            "answer": "<p> Yes. Sebum production and hydration are different characteristics of the skin. </p>",
             "open_by_default": false
           }
         },
@@ -851,9 +851,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "84",
-            "category": "Despre Lumina Europa",
-            "question": "Tenul matur poate folosi măști Lumina?",
-            "answer": "<p>Da, cu condiția ca produsul și ingredientele alese să fie potrivite pentru persoana respectivă.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can mature skin use Lumina masks?",
+            "answer": "<p> Yes, provided the product and ingredients chosen are suitable for the person. </p>",
             "open_by_default": false
           }
         },
@@ -861,9 +861,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "85",
-            "category": "Despre Lumina Europa",
-            "question": "Tinerii adulți pot folosi măști Lumina?",
-            "answer": "<p>Da, sub rezerva instrucțiunilor și adecvării produsului individual.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can young adults use Lumina masks?",
+            "answer": "<p> Yes, subject to the instructions and suitability of the individual product. </p>",
             "open_by_default": false
           }
         },
@@ -871,9 +871,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "86",
-            "category": "Despre Lumina Europa",
-            "question": "Sunt măștile Lumina potrivite pentru bărbați?",
-            "answer": "<p>Da.</p>",
+            "category": "About Lumina Europa",
+            "question": "Are Lumina masks suitable for men?",
+            "answer": "<p> Yes. </p>",
             "open_by_default": false
           }
         },
@@ -881,9 +881,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "87",
-            "category": "Despre Lumina Europa",
-            "question": "Sunt măștile Lumina potrivite pentru adolescenți?",
-            "answer": "<p>Acest lucru depinde de produs, de pielea adolescentului și de motivul utilizării. Utilizatorii tineri cu probleme semnificative ale pielii ar trebui să solicite sfatul unui specialist.</p>",
+            "category": "About Lumina Europa",
+            "question": "Are Lumina masks suitable for teenagers?",
+            "answer": "<p> This depends on the product, the teen's skin and the reason for use. Young users with significant skin problems should seek professional advice. </p>",
             "open_by_default": false
           }
         },
@@ -891,9 +891,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "88",
-            "category": "Mod de Utilizare",
-            "question": "Pe ce parte a feței se aplică masca?",
-            "answer": "<p>Urmați instrucțiunile incluse cu produsul respectiv, deoarece construcția și secvența de aplicare pot diferi.</p>",
+            "category": "How to Use & Rituals",
+            "question": "On which side of the face is the mask applied?",
+            "answer": "<p> Follow the instructions included with that product as construction and application sequence may differ. </p>",
             "open_by_default": false
           }
         },
@@ -901,9 +901,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "89",
-            "category": "Mod de Utilizare",
-            "question": "Ce se întâmplă dacă masca se pliază în timpul aplicării?",
-            "answer": "<p>Repoziționați-o ușor acolo unde este posibil, urmând instrucțiunile produsului. Contactul corect cu pielea ajută la asigurarea unei aplicări uniforme.</p>",
+            "category": "How to Use & Rituals",
+            "question": "What happens if the mask folds during application?",
+            "answer": "<p> Reposition it gently where possible, following product instructions. Correct skin contact helps ensure even application. </p>",
             "open_by_default": false
           }
         },
@@ -911,9 +911,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "90",
-            "category": "Mod de Utilizare",
-            "question": "Trebuie să îmi masez pielea după îndepărtarea măștii?",
-            "answer": "<p>Acolo unde este cazul, produsul cosmetic rămas poate fi distribuit ușor pe piele. Urmați instrucțiunile pentru formularea specifică.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Do I need to massage my skin after removing the mask?",
+            "answer": "<p> Where appropriate, the remaining cosmetic product can be gently spread over the skin. Follow the instructions for the specific formulation. </p>",
             "open_by_default": false
           }
         },
@@ -921,9 +921,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "91",
-            "category": "Mod de Utilizare",
-            "question": "Pot folosi o rolă facială sau gua sha după mască?",
-            "answer": "<p>Potențial, da, cu condiția ca pielea dumneavoastră să se simtă confortabil și instrumentul să fie utilizat corect. Evitați frecarea inutilă pe pielea sensibilizată.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I use a facial roller or gua sha after the mask?",
+            "answer": "<p> Potentially yes, provided your skin feels comfortable and the tool is used correctly. Avoid unnecessary rubbing on sensitized skin. </p>",
             "open_by_default": false
           }
         },
@@ -931,9 +931,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "92",
-            "category": "Mod de Utilizare",
-            "question": "Pot folosi masca înainte de machiaj?",
-            "answer": "<p>Da, dacă este adecvat pentru formularea respectivă. Lăsați produsele de îngrijire să se absoarbă înainte de a aplica machiajul.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I use the mask before makeup?",
+            "answer": "<p> Yes, if appropriate for that formulation. Allow skincare products to absorb before applying makeup. </p>",
             "open_by_default": false
           }
         },
@@ -941,9 +941,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "93",
-            "category": "Mod de Utilizare",
-            "question": "Pot folosi masca înainte de un eveniment important?",
-            "answer": "<p>Da. Vă recomandăm să încercați orice produs cosmetic nou în avans, mai degrabă decât să îl folosiți pentru prima dată imediat înainte de un eveniment important.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I use the mask before an important event?",
+            "answer": "<p> Yes. We recommend trying any new cosmetic product in advance, rather than using it for the first time right before an important event. </p>",
             "open_by_default": false
           }
         },
@@ -951,9 +951,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "94",
-            "category": "Mod de Utilizare",
-            "question": "Pot aplica o mască după exfoliere?",
-            "answer": "<p>Fiți precaut. Exfolierea poate face pielea temporar mai reactivă. Luați în considerare intensitatea exfolierii și ingredientele din mască.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I apply a mask after exfoliation?",
+            "answer": "<p> Be careful. Exfoliation can make the skin temporarily more reactive. Consider the intensity of the exfoliation and the ingredients in the mask. </p>",
             "open_by_default": false
           }
         },
@@ -961,9 +961,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "95",
-            "category": "Mod de Utilizare",
-            "question": "Pot folosi retinizi în aceeași seară?",
-            "answer": "<p>Acest lucru depinde de rutina, formularea și toleranța dumneavoastră. Combinarea mai multor produse active poate crește iritația, așa că evitați rutinele agresive.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I use eye drops the same evening?",
+            "answer": "<p> This depends on your routine, formulation and tolerance. Combining multiple active products can increase irritation, so avoid aggressive routines. </p>",
             "open_by_default": false
           }
         },
@@ -971,9 +971,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "96",
-            "category": "Mod de Utilizare",
-            "question": "Pot folosi acizi și o mască Lumina împreună?",
-            "answer": "<p>Depinde de ingredientele implicate. Dacă folosiți acizi exfolianți, luați în considerare separarea produselor potențial iritante.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I use acids and a Lumina mask together?",
+            "answer": "<p> It depends on the ingredients involved. If you use exfoliating acids, consider separating potentially irritating products. </p>",
             "open_by_default": false
           }
         },
@@ -981,9 +981,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "97",
-            "category": "Mod de Utilizare",
-            "question": "Pot aplica cremă de protecție solară după o mască de dimineață?",
-            "answer": "<p>Da. Protecția solară ar trebui să rămână parte din rutina dumneavoastră de zi.</p>",
+            "category": "How to Use & Rituals",
+            "question": "Can I apply sunscreen after a morning mask?",
+            "answer": "<p> Yes. Sun protection should remain part of your daily routine. </p>",
             "open_by_default": false
           }
         },
@@ -991,9 +991,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "98",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Ce înseamnă INCI?",
-            "answer": "<p>INCI este acronimul pentru sistemul internațional recunoscut de denumire utilizat pentru identificarea ingredientelor cosmetice.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "What does INCI mean?",
+            "answer": "<p> INCI is the acronym for the internationally recognized naming system used to identify cosmetic ingredients. </p>",
             "open_by_default": false
           }
         },
@@ -1001,9 +1001,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "99",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "De ce denumirile ingredientelor sună uneori foarte tehnic?",
-            "answer": "<p>Listele de ingrediente cosmetice folosesc denumiri INCI standardizate în loc de descrieri de marketing pentru ca ingredientele să poată fi identificate în mod consecvent.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Why do ingredient names sometimes sound very technical?",
+            "answer": "<p> Cosmetic ingredient lists use standardized INCI names instead of marketing descriptions so that ingredients can be consistently identified. </p>",
             "open_by_default": false
           }
         },
@@ -1011,9 +1011,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "100",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Unde pot găsi lista completă INCI?",
-            "answer": "<p>Pe ambalajul produsului și/sau pe pagina relevantă a produsului.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Where can I find the full INCI list?",
+            "answer": "<p> On the product packaging and/or relevant product page. </p>",
             "open_by_default": false
           }
         },
@@ -1021,9 +1021,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "101",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Se pot schimba ingredientele produsului?",
-            "answer": "<p>Formulările pot fi actualizate ocazional. Consultați întotdeauna lista de ingrediente de pe produsul pe care îl primiți efectiv.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Can the ingredients of the product be changed?",
+            "answer": "<p> Formulations may be updated occasionally. Always check the ingredients list on the product you actually receive. </p>",
             "open_by_default": false
           }
         },
@@ -1031,9 +1031,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "102",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Dezvăluie Lumina fiecare ingredient?",
-            "answer": "<p>Produsele cosmetice sunt etichetate în conformitate cu cerințele aplicabile privind declararea ingredientelor.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Does the Light reveal each ingredient?",
+            "answer": "<p> Cosmetic products are labeled in accordance with applicable ingredient declaration requirements. </p>",
             "open_by_default": false
           }
         },
@@ -1041,9 +1041,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "103",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Sunt folosite parfumuri în produsele Lumina?",
-            "answer": "<p>Acest lucru depinde de formularea individuală. Verificați lista INCI pentru produsul vizat.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Are fragrances used in Lumina products?",
+            "answer": "<p> This depends on the individual formulation. Check the INCI list for the product in question. </p>",
             "open_by_default": false
           }
         },
@@ -1051,9 +1051,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "104",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Produsele Lumina sunt fără alcool?",
-            "answer": "<p>Depinde de formulare. „Alcoolul” poate descrie o familie largă de ingrediente cu funcții cosmetice foarte diferite.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Are Lumina products alcohol-free?",
+            "answer": "<p> Depends on the form. \"Alcohol\" can describe a broad family of ingredients with very different cosmetic functions. </p>",
             "open_by_default": false
           }
         },
@@ -1061,9 +1061,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "105",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Sunt produsele Lumina vegane?",
-            "answer": "<p>Acolo unde un produs este descris specific ca fiind vegan, acea afirmație se aplică acelui produs.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Are Lumina products vegan?",
+            "answer": "<p> Where a product is specifically described as vegan, that claim applies to that product. </p>",
             "open_by_default": false
           }
         },
@@ -1071,9 +1071,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "106",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Sunt produsele Lumina netestate pe animale (cruelty-free)?",
-            "answer": "<p>Afirmațiile specifice privind netestarea pe animale trebuie citite conform informațiilor publicate pentru produsul și piața respectivă.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Are Lumina products not tested on animals (cruelty-free)?",
+            "answer": "<p> Specific claims regarding non-animal testing should be read against the published information for that product and market. </p>",
             "open_by_default": false
           }
         },
@@ -1081,9 +1081,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "107",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Sunt măștile biodegradabile?",
-            "answer": "<p>Doar acolo unde acest lucru este documentat specific pentru materialul respectiv. Lumina nu face afirmații de mediu doar pentru că un material este subțire sau bazat pe fibre.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Are the masks biodegradable?",
+            "answer": "<p> Only where this is specifically documented for that material. Light doesn't make environmental claims just because a material is thin or fiber-based. </p>",
             "open_by_default": false
           }
         },
@@ -1091,9 +1091,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "108",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Ar trebui să fac un test de toleranță (patch test) înainte?",
-            "answer": "<p>Persoanele cu piele reactivă sau predispusă la alergii pot dori să manifeste o precauție suplimentară cu produsele cosmetice noi.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Should I do a patch test first?",
+            "answer": "<p> People with reactive or allergy-prone skin may want to exercise extra caution with new cosmetic products. </p>",
             "open_by_default": false
           }
         },
@@ -1101,9 +1101,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "109",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Senzația de furnicătură este normală?",
-            "answer": "<p>Nu automat. Senzațiile pot diferi în funcție de formulare, dar arsurile persistente, durerea sau disconfortul semnificativ sunt motive pentru a îndepărta produsul.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Is the tingling sensation normal?",
+            "answer": "<p> Not automatically. Sensations may differ depending on the formulation, but persistent burning, pain or significant discomfort are reasons to remove the product. </p>",
             "open_by_default": false
           }
         },
@@ -1111,9 +1111,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "110",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Ce ar trebui să fac dacă produsul îmi ajunge în ochi?",
-            "answer": "<p>Clătiți cu atenție cu apă curată și urmați avertismentele furnizate cu produsul. Solicitați sfatul medicului dacă iritația persistă.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "What should I do if the product gets into my eyes?",
+            "answer": "<p> Rinse thoroughly with clean water and follow the warnings provided with the product. Seek medical advice if irritation persists. </p>",
             "open_by_default": false
           }
         },
@@ -1121,9 +1121,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "111",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Pot folosi Lumina după o procedură cosmetică?",
-            "answer": "<p>Întrebați specialistul care a efectuat procedura. Tratamentele precum peelingurile, laserele sau microneedlingul pot modifica temporar modul în care trebuie îngrijită pielea.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Can I use Lumina after a cosmetic procedure?",
+            "answer": "<p> Ask the specialist who performed the procedure. Treatments such as peels, lasers or microneedling can temporarily change the way the skin should be cared for. </p>",
             "open_by_default": false
           }
         },
@@ -1131,9 +1131,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "112",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Pot folosi măștile după arsurile solare?",
-            "answer": "<p>Nu recomandăm tratarea pielii arse de soare sau puternic iritate ca și cum ar fi o piele normală. Lăsați pielea să se refacă.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Can I use the masks after sunburn?",
+            "answer": "<p> We do not recommend treating sunburned or severely irritated skin as if it were normal skin. Let the skin recover. </p>",
             "open_by_default": false
           }
         },
@@ -1141,9 +1141,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "113",
-            "category": "Piele, Ingrediente și Siguranță",
-            "question": "Pot folosi produsele dacă am eczemă, rozacee sau psoriazis?",
-            "answer": "<p>Produsele Lumina sunt cosmetice, nu tratamente pentru aceste afecțiuni. Discutați cu un dermatolog înainte de utilizare.</p>",
+            "category": "Skin, Ingredients & Safety",
+            "question": "Can I use the products if I have eczema, rosacea or psoriasis?",
+            "answer": "<p> Lumina products are cosmetics, not treatments for these conditions. Talk to a dermatologist before use. </p>",
             "open_by_default": false
           }
         },
@@ -1151,9 +1151,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "114",
-            "category": "Despre Lumina Europa",
-            "question": "Cum ar trebui să păstrez produsele Lumina?",
-            "answer": "<p>Păstrați produsele conform instrucțiunilor de pe ambalaj, în general ferite de căldură excesivă, lumina directă a soarelui și umiditate.</p>",
+            "category": "About Lumina Europa",
+            "question": "How should I store Lumina products?",
+            "answer": "<p> Store products according to package instructions, generally away from excessive heat, direct sunlight and moisture. </p>",
             "open_by_default": false
           }
         },
@@ -1161,9 +1161,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "115",
-            "category": "Despre Lumina Europa",
-            "question": "Pot păstra măștile în frigider?",
-            "answer": "<p>Doar dacă instrucțiunile produsului indică faptul că refrigerarea este adecvată.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can I store the masks in the fridge?",
+            "answer": "<p> Only if the product instructions indicate that refrigeration is adequate. </p>",
             "open_by_default": false
           }
         },
@@ -1171,9 +1171,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "116",
-            "category": "Despre Lumina Europa",
-            "question": "Pot folosi o mască după data de expirare?",
-            "answer": "<p>Recomandăm utilizarea produselor cosmetice în termenul lor de valabilitate menționat.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can I use a mask after the expiration date?",
+            "answer": "<p> We recommend using cosmetic products within their stated shelf life. </p>",
             "open_by_default": false
           }
         },
@@ -1181,9 +1181,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "117",
-            "category": "Despre Lumina Europa",
-            "question": "Pot reutiliza o mască cu nanofibre?",
-            "answer": "<p>Nu, acolo unde produsul este furnizat ca o mască cosmetică de unică folosință. Reutilizarea ar putea compromite igiena și performanța.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can I reuse a nanofiber mask?",
+            "answer": "<p> No, where the product is supplied as a disposable cosmetic mask. Reuse could compromise hygiene and performance. </p>",
             "open_by_default": false
           }
         },
@@ -1191,9 +1191,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "118",
-            "category": "Despre Lumina Europa",
-            "question": "Ce ar trebui să fac dacă plicul individual este deteriorat?",
-            "answer": "<p>Nu utilizați un produs al cărui ambalaj primar a fost compromis semnificativ. Contactați asistența pentru clienți.</p>",
+            "category": "About Lumina Europa",
+            "question": "What should I do if the individual envelope is damaged?",
+            "answer": "<p> Do not use a product whose primary packaging has been significantly compromised. Contact customer support. </p>",
             "open_by_default": false
           }
         },
@@ -1201,9 +1201,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "119",
-            "category": "Despre Lumina Europa",
-            "question": "De ce este important ambalajul individual?",
-            "answer": "<p>Ajută la protejarea produsului în timpul depozitării și transportului și este important pentru igienă și stabilitatea formulei.</p>",
+            "category": "About Lumina Europa",
+            "question": "Why is individual packaging important?",
+            "answer": "<p> Helps protect the product during storage and transport and is important for hygiene and formula stability. </p>",
             "open_by_default": false
           }
         },
@@ -1211,9 +1211,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "120",
-            "category": "Despre Lumina Europa",
-            "question": "Pot călători cu măștile Lumina?",
-            "answer": "<p>În general da, sub rezerva normelor locale de transport și securitate.</p>",
+            "category": "About Lumina Europa",
+            "question": "Can I travel with Lumina masks?",
+            "answer": "<p> Generally yes, subject to local transport and security regulations. </p>",
             "open_by_default": false
           }
         },
@@ -1221,9 +1221,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "121",
-            "category": "Comenzi și Livrare",
-            "question": "Ce metode de plată acceptați?",
-            "answer": "<p>Metodele de plată disponibile sunt afișate la finalizarea comandei. În funcție de țară, acestea pot include carduri de debit/credit principale și alte metode de plată.</p>",
+            "category": "Orders & Shipping",
+            "question": "What payment methods do you accept?",
+            "answer": "<p> Available payment methods are displayed at checkout. Depending on the country, these may include major debit/credit cards and other payment methods. </p>",
             "open_by_default": false
           }
         },
@@ -1231,9 +1231,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "122",
-            "category": "Comenzi și Livrare",
-            "question": "Când va fi debitat cardul meu?",
-            "answer": "<p>Plata este în general autorizată sau încasată când plasați comanda.</p>",
+            "category": "Orders & Shipping",
+            "question": "When will my card be charged?",
+            "answer": "<p> Payment is generally authorized or collected when you place the order. </p>",
             "open_by_default": false
           }
         },
@@ -1241,9 +1241,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "123",
-            "category": "Comenzi și Livrare",
-            "question": "De ce a fost respinsă plata mea?",
-            "answer": "<p>O plată poate fi respinsă din mai multe motive, inclusiv fonduri insuficiente, date incorecte ale cardului sau verificări de securitate ale băncii.</p>",
+            "category": "Orders & Shipping",
+            "question": "Why was my payment declined?",
+            "answer": "<p> A payment can be declined for a number of reasons, including insufficient funds, incorrect card details or bank security checks. </p>",
             "open_by_default": false
           }
         },
@@ -1251,9 +1251,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "124",
-            "category": "Comenzi și Livrare",
-            "question": "Pot modifica o comandă după plasarea ei?",
-            "answer": "<p>Contactați-ne cât mai repede posibil. Dacă comanda nu a intrat în procesare, este posibil să vă putem ajuta.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I change an order after placing it?",
+            "answer": "<p> Contact us as soon as possible. If your order has not been processed, we may be able to help. </p>",
             "open_by_default": false
           }
         },
@@ -1261,9 +1261,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "125",
-            "category": "Comenzi și Livrare",
-            "question": "Pot anula comanda înainte de expediere?",
-            "answer": "<p>Dacă ne contactați înainte ca procesarea să fie prea avansată, este posibil să putem anula comanda.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I cancel my order before it ships?",
+            "answer": "<p> If you contact us before processing is too far along, we may be able to cancel your order. </p>",
             "open_by_default": false
           }
         },
@@ -1271,9 +1271,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "126",
-            "category": "Comenzi și Livrare",
-            "question": "Pot schimba adresa de livrare după ce am plasat o comandă?",
-            "answer": "<p>Contactați-ne imediat. Putem schimba o adresă doar dacă comanda nu a avansat prea mult în procesare.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I change the delivery address after placing an order?",
+            "answer": "<p> Contact us immediately. We can only change an address if the order has not progressed too far in processing. </p>",
             "open_by_default": false
           }
         },
@@ -1281,9 +1281,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "127",
-            "category": "Comenzi și Livrare",
-            "question": "Pot comanda fără a crea un cont?",
-            "answer": "<p>Acolo unde comanda ca vizitator (guest checkout) este disponibilă, da.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I order without creating an account?",
+            "answer": "<p> Where guest checkout is available, yes. </p>",
             "open_by_default": false
           }
         },
@@ -1291,9 +1291,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "128",
-            "category": "Comenzi și Livrare",
-            "question": "Unde pot găsi factura mea?",
-            "answer": "<p>Factura sau documentul de achiziție poate fi trimis electronic sau pus la dispoziție prin contul dumneavoastră.</p>",
+            "category": "Orders & Shipping",
+            "question": "Where can I find my invoice?",
+            "answer": "<p> The invoice or purchase document can be sent electronically or made available through your account. </p>",
             "open_by_default": false
           }
         },
@@ -1301,9 +1301,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "129",
-            "category": "Comenzi și Livrare",
-            "question": "Pot plasa o comandă ca persoană juridică (firmă)?",
-            "answer": "<p>Da, acolo unde sistemul de checkout susține date de facturare pentru firme.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I place an order as a legal entity (company)?",
+            "answer": "<p> Yes, where the checkout system supports billing data for businesses. </p>",
             "open_by_default": false
           }
         },
@@ -1311,9 +1311,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "130",
-            "category": "Comenzi și Livrare",
-            "question": "Prețurile includ TVA?",
-            "answer": "<p>Acolo unde TVA este aplicabil, site-ul afișează prețurile în mod corespunzător. Suma finală este afișată înainte de confirmarea comenzii.</p>",
+            "category": "Orders & Shipping",
+            "question": "Do the prices include VAT?",
+            "answer": "<p> Where VAT is applicable, the website displays prices accordingly. The final amount is displayed before the order is confirmed. </p>",
             "open_by_default": false
           }
         },
@@ -1321,9 +1321,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "131",
-            "category": "Comenzi și Livrare",
-            "question": "Prețurile pot diferi de la o țară la alta?",
-            "answer": "<p>Da. Prețurile pot varia din cauza TVA-ului, monedei, logisticii și costurilor operaționale locale.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can prices differ from country to country?",
+            "answer": "<p> Yes. Prices may vary due to VAT, currency, logistics and local operational costs. </p>",
             "open_by_default": false
           }
         },
@@ -1331,9 +1331,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "132",
-            "category": "Comenzi și Livrare",
-            "question": "Pot combina coduri promoționale?",
-            "answer": "<p>Cu excepția cazului în care se specifică altfel, codurile promoționale nu pot fi combinate.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I combine promotional codes?",
+            "answer": "<p> Unless otherwise stated, promo codes cannot be combined. </p>",
             "open_by_default": false
           }
         },
@@ -1341,9 +1341,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "133",
-            "category": "Comenzi și Livrare",
-            "question": "De ce nu funcționează codul meu promoțional?",
-            "answer": "<p>Verificați dacă a fost introdus corect și dacă sunt îndeplinite condițiile de eligibilitate.</p>",
+            "category": "Orders & Shipping",
+            "question": "Why isn't my promo code working?",
+            "answer": "<p> Check that it was entered correctly and that the eligibility conditions are met. </p>",
             "open_by_default": false
           }
         },
@@ -1351,9 +1351,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "134",
-            "category": "Comenzi și Livrare",
-            "question": "Pot folosi un cod promoțional după ce am plasat deja comanda?",
-            "answer": "<p>De obicei, codurile promoționale trebuie aplicate înainte de finalizarea comenzii.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I use a promo code after I've already placed my order?",
+            "answer": "<p> Usually, promo codes must be applied before checkout. </p>",
             "open_by_default": false
           }
         },
@@ -1361,9 +1361,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "135",
-            "category": "Comenzi și Livrare",
-            "question": "Codurile promoționale pot expira?",
-            "answer": "<p>Da. Codurile promoționale trebuie utilizate în perioada lor de valabilitate.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can promo codes expire?",
+            "answer": "<p> Yes. Promotional codes must be used within their validity period. </p>",
             "open_by_default": false
           }
         },
@@ -1371,9 +1371,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "136",
-            "category": "Comenzi și Livrare",
-            "question": "Voi primi o confirmare a comenzii?",
-            "answer": "<p>Da. Odată ce comanda a fost primită, veți primi o confirmare electronică pe adresa de email furnizată.</p>",
+            "category": "Orders & Shipping",
+            "question": "Will I receive an order confirmation?",
+            "answer": "<p> Yes. Once the order has been received, you will receive an electronic confirmation to the email address provided. </p>",
             "open_by_default": false
           }
         },
@@ -1381,9 +1381,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "137",
-            "category": "Comenzi și Livrare",
-            "question": "Ce fac dacă nu primesc o confirmare a comenzii?",
-            "answer": "<p>Verificați mai întâi dosarul de Spam/Junk. Dacă tot nu o găsiți, contactați-ne.</p>",
+            "category": "Orders & Shipping",
+            "question": "What do I do if I do not receive an order confirmation?",
+            "answer": "<p> Check your Spam/Junk folder first. If you still can't find it, contact us. </p>",
             "open_by_default": false
           }
         },
@@ -1391,9 +1391,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "138",
-            "category": "Comenzi și Livrare",
-            "question": "O comandă poate fi refuzată după ce am plasat-o?",
-            "answer": "<p>În circumstanțe limitate, da (de exemplu: lipsă stoc, probleme de plată, suspiciuni de fraudă).</p>",
+            "category": "Orders & Shipping",
+            "question": "Can an order be refused after I have placed it?",
+            "answer": "<p> In limited circumstances, yes (eg: out of stock, payment problems, suspected fraud). </p>",
             "open_by_default": false
           }
         },
@@ -1401,9 +1401,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "139",
-            "category": "Comenzi și Livrare",
-            "question": "În ce monedă voi fi debitat?",
-            "answer": "<p>Moneda aplicabilă achiziției este afișată pe site și la finalizarea comenzii.</p>",
+            "category": "Orders & Shipping",
+            "question": "What currency will I be charged in?",
+            "answer": "<p> The currency applicable to the purchase is displayed on the site and at checkout. </p>",
             "open_by_default": false
           }
         },
@@ -1411,9 +1411,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "140",
-            "category": "Comenzi și Livrare",
-            "question": "Banca mea îmi va percepe un comision suplimentar?",
-            "answer": "<p>Banca dumneavoastră poate aplica comisioane de schimb valutar sau tranzacții internaționale independent de Lumina Europa.</p>",
+            "category": "Orders & Shipping",
+            "question": "Will my bank charge me an additional fee?",
+            "answer": "<p> Your bank may apply foreign exchange or international transaction fees independently of Lumina Europa. </p>",
             "open_by_default": false
           }
         },
@@ -1421,9 +1421,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "141",
-            "category": "Comenzi și Livrare",
-            "question": "Livrați la lockere (easybox)?",
-            "answer": "<p>Acolo unde livrarea la locker este acceptată de curier și destinație, aceasta poate fi oferită la checkout.</p>",
+            "category": "Orders & Shipping",
+            "question": "Do you deliver to lockers (easybox)?",
+            "answer": "<p> Where locker delivery is accepted by the courier and destination, this may be offered at checkout. </p>",
             "open_by_default": false
           }
         },
@@ -1431,9 +1431,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "142",
-            "category": "Comenzi și Livrare",
-            "question": "Pot alege curierul?",
-            "answer": "<p>Acolo unde sunt disponibile mai multe opțiuni, ele vor fi afișate la finalizarea comenzii.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I choose the courier?",
+            "answer": "<p> Where multiple options are available, they will be displayed at checkout. </p>",
             "open_by_default": false
           }
         },
@@ -1441,9 +1441,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "143",
-            "category": "Comenzi și Livrare",
-            "question": "Livrați internațional?",
-            "answer": "<p>Lumina Europa livrează în țările și regiunile activate pe site-ul respectiv.</p>",
+            "category": "Orders & Shipping",
+            "question": "Do you ship internationally?",
+            "answer": "<p> Lumina Europa delivers to the countries and regions activated on the respective website. </p>",
             "open_by_default": false
           }
         },
@@ -1451,9 +1451,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "144",
-            "category": "Comenzi și Livrare",
-            "question": "Va trebui să plătesc taxe vamale?",
-            "answer": "<p>Pentru livrările care trec o frontieră vamală, pot fi aplicabile taxe de import sau TVA vamal.</p>",
+            "category": "Orders & Shipping",
+            "question": "Will I have to pay customs duties?",
+            "answer": "<p> For deliveries that cross a customs border, import duties or customs VAT may apply. </p>",
             "open_by_default": false
           }
         },
@@ -1461,9 +1461,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "145",
-            "category": "Comenzi și Livrare",
-            "question": "Ce se întâmplă dacă nu sunt acasă când sosește curierul?",
-            "answer": "<p>Curierul poate încerca o nouă livrare sau poate redirecționa coletul către un punct de ridicare/locker.</p>",
+            "category": "Orders & Shipping",
+            "question": "What if I'm not at home when the courier arrives?",
+            "answer": "<p> The courier may attempt a new delivery or redirect the package to a pick-up point/locker. </p>",
             "open_by_default": false
           }
         },
@@ -1471,9 +1471,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "146",
-            "category": "Comenzi și Livrare",
-            "question": "Ce se întâmplă dacă nu îmi ridic coletul?",
-            "answer": "<p>Coletul poate fi returnat către noi. Se pot aplica taxe suplimentare de reexpediere.</p>",
+            "category": "Orders & Shipping",
+            "question": "What happens if I don't pick up my package?",
+            "answer": "<p> The package can be returned to us. Additional reshipping fees may apply. </p>",
             "open_by_default": false
           }
         },
@@ -1481,9 +1481,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "147",
-            "category": "Comenzi și Livrare",
-            "question": "Comanda mea poate sosi în mai multe colete?",
-            "answer": "<p>Da, în circumstanțe limitate, când produsele sunt expediate separat.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can my order arrive in multiple packages?",
+            "answer": "<p> Yes, in limited circumstances when products are shipped separately. </p>",
             "open_by_default": false
           }
         },
@@ -1491,9 +1491,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "148",
-            "category": "Comenzi și Livrare",
-            "question": "De ce nu s-a actualizat AWB-ul meu?",
-            "answer": "<p>Informațiile de urmărire pot dura până apar în sistemul curierului. Contactați-ne dacă nu există actualizări timp de câteva zile.</p>",
+            "category": "Orders & Shipping",
+            "question": "Why hasn't my AWB updated?",
+            "answer": "<p> Tracking information may take some time to appear in the courier's system. Contact us if there are no updates for several days. </p>",
             "open_by_default": false
           }
         },
@@ -1501,9 +1501,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "149",
-            "category": "Comenzi și Livrare",
-            "question": "AWB-ul arată „livrat”, dar nu găsesc coletul. Ce ar trebui să fac?",
-            "answer": "<p>Verificați în jur, la vecini sau recepție. Dacă coletul lipsește în continuare, contactați-ne prompt.</p>",
+            "category": "Orders & Shipping",
+            "question": "The AWB shows \"delivered\" but I can't find the package. What should I do?",
+            "answer": "<p> Check around, neighbors or reception. If the package is still missing, contact us promptly. </p>",
             "open_by_default": false
           }
         },
@@ -1511,9 +1511,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "150",
-            "category": "Comenzi și Livrare",
-            "question": "Poate altcineva să îmi ridice coletul?",
-            "answer": "<p>Acest lucru depinde de curier. Persoana respectivă poate avea nevoie de codul de ridicare sau act de identitate.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can someone else pick up my package?",
+            "answer": "<p> This depends on the courier. That person may need the pickup code or ID. </p>",
             "open_by_default": false
           }
         },
@@ -1521,9 +1521,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "151",
-            "category": "Comenzi și Livrare",
-            "question": "Pot schimba metoda de livrare după plasarea comenzii?",
-            "answer": "<p>De obicei nu, odată ce procesarea a început.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I change the delivery method after placing the order?",
+            "answer": "<p> Usually not, once processing has started. </p>",
             "open_by_default": false
           }
         },
@@ -1531,9 +1531,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "152",
-            "category": "Comenzi și Livrare",
-            "question": "Livrați la cutii poștale (PO Box)?",
-            "answer": "<p>Disponibilitatea depinde de destinație și de curier.</p>",
+            "category": "Orders & Shipping",
+            "question": "Do you deliver to PO Boxes?",
+            "answer": "<p> Availability depends on destination and courier. </p>",
             "open_by_default": false
           }
         },
@@ -1541,9 +1541,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "153",
-            "category": "Comenzi și Livrare",
-            "question": "Livrați în zone izolate sau pe insule?",
-            "answer": "<p>Acolo unde este susținut de partenerii logistici, da. Timpii de livrare pot fi mai mari.</p>",
+            "category": "Orders & Shipping",
+            "question": "Do you deliver to remote areas or islands?",
+            "answer": "<p> Where supported by logistics partners, yes. Delivery times may be longer. </p>",
             "open_by_default": false
           }
         },
@@ -1551,9 +1551,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "154",
-            "category": "Comenzi și Livrare",
-            "question": "De ce livrarea este mai scumpă în anumite locații?",
-            "answer": "<p>Prețurile pot varia în funcție de acoperirea curierului, dimensiunea coletului și cerințele transfrontaliere.</p>",
+            "category": "Orders & Shipping",
+            "question": "Why is delivery more expensive in certain locations?",
+            "answer": "<p> Prices may vary depending on courier coverage, package size and cross-border requirements. </p>",
             "open_by_default": false
           }
         },
@@ -1561,9 +1561,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "155",
-            "category": "Comenzi și Livrare",
-            "question": "Ce se întâmplă dacă curierul îmi deteriorează coletul?",
-            "answer": "<p>Contactați-ne cât mai curând posibil și trimiteți fotografii cu ambalajul și produsele deteriorate.</p>",
+            "category": "Orders & Shipping",
+            "question": "What happens if the courier damages my package?",
+            "answer": "<p> Contact us as soon as possible and send photos of the damaged packaging and products. </p>",
             "open_by_default": false
           }
         },
@@ -1571,9 +1571,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "156",
-            "category": "Comenzi și Livrare",
-            "question": "Pot refuza un colet deteriorat la livrare?",
-            "answer": "<p>Dacă deteriorarea este evidentă, puteți refuza livrarea. Dacă îl acceptați, fotografiați ambalajul înainte de deschidere.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I refuse a package damaged on delivery?",
+            "answer": "<p> If the damage is obvious, you can refuse the delivery. If you accept it, take a picture of the package before opening. </p>",
             "open_by_default": false
           }
         },
@@ -1581,9 +1581,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "157",
-            "category": "Comenzi și Livrare",
-            "question": "Voi primi AWB pentru fiecare comandă?",
-            "answer": "<p>Da, acolo unde serviciul de livrare selectat include urmărire.</p>",
+            "category": "Orders & Shipping",
+            "question": "Will I receive AWB for each order?",
+            "answer": "<p> Yes, where the selected delivery service includes tracking. </p>",
             "open_by_default": false
           }
         },
@@ -1591,9 +1591,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "158",
-            "category": "Comenzi și Livrare",
-            "question": "Pot solicita o anumită dată de livrare?",
-            "answer": "<p>Doar dacă această opțiune este oferită specific de curier sau la finalizarea comenzii.</p>",
+            "category": "Orders & Shipping",
+            "question": "Can I request a specific delivery date?",
+            "answer": "<p> Only if this option is specifically offered by the courier or at checkout. </p>",
             "open_by_default": false
           }
         },
@@ -1601,9 +1601,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "159",
-            "category": "Comenzi și Livrare",
-            "question": "Ce se întâmplă în perioadele foarte aglomerate?",
-            "answer": "<p>În timpul sărbătorilor sau al lansărilor, livrarea poate dura mai mult decât în mod normal.</p>",
+            "category": "Orders & Shipping",
+            "question": "What happens during very busy periods?",
+            "answer": "<p> During holidays or releases, delivery may take longer than normal. </p>",
             "open_by_default": false
           }
         },
@@ -1611,9 +1611,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "160",
-            "category": "Comenzi și Livrare",
-            "question": "Cine este responsabil pentru colet în timpul tranzitului?",
-            "answer": "<p>Comerciantul rămâne responsabil până când bunurile vă sunt livrate dumneavoastră sau persoanei desemnate.</p>",
+            "category": "Orders & Shipping",
+            "question": "Who is responsible for the package during transit?",
+            "answer": "<p> The merchant remains responsible until the goods are delivered to you or your nominee. </p>",
             "open_by_default": false
           }
         },
@@ -1621,9 +1621,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "161",
-            "category": "Retururi și Rambursări",
-            "question": "Am nevoie de ambalajul original pentru a returna un produs?",
-            "answer": "<p>Acolo unde este posibil, returnați produsul cu ambalajul original. Totuși, drepturile statutare rămân valabile.</p>",
+            "category": "Returns & Refunds",
+            "question": "Do I need the original packaging to return a product?",
+            "answer": "<p> Where possible, return the product in its original packaging. However, statutory rights remain valid. </p>",
             "open_by_default": false
           }
         },
@@ -1631,9 +1631,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "162",
-            "category": "Retururi și Rambursări",
-            "question": "Pot returna doar o parte din comandă?",
-            "answer": "<p>Da, cu condiția ca articolul să fie eligibil pentru retur.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can I return only part of the order?",
+            "answer": "<p> Yes, provided the item is eligible for return. </p>",
             "open_by_default": false
           }
         },
@@ -1641,9 +1641,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "163",
-            "category": "Retururi și Rambursări",
-            "question": "Pot schimba un articol în loc să primesc o rambursare?",
-            "answer": "<p>Acolo unde schimbul este disponibil operațional, îl putem oferi. Altfel, se procesează returul și se plasează o comandă nouă.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can I exchange an item instead of getting a refund?",
+            "answer": "<p> Where exchange is operationally available, we can offer it. Otherwise, the return is processed and a new order is placed. </p>",
             "open_by_default": false
           }
         },
@@ -1651,9 +1651,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "164",
-            "category": "Retururi și Rambursări",
-            "question": "Ce se întâmplă dacă returnez un pachet promoțional (bundle)?",
-            "answer": "<p>Returnarea parțială a unui pachet promoțional poate afecta suma rambursabilă conform condițiilor promoției.</p>",
+            "category": "Returns & Refunds",
+            "question": "What happens if I return a promotional package (bundle)?",
+            "answer": "<p> Partial return of a promotional package may affect the amount refundable according to the terms of the promotion. </p>",
             "open_by_default": false
           }
         },
@@ -1661,9 +1661,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "165",
-            "category": "Retururi și Rambursări",
-            "question": "Cadourile pot fi returnate?",
-            "answer": "<p>Un cadou eligibil poate fi returnat în condițiile standard. Rambursarea se face către metoda originală de plată.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can gifts be returned?",
+            "answer": "<p> An eligible gift can be returned under standard conditions. The refund is made to the original payment method. </p>",
             "open_by_default": false
           }
         },
@@ -1671,9 +1671,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "166",
-            "category": "Retururi și Rambursări",
-            "question": "Cum sunt gestionate rambursările când s-a folosit un discount?",
-            "answer": "<p>Rambursarea se bazează pe suma achitată efectiv pentru produsul returnat.</p>",
+            "category": "Returns & Refunds",
+            "question": "How are refunds handled when a discount has been used?",
+            "answer": "<p> Refund is based on the amount actually paid for the returned product. </p>",
             "open_by_default": false
           }
         },
@@ -1681,9 +1681,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "167",
-            "category": "Retururi și Rambursări",
-            "question": "Pot returna un produs cumpărat de la un partener profesional?",
-            "answer": "<p>Produsele achiziționate de la o clinică sau salon autorizat trebuie returnate de unde au fost cumpărate.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can I return a product purchased from a professional partner?",
+            "answer": "<p> Products purchased from an authorized clinic or salon must be returned to where they were purchased. </p>",
             "open_by_default": false
           }
         },
@@ -1691,9 +1691,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "168",
-            "category": "Retururi și Rambursări",
-            "question": "Ce se întâmplă dacă coletul de retur se pierde?",
-            "answer": "<p>Păstrați dovada de expediere sau AWB-ul de retur.</p>",
+            "category": "Returns & Refunds",
+            "question": "What happens if the return package is lost?",
+            "answer": "<p> Keep the proof of shipment or return AWB. </p>",
             "open_by_default": false
           }
         },
@@ -1701,9 +1701,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "169",
-            "category": "Retururi și Rambursări",
-            "question": "Cât timp am la dispoziție pentru a trimite returul după ce v-am notificat?",
-            "answer": "<p>Urmați instrucțiunile de retur furnizate și termenul legal aplicabil.</p>",
+            "category": "Returns & Refunds",
+            "question": "How long do I have to send the return after I notify you?",
+            "answer": "<p> Follow the return instructions provided and the applicable legal deadline. </p>",
             "open_by_default": false
           }
         },
@@ -1711,9 +1711,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "170",
-            "category": "Retururi și Rambursări",
-            "question": "Pot returna un produs pur și simplu pentru că m-am răzgândit?",
-            "answer": "<p>Acolo unde se aplică dreptul legal de retragere și produsul este eligibil, da.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can I return a product simply because I changed my mind?",
+            "answer": "<p> Where the statutory right of withdrawal applies and the product is eligible, yes. </p>",
             "open_by_default": false
           }
         },
@@ -1721,9 +1721,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "171",
-            "category": "Retururi și Rambursări",
-            "question": "Pot returna un produs cosmetic deschis?",
-            "answer": "<p>Nu automat. Anumite produse cosmetice desigilate pot fi excluse din motive de protecție a sănătății sau igienă.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can I return an opened cosmetic product?",
+            "answer": "<p> Not automatically. Certain unsealed cosmetic products may be excluded for reasons of health protection or hygiene. </p>",
             "open_by_default": false
           }
         },
@@ -1731,9 +1731,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "172",
-            "category": "Retururi și Rambursări",
-            "question": "Pot returna o mască folosită?",
-            "answer": "<p>O mască cosmetică de unică folosință care a fost utilizată nu poate fi returnată ca retur standard prin răzgândire.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can I return a used mask?",
+            "answer": "<p> A disposable cosmetic mask that has been used cannot be returned as a standard change-of-mind return. </p>",
             "open_by_default": false
           }
         },
@@ -1741,9 +1741,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "173",
-            "category": "Retururi și Rambursări",
-            "question": "Ce fac dacă mi s-a trimis produsul greșit?",
-            "answer": "<p>Contactați-ne cu numărul comenzii și fotografii, iar noi vom aranja înlocuirea corectă.</p>",
+            "category": "Returns & Refunds",
+            "question": "What if I was sent the wrong product?",
+            "answer": "<p> Contact us with your order number and photos and we will arrange the correct replacement. </p>",
             "open_by_default": false
           }
         },
@@ -1751,9 +1751,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "174",
-            "category": "Retururi și Rambursări",
-            "question": "Ce fac dacă produsul este defect?",
-            "answer": "<p>Drepturile dumneavoastră legale rămân neafectate. Contactați-ne pentru a evalua problema.</p>",
+            "category": "Returns & Refunds",
+            "question": "What do I do if the product is defective?",
+            "answer": "<p> Your legal rights remain unaffected. Contact us to evaluate the issue. </p>",
             "open_by_default": false
           }
         },
@@ -1761,9 +1761,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "175",
-            "category": "Retururi și Rambursări",
-            "question": "Ce fac dacă produsul a fost deteriorat înainte de a deschide coletul?",
-            "answer": "<p>Contactați-ne cât mai curând posibil și furnizați fotografii cu ambalajul și produsul.</p>",
+            "category": "Returns & Refunds",
+            "question": "What do I do if the product was damaged before opening the package?",
+            "answer": "<p> Contact us as soon as possible and provide photos of the packaging and product. </p>",
             "open_by_default": false
           }
         },
@@ -1771,9 +1771,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "176",
-            "category": "Retururi și Rambursări",
-            "question": "Costurile de transport pentru retur sunt rambursabile?",
-            "answer": "<p>Depinde de motivul returului. Produsele defecte sau incorecte sunt tratate diferit față de returul prin răzgândire.</p>",
+            "category": "Returns & Refunds",
+            "question": "Are return shipping charges refundable?",
+            "answer": "<p> It depends on the reason for the return. Defective or incorrect products are treated differently to returns by change of mind. </p>",
             "open_by_default": false
           }
         },
@@ -1781,9 +1781,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "177",
-            "category": "Retururi și Rambursări",
-            "question": "Costul inițial de livrare va fi rambursat?",
-            "answer": "<p>Acolo unde regulile legale o cer, taxa standard de livrare la tur va fi rambursată.</p>",
+            "category": "Returns & Refunds",
+            "question": "Will the original shipping cost be refunded?",
+            "answer": "<p> Where required by law, the standard tour delivery charge will be refunded. </p>",
             "open_by_default": false
           }
         },
@@ -1791,9 +1791,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "178",
-            "category": "Retururi și Rambursări",
-            "question": "O rambursare poate fi redusă din cauza manipulării produsului?",
-            "answer": "<p>Manipularea excesivă care depășește testarea necesară poate duce la o reducere a sumei rambursate.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can a refund be reduced due to product handling?",
+            "answer": "<p> Excessive handling beyond the required testing may result in a reduction of the refund amount. </p>",
             "open_by_default": false
           }
         },
@@ -1801,9 +1801,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "179",
-            "category": "Retururi și Rambursări",
-            "question": "Când voi primi rambursarea?",
-            "answer": "<p>Rambursările sunt procesate în termenul prevăzut de lege după primirea și verificarea returului.</p>",
+            "category": "Returns & Refunds",
+            "question": "When will I receive my refund?",
+            "answer": "<p> Refunds are processed within the legal time frame after receipt and verification of the return. </p>",
             "open_by_default": false
           }
         },
@@ -1811,9 +1811,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "180",
-            "category": "Retururi și Rambursări",
-            "question": "Pot returna mai multe comenzi într-un singur colet?",
-            "answer": "<p>Doar dacă asistența pentru clienți vă confirmă în prealabil acest lucru.</p>",
+            "category": "Returns & Refunds",
+            "question": "Can I return multiple orders in one package?",
+            "answer": "<p> Only if customer support confirms this to you in advance. </p>",
             "open_by_default": false
           }
         },
@@ -1821,9 +1821,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "181",
-            "category": "Cont și Confidențialitate",
-            "question": "Am nevoie de un cont pentru a cumpăra de pe Lumina Europa?",
-            "answer": "<p>Nu neapărat. Acolo unde este disponibil, puteți comanda ca vizitator (guest checkout).</p>",
+            "category": "Account & Privacy",
+            "question": "Do I need an account to buy from Lumina Europa?",
+            "answer": "<p> Not necessarily. Where available, you can order as a guest (guest checkout). </p>",
             "open_by_default": false
           }
         },
@@ -1831,9 +1831,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "182",
-            "category": "Cont și Confidențialitate",
-            "question": "Care sunt beneficiile creării unui cont?",
-            "answer": "<p>Un cont vă permite să vizualizați istoricul comenzilor, să gestionați datele personale și să comandați mai rapid.</p>",
+            "category": "Account & Privacy",
+            "question": "What are the benefits of creating an account?",
+            "answer": "<p> An account allows you to view your order history, manage your personal data and order faster. </p>",
             "open_by_default": false
           }
         },
@@ -1841,9 +1841,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "183",
-            "category": "Cont și Confidențialitate",
-            "question": "Cum îmi resetez parola?",
-            "answer": "<p>Folosiți linkul de resetare a parolei de pe pagina de autentificare și urmați instrucțiunile trimise pe email.</p>",
+            "category": "Account & Privacy",
+            "question": "How do I reset my password?",
+            "answer": "<p> Use the password reset link on the login page and follow the instructions in the email. </p>",
             "open_by_default": false
           }
         },
@@ -1851,9 +1851,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "184",
-            "category": "Cont și Confidențialitate",
-            "question": "Cum îmi șterg contul?",
-            "answer": "<p>Contactați-ne sau folosiți funcția de ștergere a contului dacă este disponibilă pe site.</p>",
+            "category": "Account & Privacy",
+            "question": "How do I delete my account?",
+            "answer": "<p> Contact us or use the delete account feature if available on the site. </p>",
             "open_by_default": false
           }
         },
@@ -1861,9 +1861,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "185",
-            "category": "Cont și Confidențialitate",
-            "question": "Cum îmi pot schimba adresa de email?",
-            "answer": "<p>Puteți actualiza adresa din setările contului sau contactând serviciul de suport.</p>",
+            "category": "Account & Privacy",
+            "question": "How can I change my email address?",
+            "answer": "<p> You can update your address in your account settings or by contacting support. </p>",
             "open_by_default": false
           }
         },
@@ -1871,9 +1871,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "186",
-            "category": "Cont și Confidențialitate",
-            "question": "Cum folosește Lumina datele mele personale?",
-            "answer": "<p>Folosim datele personale pentru procesarea comenzilor, suport clienți, funcționarea site-ului și comunicări de marketing permise. Detalii în Politica de Confidențialitate.</p>",
+            "category": "Account & Privacy",
+            "question": "How does Lumina use my personal data?",
+            "answer": "<p> We use personal data for order processing, customer support, site operation and permitted marketing communications. Details in the Privacy Policy. </p>",
             "open_by_default": false
           }
         },
@@ -1881,9 +1881,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "187",
-            "category": "Cont și Confidențialitate",
-            "question": "Cum pot modifica preferințele privind fișierele cookie?",
-            "answer": "<p>Folosiți panoul de Setări Cookie disponibil pe site.</p>",
+            "category": "Account & Privacy",
+            "question": "How can I change my cookie preferences?",
+            "answer": "<p> Use the Cookie Settings panel available on the site. </p>",
             "open_by_default": false
           }
         },
@@ -1891,9 +1891,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "188",
-            "category": "Cont și Confidențialitate",
-            "question": "Cum mă dezabonez de la emailurile de marketing?",
-            "answer": "<p>Folosiți linkul de dezabonare din subsolul oricărui email promoțional.</p>",
+            "category": "Account & Privacy",
+            "question": "How do I unsubscribe from marketing emails?",
+            "answer": "<p> Use the unsubscribe link in the footer of any promotional email. </p>",
             "open_by_default": false
           }
         },
@@ -1901,9 +1901,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "189",
-            "category": "Cont și Confidențialitate",
-            "question": "Va vinde Lumina informațiile mele personale?",
-            "answer": "<p>Lumina nu vinde datele personale ale clienților către terți.</p>",
+            "category": "Account & Privacy",
+            "question": "Will Lumina sell my personal information?",
+            "answer": "<p> Lumina does not sell customers' personal data to third parties. </p>",
             "open_by_default": false
           }
         },
@@ -1911,9 +1911,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "190",
-            "category": "Cont și Confidențialitate",
-            "question": "Sunt stocate datele mele de plată de către Lumina?",
-            "answer": "<p>Plățile sunt procesate prin furnizori specializați. Lumina nu stochează datele complete ale cardului dumneavoastră.</p>",
+            "category": "Account & Privacy",
+            "question": "Are my payment details stored by Lumina?",
+            "answer": "<p> Payments are processed through specialized providers. Lumina does not store the complete data of your card. </p>",
             "open_by_default": false
           }
         },
@@ -1921,9 +1921,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "191",
-            "category": "Cont și Confidențialitate",
-            "question": "De ce aveți nevoie de numărul meu de telefon?",
-            "answer": "<p>Numărul poate fi necesar pentru coordonarea livrării de către curier și notificări SMS.</p>",
+            "category": "Account & Privacy",
+            "question": "Why do you need my phone number?",
+            "answer": "<p> Number may be required for courier delivery coordination and SMS notifications. </p>",
             "open_by_default": false
           }
         },
@@ -1931,9 +1931,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "192",
-            "category": "Cont și Confidențialitate",
-            "question": "Pot solicita o copie a datelor mele personale?",
-            "answer": "<p>Da, în conformitate cu legislația privind protecția datelor (GDPR).</p>",
+            "category": "Account & Privacy",
+            "question": "Can I request a copy of my personal data?",
+            "answer": "<p> Yes, in accordance with data protection legislation (GDPR). </p>",
             "open_by_default": false
           }
         },
@@ -1941,9 +1941,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "193",
-            "category": "Cont și Confidențialitate",
-            "question": "Vă pot cere să îmi corectați datele personale?",
-            "answer": "<p>Da, dacă informațiile sunt inexactizate sau incomplete.</p>",
+            "category": "Account & Privacy",
+            "question": "Can I ask you to correct my personal data?",
+            "answer": "<p> Yes, if the information is inaccurate or incomplete. </p>",
             "open_by_default": false
           }
         },
@@ -1951,9 +1951,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "194",
-            "category": "Cont și Confidențialitate",
-            "question": "Vă pot cere să îmi ștergeți datele?",
-            "answer": "<p>În anumite circumstanțe da, cu excepția datelor pe care suntem obligați legal să le păstrăm (ex. facturare).</p>",
+            "category": "Account & Privacy",
+            "question": "Can I ask you to delete my data?",
+            "answer": "<p> Under certain circumstances yes, except for data we are legally required to keep (eg billing). </p>",
             "open_by_default": false
           }
         },
@@ -1961,9 +1961,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "195",
-            "category": "Cont și Confidențialitate",
-            "question": "Mă pot opune comunicărilor de marketing?",
-            "answer": "<p>Da, vă puteți dezabona în orice moment.</p>",
+            "category": "Account & Privacy",
+            "question": "Can I object to marketing communications?",
+            "answer": "<p> Yes, you can unsubscribe at any time. </p>",
             "open_by_default": false
           }
         },
@@ -1971,9 +1971,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "196",
-            "category": "Cont și Confidențialitate",
-            "question": "Folosiți cookie-uri pentru publicitate?",
-            "answer": "<p>Doar dacă v-ați dat consimțământul prin panoul de cookie-uri.</p>",
+            "category": "Account & Privacy",
+            "question": "Do you use cookies for advertising?",
+            "answer": "<p> Only if you have given your consent through the cookie panel. </p>",
             "open_by_default": false
           }
         },
@@ -1981,9 +1981,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "197",
-            "category": "Cont și Confidențialitate",
-            "question": "Pot refuza cookie-urile de analiză (analytics)?",
-            "answer": "<p>Da, le puteți dezactiva din panoul de Setări Cookie.</p>",
+            "category": "Account & Privacy",
+            "question": "Can I refuse analytics cookies?",
+            "answer": "<p> Yes, you can disable them from the Cookie Settings panel. </p>",
             "open_by_default": false
           }
         },
@@ -1991,9 +1991,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "198",
-            "category": "Cont și Confidențialitate",
-            "question": "Refuzarea cookie-urilor va bloca funcționarea site-ului?",
-            "answer": "<p>Cookie-urile strict necesare vor continua să funcționeze pentru ca cumpărăturile să fie posibile.</p>",
+            "category": "Account & Privacy",
+            "question": "Will refusing cookies block the operation of the site?",
+            "answer": "<p> Strictly necessary cookies will continue to work to make shopping possible. </p>",
             "open_by_default": false
           }
         },
@@ -2001,9 +2001,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "199",
-            "category": "Cont și Confidențialitate",
-            "question": "Parola contului meu este vizibilă pentru personalul Lumina?",
-            "answer": "<p>Nu. Parolele sunt criptate și nu pot fi citite de personal.</p>",
+            "category": "Account & Privacy",
+            "question": "Is my account password visible to Lumina staff?",
+            "answer": "<p> Nope. Passwords are encrypted and cannot be read by staff. </p>",
             "open_by_default": false
           }
         },
@@ -2011,9 +2011,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "200",
-            "category": "Cont și Confidențialitate",
-            "question": "Ce ar trebui să fac dacă cred că mi-a fost compromis contul?",
-            "answer": "<p>Resetați imediat parola și contactați echipa noastră de asistență.</p>",
+            "category": "Account & Privacy",
+            "question": "What should I do if I think my account has been compromised?",
+            "answer": "<p> Reset your password immediately and contact our support team. </p>",
             "open_by_default": false
           }
         },
@@ -2021,9 +2021,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "201",
-            "category": "Autenticitate",
-            "question": "Cum pot ști dacă un produs Lumina Europa este autentic?",
-            "answer": "<p>Cumpărați direct de pe site-urile oficiale Lumina Europa sau prin parteneri autorizați.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "How do I know if a Lumina Europa product is genuine?",
+            "answer": "<p> Buy directly from Lumina Europa official websites or through authorized partners. </p>",
             "open_by_default": false
           }
         },
@@ -2031,9 +2031,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "202",
-            "category": "Autenticitate",
-            "question": "De unde ar trebui să cumpăr produse autentice Lumina?",
-            "answer": "<p>Sursele sigure sunt site-urile oficiale Lumina Europa și clinicile/partenerii autorizați.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "Where should I buy genuine Lumina products?",
+            "answer": "<p> The reliable sources are Lumina Europa official websites and authorized clinics/partners. </p>",
             "open_by_default": false
           }
         },
@@ -2041,9 +2041,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "203",
-            "category": "Autenticitate",
-            "question": "Produsele Lumina vândute pe alte marketplace-uri sunt autorizate?",
-            "answer": "<p>Nu presupuneți că un vânzător este autorizat doar pentru că produsul apare pe un marketplace.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "Are Lumina products sold on other marketplaces authorized?",
+            "answer": "<p> Don't assume a seller is authorized just because the product appears on a marketplace. </p>",
             "open_by_default": false
           }
         },
@@ -2051,9 +2051,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "204",
-            "category": "Autenticitate",
-            "question": "Pot verifica un număr de lot (batch number)?",
-            "answer": "<p>Contactați-ne cu numărul de lot, fotografii și locul achiziției pentru verificare.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "Can I check a batch number?",
+            "answer": "<p> Contact us with lot number, photos and place of purchase for verification. </p>",
             "open_by_default": false
           }
         },
@@ -2061,9 +2061,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "205",
-            "category": "Autenticitate",
-            "question": "Ce ar trebui să fac dacă suspectez un produs contrafăcut?",
-            "answer": "<p>Nu folosiți produsul și contactați-ne oferind detalii despre vânzător și dovada achiziției.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "What should I do if I suspect a counterfeit product?",
+            "answer": "<p> Do not use the product and contact us with seller details and proof of purchase. </p>",
             "open_by_default": false
           }
         },
@@ -2071,9 +2071,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "206",
-            "category": "Autenticitate",
-            "question": "De ce este importantă autenticitatea în îngrijirea pielii?",
-            "answer": "<p>Produsele neautorizate sau contrafăcute nu au garanția condițiilor sigure de producție și depozitare.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "Why is authenticity important in skincare?",
+            "answer": "<p> Unauthorized or counterfeit products are not guaranteed safe production and storage conditions. </p>",
             "open_by_default": false
           }
         },
@@ -2081,9 +2081,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "207",
-            "category": "Autenticitate",
-            "question": "Produsele originale pot arăta ușor diferit de la o piață la alta?",
-            "answer": "<p>Da, etichetarea și ambalajul pot varia conform cerințelor legale din fiecare țară.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "Can the original products look slightly different from one market to another?",
+            "answer": "<p> Yes, labeling and packaging may vary according to legal requirements in each country. </p>",
             "open_by_default": false
           }
         },
@@ -2091,9 +2091,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "208",
-            "category": "Autenticitate",
-            "question": "Se poate schimba ambalajul în timp?",
-            "answer": "<p>Da. Designul și textul de pe ambalaj pot fi actualizate periodic.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "Can the packaging change over time?",
+            "answer": "<p> Yes. The packaging design and text may be updated periodically. </p>",
             "open_by_default": false
           }
         },
@@ -2101,9 +2101,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "209",
-            "category": "Autenticitate",
-            "question": "Ce se întâmplă dacă am cumpărat Lumina de la un vânzător neautorizat?",
-            "answer": "<p>Ne puteți contacta pentru verificare, dar nu putem garanta produsele achiziționate din afara rețelei oficiale.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "What if I bought Lumina from an unauthorized seller?",
+            "answer": "<p> You can contact us for verification, but we cannot guarantee products purchased outside the official network. </p>",
             "open_by_default": false
           }
         },
@@ -2111,9 +2111,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "210",
-            "category": "Autenticitate",
-            "question": "Produsele cumpărate la mâna a doua sunt garantate ca fiind autentice?",
-            "answer": "<p>Nu. Nu putem verifica starea sau autenticitatea produselor revândute de persoane private.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "Are products bought second-hand guaranteed to be genuine?",
+            "answer": "<p> Nope. We cannot verify the condition or authenticity of products resold by private individuals. </p>",
             "open_by_default": false
           }
         },
@@ -2121,9 +2121,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "211",
-            "category": "Autenticitate",
-            "question": "Pot revinde produsele Lumina cumpărate pentru uz personal?",
-            "answer": "<p>Revânzarea profesională necesită un acord de parteneriat autorizat cu Lumina Europa.</p>",
+            "category": "Authenticity & Guarantee",
+            "question": "Can I resell Lumina products purchased for personal use?",
+            "answer": "<p> Professional resale requires an authorized partnership agreement with Lumina Europa. </p>",
             "open_by_default": false
           }
         },
@@ -2131,9 +2131,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "212",
-            "category": "Utilizare Profesională",
-            "question": "Esteticienii pot folosi produsele Lumina în tratamente?",
-            "answer": "<p>Da, acolo unde produsul este adecvat pentru uz profesional în cabinete și clinici.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can beauticians use Lumina products in treatments?",
+            "answer": "<p> Yes, where the product is suitable for professional use in practices and clinics. </p>",
             "open_by_default": false
           }
         },
@@ -2141,9 +2141,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "213",
-            "category": "Utilizare Profesională",
-            "question": "Lumina lucrează cu clinici și saloane?",
-            "answer": "<p>Da. Lumina Europa colaborează cu clinici, saloane și esteticieni autorizați.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Does Lumina work with clinics and salons?",
+            "answer": "<p> Yes. Lumina Europa collaborates with licensed clinics, salons and beauticians. </p>",
             "open_by_default": false
           }
         },
@@ -2151,9 +2151,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "214",
-            "category": "Utilizare Profesională",
-            "question": "Cum pot deveni partener profesional?",
-            "answer": "<p>Contactați echipa noastră B2B cu detalii despre clinica sau salonul dumneavoastră.</p>",
+            "category": "Professional & Spa Use",
+            "question": "How can I become a professional partner?",
+            "answer": "<p> Contact our B2B team with details about your clinic or salon. </p>",
             "open_by_default": false
           }
         },
@@ -2161,9 +2161,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "215",
-            "category": "Utilizare Profesională",
-            "question": "Partenerii profesionali pot revinde produsele Lumina?",
-            "answer": "<p>Partenerii autorizați pot revinde produsele conform acordului lor comercial.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can professional partners resell Lumina products?",
+            "answer": "<p> Authorized partners may resell products according to their commercial agreement. </p>",
             "open_by_default": false
           }
         },
@@ -2171,9 +2171,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "216",
-            "category": "Utilizare Profesională",
-            "question": "Revânzarea online este permisă partenerilor?",
-            "answer": "<p>Revânzarea online necesită aprobare prealabilă specifică în acordul comercial.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Is online resale allowed for partners?",
+            "answer": "<p> Online resale requires specific prior approval in the commercial agreement. </p>",
             "open_by_default": false
           }
         },
@@ -2181,9 +2181,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "217",
-            "category": "Utilizare Profesională",
-            "question": "Lumina oferă instruire profesională?",
-            "answer": "<p>Acolo unde este disponibilă, instruirea este oferită partenerilor autorizați.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Does Lumina offer professional training?",
+            "answer": "<p> Where available, training is provided to authorized partners. </p>",
             "open_by_default": false
           }
         },
@@ -2191,9 +2191,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "218",
-            "category": "Utilizare Profesională",
-            "question": "Produsele Lumina pot fi integrate în tratamente faciale?",
-            "answer": "<p>Da. Profesioniștii trebuie să respecte instrucțiunile și să evalueze tenul clientului.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can Lumina products be integrated into facial treatments?",
+            "answer": "<p> Yes. Professionals must follow the instructions and assess the client's complexion. </p>",
             "open_by_default": false
           }
         },
@@ -2201,9 +2201,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "219",
-            "category": "Utilizare Profesională",
-            "question": "Partenerii pot modifica modul în care este utilizat un produs?",
-            "answer": "<p>Produsele trebuie utilizate conform instrucțiunilor oficiale de siguranță.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can partners change how a product is used?",
+            "answer": "<p> Products must be used according to official safety instructions. </p>",
             "open_by_default": false
           }
         },
@@ -2211,9 +2211,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "220",
-            "category": "Utilizare Profesională",
-            "question": "Clinicile pot face afirmații medicale despre produsele Lumina?",
-            "answer": "<p>Nu. Produsele Lumina sunt cosmetice și nu trebuie prezentate ca tratamente medicale.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can clinics make medical claims about Lumina products?",
+            "answer": "<p> Nope. Lumina products are cosmetic and should not be presented as medical treatments. </p>",
             "open_by_default": false
           }
         },
@@ -2221,9 +2221,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "221",
-            "category": "Utilizare Profesională",
-            "question": "Un partener poate descrie Lumina ca fiind dovedită clinic?",
-            "answer": "<p>Doar dacă afirmația exactă este susținută de studii oficiale aprobate.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can a partner describe Lumina as clinically proven?",
+            "answer": "<p> Only if the exact claim is supported by approved official studies. </p>",
             "open_by_default": false
           }
         },
@@ -2231,9 +2231,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "222",
-            "category": "Utilizare Profesională",
-            "question": "Profesioniștii pot folosi materialele de marketing Lumina?",
-            "answer": "<p>Partenerii autorizați au acces la materiale oficiale de brand.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can professionals use Lumina marketing materials?",
+            "answer": "<p> Authorized partners have access to official brand materials. </p>",
             "open_by_default": false
           }
         },
@@ -2241,9 +2241,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "223",
-            "category": "Utilizare Profesională",
-            "question": "Un partener își poate crea propria reclamă Lumina?",
-            "answer": "<p>Da, cu condiția ca reprezentarea brandului să respecte regulile oficiale.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can a partner create their own Lumina ad?",
+            "answer": "<p> Yes, as long as the brand representation complies with the official rules. </p>",
             "open_by_default": false
           }
         },
@@ -2251,9 +2251,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "224",
-            "category": "Utilizare Profesională",
-            "question": "Profesioniștii pot oferi reduceri la produsele Lumina?",
-            "answer": "<p>Prețurile de revânzare sunt stabilite de parteneri, RRP fiind o recomandare.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can professionals offer discounts on Lumina products?",
+            "answer": "<p> Resale prices are set by partners, RRP is a recommendation. </p>",
             "open_by_default": false
           }
         },
@@ -2261,9 +2261,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "225",
-            "category": "Utilizare Profesională",
-            "question": "Există o comandă minimă pentru profesioniști?",
-            "answer": "<p>Cerințele de comandă minimă depind de programul partenerial și de regiune.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Is there a minimum order for professionals?",
+            "answer": "<p> Minimum order requirements depend on partner program and region. </p>",
             "open_by_default": false
           }
         },
@@ -2271,9 +2271,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "226",
-            "category": "Utilizare Profesională",
-            "question": "Ofereți produse exclusive pentru uz profesional?",
-            "answer": "<p>Dacă sunt disponibile produse exclusive pentru cabinet, ele sunt comunicate prin canalul B2B.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Do you offer exclusive products for professional use?",
+            "answer": "<p> If practice-exclusive products are available, they are communicated through the B2B channel. </p>",
             "open_by_default": false
           }
         },
@@ -2281,9 +2281,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "227",
-            "category": "Utilizare Profesională",
-            "question": "Un partener poate vinde Lumina pe Amazon sau eBay?",
-            "answer": "<p>Nu, cu excepția cazului în care este permis expres în contract.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can a partner sell Lumina on Amazon or eBay?",
+            "answer": "<p> No, unless expressly permitted in the contract. </p>",
             "open_by_default": false
           }
         },
@@ -2291,9 +2291,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "228",
-            "category": "Utilizare Profesională",
-            "question": "Terapeuții de înfrumusețare pot deveni parteneri Lumina?",
-            "answer": "<p>Da, în funcție de activitatea lor profesională și eligibilitate.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can beauty therapists become Lumina partners?",
+            "answer": "<p> Yes, depending on their professional activity and eligibility. </p>",
             "open_by_default": false
           }
         },
@@ -2301,9 +2301,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "229",
-            "category": "Utilizare Profesională",
-            "question": "Colaborați cu medici dermatologi?",
-            "answer": "<p>Lumina poate colabora cu specialiști calificați în îngrijirea pielii.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Do you work with dermatologists?",
+            "answer": "<p> Lumina can collaborate with qualified skin care specialists. </p>",
             "open_by_default": false
           }
         },
@@ -2311,9 +2311,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "230",
-            "category": "Utilizare Profesională",
-            "question": "Partenerii profesionali pot primi mostre?",
-            "answer": "<p>Disponibilitatea mostrelor depinde de stoc și de programul B2B.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can business partners receive samples?",
+            "answer": "<p> Sample availability depends on stock and B2B schedule. </p>",
             "open_by_default": false
           }
         },
@@ -2321,9 +2321,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "231",
-            "category": "Utilizare Profesională",
-            "question": "Partenerii pot folosi produsele pentru demonstrații sau conținut online?",
-            "answer": "<p>Da, reprezentând produsul cu acuratețe.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can partners use the products for demos or online content?",
+            "answer": "<p> Yes, representing the product accurately. </p>",
             "open_by_default": false
           }
         },
@@ -2331,9 +2331,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "232",
-            "category": "Utilizare Profesională",
-            "question": "O clinică poate returna stocul profesional?",
-            "answer": "<p>Achizițiile B2B sunt guvernate de termenii comerciali dedicați.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can a clinic return professional stock?",
+            "answer": "<p> B2B purchases are governed by dedicated commercial terms. </p>",
             "open_by_default": false
           }
         },
@@ -2341,9 +2341,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "233",
-            "category": "Utilizare Profesională",
-            "question": "Profesioniștii pot cumpăra de pe site-ul de consumatori?",
-            "answer": "<p>Pot plasa comenzi retail, dar prețurile B2B necesită cont profesional.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Can professionals buy from the consumer site?",
+            "answer": "<p> I can place retail orders, but B2B pricing requires a professional account. </p>",
             "open_by_default": false
           }
         },
@@ -2351,9 +2351,9 @@
           "type": "faq_item",
           "settings": {
             "badge_number": "234",
-            "category": "Utilizare Profesională",
-            "question": "Pe cine ar trebui să contactez pentru parteneriat profesional?",
-            "answer": "<p>Folosiți canalul de contact B2B/Parteneri de pe site-ul oficial Lumina Europa.</p>",
+            "category": "Professional & Spa Use",
+            "question": "Who should I contact for professional partnership?",
+            "answer": "<p> Use the B2B/Partners contact channel on the Lumina Europa official website. </p>",
             "open_by_default": false
           }
         }
@@ -2601,17 +2601,17 @@
         "hero_padding_bottom_desktop": 65,
         "hero_padding_top_mobile": 55,
         "hero_padding_bottom_mobile": 45,
-        "title": "Întrebări Frecvente",
+        "title": "Frequently Asked Questions",
         "title_size_desktop": 54,
         "question_size_desktop": 20,
         "pill_size_desktop": 15,
-        "subtitle": "Cu ce vă putem ajuta?",
-        "search_placeholder": "Căutați după cuvinte cheie...",
+        "subtitle": "How can we help you today?",
+        "search_placeholder": "Search by keywords or topics...",
         "show_view_more": true,
-        "view_more_label": "VEZI MAI MULTE ÎNTREBĂRI",
-        "help_title": "Încă aveți nevoie de ajutor?",
-        "help_desc": "Echipa noastră de suport este aici pentru dumneavoastră.",
-        "help_btn_label": "CONTACTAȚI SUPORTUL",
+        "view_more_label": "VIEW MORE QUESTIONS",
+        "help_title": "Still need assistance?",
+        "help_desc": "Our dedicated skincare concierge is here to assist you.",
+        "help_btn_label": "CONTACT CONCIERGE",
         "help_btn_link": "/pages/contact"
       }
     }

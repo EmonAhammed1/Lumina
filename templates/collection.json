@@ -18,7 +18,7 @@
         "show_collection_image": true,
         "save_allproducts": true,
         "title_all": "All Products",
-        "des_all": "<p>Cumpără acum, nu mai amâna. Răsfoiește cele mai bune stiluri și branduri la reducere.</p>",
+        "des_all": "<p> Buy now, don't delay. Browse the best styles and brands on sale. </p>",
         "style_banner": "full",
         "heading_size": "h2",
         "img_height": "450px",
@@ -107,7 +107,7 @@
         "4aae42f0-8564-4ba9-bf69-e0db437bad2b": {
           "type": "heading",
           "settings": {
-            "title": "Reduceri de vară",
+            "title": "Summer discounts",
             "size_text": "h4"
           }
         },
@@ -120,7 +120,7 @@
         "71224ca7-db08-44d5-8f55-df529ccb46af": {
           "type": "button",
           "settings": {
-            "button": "Cumpără acum",
+            "button": "Shop Now",
             "link": "#",
             "style_btn": "btn-theme"
           }
@@ -174,10 +174,10 @@
       "settings": {
         "bg_video": "",
         "overlay_opacity": 30,
-        "subtitle": "DESCOPERĂ LUMINA",
-        "title": "ÎNCEPE CU UN RITUAL",
-        "text": "Nanofibre. Ingrediente active. Ritualuri create pentru momentele în care alegi să ai grijă de tine. Descoperă colecția Lumina Europa și găsește ritualul potrivit pentru tine.",
-        "btn_label": "EXPLOREAZĂ COLECȚIA",
+        "subtitle": "DISCOVER LUMINA",
+        "title": "IT STARTS WITH A RITUAL",
+        "text": "Nanofibers. Active ingredients. Rituals created for the moments when you choose to take care of yourself. Discover the Lumina Europa collection and find the right ritual for you.",
+        "btn_label": "EXPLORE THE COLLECTION",
         "btn_link": "shopify://collections"
       }
     }

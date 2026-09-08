@@ -10,7 +10,7 @@
           <li class="drawer__nav-item">
             <div class="drawer__nav-has-sublist">
               {%- assign link_title_dn = link.title | downcase -%}
-              {%- if link_title_dn == 'colectie' or link_title_dn == 'colecție' -%}
+              {%- if link_title_dn == 'colectie'  -%}
                 <a href="javascript:void(0)" data-toggle="collapse" data-target="#DrawerLinklist-{{ child_list_handle }}" aria-controls="DrawerLinklist-{{ child_list_handle }}" class="drawer__nav-link drawer__nav-link--top-level drawer__nav-link--split" id="DrawerLabel-{{ child_list_handle }}" {% if link.active %} aria-current="page"{% endif %}>
                   {%- render 'processMenuTitle' , itemName: link.title -%}
                   {%- render 'processMenuLabel' , itemName: link.title -%}
@@ -103,7 +103,7 @@
     
     <div class="drawer__mobile-cta p-4" style="margin-top: 15px; border-top: 1px solid rgba(184, 150, 62, 0.15);">
       <a href="/collections/all" class="btn w-100 text-center" style="background-color: var(--g-main) !important; color: #1C1C1E !important; font-family: var(--g-font-2); font-size: 13px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; padding: 14px 20px; border-radius: 4px; display: block; border: none !important; transition: opacity 0.2s ease;">
-        Descopera Colectia
+        Discover Collection
       </a>
     </div>
   </div>
@@ -112,22 +112,22 @@
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var textTranslations = {
-      'conversations': 'Conversații',
-      'articles': 'Articole',
-      'blog': 'Blog',
-      'journal': 'Jurnal',
-      'films': 'Filme',
-      'film': 'Filme',
-      'gallery': 'Galerie',
-      'follow lumina': 'Urmărește Lumina',
-      'what are nanofibres': 'CE SUNT NANOFIBRELE',
-      'what are nanofibers': 'CE SUNT NANOFIBRELE',
-      'technology and formula': 'TEHNOLOGIE ȘI FORMULĂ',
-      'technology & formula': 'TEHNOLOGIE ȘI FORMULĂ',
-      'how to use': 'MOD DE UTILIZARE',
-      'ritual synergies': 'SINERGII DE RITUAL',
-      'scientific foundation and awards': 'BAZĂ ȘTIINȚIFICĂ ȘI PREMII',
-      'scientific foundation & awards': 'BAZĂ ȘTIINȚIFICĂ ȘI PREMII'
+      'conversatii': 'Conversations',
+      'conversatii': 'Conversations',
+      'articole': 'Articles',
+      'jurnal': 'Journal',
+      'filme': 'Films',
+      'film': 'Films',
+      'galerie': 'Gallery',
+      'urmareste lumina': 'Follow Lumina',
+      'urmareste lumina': 'Follow Lumina',
+      'ce sunt nanofibrele': 'WHAT ARE NANOFIBERS',
+      'tehnologie si formula': 'TECHNOLOGY & FORMULA',
+      'tehnologie si formula': 'TECHNOLOGY & FORMULA',
+      'mod de utilizare': 'HOW TO USE',
+      'sinergii de ritual': 'RITUAL SYNERGIES',
+      'baza stiintifica si premii': 'SCIENTIFIC FOUNDATION & AWARDS',
+      'baza stiintifica si premii': 'SCIENTIFIC FOUNDATION & AWARDS'
     };
 
     var mapping = {

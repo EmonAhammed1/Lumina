@@ -174,32 +174,32 @@
 </div>
 
 {% schema %}
-  {
-    "name": "Main Login",
-    "class": "index-section",
-    "settings": [
-      {
-        "type": "select",
-        "id": "login_style",
-        "label": "Style Page",
-        "options": [
-          {
+{
+  "name": "Main Login",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "select",
+      "id": "login_style",
+      "label": "Style Page",
+      "options": [
+        {
           "value": "default",
           "label": "Default"
-          },
-          {
+        },
+        {
           "value": "split",
           "label": "Split"
-          }
-        ],
-        "default": "default"
-      },
-      {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Image",
-        "info": "Image for style split"
-      }
-    ]
-  }
+        }
+      ],
+      "default": "default"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image",
+      "info": "Image for style split"
+    }
+  ]
+}
 {% endschema %}

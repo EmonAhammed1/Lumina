@@ -319,12 +319,12 @@
     <div class="lwag-filter-bar">
       <div class="lwag-nav-tabs">
         <button class="lwag-tab-btn active" onclick="filterLuminaArticles('toate', this)">TOATE</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('știință', this)">ȘTIINȚĂ</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('cultură', this)">CULTURĂ</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('science', this)">SCIENCE</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('culture', this)">CULTURE</button>
         <button class="lwag-tab-btn" onclick="filterLuminaArticles('oameni', this)">OAMENI</button>
         <button class="lwag-tab-btn" onclick="filterLuminaArticles('societate', this)">SOCIETATE</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('călătorii', this)">CĂLĂTORII</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('bunăstare', this)">BUNĂSTARE</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('travel', this)">TRAVEL</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('wellness', this)">WELLNESS</button>
         <button class="lwag-tab-btn" onclick="filterLuminaArticles('sustenabilitate', this)">SUSTENABILITATE</button>
       </div>
 
@@ -357,7 +357,7 @@
               assign card_category = art.tags.first
             endif
             if card_category == blank
-              assign card_category = "ȘTIINȚĂ"
+              assign card_category = "SCIENCE"
             endif
             assign card_date = block.settings.date
             if card_date == blank
@@ -367,8 +367,8 @@
             assign card_title = block.settings.title | default: "Titlu Articol"
             assign card_url = block.settings.link | default: "#"
             assign card_image = block.settings.image
-            assign card_excerpt = block.settings.excerpt | default: "Descoperă povești de la frontierele științei, frumuseții și culturii."
-            assign card_category = block.settings.category | default: "ȘTIINȚĂ"
+            assign card_excerpt = block.settings.excerpt | default: "Discover stories from the frontiers of science, beauty and culture."
+            assign card_category = block.settings.category | default: "SCIENCE"
             assign card_date = block.settings.date | default: "12 MAI 2025"
           endif
         -%}
@@ -401,7 +401,7 @@
             </div>
 
             <div class="lwag-card-link">
-              CITEȘTE ARTICOLUL
+              READ ARTICLE
               <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
           </div>
@@ -458,13 +458,13 @@
       "type": "textarea",
       "id": "subtitle",
       "label": "Subtitle",
-      "default": "Idei. Perspective. Conversații care modelează lumea în care trăim."
+      "default": "Ideas. Perspectives. Conversations that shape the world we live in."
     },
     {
       "type": "text",
       "id": "view_all_label",
       "label": "View All Link Label",
-      "default": "TOATE ARTICOLELE"
+      "default": "ALL ARTICLES"
     },
     {
       "type": "url",
@@ -492,7 +492,7 @@
           "type": "text",
           "id": "category",
           "label": "Category Eyebrow",
-          "default": "ȘTIINȚĂ"
+          "default": "SCIENCE"
         },
         {
           "type": "text",
@@ -525,19 +525,19 @@
         {
           "type": "article_card",
           "settings": {
-            "category": "ȘTIINȚĂ",
+            "category": "SCIENCE",
             "date": "12 MAI 2025",
-            "title": "Bariera pielii: Mai mult decât un scut",
-            "excerpt": "De ce înțelegerea barierei pielii schimbă totul în îngrijirea tenului."
+            "title": "Skin barrier: More than a shield",
+            "excerpt": "Why understanding the skin barrier changes everything in skin care."
           }
         },
         {
           "type": "article_card",
           "settings": {
-            "category": "CULTURĂ",
+            "category": "CULTURE",
             "date": "5 MAI 2025",
-            "title": "Orașe atemporale, frumusețe fără vârstă",
-            "excerpt": "Ce ne învață orașele europene despre frumusețe, patrimoniu și timp."
+            "title": "Timeless cities, ageless beauty",
+            "excerpt": "What European cities teach us about beauty, heritage and time."
           }
         },
         {
@@ -545,8 +545,8 @@
           "settings": {
             "category": "OAMENI",
             "date": "28 APRILIE 2025",
-            "title": "Vocile unei noi generații",
-            "excerpt": "Tineri europeni despre identitate, scop și viitor."
+            "title": "The voices of a new generation",
+            "excerpt": "Young Europeans on identity, purpose and future."
           }
         },
         {
@@ -554,8 +554,8 @@
           "settings": {
             "category": "SUSTENABILITATE",
             "date": "20 APRILIE 2025",
-            "title": "Frumusețe și responsabilitate",
-            "excerpt": "De ce luxul autentic respectă lumea din care provenim."
+            "title": "Beauty and responsibility",
+            "excerpt": "Why authentic luxury respects the world we come from."
           }
         }
       ]

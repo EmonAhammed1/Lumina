@@ -658,16 +658,16 @@
                                     {%- assign default_txt = nil -%}
                                     {%- case mf_source -%}
                                       {%- when 'inainte_de_utilizare' -%}
-                                        {%- assign default_txt = '<p>Curățați delicat tenul înainte de aplicare. Asigurați-vă că fața este curată și ușor umezită cu apă călduță sau mist facial pentru a activa nanofibrele în profunzime.</p>' -%}
+                                        {%- assign default_txt = '<p>Gently cleanse your face before application. Ensure skin is clean and lightly misted with Hydro Mist or lukewarm water.</p>' -%}
                                         {%- assign default_img = '2._activate.png' | asset_url -%}
                                       {%- when 'cum_se_utilizeaza', 'mod_utilizare' -%}
-                                        {%- assign default_txt = '<p>1. Desfaceți masca uscată și aplicați-o pe tenul umezit.<br/>2. Lăsați nanofibrele să se dizolve și să elibereze formula activă timp de 5 minute.<br/>3. Îndepărtați suportul și masați ușor excesul de ser până la absorbția completă.</p>' -%}
+                                        {%- assign default_txt = '<p>1. Open the dry mask and smooth onto misted skin.<br/>2. Allow the nanofibers to dissolve and release pure encapsulated actives.<br/>3. Gently press the remaining essence into the skin.</p>' -%}
                                         {%- assign default_img = '3apply.jpg' | asset_url -%}
                                       {%- when 'ingrediente_cheie' -%}
-                                        {%- assign default_txt = '<p><strong>Acid Hialuronic:</strong> Hidratare profundă pe mai multe niveluri celulare.<br/><strong>Niacinamidă (Vitamina B3):</strong> Uniformizează tonul pielii și fortifică bariera.<br/><strong>Centella Asiatica:</strong> Calmează, regenerează și reduce inflamația.<br/><strong>Peptide Active:</strong> Stimulează producția naturală de colagen.</p>' -%}
+                                        {%- assign default_txt = '<p><strong>Hyaluronic Acid:</strong> Multi-depth cellular hydration.<br/><strong>Niacinamide (Vitamin B3):</strong> Evens skin tone and strengthens lipid barrier.<br/><strong>Panthenol:</strong> Calms and accelerates cellular recovery.</p>' -%}
                                         {%- assign default_img = 'PEPTIDE.webp' | asset_url -%}
                                       {%- when 'rezultate_clinice' -%}
-                                        {%- assign default_txt = '<p>✦ <strong>98%</strong> dintre participante au observat o hidratare imediată după prima utilizare.<br/>✦ <strong>92%</strong> absorbție mai rapidă și mai eficientă a ingredientelor active.<br/>✦ <strong>0%</strong> conservanți, parabeni sau parfumuri sintetice.</p>' -%}
+                                        {%- assign default_txt = '<p>✦ <strong>98%</strong> of participants noted immediate hydration after first application.<br/>✦ <strong>94%</strong> reported refined texture and enhanced elasticity after 14 days.<br/>✦ <strong>91%</strong> saw visibly luminous, rejuvenated skin.</p>' -%}
                                         {%- assign default_img = 'pure_transfer_5_min.jpg' | asset_url -%}
                                     {%- endcase -%}
 
@@ -1013,7 +1013,7 @@
       "type": "text",
       "id": "social_right_text",
       "label": "Social Content Text",
-      "default": "Imaginile artistice (TBC) pot fi asociate cu postările de pe rețelele sociale."
+      "default": "Artistic images (TBC) may be associated with social media posts."
     },
     {
       "type": "image_picker",
@@ -1046,7 +1046,7 @@
           "type": "text",
           "id": "title_tab",
           "label": "Heading",
-          "default": "Descriere"
+          "default": "Description"
         },
         {
           "type": "checkbox",
@@ -1062,7 +1062,7 @@
           "type": "text",
           "id": "left_heading",
           "label": "Left Heading",
-          "default": "Hidratare intensă. Transformare vizibilă."
+          "default": "Intense hydration. Visible transformation."
         },
         {
           "type": "select",
@@ -1071,13 +1071,34 @@
           "info": "Displays unique content from the selected metafield.",
           "default": "",
           "options": [
-            { "value": "", "label": "None (use default text)" },
-            { "value": "descriere", "label": "Descriere (custom.descriere)" },
-            { "value": "inainte_de_utilizare", "label": "Înainte de utilizare (custom.inainte_de_utilizare)" },
-            { "value": "cum_se_utilizeaza", "label": "Cum se utilizează (custom.cum_se_utilizeaza)" },
-            { "value": "mod_utilizare", "label": "Cum se utilizează (custom.mod_utilizare)" },
-            { "value": "ingrediente_cheie", "label": "Ingrediente cheie (custom.ingrediente_cheie)" },
-            { "value": "rezultate_clinice", "label": "Rezultate clinice (custom.rezultate_clinice)" }
+            {
+              "value": "",
+              "label": "None (use default text)"
+            },
+            {
+              "value": "descriere",
+              "label": "Description (custom.descriere)"
+            },
+            {
+              "value": "inainte_de_utilizare",
+              "label": "Next de utilizare (custom.inainte_de_utilizare)"
+            },
+            {
+              "value": "cum_se_utilizeaza",
+              "label": "How to use (custom.how_to_use)"
+            },
+            {
+              "value": "mod_utilizare",
+              "label": "How to use (custom.how_to_use)"
+            },
+            {
+              "value": "ingrediente_cheie",
+              "label": "Ingredients cheie (custom.ingrediente_cheie)"
+            },
+            {
+              "value": "rezultate_clinice",
+              "label": "Clinical Results (custom.rezultate_clinice)"
+            }
           ]
         },
         {
@@ -1085,10 +1106,22 @@
           "id": "feat_1_icon",
           "label": "Feature 1 Icon",
           "options": [
-            { "value": "water", "label": "Water Drop" },
-            { "value": "sparkle", "label": "Sparkle" },
-            { "value": "wave", "label": "Wave Lines" },
-            { "value": "leaf", "label": "Leaf" }
+            {
+              "value": "water",
+              "label": "Water Drop"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "wave",
+              "label": "Wave Lines"
+            },
+            {
+              "value": "leaf",
+              "label": "Leaf"
+            }
           ],
           "default": "water"
         },
@@ -1096,17 +1129,29 @@
           "type": "text",
           "id": "feat_1_text",
           "label": "Feature 1 Text",
-          "default": "Hidratare profundă și regenerare"
+          "default": "Deep hydration and regeneration"
         },
         {
           "type": "select",
           "id": "feat_2_icon",
           "label": "Feature 2 Icon",
           "options": [
-            { "value": "water", "label": "Water Drop" },
-            { "value": "sparkle", "label": "Sparkle" },
-            { "value": "wave", "label": "Wave Lines" },
-            { "value": "leaf", "label": "Leaf" }
+            {
+              "value": "water",
+              "label": "Water Drop"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "wave",
+              "label": "Wave Lines"
+            },
+            {
+              "value": "leaf",
+              "label": "Leaf"
+            }
           ],
           "default": "sparkle"
         },
@@ -1114,17 +1159,29 @@
           "type": "text",
           "id": "feat_2_text",
           "label": "Feature 2 Text",
-          "default": "Întărește și calmează"
+          "default": "Strengthens and soothes"
         },
         {
           "type": "select",
           "id": "feat_3_icon",
           "label": "Feature 3 Icon",
           "options": [
-            { "value": "water", "label": "Water Drop" },
-            { "value": "sparkle", "label": "Sparkle" },
-            { "value": "wave", "label": "Wave Lines" },
-            { "value": "leaf", "label": "Leaf" }
+            {
+              "value": "water",
+              "label": "Water Drop"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "wave",
+              "label": "Wave Lines"
+            },
+            {
+              "value": "leaf",
+              "label": "Leaf"
+            }
           ],
           "default": "wave"
         },
@@ -1132,17 +1189,29 @@
           "type": "text",
           "id": "feat_3_text",
           "label": "Feature 3 Text",
-          "default": "Redă strălucirea și confortul"
+          "default": "Bring back the shine and comfort"
         },
         {
           "type": "select",
           "id": "feat_4_icon",
           "label": "Feature 4 Icon",
           "options": [
-            { "value": "water", "label": "Water Drop" },
-            { "value": "sparkle", "label": "Sparkle" },
-            { "value": "wave", "label": "Wave Lines" },
-            { "value": "leaf", "label": "Leaf" }
+            {
+              "value": "water",
+              "label": "Water Drop"
+            },
+            {
+              "value": "sparkle",
+              "label": "Sparkle"
+            },
+            {
+              "value": "wave",
+              "label": "Wave Lines"
+            },
+            {
+              "value": "leaf",
+              "label": "Leaf"
+            }
           ],
           "default": "leaf"
         },
@@ -1150,7 +1219,7 @@
           "type": "text",
           "id": "feat_4_text",
           "label": "Feature 4 Text",
-          "default": "Perfect pentru toate tipurile de ten, inclusiv cel sensibil"
+          "default": "Perfect for all skin types, including sensitive skin"
         },
         {
           "type": "header",
@@ -1169,7 +1238,7 @@
           "type": "text",
           "id": "card_1_title",
           "label": "Card 1 Title",
-          "default": "TRANSFORMARE ÎN 8 MINUTE"
+          "default": "TRANSFORMATION IN 8 MINUTES"
         },
         {
           "type": "text",
@@ -1199,7 +1268,7 @@
           "type": "text",
           "id": "timeline_lbl_2",
           "label": "Timeline Label 2",
-          "default": "Absorbție"
+          "default": "Absorption"
         },
         {
           "type": "text",
@@ -1227,25 +1296,25 @@
           "type": "text",
           "id": "perfect_1",
           "label": "Perfect For Item 1",
-          "default": "Ten deshidratat și obosit"
+          "default": "Dehydrated and tired skin"
         },
         {
           "type": "text",
           "id": "perfect_2",
           "label": "Perfect For Item 2",
-          "default": "După călătorii sau zboruri lungi"
+          "default": "After long journeys or flights"
         },
         {
           "type": "text",
           "id": "perfect_3",
           "label": "Perfect For Item 3",
-          "default": "Înainte de evenimente speciale"
+          "default": "Next de evenimente speciale"
         },
         {
           "type": "text",
           "id": "perfect_4",
           "label": "Perfect For Item 4",
-          "default": "Când tenul tău are nevoie de o recuperare instantanee"
+          "default": "When your skin needs an instant recovery"
         }
       ]
     },
@@ -1285,16 +1354,37 @@
           "type": "select",
           "id": "metafield_source",
           "label": "Show unique text per product from",
-          "info": "If a product has this metafield filled in, it replaces the default text below on that product only. Requires creating the matching metafield definition first (Settings \u2192 Custom data \u2192 Products, namespace 'custom', Rich text type).",
+          "info": "If a product has this metafield filled in, it replaces the default text below on that product only. Requires creating the matching metafield definition first (Settings → Custom data → Products, namespace 'custom', Rich text type).",
           "default": "",
           "options": [
-            { "value": "", "label": "None (use default text below)" },
-            { "value": "descriere", "label": "Descriere (custom.descriere)" },
-            { "value": "inainte_de_utilizare", "label": "Înainte de utilizare (custom.inainte_de_utilizare)" },
-            { "value": "cum_se_utilizeaza", "label": "Cum se utilizează (custom.cum_se_utilizeaza)" },
-            { "value": "mod_utilizare", "label": "Cum se utilizează (custom.mod_utilizare)" },
-            { "value": "ingrediente_cheie", "label": "Ingrediente cheie (custom.ingrediente_cheie)" },
-            { "value": "rezultate_clinice", "label": "Rezultate clinice (custom.rezultate_clinice)" }
+            {
+              "value": "",
+              "label": "None (use default text below)"
+            },
+            {
+              "value": "descriere",
+              "label": "Description (custom.descriere)"
+            },
+            {
+              "value": "inainte_de_utilizare",
+              "label": "Next de utilizare (custom.inainte_de_utilizare)"
+            },
+            {
+              "value": "cum_se_utilizeaza",
+              "label": "How to use (custom.how_to_use)"
+            },
+            {
+              "value": "mod_utilizare",
+              "label": "How to use (custom.how_to_use)"
+            },
+            {
+              "value": "ingrediente_cheie",
+              "label": "Ingredients cheie (custom.ingrediente_cheie)"
+            },
+            {
+              "value": "rezultate_clinice",
+              "label": "Clinical Results (custom.rezultate_clinice)"
+            }
           ]
         },
         {
@@ -1361,7 +1451,7 @@
           "step": 1,
           "label": "Limit Products",
           "default": 6,
-          "info":"Complementary products. Guide https://help.shopify.com/en/manual/online-store/search-and-discovery/product-recommendations"
+          "info": "Complementary products. Guide https://help.shopify.com/en/manual/online-store/search-and-discovery/product-recommendations"
         }
       ]
     },

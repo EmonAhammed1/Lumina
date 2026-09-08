@@ -21,11 +21,11 @@
             "width": "75%",
             "bgtext": "#e7e8e3",
             "title_color": "rgba(0,0,0,0)",
-            "subtitle": "Ingredientele noastre",
+            "subtitle": "Our ingredients",
             "title": "No Compromise™ Baby Care",
             "size_text": "h2",
             "text": "",
-            "answer_content": "<p>Ce înseamnă „curat” pentru noi? Înseamnă că am creat un standard complet nou de siguranță, deoarece este lucrul corect pentru copiii noștri și planeta noastră. Am început prin a interzice peste 2.000 de ingrediente potențial dăunătoare din formulele noastre. Odată ce am eliminat toate elementele nesigure, am folosit ingredientele noastre curate și riguros testate pentru a crea formule hrănitoare și extra-pure, susținute științific.</p>",
+            "answer_content": "<p> What does \"clean\" mean to us? It means we've created a whole new standard of safety because it's the right thing to do for our children and our planet. We started by banning over 2,000 potentially harmful ingredients from our formulas. Once we removed all the unsafe elements, we used our pure and rigorously tested ingredients to create nutritious and extra-pure, scientifically backed formulas. </p>",
             "style_btn": "btn-underline btn-underline-white",
             "button": "",
             "link": "",
@@ -65,7 +65,7 @@
         "02d7795e-308f-44d9-b007-aa374d77dbcb": {
           "type": "heading",
           "settings": {
-            "title": "Creat pentru bebeluși. Creat pentru tine.",
+            "title": "Made for babies. Created for you.",
             "size_text": "h2"
           }
         },
@@ -111,7 +111,7 @@
           "type": "heading",
           "disabled": true,
           "settings": {
-            "title": "Realizăm echipamente sport premium",
+            "title": "We make premium sports equipment",
             "size_text": "h1"
           }
         },
@@ -119,7 +119,7 @@
           "type": "paragraph",
           "disabled": true,
           "settings": {
-            "subtext": "Hainele s-ar putea să nu schimbe lumea, dar femeile care le poartă o vor face"
+            "subtext": "Clothes may not change the world, but the women who wear them will"
           }
         }
       },
@@ -163,11 +163,11 @@
             "width": "75%",
             "bgtext": "rgba(0,0,0,0)",
             "title_color": "#ffffff",
-            "subtitle": "Originile squalanului în îngrijirea pielii",
+            "subtitle": "The origins of squalane in skin care",
             "title": "Alte surse de squalan",
             "size_text": "h2",
             "text": "",
-            "answer_content": "<p>Squalene se află în pielea bebelușilor la naștere și se găsește și în alte plante și animale. Deși este o substanță uimitoare în corpurile noastre, squalene este de asemenea instabil — dar când este hidrogenat în squal<em>ane</em>, devine o moleculă mult mai stabilă care poate fi folosită în îngrijirea pielii. În prima jumătate a secolului XX, squalanul din cosmetice era derivat din ficat de rechin. Acest lucru nu este sustenabil și cu siguranță nu este cruelty-free.</p><p></p><p>Squalanul din produsele de îngrijire a pielii poate proveni și din măsline, dar calitatea sa poate fi imprevizibilă. Niciuna dintre aceste metode nu corespunde standardelor noastre. Așa că ne-am propus să reinventăm squalanul.</p>",
+            "answer_content": "<p> Squalene is in the skin of babies at birth and is also found in other plants and animals. Although it's an amazing substance in our bodies, squalene is also unstable—but when it's hydrogenated into squale<em>ane</em>, it becomes a much more stable molecule that can be used in skin care. In the first half of the 20th century, squalane in cosmetics was derived from shark liver. This is not sustainable and certainly not cruelty-free.</p><p></p><p> Squalane in skin care products can also come from olives, but its quality can be unpredictable. None of these methods meet our standards. So we set out to reinvent squalane. </p>",
             "style_btn": "btn-underline btn-underline-white",
             "button": "",
             "link": "",
@@ -208,7 +208,7 @@
         "8a950665-fd5a-43a3-bf89-8ba1c9967e92": {
           "type": "paragraph",
           "settings": {
-            "subtext": "Folosindu-se de expertiza noastră revoluționară în chimia curată, oamenii de știință din laboratoarele noastre au creat un squalan complet nou, derivat din trestie de zahăr, pe care pielea bebelușului îl recunoaște imediat.  \n\nSourced from renewable Brazilian sugarcane fields, our squalane is a moisturizing superhero that’s exceptionally stable and environmentally friendly, and is tested obsessively for safety and efficacy.  \n\nOur squalane is one of the best skin-replenishers around, and it’s at the heart of all our formulas. In our baby care collection, squalane gives babies’ sensitive skin the essential hydration it needs; for kids’ hair care, squalane is a silicone-free alternative that smooths and conditions delicate strands without weighing them down; in sun care, squalane helps mineral sunscreen formulas blend in effortlessly while fortifying the skin’s natural moisture barrier; for moms, squalane adds weightless moisture so skin stays supple and resilient. Best of all—whether it’s in a wipe, a wash, or an all-purpose balm—squalane is something that our skin already knows, needs, and loves."
+            "subtext": "Using our revolutionary expertise in clean chemistry, scientists in our laboratories have created an entirely new squalane, derived from sugar cane, that baby's skin immediately recognizes.  \n\nSourced from renewable Brazilian sugarcane fields, our squalane is a moisturizing superhero that's exceptionally stable and environmentally friendly, and is tested obsessively for safety and efficacy.  \n\nOur squalane is one of the best skin-replenishers around, and it's at the heart of all our formulas. In our baby care collection, squalane gives babies' sensitive skin the essential hydration it needs; for kids' hair care, squalane is a silicone-free alternative that smooths and conditions delicate strands without weighing them down; in sun care, squalane helps mineral sunscreen formulas blend in effortlessly while fortifying the skin's natural moisture barrier; for moms, squalane adds weightless moisture so skin stays supple and resilient. Best of all—whether it's in a wipe, a wash, or an all-purpose balm—squalane is something that our skin already knows, needs, and loves."
           }
         }
       },
@@ -248,7 +248,7 @@
             "enable_video": false,
             "overlay_color": "#000000",
             "overlay_opacity": 30,
-            "text_circle": "Magazin nou de modă",
+            "text_circle": "New fashion store",
             "video_url": "https://www.youtube.com/watch?v=Yghmzsr3S14&ab_channel=Kandra"
           }
         },
@@ -259,7 +259,7 @@
             "subtitle": "sustainable",
             "title": "Cine suntem?",
             "size_text": "h2",
-            "text": "Vernixul este primul hidratant natural al bebelușului — cea mai bună protecție oferită de Mama Natură. Această substanță cremoasă creează o barieră naturală puternică pentru pielea nou-născutului în primele ore după naștere.",
+            "text": "Vernix is ​​baby's first natural moisturizer — Mother Nature's best protection. This creamy substance creates a strong natural barrier for the newborn's skin in the first hours after birth.",
             "answer_content": "",
             "button": "discover now",
             "link": "",
@@ -301,7 +301,7 @@
           "type": "heading",
           "disabled": true,
           "settings": {
-            "title": "Realizăm echipamente sport premium",
+            "title": "We make premium sports equipment",
             "size_text": "h1"
           }
         },
@@ -309,7 +309,7 @@
           "type": "paragraph",
           "disabled": true,
           "settings": {
-            "subtext": "Hainele s-ar putea să nu schimbe lumea, dar femeile care le poartă o vor face"
+            "subtext": "Clothes may not change the world, but the women who wear them will"
           }
         }
       },
@@ -347,8 +347,8 @@
             "width": "100%",
             "bgtext": "#ffffff",
             "title_color": "rgba(0,0,0,0)",
-            "subtitle": "Misiunea noastră",
-            "title": "Etic și sustenabil",
+            "subtitle": "Our mission",
+            "title": "Ethical and sustainable",
             "size_text": "h2",
             "text": "<div class=\"pr-lg-5 mr-lg-4\">\n<p>Need a little newness in your life? We've got you covered. Bringing you \nthe latest drop of more killer clothes, versatile accessories, stand-out \nfootwear, and much, much more. Update those lifesaving essentials \nor bag a knock-out, night-out number.</p>\n      <div class=\"mt-5 pt-4 px-lg-5\">\n        <img class=\"lazyload\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0830/3722/5240/files/Rectangle_2_4_1.webp?v=1696176878\">\n      </div>\n    \n</div>",
             "answer_content": "",
@@ -392,7 +392,7 @@
         "subtitle": "Mother Nature’s best",
         "title": "Powered by Moisturizing Squalane™",
         "size_text": "h2",
-        "des": "Vernixul este primul hidratant natural al bebelușului — cea mai bună protecție oferită de Mama Natură. Această substanță cremoasă creează o barieră naturală puternică pentru pielea nou-născutului în primele ore după naștere.  \n\nThat squalene is key to keeping skin safe, nourishing and supporting delicate skin when it needs it the most. But after the protective vernix absorbs, your baby’s skin needs a little extra love and care. That’s where squalane comes in.",
+        "des": "Vernix is ​​baby's first natural moisturizer — Mother Nature's best protection. This creamy substance creates a strong natural barrier for the newborn's skin in the first hours after birth.  \n\nThat squalene is key to keeping skin safe, nourishing and supporting delicate skin when it needs it the most. But after the protective vernix absorbs, your baby's skin needs a little extra love and care. That's where squalane comes in.",
         "button": "",
         "link": "",
         "style_btn": "btn-theme",
@@ -417,7 +417,7 @@
             "author": "John Alvy",
             "info": "Engineer",
             "rate": 5,
-            "quote": "Sunt foarte confortabili și arată excelent. Îmi place că talpa nu este extrem de groasă ca la alți pantofi. Mult mai subtil și discret..."
+            "quote": "They are very comfortable and look great. I like that the sole is not extremely thick like other shoes. Much more subtle and discreet..."
           }
         },
         "template--16716887458110__559f6024-64db-446e-a9dc-976582972dce-16666891474b2efc36-1": {
@@ -427,7 +427,7 @@
             "author": "Jacquelyn Rizzo",
             "info": "Producer",
             "rate": 5,
-            "quote": "Ador această cămașă. Se simte ca un pulover moale, dar este ușoară ca o cămașă..."
+            "quote": "I love this shirt. It feels like a soft sweater, but is as light as a shirt..."
           }
         },
         "template--16716887458110__559f6024-64db-446e-a9dc-976582972dce-16666891474b2efc36-2": {
@@ -437,7 +437,7 @@
             "author": "Hailee Parsons",
             "info": "Designer",
             "rate": 5,
-            "quote": "Perfecți pentru toamnă și iarnă. Calitatea este excelentă. Comandați mărimea obișnuită..."
+            "quote": "Perfect for autumn and winter. The quality is excellent. Order your regular size..."
           }
         }
       },
@@ -453,7 +453,7 @@
         "title_color": "#ffffff",
         "image_bg": "shopify://shop_images/310835709_616187133284838_6727354724098971127_n.jpg",
         "title_top": "",
-        "title": "Ne iubim clienții",
+        "title": "We love our customers",
         "des": "We are very fortunate to have formed excellent \npartnerships with many of our clients.",
         "align-heading": "center",
         "aligntext": "text-left",
@@ -483,7 +483,7 @@
           "settings": {
             "image": "shopify://shop_images/team7_800x_8849cc82-6544-436c-bd70-9c547218e08c.jpg",
             "name": "Abdul Khalek",
-            "position": "CEO și Fondator",
+            "position": "CEO and Founder",
             "twitter": "https://twitter.com/",
             "google": "https://plus.google.com",
             "facebook": "https://www.facebook.com/",
@@ -538,7 +538,7 @@
         "setwidth": "container",
         "bgsection": "",
         "title_top": "",
-        "title": "O echipă de profesioniști înalt calificați",
+        "title": "A team of highly qualified professionals",
         "des": "We are very fortunate to have formed excellent partnerships with many of our clients.",
         "align-heading": "center",
         "items": "3",
@@ -552,10 +552,10 @@
     "a035e328-7cfe-4cf0-81d0-e2f5f0188740": {
       "type": "map",
       "settings": {
-        "heading": "Magazinul nostru",
+        "heading": "Our store",
         "address": "<p>123 Fake St.<br/>Toronto, Canada</p><p>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 9pm<br/>Sunday, 11am - 5pm</p>",
         "map_address": "301 Front St W, Toronto",
-        "button_text": "Obține indicații",
+        "button_text": "Get directions",
         "show_pin": true,
         "api_key": "",
         "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=CN%20Tower,%20301%20Front%20St%20W,%20Toronto,%20ON%20M5V%202T6,%20Canada&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>\n<a href=\"https://www.embedgooglemap.net\">google maps code generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>\n</div></div>",
@@ -572,7 +572,7 @@
         "title": "Trimite-ne un e-mail",
         "des": "",
         "align-heading": "center",
-        "answer_content": "<p>Acest site este protejat de reCAPTCHA, aplicându-se <a href=\"https://policies.google.com/privacy\">Politica de confidențialitate</a> și <a href=\"https://policies.google.com/terms\">Termenii de utilizare</a> Google.</p>",
+        "answer_content": "<p> This site is protected by reCAPTCHA,<a href=\"https://policies.google.com/privacy\">Privacy Policy</a>and<a href=\"https://policies.google.com/terms\">Terms of Use</a>Google apply. </p>",
         "paddingsection": "100px 0px 100px 0px",
         "paddingmobile": "40px 0px 40px 0px",
         "marginsection": "0px 0px 0px 0px",
@@ -586,7 +586,7 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "Livrare gratuită",
+            "title": "Free delivery",
             "description": "Estimativ 3-5 zile",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 82 82\"><path d=\"M7.238 68.717H1.867V2.12H58.4v16.736h3.886c9.755 0 17.663 7.908 17.663 17.663v32.199h-5.917M55.781 68.717H25.487\"></path><path d=\"M58.334 42.124h15.068v-4.27c0-6.82-5.53-12.35-12.351-12.35h-2.718v16.62M73.909 70.236a9.125 9.125 0 1 0-18.013-2.931 9.125 9.125 0 0 0 18.013 2.93ZM25.367 70.235a9.125 9.125 0 1 0-18.012-2.931 9.125 9.125 0 0 0 7.54 10.471 9.125 9.125 0 0 0 10.472-7.54Z\"></path><path d=\"M13.723 77.507c-3.966.658-7.937 1.51-11.857 2.593M60.373 76.736c-10.512-1.212-24.298-1.969-38.645-.451M79.768 80.121s-4.96-1.222-12.975-2.395\"></path></svg>"
           }
@@ -595,8 +595,8 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "Clubul de plajă",
-            "description": "Fii recompensat de fiecare dată",
+            "title": "The beach club",
+            "description": "Get rewarded every time",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-plant-based\" viewbox=\"0 0 82 82\"><path d=\"M41 20.701V80M56.735 26.294c0 8.703-7.045 15.758-15.735 15.758s-15.735-7.055-15.735-15.758C25.265 14.719 41 2 41 2s15.735 12.719 15.735 24.294ZM30.479 46.972c6.145 6.154 6.145 16.132 0 22.285-6.145 6.154-16.107 6.154-22.252 0C.054 61.072 2.2 40.936 2.2 40.936s20.106-2.149 28.279 6.036Z\"></path><path d=\"M41 77.861S27.525 60.403 10.092 50.177M51.412 46.972c-6.145 6.154-6.145 16.132 0 22.285 6.145 6.153 16.107 6.154 22.252 0 8.173-8.185 6.027-28.321 6.027-28.321s-20.106-2.149-28.279 6.036Z\"></path><path d=\"M40.891 77.861s13.475-17.458 30.908-27.684\"></path></svg>"
           }
         },
@@ -604,8 +604,8 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "Rambursări instantanee",
-            "description": "Rambursare în termen de 30 de zile",
+            "title": "Instant refunds",
+            "description": "Refund within 30 days",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 82 82\"><path d=\"M80 21v39L41 80 2 60V21L41 2l39 19Z\"></path><path d=\"m2 21 39 20 38.571-19.807M41 41.478v38.338\"></path><path d=\"m27.715 8.643 38.409 19.473v17.543l-11.617 6.067V33.83L16.098 14.355\"></path></svg>"
           }
         },
@@ -613,8 +613,8 @@
           "type": "service",
           "settings": {
             "bgblock": "rgba(0,0,0,0)",
-            "title": "Poartă acum",
-            "description": "Plătește în rate simple.",
+            "title": "Wear it now",
+            "description": "Pay in simple installments.",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-shield\" viewbox=\"0 0 64 64\"><defs></defs><path class=\"\" d=\"M21.18 31.69L28.54 39l15.91-15.88\"></path><path class=\"\" d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54z\"></path></svg>"
           }
         }

@@ -409,7 +409,7 @@
         {{ section.settings.tagline | default: 'Science.<br>Ritual.<br>Light.' }}
       </div>
       <div class="lf-copyright">
-        {{ section.settings.copyright | default: '&copy; 2026 Lumina Europa.<br>Toate drepturile rezervate.' }}
+        {{ section.settings.copyright | default: '&copy; 2026 Lumina Europa.<br>All rights reserved.' }}
       </div>
     </div>
     
@@ -417,7 +417,7 @@
       <!-- COLUMN 1 -->
       <div class="lf-col-links">
         <h4 class="lf-col-title js-accordion-trigger">
-          {{ section.settings.col1_title | default: 'DESCOPERĂ LUMINA' }}
+          {{ section.settings.col1_title | default: 'DISCOVER LUMINA' }}
           <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
@@ -442,7 +442,7 @@
       <!-- COLUMN 2 -->
       <div class="lf-col-links">
         <h4 class="lf-col-title js-accordion-trigger">
-          {{ section.settings.col2_title | default: 'COLECȚII & RITUALURI' }}
+          {{ section.settings.col2_title | default: 'COLLECTIONS & RITUALS' }}
           <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
@@ -545,18 +545,18 @@
     <!-- GOLDEN HOUR NEWSLETTER COLUMN -->
     <div class="lf-col-gh">
       <h2 class="lf-gh-title">{{ section.settings.gh_title | default: 'LUMINA<br>GOLDEN HOUR' }}</h2>
-      <p class="lf-gh-text">{{ section.settings.gh_text1 | default: 'Un moment al zilei în care lumina devine mai caldă, mai rară, mai aproape de piele.' }}</p>
-      <p class="lf-gh-text">{{ section.settings.gh_text2 | default: 'Aici încep ritualurile, poveștile și gesturile pe care le descoperi înaintea celorlalți.' }}</p>
+      <p class="lf-gh-text">{{ section.settings.gh_text1 | default: 'A moment of the day when light becomes warmer, rarer, and closer to your skin.' }}</p>
+      <p class="lf-gh-text">{{ section.settings.gh_text2 | default: 'Here begins the rituals, stories, and gestures you discover before anyone else.' }}</p>
       
       {%- form 'customer', class: 'lf-newsletter-form' -%}
         <input type="hidden" name="contact[tags]" value="newsletter">
         <input type="hidden" name="return_to" value="/pages/golden-hour">
         <div class="lf-input-group">
-          <input type="email" name="contact[email]" placeholder="{{ section.settings.newsletter_placeholder | default: 'Adresa ta de e-mail' }}" required>
+          <input type="email" name="contact[email]" placeholder="{{ section.settings.newsletter_placeholder | default: 'Your email address' }}" required>
           <svg class="lf-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
         </div>
         <button type="submit" class="lf-submit-btn">
-          {{ section.settings.newsletter_btn_text | default: 'REGĂSEȘTE GOLDEN HOUR' }}
+          {{ section.settings.newsletter_btn_text | default: 'ENTER GOLDEN HOUR' }}
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       {%- endform -%}
@@ -581,8 +581,8 @@
         <svg viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="16.5" cy="18.5" r="2.5"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat1_title | default: 'LIVRARE GRATUITĂ' }}</h4>
-        <p>{{ section.settings.feat1_text | default: 'pentru comenzi<br>peste XXX lei' }}</p>
+        <h4>{{ section.settings.feat1_title | default: 'COMPLIMENTARY SHIPPING' }}</h4>
+        <p>{{ section.settings.feat1_text | default: 'On orders over €150' }}</p>
       </div>
     </div>
     <div class="lf-feature-block">
@@ -590,8 +590,8 @@
         <svg viewBox="0 0 24 24"><path d="M22 12c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2c2.76 0 5.26 1.12 7.07 2.93"/><path d="M14 5h5v5"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat2_title | default: 'RETUR ÎN 30 ZILE' }}</h4>
-        <p>{{ section.settings.feat2_text | default: 'Simplu, rapid<br>și fără griji.' }}</p>
+        <h4>{{ section.settings.feat2_title | default: '30-DAY RETURNS' }}</h4>
+        <p>{{ section.settings.feat2_text | default: 'Effortless, insured,<br>and worry-free.' }}</p>
       </div>
     </div>
     <div class="lf-feature-block">
@@ -599,7 +599,7 @@
         <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><path d="M1 10h22"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat3_title | default: 'PLĂȚI SECURIZATE' }}</h4>
+        <h4>{{ section.settings.feat3_title | default: 'SECURE PAYMENTS' }}</h4>
         <p>{{ section.settings.feat3_text | default: 'Visa &bull; Mastercard &bull; Apple Pay<br>Google Pay &bull; PayPal &bull; Klarna' }}</p>
       </div>
     </div>
@@ -608,7 +608,7 @@
         <svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1v-4h3v2zM3 19a2 2 0 002 2h1v-4H3v2z"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat4_title | default: 'ASISTENȚĂ' }}</h4>
+        <h4>{{ section.settings.feat4_title | default: 'CONCIERGE & SUPPORT' }}</h4>
         <p><a href="mailto:{{ section.settings.feat4_email | default: 'office@luminaeuropa.com' }}">{{ section.settings.feat4_email | default: 'office@luminaeuropa.com' }}</a></p>
       </div>
     </div>
@@ -617,8 +617,8 @@
         <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat5_title | default: 'DEZVOLTATĂ CU GRIJĂ ÎN EUROPA' }}</h4>
-        <p>{{ section.settings.feat5_text | default: 'Calitate, transparență<br>și responsabilitate.' }}</p>
+        <h4>{{ section.settings.feat5_title | default: 'CRAFTED WITH CARE IN EUROPE' }}</h4>
+        <p>{{ section.settings.feat5_text | default: 'Quality, transparency<br>and responsibility.' }}</p>
       </div>
     </div>
   </div>
@@ -702,7 +702,7 @@
       "type": "textarea",
       "id": "copyright",
       "label": "Copyright Text",
-      "default": "&copy; 2026 Lumina Europa.<br>Toate drepturile rezervate."
+      "default": "&copy; 2026 Lumina Europa.<br>All rights reserved."
     },
     {
       "type": "header",
@@ -712,7 +712,7 @@
       "type": "text",
       "id": "col1_title",
       "label": "Column 1 Title",
-      "default": "DESCOPERĂ LUMINA"
+      "default": "DISCOVER LUMINA"
     },
     {
       "type": "link_list",
@@ -734,7 +734,7 @@
       "type": "text",
       "id": "col1_link2_text",
       "label": "Link 2 Text",
-      "default": "Tehnologia Nanofibrelor"
+      "default": "Tehnologia Nanofiberslor"
     },
     {
       "type": "url",
@@ -745,7 +745,7 @@
       "type": "text",
       "id": "col1_link3_text",
       "label": "Link 3 Text",
-      "default": "Cum se folosește"
+      "default": "How to use it"
     },
     {
       "type": "url",
@@ -756,7 +756,7 @@
       "type": "text",
       "id": "col1_link4_text",
       "label": "Link 4 Text",
-      "default": "Ingrediente Active"
+      "default": "Active Ingredients"
     },
     {
       "type": "url",
@@ -787,13 +787,13 @@
     },
     {
       "type": "header",
-      "content": "Column 2: Colecții & Ritualuri"
+      "content": "Column 2: Collections & Rituals"
     },
     {
       "type": "text",
       "id": "col2_title",
       "label": "Column 2 Title",
-      "default": "COLECȚII & RITUALURI"
+      "default": "COLLECTIONS & RITUALS"
     },
     {
       "type": "text",
@@ -810,7 +810,7 @@
       "type": "text",
       "id": "col2_sub1_link1_text",
       "label": "Produse Link 1 Text",
-      "default": "Măști cu Nanofibre"
+      "default": "Masks with Nanofibers"
     },
     {
       "type": "url",
@@ -821,7 +821,7 @@
       "type": "text",
       "id": "col2_sub1_link2_text",
       "label": "Produse Link 2 Text",
-      "default": "Sprayuri pentru Față"
+      "default": "Sprayuri pentru Face"
     },
     {
       "type": "url",
@@ -865,7 +865,7 @@
       "type": "text",
       "id": "col2_sub2_link1_text",
       "label": "Ritualuri Link 1 Text",
-      "default": "Ritual de Dimineață"
+      "default": "Morning Ritual"
     },
     {
       "type": "url",
@@ -876,7 +876,7 @@
       "type": "text",
       "id": "col2_sub2_link2_text",
       "label": "Ritualuri Link 2 Text",
-      "default": "Ritual de Seară"
+      "default": "Evening Ritual"
     },
     {
       "type": "url",
@@ -957,7 +957,7 @@
       "type": "text",
       "id": "col3_link5_text",
       "label": "Link 5 Text",
-      "default": "Întrebări Frecvente"
+      "default": "Frequently Asked Questions"
     },
     {
       "type": "url",
@@ -994,7 +994,7 @@
       "type": "text",
       "id": "col4_link1_text",
       "label": "Link 1 Text",
-      "default": "Termeni și Condiții"
+      "default": "Terms and Conditions"
     },
     {
       "type": "url",
@@ -1005,7 +1005,7 @@
       "type": "text",
       "id": "col4_link2_text",
       "label": "Link 2 Text",
-      "default": "Politica de Confidențialitate"
+      "default": "Privacy Policy"
     },
     {
       "type": "url",
@@ -1027,7 +1027,7 @@
       "type": "text",
       "id": "col4_link4_text",
       "label": "Link 4 Text",
-      "default": "Politica de Retur"
+      "default": "Return Policy"
     },
     {
       "type": "url",
@@ -1038,7 +1038,7 @@
       "type": "text",
       "id": "col4_link5_text",
       "label": "Link 5 Text",
-      "default": "Politica de Livrare"
+      "default": "Shipping Policy"
     },
     {
       "type": "url",
@@ -1070,25 +1070,25 @@
       "type": "textarea",
       "id": "gh_text1",
       "label": "Paragraph 1",
-      "default": "Un moment al zilei în care lumina devine mai caldă, mai rară, mai aproape de piele."
+      "default": "A moment of the day when light becomes warmer, rarer, and closer to your skin."
     },
     {
       "type": "textarea",
       "id": "gh_text2",
       "label": "Paragraph 2",
-      "default": "Aici încep ritualurile, poveștile și gesturile pe care le descoperi înaintea celorlalți."
+      "default": "Here begins the rituals, stories, and gestures you discover before anyone else."
     },
     {
       "type": "text",
       "id": "newsletter_placeholder",
       "label": "Input Placeholder",
-      "default": "Adresa ta de e-mail"
+      "default": "Your email address"
     },
     {
       "type": "text",
       "id": "newsletter_btn_text",
       "label": "Button Text",
-      "default": "REGĂSEȘTE GOLDEN HOUR"
+      "default": "ENTER GOLDEN HOUR"
     },
     {
       "type": "header",
@@ -1137,31 +1137,31 @@
       "type": "text",
       "id": "feat1_title",
       "label": "Feature 1 Title",
-      "default": "LIVRARE GRATUITĂ"
+      "default": "COMPLIMENTARY SHIPPING"
     },
     {
       "type": "textarea",
       "id": "feat1_text",
       "label": "Feature 1 Subtitle",
-      "default": "pentru comenzi<br>peste XXX lei"
+      "default": "On orders over €150"
     },
     {
       "type": "text",
       "id": "feat2_title",
       "label": "Feature 2 Title",
-      "default": "RETUR ÎN 30 ZILE"
+      "default": "30-DAY RETURNS"
     },
     {
       "type": "textarea",
       "id": "feat2_text",
       "label": "Feature 2 Subtitle",
-      "default": "Simplu, rapid<br>și fără griji."
+      "default": "Effortless, insured,<br>and worry-free."
     },
     {
       "type": "text",
       "id": "feat3_title",
       "label": "Feature 3 Title",
-      "default": "PLĂȚI SECURIZATE"
+      "default": "SECURE PAYMENTS"
     },
     {
       "type": "textarea",
@@ -1173,7 +1173,7 @@
       "type": "text",
       "id": "feat4_title",
       "label": "Feature 4 Title",
-      "default": "ASISTENȚĂ"
+      "default": "CONCIERGE & SUPPORT"
     },
     {
       "type": "text",
@@ -1185,13 +1185,13 @@
       "type": "text",
       "id": "feat5_title",
       "label": "Feature 5 Title",
-      "default": "DEZVOLTATĂ CU GRIJĂ ÎN EUROPA"
+      "default": "CRAFTED WITH CARE IN EUROPE"
     },
     {
       "type": "textarea",
       "id": "feat5_text",
       "label": "Feature 5 Subtitle",
-      "default": "Calitate, transparență<br>și responsabilitate."
+      "default": "Quality, transparency<br>and responsibility."
     },
     {
       "type": "header",

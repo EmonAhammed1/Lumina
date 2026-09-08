@@ -13,17 +13,17 @@
     assign collectionTitle2 = section.settings.collection_title2
     assign collectionTitle3 = section.settings.collection_title3
     if collectionTitle1 == blank 
-    assign collectionTitle1 = featured_collection1.title | default: 'Titlu colecție'
+    assign collectionTitle1 = featured_collection1.title | default: 'Collection title'
     else 
     assign collectionTitle1 = section.settings.collection_title1
     endif
     if collectionTitle2 == blank 
-    assign collectionTitle2 = featured_collection2.title | default: 'Titlu colecție'
+    assign collectionTitle2 = featured_collection2.title | default: 'Collection title'
     else 
     assign collectionTitle2 = section.settings.collection_title2
     endif
     if collectionTitle3 == blank 
-    assign collectionTitle3 = featured_collection3.title | default: 'Titlu colecție'
+    assign collectionTitle3 = featured_collection3.title | default: 'Collection title'
     else 
     assign collectionTitle3 = section.settings.collection_title3
     endif

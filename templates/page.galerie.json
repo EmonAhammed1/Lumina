@@ -13,7 +13,7 @@
           "settings": {
             "image": "shopify://shop_images/img-1.png",
             "author_name": "Elena Vancea",
-            "location": "Florența, Italia",
+            "location": "Florence, Italy",
             "social_platform": "instagram",
             "social_url": "https://instagram.com"
           }
@@ -33,7 +33,7 @@
           "settings": {
             "image": "shopify://shop_images/img-3.png",
             "author_name": "Sophie Laurent",
-            "location": "Paris, Franța",
+            "location": "Paris, France",
             "social_platform": "instagram",
             "social_url": "https://instagram.com"
           }
@@ -43,7 +43,7 @@
           "settings": {
             "image": "shopify://shop_images/img-4.png",
             "author_name": "Andrei Popa",
-            "location": "Brașov, România",
+            "location": "Brasov, Romania",
             "social_platform": "facebook",
             "social_url": "https://facebook.com"
           }
@@ -63,7 +63,7 @@
           "settings": {
             "image": "shopify://shop_images/img-6.png",
             "author_name": "Chiara Bianchi",
-            "location": "Veneția, Italia",
+            "location": "Venice, Italy",
             "social_platform": "instagram",
             "social_url": "https://instagram.com"
           }
@@ -73,7 +73,7 @@
           "settings": {
             "image": "shopify://shop_images/img-7.png",
             "author_name": "Gabriel Ionescu",
-            "location": "Sibiu, România",
+            "location": "Sibiu, Romania",
             "social_platform": "instagram",
             "social_url": "https://instagram.com"
           }
@@ -113,7 +113,7 @@
           "settings": {
             "image": "shopify://shop_images/img-11.png",
             "author_name": "Clara Dupont",
-            "location": "Nisa, Franța",
+            "location": "Nice, France",
             "social_platform": "instagram",
             "social_url": "https://instagram.com"
           }
@@ -123,7 +123,7 @@
           "settings": {
             "image": "shopify://shop_images/img-12.png",
             "author_name": "Stefan Radu",
-            "location": "Cluj-Napoca, România",
+            "location": "Cluj-Napoca, Romania",
             "social_platform": "youtube",
             "social_url": "https://youtube.com"
           }
@@ -143,7 +143,7 @@
           "settings": {
             "image": "shopify://shop_images/img-2.png",
             "author_name": "Hugo Martin",
-            "location": "Bordeaux, Franța",
+            "location": "Bordeaux, France",
             "social_platform": "instagram",
             "social_url": "https://instagram.com"
           }
@@ -173,7 +173,7 @@
           "settings": {
             "image": "shopify://shop_images/img-5.png",
             "author_name": "Diana Dumitru",
-            "location": "Timișoara, România",
+            "location": "Timisoara, Romania",
             "social_platform": "instagram",
             "social_url": "https://instagram.com"
           }
@@ -212,10 +212,10 @@
       "settings": {
         "bg_color": "#040404",
         "eyebrow": "GALERIE LUMINA",
-        "title": "Umanitate în Lumină",
-        "description": "Povești vizuale din întreaga Europă. Momente autentice de lumină, arhitectură, natură și oameni, surprinse de comunitatea Lumina.",
+        "title": "Humanity in the Light",
+        "description": "Visual stories from across Europe. Authentic moments of light, architecture, nature and people, captured by the Lumina community.",
         "show_upload_btn": true,
-        "upload_btn_label": "TRIMITE FOTOGRAFIA TA"
+        "upload_btn_label": "SUBMIT YOUR PHOTO"
       }
     }
   },

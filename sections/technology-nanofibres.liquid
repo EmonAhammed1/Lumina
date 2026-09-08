@@ -62,7 +62,7 @@
           {% if section.settings.image != blank %}
             <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}" loading="lazy">
           {% else %}
-            <img src="{{ 'nano-fiber-stracture.webp' | asset_url }}" alt="Nanofibre Technology" loading="lazy">
+            <img src="{{ 'nano-fiber-stracture.webp' | asset_url }}" alt="Nanofibers Technology" loading="lazy">
           {% endif %}
         </div>
       </div>
@@ -83,15 +83,21 @@
 
 {% schema %}
 {
-  "name": "Technology Nanofibres",
+  "name": "Technology Nanofiberss",
   "settings": [
     {
       "type": "select",
       "id": "image_position",
       "label": "Desktop Image Position",
       "options": [
-        {"value": "left", "label": "Left"},
-        {"value": "right", "label": "Right"}
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
       ],
       "default": "left"
     },
@@ -110,7 +116,7 @@
       "type": "richtext",
       "id": "text",
       "label": "Body Text",
-      "default": "<p>Nanofibres are extremely fine fibres arranged into a light, delicate matrix. In Lumina masks, this microscopic structure carries the formula in a dry format rather than suspending it in a conventional liquid-soaked sheet. When activated with the recommended amount of water or facial mist, the structure begins to dissolve, releasing the formula across the skin.</p>"
+      "default": "<p>Nanofiberss are extremely fine fibres arranged into a light, delicate matrix. In Lumina masks, this microscopic structure carries the formula in a dry format rather than suspending it in a conventional liquid-soaked sheet. When activated with the recommended amount of water or facial mist, the structure begins to dissolve, releasing the formula across the skin.</p>"
     },
     {
       "type": "text",
@@ -121,7 +127,7 @@
   ],
   "presets": [
     {
-      "name": "Technology Nanofibres"
+      "name": "Technology Nanofiberss"
     }
   ]
 }

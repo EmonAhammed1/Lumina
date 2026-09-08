@@ -15,7 +15,7 @@
     "sectionheading": "heading-1",
     "loading": "border",
     "favicon": "shopify://shop_images/lumina_europa_favicon.webp",
-    "meta_description": "Șablonul Shopify Lumina Europa cu aspecte și stiluri multiple vă permite să creați structuri diferite și să satisfaceți cerințele specifice pentru diverse tipuri de afaceri.",
+    "meta_description": "Lumina Europa Shopify template with multiple layouts and styles allows you to create different structures and meet specific requirements for various types of businesses.",
     "enable_radius_allimg": true,
     "color_primary": "#B8963E",
     "color_secondary": "#B8963E",
@@ -119,11 +119,11 @@
     "share_facebook": true,
     "share_twitter": true,
     "share_pinterest": true,
-    "sidebar_html_title_top": "Despre autor",
+    "sidebar_html_title_top": "About the author",
     "sidebar_html_top": "<img src=\"https://cdn.shopify.com/s/files/1/0781/3637/7664/files/team-img5-1.jpg?v=1691246978\">\n<p class=\"mt-2\">Etiam vel magna sed leo feugiat cursus. Cras mollis blandit dolor. Praesent vulputate justo quis volutpat pharetra. Suspendisse</p>",
     "sidebar_tag": true,
     "sidebar_post": true,
-    "sidebar_post_title": "Postare recentă",
+    "sidebar_post_title": "Recent Post",
     "sidebar_post_limit": 3,
     "sidebar_html_title": "",
     "sidebar_html": "<a href=\"#\"> <img class=\"lybn-lazyload lazyload\" alt=\"banner blog\" loading=\"lazy\" data-src=\"https://cdn.shopify.com/s/files/1/0781/3637/7664/files/169699320_203975937820072_6948305125395007791_n.jpg?v=1691255806\">\n</a>",
@@ -131,7 +131,7 @@
     "enable_wishlsit": true,
     "page_wishlist": "wishlist",
     "enable_popuptext": true,
-    "enable_popuptext_new": "Obține 15% reducere",
+    "enable_popuptext_new": "Get 15% off",
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": true,
     "productgrid": "product-10",
@@ -163,7 +163,7 @@
     "label_text2": "Nou",
     "label_bg2": "#ffffff",
     "label_cl2": "#224b0c",
-    "label_text3": "Cel mai vândut",
+    "label_text3": "Best seller",
     "label_bg3": "#ffffff",
     "label_cl3": "#dfa069",
     "sold_bg": "#ffffff",
@@ -184,7 +184,7 @@
     "svg_cart": "cart-2",
     "cartdraw": true,
     "e_notecart": true,
-    "title_upsell": "S-ar putea să-ți placă și",
+    "title_upsell": "You might also like",
     "product_list": [
       "after-sun-gel",
       "baby-balm",
@@ -193,12 +193,12 @@
     ],
     "product_gift": "the-gift-card",
     "coupon_code_enable": true,
-    "coupon_code_title": "Listă cupoane",
-    "coupon_code_content": "<p><strong>Pose</strong> → 20% reducere la toate colecțiile</p><p>Codul promoțional se aplică la finalizarea comenzii</p>",
+    "coupon_code_title": "Coupon list",
+    "coupon_code_content": "<p><strong>Pose</strong>→ 20% off all collections</p><p> Promo code applies at checkout </p>",
     "free_shipping_enable": true,
     "free_shipping_value": 1000,
-    "free_end": "pentru Transport Gratuit",
-    "free_shipping_text": "Comanda ta are livrare gratuită!",
+    "free_end": "for Free Shipping",
+    "free_shipping_text": "Your order has free shipping!",
     "shipping_calculator": true,
     "enable_term": true,
     "agree_text": "Sunt de acord cu",
@@ -224,15 +224,15 @@
     "opacity_password": 0.5,
     "image_404": "",
     "found_text_color": "#303030",
-    "found_html": "Ups! Această pagină nu poate fi găsită.",
-    "sub_404": "Se pare că nu a fost găsit nimic la această adresă. Încercați o căutare?",
-    "found_btnleft_text": "Mergi la cumpărături",
+    "found_html": "Oops! This page cannot be found.",
+    "sub_404": "It looks like nothing was found at this address. Trying a search?",
+    "found_btnleft_text": "Go shopping",
     "found_btnleft_link": "shopify://collections/all",
     "safe_checkout_detail": "",
     "color_button_bg": "#1C1C1E",
-    "crosssell_title": "Cumpărate frecvent împreună",
-    "upsell_accept": "Adaugă în coș",
-    "upsell_decline": "Nu, mulțumesc",
+    "crosssell_title": "Frequently purchased together",
+    "upsell_accept": "Add to cart",
+    "upsell_decline": "No thanks",
     "upsell_time": 1.5,
     "gradient_enable": false,
     "gradient_start": "#1C1C1E",
@@ -252,15 +252,15 @@
     "enable_countdown_page": true,
     "footer": "footer-1",
     "pnewsletter": "pnewsletter-3",
-    "shipping_button": "Informații de livrare",
+    "shipping_button": "Delivery information",
     "page_shipping": "",
     "show_multiple_currencies": true,
     "list_currencies": "EUR,AUD,GBP,JPY,INR",
     "cookie_enable": true,
-    "cookie_message": "Acest site folosește cookie-uri pentru a vă asigura o experiență optimă pe site-ul nostru.",
+    "cookie_message": "This site uses cookies to ensure you have the best experience on our site.",
     "cookie_url": "shopify://pages/html-template",
-    "cookie_url_text": "Află mai multe",
-    "cookie_ok": "Am înțeles!",
+    "cookie_url_text": "Learn more",
+    "cookie_ok": "I got it!",
     "header": "header-4",
     "collectiongrid": "collection-1",
     "bloggrid": "blog-1",
@@ -302,13 +302,13 @@
     "supported_currencies_9": "",
     "supported_currencies_10": "",
     "popupnewsletter": "newsletter-1",
-    "cookie_messange": "Acest site folosește cookie-uri pentru a vă asigura o experiență optimă pe site-ul nostru.",
+    "cookie_messange": "This site uses cookies to ensure you have the best experience on our site.",
     "apmenuitem_nproduct_1": 6,
     "apmenuitem_nproduct_2": 1,
     "apmenuitem_nproduct_3": 2,
     "apmenuitem_nproduct_4": 2,
     "apmenuitem_nproduct_5": 2,
-    "crosssell_accept": "Da, permite-mi să selectez varianta",
+    "crosssell_accept": "Yes, let me select the option",
     "categories_block_style": "show_all",
     "shop_by_vendor_custom_enable": false,
     "shop_by_type_custom_enable": false,
@@ -339,10 +339,10 @@
     "upsell_title": "",
     "enable_countdown": true,
     "shop_by_size_enable": true,
-    "shop_by_size_title": "Mărime",
+    "shop_by_size_title": "Size",
     "shop_by_size_list": "L,M,N,S,XS",
     "shop_by_price_enable": true,
-    "shop_by_price_title": "Preț",
+    "shop_by_price_title": "Price",
     "shop_by_price_list": "$50 - $100,$100 - $200,$200 - $400,Above $400",
     "sidebar_style_moblie": "accordion_sidebar",
     "categories_block_class": "",
@@ -436,7 +436,7 @@
         "settings": {
           "enable": false,
           "duration": 8,
-          "text": "Cineva a cumpărat recent",
+          "text": "Someone recently bought",
           "verify": "Verificat"
         }
       },
@@ -489,13 +489,13 @@
               "gradient_overlay": false,
               "bg_overlay": "#000000",
               "opacity_overlay": 0.1,
-              "slide_toptitle": "Economisește 50%",
+              "slide_toptitle": "Save 50%",
               "slide_toptitle_color": "#094a6e",
-              "slide_title": "Cumpără <br> Modă pentru Femei",
+              "slide_title": "Shop<br>Women's Fashion",
               "slide_title_color": "#094a6e",
-              "subheading": "Descoperă cele mai noi echipamente sport pentru femei",
+              "subheading": "Discover the latest sports equipment for women",
               "subheading_color": "#094a6e",
-              "button_label": "Cumpără colecții",
+              "button_label": "Shop collections",
               "button_link": "shopify://collections/tools",
               "stylebtns": "btn-outline",
               "bg_button": "#094a6e",
@@ -524,11 +524,11 @@
               "opacity_overlay": 0,
               "slide_toptitle": "Sutiene realimentate",
               "slide_toptitle_color": "#094a6e",
-              "slide_title": "Găsește ținuta perfectă <br>pentru antrenament",
+              "slide_title": "Find the perfect<br>workout outfit",
               "slide_title_color": "#094a6e",
-              "subheading": "Când îți miști corpul, poți mișca lumea.",
+              "subheading": "When you move your body, you can move the world.",
               "subheading_color": "#094a6e",
-              "button_label": "Descoperă acum",
+              "button_label": "Discover Now",
               "button_link": "shopify://collections/baby",
               "stylebtns": "btn-outline",
               "bg_button": "#094a6e",
@@ -555,13 +555,13 @@
               "gradient_overlay": false,
               "bg_overlay": "#000000",
               "opacity_overlay": 0.4,
-              "slide_toptitle": "noutăți premium",
+              "slide_toptitle": "premium news",
               "slide_toptitle_color": "#ffffff",
-              "slide_title": "Cumpără articole premium <br>sport pentru femei",
+              "slide_title": "Shop premium<br>sportswear for women",
               "slide_title_color": "#ffffff",
-              "subheading": "Cele mai noi lansări din selecția noastră săptămânală.",
+              "subheading": "The latest releases from our weekly selection.",
               "subheading_color": "#fcf9f3",
-              "button_label": "cumpără acum",
+              "button_label": "shop now",
               "button_link": "shopify://collections/all",
               "stylebtns": "btn-outline",
               "bg_button": "#ffffff",
@@ -623,7 +623,7 @@
             "settings": {
               "image": "shopify://shop_images/team2.jpg",
               "name": "Ian Watt",
-              "position": "Director de animație și efecte vizuale",
+              "position": "Animation and Visual Effects Director",
               "twitter": "https://twitter.com/",
               "google": "https://plus.google.com",
               "facebook": "https://www.facebook.com/",
@@ -671,7 +671,7 @@
             "settings": {
               "image": "shopify://shop_images/team8.jpg",
               "name": "Erin Noel",
-              "position": "Director de operațiuni",
+              "position": "Director of Operations",
               "twitter": "https://twitter.com/",
               "google": "https://plus.google.com",
               "facebook": "https://www.facebook.com/",
@@ -729,7 +729,7 @@
         "settings": {
           "animation": "fade-up",
           "setwidth": "container",
-          "title": "Echipa Noastră",
+          "title": "Our team",
           "items": "3",
           "layout": "2"
         }
@@ -970,7 +970,7 @@
             "type": "photo",
             "settings": {
               "image": "",
-              "title": "Colecție de top",
+              "title": "Top collection",
               "link": "shopify://collections/tops"
             }
           },
@@ -978,7 +978,7 @@
             "type": "photo",
             "settings": {
               "image": "",
-              "title": "Echipa noastră",
+              "title": "Our team",
               "link": "shopify://pages/team-member"
             }
           },
@@ -994,7 +994,7 @@
             "type": "photo",
             "settings": {
               "image": "",
-              "title": "Povestea noastră",
+              "title": "Our story",
               "link": "shopify://pages/our-story"
             }
           },
@@ -1018,7 +1018,7 @@
             "type": "photo",
             "settings": {
               "image": "",
-              "title": "Despre noi",
+              "title": "About Us",
               "link": "shopify://pages/about-v1"
             }
           },
@@ -1081,13 +1081,13 @@
               "alignment": "center center",
               "text_alignment": "center center",
               "bgwrap": "#d1e0c9",
-              "slide_toptitle": "CEL MAI VÂNDUT FAVORIT AL FAMILIEI",
+              "slide_toptitle": "THE BEST SELLING FAMILY FAVORITE",
               "slide_toptitle_color": "#094a6e",
-              "slide_title": "Șervețele umede pentru bebeluși",
+              "slide_title": "Baby wipes",
               "slide_title_color": "#094a6e",
-              "subheading": "Delicate, hidratante, perfecte pentru pielea sensibilă — șervețelele noastre sunt mereu alegerea ideală.",
+              "subheading": "Gentle, moisturizing, perfect for sensitive skin — our wipes are always the ideal choice.",
               "subheading_color": "#094a6e",
-              "button_label": "Cumpără șervețele",
+              "button_label": "Buy tissues",
               "button_link": "#",
               "stylebtns": "btn-theme",
               "bg_button": "#094a6e",
@@ -1112,13 +1112,13 @@
               "alignment": "center center",
               "text_alignment": "center center",
               "bgwrap": "#efe0ca",
-              "slide_toptitle": "DESCOPERĂ SQUALANE",
+              "slide_toptitle": "DISCOVER SQUALANE",
               "slide_toptitle_color": "#094a6e",
-              "slide_title": "Bazat pe <br> Știință Curată",
+              "slide_title": "Based on<br>Pure Science",
               "slide_title_color": "#094a6e",
-              "subheading": "În centrul tuturor formulelor noastre se află squalanul nostru brevetat, un supererou hidratant pe care pielea bebelușului îl cunoaște și îl iubește deja.",
+              "subheading": "At the heart of all our formulas is our patented squalane, a hydrating superhero that baby's skin already knows and loves.",
               "subheading_color": "#094a6e",
-              "button_label": "Cumpără șervețele",
+              "button_label": "Buy tissues",
               "button_link": "shopify://collections",
               "stylebtns": "btn-theme",
               "bg_button": "#094a6e",
@@ -1180,7 +1180,7 @@
               "slide_title_color": "#f5e08f",
               "subheading": "",
               "subheading_color": "#ffffff",
-              "button_label": "Colecție",
+              "button_label": "Collection",
               "button_link": "shopify://collections/all",
               "stylebtns": "btn-theme",
               "bg_button": "#f9d633",
@@ -1247,11 +1247,11 @@
               "opacity_overlay": 0.4,
               "slide_toptitle": "",
               "slide_toptitle_color": "#ffffff",
-              "slide_title": "Tenul Tău<br>Strălucește.<br>Lumina Europa",
+              "slide_title": "Your Skin<br>Glows.<br>Light Europe",
               "slide_title_color": "#f5e08f",
               "subheading": "",
               "subheading_color": "#ffffff",
-              "button_label": "Descoperă",
+              "button_label": "Discover",
               "button_link": "shopify://collections",
               "stylebtns": "btn-theme",
               "bg_button": "#f9d633",
@@ -1281,7 +1281,7 @@
               "opacity_overlay": 0.1,
               "slide_toptitle": "",
               "slide_toptitle_color": "#999999",
-              "slide_title": "Strălucire europeană. <br>Ritualul.",
+              "slide_title": "European brilliance.<br>The ritual.",
               "slide_title_color": "#F5E08F",
               "subheading": "",
               "subheading_color": "#ffffff",
@@ -1405,7 +1405,7 @@
           "1587654247564": {
             "type": "html",
             "settings": {
-              "code": "<div class=\"py-2 mt-5 pr-md-5\">\n<div class=\"subtop mb-3\">Simplu și ușor</div>\n<h2 class=\"mb-3\">Aruncă o privire \npe profilul nostru</h2>\n<div class=\"mb-5\">Apparently we had reached a great height in the atmosphere, for the sky was \na dead black and there a stars.</div>\n<a href=\"#\" class=\"btn btn-theme\">Cere o ofertă</a>\n</div>",
+              "code": "<div class=\"py-2 mt-5 pr-md-5\"><div class=\"subtop mb-3\">Simple and easy</div><h2 class=\"mb-3\"> Take a look \non our profile</h2><div class=\"mb-5\"> Apparently we had reached a great height in the atmosphere, for the sky was \na dead black and there a stars.</div><a href=\"#\" class=\"btn btn-theme\"> Request a quote</a></div>",
               "width": "33%",
               "align": "auto"
             }
@@ -1532,7 +1532,7 @@
           "bgsection": "#f4f1eb",
           "colorborder": "#222222",
           "title_top": "",
-          "title": "Înscrie-te pe listă.",
+          "title": "Sign up for the list.",
           "des": "Apparently we had reached a great height in the atmosphere, for the sky was a dead black and there a stars.",
           "paddingsection": "120px 0px 100px 0px",
           "paddingmobile": "60px 0px 60px 0px",
@@ -1572,23 +1572,23 @@
           "opacity_password": 0.4,
           "logo": "shopify://shop_images/logowhite.png",
           "logo_max_width": "150",
-          "header": "Lansăm în curând!"
+          "header": "Launching soon!"
         }
       },
       "password-content": {
         "type": "password-content",
         "settings": {
           "newsletter_enable": true,
-          "newsletter_form_heading": "Fii primul care află când ne lansăm.",
-          "newsletter_form_subheading": "<p>Promoții, produse noi și reduceri. Direct în căsuța ta poștală.</p>",
-          "newsletter_placeholder": "Adresă de e-mail"
+          "newsletter_form_heading": "Be the first to know when we launch.",
+          "newsletter_form_subheading": "<p> Promotions, new products and discounts. Directly to your mailbox. </p>",
+          "newsletter_placeholder": "Email address"
         }
       },
       "password-footer": {
         "type": "password-footer",
         "settings": {
           "show_share_buttons": true,
-          "social_message": "Dă vestea mai departe"
+          "social_message": "Spread the word"
         }
       },
       "16485444103c52f5e9": {
@@ -1616,8 +1616,8 @@
             "type": "service",
             "settings": {
               "bgblock": "rgba(0,0,0,0)",
-              "title": "Retur și Rambursare",
-              "description": "Rambursare în termen de 30 de zile",
+              "title": "Return and Refund",
+              "description": "Refund within 30 days",
               "icon": "<svg width=\"24\" height=\"24\" viewbox=\"0 0 24 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">     <path d=\"M18.9998 3H4V16.5791H15.2498C15.2482 16.6394 15.2442 16.6994 15.2382 16.7589C15.1038 18.0758 13.9578 19.0859 12.5417 19.0859H7.33342L8.52693 17.9219L8.22989 17.629L6.55146 19.2949L8.22975 21L8.52678 20.7071L7.33342 19.5039H12.5417C14.2517 19.5039 15.6271 18.2109 15.6666 16.5792H19L18.9998 3ZM18.5832 5.92479H13.3749V3.41778H18.5832V5.92479ZM10.0416 3.41778H12.9582V8.97176L11.4999 7.50944L10.0416 8.97176V3.41778ZM9.625 3.41778V5.92465L4.41674 5.92479V3.41778L9.625 3.41778ZM15.6666 16.1612C15.4939 14.633 14.1109 13.4454 12.5416 13.4454H11.0833V13.8631H12.5416C13.8807 13.8631 15.0794 14.8643 15.25 16.1612H4.41677V6.3425H9.62504V9.98049L11.4999 8.10039L13.3748 9.98049L13.375 6.3425H18.5832V16.1612H15.6666Z\" fill=\"currentColor\"></path>     </svg>"
             }
           },
@@ -1675,7 +1675,7 @@
           "title": "",
           "des": "",
           "colortext": "#ffffff",
-          "colhtml1": "<div class=\"d-flex justify-content-start align-items-center flex-lg-row flex-column text-center\">\n<span class=\"subtop text-xl-right mr-lg-4\">spring 2022 | <br> New in</span>\n<h3>Colecție Nouă <br>\nReady to Wear</h3>\n</div>",
+          "colhtml1": "<div class=\"d-flex justify-content-start align-items-center flex-lg-row flex-column text-center\"><span class=\"subtop text-xl-right mr-lg-4\">spring 2022 |<br>New in</span><h3> New Collection<br>Ready to Wear</h3></div>",
           "collection1": "accessories",
           "collection_title1": "",
           "image1": "shopify://shop_images/h1-banner01.jpg",
@@ -1685,7 +1685,7 @@
           "collection3": "men",
           "collection_title3": "",
           "image3": "shopify://shop_images/h1-banner02.jpg",
-          "colhtml2": "<div class=\"text-center\">\n<div class=\"font-family-3 fs-140\">Magazin de modă</div>\n<p>Descoperă mai multe despre produsele noastre.</p>\n<a class=\"btn btn-underline\" href=\"#\"> Explorează acum <i class=\"icon-arrow-right\"></i></a>\n</div>",
+          "colhtml2": "<div class=\"text-center\"><div class=\"font-family-3 fs-140\">Fashion Store</div><p> Discover more about our products.</p><a class=\"btn btn-underline\" href=\"#\"> Explore now<i class=\"icon-arrow-right\"></i></a></div>",
           "paddingsection": "100px 0px 100px 0px",
           "paddingmobile": "60px 0px 60px 0px",
           "marginsection": "0px 0px 0px 0px",
@@ -1698,21 +1698,21 @@
           "166012224636496bd8-0": {
             "type": "collection",
             "settings": {
-              "title": "Cele mai vândute",
+              "title": "Bestsellers",
               "collection": "women"
             }
           },
           "166012224636496bd8-1": {
             "type": "collection",
             "settings": {
-              "title": "Noutăți",
+              "title": "News",
               "collection": ""
             }
           },
           "166012224636496bd8-2": {
             "type": "collection",
             "settings": {
-              "title": "Produse la reducere",
+              "title": "Products on sale",
               "collection": ""
             }
           }
@@ -1727,7 +1727,7 @@
           "setwidth": "container",
           "bgsection": "#ffffff",
           "title_top": "",
-          "title": "Produse în tendințe",
+          "title": "Trending products",
           "des": "",
           "arrows": true,
           "draggable": true,
@@ -1751,7 +1751,7 @@
           "bgsection": "#ffffff",
           "title_top": "",
           "title": "Ultimele articole de pe blog",
-          "des": "Abonează-te pentru cele mai noi știri și actualizări de pe blog.",
+          "des": "Subscribe for the latest news and updates from the blog.",
           "blog": "news",
           "arrows": true,
           "draggable": true,
@@ -1849,8 +1849,8 @@
           "setwidth": "container",
           "bgsection": "#ffffff",
           "title_top": "",
-          "title": "Noutăți",
-          "des": "Precomandă acum pentru a primi oferte și cadouri exclusive",
+          "title": "News",
+          "des": "Pre-order now to receive exclusive offers and gifts",
           "collection": "handbags",
           "limit": 10,
           "perviewDesktop": 3,
@@ -1872,13 +1872,13 @@
           "setwidth": "container",
           "bgsection": "#ffffff",
           "title_top": "Subtitlu",
-          "title": "Listă produse",
+          "title": "List of products",
           "des": "",
           "collection": "",
           "padding": true,
           "colgrid": "col-lg-3",
           "rows": 4,
-          "txtbutton": "vezi toate",
+          "txtbutton": "see all",
           "urlbtn": "",
           "paddingsection": "0px 0px 0px 0px",
           "paddingmobile": "60px 0px 60px 0px",
@@ -1894,7 +1894,7 @@
             "settings": {
               "image1": "shopify://shop_images/h1-banner04.jpg",
               "radius_image": "250px 250px 0px 0px",
-              "html_bottom": "<div class=\"text-center mt-lg-n5\">\n<div class=\"mt-lg-n5 font-family-3 fs-140\">Colecție Nouă</div>\n</div>",
+              "html_bottom": "<div class=\"text-center mt-lg-n5\"><div class=\"mt-lg-n5 font-family-3 fs-140\">New Collection</div></div>",
               "image2": "shopify://shop_images/h1-bg02.png",
               "e_pos": "top-right",
               "bg_block": "#fffaf2"
@@ -1949,7 +1949,7 @@
             "settings": {
               "image1": "shopify://shop_images/h1-banner05.jpg",
               "radius_image": "250px 250px 0px 0px",
-              "html_bottom": "<div class=\"text-center mt-lg-n5\">\n<div class=\"mt-lg-n5 font-family-3 fs-140\">Colecție de primăvară</div>\n</div>",
+              "html_bottom": "<div class=\"text-center mt-lg-n5\"><div class=\"mt-lg-n5 font-family-3 fs-140\">Spring Collection</div></div>",
               "image2": "shopify://shop_images/h1-bg03.png",
               "e_pos": "bottom-right",
               "bg_block": "#fef1f0"
@@ -2154,16 +2154,16 @@
               "menu_banner_height": 300,
               "menu_banner_size_title": "h4",
               "menu_banner_position_text_1": "bot-left",
-              "menu_banner_subheading_1": "Toate stilurile",
+              "menu_banner_subheading_1": "All styles",
               "menu_banner_heading_1": "Minim 65% reducere",
               "menu_banner_paragraph_1": "",
-              "menu_banner_btn_1": "Descoperă acum",
+              "menu_banner_btn_1": "Discover Now",
               "menu_banner_link_1": "shopify://collections",
               "menu_banner_position_text_2": "bot-left",
               "menu_banner_subheading_2": "Lingerie",
-              "menu_banner_heading_2": "50% reducere fixă",
+              "menu_banner_heading_2": "50% fixed discount",
               "menu_banner_paragraph_2": "",
-              "menu_banner_btn_2": "Descoperă acum",
+              "menu_banner_btn_2": "Discover Now",
               "menu_banner_link_2": "shopify://collections/all",
               "menu_banner_position_text_3": "mid-center",
               "menu_banner_subheading_3": "Subtitlu 3",
@@ -2182,10 +2182,10 @@
               "enable_menu_banner": true,
               "image_size": "wide",
               "menu_banner_width": 30,
-              "menu_banner_html_1": "<h5 class=\"mb-0\">50% reducere fixă</h5>\n<p>Produsele noastre sunt create pentru toată lumea.</p>",
-              "menu_banner_btn_1": "Cumpără acum",
+              "menu_banner_html_1": "<h5 class=\"mb-0\"> 50% flat discount</h5><p> Our products are made for everyone. </p>",
+              "menu_banner_btn_1": "Shop Now",
               "menu_banner_link_1": "shopify://collections",
-              "menu_banner_html_2": "<h5 class=\"mb-0\">50% reducere fixă</h5>\n<p>sss</p>",
+              "menu_banner_html_2": "<h5 class=\"mb-0\"> 50% flat discount</h5><p> sss </p>",
               "menu_banner_btn_2": "",
               "menu_banner_link_2": "",
               "menu_banner_html_3": "",
@@ -2262,12 +2262,12 @@
           "cookie_style": "style-1",
           "cookie_background": "#002d45",
           "cookie_color": "#ffffff",
-          "cookie_message": "<div class=\"subtop mb-1\"> Politica de cookie-uri </div>\nAcest site folosește cookie-uri pentru a vă asigura o experiență optimă pe site-ul nostru.",
+          "cookie_message": "<div class=\"subtop mb-1\"> Cookie Policy</div>This site uses cookies to ensure you have the best experience on our site.",
           "cookie_url": "shopify://pages/privacy-policy",
-          "cookie_url_text": "Citește politica de confidențialitate",
-          "cookie_ok": "acceptă tot",
+          "cookie_url_text": "Read the privacy policy",
+          "cookie_ok": "accept everything",
           "style_btn": "btn-theme btn-white",
-          "decline": "Refuză",
+          "decline": "Refuse",
           "decline_style_btn": "btn-outline btn-outline-white"
         }
       },
@@ -2281,13 +2281,13 @@
           "pnewletter_time_delay": 3,
           "pnewletter_time": 20,
           "pnewletter_background": "#ffffff",
-          "subtitle": "PRIMA DATĂ AICI?",
-          "pnewletter_title": "Înregistrează-te și economisește 15%",
+          "subtitle": "FIRST TIME HERE?",
+          "pnewletter_title": "Register and save 15%",
           "pnewletter_title_cl": "",
           "pnew_size_heading": "h3",
           "pnewletter_description": "<p>Subscribe to our newsletter and enjoy 15% off your first order. </p>",
           "pnewletter_description_cl": "",
-          "button": "Obține oferta",
+          "button": "Get the offer",
           "pnewletter_description_sub": "By completing this form, you are signing up to receive our emails and can unsubscribe at any time"
         }
       },
@@ -2298,8 +2298,8 @@
             "type": "text",
             "settings": {
               "widthlogofooter": 150,
-              "title": "Comandă rapidă",
-              "text": "<div class=\"pr-lg-5 rte\">\n<p class=\"mb-0 font-family-1 fz-6\">(877) 834-1434\n</p>\n<p class=\"mb-0\">\nsupport@luminaeuropa.ro\n</p>\n<p class=\"mb-2\">Găsește cel mai apropiat magazin. \nVezi <a href=\"#\">Magazinele Noastre</a></p>\n</div>",
+              "title": "Quick order",
+              "text": "<div class=\"pr-lg-5 rte\"><p class=\"mb-0 font-family-1 fz-6\">(877) 834-1434</p><p class=\"mb-0\"> \nsupport@luminaeuropa.ro</p><p class=\"mb-2\"> Find the nearest store. \nSee<a href=\"#\">Our Stores</a></p> \n </div>",
               "width": "25%"
             }
           },
@@ -2333,7 +2333,7 @@
               "btn_cl_new": "#f4efe9",
               "btn_cl_new_hover": "#ffffff",
               "title": "NEWSLETTER",
-              "subheading": "<p>Obține o reducere de 10% la prima comandă.</p>",
+              "subheading": "<p> Get 10% off your first order. </p>",
               "enablesocial": true,
               "width": "25%"
             }
@@ -2395,7 +2395,7 @@
           "6c70d747-d776-44a5-82eb-82a48a247d9d": {
             "type": "color",
             "settings": {
-              "name_color": "Fără parfum",
+              "name_color": "No fragrance",
               "name_color_hex": "#d7e5ce"
             }
           },
@@ -2444,7 +2444,7 @@
           "47165633-889c-4d24-b442-6fde82f41553": {
             "type": "color",
             "settings": {
-              "name_color": "Piele ecologică",
+              "name_color": "Ecological leather",
               "name_color_hex": "#f2d7c0"
             }
           },
@@ -2458,7 +2458,7 @@
           "ac9cba68-0f0d-4522-8e9e-374c0bddc793": {
             "type": "color",
             "settings": {
-              "name_color": "Negru + Fildeș",
+              "name_color": "Black + Ivory",
               "name_color_hex": "#ffffff"
             }
           },
@@ -2479,7 +2479,7 @@
           "ab56cffa-f0f1-4bc0-bc68-d4cb454fd6e0": {
             "type": "color",
             "settings": {
-              "name_color": "Cărbune de bambus",
+              "name_color": "Bamboo charcoal",
               "name_color_hex": "#000000"
             }
           },
@@ -2500,7 +2500,7 @@
           "8e3c94b5-4434-4ca8-9a95-91dde9e5a721": {
             "type": "color",
             "settings": {
-              "name_color": "Albastru furtună",
+              "name_color": "Blue storm",
               "name_color_hex": "#000000"
             }
           },
@@ -2632,7 +2632,7 @@
       "apmenuitem_video_mute_1": false,
       "apmenuitem_eproduct_1": true,
       "apmenuitem_columns_blockproducts_1": "3",
-      "apmenuitem_tproduct_1": "Colecție",
+      "apmenuitem_tproduct_1": "Collection",
       "apmenuitem_cproduct_1": "new-arrivals",
       "apmenuitem_ehtml_1": false,
       "apmenuitem_columns_blockhtml_1": "9",
@@ -2738,7 +2738,7 @@
       "share_pinterest": true,
       "categories_block_enable": true,
       "categories_block_productcount": true,
-      "categories_block_title": "Colecții",
+      "categories_block_title": "Collections",
       "categories_block_number": "10",
       "categories_block_items": "",
       "shop_by_vendor_enable": true,
@@ -2750,10 +2750,10 @@
       "shop_by_type_number": "10",
       "shop_by_type_custom_list": "",
       "price_range_enable": true,
-      "price_range_title": "Interval de preț",
+      "price_range_title": "Price range",
       "shop_by_catalog_enable": true,
       "shop_by_catalog_title": "",
-      "filter_title_1": "Mărime",
+      "filter_title_1": "Size",
       "filter_list_1": "tiny,small,medium,large,big",
       "filter_title_2": "Material",
       "filter_list_2": "pimas,supima,polyester,linen,organic cotton",
@@ -2781,9 +2781,9 @@
       "shop_by_color_text_18": "",
       "shop_by_color_text_19": "",
       "shop_by_color_text_20": "",
-      "crosssell_title": "CUMPĂRATE FRECVENT ÎMPREUNĂ",
-      "upsell_accept": "Da, permite-mi să selectez variantele",
-      "upsell_decline": "Nu, mulțumesc",
+      "crosssell_title": "FREQUENTLY SHOP TOGETHER",
+      "upsell_accept": "Yes, let me select the options",
+      "upsell_decline": "No thanks",
       "upsell_time": 2.5,
       "free_shipping_enable": true,
       "free_shipping_value": 200,
@@ -2822,7 +2822,7 @@
       "apmenuitem_nproduct_3": 2,
       "apmenuitem_nproduct_4": 2,
       "apmenuitem_nproduct_5": 2,
-      "crosssell_accept": "Da, permite-mi să selectez varianta",
+      "crosssell_accept": "Yes, let me select the option",
       "categories_block_style": "show_all",
       "shop_by_vendor_custom_enable": false,
       "shop_by_type_custom_enable": false,
@@ -2853,10 +2853,10 @@
       "upsell_title": "",
       "enable_countdown": true,
       "shop_by_size_enable": true,
-      "shop_by_size_title": "Mărime",
+      "shop_by_size_title": "Size",
       "shop_by_size_list": "L,M,N,S,XS",
       "shop_by_price_enable": true,
-      "shop_by_price_title": "Preț",
+      "shop_by_price_title": "Price",
       "shop_by_price_list": "$50 - $100,$100 - $200,$200 - $400,Above $400",
       "sidebar_style_moblie": "accordion_sidebar",
       "categories_block_class": "",
@@ -2950,7 +2950,7 @@
           "settings": {
             "enable": true,
             "duration": 10,
-            "text": "Cineva a cumpărat recent"
+            "text": "Someone recently bought"
           }
         },
         "recently-viewed": {
@@ -2998,7 +2998,7 @@
           "settings": {
             "stock_enable": true,
             "sizeguide_enable": false,
-            "sizeguide_title": "Ghid de mărimi",
+            "sizeguide_title": "Size guide",
             "sizeguide_page": "size-guide"
           }
         },
@@ -3015,7 +3015,7 @@
                 "slide_title_color": "#ffffff",
                 "subheading": "40 off everything",
                 "subheading_color": "#ffffff",
-                "button_label": "Cumpără acum",
+                "button_label": "Shop Now",
                 "button_link": "shopify://products/libero-quis"
               }
             },
@@ -3063,7 +3063,7 @@
               "settings": {
                 "image": "shopify://shop_images/1_3.jpg",
                 "name": "Ian Watt",
-                "position": "Director de animație și efecte vizuale",
+                "position": "Animation and Visual Effects Director",
                 "twitter": "https://twitter.com/",
                 "google": "https://plus.google.com",
                 "facebook": "https://www.facebook.com/",
@@ -3111,7 +3111,7 @@
               "settings": {
                 "image": "shopify://shop_images/2_6.jpg",
                 "name": "Erin Noel",
-                "position": "Director de operațiuni",
+                "position": "Director of Operations",
                 "twitter": "https://twitter.com/",
                 "google": "https://plus.google.com",
                 "facebook": "https://www.facebook.com/",
@@ -3206,7 +3206,7 @@
             "1561565136083"
           ],
           "settings": {
-            "title": "Echipa Noastră",
+            "title": "Our team",
             "items": "4",
             "layout": "4"
           }
@@ -3246,7 +3246,7 @@
             "1562225765606"
           ],
           "settings": {
-            "title": "Partener Platină"
+            "title": "Platinum Partner"
           }
         },
         "page-brands": {

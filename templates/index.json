@@ -27,10 +27,10 @@
         "color_heading_2": "#b8963e",
         "color_text": "#cccccc",
         "color_line": "#b8963e",
-        "subtitle": "EXPERIENȚA LUMINA EUROPA",
-        "heading_1": "Experimentează pielea",
-        "heading_2": "care se simte renăscută.",
-        "des": "<p>Alimentat de tehnologia avansată a nanofibrelor, Lumina Europa îți transformă ritualul de îngrijire a pielii într-un moment de reînnoire vizibilă. Experimentează o hidratare profundă, o textură mai fină și o strălucire radiantă menită să-ți lase pielea revigorată, fermă și frumos revitalizată.</p>",
+        "subtitle": "EXPERIENCE LIGHT EUROPE",
+        "heading_1": "Experience the skin",
+        "heading_2": "who feels reborn.",
+        "des": "<p> Powered by advanced nanofiber technology, Lumina Europa transforms your skin care ritual into a moment of visible renewal. Experience deep hydration, smoother texture and a radiant glow designed to leave your skin refreshed, firm and beautifully revitalized. </p>",
         "button_label": "",
         "button_link": "",
         "style_btn": "btn-theme",
@@ -47,24 +47,24 @@
           "type": "benefit",
           "settings": {
             "image": "shopify://shop_images/nano-fiber-stracture.webp",
-            "title": "STRUCTURĂ DE NANOFIBRE",
-            "description": "Fibrele ultra-fine creează o matrice respirabilă."
+            "title": "NANOFIBER STRUCTURE",
+            "description": "Ultra-fine fibers create a breathable matrix."
           }
         },
         "benefit_2": {
           "type": "benefit",
           "settings": {
             "image": "shopify://shop_images/active-ingredients.webp",
-            "title": "INGREDIENTE ACTIVE",
-            "description": "Încapsulate pentru o eficiență maximă."
+            "title": "ACTIVE INGREDIENTS",
+            "description": "Encapsulated for maximum efficiency."
           }
         },
         "benefit_3": {
           "type": "benefit",
           "settings": {
             "image": "shopify://shop_images/deep-penetration.webp",
-            "title": "Absorbție în profunzime",
-            "description": "Livrează ingrediente active dincolo de suprafață."
+            "title": "Deep absorption",
+            "description": "Delivers active ingredients beyond the surface."
           }
         },
         "benefit_4": {
@@ -72,7 +72,7 @@
           "settings": {
             "image": "shopify://shop_images/ChatGPT_Image_Aug_10_2026_03_22_12_PM.png",
             "title": "REZULTATE VIZIBILE",
-            "description": "Piele mai sănătoasă, mai luminoasă și revitalizată."
+            "description": "Healthier, brighter and revitalized skin."
           }
         },
         "stat_1": {
@@ -87,16 +87,16 @@
           "type": "stat",
           "settings": {
             "icon": "shopify://shop_images/pure_by_design.jpg",
-            "title": "Absorbție până la 92%",
-            "subtitle": "Livrare Îmbunătățită"
+            "title": "Up to 92% absorption",
+            "subtitle": "Improved Delivery"
           }
         },
         "stat_3": {
           "type": "stat",
           "settings": {
             "icon": "shopify://shop_images/Pure_active_delivery.jpg",
-            "title": "0% Conservanți",
-            "subtitle": "Formulă Pură și Sigură"
+            "title": "0% Conservatives",
+            "subtitle": "Pure and Safe Formula"
           }
         },
         "stat_4": {
@@ -104,7 +104,7 @@
           "settings": {
             "icon": "shopify://shop_images/WhatsApp_Image_2026-07-09_at_14.32.17.jpg",
             "title": "Testat Clinic",
-            "subtitle": "Performanță Avansată"
+            "subtitle": "Advanced Performance"
           }
         }
       },
@@ -140,8 +140,8 @@
           "settings": {
             "show_icon": false,
             "number": "",
-            "title": "TEHNOLOGIE AVANSATĂ CU NANOFIBRE",
-            "description": "Prin electrofilare, ingredientele active sunt integrate într-o matrice uscată de nanofibre care, la contactul cu apa, permite un transfer de până la 92% al ingredientelor active în piele"
+            "title": "ADVANCED NANOFIBER TECHNOLOGY",
+            "description": "Through electrospinning, the active ingredients are integrated into a dry matrix of nanofibers which, upon contact with water, allows up to 92% of the active ingredients to be transferred to the skin"
           }
         }
       },
@@ -151,16 +151,16 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container-fluid",
-        "subtitle": "TEHNOLOGIE AVANSATĂ",
+        "subtitle": "ADVANCED TECHNOLOGY",
         "heading_1": "Tehnologia cu nanofibre care",
-        "heading_2": "transformă îngrijirea pielii",
+        "heading_2": "transform skin care",
         "des": "",
-        "button_label": "EXPLOREAZĂ TEHNOLOGIA →",
+        "button_label": "EXPLORE THE TECHNOLOGY →",
         "button_link": "shopify://collections/all",
         "watch_label": "",
         "watch_link": "#",
         "video_url": "Visual 1. What are nanofibres_.mov",
-        "badge_text": "TEHNOLOGIE AVANSATĂ CU NANOFIBRE •",
+        "badge_text": "ADVANCED NANOFIBER TECHNOLOGY •",
         "bg_text_col": "#010101",
         "bg_card": "#0d0d0f",
         "bgsection": "#010101",
@@ -182,29 +182,29 @@
         "feature_1": {
           "type": "feature",
           "settings": {
-            "title": "TEHNOLOGIE CU NANOFIBRE",
-            "description": "Fibrele ultra-fine creează mii de micro-canale pentru o absorbție maximă."
+            "title": "NANOFIBER TECHNOLOGY",
+            "description": "Ultra-fine fibers create thousands of micro-channels for maximum absorption."
           }
         },
         "feature_2": {
           "type": "feature",
           "settings": {
-            "title": "ABSORBȚIE PROFUNDĂ",
-            "description": "Livrează ingrediente active profund în piele pentru rezultate puternice și vizibile."
+            "title": "DEEP ABSORPTION",
+            "description": "Delivers active ingredients deep into the skin for powerful and visible results."
           }
         },
         "feature_3": {
           "type": "feature",
           "settings": {
-            "title": "LIFTING VIZIBIL ȘI FERMITATE",
-            "description": "Îmbunătățește elasticitatea, netezește liniile fine și restabilește contururile tinerești."
+            "title": "VISIBLE LIFTING AND FIRMNESS",
+            "description": "Improves elasticity, smoothes fine lines and restores youthful contours."
           }
         },
         "feature_4": {
           "type": "feature",
           "settings": {
-            "title": "TRANSFORMARE RADIANTĂ",
-            "description": "Hidratează, luminează și revigorează pielea pentru o strălucire sănătoasă și luminoasă."
+            "title": "RADIANT TRANSFORMATION",
+            "description": "Moisturizes, brightens and revitalizes skin for a healthy, luminous glow."
           }
         }
       },
@@ -241,7 +241,7 @@
           "type": "step_1",
           "settings": {
             "area_value": "face",
-            "title": "Ten (Față)",
+            "title": "Face",
             "bg_image": "shopify://shop_images/Ten.png"
           }
         },
@@ -249,7 +249,7 @@
           "type": "step_1",
           "settings": {
             "area_value": "eyes",
-            "title": "Ochi",
+            "title": "Eyes",
             "bg_image": "shopify://shop_images/Ochi.png"
           }
         },
@@ -257,7 +257,7 @@
           "type": "step_1",
           "settings": {
             "area_value": "neck",
-            "title": "Gât",
+            "title": "Neck",
             "bg_image": "shopify://shop_images/Gat.png"
           }
         },
@@ -265,7 +265,7 @@
           "type": "step_1",
           "settings": {
             "area_value": "decollete",
-            "title": "Decolteu",
+            "title": "Décolleté",
             "bg_image": "shopify://shop_images/Decolteu.png"
           }
         },
@@ -273,7 +273,7 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Calmare pentru Ten Sensibil",
+            "goal": "Soothing for Sensitive Skin",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-skin-smoothing-sheet-mask"
           }
@@ -282,7 +282,7 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Hidratare Profundă",
+            "goal": "Deep Hydration",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-hydrating-sheet-mask"
           }
@@ -291,7 +291,7 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Reîmprospătare (Mist)",
+            "goal": "Refresh (Mist)",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-hydro-mist-cu-acid-hialuronic"
           }
@@ -300,7 +300,7 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Eliminare Pete și Uniformizare",
+            "goal": "Stain Removal and Uniformity",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-brightening-sheet-mask"
           }
@@ -309,16 +309,16 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Luminozitate Intensă",
+            "goal": "Intense Brightness",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-masca-șervețel-intensiva-pentru-luminozitate"
+            "product": "nano-beauty-pro-intensive-wipe-mask-for-luminosity"
           }
         },
         "match_6": {
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Prevenire Îmbătrânire",
+            "goal": "Prevention Aging",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-anty-aging-sheet-mask"
           }
@@ -336,16 +336,16 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Fermitate și Lifting",
+            "goal": "Firmness and Lifting",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
+            "product": "nano-beauty-pro-collagen-face-mask-for-lifting"
           }
         },
         "match_9": {
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Regenerare și Reparare",
+            "goal": "Regeneration and Repair",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-regenerating-sheet-mask"
           }
@@ -354,9 +354,9 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Revitalizare și Energie",
+            "goal": "Revitalization and Energy",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-masca-șervețel-intensiva-pentru-luminozitate"
+            "product": "nano-beauty-pro-intensive-wipe-mask-for-luminosity"
           }
         },
         "match_10": {
@@ -365,7 +365,7 @@
             "area": "eyes",
             "goal": "",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-masca-anti-imbatranire-pentru-ochi"
+            "product": "nano-beauty-pro-anti-aging-eye-mask"
           }
         },
         "match_11": {
@@ -374,7 +374,7 @@
             "area": "neck",
             "goal": "",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-masca-anti-imbatranire-pentru-gat"
+            "product": "nano-beauty-pro-anti-aging-neck-mask"
           }
         },
         "match_12": {
@@ -383,7 +383,7 @@
             "area": "decollete",
             "goal": "",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-masca-anti-imbatranire-pentru-decolteu"
+            "product": "nano-beauty-pro-anti-aging-mask-for-décolletage"
           }
         }
       },
@@ -407,9 +407,9 @@
         "match_12"
       ],
       "settings": {
-        "subtitle": "Personalizează-ți îngrijirea",
-        "title": "Găsește-ți Ritualul Perfect",
-        "description": "Fiecare zonă a pielii tale are nevoi unice. Alege zona pe care vrei să o tratezi...",
+        "subtitle": "Personalize your care",
+        "title": "Find Your Perfect Ritual",
+        "description": "Each area of ​​your skin has unique needs. Choose the area you want to treat...",
         "bg_color": "#000000",
         "bg_image": "shopify://shop_images/quiz-section.png"
       }
@@ -474,8 +474,8 @@
         "animation": "fade-up",
         "setwidth": "container",
         "bgsection": "rgba(0,0,0,0)",
-        "title_top": "Știință Curată",
-        "title": "Cumpără Cadouri după Preț",
+        "title_top": "Pure Science",
+        "title": "Shop Gifts by Price",
         "des": "",
         "align-heading": "center",
         "stylecollection": "name",
@@ -504,7 +504,7 @@
         "ea17822d-21c0-4d5d-816f-3bcf700f6031": {
           "type": "button",
           "settings": {
-            "button": "Descoperă acum",
+            "button": "Discover Now",
             "link": "shopify://collections/all",
             "style_btn": "btn-underline btn-underline-white"
           }
@@ -541,13 +541,13 @@
             "width": "100%",
             "bgtext": "rgba(0,0,0,0)",
             "title_color": "rgba(0,0,0,0)",
-            "subtitle": "Pentru Toată Lumea",
-            "title": "Exfoliază, Curăță, Echilibrează.",
+            "subtitle": "For the Whole World",
+            "title": "Exfoliate, Cleanse, Balance.",
             "size_text": "h2",
             "text": "",
-            "answer_content": "<p>O combinație de argile naturale și ingrediente bogate în nutrienți care curăță și reechilibrează pielea.</p>",
+            "answer_content": "<p> A combination of natural clays and nutrient-rich ingredients that cleanse and rebalance the skin. </p>",
             "style_btn": "btn-theme",
-            "button": "Purifică-ți Pielea",
+            "button": "Purify your skin",
             "link": "shopify://collections/skin-care",
             "enable_padding": false,
             "align": "left"
@@ -591,15 +591,15 @@
         "setwidth": "container-fluid",
         "bgsection": "rgba(0,0,0,0)",
         "title_top": "",
-        "title": "Cele Mai Vândute",
-        "des": "Descoperă ce urmează în lumea Lumina — noi ritualuri, lansări, povești și perspective despre piele, lumină și îngrijire.",
+        "title": "Bestsellers",
+        "des": "Discover what's next in the world of Light — new rituals, releases, stories and insights about skin, light and care.",
         "align-heading": "center",
         "collection": "gift-sets",
         "enable_creative": false,
         "padding": true,
         "colgrid": "col-lg-3",
         "rows": 8,
-        "txtbutton": "Vezi toate",
+        "txtbutton": "View All",
         "urlbtn": "shopify://collections",
         "style_btn": "btn-outline",
         "paddingsection": "80px 0px 80px 0px",
@@ -621,7 +621,7 @@
         "title_color": "rgba(0,0,0,0)",
         "title_top": "",
         "title": "Cele Mai Populare Seturi",
-        "des": "Aer uscat, fără griji—datorită spălării noastre\nultra-hidratante și extra-delicate.",
+        "des": "Dry air, worry-free—thanks to our wash\nultra-moisturizing and extra-gentle.",
         "align-heading": "center",
         "collection": "pregnancy",
         "limit": 8,
@@ -638,9 +638,9 @@
         "subtitle_banner": "Subtitlu",
         "title_banner": "Titlu Banner",
         "size_text": "h2",
-        "des_banner": "Protecție pentru",
+        "des_banner": "Protection for",
         "pos_banner": "mid-center",
-        "button_banner": "Descoperă acum",
+        "button_banner": "Discover Now",
         "link_banner": "",
         "style_btn_banner": "btn-underline btn-underline-white",
         "text_banner_color": "#ffffff",
@@ -660,7 +660,7 @@
         "bgsection": "#010101",
         "title_top": "",
         "title": "Pe Blog",
-        "des": "Descoperă ce urmează în lumea Lumina — noi ritualuri, lansări, povești și perspective despre piele, lumină și îngrijire.",
+        "des": "Discover what's next in the world of Light — new rituals, releases, stories and insights about skin, light and care.",
         "align-heading": "center",
         "blog": "news",
         "item_style": "blog-1",
@@ -738,9 +738,9 @@
         "animation": "fade-up",
         "setwidth": "container-fluid",
         "bgsection": "rgba(0,0,0,0)",
-        "title_top": "Urmărește-ne",
+        "title_top": "Follow us",
         "title": "@LUMINAEUROPA",
-        "des": "Alătură-te conversației cu #LuminaEuropa",
+        "des": "Join the conversation with #LuminaEuropa",
         "align-heading": "center",
         "image_size": "square",
         "arrows": false,

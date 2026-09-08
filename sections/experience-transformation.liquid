@@ -224,8 +224,8 @@
     {%- endif -%}
 
     {%- if is_intensive -%}
-      {%- assign dynamic_title = "Transformarea în 5 minute" -%}
-      {%- assign dynamic_bottom_text = "5 minute care schimbă totul. 5 minute să redescoperi Lumina ta." -%}
+      {%- assign dynamic_title = "The 5-Minute Transformation" -%}
+      {%- assign dynamic_bottom_text = "5 minutes that transform everything. 5 minutes to rediscover your light." -%}
       {%- assign dynamic_col_3_time = "05:00" -%}
     {%- else -%}
       {%- assign dynamic_title = section.settings.section_title -%}
@@ -342,10 +342,22 @@
       "type": "select",
       "id": "animation",
       "options": [
-        { "value": "", "label": "None" },
-        { "value": "fade", "label": "Fade" },
-        { "value": "fade-up", "label": "Fade Up" },
-        { "value": "fade-down", "label": "Fade Down" }
+        {
+          "value": "",
+          "label": "None"
+        },
+        {
+          "value": "fade",
+          "label": "Fade"
+        },
+        {
+          "value": "fade-up",
+          "label": "Fade Up"
+        },
+        {
+          "value": "fade-down",
+          "label": "Fade Down"
+        }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -356,9 +368,18 @@
       "label": "Section Width",
       "default": "container-fluid",
       "options": [
-        { "value": "container", "label": "Box" },
-        { "value": "container-fluid", "label": "Container Fluid" },
-        { "value": "full", "label": "Full" }
+        {
+          "value": "container",
+          "label": "Box"
+        },
+        {
+          "value": "container-fluid",
+          "label": "Container Fluid"
+        },
+        {
+          "value": "full",
+          "label": "Full"
+        }
       ]
     },
     {
@@ -371,7 +392,7 @@
       "type": "text",
       "id": "section_title",
       "label": "Section Title",
-      "default": "Transformarea în 8 minute"
+      "default": "Transformation in 8 minutes"
     },
     {
       "type": "checkbox",
@@ -398,13 +419,13 @@
       "type": "text",
       "id": "col_1_title",
       "label": "Column 1 Title",
-      "default": "DIFUZIE ACTIVĂ PURĂ"
+      "default": "PURE ACTIVE DIFFUSION"
     },
     {
       "type": "richtext",
       "id": "col_1_text",
       "label": "Column 1 Text",
-      "default": "<p><strong>Tehnologie uscată</strong> - Nanofibrele se activează doar la contactul cu pielea umedă, eliminând risipa de produs.</p>"
+      "default": "<p><strong>Dry technology</strong> - Nanofibers activate only when in contact with wet skin, eliminating product wastage.</p>"
     },
     {
       "type": "header",
@@ -431,7 +452,7 @@
       "type": "richtext",
       "id": "col_2_text",
       "label": "Column 2 Text",
-      "default": "<p>Transfer direct al ingredientelor în derm, oferind rezultate de 10x mai rapide decât măștile clasice.</p>"
+      "default": "<p>Direct transfer of ingredients into the dermis, offering results 10x faster than classic masks.</p>"
     },
     {
       "type": "header",
@@ -458,7 +479,7 @@
       "type": "richtext",
       "id": "col_3_text",
       "label": "Column 3 Text",
-      "default": "<p>Formula pură, fără parabeni, parfumuri sau conservanți. Ideală pentru tenul sensibil.</p>"
+      "default": "<p>Pure formula, without parabens, fragrances or preservatives. Ideal for sensitive skin.</p>"
     },
     {
       "type": "header",
@@ -468,7 +489,7 @@
       "type": "text",
       "id": "bottom_text",
       "label": "Bottom Bar Text",
-      "default": "8 MINUTE CARE SCHIMBĂ TOTUL. REZULTATE VIZIBILE CARE DUREAZĂ."
+      "default": "8 MINUTES THAT CHANGE EVERYTHING. VISIBLE RESULTS THAT LAST."
     }
   ],
   "presets": [

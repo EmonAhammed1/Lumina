@@ -12,7 +12,7 @@
     type="button"
     id="MaskMenuQuickTrigger"
     class="mask-menu-quick-trigger"
-    aria-label="Deschide meniul măștilor"
+    aria-label="Open Mask Menu"
   >
     <span class="mask-menu-quick-trigger__arrow" aria-hidden="true">&#8250;</span>
   </button>
@@ -20,7 +20,7 @@
   <!-- The Slide-out Sidebar -->
   <div id="MaskSidebar" class="mask-sidebar">
     <div class="mask-sidebar__header">
-      <h3 class="mask-sidebar__title">{{ section.settings.sidebar_title | default: 'Colecție Măști' }}</h3>
+      <h3 class="mask-sidebar__title">{{ section.settings.sidebar_title | default: 'Masks Collection' }}</h3>
       <div class="mask-sidebar__divider"></div>
       <button type="button" id="MaskSidebarClose" class="mask-sidebar__close" aria-label="Close">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 6L6 18M6 6l12 12"></path></svg>
@@ -41,7 +41,7 @@
           {%- endfor -%}
         </ul>
       {%- else -%}
-        <p class="mask-sidebar__empty">Selectați un meniu din setările secțiunii.</p>
+        <p class="mask-sidebar__empty">Please select a menu in section settings.</p>
       {%- endif -%}
     </div>
   </div>
@@ -337,7 +337,7 @@
       "type": "text",
       "id": "sidebar_title",
       "label": "Sidebar Title",
-      "default": "Colecție Măști"
+      "default": "Masks Collection"
     },
     {
       "type": "link_list",

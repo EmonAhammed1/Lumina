@@ -18,13 +18,13 @@
         "51d3f50d-bcba-402f-95d5-20214fb273d7": {
           "type": "sub_title",
           "settings": {
-            "subtitle": "Povestea noastră"
+            "subtitle": "Our story"
           }
         },
         "af48e0ff-444a-4c43-9139-a13191c919b0": {
           "type": "heading",
           "settings": {
-            "title": "Creat pentru bebeluși. Creat pentru tine.",
+            "title": "Made for babies. Created for you.",
             "size_text": "h1"
           }
         },
@@ -172,7 +172,7 @@
         "1640249067277694fd-0": {
           "type": "html",
           "settings": {
-            "code": "<div class=\"pl-lg-5\">\n<span class=\"subtop\">IDENTITATEA NOASTRĂ </span>\n<h2 class=\"mt-3 mb-3\">Thoughtfully Made,\nInside & Out</h2>\n<p class=\"mb-5\">\nOn the outside, our products are beautifully designed and radically simple—because we understand that just because you’re a parent, it doesn’t mean you have to sacrifice your identity. On the inside, our clean formulas are carefully made to nurture and support skin.\n</p>\n<a class=\"btn btn-theme\" href=\"#\"> Read more</a>\n</div>",
+            "code": "<div class=\"pl-lg-5\"><span class=\"subtop\">OUR IDENTITY</span><h2 class=\"mt-3 mb-3\"> Thoughtfully Made,\nInside & Out</h2><p class=\"mb-5\"> \nOn the outside, our products are beautifully designed and radically simple—because we understand that just because you're a parent, it doesn't mean you have to sacrifice your identity. On the inside, our clean formulas are carefully made to nurture and support skin.</p><a class=\"btn btn-theme\" href=\"#\"> Read more</a></div>",
             "width": "50%",
             "align": "center"
           }
@@ -212,7 +212,7 @@
         "c5976c2d-45e2-4242-b36d-dd21688fe650": {
           "type": "html",
           "settings": {
-            "code": "<div class=\"pl-lg-5 pr-lg-5\">\n<span class=\"subtop\">INGREDIENTUL NOSTRU CHEIE</span>\n<h2 class=\"mt-3 mb-3\">Powered by Moisturizing Squalane™</h2>\n<p class=\"mb-5\">\nOur proprietary sugarcane-derived squalane is a perfect moisturizer for babies (literally!): A version of it is found in the vernix, the best skin protection Mother Nature can give to newborns. You’ll find squalane’s moisturizing superpowers in every one of our products, from baby balm to sunscreen to kids’ hair care.\n</p>\n<a class=\"btn btn-theme\" href=\"#\"> Read more</a>\n</div>",
+            "code": "<div class=\"pl-lg-5 pr-lg-5\"><span class=\"subtop\">OUR KEY INGREDIENT</span><h2 class=\"mt-3 mb-3\"> Powered by Moisturizing Squalane™</h2><p class=\"mb-5\"> \nOur proprietary sugarcane-derived squalane is a perfect moisturizer for babies (literally!): A version of it is found in the vernix, the best skin protection Mother Nature can give to newborns. You'll find squalane's moisturizing superpowers in every one of our products, from baby balm to sunscreen to kids' hair care.</p><a class=\"btn btn-theme\" href=\"#\"> Read more</a></div>",
             "width": "50%",
             "align": "center"
           }
@@ -334,7 +334,7 @@
           "type": "quote",
           "settings": {
             "title": "Awesome",
-            "quote": "<h4>„Ador Lola! Este unul dintre brandurile mele preferate. Serviciul clienți este excelent. Am returnat produse o singură dată și a fost foarte simplu.”</h4>",
+            "quote": "<h4> \"I love Lola! It's one of my favorite brands. Customer service is great. I've only returned products once and it was very easy.\" </h4>",
             "rate": 5,
             "author": "—  Kai Felix",
             "info": "",
@@ -345,7 +345,7 @@
           "type": "quote",
           "settings": {
             "title": "perfect !",
-            "quote": "<h4>„Cei mai confortabili pantofi din toate timpurile! Îi am în 3 culori și cu siguranță voi mai cumpăra.”</h4>",
+            "quote": "<h4> \"The most comfortable shoes ever! I have them in 3 colors and will definitely buy again.\" </h4>",
             "rate": 5,
             "author": "—  Jaycie Glove",
             "info": "",
@@ -356,7 +356,7 @@
           "type": "quote",
           "settings": {
             "title": "Wonderful !",
-            "quote": "<h4>„Mi-a plăcut la nebunie. Potrivirea, calitatea și culoarea. Sunt niște blugi cu o potrivire perfectă și singurii pe care îi voi cumpăra.”</h4>",
+            "quote": "<h4> \"Loved it. The fit, the quality and the color. Perfect fit and the only jeans I will buy.\" </h4>",
             "rate": 5,
             "author": "— Susan P.",
             "info": "",
@@ -405,11 +405,11 @@
             "width": "100%",
             "bgtext": "#ffffff",
             "title_color": "rgba(0,0,0,0)",
-            "subtitle": "FORMULELE NOASTRE",
-            "title": "Cea mai bună chimie curată",
+            "subtitle": "OUR FORMULAS",
+            "title": "The best clean chemistry",
             "size_text": "h2",
             "text": "",
-            "answer_content": "<p>Produsele noastre bazate pe performanță sunt create în laboratoarele noastre de către cercetători de top cu zeci de ani de experiență. Eliminăm peste 2.000 de ingrediente potențial iritante, iar tot ce intră în formulele noastre este etic obținut, sigur și delicat.</p>",
+            "answer_content": "<p> Our performance-based products are created in our laboratories by leading researchers with decades of experience. We eliminate over 2,000 potentially irritating ingredients, and everything that goes into our formulas is ethically sourced, safe and gentle. </p>",
             "style_btn": "btn-theme",
             "button": "Read more",
             "link": "#",
@@ -510,7 +510,7 @@
             "colordef": "#ffffff",
             "opacity_bg": 0,
             "style_btn": "btn-theme btn-white",
-            "button_text": "Găsește un magazin",
+            "button_text": "Find a store",
             "button_link": "",
             "vertical": "bottom",
             "horizontal": "center",
@@ -533,7 +533,7 @@
             "colordef": "#ffffff",
             "opacity_bg": 0,
             "style_btn": "btn-theme btn-white",
-            "button_text": "Lucrează cu noi",
+            "button_text": "Work with us",
             "button_link": "",
             "vertical": "bottom",
             "horizontal": "center",
@@ -668,7 +668,7 @@
         "bgsection": "#f5ede3",
         "title_top": "",
         "title": "@Tinybabies",
-        "des": "Găsește cei mai buni influenceri de lifestyle pe Instagram de urmărit.",
+        "des": "Find the best lifestyle influencers on Instagram to follow.",
         "align-heading": "center",
         "image_size": "square",
         "arrows": false,

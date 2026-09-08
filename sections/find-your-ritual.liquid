@@ -334,7 +334,7 @@
       
       <!-- STEP 1: Select Area -->
       <div class="ritual-screen is-active" id="ritual-step-1">
-        <h3 class="ritual-question">Ce zonă dorești să tratezi?</h3>
+        <h3 class="ritual-question">Which area would you like to treat?</h3>
         <div class="ritual-options">
           {% assign step_1_blocks = section.blocks | where: "type", "step_1" %}
           {% if step_1_blocks.size > 0 %}
@@ -353,28 +353,28 @@
                     {% when 'face' %}
                       <img src="{{ 'Ten.png' | asset_url }}" class="btn-bg" alt="">
                     {% when 'eyes' %}
-                      <img src="{{ 'Ochi.png' | asset_url }}" class="btn-bg" alt="">
+                      <img src="{{ 'Eyes.png' | asset_url }}" class="btn-bg" alt="">
                     {% when 'neck' %}
                       <img src="{{ 'Gat.png' | asset_url }}" class="btn-bg" alt="">
                     {% when 'decollete' %}
-                      <img src="{{ 'Decolteu.png' | asset_url }}" class="btn-bg" alt="">
+                      <img src="{{ 'Décolleté.png' | asset_url }}" class="btn-bg" alt="">
                   {% endcase %}
                 {% endif %}
               </button>
             {% endfor %}
           {% else %}
             <!-- Fallback if no blocks added -->
-            <button class="ritual-btn" data-area="face">Ten (Față)</button>
-            <button class="ritual-btn" data-area="eyes">Ochi</button>
-            <button class="ritual-btn" data-area="neck">Gât</button>
-            <button class="ritual-btn" data-area="decollete">Decolteu</button>
+            <button class="ritual-btn" data-area="face">Face</button>
+            <button class="ritual-btn" data-area="eyes">Eyes</button>
+            <button class="ritual-btn" data-area="neck">Neck</button>
+            <button class="ritual-btn" data-area="decollete">Décolleté</button>
           {% endif %}
         </div>
       </div>
 
       <!-- STEP 2: Select Goal (For Face Only) -->
       <div class="ritual-screen" id="ritual-step-2">
-        <h3 class="ritual-question">Care este obiectivul tău principal?</h3>
+        <h3 class="ritual-question">What is your primary skincare goal?</h3>
         <div class="ritual-options ritual-options-grid">
           {%- assign face_goals_rendered = '' -%}
           {%- for block in section.blocks -%}
@@ -399,20 +399,20 @@
           {%- endfor -%}
         </div>
         <div class="ritual-restart mt-3">
-          <button class="ritual-restart-btn" onclick="ritualGoToStep(1)">← Înapoi</button>
+          <button class="ritual-restart-btn" onclick="ritualGoToStep(1)">← Back</button>
         </div>
       </div>
 
       <!-- RESULT: Product Card -->
       <div class="ritual-screen" id="ritual-result">
-        <h3 class="ritual-question">Ritualul tău perfect:</h3>
+        <h3 class="ritual-question">Your Perfect Ritual:</h3>
         
         <div id="ritual-product-display">
           <!-- Populated by JS -->
         </div>
 
         <div class="ritual-restart">
-          <button class="ritual-restart-btn" onclick="ritualGoToStep(1)">Refaceți testul</button>
+          <button class="ritual-restart-btn" onclick="ritualGoToStep(1)">Retake Quiz</button>
         </div>
       </div>
 
@@ -503,19 +503,19 @@
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle",
-      "default": "Personalizează-ți îngrijirea"
+      "default": "Personalize your care"
     },
     {
       "type": "text",
       "id": "title",
       "label": "Title",
-      "default": "Găsește-ți Ritualul Perfect"
+      "default": "Find Your Perfect Ritual"
     },
     {
       "type": "textarea",
       "id": "description",
       "label": "Description",
-      "default": "Fiecare zonă a pielii tale are nevoi unice. Alege zona pe care vrei să o tratezi..."
+      "default": "Each area of ​​your skin has unique needs. Choose the area you want to treat..."
     },
     {
       "type": "color",
@@ -539,10 +539,22 @@
           "id": "area_value",
           "label": "Area ID",
           "options": [
-            { "value": "face", "label": "Față" },
-            { "value": "eyes", "label": "Ochi" },
-            { "value": "neck", "label": "Gât" },
-            { "value": "decollete", "label": "Decolteu" }
+            {
+              "value": "face",
+              "label": "Face"
+            },
+            {
+              "value": "eyes",
+              "label": "Eyes"
+            },
+            {
+              "value": "neck",
+              "label": "Neck"
+            },
+            {
+              "value": "decollete",
+              "label": "Décolleté"
+            }
           ],
           "default": "face"
         },
@@ -550,7 +562,7 @@
           "type": "text",
           "id": "title",
           "label": "Label",
-          "default": "Ten (Față)"
+          "default": "Face"
         },
         {
           "type": "image_picker",
@@ -573,10 +585,22 @@
           "id": "area",
           "label": "Care Area (Step 1)",
           "options": [
-            { "value": "face", "label": "Față" },
-            { "value": "eyes", "label": "Ochi" },
-            { "value": "neck", "label": "Gât" },
-            { "value": "decollete", "label": "Decolteu" }
+            {
+              "value": "face",
+              "label": "Face"
+            },
+            {
+              "value": "eyes",
+              "label": "Eyes"
+            },
+            {
+              "value": "neck",
+              "label": "Neck"
+            },
+            {
+              "value": "decollete",
+              "label": "Décolleté"
+            }
           ],
           "default": "face"
         },
@@ -609,13 +633,54 @@
     {
       "name": "Find Your Ritual Quiz",
       "blocks": [
-        { "type": "step_1", "settings": { "area_value": "face", "title": "Ten (Față)" } },
-        { "type": "step_1", "settings": { "area_value": "eyes", "title": "Ochi" } },
-        { "type": "step_1", "settings": { "area_value": "neck", "title": "Gât" } },
-        { "type": "step_1", "settings": { "area_value": "decollete", "title": "Decolteu" } },
-        { "type": "product_match", "settings": { "area": "face", "goal": "Hidratare", "goal_subtitle": "Profundă" } },
-        { "type": "product_match", "settings": { "area": "eyes" } },
-        { "type": "product_match", "settings": { "area": "neck" } }
+        {
+          "type": "step_1",
+          "settings": {
+            "area_value": "face",
+            "title": "Face"
+          }
+        },
+        {
+          "type": "step_1",
+          "settings": {
+            "area_value": "eyes",
+            "title": "Eyes"
+          }
+        },
+        {
+          "type": "step_1",
+          "settings": {
+            "area_value": "neck",
+            "title": "Neck"
+          }
+        },
+        {
+          "type": "step_1",
+          "settings": {
+            "area_value": "decollete",
+            "title": "Décolleté"
+          }
+        },
+        {
+          "type": "product_match",
+          "settings": {
+            "area": "face",
+            "goal": "Hidratare",
+            "goal_subtitle": "Deep"
+          }
+        },
+        {
+          "type": "product_match",
+          "settings": {
+            "area": "eyes"
+          }
+        },
+        {
+          "type": "product_match",
+          "settings": {
+            "area": "neck"
+          }
+        }
       ]
     }
   ]

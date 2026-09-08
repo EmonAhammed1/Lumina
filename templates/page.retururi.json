@@ -16,9 +16,9 @@
     "return_form": {
       "type": "return-form",
       "settings": {
-        "eyebrow": "RETUR PRODUS",
-        "title": "Solicita un retur.",
-        "subtitle": "Satisfactia ta este prioritatea noastra. Daca nu esti multumit de produs, completeaza formularul de mai jos si echipa noastra va gestiona returul tau in cel mai scurt timp posibil."
+        "eyebrow": "PRODUCT RETURN",
+        "title": "Request a return.",
+        "subtitle": "Your satisfaction is our priority. If you are not satisfied with the product, fill out the form below and our team will manage your return as soon as possible."
       }
     }
   },

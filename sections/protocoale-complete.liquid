@@ -588,7 +588,7 @@
                     </a>
                   {% endif %}
                 {% else %}
-                  <p class="cr-card-empty">Selectează un produs pentru acest card.</p>
+                  <p class="cr-card-empty">Select a product for this card.</p>
                 {% endif %}
               </div>
             </div>
@@ -610,7 +610,7 @@
               <h3 class="cr-card-title">{{ cr_product.title }}</h3>
               <div class="cr-card-price">{{ cr_product.price | money }}</div>
               <a href="{{ cr_product.url }}" class="cr-card-btn">
-                <span>{{ section.settings.button_text | default: 'Descoperă' }}</span>
+                <span>{{ section.settings.button_text | default: 'Discover' }}</span>
                 {% if section.settings.show_button_icon %}
                   <svg class="cr-btn-icon" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3l5 5-5 5" stroke-linecap="round" stroke-linejoin="round"/></svg>
                 {% endif %}
@@ -695,7 +695,7 @@
       "max": 1600,
       "step": 10,
       "unit": "px",
-      "label": "Max width (secțiune)",
+      "label": "Max width (section)",
       "default": 1200
     },
     {
@@ -707,7 +707,7 @@
     {
       "type": "image_picker",
       "id": "bg_image",
-      "label": "Imagine fundal (decorativă)"
+      "label": "Background image (decorative)"
     },
     {
       "type": "range",
@@ -803,7 +803,7 @@
     },
     {
       "type": "header",
-      "content": "Icon deasupra titlului (opțional)"
+      "content": "Icon above title (optional)"
     },
     {
       "type": "html",
@@ -861,10 +861,22 @@
       "id": "heading_weight",
       "label": "Font weight titlu",
       "options": [
-        { "value": "400", "label": "Regular (400)" },
-        { "value": "500", "label": "Medium (500)" },
-        { "value": "600", "label": "Semibold (600)" },
-        { "value": "700", "label": "Bold (700)" }
+        {
+          "value": "400",
+          "label": "Regular (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semibold (600)"
+        },
+        {
+          "value": "700",
+          "label": "Bold (700)"
+        }
       ],
       "default": "400"
     },
@@ -876,7 +888,7 @@
       "type": "richtext",
       "id": "subheading",
       "label": "Text subtitlu",
-      "default": "<p>Ritualuri complete, rezultate vizibile. Alege protocolul care ți se potrivește.</p>"
+      "default": "<p>Complete rituals, visible results. Choose the protocol that suits you.</p>"
     },
     {
       "type": "color",
@@ -909,9 +921,18 @@
       "id": "subheading_weight",
       "label": "Font weight subtitlu",
       "options": [
-        { "value": "300", "label": "Light (300)" },
-        { "value": "400", "label": "Regular (400)" },
-        { "value": "500", "label": "Medium (500)" }
+        {
+          "value": "300",
+          "label": "Light (300)"
+        },
+        {
+          "value": "400",
+          "label": "Regular (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        }
       ],
       "default": "400"
     },
@@ -962,9 +983,18 @@
       "id": "divider_weight",
       "label": "Font weight divider",
       "options": [
-        { "value": "400", "label": "Regular (400)" },
-        { "value": "500", "label": "Medium (500)" },
-        { "value": "600", "label": "Semibold (600)" }
+        {
+          "value": "400",
+          "label": "Regular (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semibold (600)"
+        }
       ],
       "default": "500"
     },
@@ -1100,9 +1130,18 @@
       "id": "title_weight",
       "label": "Font weight",
       "options": [
-        { "value": "400", "label": "Regular (400)" },
-        { "value": "500", "label": "Medium (500)" },
-        { "value": "600", "label": "Semibold (600)" }
+        {
+          "value": "400",
+          "label": "Regular (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semibold (600)"
+        }
       ],
       "default": "500"
     },
@@ -1113,19 +1152,19 @@
     {
       "type": "color",
       "id": "star_color",
-      "label": "Culoare stea plină",
+      "label": "Full star color",
       "default": "#c9a24a"
     },
     {
       "type": "color",
       "id": "star_empty_color",
-      "label": "Culoare stea goală",
+      "label": "Empty star color",
       "default": "#4a4a4a"
     },
     {
       "type": "color",
       "id": "rating_count_color",
-      "label": "Culoare număr recenzii",
+      "label": "Color number of reviews",
       "default": "#9a9a9a"
     },
     {
@@ -1140,12 +1179,12 @@
     },
     {
       "type": "header",
-      "content": "Preț"
+      "content": "Price"
     },
     {
       "type": "color",
       "id": "price_color",
-      "label": "Culoare preț",
+      "label": "Color price",
       "default": "#c9a24a"
     },
     {
@@ -1171,12 +1210,24 @@
     {
       "type": "select",
       "id": "price_weight",
-      "label": "Font weight preț",
+      "label": "Font weight price",
       "options": [
-        { "value": "400", "label": "Regular (400)" },
-        { "value": "500", "label": "Medium (500)" },
-        { "value": "600", "label": "Semibold (600)" },
-        { "value": "700", "label": "Bold (700)" }
+        {
+          "value": "400",
+          "label": "Regular (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semibold (600)"
+        },
+        {
+          "value": "700",
+          "label": "Bold (700)"
+        }
       ],
       "default": "600"
     },
@@ -1245,9 +1296,18 @@
       "id": "button_weight",
       "label": "Font weight",
       "options": [
-        { "value": "400", "label": "Regular (400)" },
-        { "value": "500", "label": "Medium (500)" },
-        { "value": "600", "label": "Semibold (600)" }
+        {
+          "value": "400",
+          "label": "Regular (400)"
+        },
+        {
+          "value": "500",
+          "label": "Medium (500)"
+        },
+        {
+          "value": "600",
+          "label": "Semibold (600)"
+        }
       ],
       "default": "500"
     },
@@ -1264,13 +1324,13 @@
     {
       "type": "text",
       "id": "button_text",
-      "label": "Text buton (același pe toate cardurile)",
-      "default": "Descoperă"
+      "label": "Button text (same on all cards)",
+      "default": "Discover"
     },
     {
       "type": "checkbox",
       "id": "show_button_icon",
-      "label": "Afișează icon săgeată pe buton",
+      "label": "Show arrow icon on button",
       "default": true
     }
   ],
@@ -1287,13 +1347,13 @@
         {
           "type": "text",
           "id": "custom_title",
-          "label": "Titlu custom (opțional)",
-          "info": "Dacă rămâne gol, se va folosi titlul produsului."
+          "label": "Custom title (optional)",
+          "info": "If left blank, the product title will be used."
         },
         {
           "type": "html",
           "id": "icon_badge",
-          "label": "Icon badge pe imagine (opțional)"
+          "label": "Icon badge on image (optional)"
         }
       ]
     }
@@ -1303,10 +1363,18 @@
     {
       "name": "Protocoale & complete",
       "blocks": [
-        { "type": "product_card" },
-        { "type": "product_card" },
-        { "type": "product_card" },
-        { "type": "product_card" } 
+        {
+          "type": "product_card"
+        },
+        {
+          "type": "product_card"
+        },
+        {
+          "type": "product_card"
+        },
+        {
+          "type": "product_card"
+        }
       ]
     }
   ]

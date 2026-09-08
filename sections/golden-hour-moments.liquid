@@ -220,7 +220,7 @@
   {%- endif -%}
 
   <div class="gh-moments-header">
-    <div class="gh-moments-title-small">MOMENTE PE CARE NU LE POȚI CUMPĂRA</div>
+    <div class="gh-moments-title-small">MOMENTS MONEY CANNOT BUY</div>
     <h2 class="gh-moments-title">{{ section.settings.heading }}</h2>
     {%- if section.settings.intro != blank -%}
       <p class="gh-moments-intro">{{ section.settings.intro }}</p>
@@ -312,7 +312,7 @@
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "Experiențe exclusive pentru comunitatea Golden Hour."
+      "default": "Exclusive experiences for the Golden Hour community."
     },
     {
       "type": "textarea",
@@ -457,12 +457,30 @@
           "id": "icon",
           "label": "Fallback SVG Icon",
           "options": [
-            { "value": "moon", "label": "Moon" },
-            { "value": "flower", "label": "Flower" },
-            { "value": "box", "label": "Box" },
-            { "value": "users", "label": "Users" },
-            { "value": "lotus", "label": "Lotus" },
-            { "value": "camera", "label": "Camera" }
+            {
+              "value": "moon",
+              "label": "Moon"
+            },
+            {
+              "value": "flower",
+              "label": "Flower"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "users",
+              "label": "Users"
+            },
+            {
+              "value": "lotus",
+              "label": "Lotus"
+            },
+            {
+              "value": "camera",
+              "label": "Camera"
+            }
           ],
           "default": "flower"
         },
@@ -476,7 +494,7 @@
           "type": "textarea",
           "id": "description",
           "label": "Description",
-          "default": "Un ritual complet Lumina, ales în funcție de sezon și nevoile pielii."
+          "default": "A complete Lumina ritual, chosen according to the season and the needs of the skin."
         }
       ]
     }
@@ -490,15 +508,15 @@
           "settings": {
             "icon": "moon",
             "title": "Ritualul Lunii",
-            "description": "Un ritual complet Lumina, ales în funcție de sezon și nevoile pielii."
+            "description": "A complete Lumina ritual, chosen according to the season and the needs of the skin."
           }
         },
         {
           "type": "moment",
           "settings": {
             "icon": "flower",
-            "title": "Colecția sezonului",
-            "description": "Primește în premieră ritualul care definește anotimpul."
+            "title": "The collection of the season",
+            "description": "Get the premiere of the ritual that defines the season."
           }
         },
         {
@@ -506,31 +524,31 @@
           "settings": {
             "icon": "box",
             "title": "Golden Box",
-            "description": "O selecție surpriză de produse și ediții speciale, disponibilă doar pentru tine."
+            "description": "A surprise selection of products and special editions, available just for you."
           }
         },
         {
           "type": "moment",
           "settings": {
             "icon": "users",
-            "title": "Experiențe Lumina",
-            "description": "Invitații la lansări, workshop-uri, evenimente private și întâlniri dedicate comunității."
+            "title": "Light experiences",
+            "description": "Invitations to launches, workshops, private events and community meetings."
           }
         },
         {
           "type": "moment",
           "settings": {
             "icon": "lotus",
-            "title": "Momente de răsfăț",
-            "description": "Experiențe oferite împreună cu spa-uri și parteneri selectați."
+            "title": "Moments of indulgence",
+            "description": "Experiences offered in conjunction with selected spas and partners."
           }
         },
         {
           "type": "moment",
           "settings": {
             "icon": "camera",
-            "title": "O zi în universul Lumina",
-            "description": "O experiență exclusivă alături de echipa Lumina, cu acces în culisele brandului."
+            "title": "A day in the Lumina universe",
+            "description": "An exclusive experience with the Lumina team, with access behind the scenes of the brand."
           }
         }
       ]

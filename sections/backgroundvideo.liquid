@@ -79,11 +79,16 @@
     <div class="d-flex bgvideo-{{ section.id }} {{ positiontxt }} bg-herovideo" data-section-id="{{ section.id }}" data-section-type="background-video" >
       {% if section.settings.link_video != blank %}
         <div class="hero-video" >
-         <video id="Mp4{{ section.id }}" class="lazyload" src="{{ section.settings.link_video }}" loop="" muted="" playsinline="" autoplay="" ></video>
+         <video id="Mp4{{ section.id }}" class="lazyload" loop="" muted="" playsinline="" autoplay="">
+           <source src="{{ section.settings.link_video }}" type="video/mp4">
+         </video>
         </div>
       {% else %}
         <div class="hero-video">
-          <video id="Mp4{{ section.id }}" class="lazyload" src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" loop="" muted="" playsinline="" autoplay="" poster="{{ 'test-5.png' | asset_url }}"></video>
+          <video id="Mp4{{ section.id }}" class="lazyload" loop="" muted="" playsinline="" autoplay="" poster="{{ 'test-5.png' | asset_url }}">
+            <source src="{{ '1_golden_hour_hero.mp4' | file_url }}" type="video/mp4">
+            <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
+          </video>
         </div>
       {% endif %}
         <div class="container">

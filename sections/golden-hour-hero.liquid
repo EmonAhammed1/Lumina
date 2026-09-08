@@ -196,6 +196,8 @@
       <img src="{{ section.settings.bg_image_desktop | image_url: width: 1920 }}" class="gh-hero-video gh-hero-desktop-video" alt="{{ section.settings.title }}">
     {%- else -%}
       <video class="gh-hero-video gh-hero-desktop-video" id="gh-video-desktop" autoplay loop muted playsinline poster="{{ 'test-5.png' | asset_url }}">
+        <source src="{{ '1_golden_hour_hero.mp4' | file_url }}" type="video/mp4">
+        <source src="{{ 'The Golden Hour HERO.mp4' | file_url }}" type="video/mp4">
         <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
       </video>
     {%- endif -%}
@@ -212,6 +214,8 @@
       <img src="{{ section.settings.bg_image_mobile | image_url: width: 800 }}" class="gh-hero-video gh-hero-mobile-video" alt="{{ section.settings.title }}">
     {%- else -%}
       <video class="gh-hero-video gh-hero-mobile-video" id="gh-video-mobile" autoplay loop muted playsinline poster="{{ 'test-5.png' | asset_url }}">
+        <source src="{{ '1_golden_hour_hero.mp4' | file_url }}" type="video/mp4">
+        <source src="{{ 'The Golden Hour HERO.mp4' | file_url }}" type="video/mp4">
         <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
       </video>
     {%- endif -%}

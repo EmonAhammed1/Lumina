@@ -21,8 +21,10 @@
 
   if section.settings.video != blank
     assign video_url = section.settings.video.sources[0].url
+  elsif section.settings.video_url != blank
+    assign video_url = section.settings.video_url
   else
-    assign video_url = section.settings.video_url | default: "https://cdn.shopify.com/videos/c/o/v/e3f98bcbeb284f078f969195472fb265.mp4"
+    assign video_url = '6_experience_technology_player.mp4' | file_url
   endif
 -%}
 
@@ -540,7 +542,6 @@
         <div class="col-12 col-lg-8 pr-lg-4 mb-4 mb-lg-0 tech-video-col" data-aos="{{ animation }}" data-aos-delay="200">
           <div class="custom-video-player" id="player-{{ section.id }}">
             <video class="video-element" 
-                   src="{{ video_url }}" 
                    {% if section.settings.poster_image != blank %}
                      poster="{{ section.settings.poster_image | image_url: width: 1080 }}"
                    {% else %}
@@ -548,6 +549,14 @@
                    {% endif %}
                    loop 
                    playsinline>
+              {%- if section.settings.video != blank -%}
+                <source src="{{ section.settings.video.sources[0].url }}" type="video/mp4">
+              {%- elsif section.settings.video_url != blank -%}
+                <source src="{{ section.settings.video_url }}" type="video/mp4">
+              {%- else -%}
+                <source src="{{ '6_experience_technology_player.mp4' | file_url }}" type="video/mp4">
+                <source src="https://cdn.shopify.com/videos/c/o/v/e3f98bcbeb284f078f969195472fb265.mp4" type="video/mp4">
+              {%- endif -%}
             </video>
             
             <!-- Floating circular rotating badge -->

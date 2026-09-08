@@ -240,7 +240,10 @@
           {%- elsif section.settings.image != blank -%}
             <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.title | escape }}" loading="lazy">
           {%- else -%}
-            <img src="{{ 'lumina-experience-reborn.png' | asset_url }}" alt="Manifesto Gold Wave" loading="lazy">
+            <video autoplay loop muted playsinline poster="{{ 'lumina-experience-reborn.png' | asset_url }}">
+              <source src="{{ '3_lumina_world_manifesto_talk.mp4' | file_url }}" type="video/mp4">
+              <source src="https://cdn.shopify.com/videos/c/o/v/06637b7d08654c609c15feae7fb90035.mp4" type="video/mp4">
+            </video>
           {%- endif -%}
         </div>
       </div>

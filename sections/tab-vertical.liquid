@@ -137,8 +137,12 @@
                                 <div class="image-content__image-container tab-image__video overflow-hidden">
                                     <a class="image-content__image-wrapper" href="{{ block.settings.link }}">
                                       <video class="lazyload scale-in product-video__banner  position-absolute" id="Mp4{{ section.id }}"  loop="" muted="" playsinline="" autoplay="" >
-                                        <source src="{{ block.settings.id_video }}" type="video/mp4">
-                                    </video>
+                                        {%- if block.settings.id_video contains 'http' -%}
+                                          <source src="{{ block.settings.id_video }}" type="video/mp4">
+                                        {%- else -%}
+                                          <source src="{{ block.settings.id_video | file_url }}" type="video/mp4">
+                                        {%- endif -%}
+                                      </video>
                                        
                                     </a>
                                 </div>

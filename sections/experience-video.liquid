@@ -299,9 +299,10 @@
         <!-- Fallback Video -->
         <video id="video-{{ section.id }}" 
                class="video-element-{{ section.id }}"
-               src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4"
                autoplay muted loop playsinline
                poster="{{ 'test-5.png' | asset_url }}">
+          <source src="{{ '1_golden_hour_hero.mp4' | file_url }}" type="video/mp4">
+          <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
         </video>
       {%- endif -%}
 

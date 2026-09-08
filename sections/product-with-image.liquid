@@ -112,7 +112,11 @@
                         {%- endif -%}
                         {%- if block.settings.video != blank -%}
                             <video class="product-video__banner  position-absolute" id="Mp4{{ section.id }}"  loop="" muted="" playsinline="" autoplay="" >
-                                <source src="{{ block.settings.video }}" type="video/mp4">
+                                {%- if block.settings.video contains 'http' -%}
+                                  <source src="{{ block.settings.video }}" type="video/mp4">
+                                {%- else -%}
+                                  <source src="{{ block.settings.video | file_url }}" type="video/mp4">
+                                {%- endif -%}
                             </video>
                         {%- endif -%}
                             <div class="product-image__banner position-absolute d-flex {{ positiontxt }}" style="

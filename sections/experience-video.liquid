@@ -260,13 +260,19 @@
         <!-- Direct MP4 Video Tag -->
         <video id="video-{{ section.id }}" 
                class="video-element-{{ section.id }}"
-               src="{{ link_video }}"
                {% if section.settings.autoplay %}autoplay{% endif %}
                {% if section.settings.muted %}muted{% endif %}
                {% if section.settings.loop %}loop{% endif %}
                {% if section.settings.controls %}controls{% endif %}
                playsinline
                {% if section.settings.cover_image != blank %}poster="{{ section.settings.cover_image | image_url: width: 1400 }}"{% endif %}>
+          {%- if link_video contains 'http' -%}
+            <source src="{{ link_video }}" type="video/mp4">
+          {%- else -%}
+            <source src="{{ link_video | file_url }}" type="video/mp4">
+          {%- endif -%}
+          <source src="{{ '1_golden_hour_hero.mp4' | file_url }}" type="video/mp4">
+          <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
         </video>
 
         <!-- Custom Play Overlay (if not autoplaying or if custom play interaction is enabled) -->

@@ -126,11 +126,7 @@
       {% elsif section.settings.image != blank %}
         <img src="{{ section.settings.image | image_url: width: 800 }}" alt="Formula" class="tm-form-center-img" loading="lazy">
       {% else %}
-        <svg viewBox="0 0 100 100" fill="none" stroke="var(--gh-golden)" style="width: 250px; opacity: 0.3;">
-          <polygon points="50,10 90,50 50,90 10,50" />
-          <line x1="10" y1="50" x2="90" y2="50" />
-          <line x1="50" y1="10" x2="50" y2="90" />
-        </svg>
+        <img src="{{ 'pure_transfer.jpg' | asset_url }}" alt="Formula" class="tm-form-center-img" loading="lazy">
       {% endif %}
     </div>
 
@@ -141,10 +137,16 @@
             {% if block.settings.icon != blank %}
               <img src="{{ block.settings.icon | image_url: width: 64 }}" alt="{{ block.settings.title }}" loading="lazy">
             {% else %}
-              <svg viewBox="0 0 24 24">
-                <circle cx="12" cy="12" r="10" stroke="currentColor" fill="none" stroke-width="1.5"/>
-                <path d="M12 6v6l4 4" stroke="currentColor" fill="none" stroke-width="1.5"/>
-              </svg>
+              {% case forloop.index %}
+                {% when 1 %}
+                  <img src="{{ 'star.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+                {% when 2 %}
+                  <img src="{{ 'leaf.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+                {% when 3 %}
+                  <img src="{{ 'lotus.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+                {% else %}
+                  <img src="{{ 'moon.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+              {% endcase %}
             {% endif %}
           </div>
           <div class="tm-form-text-wrap">

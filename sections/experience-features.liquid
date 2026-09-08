@@ -271,7 +271,11 @@
                      height="{{ banner_image.height }}">
               {%- else -%}
                 <!-- Fallback or placeholder image when banner not set -->
-                {{ 'image' | placeholder_svg_tag: 'experience-banner-img placeholder-svg' }}
+                <img class="experience-banner-img lazyload"
+                     src="{{ 'test-2.png' | asset_url }}"
+                     data-src="{{ 'test-2.png' | asset_url }}"
+                     alt="Lumina Europa"
+                     loading="lazy">
               {%- endif -%}
             </div>
           </div>

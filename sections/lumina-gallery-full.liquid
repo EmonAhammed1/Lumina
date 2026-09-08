@@ -42,7 +42,9 @@
             {%- if block.settings.image != blank -%}
               {{ block.settings.image | image_url: width: 900 | image_tag: loading: 'lazy', alt: block.settings.author_name | default: 'Lumina Gallery Image' }}
             {%- else -%}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {%- assign fallback_num = forloop.index0 | modulo: 12 | plus: 1 -%}
+              {%- assign fallback_img = 'img-' | append: fallback_num | append: '.png' -%}
+              <img src="{{ fallback_img | asset_url }}" alt="{{ block.settings.author_name | default: 'Lumina Gallery' }}" loading="lazy">
             {%- endif -%}
 
             <!-- Author & Social Attribution Badge (On Hover) -->

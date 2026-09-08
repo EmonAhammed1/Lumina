@@ -90,7 +90,7 @@
           {% if section.settings.image != blank %}
             <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}" loading="lazy">
           {% else %}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            <img src="{{ 'pure_transfer.jpg' | asset_url }}" alt="Formula" loading="lazy">
           {% endif %}
         </div>
       </div>

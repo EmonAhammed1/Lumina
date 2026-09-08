@@ -529,7 +529,7 @@
               {%- elsif section.settings.stage_1_image != blank -%}
                 <img src="{{ section.settings.stage_1_image | image_url: width: 1000 }}" alt="Microscope view - Micro" class="bg-media" loading="lazy">
               {%- else -%}
-                <div class="bg-media-placeholder"></div>
+                <img src="{{ 'nano-fiber-stracture.webp' | asset_url }}" alt="Microscope view - Micro" class="bg-media" loading="lazy">
               {%- endif -%}
             </div>
             
@@ -540,7 +540,7 @@
               {%- elsif section.settings.stage_2_image != blank -%}
                 <img src="{{ section.settings.stage_2_image | image_url: width: 1000 }}" alt="Microscope view - Active" class="bg-media" loading="lazy">
               {%- else -%}
-                <div class="bg-media-placeholder"></div>
+                <img src="{{ 'active-ingredients.webp' | asset_url }}" alt="Microscope view - Active" class="bg-media" loading="lazy">
               {%- endif -%}
             </div>
             
@@ -551,7 +551,7 @@
               {%- elsif section.settings.stage_3_image != blank -%}
                 <img src="{{ section.settings.stage_3_image | image_url: width: 1000 }}" alt="Microscope view - Deep" class="bg-media" loading="lazy">
               {%- else -%}
-                <div class="bg-media-placeholder"></div>
+                <img src="{{ 'deep-penetration.webp' | asset_url }}" alt="Microscope view - Deep" class="bg-media" loading="lazy">
               {%- endif -%}
             </div>
             
@@ -562,7 +562,7 @@
               {%- elsif section.settings.stage_4_image != blank -%}
                 <img src="{{ section.settings.stage_4_image | image_url: width: 1000 }}" alt="Microscope view - Result" class="bg-media" loading="lazy">
               {%- else -%}
-                <div class="bg-media-placeholder"></div>
+                <img src="{{ 'ChatGPT_Image_Aug_10_2026_03_22_12_PM.png' | asset_url }}" alt="Microscope view - Result" class="bg-media" loading="lazy">
               {%- endif -%}
             </div>
             

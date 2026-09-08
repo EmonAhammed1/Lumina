@@ -163,28 +163,7 @@
       {%- if section.settings.decorative_image != blank -%}
         <img src="{{ section.settings.decorative_image | image_url: width: 800 }}" alt="" style="width: 100%; height: auto; object-fit: contain;">
       {%- else -%}
-        <svg viewBox="0 0 200 240" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g stroke="var(--gh-golden)" stroke-width="1">
-            <circle cx="100" cy="80" r="30"/>
-            <circle cx="100" cy="80" r="30" transform="rotate(60 100 80)"/>
-            <circle cx="100" cy="80" r="30" transform="rotate(120 100 80)"/>
-            <circle cx="76" cy="63" r="30"/>
-            <circle cx="124" cy="63" r="30"/>
-            <circle cx="76" cy="97" r="30"/>
-            <circle cx="124" cy="97" r="30"/>
-            <circle cx="100" cy="80" r="14"/>
-          </g>
-          <g stroke="var(--gh-golden)" stroke-width="1.2" stroke-linecap="round" opacity="0.9">
-            <path d="M100 150 C 130 165, 150 185, 168 215" />
-          </g>
-          <g fill="var(--gh-golden)">
-            <circle cx="168" cy="215" r="2.4"/>
-            <circle cx="152" cy="197" r="1.7"/>
-            <circle cx="138" cy="180" r="1.3"/>
-            <circle cx="126" cy="168" r="1"/>
-            <circle cx="116" cy="159" r="0.8"/>
-          </g>
-        </svg>
+        <img src="{{ 'section-i.png' | asset_url }}" alt="" style="width: 100%; height: auto; object-fit: contain;">
       {%- endif -%}
     </div>
 

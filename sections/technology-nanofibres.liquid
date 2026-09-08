@@ -62,7 +62,7 @@
           {% if section.settings.image != blank %}
             <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}" loading="lazy">
           {% else %}
-            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+            <img src="{{ 'nano-fiber-stracture.webp' | asset_url }}" alt="Nanofibre Technology" loading="lazy">
           {% endif %}
         </div>
       </div>

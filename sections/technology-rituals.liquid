@@ -99,7 +99,16 @@
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.title | escape }}" loading="lazy">
             {% else %}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% case forloop.index %}
+                {% when 1 %}
+                  <img src="{{ 'img-7.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+                {% when 2 %}
+                  <img src="{{ 'img-8.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+                {% when 3 %}
+                  <img src="{{ 'img-9.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+                {% else %}
+                  <img src="{{ 'img-10.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+              {% endcase %}
             {% endif %}
           </div>
           <h3 class="tech-ritual-title">{{ block.settings.title }}</h3>

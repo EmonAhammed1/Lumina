@@ -167,7 +167,8 @@
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.title }}" loading="lazy">
             {% else %}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% assign why_img_fallback = 'img-' | append: forloop.index | append: '.png' %}
+              <img src="{{ why_img_fallback | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
             {% endif %}
           </div>
         </div>

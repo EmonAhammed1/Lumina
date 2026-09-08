@@ -215,6 +215,8 @@
 <div class="gh-moments-wrap" id="{{ section.id | split: '__' | last }}" data-section-id="{{ section.id }}">
   {%- if section.settings.bg_image != blank -%}
     {{ section.settings.bg_image | image_url: width: 1920 | image_tag: class: 'gh-moments-bg', loading: 'lazy' }}
+  {%- else -%}
+    <img src="{{ 'section-bg.png' | asset_url }}" class="gh-moments-bg" alt="" loading="lazy">
   {%- endif -%}
 
   <div class="gh-moments-header">
@@ -236,7 +238,8 @@
             {%- if gh_leaf != blank -%}
               {{ gh_leaf | image_url: width: 400 | image_tag: class: 'gh-petal-leaf-img', alt: '', loading: 'lazy' }}
             {%- else -%}
-              <div class="gh-petal-leaf-placeholder"></div>
+              {%- assign leaf_fallback = 'block-' | append: forloop.index | append: '.png' -%}
+              <img src="{{ leaf_fallback | asset_url }}" class="gh-petal-leaf-img" alt="" loading="lazy">
             {%- endif -%}
           </div>
 

@@ -181,7 +181,18 @@
                 {% if block.settings.image != blank %}
                   <img src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.title }}" loading="lazy">
                 {% else %}
-                  {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+                  {% case forloop.index %}
+                    {% when 1 %}
+                      <img src="{{ '1._unfold.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+                    {% when 2 %}
+                      <img src="{{ '2._activate.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+                    {% when 3 %}
+                      <img src="{{ '3apply.jpg' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+                    {% when 4 %}
+                      <img src="{{ '5._remove.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+                    {% else %}
+                      <img src="{{ '6._finish.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+                  {% endcase %}
                 {% endif %}
                 <div class="tm-hiw-number">{{ block.settings.number }}</div>
               </div>

@@ -173,7 +173,8 @@
               {% if block.settings.image != blank %}
                 <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.title }}" loading="lazy">
               {% else %}
-                {{ 'collection-2' | placeholder_svg_tag: 'placeholder-svg' }}
+                {% assign rit_fallback = 'img-' | append: forloop.index | plus: 6 | append: '.png' %}
+                <img src="{{ rit_fallback | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
               {% endif %}
             </div>
             <div class="tm-rit-card-title">{{ block.settings.title }}</div>

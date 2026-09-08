@@ -195,7 +195,7 @@
         {% elsif section.settings.image != blank %}
           <img src="{{ section.settings.image | image_url: width: 800 }}" alt="Scientist" loading="lazy">
         {% else %}
-          {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+          <img src="{{ 'Johana-Kulhankova-1.jpg' | asset_url }}" alt="Scientist" loading="lazy">
         {% endif %}
       </div>
     </div>

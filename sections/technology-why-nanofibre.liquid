@@ -69,7 +69,14 @@
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.title | escape }}" loading="lazy">
             {% else %}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
+              {% case forloop.index %}
+                {% when 1 %}
+                  <img src="{{ 'img-1.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+                {% when 2 %}
+                  <img src="{{ 'img-2.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+                {% else %}
+                  <img src="{{ 'img-3.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
+              {% endcase %}
             {% endif %}
           </div>
           <div class="tech-why-card-content">

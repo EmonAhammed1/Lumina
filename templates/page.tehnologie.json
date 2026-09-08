@@ -12,7 +12,7 @@
     "hero": {
       "type": "tech-mockup-hero",
       "settings": {
-        "bg_video": "shopify://files/videos/WhatsApp Video 2026-08-10 at 15.00.17 (1).mp4",
+        "bg_video": "",
         "overlay_opacity": 30,
         "subtitle": "UNDE ȘTIINȚA",
         "title": "DEVINE\nRITUAL",
@@ -231,7 +231,7 @@
         "subtitle": "TEHNOLOGIE & FORMULĂ",
         "title": "Proiectat pentru puritate.\nCreat pentru performanță.",
         "text": "Structura noastră exclusivă de nanofibre întâlnește ingrediente active de înaltă performanță, atent selecționate pentru puritatea, stabilitatea și compatibilitatea lor cu pielea.",
-        "video": "shopify://files/videos/Visual 2 Decomposition.mp4"
+        "video": ""
       }
     },
     "ingredients": {
@@ -530,7 +530,7 @@
         "text": "Dezvoltată de NanoPharma, tehnologia noastră de nanofibre este susținută de cercetări riguroase, studii clinice și inovație continuă.",
         "btn_label": "EXPLOREAZĂ CERCETAREA",
         "btn_link": "",
-        "video": "shopify://files/videos/Visual 1. What are nanofibres_.mov",
+        "video": "",
         "caption": "Evaluare clinică a măștii cu nanofibre realizată de un institut independent."
       }
     },

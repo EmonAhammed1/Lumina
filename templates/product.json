@@ -108,10 +108,10 @@
             "timeline_val_3": "05:00",
             "timeline_lbl_3": "Transformare",
             "card_2_title": "PERFECT PENTRU",
-            "perfect_1": "{{ product.metafields.custom.perfect_pentru_item_1.value }}",
-            "perfect_2": "{{ product.metafields.custom.perfect_pentru_item_2.value }}",
-            "perfect_3": "{{ product.metafields.custom.perfect_pentru_item_3.value }}",
-            "perfect_4": "{{ product.metafields.custom.perfect_pentru_item_4.value }}"
+            "perfect_1": "Ten deshidratat și obosit",
+            "perfect_2": "După călătorii sau zboruri lungi",
+            "perfect_3": "Înainte de evenimente speciale",
+            "perfect_4": "Când tenul tău are nevoie de o recuperare instantanee"
           }
         },
         "inainte_de_utilizare_tab": {
@@ -639,7 +639,7 @@
       "type": "tech-mockup-hero",
       "name": "Mockup - Hero",
       "settings": {
-        "bg_video": "shopify://files/videos/WhatsApp Video 2026-08-10 at 15.05.00.mp4",
+        "bg_video": "",
         "overlay_opacity": 30,
         "subtitle": "DESCOPERĂ LUMINA",
         "title": "ÎNCEPE CU UN RITUAL",

@@ -1,0 +1,5 @@
+# Images archive and download cache
+Lumina-Store-Images.zip
+downloaded_images/
+*.log
+.shopify/

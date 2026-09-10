@@ -30,33 +30,3 @@ Lumina/
 └── README.md        # Project documentation and links
 ```
 
----
-
-## 🛠️ Development Workflow
-
-### 1. Connect & Start Local Development
-To run a local hot-reloading development server connected to the live store:
-```bash
-shopify theme dev --store markeu-2.myshopify.com
-```
-
-### 2. Pull Latest Changes from Shopify
-```bash
-shopify theme pull --store markeu-2.myshopify.com --live
-```
-
-### 3. Push Local Changes to Shopify
-```bash
-# Push to development theme
-shopify theme push --store markeu-2.myshopify.com --development
-
-# Or push directly to live theme (use caution)
-shopify theme push --store markeu-2.myshopify.com --live
-```
-
----
-
-## 🚀 Version Control
-
-- **Primary Branch:** `main`
-- **Remote:** `origin` (`https://github.com/EmonAhammed1/Lumina.git`)

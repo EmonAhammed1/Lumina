@@ -79,22 +79,13 @@
     <div class="d-flex bgvideo-{{ section.id }} {{ positiontxt }} bg-herovideo" data-section-id="{{ section.id }}" data-section-type="background-video" >
       {% if section.settings.link_video != blank %}
         <div class="hero-video" >
-         <video id="Mp4{{ section.id }}" class="lazyload" loop="" muted="" playsinline="" autoplay="">
-           <source src="{% if section.settings.link_video contains 'http' %}{{ section.settings.link_video }}{% else %}{{ section.settings.link_video | file_url }}{% endif %}" type="video/mp4">
-           <source src="{{ 'The Golden Hour HERO.mp4' | file_url }}" type="video/mp4">
-           <source src="{{ '1_golden_hour_hero.mp4' | file_url }}" type="video/mp4">
-           <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
-         </video>
+         <video id="Mp4{{ section.id }}" class="lazyload" src="{{ section.settings.link_video }}" loop="" muted="" playsinline="" autoplay="" ></video>
         </div>
-      {% else %}
+        {% else if %}
         <div class="hero-video">
-          <video id="Mp4{{ section.id }}" class="lazyload" loop="" muted="" playsinline="" autoplay="" poster="{{ 'test-5.png' | asset_url }}">
-            <source src="{{ 'The Golden Hour HERO.mp4' | file_url }}" type="video/mp4">
-            <source src="{{ '1_golden_hour_hero.mp4' | file_url }}" type="video/mp4">
-            <source src="https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4" type="video/mp4">
-          </video>
+                {{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder-svg' }}
         </div>
-      {% endif %}
+        {% endif %}
         <div class="container">
           <div class="parallax-banner__meta bg-herovideo-meta text-{{ section.settings.align }}">
             {% for block in section.blocks %}

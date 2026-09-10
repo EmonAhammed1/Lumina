@@ -24,7 +24,7 @@
         "template--18049703772478__bfc70ef2-4d5d-44da-8cd0-774a9b817f64-16774805461c3b0f88-1": {
           "type": "heading",
           "settings": {
-            "title": "Summer essentials",
+            "title": "Esențiale de vară",
             "size_text": "h1"
           }
         },
@@ -75,13 +75,13 @@
         "template--18054171164990__1acb18f9-947f-417a-af62-5ae719a92e75-1677516015a2874a88-0": {
           "type": "item",
           "settings": {
-            "code": "Decadent looks with 20% off"
+            "code": "Look-uri decadente cu 20% reducere"
           }
         },
         "6c941bd2-feff-467c-a408-ac910ee82766": {
           "type": "item",
           "settings": {
-            "code": "Free Delivery. Free Exchanges. Free Returns."
+            "code": "Livrare Gratuită. Schimburi Gratuite. Retururi Gratuite."
           }
         }
       },
@@ -117,7 +117,7 @@
             "image": "shopify://shop_images/98078686_2719648758268048_8569969034189285890_n.jpg",
             "width": "6",
             "description": "<h3 class=\"mb-2\">Great Sanctuary</h3><p>Olivia wears the Bea Blazer Dress in Black</p>",
-            "button_text": "shop now",
+            "button_text": "cumpără acum",
             "button_link": "",
             "style_btn": "btn-underline",
             "reverse": "flex-column",
@@ -133,7 +133,7 @@
             "image": "shopify://shop_images/249106588_917092175883235_7548129253982863241_n.jpg",
             "width": "6",
             "description": "<h3 class=\"mb-2\">Couple</h3><p>Lorem ipsum dolor sit amet</p>",
-            "button_text": "Shop Now",
+            "button_text": "Cumpără acum",
             "button_link": "",
             "style_btn": "btn-underline",
             "reverse": "flex-column",
@@ -173,7 +173,7 @@
         "99137f85-5414-4740-9a5f-ce713d28fb0a": {
           "type": "heading",
           "settings": {
-            "title": "Up to 35% off Top Collection",
+            "title": "Până la 35% reducere la colecția de topuri",
             "size_text": "h1"
           }
         },
@@ -240,7 +240,7 @@
         "enable_right": false,
         "enable_heading_right": false,
         "title_top": "ss 2023",
-        "title": "Shop the look",
+        "title": "Cumpără look-ul",
         "des": "",
         "align-heading": "center",
         "arrows": false,
@@ -259,7 +259,7 @@
         "template--18049703772478__9e2a0b0c-ab2a-48f8-a552-99bc69cfc615-16774820468aa6c7f4-1": {
           "type": "collection",
           "settings": {
-            "title": "SHAMPOO FOR CHILDREN",
+            "title": "ȘAMPON PENTRU COPII",
             "collection": "kids-shampoo"
           }
         },
@@ -320,9 +320,9 @@
             "bgtext": "#f4efe9",
             "title_color": "rgba(0,0,0,0)",
             "subtitle": "SUMMER 23'",
-            "title": "Limited edition",
+            "title": "Ediție limitată",
             "size_text": "h2",
-            "text": "<p> Pair large text with an image to highlight your chosen product, collection or blog post. Add details about availability, style or a review. </p>",
+            "text": "<p>Asociați un text mare cu o imagine pentru a evidenția produsul, colecția sau postarea de blog aleasă. Adăugați detalii despre disponibilitate, stil sau o recenzie.</p>",
             "answer_content": "",
             "style_btn": "btn-theme",
             "button": "discover now",
@@ -416,8 +416,8 @@
         "setwidth": "container",
         "bgsection": "#ffffff",
         "title_top": "",
-        "title": "Our collections",
-        "des": "We encourage women to feel special, confident and proud of their bodies",
+        "title": "Colecțiile noastre",
+        "des": "Încurajăm femeile să se simtă speciale, încrezătoare și mândre de corpul lor",
         "align-heading": "center",
         "layout": "collage-4",
         "col": "col-lg-6",
@@ -443,7 +443,7 @@
         "bgsection": "#ffffff",
         "title_color": "rgba(0,0,0,0)",
         "title_top": "",
-        "title": "Best seller",
+        "title": "Cel mai vândut",
         "des": "Resulting in a collection of relaxed silhouettes and a calm, soothing color palette.",
         "align-heading": "center",
         "collection": "bestsellers",
@@ -486,7 +486,7 @@
             "bg_banner": "rgba(0,0,0,0)",
             "image": "shopify://shop_images/367439952_1446398016094565_4609149314488064190_n.jpg",
             "width": "4",
-            "description": "<h4 class=\"mb-2\"> Fashion icon</h4><p> News from the biggest names in fashion </p>",
+            "description": "<h4 class=\"mb-2\">Pictogramă de modă</h4><p>Noutăți de la cele mai mari nume din modă</p>",
             "button_text": "View more",
             "button_link": "",
             "style_btn": "btn-underline",
@@ -567,8 +567,8 @@
           "type": "service",
           "settings": {
             "bgblock": "#ffffff",
-            "title": "Free delivery",
-            "description": "Order over 99 Lei",
+            "title": "Livrare gratuită",
+            "description": "Comandă de peste 99 Lei",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-truck\" viewbox=\"0 0 82 82\"><path d=\"M7.238 68.717H1.867V2.12H58.4v16.736h3.886c9.755 0 17.663 7.908 17.663 17.663v32.199h-5.917M55.781 68.717H25.487\"></path><path d=\"M58.334 42.124h15.068v-4.27c0-6.82-5.53-12.35-12.351-12.35h-2.718v16.62M73.909 70.236a9.125 9.125 0 1 0-18.013-2.931 9.125 9.125 0 0 0 18.013 2.93ZM25.367 70.235a9.125 9.125 0 1 0-18.012-2.931 9.125 9.125 0 0 0 7.54 10.471 9.125 9.125 0 0 0 10.472-7.54Z\"></path><path d=\"M13.723 77.507c-3.966.658-7.937 1.51-11.857 2.593M60.373 76.736c-10.512-1.212-24.298-1.969-38.645-.451M79.768 80.121s-4.96-1.222-12.975-2.395\"></path></svg>"
           }
         },
@@ -576,8 +576,8 @@
           "type": "service",
           "settings": {
             "bgblock": "#ffffff",
-            "title": "Beach club",
-            "description": "Get rewarded every time",
+            "title": "Club de plajă",
+            "description": "Fii recompensat de fiecare dată",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-plant-based\" viewbox=\"0 0 82 82\"><path d=\"M41 20.701V80M56.735 26.294c0 8.703-7.045 15.758-15.735 15.758s-15.735-7.055-15.735-15.758C25.265 14.719 41 2 41 2s15.735 12.719 15.735 24.294ZM30.479 46.972c6.145 6.154 6.145 16.132 0 22.285-6.145 6.154-16.107 6.154-22.252 0C.054 61.072 2.2 40.936 2.2 40.936s20.106-2.149 28.279 6.036Z\"></path><path d=\"M41 77.861S27.525 60.403 10.092 50.177M51.412 46.972c-6.145 6.154-6.145 16.132 0 22.285 6.145 6.153 16.107 6.154 22.252 0 8.173-8.185 6.027-28.321 6.027-28.321s-20.106-2.149-28.279 6.036Z\"></path><path d=\"M40.891 77.861s13.475-17.458 30.908-27.684\"></path></svg>"
           }
         },
@@ -585,8 +585,8 @@
           "type": "service",
           "settings": {
             "bgblock": "#ffffff",
-            "title": "Free Delivery",
-            "description": "Delivery in 2-5 days",
+            "title": "Livrare Gratuită",
+            "description": "Livrare în 2-5 zile",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-package\" viewbox=\"0 0 82 82\"><path d=\"M80 21v39L41 80 2 60V21L41 2l39 19Z\"></path><path d=\"m2 21 39 20 38.571-19.807M41 41.478v38.338\"></path><path d=\"m27.715 8.643 38.409 19.473v17.543l-11.617 6.067V33.83L16.098 14.355\"></path></svg>"
           }
         },
@@ -594,8 +594,8 @@
           "type": "service",
           "settings": {
             "bgblock": "#ffffff",
-            "title": "Wear it now",
-            "description": "Pay in simple installments.",
+            "title": "Poartă acum",
+            "description": "Plătește în rate simple.",
             "icon": "<svg aria-hidden=\"true\" focusable=\"false\" role=\"presentation\" class=\"icon icon-shield\" viewbox=\"0 0 64 64\"><defs><style>.a{fill:none;stroke:#000;stroke-width:2px}</style></defs><path class=\"a\" d=\"M21.18 31.69L28.54 39l15.91-15.88\"></path><path class=\"a\" d=\"M53 12.54v15.24a31.41 31.41 0 0 1-3.7 14.95A25.46 25.46 0 0 1 32 56a25.46 25.46 0 0 1-17.3-13.27A31.41 31.41 0 0 1 11 27.78V12.54C24.88 13.67 32 8 32 8s7.12 5.67 21 4.54z\"></path></svg>"
           }
         }

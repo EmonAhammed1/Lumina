@@ -47,20 +47,20 @@
         "449c4ba1-609f-49f7-9e5e-c85be12f11c2": {
           "type": "sub_title",
           "settings": {
-            "subtitle": "LIMITED EDITIONS"
+            "subtitle": "EDIȚII LIMITATE"
           }
         },
         "aa316a40-0fd3-4aee-9b8f-94f9ce188d6c": {
           "type": "heading",
           "settings": {
-            "title": "Buy as a set and save 15%",
+            "title": "Cumpără la set și economisești 15%",
             "size_text": "h2"
           }
         },
         "4ca26696-8c69-457b-b768-8f4ea309d003": {
           "type": "paragraph",
           "settings": {
-            "subtext": "Discover more about our products."
+            "subtext": "Descoperă mai multe despre produsele noastre."
           }
         },
         "b86a326b-4e5c-4ff4-8312-15fa764d2fdb": {
@@ -109,8 +109,8 @@
         "e_position": "center center",
         "bgsection": "#ffffff",
         "title_color": "rgba(0,0,0,0)",
-        "title_top": "Best seller",
-        "title": "Our products",
+        "title_top": "Cel mai vândut",
+        "title": "Produsele noastre",
         "des": "",
         "align-heading": "left",
         "collection": "bestsellers",

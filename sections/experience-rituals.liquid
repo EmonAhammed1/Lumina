@@ -773,12 +773,7 @@
                width="80"
                height="80">
         {%- else -%}
-          <img src="{{ 'ChatGPT_Image_Sep_6_2026_03_09_17_PM.png' | asset_url }}" 
-               alt="{{ section.settings.center_name | default: 'Lumina Center' }}"
-               class="orbit-center-img-{{ section.id }}"
-               loading="lazy"
-               width="80"
-               height="80">
+          <div style="font-size: 24px; margin-bottom: 8px;">✨</div>
         {%- endif -%}
         
         <span class="orbit-center-brand-{{ section.id }}">{{ section.settings.center_title }}</span>
@@ -800,9 +795,9 @@
             assign item_image = block.settings.image | default: block_product.featured_image
             assign item_link = block.settings.link | default: block_product.url
           else
-            assign item_title = block.settings.title | default: "Product Name"
-            assign item_subtitle = block.settings.subtitle | default: "Formula activa"
-            assign item_price = block.settings.price | default: "€150"
+            assign item_title = block.settings.title | default: "Nume Produs"
+            assign item_price = block.settings.price | default: "€16,99"
+            assign item_image = block.settings.image
             assign item_link = block.settings.link | default: "#"
           endif
         -%}
@@ -828,14 +823,7 @@
                    width="36"
                    height="36">
             {%- else -%}
-              {%- assign orb_mod = forloop.index | modulo: 5 | plus: 1 -%}
-              {%- assign fallback_orb_thumb = 'orb-' | append: orb_mod | append: '.png' -%}
-              <img src="{{ fallback_orb_thumb | asset_url }}" 
-                   alt="{{ item_title | escape }}" 
-                   class="orbit-capsule-img-{{ section.id }}"
-                   loading="lazy"
-                   width="36"
-                   height="36">
+              <span style="font-size: 14px; color: {{ gold_color }}">✨</span>
             {%- endif -%}
           </div>
 
@@ -854,10 +842,10 @@
     <!-- Mobile Panel Container -->
     <div class="orbit-mobile-info-panel-{{ section.id }} d-md-none" id="orbit-mobile-panel-{{ section.id }}">
       <div class="orbit-mobile-info-content-{{ section.id }}" id="orbit-mobile-content-{{ section.id }}">
-        <span class="orbit-mobile-type-{{ section.id }}">PRODUCT</span>
+        <span class="orbit-mobile-type-{{ section.id }}">PRODUS</span>
         <h4 class="orbit-mobile-title-{{ section.id }}">{{ section.settings.center_name }}</h4>
         <p class="orbit-mobile-sub-{{ section.id }}">{{ section.settings.center_sub }}</p>
-        <a href="{{ section.settings.center_link | default: '#' }}" class="orbit-mobile-link-{{ section.id }}">DISCOVER</a>
+        <a href="{{ section.settings.center_link | default: '#' }}" class="orbit-mobile-link-{{ section.id }}">DESCOPERĂ</a>
       </div>
     </div>
 
@@ -1351,12 +1339,12 @@
           const panelContent = document.getElementById('orbit-mobile-content-{{ section.id }}');
           if (panelContent) {
             const isBundle = node.dataset.itemType === 'bundle';
-            const type = isBundle ? 'RITUAL / SET PROTOCOL' : 'INDIVIDUAL PRODUCT';
+            const type = isBundle ? 'RITUAL / SET BUNDLE' : 'PRODUS INDIVIDUAL';
             const title = node.dataset.title;
             const sub = node.dataset.subtitle;
             const price = node.dataset.price;
             const link = node.dataset.link;
-            const linkText = isBundle ? 'EXPLORE RITUAL' : 'EXPLORE PRODUCT';
+            const linkText = isBundle ? 'VEZI RITUAL' : 'DESCOPERĂ PRODUS';
             
             panelContent.style.opacity = 0;
             setTimeout(() => {
@@ -1451,7 +1439,7 @@
 
 {% schema %}
 {
-  "name": "Constellation Rituals",
+  "name": "Ritualuri Constelație",
   "class": "index-section-experience-rituals",
   "max_blocks": 12,
   "settings": [
@@ -1459,22 +1447,10 @@
       "type": "select",
       "id": "animation",
       "options": [
-        {
-          "value": "",
-          "label": "None"
-        },
-        {
-          "value": "fade",
-          "label": "Fade"
-        },
-        {
-          "value": "fade-up",
-          "label": "Fade Up"
-        },
-        {
-          "value": "zoom-in",
-          "label": "Zoom In"
-        }
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "zoom-in", "label": "Zoom In" }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -1578,14 +1554,8 @@
           "id": "item_type",
           "label": "Item Type",
           "options": [
-            {
-              "value": "product",
-              "label": "Product (Mask)"
-            },
-            {
-              "value": "bundle",
-              "label": "Bundle (Ritual)"
-            }
+            { "value": "product", "label": "Product (Mask)" },
+            { "value": "bundle", "label": "Bundle (Ritual)" }
           ],
           "default": "product"
         },

@@ -225,8 +225,8 @@
               {%- else -%}
                 <!-- Fallback to uploaded mask image in assets -->
                 <img class="experience-img lazyload"
-                     src="{{ 'test-5.png' | asset_url }}"
-                     data-src="{{ 'test-5.png' | asset_url }}"
+                     src="{{ 'lumina-experience-reborn.png' | asset_img_url: '300x' }}"
+                     data-src="{{ 'lumina-experience-reborn.png' | asset_img_url: 'master' }}"
                      alt="Lumina Europa Experience"
                      loading="lazy">
               {%- endif -%}
@@ -248,38 +248,14 @@
       "type": "select",
       "id": "animation",
       "options": [
-        {
-          "value": "",
-          "label": "None"
-        },
-        {
-          "value": "fade",
-          "label": "Fade"
-        },
-        {
-          "value": "fade-up",
-          "label": "Fade Up"
-        },
-        {
-          "value": "fade-down",
-          "label": "Fade Down"
-        },
-        {
-          "value": "fade-left",
-          "label": "Fade Left"
-        },
-        {
-          "value": "fade-right",
-          "label": "Fade Right"
-        },
-        {
-          "value": "zoom-in",
-          "label": "Zoom In"
-        },
-        {
-          "value": "zoom-out",
-          "label": "Zoom Out"
-        }
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "fade-down", "label": "Fade Down" },
+        { "value": "fade-left", "label": "Fade Left" },
+        { "value": "fade-right", "label": "Fade Right" },
+        { "value": "zoom-in", "label": "Zoom In" },
+        { "value": "zoom-out", "label": "Zoom Out" }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -290,18 +266,9 @@
       "label": "Full Width Wrapper",
       "default": "container-fluid",
       "options": [
-        {
-          "value": "container",
-          "label": "Box"
-        },
-        {
-          "value": "container-fluid",
-          "label": "Container Fluid"
-        },
-        {
-          "value": "full",
-          "label": "Full"
-        }
+        { "value": "container", "label": "Box" },
+        { "value": "container-fluid", "label": "Container Fluid" },
+        { "value": "full", "label": "Full" }
       ]
     },
     {
@@ -310,14 +277,8 @@
       "label": "Image Position",
       "default": "right",
       "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
+        { "value": "left", "label": "Left" },
+        { "value": "right", "label": "Right" }
       ]
     },
     {
@@ -418,25 +379,25 @@
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle",
-      "default": "EXPERIENCE LIGHT EUROPE"
+      "default": "EXPERIENȚA LUMINA EUROPA"
     },
     {
       "type": "text",
       "id": "heading_1",
       "label": "Heading Part 1",
-      "default": "Experience a Skin"
+      "default": "Experimentează o Piele"
     },
     {
       "type": "text",
       "id": "heading_2",
       "label": "Heading Part 2 (Italic)",
-      "default": "Who Feels Reborn"
+      "default": "Care se Simte Renăscută"
     },
     {
       "type": "richtext",
       "id": "des",
       "label": "Description",
-      "default": "<p>Powered by advanced nanofiber technology, Lumina Europa transforms your skin care ritual into a moment of visible renewal. Experience deep hydration, smoother texture and a radiant glow designed to leave your skin refreshed, firm and beautifully revitalized.</p>"
+      "default": "<p>Alimentat de tehnologia avansată a nanofibrelor, Lumina Europa îți transformă ritualul de îngrijire a pielii într-un moment de reînnoire vizibilă. Experimentează o hidratare profundă, o textură mai fină și o strălucire radiantă menită să-ți lase pielea revigorată, fermă și frumos revitalizată.</p>"
     },
     {
       "type": "header",
@@ -458,30 +419,12 @@
       "label": "Style Button",
       "default": "btn-theme",
       "options": [
-        {
-          "value": "btn-theme",
-          "label": "Button Box"
-        },
-        {
-          "value": "btn-theme btn-white",
-          "label": "Button Box White"
-        },
-        {
-          "value": "btn-underline",
-          "label": "Button Line"
-        },
-        {
-          "value": "btn-underline btn-underline-white",
-          "label": "Button Line White"
-        },
-        {
-          "value": "btn-outline",
-          "label": "Button Outline"
-        },
-        {
-          "value": "btn-outline btn-outline-white",
-          "label": "Button Outline White"
-        }
+        { "value": "btn-theme", "label": "Button Box" },
+        { "value": "btn-theme btn-white", "label": "Button Box White" },
+        { "value": "btn-underline", "label": "Button Line" },
+        { "value": "btn-underline btn-underline-white", "label": "Button Line White" },
+        { "value": "btn-outline", "label": "Button Outline" },
+        { "value": "btn-outline btn-outline-white", "label": "Button Outline White" }
       ]
     },
     {

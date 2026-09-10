@@ -21,7 +21,7 @@
           "type": "step_1",
           "settings": {
             "area_value": "face",
-            "title": "Face",
+            "title": "Ten (Față)",
             "bg_image": "shopify://shop_images/Ten.png"
           }
         },
@@ -29,7 +29,7 @@
           "type": "step_1",
           "settings": {
             "area_value": "eyes",
-            "title": "Eyes",
+            "title": "Ochi",
             "bg_image": "shopify://shop_images/Ochi.png"
           }
         },
@@ -37,7 +37,7 @@
           "type": "step_1",
           "settings": {
             "area_value": "neck",
-            "title": "Neck",
+            "title": "Gât",
             "bg_image": "shopify://shop_images/Gat.png"
           }
         },
@@ -45,7 +45,7 @@
           "type": "step_1",
           "settings": {
             "area_value": "decollete",
-            "title": "Décolleté",
+            "title": "Decolteu",
             "bg_image": "shopify://shop_images/Decolteu.png"
           }
         },
@@ -53,7 +53,7 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Soothing for Sensitive Skin",
+            "goal": "Calmare pentru Ten Sensibil",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-skin-smoothing-sheet-mask"
           }
@@ -62,7 +62,7 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Deep Hydration",
+            "goal": "Hidratare Profundă",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-hydrating-sheet-mask"
           }
@@ -71,7 +71,7 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Refresh (Mist)",
+            "goal": "Reîmprospătare (Mist)",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-hydro-mist-cu-acid-hialuronic"
           }
@@ -80,7 +80,7 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Stain Removal and Uniformity",
+            "goal": "Eliminare Pete și Uniformizare",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-brightening-sheet-mask"
           }
@@ -89,16 +89,16 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Intense Brightness",
+            "goal": "Luminozitate Intensă",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-intensive-wipe-mask-for-luminosity"
+            "product": "nano-beauty-pro-masca-șervețel-intensiva-pentru-luminozitate"
           }
         },
         "product_match_awcwHE": {
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Prevention Aging",
+            "goal": "Prevenire Îmbătrânire",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-anty-aging-sheet-mask"
           }
@@ -116,16 +116,16 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Firmness and Lifting",
+            "goal": "Fermitate și Lifting",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-collagen-face-mask-for-lifting"
+            "product": "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting"
           }
         },
         "product_match_XMH37q": {
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Regeneration and Repair",
+            "goal": "Regenerare și Reparare",
             "goal_subtitle": "",
             "product": "nano-beauty-pro-regenerating-sheet-mask"
           }
@@ -134,9 +134,9 @@
           "type": "product_match",
           "settings": {
             "area": "face",
-            "goal": "Revitalization and Energy",
+            "goal": "Revitalizare și Energie",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-intensive-wipe-mask-for-luminosity"
+            "product": "nano-beauty-pro-masca-șervețel-intensiva-pentru-luminozitate"
           }
         },
         "product_match_UGVefg": {
@@ -145,7 +145,7 @@
             "area": "eyes",
             "goal": "",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-anti-aging-eye-mask"
+            "product": "nano-beauty-pro-masca-anti-imbatranire-pentru-ochi"
           }
         },
         "product_match_8jcFqE": {
@@ -154,7 +154,7 @@
             "area": "neck",
             "goal": "",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-anti-aging-neck-mask"
+            "product": "nano-beauty-pro-masca-anti-imbatranire-pentru-gat"
           }
         },
         "product_match_gQj3rm": {
@@ -163,7 +163,7 @@
             "area": "decollete",
             "goal": "",
             "goal_subtitle": "",
-            "product": "nano-beauty-pro-anti-aging-mask-for-décolletage"
+            "product": "nano-beauty-pro-masca-anti-imbatranire-pentru-decolteu"
           }
         }
       },
@@ -187,9 +187,9 @@
         "product_match_gQj3rm"
       ],
       "settings": {
-        "subtitle": "Personalize your care",
-        "title": "Find Your Perfect Ritual",
-        "description": "Each area of ​​your skin has unique needs. Choose the area you want to treat...",
+        "subtitle": "Personalizează-ți îngrijirea",
+        "title": "Găsește-ți Ritualul Perfect",
+        "description": "Fiecare zonă a pielii tale are nevoi unice. Alege zona pe care vrei să o tratezi...",
         "bg_color": "#000000",
         "bg_image": "shopify://shop_images/quiz-section.png"
       }

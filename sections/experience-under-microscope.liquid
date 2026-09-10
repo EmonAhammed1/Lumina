@@ -524,58 +524,45 @@
             
             <!-- Slide 1 (MICRO) -->
             <div class="media-slide active" data-slide="1">
-              {%- if section.settings.stage_1_video_url != blank and section.settings.stage_1_video_url contains 'http' -%}
+              {%- if section.settings.stage_1_video_url != blank -%}
                 <video src="{{ section.settings.stage_1_video_url }}" autoplay loop muted playsinline class="bg-media"></video>
-              {%- elsif section.settings.stage_1_video_url != blank -%}
-                <video src="{{ section.settings.stage_1_video_url | file_url }}" autoplay loop muted playsinline class="bg-media"></video>
               {%- elsif section.settings.stage_1_image != blank -%}
                 <img src="{{ section.settings.stage_1_image | image_url: width: 1000 }}" alt="Microscope view - Micro" class="bg-media" loading="lazy">
               {%- else -%}
-                <video autoplay loop muted playsinline class="bg-media" poster="{{ 'nano-fiber-stracture.webp' | asset_url }}">
-                  <source src="{{ 'Visual 2 Decomposition.mp4' | file_url }}" type="video/mp4">
-                  <source src="{{ '2_nanofibre_activation_rewards.mp4' | file_url }}" type="video/mp4">
-                  <source src="{{ 'a3f8b7ec2b264fbda558acd951f1b106.mp4' | file_url }}" type="video/mp4">
-                  <source src="https://cdn.shopify.com/videos/c/o/v/a3f8b7ec2b264fbda558acd951f1b106.mp4" type="video/mp4">
-                </video>
+                <div class="bg-media-placeholder"></div>
               {%- endif -%}
             </div>
             
             <!-- Slide 2 (ACTIVE) -->
             <div class="media-slide" data-slide="2">
-              {%- if section.settings.stage_2_video_url != blank and section.settings.stage_2_video_url contains 'http' -%}
+              {%- if section.settings.stage_2_video_url != blank -%}
                 <video src="{{ section.settings.stage_2_video_url }}" autoplay loop muted playsinline class="bg-media"></video>
-              {%- elsif section.settings.stage_2_video_url != blank -%}
-                <video src="{{ section.settings.stage_2_video_url | file_url }}" autoplay loop muted playsinline class="bg-media"></video>
               {%- elsif section.settings.stage_2_image != blank -%}
                 <img src="{{ section.settings.stage_2_image | image_url: width: 1000 }}" alt="Microscope view - Active" class="bg-media" loading="lazy">
               {%- else -%}
-                <img src="{{ 'active-ingredients.webp' | asset_url }}" alt="Microscope view - Active" class="bg-media" loading="lazy">
+                <div class="bg-media-placeholder"></div>
               {%- endif -%}
             </div>
             
             <!-- Slide 3 (DEEP) -->
             <div class="media-slide" data-slide="3">
-              {%- if section.settings.stage_3_video_url != blank and section.settings.stage_3_video_url contains 'http' -%}
+              {%- if section.settings.stage_3_video_url != blank -%}
                 <video src="{{ section.settings.stage_3_video_url }}" autoplay loop muted playsinline class="bg-media"></video>
-              {%- elsif section.settings.stage_3_video_url != blank -%}
-                <video src="{{ section.settings.stage_3_video_url | file_url }}" autoplay loop muted playsinline class="bg-media"></video>
               {%- elsif section.settings.stage_3_image != blank -%}
                 <img src="{{ section.settings.stage_3_image | image_url: width: 1000 }}" alt="Microscope view - Deep" class="bg-media" loading="lazy">
               {%- else -%}
-                <img src="{{ 'deep-penetration.webp' | asset_url }}" alt="Microscope view - Deep" class="bg-media" loading="lazy">
+                <div class="bg-media-placeholder"></div>
               {%- endif -%}
             </div>
             
             <!-- Slide 4 (RESULT) -->
             <div class="media-slide" data-slide="4">
-              {%- if section.settings.stage_4_video_url != blank and section.settings.stage_4_video_url contains 'http' -%}
+              {%- if section.settings.stage_4_video_url != blank -%}
                 <video src="{{ section.settings.stage_4_video_url }}" autoplay loop muted playsinline class="bg-media"></video>
-              {%- elsif section.settings.stage_4_video_url != blank -%}
-                <video src="{{ section.settings.stage_4_video_url | file_url }}" autoplay loop muted playsinline class="bg-media"></video>
               {%- elsif section.settings.stage_4_image != blank -%}
                 <img src="{{ section.settings.stage_4_image | image_url: width: 1000 }}" alt="Microscope view - Result" class="bg-media" loading="lazy">
               {%- else -%}
-                <img src="{{ 'ChatGPT_Image_Aug_10_2026_03_22_12_PM.png' | asset_url }}" alt="Microscope view - Result" class="bg-media" loading="lazy">
+                <div class="bg-media-placeholder"></div>
               {%- endif -%}
             </div>
             
@@ -595,7 +582,7 @@
               <span class="item-dot"></span>
               <span class="item-label-wrap">
                 <span class="item-label">{{ section.settings.stage_1_label | default: "MICRO" }}</span>
-                <span class="item-title">{{ section.settings.stage_1_title | default: "Nanofibers Structure" }}</span>
+                <span class="item-title">{{ section.settings.stage_1_title | default: "Nanofibre Structure" }}</span>
               </span>
             </button>
             
@@ -806,22 +793,10 @@
       "type": "select",
       "id": "animation",
       "options": [
-        {
-          "value": "",
-          "label": "None"
-        },
-        {
-          "value": "fade",
-          "label": "Fade"
-        },
-        {
-          "value": "fade-up",
-          "label": "Fade Up"
-        },
-        {
-          "value": "zoom-in",
-          "label": "Zoom In"
-        }
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "zoom-in", "label": "Zoom In" }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -832,18 +807,9 @@
       "label": "Full Width Wrapper",
       "default": "container",
       "options": [
-        {
-          "value": "container",
-          "label": "Box"
-        },
-        {
-          "value": "container-fluid",
-          "label": "Container Fluid"
-        },
-        {
-          "value": "full",
-          "label": "Full"
-        }
+        { "value": "container", "label": "Box" },
+        { "value": "container-fluid", "label": "Container Fluid" },
+        { "value": "full", "label": "Full" }
       ]
     },
     {
@@ -860,13 +826,13 @@
       "type": "text",
       "id": "title",
       "label": "Title",
-      "default": "Science you can see. Results you can feel."
+      "default": "Știință pe care o poți vedea. Rezultate pe care le poți simți."
     },
     {
       "type": "richtext",
       "id": "desc",
       "label": "Description",
-      "default": "<p>Our patented nanofibre technology is designed for precise delivery, activating only on contact with wet skin – ensuring the maximum performance of each pure ingredient.</p>"
+      "default": "<p>Tehnologia noastră patentată de nanofibre este proiectată pentru livrare precisă, activându-se doar la contactul cu pielea umedă – asigurând performanța maximă a fiecărui ingredient pur.</p>"
     },
     {
       "type": "header",
@@ -876,7 +842,7 @@
       "type": "text",
       "id": "scroll_label",
       "label": "Scroll Label",
-      "default": "SCROLL TO EXPLORE"
+      "default": "DERULAȚI PENTRU A EXPLORA"
     },
     {
       "type": "image_picker",
@@ -897,7 +863,7 @@
       "type": "text",
       "id": "stage_1_title",
       "label": "Stage 1 Subtitle",
-      "default": "Structure of Nanofibers"
+      "default": "Structură de Nanofibre"
     },
     {
       "type": "image_picker",
@@ -924,7 +890,7 @@
       "type": "text",
       "id": "stage_2_title",
       "label": "Stage 2 Subtitle",
-      "default": "Ingredient Delivery"
+      "default": "Livrare de Ingrediente"
     },
     {
       "type": "image_picker",
@@ -950,7 +916,7 @@
       "type": "text",
       "id": "stage_3_title",
       "label": "Stage 3 Subtitle",
-      "default": "Skin penetration"
+      "default": "Penetrare în Piele"
     },
     {
       "type": "image_picker",
@@ -976,7 +942,7 @@
       "type": "text",
       "id": "stage_4_title",
       "label": "Stage 4 Subtitle",
-      "default": "Visible Transformation"
+      "default": "Transformare Vizibilă"
     },
     {
       "type": "image_picker",
@@ -996,7 +962,7 @@
       "type": "text",
       "id": "btn_label",
       "label": "Button Label",
-      "default": "DISCOVER TEHNOLOGIA"
+      "default": "DESCOPERĂ TEHNOLOGIA"
     },
     {
       "type": "url",
@@ -1048,18 +1014,9 @@
           "id": "icon",
           "label": "Select Icon",
           "options": [
-            {
-              "value": "molecule",
-              "label": "Chemical Molecule"
-            },
-            {
-              "value": "delivery",
-              "label": "Active Delivery"
-            },
-            {
-              "value": "leaf",
-              "label": "Preservative-Free Leaf"
-            }
+            { "value": "molecule", "label": "Chemical Molecule" },
+            { "value": "delivery", "label": "Active Delivery" },
+            { "value": "leaf", "label": "Preservative-Free Leaf" }
           ],
           "default": "molecule"
         },
@@ -1067,13 +1024,13 @@
           "type": "text",
           "id": "title",
           "label": "Feature Title",
-          "default": "PATENTED NANOFIBER TECHNOLOGY"
+          "default": "TEHNOLOGIE PATENTATĂ DE NANOFIBRE"
         },
         {
           "type": "textarea",
           "id": "description",
           "label": "Feature Description",
-          "default": "Ultra-fine nanofibers create a smart structure that remains dry and stable until activated."
+          "default": "Nanofibrele ultra-fine creează o structură inteligentă care rămâne uscată și stabilă până la activare."
         }
       ]
     }
@@ -1087,24 +1044,24 @@
           "type": "feature",
           "settings": {
             "icon": "molecule",
-            "title": "PATENTED NANOFIBER TECHNOLOGY",
-            "description": "Ultra-fine nanofibers create a smart structure that remains dry and stable until activated."
+            "title": "TEHNOLOGIE PATENTATĂ DE NANOFIBRE",
+            "description": "Nanofibrele ultra-fine creează o structură inteligentă care rămâne uscată și stabilă până la activare."
           }
         },
         {
           "type": "feature",
           "settings": {
             "icon": "delivery",
-            "title": "ACTIVE DELIVERY",
-            "description": "On contact with wet skin, the fibers dissolve instantly, delivering the active ingredients directly to where they are needed most."
+            "title": "LIVRARE ACTIVĂ",
+            "description": "La contactul cu pielea umedă, fibrele se dizolvă instantaneu, livrând ingredientele active direct acolo unde este cea mai mare nevoie."
           }
         },
         {
           "type": "feature",
           "settings": {
             "icon": "leaf",
-            "title": "FORMAT WITHOUT PRESERVATIVES",
-            "description": "Our dry format eliminates the need for parabens, added fragrances and unnecessary preservatives - perfect for sensitive skin."
+            "title": "FORMAT FĂRĂ CONSERVANȚI",
+            "description": "Formatul nostru uscat elimină necesitatea parabenilor, parfumurilor adăugate și conservanților inutili - perfect pentru pielea sensibilă."
           }
         }
       ]

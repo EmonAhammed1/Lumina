@@ -288,8 +288,8 @@
                   {{ product.metafields.info.affiliate_button }}
                 </a>
               {% else %} {% comment %}NORMAL PRODUCT{% endcomment %}
-                {% capture form_class %}product-form {% if block.settings.product_selector == 'select' %} product-form-select{% endif %} {% if block.settings.enable_payment_button %} product-form--payment-button{% endif %}{%- endcapture %}
-                {% capture form_id %}AddToCartForm-{{ section.id }}{%- endcapture %}
+                {% capture "form_class" %}product-form {% if block.settings.product_selector == 'select' %} product-form-select{% endif %} {% if block.settings.enable_payment_button %} product-form--payment-button{% endif %}{%- endcapture %}
+                {% capture "form_id" %}AddToCartForm-{{ section.id }}{%- endcapture %}
                 {% form 'product', product, class: form_class, id: form_id %}
                 {% unless product.has_only_default_variant %}
                 {% for option in product.options_with_values %}
@@ -1541,14 +1541,14 @@ initPhotoSwipeFromDOM('.my-gallery');
           "id": "block_style",
           "label": "Style",
           "options": [
-            {
-              "value": "ver",
-              "label": "Vertical"
-            },
-            {
-              "value": "hoz",
-              "label": "Horizontal"
-            }
+           {
+            "value": "ver",
+            "label": "Vertical"
+           },
+           {
+            "value": "hoz",
+            "label": "Horizontal"
+           }
           ],
           "default": "ver"
         },
@@ -1847,7 +1847,7 @@ initPhotoSwipeFromDOM('.my-gallery');
           "step": 1,
           "label": "Limit Products",
           "default": 3,
-          "info": "Complementary products. Guide https://help.shopify.com/en/manual/online-store/search-and-discovery/product-recommendations"
+          "info":"Complementary products. Guide https://help.shopify.com/en/manual/online-store/search-and-discovery/product-recommendations"
         }
       ]
     },
@@ -1916,19 +1916,19 @@ initPhotoSwipeFromDOM('.my-gallery');
       "type": "icon_with_text",
       "name": "Icon with Text",
       "settings": [
-        {
+          {
           "type": "select",
           "id": "block_style",
           "label": "Style",
           "options": [
-            {
-              "value": "ver",
-              "label": "Vertical"
-            },
-            {
-              "value": "hoz",
-              "label": "Horizontal"
-            }
+           {
+            "value": "ver",
+            "label": "Vertical"
+           },
+           {
+            "value": "hoz",
+            "label": "Horizontal"
+           }
           ],
           "default": "ver"
         },

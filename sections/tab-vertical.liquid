@@ -137,12 +137,8 @@
                                 <div class="image-content__image-container tab-image__video overflow-hidden">
                                     <a class="image-content__image-wrapper" href="{{ block.settings.link }}">
                                       <video class="lazyload scale-in product-video__banner  position-absolute" id="Mp4{{ section.id }}"  loop="" muted="" playsinline="" autoplay="" >
-                                        {%- if block.settings.id_video contains 'http' -%}
-                                          <source src="{{ block.settings.id_video }}" type="video/mp4">
-                                        {%- else -%}
-                                          <source src="{{ block.settings.id_video | file_url }}" type="video/mp4">
-                                        {%- endif -%}
-                                      </video>
+                                        <source src="{{ block.settings.id_video }}" type="video/mp4">
+                                    </video>
                                        
                                     </a>
                                 </div>
@@ -188,7 +184,7 @@
                         {%- else -%}
                             <div class="tab-image__big">
                                 <div class="image-content__image">
-                                    <img class="image-content__image scale-in lazyload" src="{{ 'img-1.png' | asset_url }}" alt="Lumina" loading="lazy">
+                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                                 </div>
                             </div>
                         {%- endif -%}
@@ -213,7 +209,7 @@
                         {%- else -%}
                             <div class="tab-image__small">
                                 <div class="image-content__image">
-                                    <img class="image-content__image scale-in lazyload" src="{{ 'img-2.png' | asset_url }}" alt="Lumina" loading="lazy">
+                                    {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                                 </div>
                             </div>
                         {%- endif -%}

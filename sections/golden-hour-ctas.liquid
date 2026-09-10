@@ -152,21 +152,13 @@
 
 <div class="gh-ctas-wrap" id="{{ section.id | split: '__' | last }}" data-section-id="{{ section.id }}">
   <div class="gh-ctas-video-wrap">
-    {%- if section.settings.video != blank and section.settings.video.sources != blank -%}
+    {%- if section.settings.video != blank -%}
       {{ section.settings.video | video_tag: autoplay: true, loop: true, muted: true, playsinline: true, class: 'gh-ctas-video' }}
-    {%- elsif section.settings.video != blank -%}
-      <video class="gh-ctas-video" autoplay loop muted playsinline poster="{{ 'Screenshot_2026-03-31_at_14.31.38.png' | asset_url }}">
-        <source src="{% if section.settings.video contains 'http' %}{{ section.settings.video }}{% else %}{{ section.settings.video | file_url }}{% endif %}" type="video/mp4">
-        <source src="{{ 'video 6 starting the ritual.mp4' | file_url }}" type="video/mp4">
-        <source src="{{ 'video_6_starting_the_ritual.mp4' | file_url }}" type="video/mp4">
-      </video>
     {%- elsif section.settings.image != blank -%}
       <img src="{{ section.settings.image | image_url: width: 2400 }}" alt="{{ section.settings.heading }}" class="gh-ctas-video">
     {%- else -%}
-      <video class="gh-ctas-video" autoplay loop muted playsinline poster="{{ 'Screenshot_2026-03-31_at_14.31.38.png' | asset_url }}">
-        <source src="{{ 'video 6 starting the ritual.mp4' | file_url }}" type="video/mp4">
-        <source src="{{ 'video_6_starting_the_ritual.mp4' | file_url }}" type="video/mp4">
-        <source src="{{ 'The Golden Hour HERO.mp4' | file_url }}" type="video/mp4">
+      <video class="gh-ctas-video" autoplay loop muted playsinline>
+        <source src="{{ 'video 6 starting the ritual.mp4' | asset_url }}" type="video/mp4">
       </video>
     {%- endif -%}
   </div>
@@ -225,7 +217,7 @@
       "type": "text",
       "id": "heading",
       "label": "Heading",
-      "default": "A place where taking care of yourself becomes art."
+      "default": "Un loc unde grija pentru tine devine artă."
     },
     {
       "type": "text",
@@ -242,7 +234,7 @@
       "type": "text",
       "id": "secondary_label",
       "label": "Secondary Button Label",
-      "default": "BACK TO THE STORE"
+      "default": "ÎNAPOI LA MAGAZIN"
     },
     {
       "type": "url",

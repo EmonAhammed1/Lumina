@@ -90,7 +90,7 @@
           {% if section.settings.image != blank %}
             <img src="{{ section.settings.image | image_url: width: 800 }}" alt="{{ section.settings.image.alt | escape }}" loading="lazy">
           {% else %}
-            <img src="{{ 'pure_transfer.jpg' | asset_url }}" alt="Formula" loading="lazy">
+            {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
           {% endif %}
         </div>
       </div>
@@ -129,14 +129,8 @@
       "id": "image_position",
       "label": "Desktop Image Position",
       "options": [
-        {
-          "value": "left",
-          "label": "Left"
-        },
-        {
-          "value": "right",
-          "label": "Right"
-        }
+        {"value": "left", "label": "Left"},
+        {"value": "right", "label": "Right"}
       ],
       "default": "left"
     },
@@ -155,7 +149,7 @@
       "type": "richtext",
       "id": "text",
       "label": "Body Text",
-      "default": "<p>Nanofibers technology is not separate from the formula it carries. The structure, active ingredients and method of activation must work together to create the intended experience. Each Lumina ritual combines the precision of the material with ingredients selected for a particular skin need—from hydration and comfort to radiance and renewal.</p>"
+      "default": "<p>Nanofibre technology is not separate from the formula it carries. The structure, active ingredients and method of activation must work together to create the intended experience. Each Lumina ritual combines the precision of the material with ingredients selected for a particular skin need—from hydration and comfort to radiance and renewal.</p>"
     },
     {
       "type": "text",
@@ -193,36 +187,11 @@
     {
       "name": "Technology Formula",
       "blocks": [
-        {
-          "type": "ingredient",
-          "settings": {
-            "title": "Hyaluronic Acid"
-          }
-        },
-        {
-          "type": "ingredient",
-          "settings": {
-            "title": "Vitamin C"
-          }
-        },
-        {
-          "type": "ingredient",
-          "settings": {
-            "title": "Vitamin E"
-          }
-        },
-        {
-          "type": "ingredient",
-          "settings": {
-            "title": "Niacinamide"
-          }
-        },
-        {
-          "type": "ingredient",
-          "settings": {
-            "title": "Azelaic Acid"
-          }
-        }
+        {"type": "ingredient", "settings": {"title": "Hyaluronic Acid"}},
+        {"type": "ingredient", "settings": {"title": "Vitamin C"}},
+        {"type": "ingredient", "settings": {"title": "Vitamin E"}},
+        {"type": "ingredient", "settings": {"title": "Niacinamide"}},
+        {"type": "ingredient", "settings": {"title": "Azelaic Acid"}}
       ]
     }
   ]

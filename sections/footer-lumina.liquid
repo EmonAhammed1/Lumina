@@ -409,16 +409,15 @@
         {{ section.settings.tagline | default: 'Science.<br>Ritual.<br>Light.' }}
       </div>
       <div class="lf-copyright">
-        {{ section.settings.copyright | default: '&copy; 2026 Lumina Europa.<br>All rights reserved.' }}
+        {{ section.settings.copyright | default: '&copy; 2026 Lumina Europa.<br>Toate drepturile rezervate.' }}
       </div>
     </div>
     
     <div class="lf-col-links-wrapper">
       <!-- COLUMN 1 -->
       <div class="lf-col-links">
-        {% assign col1_heading = section.settings.col1_title | default: 'DISCOVER LUMINA' %}
         <h4 class="lf-col-title js-accordion-trigger">
-          {% render 'processMenuTitle', itemName: col1_heading %}
+          {{ section.settings.col1_title | default: 'DESCOPERĂ LUMINA' }}
           <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
@@ -426,15 +425,15 @@
             {% assign col1_menu = linklists[section.settings.col1_menu] %}
             {% if col1_menu != blank and col1_menu.links.size > 0 %}
               {% for link in col1_menu.links %}
-                <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col1_link1_text != blank %}<li><a href="{{ section.settings.col1_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link1_text %}</a></li>{% endif %}
-              {% if section.settings.col1_link2_text != blank %}<li><a href="{{ section.settings.col1_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link2_text %}</a></li>{% endif %}
-              {% if section.settings.col1_link3_text != blank %}<li><a href="{{ section.settings.col1_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link3_text %}</a></li>{% endif %}
-              {% if section.settings.col1_link4_text != blank %}<li><a href="{{ section.settings.col1_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link4_text %}</a></li>{% endif %}
-              {% if section.settings.col1_link5_text != blank %}<li><a href="{{ section.settings.col1_link5_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link5_text %}</a></li>{% endif %}
-              {% if section.settings.col1_link6_text != blank %}<li><a href="{{ section.settings.col1_link6_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col1_link6_text %}</a></li>{% endif %}
+              {% if section.settings.col1_link1_text != blank %}<li><a href="{{ section.settings.col1_link1_url | default: '#' }}">{{ section.settings.col1_link1_text }}</a></li>{% endif %}
+              {% if section.settings.col1_link2_text != blank %}<li><a href="{{ section.settings.col1_link2_url | default: '#' }}">{{ section.settings.col1_link2_text }}</a></li>{% endif %}
+              {% if section.settings.col1_link3_text != blank %}<li><a href="{{ section.settings.col1_link3_url | default: '#' }}">{{ section.settings.col1_link3_text }}</a></li>{% endif %}
+              {% if section.settings.col1_link4_text != blank %}<li><a href="{{ section.settings.col1_link4_url | default: '#' }}">{{ section.settings.col1_link4_text }}</a></li>{% endif %}
+              {% if section.settings.col1_link5_text != blank %}<li><a href="{{ section.settings.col1_link5_url | default: '#' }}">{{ section.settings.col1_link5_text }}</a></li>{% endif %}
+              {% if section.settings.col1_link6_text != blank %}<li><a href="{{ section.settings.col1_link6_url | default: '#' }}">{{ section.settings.col1_link6_text }}</a></li>{% endif %}
             {% endif %}
           </ul>
         </div>
@@ -442,42 +441,41 @@
       
       <!-- COLUMN 2 -->
       <div class="lf-col-links">
-        {% assign col2_heading = section.settings.col2_title | default: 'COLLECTIONS & RITUALS' %}
         <h4 class="lf-col-title js-accordion-trigger">
-          {% render 'processMenuTitle', itemName: col2_heading %}
-          <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6-6"/></svg>
+          {{ section.settings.col2_title | default: 'COLECȚII & RITUALURI' }}
+          <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
           {% if section.settings.col2_sub1_title != blank %}
-            <div class="lf-col-subtitle">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_title %}</div>
+            <div class="lf-col-subtitle">{{ section.settings.col2_sub1_title }}</div>
           {% endif %}
           <ul class="lf-menu-list">
             {% assign col2_sub1_menu = linklists[section.settings.col2_sub1_menu] %}
             {% if col2_sub1_menu != blank and col2_sub1_menu.links.size > 0 %}
               {% for link in col2_sub1_menu.links %}
-                <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col2_sub1_link1_text != blank %}<li><a href="{{ section.settings.col2_sub1_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_link1_text %}</a></li>{% endif %}
-              {% if section.settings.col2_sub1_link2_text != blank %}<li><a href="{{ section.settings.col2_sub1_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_link2_text %}</a></li>{% endif %}
-              {% if section.settings.col2_sub1_link3_text != blank %}<li><a href="{{ section.settings.col2_sub1_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_link3_text %}</a></li>{% endif %}
-              {% if section.settings.col2_sub1_link4_text != blank %}<li><a href="{{ section.settings.col2_sub1_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub1_link4_text %}</a></li>{% endif %}
+              {% if section.settings.col2_sub1_link1_text != blank %}<li><a href="{{ section.settings.col2_sub1_link1_url | default: '#' }}">{{ section.settings.col2_sub1_link1_text }}</a></li>{% endif %}
+              {% if section.settings.col2_sub1_link2_text != blank %}<li><a href="{{ section.settings.col2_sub1_link2_url | default: '#' }}">{{ section.settings.col2_sub1_link2_text }}</a></li>{% endif %}
+              {% if section.settings.col2_sub1_link3_text != blank %}<li><a href="{{ section.settings.col2_sub1_link3_url | default: '#' }}">{{ section.settings.col2_sub1_link3_text }}</a></li>{% endif %}
+              {% if section.settings.col2_sub1_link4_text != blank %}<li><a href="{{ section.settings.col2_sub1_link4_url | default: '#' }}">{{ section.settings.col2_sub1_link4_text }}</a></li>{% endif %}
             {% endif %}
           </ul>
 
           {% if section.settings.col2_sub2_title != blank %}
-            <div class="lf-col-subtitle">{% render 'processMenuTitle', itemName: section.settings.col2_sub2_title %}</div>
+            <div class="lf-col-subtitle">{{ section.settings.col2_sub2_title }}</div>
           {% endif %}
           <ul class="lf-menu-list">
             {% assign col2_sub2_menu = linklists[section.settings.col2_sub2_menu] %}
             {% if col2_sub2_menu != blank and col2_sub2_menu.links.size > 0 %}
               {% for link in col2_sub2_menu.links %}
-                <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col2_sub2_link1_text != blank %}<li><a href="{{ section.settings.col2_sub2_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub2_link1_text %}</a></li>{% endif %}
-              {% if section.settings.col2_sub2_link2_text != blank %}<li><a href="{{ section.settings.col2_sub2_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub2_link2_text %}</a></li>{% endif %}
-              {% if section.settings.col2_sub2_link3_text != blank %}<li><a href="{{ section.settings.col2_sub2_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col2_sub2_link3_text %}</a></li>{% endif %}
+              {% if section.settings.col2_sub2_link1_text != blank %}<li><a href="{{ section.settings.col2_sub2_link1_url | default: '#' }}">{{ section.settings.col2_sub2_link1_text }}</a></li>{% endif %}
+              {% if section.settings.col2_sub2_link2_text != blank %}<li><a href="{{ section.settings.col2_sub2_link2_url | default: '#' }}">{{ section.settings.col2_sub2_link2_text }}</a></li>{% endif %}
+              {% if section.settings.col2_sub2_link3_text != blank %}<li><a href="{{ section.settings.col2_sub2_link3_url | default: '#' }}">{{ section.settings.col2_sub2_link3_text }}</a></li>{% endif %}
             {% endif %}
           </ul>
         </div>
@@ -485,9 +483,8 @@
       
       <!-- COLUMN 3 -->
       <div class="lf-col-links">
-        {% assign col3_heading = section.settings.col3_title | default: 'HELP & CONCIERGE' %}
         <h4 class="lf-col-title js-accordion-trigger">
-          {% render 'processMenuTitle', itemName: col3_heading %}
+          {{ section.settings.col3_title | default: 'AJUTOR' }}
           <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
@@ -495,15 +492,15 @@
             {% assign col3_menu = linklists[section.settings.col3_menu] %}
             {% if col3_menu != blank and col3_menu.links.size > 0 %}
               {% for link in col3_menu.links %}
-                <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
+                <li><a href="{{ link.url }}">{{ link.title }}</a></li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col3_link1_text != blank %}<li><a href="{{ section.settings.col3_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link1_text %}</a></li>{% endif %}
-              {% if section.settings.col3_link2_text != blank %}<li><a href="{{ section.settings.col3_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link2_text %}</a></li>{% endif %}
-              {% if section.settings.col3_link3_text != blank %}<li><a href="{{ section.settings.col3_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link3_text %}</a></li>{% endif %}
-              {% if section.settings.col3_link4_text != blank %}<li><a href="{{ section.settings.col3_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link4_text %}</a></li>{% endif %}
-              {% if section.settings.col3_link5_text != blank %}<li><a href="{{ section.settings.col3_link5_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link5_text %}</a></li>{% endif %}
-              {% if section.settings.col3_link6_text != blank %}<li><a href="{{ section.settings.col3_link6_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col3_link6_text %}</a></li>{% endif %}
+              {% if section.settings.col3_link1_text != blank %}<li><a href="{{ section.settings.col3_link1_url | default: '#' }}">{{ section.settings.col3_link1_text }}</a></li>{% endif %}
+              {% if section.settings.col3_link2_text != blank %}<li><a href="{{ section.settings.col3_link2_url | default: '#' }}">{{ section.settings.col3_link2_text }}</a></li>{% endif %}
+              {% if section.settings.col3_link3_text != blank %}<li><a href="{{ section.settings.col3_link3_url | default: '#' }}">{{ section.settings.col3_link3_text }}</a></li>{% endif %}
+              {% if section.settings.col3_link4_text != blank %}<li><a href="{{ section.settings.col3_link4_url | default: '#' }}">{{ section.settings.col3_link4_text }}</a></li>{% endif %}
+              {% if section.settings.col3_link5_text != blank %}<li><a href="{{ section.settings.col3_link5_url | default: '#' }}">{{ section.settings.col3_link5_text }}</a></li>{% endif %}
+              {% if section.settings.col3_link6_text != blank %}<li><a href="{{ section.settings.col3_link6_url | default: '#' }}">{{ section.settings.col3_link6_text }}</a></li>{% endif %}
             {% endif %}
           </ul>
         </div>
@@ -511,9 +508,8 @@
       
       <!-- COLUMN 4 -->
       <div class="lf-col-links">
-        {% assign col4_heading = section.settings.col4_title | default: 'LEGAL' %}
         <h4 class="lf-col-title js-accordion-trigger">
-          {% render 'processMenuTitle', itemName: col4_heading %}
+          {{ section.settings.col4_title | default: 'LEGAL' }}
           <svg class="lf-accordion-icon" viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg>
         </h4>
         <div class="lf-accordion-content">
@@ -522,21 +518,21 @@
             {% if col4_menu != blank and col4_menu.links.size > 0 %}
               {% for link in col4_menu.links %}
                 <li>
-                  <a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a>
+                  <a href="{{ link.url }}">{{ link.title }}</a>
                   {% if link.url contains 'anpc.ro' %}
                     <svg class="lf-icon-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
                   {% endif %}
                 </li>
               {% endfor %}
             {% else %}
-              {% if section.settings.col4_link1_text != blank %}<li><a href="{{ section.settings.col4_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link1_text %}</a></li>{% endif %}
-              {% if section.settings.col4_link2_text != blank %}<li><a href="{{ section.settings.col4_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link2_text %}</a></li>{% endif %}
-              {% if section.settings.col4_link3_text != blank %}<li><a href="{{ section.settings.col4_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link3_text %}</a></li>{% endif %}
-              {% if section.settings.col4_link4_text != blank %}<li><a href="{{ section.settings.col4_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link4_text %}</a></li>{% endif %}
-              {% if section.settings.col4_link5_text != blank %}<li><a href="{{ section.settings.col4_link5_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.col4_link5_text %}</a></li>{% endif %}
+              {% if section.settings.col4_link1_text != blank %}<li><a href="{{ section.settings.col4_link1_url | default: '#' }}">{{ section.settings.col4_link1_text }}</a></li>{% endif %}
+              {% if section.settings.col4_link2_text != blank %}<li><a href="{{ section.settings.col4_link2_url | default: '#' }}">{{ section.settings.col4_link2_text }}</a></li>{% endif %}
+              {% if section.settings.col4_link3_text != blank %}<li><a href="{{ section.settings.col4_link3_url | default: '#' }}">{{ section.settings.col4_link3_text }}</a></li>{% endif %}
+              {% if section.settings.col4_link4_text != blank %}<li><a href="{{ section.settings.col4_link4_url | default: '#' }}">{{ section.settings.col4_link4_text }}</a></li>{% endif %}
+              {% if section.settings.col4_link5_text != blank %}<li><a href="{{ section.settings.col4_link5_url | default: '#' }}">{{ section.settings.col4_link5_text }}</a></li>{% endif %}
               {% if section.settings.col4_link6_text != blank %}
                 <li>
-                  <a href="{{ section.settings.col4_link6_url | default: 'https://anpc.ro/' }}" {% if section.settings.col4_link6_url contains 'anpc.ro' or section.settings.col4_link6_url == blank %}target="_blank"{% endif %}>{% render 'processMenuTitle', itemName: section.settings.col4_link6_text %}</a>
+                  <a href="{{ section.settings.col4_link6_url | default: 'https://anpc.ro/' }}" {% if section.settings.col4_link6_url contains 'anpc.ro' or section.settings.col4_link6_url == blank %}target="_blank"{% endif %}>{{ section.settings.col4_link6_text }}</a>
                   <svg class="lf-icon-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
                 </li>
               {% endif %}
@@ -549,18 +545,18 @@
     <!-- GOLDEN HOUR NEWSLETTER COLUMN -->
     <div class="lf-col-gh">
       <h2 class="lf-gh-title">{{ section.settings.gh_title | default: 'LUMINA<br>GOLDEN HOUR' }}</h2>
-      <p class="lf-gh-text">{{ section.settings.gh_text1 | default: 'A moment of the day when light becomes warmer, rarer, and closer to your skin.' }}</p>
-      <p class="lf-gh-text">{{ section.settings.gh_text2 | default: 'Here begins the rituals, stories, and gestures you discover before anyone else.' }}</p>
+      <p class="lf-gh-text">{{ section.settings.gh_text1 | default: 'Un moment al zilei în care lumina devine mai caldă, mai rară, mai aproape de piele.' }}</p>
+      <p class="lf-gh-text">{{ section.settings.gh_text2 | default: 'Aici încep ritualurile, poveștile și gesturile pe care le descoperi înaintea celorlalți.' }}</p>
       
       {%- form 'customer', class: 'lf-newsletter-form' -%}
         <input type="hidden" name="contact[tags]" value="newsletter">
         <input type="hidden" name="return_to" value="/pages/golden-hour">
         <div class="lf-input-group">
-          <input type="email" name="contact[email]" placeholder="{{ section.settings.newsletter_placeholder | default: 'Your email address' }}" required>
+          <input type="email" name="contact[email]" placeholder="{{ section.settings.newsletter_placeholder | default: 'Adresa ta de e-mail' }}" required>
           <svg class="lf-input-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><path d="M22 6l-10 7L2 6"/></svg>
         </div>
         <button type="submit" class="lf-submit-btn">
-          {{ section.settings.newsletter_btn_text | default: 'ENTER GOLDEN HOUR' }}
+          {{ section.settings.newsletter_btn_text | default: 'REGĂSEȘTE GOLDEN HOUR' }}
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
         </button>
       {%- endform -%}
@@ -585,8 +581,8 @@
         <svg viewBox="0 0 24 24"><path d="M1 3h15v13H1zM16 8h4l3 3v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="16.5" cy="18.5" r="2.5"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat1_title | default: 'COMPLIMENTARY SHIPPING' }}</h4>
-        <p>{{ section.settings.feat1_text | default: 'On orders over €150' }}</p>
+        <h4>{{ section.settings.feat1_title | default: 'LIVRARE GRATUITĂ' }}</h4>
+        <p>{{ section.settings.feat1_text | default: 'pentru comenzi<br>peste XXX lei' }}</p>
       </div>
     </div>
     <div class="lf-feature-block">
@@ -594,8 +590,8 @@
         <svg viewBox="0 0 24 24"><path d="M22 12c0 5.52-4.48 10-10 10S2 17.52 2 12 6.48 2 12 2c2.76 0 5.26 1.12 7.07 2.93"/><path d="M14 5h5v5"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat2_title | default: '30-DAY RETURNS' }}</h4>
-        <p>{{ section.settings.feat2_text | default: 'Effortless, insured,<br>and worry-free.' }}</p>
+        <h4>{{ section.settings.feat2_title | default: 'RETUR ÎN 30 ZILE' }}</h4>
+        <p>{{ section.settings.feat2_text | default: 'Simplu, rapid<br>și fără griji.' }}</p>
       </div>
     </div>
     <div class="lf-feature-block">
@@ -603,7 +599,7 @@
         <svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><path d="M1 10h22"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat3_title | default: 'SECURE PAYMENTS' }}</h4>
+        <h4>{{ section.settings.feat3_title | default: 'PLĂȚI SECURIZATE' }}</h4>
         <p>{{ section.settings.feat3_text | default: 'Visa &bull; Mastercard &bull; Apple Pay<br>Google Pay &bull; PayPal &bull; Klarna' }}</p>
       </div>
     </div>
@@ -612,7 +608,7 @@
         <svg viewBox="0 0 24 24"><path d="M3 18v-6a9 9 0 0118 0v6"/><path d="M21 19a2 2 0 01-2 2h-1v-4h3v2zM3 19a2 2 0 002 2h1v-4H3v2z"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat4_title | default: 'CONCIERGE & SUPPORT' }}</h4>
+        <h4>{{ section.settings.feat4_title | default: 'ASISTENȚĂ' }}</h4>
         <p><a href="mailto:{{ section.settings.feat4_email | default: 'office@luminaeuropa.com' }}">{{ section.settings.feat4_email | default: 'office@luminaeuropa.com' }}</a></p>
       </div>
     </div>
@@ -621,8 +617,8 @@
         <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
       </div>
       <div class="lf-feature-content">
-        <h4>{{ section.settings.feat5_title | default: 'CRAFTED WITH CARE IN EUROPE' }}</h4>
-        <p>{{ section.settings.feat5_text | default: 'Quality, transparency<br>and responsibility.' }}</p>
+        <h4>{{ section.settings.feat5_title | default: 'DEZVOLTATĂ CU GRIJĂ ÎN EUROPA' }}</h4>
+        <p>{{ section.settings.feat5_text | default: 'Calitate, transparență<br>și responsabilitate.' }}</p>
       </div>
     </div>
   </div>
@@ -633,17 +629,17 @@
       {% assign bottom_menu = linklists[section.settings.bottom_menu] %}
       {% if bottom_menu != blank and bottom_menu.links.size > 0 %}
         {% for link in bottom_menu.links %}
-          <li><a href="{{ link.url }}">{% render 'processMenuTitle', itemName: link.title %}</a></li>
+          <li><a href="{{ link.url }}">{{ link.title }}</a></li>
         {% endfor %}
       {% else %}
-        {% if section.settings.bm_link1_text != blank %}<li><a href="{{ section.settings.bm_link1_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link1_text %}</a></li>{% endif %}
-        {% if section.settings.bm_link2_text != blank %}<li><a href="{{ section.settings.bm_link2_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link2_text %}</a></li>{% endif %}
-        {% if section.settings.bm_link3_text != blank %}<li><a href="{{ section.settings.bm_link3_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link3_text %}</a></li>{% endif %}
-        {% if section.settings.bm_link4_text != blank %}<li><a href="{{ section.settings.bm_link4_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link4_text %}</a></li>{% endif %}
-        {% if section.settings.bm_link5_text != blank %}<li><a href="{{ section.settings.bm_link5_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link5_text %}</a></li>{% endif %}
-        {% if section.settings.bm_link6_text != blank %}<li><a href="{{ section.settings.bm_link6_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link6_text %}</a></li>{% endif %}
-        {% if section.settings.bm_link7_text != blank %}<li><a href="{{ section.settings.bm_link7_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link7_text %}</a></li>{% endif %}
-        {% if section.settings.bm_link8_text != blank %}<li><a href="{{ section.settings.bm_link8_url | default: '#' }}">{% render 'processMenuTitle', itemName: section.settings.bm_link8_text %}</a></li>{% endif %}
+        {% if section.settings.bm_link1_text != blank %}<li><a href="{{ section.settings.bm_link1_url | default: '#' }}">{{ section.settings.bm_link1_text }}</a></li>{% endif %}
+        {% if section.settings.bm_link2_text != blank %}<li><a href="{{ section.settings.bm_link2_url | default: '#' }}">{{ section.settings.bm_link2_text }}</a></li>{% endif %}
+        {% if section.settings.bm_link3_text != blank %}<li><a href="{{ section.settings.bm_link3_url | default: '#' }}">{{ section.settings.bm_link3_text }}</a></li>{% endif %}
+        {% if section.settings.bm_link4_text != blank %}<li><a href="{{ section.settings.bm_link4_url | default: '#' }}">{{ section.settings.bm_link4_text }}</a></li>{% endif %}
+        {% if section.settings.bm_link5_text != blank %}<li><a href="{{ section.settings.bm_link5_url | default: '#' }}">{{ section.settings.bm_link5_text }}</a></li>{% endif %}
+        {% if section.settings.bm_link6_text != blank %}<li><a href="{{ section.settings.bm_link6_url | default: '#' }}">{{ section.settings.bm_link6_text }}</a></li>{% endif %}
+        {% if section.settings.bm_link7_text != blank %}<li><a href="{{ section.settings.bm_link7_url | default: '#' }}">{{ section.settings.bm_link7_text }}</a></li>{% endif %}
+        {% if section.settings.bm_link8_text != blank %}<li><a href="{{ section.settings.bm_link8_url | default: '#' }}">{{ section.settings.bm_link8_text }}</a></li>{% endif %}
       {% endif %}
     </ul>
   </div>
@@ -706,17 +702,17 @@
       "type": "textarea",
       "id": "copyright",
       "label": "Copyright Text",
-      "default": "&copy; 2026 Lumina Europa.<br>All rights reserved."
+      "default": "&copy; 2026 Lumina Europa.<br>Toate drepturile rezervate."
     },
     {
       "type": "header",
-      "content": "Column 1: Discover Lumina"
+      "content": "Column 1: Descopera Lumina"
     },
     {
       "type": "text",
       "id": "col1_title",
       "label": "Column 1 Title",
-      "default": "DISCOVER LUMINA"
+      "default": "DESCOPERĂ LUMINA"
     },
     {
       "type": "link_list",
@@ -727,7 +723,7 @@
       "type": "text",
       "id": "col1_link1_text",
       "label": "Link 1 Text",
-      "default": "About Lumina Europa"
+      "default": "Despre Lumina Europa"
     },
     {
       "type": "url",
@@ -738,7 +734,7 @@
       "type": "text",
       "id": "col1_link2_text",
       "label": "Link 2 Text",
-      "default": "Nanofiber Technology"
+      "default": "Tehnologia Nanofibrelor"
     },
     {
       "type": "url",
@@ -749,7 +745,7 @@
       "type": "text",
       "id": "col1_link3_text",
       "label": "Link 3 Text",
-      "default": "How to Use"
+      "default": "Cum se folosește"
     },
     {
       "type": "url",
@@ -760,7 +756,7 @@
       "type": "text",
       "id": "col1_link4_text",
       "label": "Link 4 Text",
-      "default": "Active Ingredients"
+      "default": "Ingrediente Active"
     },
     {
       "type": "url",
@@ -791,19 +787,19 @@
     },
     {
       "type": "header",
-      "content": "Column 2: Collections & Rituals"
+      "content": "Column 2: Colecții & Ritualuri"
     },
     {
       "type": "text",
       "id": "col2_title",
       "label": "Column 2 Title",
-      "default": "COLLECTIONS & RITUALS"
+      "default": "COLECȚII & RITUALURI"
     },
     {
       "type": "text",
       "id": "col2_sub1_title",
       "label": "Subgroup 1 Title",
-      "default": "PRODUCTS"
+      "default": "PRODUSE"
     },
     {
       "type": "link_list",
@@ -813,52 +809,52 @@
     {
       "type": "text",
       "id": "col2_sub1_link1_text",
-      "label": "Products Link 1 Text",
-      "default": "Nanofiber Masks"
+      "label": "Produse Link 1 Text",
+      "default": "Măști cu Nanofibre"
     },
     {
       "type": "url",
       "id": "col2_sub1_link1_url",
-      "label": "Products Link 1 URL"
+      "label": "Produse Link 1 URL"
     },
     {
       "type": "text",
       "id": "col2_sub1_link2_text",
-      "label": "Products Link 2 Text",
-      "default": "Face Sprays"
+      "label": "Produse Link 2 Text",
+      "default": "Sprayuri pentru Față"
     },
     {
       "type": "url",
       "id": "col2_sub1_link2_url",
-      "label": "Products Link 2 URL"
+      "label": "Produse Link 2 URL"
     },
     {
       "type": "text",
       "id": "col2_sub1_link3_text",
-      "label": "Products Link 3 Text",
-      "default": "Sets & Protocols"
+      "label": "Produse Link 3 Text",
+      "default": "Seturi & Protocoale"
     },
     {
       "type": "url",
       "id": "col2_sub1_link3_url",
-      "label": "Products Link 3 URL"
+      "label": "Produse Link 3 URL"
     },
     {
       "type": "text",
       "id": "col2_sub1_link4_text",
-      "label": "Products Link 4 Text",
-      "default": "All Products"
+      "label": "Produse Link 4 Text",
+      "default": "Toate Produsele"
     },
     {
       "type": "url",
       "id": "col2_sub1_link4_url",
-      "label": "Products Link 4 URL"
+      "label": "Produse Link 4 URL"
     },
     {
       "type": "text",
       "id": "col2_sub2_title",
       "label": "Subgroup 2 Title",
-      "default": "RITUALS"
+      "default": "RITUALURI"
     },
     {
       "type": "link_list",
@@ -868,45 +864,45 @@
     {
       "type": "text",
       "id": "col2_sub2_link1_text",
-      "label": "Rituals Link 1 Text",
-      "default": "Morning Ritual"
+      "label": "Ritualuri Link 1 Text",
+      "default": "Ritual de Dimineață"
     },
     {
       "type": "url",
       "id": "col2_sub2_link1_url",
-      "label": "Rituals Link 1 URL"
+      "label": "Ritualuri Link 1 URL"
     },
     {
       "type": "text",
       "id": "col2_sub2_link2_text",
-      "label": "Rituals Link 2 Text",
-      "default": "Evening Ritual"
+      "label": "Ritualuri Link 2 Text",
+      "default": "Ritual de Seară"
     },
     {
       "type": "url",
       "id": "col2_sub2_link2_url",
-      "label": "Rituals Link 2 URL"
+      "label": "Ritualuri Link 2 URL"
     },
     {
       "type": "text",
       "id": "col2_sub2_link3_text",
-      "label": "Rituals Link 3 Text",
-      "default": "Express Ritual"
+      "label": "Ritualuri Link 3 Text",
+      "default": "Ritual Rapid"
     },
     {
       "type": "url",
       "id": "col2_sub2_link3_url",
-      "label": "Rituals Link 3 URL"
+      "label": "Ritualuri Link 3 URL"
     },
     {
       "type": "header",
-      "content": "Column 3: Help & Concierge"
+      "content": "Column 3: Ajutor"
     },
     {
       "type": "text",
       "id": "col3_title",
       "label": "Column 3 Title",
-      "default": "HELP & CONCIERGE"
+      "default": "AJUTOR"
     },
     {
       "type": "link_list",
@@ -917,7 +913,7 @@
       "type": "text",
       "id": "col3_link1_text",
       "label": "Link 1 Text",
-      "default": "My Account"
+      "default": "Contul Meu"
     },
     {
       "type": "url",
@@ -928,7 +924,7 @@
       "type": "text",
       "id": "col3_link2_text",
       "label": "Link 2 Text",
-      "default": "My Orders"
+      "default": "Comenzile Mele"
     },
     {
       "type": "url",
@@ -939,7 +935,7 @@
       "type": "text",
       "id": "col3_link3_text",
       "label": "Link 3 Text",
-      "default": "Shipping Policy"
+      "default": "Livrare"
     },
     {
       "type": "url",
@@ -950,7 +946,7 @@
       "type": "text",
       "id": "col3_link4_text",
       "label": "Link 4 Text",
-      "default": "Returns & Refunds"
+      "default": "Retururi"
     },
     {
       "type": "url",
@@ -961,7 +957,7 @@
       "type": "text",
       "id": "col3_link5_text",
       "label": "Link 5 Text",
-      "default": "Frequently Asked Questions"
+      "default": "Întrebări Frecvente"
     },
     {
       "type": "url",
@@ -972,7 +968,7 @@
       "type": "text",
       "id": "col3_link6_text",
       "label": "Link 6 Text",
-      "default": "Contact Us"
+      "default": "Contact"
     },
     {
       "type": "url",
@@ -998,7 +994,7 @@
       "type": "text",
       "id": "col4_link1_text",
       "label": "Link 1 Text",
-      "default": "Terms and Conditions"
+      "default": "Termeni și Condiții"
     },
     {
       "type": "url",
@@ -1009,7 +1005,7 @@
       "type": "text",
       "id": "col4_link2_text",
       "label": "Link 2 Text",
-      "default": "Privacy Policy"
+      "default": "Politica de Confidențialitate"
     },
     {
       "type": "url",
@@ -1020,7 +1016,7 @@
       "type": "text",
       "id": "col4_link3_text",
       "label": "Link 3 Text",
-      "default": "Cookie Policy"
+      "default": "Politica Cookies"
     },
     {
       "type": "url",
@@ -1031,7 +1027,7 @@
       "type": "text",
       "id": "col4_link4_text",
       "label": "Link 4 Text",
-      "default": "Return Policy"
+      "default": "Politica de Retur"
     },
     {
       "type": "url",
@@ -1042,7 +1038,7 @@
       "type": "text",
       "id": "col4_link5_text",
       "label": "Link 5 Text",
-      "default": "Shipping Policy"
+      "default": "Politica de Livrare"
     },
     {
       "type": "url",
@@ -1053,7 +1049,7 @@
       "type": "text",
       "id": "col4_link6_text",
       "label": "Link 6 Text",
-      "default": "Consumer Protection (ANPC)"
+      "default": "ANPC"
     },
     {
       "type": "url",
@@ -1074,25 +1070,25 @@
       "type": "textarea",
       "id": "gh_text1",
       "label": "Paragraph 1",
-      "default": "A moment of the day when light becomes warmer, rarer, and closer to your skin."
+      "default": "Un moment al zilei în care lumina devine mai caldă, mai rară, mai aproape de piele."
     },
     {
       "type": "textarea",
       "id": "gh_text2",
       "label": "Paragraph 2",
-      "default": "Here begins the rituals, stories, and gestures you discover before anyone else."
+      "default": "Aici încep ritualurile, poveștile și gesturile pe care le descoperi înaintea celorlalți."
     },
     {
       "type": "text",
       "id": "newsletter_placeholder",
       "label": "Input Placeholder",
-      "default": "Your email address"
+      "default": "Adresa ta de e-mail"
     },
     {
       "type": "text",
       "id": "newsletter_btn_text",
       "label": "Button Text",
-      "default": "ENTER GOLDEN HOUR"
+      "default": "REGĂSEȘTE GOLDEN HOUR"
     },
     {
       "type": "header",
@@ -1141,31 +1137,31 @@
       "type": "text",
       "id": "feat1_title",
       "label": "Feature 1 Title",
-      "default": "COMPLIMENTARY SHIPPING"
+      "default": "LIVRARE GRATUITĂ"
     },
     {
       "type": "textarea",
       "id": "feat1_text",
       "label": "Feature 1 Subtitle",
-      "default": "On orders over €150"
+      "default": "pentru comenzi<br>peste XXX lei"
     },
     {
       "type": "text",
       "id": "feat2_title",
       "label": "Feature 2 Title",
-      "default": "30-DAY RETURNS"
+      "default": "RETUR ÎN 30 ZILE"
     },
     {
       "type": "textarea",
       "id": "feat2_text",
       "label": "Feature 2 Subtitle",
-      "default": "Effortless, insured,<br>and worry-free."
+      "default": "Simplu, rapid<br>și fără griji."
     },
     {
       "type": "text",
       "id": "feat3_title",
       "label": "Feature 3 Title",
-      "default": "SECURE PAYMENTS"
+      "default": "PLĂȚI SECURIZATE"
     },
     {
       "type": "textarea",
@@ -1177,7 +1173,7 @@
       "type": "text",
       "id": "feat4_title",
       "label": "Feature 4 Title",
-      "default": "CONCIERGE & SUPPORT"
+      "default": "ASISTENȚĂ"
     },
     {
       "type": "text",
@@ -1189,13 +1185,13 @@
       "type": "text",
       "id": "feat5_title",
       "label": "Feature 5 Title",
-      "default": "CRAFTED WITH CARE IN EUROPE"
+      "default": "DEZVOLTATĂ CU GRIJĂ ÎN EUROPA"
     },
     {
       "type": "textarea",
       "id": "feat5_text",
       "label": "Feature 5 Subtitle",
-      "default": "Quality, transparency<br>and responsibility."
+      "default": "Calitate, transparență<br>și responsabilitate."
     },
     {
       "type": "header",

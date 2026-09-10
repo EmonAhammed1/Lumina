@@ -235,15 +235,15 @@ data-section-type="bundleproduct" >
 {% endif %}
 
 {% schema %}
-{
-  "name": "Frequently Bought",
-  "class": "section",
-  "settings": [
-    {
-      "type": "paragraph",
-      "content": "[Create metafeild](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields) with value =>  product.metafields.custom.frequently_bought_together , type => Product, allow select multiple product"
-    },
-    {
+  {
+    "name": "Frequently Bought",
+    "class": "section",
+    "settings": [
+      {
+        "type": "paragraph",
+        "content": "[Create metafeild](https://help.shopify.com/en/manual/custom-data/metafields/using-metafields) with value =>  product.metafields.custom.frequently_bought_together , type => Product, allow select multiple product"
+      },
+      {
       "type": "select",
       "id": "animation",
       "options": [
@@ -368,62 +368,62 @@ data-section-type="bundleproduct" >
       "label": "Background Section",
       "default": "#ffffff"
     },
-    {
-      "type": "text",
-      "id": "bundle_title",
-      "label": "Title",
-      "default": "Frequently Bought Together"
-    },
-    {
-      "type": "select",
-      "id": "size_text",
-      "default": "h4",
-      "options": [
-        {
-          "value": "h3",
-          "label": "H3"
+      {
+        "type": "text",
+        "id": "bundle_title",
+        "label": "Title",
+        "default": "Frequently Bought Together"
+      },
+      {
+          "type": "select",
+          "id": "size_text",
+          "default": "h4",
+          "options": [
+            {
+              "value": "h3",
+              "label": "H3"
+            },
+            {
+              "value": "h4",
+              "label": "H4"
+            },
+            {
+              "value": "h5",
+              "label": "H5"
+            },
+            {
+              "value": "h6",
+              "label": "H6"
+            }
+          ],
+          "label": "Heading Size"
         },
         {
-          "value": "h4",
-          "label": "H4"
-        },
-        {
-          "value": "h5",
-          "label": "H5"
-        },
-        {
-          "value": "h6",
-          "label": "H6"
-        }
-      ],
-      "label": "Heading Size"
-    },
-    {
-      "type": "header",
-      "content": "Bundle"
-    },
-    {
-      "type": "range",
-      "id": "limit_bundle",
-      "min": 1,
-      "max": 8,
-      "step": 1,
-      "label": "Litmit Products",
-      "default": 3
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_border",
-      "label": "Enable Border",
-      "default": true
-    },
-    {
-      "type": "text",
-      "id": "btn_add",
-      "label": "Text Button",
-      "default": "Add selected item(s)"
-    },
-    {
+        "type": "header",
+        "content": "Bundle"
+      },
+      {
+        "type": "range",
+        "id": "limit_bundle",
+        "min": 1,
+        "max": 8,
+        "step": 1,
+        "label": "Litmit Products",
+        "default": 3
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_border",
+        "label": "Enable Border",
+        "default": true
+      },
+      {
+        "type": "text",
+        "id": "btn_add",
+        "label": "Text Button",
+        "default": "Add selected item(s)"
+      },
+      {
       "type": "header",
       "content": "Section Padding "
     },
@@ -459,6 +459,6 @@ data-section-type="bundleproduct" >
       "default": "0px 0px 0px 0px",
       "info": "Margin: Top Right Bottom Left"
     }
-  ]
-}
+    ]
+  }
 {% endschema %}

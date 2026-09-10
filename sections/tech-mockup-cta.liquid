@@ -99,7 +99,7 @@
     {% if section.settings.image != blank %}
       <img src="{{ section.settings.image | image_url: width: 2000 }}" alt="Lumina Products" loading="lazy">
     {% else %}
-      <img src="{{ 'Screenshot_2026-03-31_at_14.31.38.png' | asset_url }}" alt="Lumina Products" loading="lazy">
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
     {% endif %}
   </div>
   

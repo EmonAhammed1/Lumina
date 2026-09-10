@@ -25,14 +25,14 @@
         "template--21227282268440__54a6a770-9002-4dcf-ad18-910a69016474-heading-1": {
           "type": "heading",
           "settings": {
-            "title": "Certified sustainability",
+            "title": "Sustenabilitate certificată",
             "size_text": "h1"
           }
         },
         "template--21227282268440__54a6a770-9002-4dcf-ad18-910a69016474-paragraph-1": {
           "type": "paragraph",
           "settings": {
-            "subtext": "Ethical choices should be easy – and we work so you don't have to."
+            "subtext": "Alegerile etice ar trebui să fie ușoare – iar noi muncim pentru ca tu să nu fii nevoit să o faci."
           }
         }
       },
@@ -69,7 +69,7 @@
           "settings": {
             "bg": "#e4ffdf",
             "title": "A small business in Aarhus",
-            "description": "What started in 1997 as an independent retail business in Aarhus, Denmark has since grown into an international fashion brand.",
+            "description": "Ceea ce a început în 1997 ca o afacere independentă de retail în Aarhus, Danemarca, s-a dezvoltat de atunci într-un brand internațional de modă.",
             "time": "Jan 04",
             "year": "1920",
             "link": "shopify://collections/all"
@@ -91,7 +91,7 @@
           "settings": {
             "bg": "#fff5d2",
             "title": "At the heart of the creation",
-            "description": "Some call Aarhus the greatest provincial city in the world – we simply call it home.",
+            "description": "Unii numesc Aarhus cel mai mare oraș provincial din lume – noi îl numim pur și simplu acasă.",
             "time": "Feb 10",
             "year": "1940",
             "link": "shopify://collections/all"
@@ -147,11 +147,11 @@
             "promo_banner_height": 400,
             "promo_banner_height_mobile": 400,
             "image": "shopify://shop_images/03_DiaperRashCream_Lifestyle_1.jpg",
-            "promo_subheading": "Hurry up",
-            "promo_heading": "Baby lotion",
+            "promo_subheading": "Grăbește-te",
+            "promo_heading": "Loțiune pentru bebeluși",
             "promo_size_title": "h3",
             "promo_paragraph": "",
-            "promo_btn": "Shop Now",
+            "promo_btn": "Cumpără acum",
             "promo_link": "shopify://collections/bras",
             "style_btn": "btn-theme btn-white",
             "promo_color": "#ffffff",

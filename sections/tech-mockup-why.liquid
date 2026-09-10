@@ -167,8 +167,7 @@
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url: width: 600 }}" alt="{{ block.settings.title }}" loading="lazy">
             {% else %}
-              {% assign why_img_fallback = 'img-' | append: forloop.index | append: '.png' %}
-              <img src="{{ why_img_fallback | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
             {% endif %}
           </div>
         </div>
@@ -201,7 +200,7 @@
 
 {% schema %}
 {
-  "name": "Mockup - Why Nanofiberss",
+  "name": "Mockup - Why Nanofibres",
   "settings": [
     {
       "type": "text",
@@ -249,7 +248,7 @@
   ],
   "presets": [
     {
-      "name": "Mockup - Why Nanofiberss",
+      "name": "Mockup - Why Nanofibres",
       "blocks": [
         {
           "type": "card",

@@ -107,16 +107,12 @@
                           </div>
                           {%- else -%}
                             <div class="image-content__image h-100 ">
-                                <img class="image-content__image scale-in lazyload" src="{{ 'img-3.png' | asset_url }}" alt="Lumina" loading="lazy">
+                                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                             </div>
                         {%- endif -%}
                         {%- if block.settings.video != blank -%}
                             <video class="product-video__banner  position-absolute" id="Mp4{{ section.id }}"  loop="" muted="" playsinline="" autoplay="" >
-                                {%- if block.settings.video contains 'http' -%}
-                                  <source src="{{ block.settings.video }}" type="video/mp4">
-                                {%- else -%}
-                                  <source src="{{ block.settings.video | file_url }}" type="video/mp4">
-                                {%- endif -%}
+                                <source src="{{ block.settings.video }}" type="video/mp4">
                             </video>
                         {%- endif -%}
                             <div class="product-image__banner position-absolute d-flex {{ positiontxt }}" style="

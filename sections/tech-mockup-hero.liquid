@@ -212,29 +212,13 @@
     </div>
     <div class="tm-hero-media">
       {% if section.settings.bg_video != blank %}
-        {% if section.settings.bg_video.sources != blank %}
-          {{ section.settings.bg_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
-        {% else %}
-          <video autoplay loop muted playsinline preload="metadata">
-            <source src="{% if section.settings.bg_video contains 'http' %}{{ section.settings.bg_video }}{% else %}{{ section.settings.bg_video | file_url }}{% endif %}" type="video/mp4">
-            <source src="{{ 'Visual 1. What are nanofibres_.mov' | file_url }}" type="video/mp4">
-            <source src="{{ 'kling_20260723_VIDEO_1__Subject_568_0.mp4' | file_url }}" type="video/mp4">
-          </video>
-        {% endif %}
-      {% elsif section.settings.bg_video_url != blank %}
-        <video autoplay loop muted playsinline preload="metadata">
-          <source src="{% if section.settings.bg_video_url contains 'http' %}{{ section.settings.bg_video_url }}{% else %}{{ section.settings.bg_video_url | file_url }}{% endif %}" type="video/mp4">
-          <source src="{{ 'Visual 1. What are nanofibres_.mov' | file_url }}" type="video/mp4">
-        </video>
+        {{ section.settings.bg_video | video_tag: autoplay: true, loop: true, muted: true, controls: false, playsinline: true }}
       {% elsif section.settings.bg_image != blank %}
         <img src="{{ section.settings.bg_image | image_url: width: 1200 }}" alt="Hero Graphic">
       {% else %}
-        <video autoplay loop muted playsinline preload="metadata" poster="{{ 'Screenshot_2026-03-31_at_15.38.29.png' | asset_url }}">
-          <source src="{{ 'Visual 1. What are nanofibres_.mov' | file_url }}" type="video/mp4">
-          <source src="{{ 'Visual_1._What_are_nanofibres_.mov' | file_url }}" type="video/mp4">
-          <source src="{{ 'kling_20260723_VIDEO_1__Subject_568_0.mp4' | file_url }}" type="video/mp4">
-          <source src="{{ '6_experience_technology_player.mp4' | file_url }}" type="video/mp4">
-        </video>
+        <svg viewBox="0 0 100 100" fill="none" stroke="var(--gh-golden)" style="width: 50%; opacity: 0.3;">
+          <circle cx="50" cy="50" r="45"/>
+        </svg>
       {% endif %}
     </div>
   </div>

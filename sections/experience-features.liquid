@@ -271,11 +271,7 @@
                      height="{{ banner_image.height }}">
               {%- else -%}
                 <!-- Fallback or placeholder image when banner not set -->
-                <img class="experience-banner-img lazyload"
-                     src="{{ 'test-2.png' | asset_url }}"
-                     data-src="{{ 'test-2.png' | asset_url }}"
-                     alt="Lumina Europa"
-                     loading="lazy">
+                {{ 'image' | placeholder_svg_tag: 'experience-banner-img placeholder-svg' }}
               {%- endif -%}
             </div>
           </div>
@@ -296,38 +292,14 @@
       "type": "select",
       "id": "animation",
       "options": [
-        {
-          "value": "",
-          "label": "None"
-        },
-        {
-          "value": "fade",
-          "label": "Fade"
-        },
-        {
-          "value": "fade-up",
-          "label": "Fade Up"
-        },
-        {
-          "value": "fade-down",
-          "label": "Fade Down"
-        },
-        {
-          "value": "fade-left",
-          "label": "Fade Left"
-        },
-        {
-          "value": "fade-right",
-          "label": "Fade Right"
-        },
-        {
-          "value": "zoom-in",
-          "label": "Zoom In"
-        },
-        {
-          "value": "zoom-out",
-          "label": "Zoom Out"
-        }
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "fade-down", "label": "Fade Down" },
+        { "value": "fade-left", "label": "Fade Left" },
+        { "value": "fade-right", "label": "Fade Right" },
+        { "value": "zoom-in", "label": "Zoom In" },
+        { "value": "zoom-out", "label": "Zoom Out" }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -338,18 +310,9 @@
       "label": "Full Width Wrapper",
       "default": "container-fluid",
       "options": [
-        {
-          "value": "container",
-          "label": "Box"
-        },
-        {
-          "value": "container-fluid",
-          "label": "Container Fluid"
-        },
-        {
-          "value": "full",
-          "label": "Full"
-        }
+        { "value": "container", "label": "Box" },
+        { "value": "container-fluid", "label": "Container Fluid" },
+        { "value": "full", "label": "Full" }
       ]
     },
     {
@@ -501,29 +464,29 @@
         {
           "type": "feature",
           "settings": {
-            "title": "NANOFIBER TECHNOLOGY",
-            "description": "Ultra-fine fibers create thousands of micro-channels for maximum absorption."
+            "title": "TEHNOLOGIE CU NANOFIBRE",
+            "description": "Fibrele ultra-fine creează mii de micro-canale pentru o absorbție maximă."
           }
         },
         {
           "type": "feature",
           "settings": {
-            "title": "DEEP ABSORPTION",
-            "description": "Delivers active ingredients deep into the skin for powerful and visible results."
+            "title": "ABSORBȚIE PROFUNDĂ",
+            "description": "Livrează ingrediente active profund în piele pentru rezultate puternice și vizibile."
           }
         },
         {
           "type": "feature",
           "settings": {
-            "title": "VISIBLE LIFTING AND FIRMNESS",
-            "description": "Improves elasticity, smoothes fine lines and restores youthful contours."
+            "title": "LIFTING VIZIBIL ȘI FERMITATE",
+            "description": "Îmbunătățește elasticitatea, netezește liniile fine și restabilește contururile tinerești."
           }
         },
         {
           "type": "feature",
           "settings": {
-            "title": "RADIANT TRANSFORMATION",
-            "description": "Moisturizes, brightens and revitalizes skin for a healthy, luminous glow."
+            "title": "TRANSFORMARE RADIANTĂ",
+            "description": "Hidratează, luminează și revigorează pielea pentru o strălucire sănătoasă și luminoasă."
           }
         }
       ]

@@ -12,12 +12,12 @@
     "tech_mockup_hero_m8kPrc": {
       "type": "tech-mockup-hero",
       "settings": {
-        "bg_video": "",
+        "bg_video": "shopify://files/videos/kling_20260723_VIDEO_1__Subject_602_0.mp4",
         "overlay_opacity": 0,
-        "subtitle": "LET'S TALK",
-        "title": "ENTER THE LIGHT",
-        "text": "For questions, collaborations, press or simply to write us, we are here. Choose the reason for your message, and it will reach the right person.",
-        "btn_label": "CONTACT US →",
+        "subtitle": "SĂ VORBIM",
+        "title": "INTRĂ ÎN LUMINA",
+        "text": "Pentru întrebări, colaborări, presă sau pur și simplu pentru a ne scrie, suntem aici. Alege motivul mesajului tău, iar acesta va ajunge la persoana potrivită.",
+        "btn_label": "CONTACTEAZĂ-NE →",
         "btn_link": "shopify://collections"
       }
     },
@@ -33,23 +33,23 @@
           "type": "card",
           "settings": {
             "title": "Foarte specializat",
-            "description": "Our specialists are here to help you with expert advice and solutions.",
+            "description": "Specialiștii noștri sunt aici pentru a vă ajuta cu sfaturi și soluții de specialitate.",
             "icon": "check"
           }
         },
         "card_2": {
           "type": "card",
           "settings": {
-            "title": "Quick Response",
-            "description": "We aim to respond within 24 hours so you don't have to wait long.",
+            "title": "Răspuns Rapid",
+            "description": "Ne propunem să răspundem în termen de 24 de ore, astfel încât să nu fie nevoie să așteptați mult timp.",
             "icon": "bolt"
           }
         },
         "card_3": {
           "type": "card",
           "settings": {
-            "title": "Reliable Technology",
-            "description": "We are backed by modern science and continuous innovation.",
+            "title": "Tehnologie Fiabilă",
+            "description": "Suntem susținuți de știința modernă și de inovația continuă.",
             "icon": "star"
           }
         }
@@ -65,8 +65,8 @@
         "bgsection": "#0d0d0d",
         "text_color": "#999999",
         "heading_color": "#e5b869",
-        "title": "Contact Us",
-        "subtitle": "We are here to help you. Contact us anytime.",
+        "title": "Contactează-ne",
+        "subtitle": "Suntem aici pentru a vă ajuta. Contactați-ne oricând.",
         "card_bg": "#121212",
         "card_border": "#222222",
         "paddingsection": "80px 0px 80px 0px",
@@ -89,12 +89,12 @@
             "bgtext": "rgba(0,0,0,0)",
             "title_color": "rgba(0,0,0,0)",
             "subtitle": "Questions?",
-            "title": "We are here to help you with sizes, styles and everything else.",
+            "title": "Suntem aici să vă ajutăm cu mărimi, stiluri și orice altceva.",
             "size_text": "h3",
             "text": "",
             "answer_content": "",
             "style_btn": "btn-theme",
-            "button": "Read Frequently Asked Questions",
+            "button": "Citește Întrebări Frecvente",
             "link": "shopify://pages/faqs",
             "enable_padding": false,
             "align": "left"
@@ -130,8 +130,8 @@
         "animation": "",
         "bgsection": "#0d0d0d",
         "title_top": "",
-        "title": "Do you have any questions?",
-        "des": "Use the form below to contact the sales team",
+        "title": "Aveți întrebări?",
+        "des": "Utilizați formularul de mai jos pentru a contacta echipa de vânzări",
         "align-heading": "center",
         "answer_content": "",
         "paddingsection": "80px 0px 80px 0px",
@@ -143,10 +143,10 @@
     "e47bb256-2659-485f-9896-382aaec96e87": {
       "type": "map",
       "settings": {
-        "heading": "Our store",
+        "heading": "Magazinul nostru",
         "address": "<p>office@luminaeuropa.com<br/>+40 747 282 174<br/></p><p>Mon - Fri, 10am - 9pm<br/>Saturday, 11am - 9pm<br/>Sunday, 11am - 5pm</p>",
         "map_address": "301 Front St W, Toronto",
-        "button_text": "Get directions",
+        "button_text": "Obține indicații",
         "show_pin": true,
         "api_key": "",
         "map_code": "<div class=\"mapouter\"><div class=\"gmap_canvas\">\n<iframe width=\"600\" height=\"500\" id=\"gmap_canvas\" src=\"https://maps.google.com/maps?q=Bucharest%2C%20Romania&t=&z=13&ie=UTF8&iwloc=&output=embed\" frameborder=\"0\" scrolling=\"no\" marginheight=\"0\" marginwidth=\"0\" loading=\"lazy\" allowfullscreen></iframe><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style>\n<a href=\"https://www.embedgooglemap.net\">google maps code generator</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style>\n</div></div>",
@@ -159,7 +159,7 @@
         "item_1": {
           "type": "info_item",
           "settings": {
-            "title": "Call us",
+            "title": "Sună-ne",
             "value": "+40 747 282 174",
             "link": "tel:+40 747 282 174",
             "icon": "phone"
@@ -207,22 +207,22 @@
         "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-0": {
           "type": "faq",
           "settings": {
-            "faq_title": "How long will delivery take?",
-            "faq_des": "<p> All orders are shipped within 12-36 hours from our warehouse. Delivery time depends on the option chosen, but all orders are tracked to your door. </p>"
+            "faq_title": "Cât timp va dura livrarea?",
+            "faq_des": "<p>Toate comenzile sunt expediate în termen de 12-36 de ore de la depozitul nostru. Timpul de livrare depinde de opțiunea aleasă, dar toate comenzile sunt urmărite până la ușa dumneavoastră.</p>"
           }
         },
         "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-1": {
           "type": "faq",
           "settings": {
             "faq_title": "How do I know if my order is confirmed?",
-            "faq_des": "<p> This is an example of an answer you could provide. It's good to be as detailed as possible in your answers to increase overall confidence. </p>"
+            "faq_des": "<p>Acesta este un exemplu de răspuns pe care l-ați putea oferi. Este bine să fiți cât mai detaliat posibil în răspunsuri pentru a spori încrederea generală.</p>"
           }
         },
         "template--16736981025086__a1490854-4f8f-471c-864a-2fb0e79e264b-1666770139cd483e01-2": {
           "type": "faq",
           "settings": {
-            "faq_title": "Can I change the delivery address after placing the order?",
-            "faq_des": "<p> This is an example of an answer you could provide. It's good to be as detailed as possible in your answers to increase overall confidence. </p>"
+            "faq_title": "Pot schimba adresa de livrare după ce am plasat comanda?",
+            "faq_des": "<p>Acesta este un exemplu de răspuns pe care l-ați putea oferi. Este bine să fiți cât mai detaliat posibil în răspunsuri pentru a spori încrederea generală.</p>"
           }
         }
       },
@@ -240,7 +240,7 @@
         "e_pos": "center center",
         "title_top": "",
         "title": "FAQs",
-        "des": "Below are some of our frequently asked questions",
+        "des": "Mai jos sunt câteva dintre întrebările noastre frecvente",
         "align-heading": "center",
         "title_size": "h6",
         "e_first_open": false,

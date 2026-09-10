@@ -16,12 +16,12 @@
         "subtitle": "A MOMENT THAT BELONGS ONLY TO YOU.",
         "title": "GOLDEN HOUR",
         "text": "",
-        "button_label": "KEEP THE LIGHT CLOSE TO YOU",
+        "button_label": "PĂSTREAZĂ LUMINA APROAPE DE TINE",
         "button_link": "",
-        "video": "",
+        "video": "shopify://files/videos/The Golden Hour HERO.mp4",
         "height_desktop": 100,
         "button_bottom_desktop": 50,
-        "video_mobile": "",
+        "video_mobile": "shopify://files/videos/The Golden Hour HERO mobile phone format.mp4",
         "height_mobile": 100,
         "button_bottom_mobile": 30,
         "button_color": "#f9e29c"
@@ -46,9 +46,10 @@
     },
     "why": {
       "type": "golden-hour-why",
+      "disabled": true,
       "settings": {
         "max_width": 2000,
-        "video": "",
+        "video": "shopify://files/videos/video 2 walking down the hillmp4.mp4",
         "text": "<p>Golden Hour was created for those who choose intention over noise.</p>",
         "overlay_opacity": 55,
         "min_height_desktop": 100,
@@ -62,13 +63,13 @@
       "settings": {
         "max_width": 2000,
         "image_width_percent": 42,
-        "video": "",
+        "video": "shopify://files/videos/video 3 natural light on the skin.mp4",
         "decorative_image": "shopify://shop_images/section-i.png",
         "graphic_width": 500,
         "graphic_height": 370,
         "graphic_opacity": 100,
         "heading": "Ce este Golden Hour?",
-        "content": "<p> There is a moment every day when the light becomes softer, warmer and closer to the skin.</p><p> Lumina Golden Hour is the community of those who discover the rituals, novelties and experiences of Lumina before everyone else.</p><p> Golden Hour is that time of day when the light becomes softer and time seems to slow down.</p><p> We created this community to keep that same excitement: a place where every release, every ritual, and every story reaches first those who choose to be part of the Lumina universe. </p>",
+        "content": "<p>Există un moment în fiecare zi în care lumina devine mai blândă, mai caldă și mai aproape de piele.</p><p>Lumina Golden Hour este comunitatea celor care descoperă ritualurile, noutățile și experiențele Lumina înaintea tuturor.</p><p>Golden Hour este acel moment al zilei în care lumina devine mai blândă, iar timpul pare să încetinească.</p><p>Am creat această comunitate pentru a păstra aceeași emoție: un loc în care fiecare lansare, fiecare ritual și fiecare poveste ajunge mai întâi la cei care aleg să fie parte din universul Lumina.</p>",
         "link_label": "",
         "link_url": "",
         "section_height_desktop": 480,
@@ -92,8 +93,8 @@
           "settings": {
             "image_icon": "shopify://shop_images/key.png",
             "icon": "key",
-            "title": "Priority Access",
-            "description": "Be among the first to discover Lumina's new releases, seasonal collections and limited editions."
+            "title": "Acces prioritar",
+            "description": "Fii printre primii care descoperă noile lansări, colecțiile sezoniere și edițiile limitate Lumina."
           }
         },
         "benefit_2": {
@@ -101,8 +102,8 @@
           "settings": {
             "image_icon": "shopify://shop_images/gift-box.png",
             "icon": "star",
-            "title": "Exclusive Gifts",
-            "description": "Enjoy carefully selected surprises and gifts, created especially for the Golden Hour community."
+            "title": "Cadouri exclusive",
+            "description": "Bucură-te de surprize și cadouri atent alese, create special pentru comunitatea Golden Hour."
           }
         },
         "benefit_3": {
@@ -110,8 +111,8 @@
           "settings": {
             "image_icon": "shopify://shop_images/tag.png",
             "icon": "star",
-            "title": "Curated Offers",
-            "description": "Access benefits and offers available exclusively to Golden Hour members."
+            "title": "Oferte dedicate",
+            "description": "Accesează beneficii și oferte disponibile exclusiv membrilor Golden Hour."
           }
         },
         "benefit_4": {
@@ -119,8 +120,8 @@
           "settings": {
             "image_icon": "shopify://shop_images/leaf.png",
             "icon": "star",
-            "title": "Seasonal Rituals",
-            "description": "Receive recommendations and rituals adapted to the needs of your skin, in harmony with each season."
+            "title": "Ritualuri sezoniere",
+            "description": "Primește recomandări și ritualuri adaptate nevoilor pielii tale, în armonie cu fiecare anotimp."
           }
         },
         "benefit_5": {
@@ -129,7 +130,7 @@
             "image_icon": "shopify://shop_images/book.png",
             "icon": "star",
             "title": "Lumina Journal",
-            "description": "Discover articles, inspiration and stories about the beauty of rituals and conscious skin care."
+            "description": "Descoperă articole, inspirație și povești despre frumusețea ritualurilor și îngrijirea conștientă a pielii."
           }
         },
         "benefit_6": {
@@ -137,8 +138,8 @@
           "settings": {
             "image_icon": "shopify://shop_images/calendar.png",
             "icon": "star",
-            "title": "Exclusive Events",
-            "description": "Receive invitations to launches, experiences and events dedicated to the Lumina community."
+            "title": "Evenimente",
+            "description": "Primește invitații la lansări, experiențe și evenimente dedicate comunității Lumina."
           }
         },
         "benefit_7": {
@@ -146,8 +147,8 @@
           "settings": {
             "image_icon": "shopify://shop_images/user.png",
             "icon": "star",
-            "title": "Personalized recommendations",
-            "description": "Get inspired by suggestions and rituals chosen according to the season and your skin's needs."
+            "title": "Recomandări personalizate",
+            "description": "Inspiră-te din sugestii și ritualuri alese în funcție de sezon și de nevoile pielii tale."
           }
         },
         "benefit_8": {
@@ -155,8 +156,8 @@
           "settings": {
             "image_icon": "shopify://shop_images/star.png",
             "icon": "star",
-            "title": "Experiences before everyone else",
-            "description": "Test new products and concepts for the first time and discover the Lumina universe before the official launch."
+            "title": "Experiențe înaintea tuturor",
+            "description": "Testează în premieră produse și concepte noi și descoperă universul Lumina înainte de lansarea oficială."
           }
         }
       },
@@ -172,7 +173,7 @@
       ],
       "settings": {
         "max_width": 2000,
-        "heading": "Benefits",
+        "heading": "Beneficii",
         "background_image_desktop": "shopify://shop_images/Beneficii.png",
         "title_size_desktop": 36,
         "padding_top_desktop": 40,
@@ -198,10 +199,10 @@
       "settings": {
         "max_width": 2000,
         "heading": "Golden Rewards",
-        "content": "<p> Every ritual tells a story. And every choice to return to the Light universe deserves to be rewarded.</p><p> Golden Rewards is our way of thanking you for being a part of our community. As you discover new rituals and return with us, you unlock benefits designed to make each experience even more special.</p><p> From carefully chosen gifts and free shipping, to priority access to releases, limited editions and invitations to Lumina experiences, every step brings you closer to our universe. </p>",
-        "link_label": "DISCOVER GOLDEN REWARDS",
+        "content": "<p>Fiecare ritual spune o poveste. Iar fiecare alegere de a reveni în universul Lumina merită răsplătită.</p><p>Golden Rewards este modul prin care îți mulțumim că faci parte din comunitatea noastră. Pe măsură ce descoperi noi ritualuri și revii alături de noi, deblochezi beneficii create pentru a transforma fiecare experiență într-una și mai specială.</p><p>De la cadouri atent alese și transport gratuit, până la acces prioritar la lansări, ediții limitate și invitații la experiențe Lumina, fiecare pas te aduce mai aproape de universul nostru.</p>",
+        "link_label": "DESCOPERĂ GOLDEN REWARDS",
         "link_url": "",
-        "video": "",
+        "video": "shopify://files/videos/video 4 nanofiber mask on the face.mp4",
         "section_height_desktop": 600,
         "heading_size_desktop": 36,
         "body_size_desktop": 18,
@@ -219,8 +220,8 @@
             "leaf_image": "shopify://shop_images/block-1.png",
             "image_icon": "shopify://shop_images/moon.png",
             "icon": "flower",
-            "title": "Ritual of the Moon",
-            "description": "A complete Lumina ritual, chosen according to the season and the needs of the skin."
+            "title": "Ritualul Lunii",
+            "description": "Un ritual complet Lumina, ales în funcție de sezon și nevoile pielii."
           }
         },
         "moment_2": {
@@ -229,8 +230,8 @@
             "leaf_image": "shopify://shop_images/block-2.png",
             "image_icon": "shopify://shop_images/mandala.png",
             "icon": "flower",
-            "title": "The collection of the season",
-            "description": "Get the premiere of the ritual that defines the season."
+            "title": "Colecția sezonului",
+            "description": "Primește în premieră ritualul care definește anotimpul."
           }
         },
         "moment_3": {
@@ -240,7 +241,7 @@
             "image_icon": "shopify://shop_images/gift.png",
             "icon": "flower",
             "title": "Golden Box",
-            "description": "A surprise selection of products and special editions, available only to the Golden Hour community."
+            "description": "O selecție surpriză de produse și ediții speciale, disponibilă doar pentru comunitatea Golden Hour."
           }
         },
         "moment_4": {
@@ -249,8 +250,8 @@
             "leaf_image": "shopify://shop_images/block-4.png",
             "image_icon": "shopify://shop_images/people.png",
             "icon": "flower",
-            "title": "Light experiences",
-            "description": "Invitations to launches, workshops, private events and community meetings."
+            "title": "Experiențe Lumina",
+            "description": "Invitații la lansări, workshop-uri, evenimente private și întâlniri dedicate comunității."
           }
         },
         "moment_5": {
@@ -259,8 +260,8 @@
             "leaf_image": "shopify://shop_images/block-5.png",
             "image_icon": "shopify://shop_images/lotus.png",
             "icon": "flower",
-            "title": "Moments of indulgence",
-            "description": "Experiences offered in conjunction with selected spas and partners."
+            "title": "Momente de răsfăț",
+            "description": "Experiențe oferite împreună cu spa-uri și parteneri selectați."
           }
         },
         "moment_6": {
@@ -269,8 +270,8 @@
             "leaf_image": "shopify://shop_images/block-6.png",
             "image_icon": "shopify://shop_images/camera.png",
             "icon": "flower",
-            "title": "A day in the Lumina universe",
-            "description": "An exclusive experience with the Lumina team, with access to the backstage of the brand, photo sessions and product testing before launch."
+            "title": "O zi în universul Lumina",
+            "description": "O experiență exclusivă alături de echipa Lumina, cu acces în culisele brandului, ședințe foto și testarea produselor înainte de lansare."
           }
         }
       },
@@ -286,8 +287,8 @@
         "max_width": 2000,
         "bg_image": "shopify://shop_images/section-bg.png",
         "bg_opacity": 60,
-        "heading": "Moments you can't buy",
-        "intro": "As a Golden Hour member, you are automatically selected for experiences and surprises created exclusively for the Lumina community.",
+        "heading": "Momente pe care nu le poți cumpăra",
+        "intro": "Ca membru Golden Hour, intri automat în selecția pentru experiențe și surprize create exclusiv pentru comunitatea Lumina.",
         "heading_size_desktop": 38,
         "intro_size_desktop": 18,
         "padding_top_desktop": 120,
@@ -306,11 +307,11 @@
       "type": "golden-hour-community",
       "settings": {
         "max_width": 2000,
-        "heading": "Every ritual tells a story",
-        "content": "<p> Behind every ritual is a moment of stillness, an intention, and a choice to put self-care first.</p><p> Golden Hour is the community of those who believe that beauty begins in these simple gestures and continues through the stories we share together. </p>",
-        "link_label": "JOIN THE COMMUNITY",
+        "heading": "Fiecare ritual spune o poveste",
+        "content": "<p>În spatele fiecărui ritual există un moment de liniște, o intenție și o alegere de a pune grija pentru tine pe primul loc.</p><p>Golden Hour este comunitatea celor care cred că frumusețea începe în aceste gesturi simple și continuă prin poveștile pe care le împărtășim împreună.</p>",
+        "link_label": "ÎNSCRIE-TE ÎN COMUNITATE",
         "link_url": "",
-        "video": "",
+        "video": "shopify://files/videos/Video 5 petals white flowers.mp4",
         "section_height_desktop": 600,
         "heading_size_desktop": 36,
         "body_size_desktop": 18,
@@ -322,12 +323,12 @@
     "tech_mockup_hero_YmgBGP": {
       "type": "tech-mockup-hero",
       "settings": {
-        "bg_video": "",
+        "bg_video": "shopify://files/videos/kling_20260723_VIDEO_1__Subject_568_0.mp4",
         "overlay_opacity": 0,
-        "subtitle": "MORE THAN BEAUTY",
+        "subtitle": "MAI MULT DECÂT FRUMUSEȚE",
         "title": "LUMINA GOLDEN HOUR",
-        "text": "A time you give yourself. Rituals, stories, experiences and privileges created for those who choose to make care a moment of their own.",
-        "btn_label": "DISCOVER LUMINA GOLDEN HOUR →",
+        "text": "Un timp pe care ți-l oferi. Ritualuri, povești, experiențe și privilegii create pentru cei care aleg să facă din îngrijire un moment al lor.",
+        "btn_label": "DESCOPERĂ LUMINA GOLDEN HOUR →",
         "btn_link": ""
       }
     },
@@ -337,29 +338,29 @@
         "faq_1": {
           "type": "faq",
           "settings": {
-            "question": "Is it free to be a part of Golden Hour?",
-            "answer": "Yes. Joining the Lumina Golden Hour community is completely free."
+            "question": "Este gratuit să fac parte din Golden Hour?",
+            "answer": "Da. Înscrierea în comunitatea Lumina Golden Hour este complet gratuită."
           }
         },
         "faq_2": {
           "type": "faq",
           "settings": {
-            "question": "How can I sign up?",
-            "answer": "It is enough to create an account or register using the form on this page."
+            "question": "Cum mă pot înscrie?",
+            "answer": "Este suficient să îți creezi un cont sau să te înscrii folosind formularul de pe această pagină."
           }
         },
         "faq_3": {
           "type": "faq",
           "settings": {
-            "question": "Can I opt out at any time?",
-            "answer": "Of course. You can unsubscribe or close your account at any time."
+            "question": "Pot renunța oricând?",
+            "answer": "Desigur. Te poți dezabona sau îți poți închide contul oricând dorești."
           }
         },
         "faq_4": {
           "type": "faq",
           "settings": {
-            "question": "How does Golden Rewards work?",
-            "answer": "As you become part of the community and choose Lumina rituals, you will have access to exclusive benefits, surprises and experiences."
+            "question": "Cum funcționează Golden Rewards?",
+            "answer": "Pe măsură ce faci parte din comunitate și alegi ritualurile Lumina, vei avea acces la beneficii, surprize și experiențe exclusive."
           }
         }
       },
@@ -370,7 +371,7 @@
         "faq_4"
       ],
       "settings": {
-        "heading": "Frequently Asked Questions",
+        "heading": "Întrebări frecvente",
         "heading_size_desktop": 36,
         "q_size_desktop": 22,
         "a_size_desktop": 17,
@@ -390,8 +391,8 @@
           "type": "tier",
           "settings": {
             "title": "Golden Hour",
-            "tagline": "The beginning of the ritual.",
-            "description": "You enter the Lumina community and have access to first releases, inspiration, rituals and surprises prepared for Golden Hour members.",
+            "tagline": "Începutul ritualului.",
+            "description": "Intri în comunitatea Lumina și ai acces la lansări în premieră, inspirație, ritualuri și surprize pregătite pentru membrii Golden Hour.",
             "color_theme": "golden",
             "icon": "star"
           }
@@ -400,8 +401,8 @@
           "type": "tier",
           "settings": {
             "title": "Afterglow",
-            "tagline": "The light that remains.",
-            "description": "Your loyalty is rewarded with extended benefits, exclusive gifts and priority access to collections and experiences dedicated to the community.",
+            "tagline": "Lumina care rămâne.",
+            "description": "Fidelitatea ta este răsplătită prin beneficii extinse, cadouri exclusive și acces prioritar la colecții și experiențe dedicate comunității.",
             "color_theme": "afterglow",
             "icon": "star"
           }
@@ -434,12 +435,12 @@
       "type": "golden-hour-ctas",
       "settings": {
         "max_width": 2000,
-        "video": "",
+        "video": "shopify://files/videos/video 6 starting the ritual.mp4",
         "overlay_opacity": 50,
-        "heading": "A place where taking care of yourself becomes art.",
-        "primary_label": "Become a LUMINA GOLDEN HOUR Member",
+        "heading": "Un loc unde grija pentru tine devine artă.",
+        "primary_label": "Devino membru LUMINA GOLDEN HOUR",
         "primary_url": "",
-        "secondary_label": "Discover Lumina Europa",
+        "secondary_label": "Descoperă Lumina Europa",
         "secondary_url": "",
         "min_height_desktop": 1000,
         "heading_size_desktop": 42,

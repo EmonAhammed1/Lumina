@@ -12,25 +12,25 @@
     "tech_mockup_hero_qxXYDp": {
       "type": "tech-mockup-hero",
       "settings": {
-        "bg_video": "",
+        "bg_video": "shopify://files/videos/WhatsApp Video 2026-08-10 at 15.00.17.mp4",
         "overlay_opacity": 0,
-        "subtitle": "BEAUTY HAS MORE STORIES",
+        "subtitle": "FRUMUSEȚEA ARE MAI MULTE POVEȘTI",
         "title": "LUMINA WORLD",
-        "text": "We explore beauty beyond the mirror—through science, culture, ritual, history, art and people. A place for ideas that deserve more than a few seconds of attention.",
-        "btn_label": "ENTER LUMINA WORLD →",
+        "text": "Explorăm frumusețea dincolo de oglindă — prin știință, cultură, ritual, istorie, artă și oameni. Un loc pentru idei care merită mai mult decât câteva secunde de atenție.",
+        "btn_label": "INTRĂ ÎN LUMINA WORLD →",
         "btn_link": "shopify://collections"
       }
     },
     "lumina_world_hero": {
       "type": "lumina-world-hero",
       "settings": {
-        "eyebrow": "WELCOME TO",
+        "eyebrow": "BINE AI VENIT ÎN",
         "title": "LUMINA WORLD",
-        "subtitle_italic": "More than skin care.",
-        "description": "A place where science, culture and mindful living meet.",
-        "btn_label": "DISCOVER LUMINA WORLD",
+        "subtitle_italic": "Mai mult decât îngrijirea pielii.",
+        "description": "Un loc unde știința, cultura și viața trăită cu atenție se întâlnesc.",
+        "btn_label": "DESCOPERĂ LUMINA WORLD",
         "btn_link": "/",
-        "video_label": "WATCH THE BRAND FILM",
+        "video_label": "VIZIONEAZĂ FILMUL DE PREZENTARE",
         "video_url": "#"
       }
     },
@@ -38,11 +38,11 @@
       "type": "lumina-world-manifesto",
       "settings": {
         "eyebrow": "MANIFESTUL",
-        "title": "A digital magazine",
+        "title": "O revistă digitală",
         "title_gold": "cu un scop.",
-        "paragraph_1": "LUMINA WORLD is our editorial space for ideas that illuminate. A place for conversations with remarkable minds, stories from the frontiers of beauty and science, and inspiration for living with intention.",
-        "paragraph_2": "Carefully curated. Shared with a purpose.",
-        "btn_label": "EXPLORE THE MANIFESTO",
+        "paragraph_1": "LUMINA WORLD este spațiul nostru editorial pentru idei care luminează. Un loc pentru conversații cu minți remarcabile, povești de la frontierele frumuseții și științei și inspirație pentru a trăi cu intenție.",
+        "paragraph_2": "Curatoriat cu grijă. Împărtășit cu un scop.",
+        "btn_label": "EXPLOREAZĂ MANIFESTUL",
         "btn_link": "/",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/1fb4e74b7ace4ca59697582166b7e86a.mp4"
       }
@@ -50,16 +50,16 @@
     "lumina_featured_talk": {
       "type": "lumina-world-featured-conversation",
       "settings": {
-        "section_label": "CONVERSATION IN THE FOREGROUND",
+        "section_label": "CONVERSAȚIE ÎN PRIM-PLAN",
         "video_url": "https://cdn.shopify.com/videos/c/o/v/1fb4e74b7ace4ca59697582166b7e86a.mp4",
         "cover_image": "shopify://shop_images/Katerina-Vodsedalkova.jpg",
-        "eyebrow": "SCIENCE AND LONGEVITY",
-        "title": "The new science of skin longevity",
+        "eyebrow": "ȘTIINȚĂ ȘI LONGEVITATE",
+        "title": "Noua știință a longevității pielii",
         "subtitle": "Ing. Kateřina Vodseďálková, Ph.D.",
-        "description": "A conversation with Katerina, CEO of NanoPharma, about nanofibres, innovation and what it means to build beauty technology from within science.",
-        "btn_1_label": "WATCH CONVERSATION",
+        "description": "O conversație cu Katerina, CEO NanoPharma, despre nanofibre, inovație și ce înseamnă să construiești tehnologie de frumusețe din interiorul științei.",
+        "btn_1_label": "URMĂREȘTE CONVERSAȚIA",
         "btn_1_link": "/",
-        "btn_2_label": "READ TRANSCRIPT",
+        "btn_2_label": "CITEȘTE TRANSCRIPTUL",
         "btn_2_link": "/"
       }
     },
@@ -71,7 +71,7 @@
           "settings": {
             "image": "shopify://shop_images/Katerina-Vodsedalkova.jpg",
             "video_url": "",
-            "category": "SCIENCE",
+            "category": "ȘTIINȚĂ",
             "name": "Ing. Kateřina Vodseďálková, Ph.D.",
             "role": "CEO NanoPharma a.s."
           }
@@ -81,7 +81,7 @@
           "settings": {
             "image": "shopify://shop_images/Johana-Kulhankova-1.jpg",
             "video_url": "",
-            "category": "SCIENCE",
+            "category": "ȘTIINȚĂ",
             "name": "Ing. Johana Kulhánková, Ph.D.",
             "role": "Product Manager NanoPharma a.s."
           }
@@ -91,7 +91,7 @@
           "settings": {
             "image": "shopify://shop_images/IMG_8533-1-e1769960555292-640x690.png",
             "video_url": "",
-            "category": "SCIENCE",
+            "category": "ȘTIINȚĂ",
             "name": "Ing. Marek Cihak",
             "role": "Marketing Manager, NanoPharma a.s."
           }
@@ -136,8 +136,8 @@
         "conversation_734iXF"
       ],
       "settings": {
-        "section_title": "LATEST CONVERSATIONS",
-        "view_all_label": "ALL CONVERSATIONS",
+        "section_title": "ULTIMELE CONVERSAȚII",
+        "view_all_label": "TOATE CONVERSAȚIILE",
         "view_all_link": "/"
       }
     },
@@ -157,7 +157,7 @@
           "type": "article_card",
           "settings": {
             "article": "news/de-ce-sa-alegi-masti-de-fata-cu-nanofibre",
-            "category": "CRAFT",
+            "category": "MEȘTEȘUG",
             "title": "Arta sticlelor lucrate manual",
             "link": "/"
           }
@@ -166,7 +166,7 @@
           "type": "article_card",
           "settings": {
             "article": "news/de-ce-sa-alegi-masti-de-fata-cu-nanofibre",
-            "category": "INGREDIENTS",
+            "category": "INGREDIENTE",
             "title": "Bakuchiol: Retinolul delicat",
             "link": "/"
           }
@@ -175,8 +175,8 @@
           "type": "article_card",
           "settings": {
             "article": "news/de-ce-sa-alegi-masti-de-fata-cu-nanofibre",
-            "category": "CULTURE",
-            "title": "Opera, emotion and beauty",
+            "category": "CULTURĂ",
+            "title": "Operă, emoție și frumusețe",
             "link": "/"
           }
         },
@@ -184,8 +184,8 @@
           "type": "article_card",
           "settings": {
             "article": "news/de-ce-sa-alegi-masti-de-fata-cu-nanofibre",
-            "category": "WELFARE",
-            "title": "The evening light ritual",
+            "category": "BUNĂSTARE",
+            "title": "Ritualul luminii de seară",
             "link": "/"
           }
         },
@@ -193,8 +193,8 @@
           "type": "article_card",
           "settings": {
             "article": "news/de-ce-sa-alegi-masti-de-fata-cu-nanofibre",
-            "category": "SCIENCE",
-            "title": "Blue light and skin health",
+            "category": "ȘTIINȚĂ",
+            "title": "Lumina albastră și sănătatea pielii",
             "link": "/"
           }
         }
@@ -208,32 +208,32 @@
         "article_6"
       ],
       "settings": {
-        "section_title": "JOURNAL",
-        "explore_label": "EXPLORE THE JOURNAL",
+        "section_title": "JURNAL",
+        "explore_label": "EXPLOREAZĂ JURNALUL",
         "explore_link": "/",
         "featured_article": "news/de-ce-lumina-europa",
-        "featured_category": "SCIENCE",
-        "featured_title": "Exosomes: Nature's messengers for renewal",
-        "featured_excerpt": "Microvesicles that may hold the key to cellular communication, repair and radiant skin.",
+        "featured_category": "ȘTIINȚĂ",
+        "featured_title": "Exozomii: Mesagerii naturii pentru reînnoire",
+        "featured_excerpt": "Microveziculele care pot deține cheia comunicării celulare, reparării și pielii radiante.",
         "featured_link": "/",
         "show_submission_btn": true,
-        "submission_btn_text": "SUBMIT YOUR STORY",
-        "modal_eyebrow": "BE PART OF THE JOURNAL",
-        "modal_title": "Submit Your Story",
-        "modal_desc": "Share your own perspective, experience or research to be published in Lumina Journal."
+        "submission_btn_text": "TRIMITE JURNALUL TĂU",
+        "modal_eyebrow": "FII PARTE DIN JURNAL",
+        "modal_title": "Trimite Povestea Ta",
+        "modal_desc": "Împărtășește propria ta perspectivă, experiență sau cercetare pentru a fi publicată în Jurnalul Lumina."
       }
     },
     "lumina_europe_light": {
       "type": "lumina-world-europe-light",
       "settings": {
-        "eyebrow": "SPECIAL EDITORIAL PROJECT",
+        "eyebrow": "PROIECT EDITORIAL SPECIAL",
         "image_top": "shopify://shop_images/005fd866-af00-4ebb-9929-c91ff4b2f104.webp",
         "image_bottom": "shopify://shop_images/3d4be4d0-8c8a-470b-a9ac-d81885c71637.webp",
-        "paragraph_1": "<p><strong>Europe Under the Same Light</strong>is a journey through Europe, told through the people who call it home. Starting<strong>November 2026</strong>, the project will take to the streets of European cities to listen, ask questions and discover what connects us across borders, languages ​​and generations. </p>",
-        "paragraph_2": "Through intimate street conversations, portraits and authentic stories, we will explore identity, belonging, beauty, culture and the future we build together.",
-        "tagline_sub": "Different cities. Different faces. Different stories.",
-        "tagline_main": "One Europe. Under the same light.",
-        "launch_text": "RELEASE IN NOVEMBER 2026"
+        "paragraph_1": "<p><strong>Europa sub aceeași lumină</strong> este o călătorie prin Europa, spusă prin intermediul oamenilor care o numesc acasă. Începând din <strong>noiembrie 2026</strong>, proiectul va merge pe străzile orașelor europene pentru a asculta, a pune întrebări și a descoperi ce ne conectează dincolo de granițe, limbi și generații.</p>",
+        "paragraph_2": "Prin conversații intime pe stradă, portrete și povești autentice, vom explora identitatea, apartenența, frumusețea, cultura și viitorul pe care îl construim împreună.",
+        "tagline_sub": "Orașe diferite. Chipuri diferite. Povești diferite.",
+        "tagline_main": "O singură Europă. Sub aceeași lumină.",
+        "launch_text": "LANSARE ÎN NOIEMBRIE 2026"
       }
     },
     "lumina_articles_grid": {
@@ -243,10 +243,10 @@
           "type": "article_card",
           "settings": {
             "article": "news/de-ce-lumina-europa",
-            "category": "SCIENCE",
+            "category": "ȘTIINȚĂ",
             "date": "12 MAI 2025",
-            "title": "Skin barrier: More than a shield",
-            "excerpt": "Why understanding the skin barrier changes everything in skin care.",
+            "title": "Bariera pielii: Mai mult decât un scut",
+            "excerpt": "De ce înțelegerea barierei pielii schimbă totul în îngrijirea tenului.",
             "link": ""
           }
         },
@@ -254,10 +254,10 @@
           "type": "article_card",
           "settings": {
             "article": "news/de-ce-sa-alegi-masti-de-fata-cu-nanofibre",
-            "category": "CULTURE",
+            "category": "CULTURĂ",
             "date": "5 MAI 2025",
-            "title": "Timeless cities, ageless beauty",
-            "excerpt": "What European cities teach us about beauty, heritage and time.",
+            "title": "Orașe atemporale, frumusețe fără vârstă",
+            "excerpt": "Ce ne învață orașele europene despre frumusețe, patrimoniu și timp.",
             "link": ""
           }
         },
@@ -267,8 +267,8 @@
             "article": "news/de-ce-lumina-europa",
             "category": "OAMENI",
             "date": "28 APRILIE 2025",
-            "title": "The voices of a new generation",
-            "excerpt": "Young Europeans on identity, purpose and future.",
+            "title": "Vocile unei noi generații",
+            "excerpt": "Tineri europeni despre identitate, scop și viitor.",
             "link": ""
           }
         },
@@ -276,10 +276,10 @@
           "type": "article_card",
           "settings": {
             "article": "news/de-ce-sa-alegi-masti-de-fata-cu-nanofibre",
-            "category": "SUSTAINABILITY",
+            "category": "SUSTENABILITATE",
             "date": "20 APRILIE 2025",
-            "title": "Beauty and responsibility",
-            "excerpt": "Why authentic luxury respects the world we come from.",
+            "title": "Frumusețe și responsabilitate",
+            "excerpt": "De ce luxul autentic respectă lumea din care provenim.",
             "link": ""
           }
         }
@@ -292,9 +292,9 @@
       ],
       "settings": {
         "eyebrow": "LUMINA WORLD",
-        "title": "ARTICLES",
-        "subtitle": "Ideas. Perspectives. Conversations that shape the world we live in.",
-        "view_all_label": "ALL ARTICLES",
+        "title": "ARTICOLE",
+        "subtitle": "Idei. Perspective. Conversații care modelează lumea în care trăim.",
+        "view_all_label": "TOATE ARTICOLELE",
         "view_all_link": "/"
       }
     },
@@ -306,12 +306,12 @@
           "settings": {
             "image": "shopify://shop_images/img-1.png",
             "author_name": "Elena Vancea",
-            "location": "Florence, Italy",
+            "location": "Florența, Italia",
             "social_platform": "instagram",
             "social_url": "https://instagram.com/luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "shopify://pages/gallery"
           }
         },
@@ -323,9 +323,9 @@
             "location": "Roma, Italia",
             "social_platform": "instagram",
             "social_url": "https://instagram.com/luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -334,12 +334,12 @@
           "settings": {
             "image": "shopify://shop_images/img-3.png",
             "author_name": "Sophie Laurent",
-            "location": "Paris, France",
+            "location": "Paris, Franța",
             "social_platform": "instagram",
             "social_url": "https://instagram.com/luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -348,12 +348,12 @@
           "settings": {
             "image": "shopify://shop_images/img-4.png",
             "author_name": "Andrei Popa",
-            "location": "Brasov, Romania",
+            "location": "Brașov, România",
             "social_platform": "facebook",
             "social_url": "https://facebook.com",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -365,9 +365,9 @@
             "location": "München, Germania",
             "social_platform": "threads",
             "social_url": "https://threads.com/@luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -376,12 +376,12 @@
           "settings": {
             "image": "shopify://shop_images/img-6.png",
             "author_name": "Chiara Bianchi",
-            "location": "Venice, Italy",
+            "location": "Veneția, Italia",
             "social_platform": "instagram",
             "social_url": "https://instagram.com/luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -390,12 +390,12 @@
           "settings": {
             "image": "shopify://shop_images/img-7.png",
             "author_name": "Gabriel Ionescu",
-            "location": "Sibiu, Romania",
+            "location": "Sibiu, România",
             "social_platform": "instagram",
             "social_url": "https://instagram.com/luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -407,9 +407,9 @@
             "location": "Lisabona, Portugalia",
             "social_platform": "tiktok",
             "social_url": "https://tiktok.com/@luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -421,9 +421,9 @@
             "location": "Stockholm, Suedia",
             "social_platform": "instagram",
             "social_url": "https://instagram.com/luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -435,9 +435,9 @@
             "location": "Budapesta, Ungaria",
             "social_platform": "pinterest",
             "social_url": "https://pinterest.com/luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -446,12 +446,12 @@
           "settings": {
             "image": "shopify://shop_images/img-11.png",
             "author_name": "Clara Dupont",
-            "location": "Nice, France",
+            "location": "Nisa, Franța",
             "social_platform": "instagram",
             "social_url": "https://instagram.com/luminaeuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -460,12 +460,12 @@
           "settings": {
             "image": "shopify://shop_images/img-12.png",
             "author_name": "Stefan Radu",
-            "location": "Cluj-Napoca, Romania",
+            "location": "Cluj-Napoca, România",
             "social_platform": "youtube",
             "social_url": "https://youtube.com/@LuminaEuropa",
-            "subheading": "IN THE FOREGROUND",
-            "heading": "Humanity\nin the Light",
-            "link_text": "VIEW GALLERY ->",
+            "subheading": "ÎN PRIM-PLAN",
+            "heading": "Umanitate\nîn Lumină",
+            "link_text": "VEZI GALERIA ->",
             "link_url": "/pages/galerie"
           }
         },
@@ -473,32 +473,32 @@
           "type": "share_feature",
           "settings": {
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M4 7h3l1.5-2h7L17 7h3a1 1 0 0 1 1 1v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a1 1 0 0 1 1-1z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"3.5\"></circle>\n</svg>",
-            "title": "CAPTURE",
-            "text": "Authentic<br>moments from your everyday life."
+            "title": "SURPRINDE",
+            "text": "Momente autentice<br>din viața ta de zi cu zi."
           }
         },
         "share_feature_WnR4M7": {
           "type": "share_feature",
           "settings": {
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11z\"></path>\n  <circle cx=\"12\" cy=\"10\" r=\"2.5\"></circle>\n</svg>",
-            "title": "TELL US WHERE",
-            "text": "City, country<br>and a few words."
+            "title": "SPUNE-NE UNDE",
+            "text": "Oraș, țară<br>și câteva cuvinte."
           }
         },
         "share_feature_bDdDEp": {
           "type": "share_feature",
           "settings": {
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M22 2L11 13\"></path>\n  <path d=\"M22 2L15 22L11 13L2 9L22 2Z\"></path>\n</svg>",
-            "title": "SUBMIT",
-            "text": "We will look into it and<br>contact you."
+            "title": "TRIMITE",
+            "text": "Vom analiza și<br>te vom contacta."
           }
         },
         "share_feature_TAFpNF": {
           "type": "share_feature",
           "settings": {
             "icon": "<svg xmlns=\"http://www.w3.org/2000/svg\" width=\"48\" height=\"48\" viewbox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path d=\"M15 3c0 3 1 4 4 4c-3 0-4 1-4 4c0-3-1-4-4-4c3 0 4-1 4-4z\"></path>\n  <path d=\"M8 11c0 2 0.7 2.7 2.7 2.7C8.7 13.7 8 14.4 8 16.4c0-2-0.7-2.7-2.7-2.7C7.3 13.7 8 13 8 11z\"></path>\n  <path d=\"M18 14c0 1.4 0.5 1.9 1.9 1.9c-1.4 0-1.9 0.5-1.9 1.9c0-1.4-0.5-1.9-1.9-1.9c1.4 0 1.9-0.5 1.9-1.9z\"></path>\n</svg>",
-            "title": "INSPIRE",
-            "text": "Your story can<br>inspire others."
+            "title": "INSPIRĂ",
+            "text": "Povestea ta îi poate<br>inspira pe ceilalți."
           }
         }
       },
@@ -524,14 +524,14 @@
       "settings": {
         "bg_color": "#000000",
         "text_color": "#ffffff",
-        "load_more_label": "VIEW FULL GALLERY",
+        "load_more_label": "VEZI TOATĂ GALERIA",
         "load_more_url": "shopify://pages/gallery",
-        "upload_btn_label": "SUBMIT YOUR PHOTO",
+        "upload_btn_label": "TRIMITE FOTOGRAFIA TA",
         "share_bg_color": "#050505",
-        "share_subheading": "BE PART OF THE STORY",
-        "share_heading": "Share the Light",
-        "share_text": "Send us your moments from all over Europe. The light you see. The stories you live. We can include them in our gallery.",
-        "share_btn_text": "SUBMIT YOUR PHOTO ->"
+        "share_subheading": "FII PARTE DIN POVESTE",
+        "share_heading": "Împărtășește Lumina",
+        "share_text": "Trimite-ne momentele tale din întreaga Europă. Lumina pe care o vezi. Poveștile pe care le trăiești. Le putem include în galeria noastră.",
+        "share_btn_text": "TRIMITE FOTOGRAFIA TA ->"
       }
     },
     "lumina_social_inspiration_exMmfW": {
@@ -615,10 +615,10 @@
       "name": "Social Inspiration",
       "settings": {
         "bg_color": "#000000",
-        "subheading": "FOLLOW THE LIGHT",
-        "heading": "Chosen inspiration\nfrom our universe.",
-        "text": "Carefully selected content. Not an automatic flow.",
-        "link_text": "VIEW ALL CHANNELS ->",
+        "subheading": "URMĂREȘTE LUMINA",
+        "heading": "Inspirație aleasă\ndin universul nostru.",
+        "text": "Conținut selectat cu grijă. Nu un flux automat.",
+        "link_text": "VEZI TOATE PLATFORMELE ->",
         "link_url": ""
       }
     }

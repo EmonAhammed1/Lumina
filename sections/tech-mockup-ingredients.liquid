@@ -404,36 +404,9 @@
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.title }}" loading="lazy">
             {% else %}
-              {% assign title_handle = block.settings.title | handleize %}
-              {% if title_handle contains 'acid' or title_handle contains 'hialuronic' %}
-                <img src="{{ 'HYALURONIC_ACID.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'centella' %}
-                <img src="{{ 'CENTELLA_ASIATICA.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'colagen' or title_handle contains 'collagen' %}
-                <img src="{{ 'COLLAGEN_AMINO_ACIDS.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'vitamina-c' %}
-                <img src="{{ 'VITAMIN_C.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'vitamina-a' or title_handle contains 'retinol' %}
-                <img src="{{ 'VITAMIN_A.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'niacinamida' or title_handle contains 'niacinamide' %}
-                <img src="{{ 'NIACINAMIDE_82eed169-40d6-4fc7-b67e-9ad404f25789.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'pantenol' or title_handle contains 'panthenol' %}
-                <img src="{{ 'PANTHENOL.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'lactobionic' %}
-                <img src="{{ 'LACTOBIONIC_ACID.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'liftonin' %}
-                <img src="{{ 'LIFTONIN_QI.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'uree' or title_handle contains 'urea' %}
-                <img src="{{ 'UREA.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'arginina' or title_handle contains 'arginine' %}
-                <img src="{{ 'ARGININE.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'alantoina' or title_handle contains 'allantoin' %}
-                <img src="{{ 'ALLANTOINE.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% elsif title_handle contains 'gluconolactona' %}
-                <img src="{{ 'GLUCONOLACTONE.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% else %}
-                <img src="{{ 'HYALURONIC_ACID.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-              {% endif %}
+              <svg viewBox="0 0 100 100" fill="none" stroke="var(--gh-golden)" stroke-width="0.5" style="width: 50%; height: 50%; margin: 25%;">
+                <circle cx="50" cy="50" r="40"/>
+              </svg>
             {% endif %}
             <div class="tm-ingr-plus">+</div>
           </div>
@@ -458,7 +431,7 @@
             <svg viewBox="0 0 24 24"><path d="M18 6L6 18M6 6l12 12" stroke="currentColor" stroke-width="2"/></svg>
           </button>
           <div class="tm-ingr-modal-header">
-            <h3>Products with {{ block.settings.title }}</h3>
+            <h3>Produse cu {{ block.settings.title }}</h3>
           </div>
           
           <div class="tm-ingr-modal-carousel-wrap">
@@ -477,7 +450,7 @@
                   <div class="tm-ingr-product-info">
                     <a href="{{ product.url }}" class="tm-ingr-product-title">{{ product.title }}</a>
                     <div class="tm-ingr-product-price">{{ product.price | money }}</div>
-                    <a href="{{ product.url }}" class="tm-ingr-product-btn">View Product</a>
+                    <a href="{{ product.url }}" class="tm-ingr-product-btn">Vezi Produsul</a>
                   </div>
                 </div>
               {% endfor %}

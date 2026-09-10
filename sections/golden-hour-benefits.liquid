@@ -6,10 +6,6 @@
       background-image: url('{{ section.settings.background_image_desktop | image_url: width: 2000 }}');
       background-size: cover;
       background-position: center;
-    {% else %}
-      background-image: url('{{ "Beneficii.png" | asset_url }}');
-      background-size: cover;
-      background-position: center;
     {% endif %}
     color: var(--gh-text-light);
     padding: {{ section.settings.padding_top_desktop }}px 24px {{ section.settings.padding_bottom_desktop }}px;
@@ -23,10 +19,6 @@
       padding: {{ section.settings.padding_top_mobile }}px 16px {{ section.settings.padding_bottom_mobile }}px;
       {% if section.settings.background_image_mobile %}
         background-image: url('{{ section.settings.background_image_mobile | image_url: width: 1000 }}');
-        background-size: cover;
-        background-position: center;
-      {% else %}
-        background-image: url('{{ "Beneficii-m.png" | asset_url }}');
         background-size: cover;
         background-position: center;
       {% endif %}
@@ -168,7 +160,7 @@
 
 <div class="gh-benefits-wrap" id="{{ section.id | split: '__' | last }}" data-section-id="{{ section.id }}">
   <div class="gh-benefits-header">
-    <div class="gh-benefits-title-small">BENEFITS FOR GOLDEN HOUR MEMBERS</div>
+    <div class="gh-benefits-title-small">BENEFICII PENTRU MEMBRII GOLDEN HOUR</div>
     <h2 class="gh-benefits-title">{{ section.settings.heading }}</h2>
   </div>
 
@@ -185,7 +177,7 @@
 
 {% schema %}
 {
-  "name": "Golden Hour - Benefits",
+  "name": "Golden Hour - Beneficii",
   "settings": [
     {
       "type": "range",
@@ -200,7 +192,7 @@
       "type": "text",
       "id": "heading",
       "label": "Section Title",
-      "default": "More than rewards. A deeper connection."
+      "default": "Mai mult decât recompense. O conexiune mai profundă."
     },
     {
       "type": "header",
@@ -388,38 +380,14 @@
           "id": "icon",
           "label": "Fallback SVG Icon",
           "options": [
-            {
-              "value": "key",
-              "label": "Key"
-            },
-            {
-              "value": "gift",
-              "label": "Gift"
-            },
-            {
-              "value": "tag",
-              "label": "Tag"
-            },
-            {
-              "value": "leaves",
-              "label": "Leaves"
-            },
-            {
-              "value": "book",
-              "label": "Book"
-            },
-            {
-              "value": "calendar",
-              "label": "Calendar"
-            },
-            {
-              "value": "user",
-              "label": "User"
-            },
-            {
-              "value": "star",
-              "label": "Star"
-            }
+            { "value": "key", "label": "Key" },
+            { "value": "gift", "label": "Gift" },
+            { "value": "tag", "label": "Tag" },
+            { "value": "leaves", "label": "Leaves" },
+            { "value": "book", "label": "Book" },
+            { "value": "calendar", "label": "Calendar" },
+            { "value": "user", "label": "User" },
+            { "value": "star", "label": "Star" }
           ],
           "default": "star"
         },
@@ -433,45 +401,45 @@
           "type": "textarea",
           "id": "description",
           "label": "Description",
-          "default": "Description beneficiu"
+          "default": "Descriere beneficiu"
         }
       ]
     }
   ],
   "presets": [
     {
-      "name": "Golden Hour - Benefits",
+      "name": "Golden Hour - Beneficii",
       "blocks": [
         {
           "type": "benefit",
           "settings": {
             "icon": "key",
-            "title": "Priority Access",
-            "description": "Be among the first to discover Lumina's new releases, seasonal collections and limited editions."
+            "title": "Acces prioritar",
+            "description": "Fii printre primii care descoperă noile lansări, colecțiile sezoniere și edițiile limitate Lumina."
           }
         },
         {
           "type": "benefit",
           "settings": {
             "icon": "gift",
-            "title": "Exclusive Gifts",
-            "description": "Enjoy carefully selected surprises and gifts, created especially for the Golden Hour community."
+            "title": "Cadouri exclusive",
+            "description": "Bucură-te de surprize și cadouri atent alese, create special pentru comunitatea Golden Hour."
           }
         },
         {
           "type": "benefit",
           "settings": {
             "icon": "tag",
-            "title": "Curated Offers",
-            "description": "Access benefits and offers available exclusively to Golden Hour members."
+            "title": "Oferte dedicate",
+            "description": "Accesează beneficii și oferte disponibile exclusiv membrilor Golden Hour."
           }
         },
         {
           "type": "benefit",
           "settings": {
             "icon": "leaves",
-            "title": "Seasonal Rituals",
-            "description": "Receive recommendations and rituals adapted to the needs of your skin, in harmony with each season."
+            "title": "Ritualuri sezoniere",
+            "description": "Primește recomandări și ritualuri adaptate nevoilor pielii tale, în armonie cu fiecare anotimp."
           }
         },
         {
@@ -479,31 +447,31 @@
           "settings": {
             "icon": "book",
             "title": "Lumina Journal",
-            "description": "Discover articles, inspiration and stories about the beauty of rituals and conscious skin care."
+            "description": "Descoperă articole, inspirație și povești despre frumusețea ritualurilor și îngrijirea conștientă a pielii."
           }
         },
         {
           "type": "benefit",
           "settings": {
             "icon": "calendar",
-            "title": "Exclusive Events",
-            "description": "Receive invitations to launches, experiences and events dedicated to the Lumina community."
+            "title": "Evenimente",
+            "description": "Primește invitații la lansări, experiențe și evenimente dedicate comunității Lumina."
           }
         },
         {
           "type": "benefit",
           "settings": {
             "icon": "user",
-            "title": "Personalized recommendations",
-            "description": "Get inspired by suggestions and rituals chosen according to the season and your skin's needs."
+            "title": "Recomandări personalizate",
+            "description": "Inspiră-te din sugestii și ritualuri alese în funcție de sezon și de nevoile pielii tale."
           }
         },
         {
           "type": "benefit",
           "settings": {
             "icon": "star",
-            "title": "Experiences before everyone else",
-            "description": "Test new products and concepts for the first time and discover the Lumina universe before the official launch."
+            "title": "Experiențe înaintea tuturor",
+            "description": "Testează în premieră produse și concepte noi și descoperă universul Lumina înainte de lansarea oficială."
           }
         }
       ]

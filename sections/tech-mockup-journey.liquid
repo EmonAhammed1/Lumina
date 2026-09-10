@@ -159,8 +159,10 @@
               {% if block.settings.image != blank %}
                 <img src="{{ block.settings.image | image_url: width: 200 }}" alt="{{ block.settings.title }}" loading="lazy">
               {% else %}
-                {% assign orb_fallback = 'orb-' | append: forloop.index | append: '.png' %}
-                <img src="{{ orb_fallback | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
+                <svg viewBox="0 0 100 100" fill="none" stroke="var(--gh-golden)" stroke-width="0.5" style="opacity:0.5; width: 60%; height: 60%;">
+                  <circle cx="50" cy="50" r="40"/>
+                  <circle cx="50" cy="50" r="20"/>
+                </svg>
               {% endif %}
             </div>
             <div class="tm-journey-num">{{ block.settings.number }}</div>
@@ -253,7 +255,7 @@
           "settings": {
             "number": "03",
             "title": "DISSOLVED",
-            "text": "Nanofiberss dissolve in seconds, releasing encapsulated actives."
+            "text": "Nanofibres dissolve in seconds, releasing encapsulated actives."
           }
         },
         {

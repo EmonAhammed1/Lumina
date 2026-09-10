@@ -79,7 +79,7 @@
           <ul class="text-center list-unstyled ct_list">
           {%- for block in section.blocks -%}
             {%- assign featured_collection = collections[block.settings.collection] -%}
-            {%- assign collectionTitle = featured_collection.title | default: 'Collection title' -%}
+            {%- assign collectionTitle = featured_collection.title | default: 'Titlu colecție' -%}
             <li class="">
               <a href="{{ featured_collection.url }}" class=" ct_list--link {{ size_text }} {% if e_uppercase %} text-uppercase {% endif %}">
                 {{ collectionTitle }}
@@ -369,6 +369,7 @@
       "label": "Enable Number Collections",
       "default": true
     },
+    
     {
       "type": "image_picker",
       "id": "image_left",

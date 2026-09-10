@@ -534,8 +534,8 @@
 
       <!-- Category Filter Pills -->
       <div class="lfaq-categories-wrap" id="lfaq-pills-container">
-        <button class="lfaq-cat-pill active" onclick="lfaqFilterCategory('all', this)">All</button>
-        {% assign categories = "Products & Technology|How to Use & Rituals|Skin, Ingredients & Safety|Orders & Shipping|Returns & Refunds|About Lumina Europa|Account & Privacy|Authenticity & Guarantee|Professional & Spa Use" | split: "|" %}
+        <button class="lfaq-cat-pill active" onclick="lfaqFilterCategory('all', this)">Toate</button>
+        {% assign categories = "Produse și Tehnologie|Mod de Utilizare|Piele, Ingrediente și Siguranță|Comenzi și Livrare|Retururi și Rambursări|Despre Lumina Europa|Cont și Confidențialitate|Autenticitate|Utilizare Profesională" | split: "|" %}
         {% for cat in categories %}
           <button class="lfaq-cat-pill" onclick="lfaqFilterCategory('{{ cat | handleize }}', this)">{{ cat }}</button>
         {% endfor %}
@@ -578,7 +578,7 @@
 
     <!-- No results container -->
     <div class="lfaq-no-results" id="lfaq-no-results">
-      No questions found matching your search.
+      Nu au fost găsite întrebări care să corespundă căutării dumneavoastră.
     </div>
 
     <!-- View More Button -->
@@ -787,7 +787,7 @@
       "type": "text",
       "id": "title",
       "label": "Titlu Principal Hero",
-      "default": "Frequently Asked Questions"
+      "default": "Întrebări Frecvente"
     },
     {
       "type": "range",
@@ -823,13 +823,13 @@
       "type": "text",
       "id": "subtitle",
       "label": "Subtitlu Hero",
-      "default": "What can we help you with?"
+      "default": "Cu ce vă putem ajuta?"
     },
     {
       "type": "text",
       "id": "search_placeholder",
       "label": "Search Bar Placeholder",
-      "default": "Search by keywords..."
+      "default": "Căutați după cuvinte cheie..."
     },
     {
       "type": "checkbox",
@@ -841,7 +841,7 @@
       "type": "text",
       "id": "view_more_label",
       "label": "View More Button Text",
-      "default": "SEE MORE QUESTIONS"
+      "default": "VEZI MAI MULTE ÎNTREBĂRI"
     },
     {
       "type": "header",
@@ -851,19 +851,19 @@
       "type": "text",
       "id": "help_title",
       "label": "Help Banner Title",
-      "default": "Still need help?"
+      "default": "Încă aveți nevoie de ajutor?"
     },
     {
       "type": "text",
       "id": "help_desc",
       "label": "Help Banner Subtitle",
-      "default": "Our support team is here for you."
+      "default": "Echipa noastră de suport este aici pentru dumneavoastră."
     },
     {
       "type": "text",
       "id": "help_btn_label",
       "label": "Help Button Label",
-      "default": "CONTACT SUPPORT"
+      "default": "CONTACTAȚI SUPORTUL"
     },
     {
       "type": "url",
@@ -887,55 +887,28 @@
           "id": "category",
           "label": "Categorie",
           "options": [
-            {
-              "value": "Products and Technology",
-              "label": "Products and Technology"
-            },
-            {
-              "value": "How to Use & Rituals",
-              "label": "How to Use & Rituals"
-            },
-            {
-              "value": "Leather, Ingredients and Safety",
-              "label": "Leather, Ingredients and Safety"
-            },
-            {
-              "value": "Orders and Delivery",
-              "label": "Orders and Delivery"
-            },
-            {
-              "value": "Returns and Refunds",
-              "label": "Returns and Refunds"
-            },
-            {
-              "value": "About Lumina Europa",
-              "label": "About Lumina Europa"
-            },
-            {
-              "value": "Account and Privacy",
-              "label": "Account and Privacy"
-            },
-            {
-              "value": "Authenticity & Guarantee",
-              "label": "Authenticity & Guarantee"
-            },
-            {
-              "value": "Professional Use",
-              "label": "Professional Use"
-            }
+            { "value": "Produse și Tehnologie", "label": "Produse și Tehnologie" },
+            { "value": "Mod de Utilizare", "label": "Mod de Utilizare" },
+            { "value": "Piele, Ingrediente și Siguranță", "label": "Piele, Ingrediente și Siguranță" },
+            { "value": "Comenzi și Livrare", "label": "Comenzi și Livrare" },
+            { "value": "Retururi și Rambursări", "label": "Retururi și Rambursări" },
+            { "value": "Despre Lumina Europa", "label": "Despre Lumina Europa" },
+            { "value": "Cont și Confidențialitate", "label": "Cont și Confidențialitate" },
+            { "value": "Autenticitate", "label": "Autenticitate" },
+            { "value": "Utilizare Profesională", "label": "Utilizare Profesională" }
           ],
-          "default": "Products and Technology"
+          "default": "Produse și Tehnologie"
         },
         {
           "type": "text",
           "id": "question",
-          "label": "Question",
+          "label": "Întrebare",
           "default": "What is a Lumina nanofibre mask?"
         },
         {
           "type": "richtext",
           "id": "answer",
-          "label": "Response",
+          "label": "Răspuns",
           "default": "<p>Lumina nanofibre masks are advanced bio-cellulose delivery systems made from ultra-fine fibres. They form a second-skin matrix that adheres perfectly to your face, helping to deliver up to 92% of our active ingredients deeply and effectively to the skin for visible, luminous results.</p>"
         },
         {

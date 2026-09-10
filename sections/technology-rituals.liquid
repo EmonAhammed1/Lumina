@@ -99,16 +99,7 @@
             {% if block.settings.image != blank %}
               <img src="{{ block.settings.image | image_url: width: 400 }}" alt="{{ block.settings.title | escape }}" loading="lazy">
             {% else %}
-              {% case forloop.index %}
-                {% when 1 %}
-                  <img src="{{ 'img-7.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
-                {% when 2 %}
-                  <img src="{{ 'img-8.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
-                {% when 3 %}
-                  <img src="{{ 'img-9.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
-                {% else %}
-                  <img src="{{ 'img-10.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
-              {% endcase %}
+              {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
             {% endif %}
           </div>
           <h3 class="tech-ritual-title">{{ block.settings.title }}</h3>
@@ -179,38 +170,10 @@
     {
       "name": "Technology Rituals",
       "blocks": [
-        {
-          "type": "ritual-card",
-          "settings": {
-            "title": "Morning Ritual",
-            "text": "Hydration and freshness for the beginning of the day.",
-            "button_label": "Discover Morning Care"
-          }
-        },
-        {
-          "type": "ritual-card",
-          "settings": {
-            "title": "Evening Ritual",
-            "text": "A quiet moment of comfort, renewal and restoration.",
-            "button_label": "Discover Evening Care"
-          }
-        },
-        {
-          "type": "ritual-card",
-          "settings": {
-            "title": "Recovery Ritual",
-            "text": "Focused care for moments when the skin feels tired or unsettled.",
-            "button_label": "Discover Recovery"
-          }
-        },
-        {
-          "type": "ritual-card",
-          "settings": {
-            "title": "Radiance Ritual",
-            "text": "A considered ritual before an occasion or whenever the skin needs renewed luminosity.",
-            "button_label": "Discover Radiance"
-          }
-        }
+        {"type": "ritual-card", "settings": {"title": "Morning Ritual", "text": "Hydration and freshness for the beginning of the day.", "button_label": "Discover Morning Care"}},
+        {"type": "ritual-card", "settings": {"title": "Evening Ritual", "text": "A quiet moment of comfort, renewal and restoration.", "button_label": "Discover Evening Care"}},
+        {"type": "ritual-card", "settings": {"title": "Recovery Ritual", "text": "Focused care for moments when the skin feels tired or unsettled.", "button_label": "Discover Recovery"}},
+        {"type": "ritual-card", "settings": {"title": "Radiance Ritual", "text": "A considered ritual before an occasion or whenever the skin needs renewed luminosity.", "button_label": "Discover Radiance"}}
       ]
     }
   ]

@@ -450,40 +450,21 @@
           <!-- Left Column - Main Image -->
           <div class="col-12 col-lg-9 col-xl-9">
             <div class="main-image-wrapper">
-              {% if main_image != blank %}
-                <img id="mainProductImage-{{ section.id }}" 
-                     src="{{ main_image | image_url: width: 800 }}" 
-                     alt="{{ product.title | escape }}"
-                     loading="lazy">
-              {% else %}
-                <img id="mainProductImage-{{ section.id }}" 
-                     src="{{ 'masca_A.A._neck_front.png' | asset_url }}" 
-                     alt="{{ product.title | default: 'Lumina Product' | escape }}"
-                     loading="lazy">
-              {% endif %}
+              <img id="mainProductImage-{{ section.id }}" 
+                   src="{{ main_image | image_url: width: 800 }}" 
+                   alt="{{ product.title | escape }}"
+                   loading="lazy">
             </div>
           </div>
           
           <!-- Center Column - Thumbnails -->
           <div class="col-12 col-lg-3 col-xl-3 middle-gallery-col">
             <div class="middle-gallery">
-              {%- if product.images.size > 0 -%}
-                {%- for image in product.images -%}
-                  <div class="gallery-thumb{% if forloop.first %} active{% endif %}" data-large-src="{{ image | image_url: width: 800 }}">
-                    <img src="{{ image | image_url: width: 250 }}" alt="{{ image.alt | escape }}" loading="lazy">
-                  </div>
-                {%- endfor -%}
-              {%- else -%}
-                <div class="gallery-thumb active" data-large-src="{{ 'masca_A.A._neck_front.png' | asset_url }}">
-                  <img src="{{ 'masca_A.A._neck_front.png' | asset_url }}" alt="Lumina Front" loading="lazy">
+              {%- for image in product.images -%}
+                <div class="gallery-thumb{% if forloop.first %} active{% endif %}" data-large-src="{{ image | image_url: width: 800 }}">
+                  <img src="{{ image | image_url: width: 250 }}" alt="{{ image.alt | escape }}" loading="lazy">
                 </div>
-                <div class="gallery-thumb" data-large-src="{{ 'masca_A.A._neck_back.png' | asset_url }}">
-                  <img src="{{ 'masca_A.A._neck_back.png' | asset_url }}" alt="Lumina Back" loading="lazy">
-                </div>
-                <div class="gallery-thumb" data-large-src="{{ 'masca_regenerare_back.png' | asset_url }}">
-                  <img src="{{ 'masca_regenerare_back.png' | asset_url }}" alt="Lumina Regenerare" loading="lazy">
-                </div>
-              {%- endif -%}
+              {%- endfor -%}
             </div>
           </div>
           
@@ -531,8 +512,8 @@
           <!-- Product Actions Row -->
           <div class="product-actions-row">
             <div class="ritual-btn-wrapper">
-              {%- capture form_class -%}product-form{%- endcapture -%}
-              {%- capture form_id -%}AddToCartForm-{{ section.id }}{%- endcapture -%}
+              {%- capture "form_class" -%}product-form{%- endcapture -%}
+              {%- capture "form_id" -%}AddToCartForm-{{ section.id }}{%- endcapture -%}
               
               {%- form 'product', product, class: form_class, id: form_id -%}
                 <input type="hidden" name="id" value="{{ current_variant.id }}">
@@ -545,7 +526,7 @@
                         {% unless current_variant.available %}disabled="disabled"{% endunless %}>
                   <span>
                     {%- if current_variant.available -%}
-                      ADD TO RITUAL
+                      ADAUGĂ ÎN RITUAL
                     {%- else -%}
                       {{ 'products.product.sold_out' | t }}
                     {%- endif -%}
@@ -571,7 +552,7 @@
                     <line x1="12" y1="7.5" x2="12" y2="20"/>
                   </svg>
                   <div class="btn-gift-content-stack">
-                    <span class="btn-gift-title">GIFT THIS RITUAL</span>
+                    <span class="btn-gift-title">DĂRUIEȘTE ACEST RITUAL</span>
                     <span class="btn-gift-subtitle">£1 / 5 RON</span>
                   </div>
                 </a>
@@ -583,7 +564,7 @@
           {%- if section.settings.show_routine_button -%}
             <a href="{{ section.settings.routine_button_link | default: '#' }}" class="btn-routine-box">
               <div class="btn-routine-text">
-                <span class="btn-routine-title">{{ section.settings.routine_button_title | default: 'CREATE YOUR ROUTINE' }}</span>
+                <span class="btn-routine-title">{{ section.settings.routine_button_title | default: 'CREEAZĂ-ȚI RUTINA' }}</span>
                 <span class="btn-routine-desc">{{ section.settings.routine_button_desc | default: 'Seturi & rutine personalizate' }}</span>
               </div>
               <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -614,7 +595,7 @@
               </div>
             </details>
             
-            <!-- Accordion 2: Nanofibers Technology -->
+            <!-- Accordion 2: Nanofibre Technology -->
             <details class="accordion-details">
               <summary class="accordion-summary">
                 <span>{{ section.settings.nano_title }}</span>
@@ -716,22 +697,10 @@
       "type": "select",
       "id": "animation",
       "options": [
-        {
-          "value": "",
-          "label": "None"
-        },
-        {
-          "value": "fade",
-          "label": "Fade"
-        },
-        {
-          "value": "fade-up",
-          "label": "Fade Up"
-        },
-        {
-          "value": "fade-down",
-          "label": "Fade Down"
-        }
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "fade-down", "label": "Fade Down" }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -742,18 +711,9 @@
       "label": "Full Width Wrapper",
       "default": "container",
       "options": [
-        {
-          "value": "container",
-          "label": "Box"
-        },
-        {
-          "value": "container-fluid",
-          "label": "Container Fluid"
-        },
-        {
-          "value": "full",
-          "label": "Full"
-        }
+        { "value": "container", "label": "Box" },
+        { "value": "container-fluid", "label": "Container Fluid" },
+        { "value": "full", "label": "Full" }
       ]
     },
     {
@@ -772,19 +732,19 @@
       "type": "text",
       "id": "reviews_count",
       "label": "Reviews Count",
-      "default": "128 reviews"
+      "default": "128 recenzii"
     },
     {
       "type": "text",
       "id": "slogan",
       "label": "Product Slogan",
-      "default": "Volume. Hydration. Shine."
+      "default": "Volum. Hidratare. Strălucire."
     },
     {
       "type": "text",
       "id": "app_time",
       "label": "Application Time Info",
-      "default": "8 minutes to transform your skin"
+      "default": "8 minute pentru a-ți transforma pielea"
     },
     {
       "type": "checkbox",
@@ -807,13 +767,13 @@
       "type": "text",
       "id": "routine_button_title",
       "label": "Routine Button Title",
-      "default": "CREATE YOUR ROUTINE"
+      "default": "CREEAZĂ-ȚI RUTINA"
     },
     {
       "type": "text",
       "id": "routine_button_desc",
       "label": "Routine Button Description",
-      "default": "Personalized sets & routines"
+      "default": "Seturi & rutine personalizate"
     },
     {
       "type": "header",
@@ -823,37 +783,37 @@
       "type": "text",
       "id": "why_love_title",
       "label": "Accordion 1 Title",
-      "default": "Why you will love it"
+      "default": "De ce o vei iubi"
     },
     {
       "type": "richtext",
       "id": "why_love_content",
       "label": "Accordion 1 Content",
-      "default": "<p>Deeply hydrates, volumizes and restores skin radiance in just 8 minutes. Perfect for a quick skin refresh or a weekly luxury care ritual.</p>"
+      "default": "<p>Hidratează profund, oferă volum și redă strălucirea pielii în doar 8 minute. Perfectă pentru o revigorare rapidă a tenului sau un ritual săptămânal de îngrijire de lux.</p>"
     },
     {
       "type": "text",
       "id": "nano_title",
       "label": "Accordion 2 Title",
-      "default": "Tehnologia Nanofibers"
+      "default": "Tehnologia Nanofibre"
     },
     {
       "type": "richtext",
       "id": "nano_content",
       "label": "Accordion 2 Content",
-      "default": "<p>Specially designed nanofibers activate only on contact with wet skin, delivering active ingredients directly to where they are most needed. The ultra-fine nanofiber matrix ensures maximum absorption and optimal breathability.</p>"
+      "default": "<p>Nanofibrele special concepute se activează doar la contactul cu pielea umedă, livrând ingredientele active direct acolo unde este cea mai mare nevoie de ele. Matricea ultra-fină de nanofibre asigură o absorbție maximă și o respirabilitate optimă.</p>"
     },
     {
       "type": "text",
       "id": "ingredients_title",
       "label": "Accordion 3 Title",
-      "default": "Key Ingredients"
+      "default": "Ingrediente Cheie"
     },
     {
       "type": "richtext",
       "id": "ingredients_content",
       "label": "Accordion 3 Content",
-      "default": "<p><strong>Hyaluronic Acid, Niacinamide, Panthenol, Ectoin, Allantoin, Beta-Glucan.</strong><br><br>Formulated without parabens, perfumes, mineral oils and silicones.</p>"
+      "default": "<p><strong>Acid Hialuronic, Niacinamidă, Pantenol, Ectoină, Alantoină, Beta-Glucan.</strong><br><br>Formulat fără parabeni, parfumuri, uleiuri minerale și siliconi.</p>"
     }
   ],
   "blocks": [

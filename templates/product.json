@@ -12,7 +12,7 @@
     "mask-menu-trigger": {
       "type": "mask-menu-quick-trigger",
       "settings": {
-        "sidebar_title": "Masks Collection",
+        "sidebar_title": "Colecție Măști",
         "menu": "main-menu"
       }
     },
@@ -49,19 +49,19 @@
         "gold_color": "#c5a059",
         "rating_val": "",
         "reviews_count": "",
-        "slogan": "Volume. Hydration. Shine.",
-        "app_time": "5 minutes to transform your skin",
+        "slogan": "Volum. Hidratare. Strălucire.",
+        "app_time": "5 minute pentru a-ți transforma pielea",
         "show_gift_button": false,
         "show_routine_button": true,
         "routine_button_link": "",
-        "routine_button_title": "CREATE YOUR ROUTINE",
+        "routine_button_title": "CREEAZĂ-ȚI RUTINA",
         "routine_button_desc": "Seturi & rutine personalizate",
-        "why_love_title": "Why you will love it",
-        "why_love_content": "<p> Deeply hydrates, volumizes and restores skin radiance in just 5 minutes. Perfect for a quick skin refresh or a weekly luxury skin care ritual. </p>",
-        "nano_title": "Nanofiber Technology",
-        "nano_content": "<p> Specially designed nanofibers activate only on contact with wet skin, delivering active ingredients directly to where they are needed most. The ultra-fine nanofiber matrix ensures maximum absorption and optimal breathability. </p>",
-        "ingredients_title": "Key Ingredients",
-        "ingredients_content": "<p><strong>Hyaluronic Acid, Niacinamide, Panthenol, Ectoin, Allantoin, Beta-Glucan.</strong><br/><br/>Formulated without parabens, fragrances, mineral oils and silicones. </p>"
+        "why_love_title": "De ce o vei iubi",
+        "why_love_content": "<p>Hidratează profund, oferă volum și redă strălucirea pielii în doar 5 minute. Perfectă pentru o revigorare rapidă a tenului sau un ritual săptămânal de îngrijire de lux.</p>",
+        "nano_title": "Tehnologia Nanofibre",
+        "nano_content": "<p>Nanofibrele special concepute se activează doar la contactul cu pielea umedă, livrând ingredientele active direct acolo unde este cea mai mare nevoie de ele. Matricea ultra-fină de nanofibre asigură o absorbție maximă și o respirabilitate optimă.</p>",
+        "ingredients_title": "Ingrediente Cheie",
+        "ingredients_content": "<p><strong>Acid Hialuronic, Niacinamidă, Pantenol, Ectoină, Alantoină, Beta-Glucan.</strong><br/><br/>Formulat fără parabeni, parfumuri, uleiuri minerale și siliconi.</p>"
       }
     },
     "product-requently": {
@@ -69,7 +69,7 @@
       "settings": {
         "animation": "fade-up",
         "bgsection": "#ffffff",
-        "bundle_title": "Frequently purchased together",
+        "bundle_title": "Cumpărate frecvent împreună",
         "size_text": "h4",
         "limit_bundle": 3,
         "enable_border": true,
@@ -86,38 +86,38 @@
         "6889c9ba-caef-4edd-9757-6711505cb095": {
           "type": "description",
           "settings": {
-            "title_tab": "Description",
+            "title_tab": "Descriere",
             "enable_special": false,
-            "left_heading": "Intense hydration. Visible transformation.",
+            "left_heading": "Hidratare intensă. Transformare vizibilă.",
             "metafield_source": "",
             "feat_1_icon": "water",
-            "feat_1_text": "Deep hydration and regeneration",
+            "feat_1_text": "Hidratare profundă și regenerare",
             "feat_2_icon": "sparkle",
-            "feat_2_text": "Strengthens and soothes",
+            "feat_2_text": "Întărește și calmează",
             "feat_3_icon": "wave",
-            "feat_3_text": "Bring back the shine and comfort",
+            "feat_3_text": "Redă strălucirea și confortul",
             "feat_4_icon": "leaf",
-            "feat_4_text": "Perfect for all skin types, including sensitive skin",
+            "feat_4_text": "Perfect pentru toate tipurile de ten, inclusiv cel sensibil",
             "mid_image": "shopify://shop_images/result_-_7_3a96c0a5-e331-4ed1-9777-7d00101e2443.webp",
-            "card_1_title": "TRANSFORMATION IN 5 MINUTES",
+            "card_1_title": "TRANSFORMARE ÎN 5 MINUTE",
             "card_1_time": "05:00",
             "timeline_val_1": "01:00",
             "timeline_lbl_1": "Activare",
             "timeline_val_2": "04:00",
-            "timeline_lbl_2": "Absorption",
+            "timeline_lbl_2": "Absorbție",
             "timeline_val_3": "05:00",
             "timeline_lbl_3": "Transformare",
-            "card_2_title": "PERFECT FOR",
-            "perfect_1": "Dehydrated and tired skin",
-            "perfect_2": "After long journeys or flights",
-            "perfect_3": "Before special events",
-            "perfect_4": "When your skin needs an instant recovery"
+            "card_2_title": "PERFECT PENTRU",
+            "perfect_1": "{{ product.metafields.custom.perfect_pentru_item_1.value }}",
+            "perfect_2": "{{ product.metafields.custom.perfect_pentru_item_2.value }}",
+            "perfect_3": "{{ product.metafields.custom.perfect_pentru_item_3.value }}",
+            "perfect_4": "{{ product.metafields.custom.perfect_pentru_item_4.value }}"
           }
         },
         "inainte_de_utilizare_tab": {
           "type": "content",
           "settings": {
-            "title_tab": "Before use",
+            "title_tab": "Înainte de utilizare",
             "metafield_source": "inainte_de_utilizare",
             "answer_content": "",
             "page": ""
@@ -126,7 +126,7 @@
         "b69a53cf-5bc1-4b18-add3-92af436f966c": {
           "type": "content",
           "settings": {
-            "title_tab": "How to use",
+            "title_tab": "Cum se utilizează",
             "metafield_source": "cum_se_utilizeaza",
             "answer_content": "",
             "page": ""
@@ -135,7 +135,7 @@
         "450a0011-a13e-4bad-9fbb-454bc0a862b4": {
           "type": "content",
           "settings": {
-            "title_tab": "Key ingredients",
+            "title_tab": "Ingrediente cheie",
             "metafield_source": "ingrediente_cheie",
             "answer_content": "",
             "page": ""
@@ -153,7 +153,7 @@
         "2e69c5c0-ab83-4cda-9c38-1aaab6fdf1cc": {
           "type": "related-product",
           "settings": {
-            "title_heading": "Buy with",
+            "title_heading": "Cumpără cu",
             "size_text": "h6",
             "product_limit": 3
           }
@@ -179,7 +179,7 @@
         "marginsection": "0px 0px 0px 0px",
         "marginmobile": "0px 0px 0px 0px",
         "show_social_right": true,
-        "social_right_text": "Artistic images (TBC) may be associated with social media posts.",
+        "social_right_text": "Imaginile artistice (TBC) pot fi asociate cu postările de pe rețelele sociale.",
         "social_img_1": "shopify://shop_images/PEPTIDE.webp",
         "social_img_2": "shopify://shop_images/CENTELLA.webp",
         "social_img_3": "shopify://shop_images/HYALURONIC.webp"
@@ -191,19 +191,19 @@
         "animation": "fade-up",
         "setwidth": "container-fluid",
         "gold_color": "#c5a059",
-        "section_title": "Transformation in 5 minutes",
+        "section_title": "Transformarea în 5 minute",
         "show_separator": true,
         "col_1_time": "01:00",
-        "col_1_title": "PURE ACTIVE DIFFUSION",
-        "col_1_text": "<p><strong>Dry technology</strong>- Nanofibers activate only on contact with wet skin, eliminating product wastage. </p>",
+        "col_1_title": "DIFUZIE ACTIVĂ PURĂ",
+        "col_1_text": "<p><strong>Tehnologie uscată</strong> - Nanofibrele se activează doar la contactul cu pielea umedă, eliminând risipa de produs.</p>",
         "col_2_img": "shopify://shop_images/pure_transfer_5_min.jpg",
         "col_2_time": "04:00",
         "col_2_title": "TRANSFER PUR",
-        "col_2_text": "<p> Direct transfer of ingredients into the dermis, offering results 10x faster than classic masks. </p>",
+        "col_2_text": "<p>Transfer direct al ingredientelor în derm, oferind rezultate de 10x mai rapide decât măștile clasice.</p>",
         "col_3_time": "05:00",
         "col_3_title": "PUR PRIN DESIGN",
-        "col_3_text": "<p> Pure formula without parabens, fragrances or preservatives. Ideal for sensitive skin. </p>",
-        "bottom_text": "5 MINUTES THAT CHANGE EVERYTHING. VISIBLE RESULTS THAT LAST."
+        "col_3_text": "<p>Formula pură, fără parabeni, parfumuri sau conservanți. Ideală pentru tenul sensibil.</p>",
+        "bottom_text": "5 MINUTE CARE SCHIMBĂ TOTUL. REZULTATE VIZIBILE CARE DUREAZĂ."
       }
     },
     "exp-alchemy": {
@@ -214,13 +214,13 @@
         "gold_color": "#c5a059",
         "section_title": "Alchimia",
         "show_separator": true,
-        "subtitle": "KEY INGREDIENTS",
-        "desc": "<p> Pure formulas with concentrated active ingredients, delivered directly to the dermis through the nanofiber structure. </p>",
+        "subtitle": "INGREDIENTE CHEIE",
+        "desc": "<p>Formule pure cu ingrediente active concentrate, livrate direct în derm prin structura nanofibrelor.</p>",
         "autoplay": true,
         "autoplay_speed": 5000,
         "card_bg": "#0d0d0f",
         "text_color": "#ffffff",
-        "metafield_key": "filter.ingredients",
+        "metafield_key": "filter.ingrediente",
         "desc_color": "#cccccc"
       }
     },
@@ -230,10 +230,10 @@
         "animation": "fade-up",
         "setwidth": "container-fluid",
         "gold_color": "#c5a059",
-        "section_title": "Where the light begins",
+        "section_title": "Acolo unde începe lumina",
         "show_separator": true,
         "subtitle": "",
-        "desc": "<p> It all starts with a touch.<br>Hydro Mist preps the skin. The dry mask settles easily and the nanofibers begin to transform, releasing the active ingredients in a smooth, silent, precise ritual.<br>You don't just see a technology. See the moment care becomes light. </p>",
+        "desc": "<p>Totul pornește dintr-o atingere.<br>Hydro Mist pregătește pielea. Masca uscată se așează ușor, iar nanofibrele încep să se transforme, eliberând ingredientele active într-un ritual fin, tăcut, precis.<br>Nu vezi doar o tehnologie. Vezi momentul în care îngrijirea devine lumină.</p>",
         "link_video": "https://cdn.shopify.com/videos/c/o/v/daa8f8991d7e47419cbd9ff37f3f6f05.mp4",
         "video_url": "",
         "autoplay": true,
@@ -261,7 +261,7 @@
         "ritual_2": {
           "type": "ritual",
           "settings": {
-            "product": "nano-beauty-pro-anti-aging-mask-for-décolletage",
+            "product": "nano-beauty-pro-masca-anti-imbatranire-pentru-decolteu",
             "item_type": "product",
             "title": "",
             "subtitle": "",
@@ -297,7 +297,7 @@
         "ritual_5": {
           "type": "ritual",
           "settings": {
-            "product": "nano-beauty-pro-collagen-face-mask-for-lifting",
+            "product": "nano-beauty-pro-masca-de-fața-cu-colagen-pentru-lifting",
             "item_type": "bundle",
             "title": "",
             "subtitle": "",
@@ -309,7 +309,7 @@
         "ritual_6": {
           "type": "ritual",
           "settings": {
-            "product": "nano-beauty-pro-anti-aging-neck-mask",
+            "product": "nano-beauty-pro-masca-anti-imbatranire-pentru-gat",
             "item_type": "product",
             "title": "",
             "subtitle": "",
@@ -351,24 +351,24 @@
           "type": "feature",
           "settings": {
             "icon": "molecule",
-            "title": "PATENTED NANOFIBER TECHNOLOGY",
-            "description": "Ultra-fine nanofibers create a smart structure that stays dry and stable until activated."
+            "title": "TEHNOLOGIE PATENTATĂ DE NANOFIBRE",
+            "description": "Nanofibrele ultra-fine creează o structură inteligentă care rămâne uscată și stabilă până la activare."
           }
         },
         "feature_hctX3w": {
           "type": "feature",
           "settings": {
             "icon": "delivery",
-            "title": "ACTIVE DELIVERY",
-            "description": "On contact with wet skin, the fibers dissolve instantly, delivering the active ingredients directly to where they are needed most."
+            "title": "LIVRARE ACTIVĂ",
+            "description": "La contactul cu pielea umedă, fibrele se dizolvă instantaneu, livrând ingredientele active direct acolo unde este cea mai mare nevoie."
           }
         },
         "feature_MYLLkH": {
           "type": "feature",
           "settings": {
             "icon": "leaf",
-            "title": "FORMAT WITHOUT PRESERVATIVES",
-            "description": "Our dry format eliminates the need for parabens, added fragrances and unnecessary preservatives - perfect for sensitive skin."
+            "title": "FORMAT FĂRĂ CONSERVANȚI",
+            "description": "Formatul nostru uscat elimină necesitatea parabenilor, parfumurilor adăugate și conservanților inutili - perfect pentru pielea sensibilă."
           }
         }
       },
@@ -382,22 +382,22 @@
         "animation": "fade-up",
         "setwidth": "container",
         "subtitle": "SUB MICROSCOP",
-        "title": "Science you can see. Results you can feel.",
-        "desc": "<p> Our patented nanofiber technology is designed for precise delivery, activating only on contact with wet skin – ensuring the maximum performance of each pure ingredient. </p>",
-        "scroll_label": "SCROLL TO EXPLORE",
+        "title": "Știință pe care o poți vedea. Rezultate pe care le poți simți.",
+        "desc": "<p>Tehnologia noastră patentată de nanofibre este proiectată pentru livrare precisă, activându-se doar la contactul cu pielea umedă – asigurând performanța maximă a fiecărui ingredient pur.</p>",
+        "scroll_label": "DERULAȚI PENTRU A EXPLORA",
         "stage_1_label": "MICRO",
-        "stage_1_title": "Structure of Nanofibers",
+        "stage_1_title": "Structură de Nanofibre",
         "stage_1_video_url": "https://cdn.shopify.com/videos/c/o/v/a3f8b7ec2b264fbda558acd951f1b106.mp4",
         "stage_2_label": "ACTIVE",
-        "stage_2_title": "Delivery of Ingredients",
+        "stage_2_title": "Livrare de Ingrediente",
         "stage_2_video_url": "",
         "stage_3_label": "DEEP",
-        "stage_3_title": "Skin penetration",
+        "stage_3_title": "Penetrare în Piele",
         "stage_3_video_url": "",
         "stage_4_label": "RESULT",
-        "stage_4_title": "Visible Transformation",
+        "stage_4_title": "Transformare Vizibilă",
         "stage_4_video_url": "",
-        "btn_label": "DISCOVER TECHNOLOGY",
+        "btn_label": "DESCOPERĂ TEHNOLOGIA",
         "btn_link": "",
         "bg_color": "#010101",
         "accent_color": "#b8963e",
@@ -414,8 +414,8 @@
           "settings": {
             "icon_type": "shipping",
             "custom_svg": "",
-            "title": "FREE DELIVERY",
-            "description": "Enjoy fast and insured delivery right to your door on all orders.",
+            "title": "LIVRARE GRATUITĂ",
+            "description": "Bucurați-vă de livrare rapidă și asigurată direct la ușa dumneavoastră pentru toate comenzile.",
             "link": ""
           }
         },
@@ -425,7 +425,7 @@
             "icon_type": "circle",
             "custom_svg": "",
             "title": "LUMINA CIRCLE",
-            "description": "Join our exclusive club to receive priority access, special gifts and dedicated offers.",
+            "description": "Alăturați-vă clubului nostru exclusiv pentru a primi acces prioritar, cadouri speciale și oferte dedicate.",
             "link": ""
           }
         },
@@ -434,8 +434,8 @@
           "settings": {
             "icon_type": "payment",
             "custom_svg": "",
-            "title": "SECURE PAYMENT",
-            "description": "100% secure transactions through top payment processors and advanced SSL encryption.",
+            "title": "PLATĂ SECURIZATĂ",
+            "description": "Tranzacții 100% sigure prin intermediul procesatoarelor de plăți de top și criptare SSL avansată.",
             "link": ""
           }
         }
@@ -448,7 +448,7 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
-        "subtitle": "OUR PROMISE",
+        "subtitle": "PROMISIUNEA NOASTRĂ",
         "section_title": "The Lumina Promise",
         "bgsection": "#010101",
         "card_bg": "#0d0d0fb8",
@@ -468,7 +468,7 @@
       "settings": {
         "animation": "fade-up",
         "setwidth": "container",
-        "heading": "You might also like",
+        "heading": "S-ar putea să-ți placă și",
         "heading_size": "h3",
         "heading_align": "center",
         "products_to_show": 10,
@@ -501,7 +501,7 @@
     },
     "continua_ritualul_K3qkFh": {
       "type": "continua-ritualul",
-      "name": "Continue the ritual",
+      "name": "Continuă ritualul",
       "settings": {
         "max_width": 1300,
         "bg_color": "#0a0a0a",
@@ -514,18 +514,18 @@
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 50,
         "top_icon": "",
-        "heading": "Continue the ritual",
+        "heading": "Continuă ritualul",
         "heading_color": "#b8963e",
         "heading_size_desktop": 48,
         "heading_size_tablet": 38,
         "heading_size_mobile": 30,
         "heading_weight": "400",
-        "subheading": "<p> Choose an individual mask or a complete protocol that naturally continues the Light moment you are in. </p>",
+        "subheading": "<p>Alege o mască individuală sau un protocol complet care continuă firesc momentul Lumina în care te afli.</p>",
         "subheading_color": "#cfc7ba",
         "subheading_size_desktop": 17,
         "subheading_size_mobile": 14,
         "subheading_weight": "400",
-        "divider_text": "Individual masks",
+        "divider_text": "Măști individuale",
         "divider_line_color": "#a9822c",
         "divider_text_color": "#c9a24a",
         "divider_size_desktop": 24,
@@ -563,7 +563,7 @@
         "button_size_mobile": 13,
         "button_weight": "500",
         "button_radius": 4,
-        "button_text": "Discover",
+        "button_text": "Descoperă",
         "show_button_icon": true
       }
     },
@@ -582,13 +582,13 @@
         "padding_top_mobile": 50,
         "padding_bottom_mobile": 50,
         "top_icon": "",
-        "heading": "Complete Rituals",
+        "heading": "Ritualuri complete",
         "heading_color": "#d4af6a",
         "heading_size_desktop": 48,
         "heading_size_tablet": 38,
         "heading_size_mobile": 30,
         "heading_weight": "400",
-        "subheading": "<p> Complete rituals, visible results. Choose the protocol that suits you. </p>",
+        "subheading": "<p>Ritualuri complete, rezultate vizibile. Alege protocolul care ți se potrivește.</p>",
         "subheading_color": "#cfc7ba",
         "subheading_size_desktop": 17,
         "subheading_size_mobile": 14,
@@ -631,7 +631,7 @@
         "button_size_mobile": 13,
         "button_weight": "500",
         "button_radius": 4,
-        "button_text": "Discover",
+        "button_text": "Descoperă",
         "show_button_icon": true
       }
     },
@@ -639,12 +639,12 @@
       "type": "tech-mockup-hero",
       "name": "Mockup - Hero",
       "settings": {
-        "bg_video": "",
+        "bg_video": "shopify://files/videos/WhatsApp Video 2026-08-10 at 15.05.00.mp4",
         "overlay_opacity": 30,
-        "subtitle": "DISCOVER LUMINA",
-        "title": "IT STARTS WITH A RITUAL",
-        "text": "Nanofibers. Active ingredients. Rituals created for the moments when you choose to take care of yourself. Discover the Lumina Europa collection and find the right ritual for you.",
-        "btn_label": "EXPLORE THE COLLECTION",
+        "subtitle": "DESCOPERĂ LUMINA",
+        "title": "ÎNCEPE CU UN RITUAL",
+        "text": "Nanofibre. Ingrediente active. Ritualuri create pentru momentele în care alegi să ai grijă de tine. Descoperă colecția Lumina Europa și găsește ritualul potrivit pentru tine.",
+        "btn_label": "EXPLOREAZĂ COLECȚIA",
         "btn_link": "shopify://collections"
       }
     }

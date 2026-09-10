@@ -235,18 +235,12 @@
         <div class="lwm-media-box">
           {%- if section.settings.video_url != blank -%}
             <video autoplay loop muted playsinline poster="{{ section.settings.image | image_url: width: 1200 }}">
-              <source src="{% if section.settings.video_url contains 'http' %}{{ section.settings.video_url }}{% else %}{{ section.settings.video_url | file_url }}{% endif %}" type="video/mp4">
-              <source src="{{ '3_lumina_world_manifesto_talk.mp4' | file_url }}" type="video/mp4">
-              <source src="{{ 'video 1 presentation.mp4' | file_url }}" type="video/mp4">
+              <source src="{{ section.settings.video_url }}" type="video/mp4">
             </video>
           {%- elsif section.settings.image != blank -%}
             <img src="{{ section.settings.image | image_url: width: 1200 }}" alt="{{ section.settings.title | escape }}" loading="lazy">
           {%- else -%}
-            <video autoplay loop muted playsinline poster="{{ 'lumina-experience-reborn.png' | asset_url }}">
-              <source src="{{ '3_lumina_world_manifesto_talk.mp4' | file_url }}" type="video/mp4">
-              <source src="{{ 'video 1 presentation.mp4' | file_url }}" type="video/mp4">
-              <source src="https://cdn.shopify.com/videos/c/o/v/06637b7d08654c609c15feae7fb90035.mp4" type="video/mp4">
-            </video>
+            <img src="{{ 'lumina-experience-reborn.png' | asset_url }}" alt="Manifesto Gold Wave" loading="lazy">
           {%- endif -%}
         </div>
       </div>
@@ -275,7 +269,7 @@
       "type": "text",
       "id": "title",
       "label": "Main Title (White Text)",
-      "default": "A digital magazine"
+      "default": "O revistă digitală "
     },
     {
       "type": "text",
@@ -287,19 +281,19 @@
       "type": "textarea",
       "id": "paragraph_1",
       "label": "Paragraph 1",
-      "default": "LUMINA WORLD is our editorial space for ideas that illuminate. A place for conversations with remarkable minds, stories from the frontiers of beauty and science, and inspiration for living with intention."
+      "default": "LUMINA WORLD este spațiul nostru editorial pentru idei care luminează. Un loc pentru conversații cu minți remarcabile, povești de la frontierele frumuseții și științei și inspirație pentru a trăi cu intenție."
     },
     {
       "type": "textarea",
       "id": "paragraph_2",
       "label": "Paragraph 2",
-      "default": "Carefully curated. Shared with a purpose."
+      "default": "Curatoriat cu grijă. Împărtășit cu un scop."
     },
     {
       "type": "text",
       "id": "btn_label",
       "label": "Button / CTA Label",
-      "default": "EXPLORE THE MANIFESTO"
+      "default": "EXPLOREAZĂ MANIFESTUL"
     },
     {
       "type": "url",

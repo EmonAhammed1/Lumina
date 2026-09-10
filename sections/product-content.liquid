@@ -553,7 +553,7 @@
                                               {%- elsif block.settings.mid_image != blank -%}
                                                 <img src="{{ block.settings.mid_image | image_url: width: 600 }}" alt="" loading="lazy">
                                               {%- else -%}
-                                                <img src="{{ 'masca_A.A._neck_front.png' | asset_url }}" alt="Lumina Ritual" loading="lazy">
+                                                {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
                                               {%- endif -%}
                                             </div>
                                           </div>
@@ -654,52 +654,29 @@
                                       {%- assign txt_val = product.metafields.custom.mod_utilizare -%}
                                     {%- endif -%}
                                     
-                                    {%- assign default_img = nil -%}
-                                    {%- assign default_txt = nil -%}
-                                    {%- case mf_source -%}
-                                      {%- when 'inainte_de_utilizare' -%}
-                                        {%- assign default_txt = '<p>Gently cleanse your face before application. Ensure skin is clean and lightly misted with Hydro Mist or lukewarm water.</p>' -%}
-                                        {%- assign default_img = '2._activate.png' | asset_url -%}
-                                      {%- when 'cum_se_utilizeaza', 'mod_utilizare' -%}
-                                        {%- assign default_txt = '<p>1. Open the dry mask and smooth onto misted skin.<br/>2. Allow the nanofibers to dissolve and release pure encapsulated actives.<br/>3. Gently press the remaining essence into the skin.</p>' -%}
-                                        {%- assign default_img = '3apply.jpg' | asset_url -%}
-                                      {%- when 'ingrediente_cheie' -%}
-                                        {%- assign default_txt = '<p><strong>Hyaluronic Acid:</strong> Multi-depth cellular hydration.<br/><strong>Niacinamide (Vitamin B3):</strong> Evens skin tone and strengthens lipid barrier.<br/><strong>Panthenol:</strong> Calms and accelerates cellular recovery.</p>' -%}
-                                        {%- assign default_img = 'PEPTIDE.webp' | asset_url -%}
-                                      {%- when 'rezultate_clinice' -%}
-                                        {%- assign default_txt = '<p>✦ <strong>98%</strong> of participants noted immediate hydration after first application.<br/>✦ <strong>94%</strong> reported refined texture and enhanced elasticity after 14 days.<br/>✦ <strong>91%</strong> saw visibly luminous, rejuvenated skin.</p>' -%}
-                                        {%- assign default_img = 'pure_transfer_5_min.jpg' | asset_url -%}
-                                    {%- endcase -%}
-
                                     {%- if active_img != blank -%}
-                                      {%- assign display_img = active_img | image_url: width: 700 -%}
-                                    {%- elsif default_img != blank -%}
-                                      {%- assign display_img = default_img -%}
-                                    {%- else -%}
-                                      {%- assign display_img = nil -%}
-                                    {%- endif -%}
-
-                                    {%- if txt_val != blank -%}
-                                      {%- capture display_content %}{{ txt_val | metafield_tag }}{% endcapture -%}
-                                    {%- elsif block.settings.answer_content != blank or block.settings.page.content != blank -%}
-                                      {%- capture display_content %}{{ block.settings.answer_content }}{{ block.settings.page.content }}{% endcapture -%}
-                                    {%- else -%}
-                                      {%- assign display_content = default_txt -%}
-                                    {%- endif -%}
-                                    
-                                    {%- if display_img != blank -%}
                                       <div class="row align-items-center descriere-2col-wrap" style="margin-top: 10px;">
                                         <div class="col-12 col-lg-8 col-xl-8 descriere-left-text">
-                                          {{ display_content }}
+                                          {%- if txt_val != blank -%}
+                                            {{ txt_val | metafield_tag }}
+                                          {%- else -%}
+                                            {{ block.settings.answer_content }}
+                                            {{ block.settings.page.content }}
+                                          {%- endif -%}
                                         </div>
                                         <div class="col-12 col-lg-4 col-xl-4 text-center descriere-right-image mt-4 mt-lg-0">
                                           <div class="descriere-img-box" style="padding: 5px; text-align: center;">
-                                            <img src="{{ display_img }}" alt="{{ product.title | escape }}" loading="lazy" style="max-width: 380px; width: 100%; height: auto; object-fit: cover; border-radius: 14px; border: 1px solid rgba(226, 215, 195, 0.35); box-shadow: 0 8px 30px rgba(0,0,0,0.25); display: inline-block;">
+                                            <img src="{{ active_img | image_url: width: 700 }}" alt="{{ product.title | escape }}" loading="lazy" style="max-width: 380px; width: 100%; height: auto; object-fit: cover; border-radius: 14px; border: 1px solid rgba(226, 215, 195, 0.35); box-shadow: 0 8px 30px rgba(0,0,0,0.25); display: inline-block;">
                                           </div>
                                         </div>
                                       </div>
                                     {%- else -%}
-                                      {{ display_content }}
+                                      {%- if txt_val != blank -%}
+                                        {{ txt_val | metafield_tag }}
+                                      {%- else -%}
+                                          {{ block.settings.answer_content }}
+                                          {{ block.settings.page.content }}
+                                      {%- endif -%}
                                     {%- endif -%}
                                 </div>
                             {%- when 'review' -%}
@@ -1013,7 +990,7 @@
       "type": "text",
       "id": "social_right_text",
       "label": "Social Content Text",
-      "default": "Artistic images (TBC) may be associated with social media posts."
+      "default": "Imaginile artistice (TBC) pot fi asociate cu postările de pe rețelele sociale."
     },
     {
       "type": "image_picker",
@@ -1046,7 +1023,7 @@
           "type": "text",
           "id": "title_tab",
           "label": "Heading",
-          "default": "Description"
+          "default": "Descriere"
         },
         {
           "type": "checkbox",
@@ -1062,7 +1039,7 @@
           "type": "text",
           "id": "left_heading",
           "label": "Left Heading",
-          "default": "Intense hydration. Visible transformation."
+          "default": "Hidratare intensă. Transformare vizibilă."
         },
         {
           "type": "select",
@@ -1071,34 +1048,13 @@
           "info": "Displays unique content from the selected metafield.",
           "default": "",
           "options": [
-            {
-              "value": "",
-              "label": "None (use default text)"
-            },
-            {
-              "value": "descriere",
-              "label": "Description (custom.descriere)"
-            },
-            {
-              "value": "inainte_de_utilizare",
-              "label": "Next de utilizare (custom.inainte_de_utilizare)"
-            },
-            {
-              "value": "cum_se_utilizeaza",
-              "label": "How to use (custom.how_to_use)"
-            },
-            {
-              "value": "mod_utilizare",
-              "label": "How to use (custom.how_to_use)"
-            },
-            {
-              "value": "ingrediente_cheie",
-              "label": "Ingredients cheie (custom.ingrediente_cheie)"
-            },
-            {
-              "value": "rezultate_clinice",
-              "label": "Clinical Results (custom.rezultate_clinice)"
-            }
+            { "value": "", "label": "None (use default text)" },
+            { "value": "descriere", "label": "Descriere (custom.descriere)" },
+            { "value": "inainte_de_utilizare", "label": "Înainte de utilizare (custom.inainte_de_utilizare)" },
+            { "value": "cum_se_utilizeaza", "label": "Cum se utilizează (custom.cum_se_utilizeaza)" },
+            { "value": "mod_utilizare", "label": "Cum se utilizează (custom.mod_utilizare)" },
+            { "value": "ingrediente_cheie", "label": "Ingrediente cheie (custom.ingrediente_cheie)" },
+            { "value": "rezultate_clinice", "label": "Rezultate clinice (custom.rezultate_clinice)" }
           ]
         },
         {
@@ -1106,22 +1062,10 @@
           "id": "feat_1_icon",
           "label": "Feature 1 Icon",
           "options": [
-            {
-              "value": "water",
-              "label": "Water Drop"
-            },
-            {
-              "value": "sparkle",
-              "label": "Sparkle"
-            },
-            {
-              "value": "wave",
-              "label": "Wave Lines"
-            },
-            {
-              "value": "leaf",
-              "label": "Leaf"
-            }
+            { "value": "water", "label": "Water Drop" },
+            { "value": "sparkle", "label": "Sparkle" },
+            { "value": "wave", "label": "Wave Lines" },
+            { "value": "leaf", "label": "Leaf" }
           ],
           "default": "water"
         },
@@ -1129,29 +1073,17 @@
           "type": "text",
           "id": "feat_1_text",
           "label": "Feature 1 Text",
-          "default": "Deep hydration and regeneration"
+          "default": "Hidratare profundă și regenerare"
         },
         {
           "type": "select",
           "id": "feat_2_icon",
           "label": "Feature 2 Icon",
           "options": [
-            {
-              "value": "water",
-              "label": "Water Drop"
-            },
-            {
-              "value": "sparkle",
-              "label": "Sparkle"
-            },
-            {
-              "value": "wave",
-              "label": "Wave Lines"
-            },
-            {
-              "value": "leaf",
-              "label": "Leaf"
-            }
+            { "value": "water", "label": "Water Drop" },
+            { "value": "sparkle", "label": "Sparkle" },
+            { "value": "wave", "label": "Wave Lines" },
+            { "value": "leaf", "label": "Leaf" }
           ],
           "default": "sparkle"
         },
@@ -1159,29 +1091,17 @@
           "type": "text",
           "id": "feat_2_text",
           "label": "Feature 2 Text",
-          "default": "Strengthens and soothes"
+          "default": "Întărește și calmează"
         },
         {
           "type": "select",
           "id": "feat_3_icon",
           "label": "Feature 3 Icon",
           "options": [
-            {
-              "value": "water",
-              "label": "Water Drop"
-            },
-            {
-              "value": "sparkle",
-              "label": "Sparkle"
-            },
-            {
-              "value": "wave",
-              "label": "Wave Lines"
-            },
-            {
-              "value": "leaf",
-              "label": "Leaf"
-            }
+            { "value": "water", "label": "Water Drop" },
+            { "value": "sparkle", "label": "Sparkle" },
+            { "value": "wave", "label": "Wave Lines" },
+            { "value": "leaf", "label": "Leaf" }
           ],
           "default": "wave"
         },
@@ -1189,29 +1109,17 @@
           "type": "text",
           "id": "feat_3_text",
           "label": "Feature 3 Text",
-          "default": "Bring back the shine and comfort"
+          "default": "Redă strălucirea și confortul"
         },
         {
           "type": "select",
           "id": "feat_4_icon",
           "label": "Feature 4 Icon",
           "options": [
-            {
-              "value": "water",
-              "label": "Water Drop"
-            },
-            {
-              "value": "sparkle",
-              "label": "Sparkle"
-            },
-            {
-              "value": "wave",
-              "label": "Wave Lines"
-            },
-            {
-              "value": "leaf",
-              "label": "Leaf"
-            }
+            { "value": "water", "label": "Water Drop" },
+            { "value": "sparkle", "label": "Sparkle" },
+            { "value": "wave", "label": "Wave Lines" },
+            { "value": "leaf", "label": "Leaf" }
           ],
           "default": "leaf"
         },
@@ -1219,7 +1127,7 @@
           "type": "text",
           "id": "feat_4_text",
           "label": "Feature 4 Text",
-          "default": "Perfect for all skin types, including sensitive skin"
+          "default": "Perfect pentru toate tipurile de ten, inclusiv cel sensibil"
         },
         {
           "type": "header",
@@ -1238,7 +1146,7 @@
           "type": "text",
           "id": "card_1_title",
           "label": "Card 1 Title",
-          "default": "TRANSFORMATION IN 8 MINUTES"
+          "default": "TRANSFORMARE ÎN 8 MINUTE"
         },
         {
           "type": "text",
@@ -1268,7 +1176,7 @@
           "type": "text",
           "id": "timeline_lbl_2",
           "label": "Timeline Label 2",
-          "default": "Absorption"
+          "default": "Absorbție"
         },
         {
           "type": "text",
@@ -1296,25 +1204,25 @@
           "type": "text",
           "id": "perfect_1",
           "label": "Perfect For Item 1",
-          "default": "Dehydrated and tired skin"
+          "default": "Ten deshidratat și obosit"
         },
         {
           "type": "text",
           "id": "perfect_2",
           "label": "Perfect For Item 2",
-          "default": "After long journeys or flights"
+          "default": "După călătorii sau zboruri lungi"
         },
         {
           "type": "text",
           "id": "perfect_3",
           "label": "Perfect For Item 3",
-          "default": "Next de evenimente speciale"
+          "default": "Înainte de evenimente speciale"
         },
         {
           "type": "text",
           "id": "perfect_4",
           "label": "Perfect For Item 4",
-          "default": "When your skin needs an instant recovery"
+          "default": "Când tenul tău are nevoie de o recuperare instantanee"
         }
       ]
     },
@@ -1354,37 +1262,16 @@
           "type": "select",
           "id": "metafield_source",
           "label": "Show unique text per product from",
-          "info": "If a product has this metafield filled in, it replaces the default text below on that product only. Requires creating the matching metafield definition first (Settings → Custom data → Products, namespace 'custom', Rich text type).",
+          "info": "If a product has this metafield filled in, it replaces the default text below on that product only. Requires creating the matching metafield definition first (Settings \u2192 Custom data \u2192 Products, namespace 'custom', Rich text type).",
           "default": "",
           "options": [
-            {
-              "value": "",
-              "label": "None (use default text below)"
-            },
-            {
-              "value": "descriere",
-              "label": "Description (custom.descriere)"
-            },
-            {
-              "value": "inainte_de_utilizare",
-              "label": "Next de utilizare (custom.inainte_de_utilizare)"
-            },
-            {
-              "value": "cum_se_utilizeaza",
-              "label": "How to use (custom.how_to_use)"
-            },
-            {
-              "value": "mod_utilizare",
-              "label": "How to use (custom.how_to_use)"
-            },
-            {
-              "value": "ingrediente_cheie",
-              "label": "Ingredients cheie (custom.ingrediente_cheie)"
-            },
-            {
-              "value": "rezultate_clinice",
-              "label": "Clinical Results (custom.rezultate_clinice)"
-            }
+            { "value": "", "label": "None (use default text below)" },
+            { "value": "descriere", "label": "Descriere (custom.descriere)" },
+            { "value": "inainte_de_utilizare", "label": "Înainte de utilizare (custom.inainte_de_utilizare)" },
+            { "value": "cum_se_utilizeaza", "label": "Cum se utilizează (custom.cum_se_utilizeaza)" },
+            { "value": "mod_utilizare", "label": "Cum se utilizează (custom.mod_utilizare)" },
+            { "value": "ingrediente_cheie", "label": "Ingrediente cheie (custom.ingrediente_cheie)" },
+            { "value": "rezultate_clinice", "label": "Rezultate clinice (custom.rezultate_clinice)" }
           ]
         },
         {
@@ -1451,7 +1338,7 @@
           "step": 1,
           "label": "Limit Products",
           "default": 6,
-          "info": "Complementary products. Guide https://help.shopify.com/en/manual/online-store/search-and-discovery/product-recommendations"
+          "info":"Complementary products. Guide https://help.shopify.com/en/manual/online-store/search-and-discovery/product-recommendations"
         }
       ]
     },

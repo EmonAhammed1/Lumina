@@ -679,7 +679,7 @@
           {%- endif -%}
 
           <div class="lwj-read-link">
-            READ ARTICLE
+            CITEȘTE ARTICOLUL
             <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
           </div>
         </div>
@@ -717,9 +717,7 @@
             {%- if card_image != blank -%}
               <img src="{{ card_image | image_url: width: 600 }}" alt="{{ card_title | escape }}" class="lwj-card-bg" loading="lazy">
             {%- else -%}
-              {%- assign journal_img_mod = forloop.index | modulo: 5 | plus: 1 -%}
-              {%- assign fallback_journal_img = 'lumina-world-hero-' | append: journal_img_mod | append: '.png' -%}
-              <img src="{{ fallback_journal_img | asset_url }}" alt="{{ card_title | escape }}" class="lwj-card-bg" loading="lazy">
+              <img src="{{ 'lumina-world-hero-1.png' | asset_url }}" alt="{{ card_title | escape }}" class="lwj-card-bg" loading="lazy">
             {%- endif -%}
 
             <div class="lwj-card-overlay"></div>
@@ -735,7 +733,7 @@
 
             <div class="lwj-mini-card-bottom">
               <div class="lwj-read-link">
-                READ ARTICLE
+                CITEȘTE ARTICOLUL
                 <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
               </div>
             </div>
@@ -749,7 +747,7 @@
     {%- if section.settings.show_submission_btn != false -%}
       <div class="lwj-bottom-action">
         <button type="button" class="lwj-submit-journal-trigger" id="lwj-open-modal-btn">
-          <span>{{ section.settings.submission_btn_text | default: "SUBMIT YOUR STORY" }}</span>
+          <span>{{ section.settings.submission_btn_text | default: "TRIMITE JURNALUL TĂU" }}</span>
           <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2">
             <line x1="5" y1="12" x2="19" y2="12"></line>
             <polyline points="12 5 19 12 12 19"></polyline>
@@ -764,7 +762,7 @@
 <!-- Modal Popup Form for Submitting Journal Story -->
 <div id="LuminaJournalModal" class="lwj-modal-overlay" aria-hidden="true" style="display: none;">
   <div class="lwj-modal-container">
-    <button type="button" class="lwj-modal-close" id="lwj-modal-close-btn" aria-label="Close">
+    <button type="button" class="lwj-modal-close" id="lwj-modal-close-btn" aria-label="Închide">
       <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <line x1="18" y1="6" x2="6" y2="18"></line>
         <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -772,7 +770,7 @@
     </button>
 
     {% form 'contact', id: 'LuminaJournalSubmissionForm', class: 'lwj-modal-form' %}
-      <input type="hidden" name="contact[Tip Formular]" value="Article Submission / Journal Story - Lumina World">
+      <input type="hidden" name="contact[Tip Formular]" value="Trimitere Articol / Poveste Jurnal - Lumina World">
 
       {%- if form.posted_successfully? -%}
         <div class="lwj-form-success">
@@ -783,20 +781,20 @@
             </svg>
           </div>
           <span class="lwj-modal-eyebrow">MARKEU S.R.L. / LUMINA WORLD</span>
-          <h3 class="lwj-modal-title">Thank you for sharing your story!</h3>
+          <h3 class="lwj-modal-title">Îți mulțumim pentru poveste!</h3>
           <p class="lwj-modal-desc">
-            Your story submission has been received with appreciation. Our editorial team will review your piece and reach out via email.
+            Contribuția ta a fost recepționată cu succes. Echipa noastră editorială va analiza materialul trimis și te va contacta pe e-mail sau pe profilul de social media furnizat.
           </p>
           <button type="button" class="lwj-btn-secondary" id="lwj-success-close-btn">
-            Back to Journal
+            Înapoi la Jurnal
           </button>
         </div>
       {%- else -%}
         <div class="lwj-modal-header">
-          <span class="lwj-modal-eyebrow">{{ section.settings.modal_eyebrow | default: "JOIN THE JOURNAL" }}</span>
-          <h3 class="lwj-modal-title">{{ section.settings.modal_title | default: "Submit Your Story" }}</h3>
+          <span class="lwj-modal-eyebrow">{{ section.settings.modal_eyebrow | default: "FII PARTE DIN JURNAL" }}</span>
+          <h3 class="lwj-modal-title">{{ section.settings.modal_title | default: "Trimite Povestea Ta" }}</h3>
           <p class="lwj-modal-desc">
-            {{ section.settings.modal_desc | default: "Share your own perspective, experience or research to be published in Lumina Journal." }}
+            {{ section.settings.modal_desc | default: "Împărtășește propria ta perspectivă, experiență sau cercetare pentru a fi publicată în Jurnalul Lumina." }}
           </p>
         </div>
 
@@ -808,34 +806,34 @@
 
         <div class="lwj-form-grid">
           <div class="lwj-field-group">
-            <label class="lwj-label" for="lwj-name">Full Name <span class="lwj-req">*</span></label>
-            <input type="text" id="lwj-name" name="contact[name]" class="lwj-input" placeholder="e.g. Maria Vance" required>
+            <label class="lwj-label" for="lwj-name">Nume și prenume <span class="lwj-req">*</span></label>
+            <input type="text" id="lwj-name" name="contact[Nume și Prenume]" class="lwj-input" placeholder="ex. Maria Ionescu" required>
           </div>
 
           <div class="lwj-field-group">
-            <label class="lwj-label" for="lwj-email">Email Address <span class="lwj-req">*</span></label>
-            <input type="email" id="lwj-email" name="contact[email]" class="lwj-input" placeholder="e.g. maria@example.com" required>
+            <label class="lwj-label" for="lwj-email">Adresă de e-mail <span class="lwj-req">*</span></label>
+            <input type="email" id="lwj-email" name="contact[email]" class="lwj-input" placeholder="ex. maria@exemplu.com" required>
           </div>
 
           <div class="lwj-field-group full-width">
-            <label class="lwj-label" for="lwj-social">Social Media Profile (Instagram / LinkedIn etc.) <span class="lwj-req">*</span></label>
-            <input type="text" id="lwj-social" name="contact[Profil Social Media]" class="lwj-input" placeholder="e.g. @maria.vance or https://instagram.com/..." required>
+            <label class="lwj-label" for="lwj-social">Profil Social Media (Instagram / Facebook etc.) <span class="lwj-req">*</span></label>
+            <input type="text" id="lwj-social" name="contact[Profil Social Media]" class="lwj-input" placeholder="ex. @maria.ionescu sau link https://instagram.com/..." required>
           </div>
 
           <div class="lwj-field-group full-width">
-            <label class="lwj-label" for="lwj-title">Journal / Article Title <span class="lwj-req">*</span></label>
-            <input type="text" id="lwj-title" name="contact[Journal Title]" class="lwj-input" placeholder="What is your story about?" required>
+            <label class="lwj-label" for="lwj-title">Titlul Jurnalului / Articolului <span class="lwj-req">*</span></label>
+            <input type="text" id="lwj-title" name="contact[Titlu Jurnal]" class="lwj-input" placeholder="Despre ce este povestea ta?" required>
           </div>
 
           <div class="lwj-field-group full-width">
-            <label class="lwj-label" for="lwj-story">Share your story for the journal <span class="lwj-req">*</span></label>
-            <textarea id="lwj-story" name="contact[body]" rows="5" class="lwj-textarea" placeholder="Write your reflection, skincare ritual, or perspective you wish to share in the Journal..." required></textarea>
+            <label class="lwj-label" for="lwj-story">Scrie povestea ta pentru jurnal <span class="lwj-req">*</span></label>
+            <textarea id="lwj-story" name="contact[body]" rows="5" class="lwj-textarea" placeholder="Scrie aici povestea ta, reflecțiile sau articolul pe care dorești să îl împărtășești în Jurnal..." required></textarea>
           </div>
         </div>
 
         <div class="lwj-form-footer">
           <button type="submit" class="lwj-submit-form-btn">
-            <span>SUBMIT STORY</span>
+            <span>TRIMITE JURNALUL</span>
             <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
               <line x1="5" y1="12" x2="19" y2="12"></line>
               <polyline points="12 5 19 12 12 19"></polyline>
@@ -934,13 +932,13 @@
       "type": "text",
       "id": "section_title",
       "label": "Section Label",
-      "default": "JOURNAL"
+      "default": "JURNAL"
     },
     {
       "type": "text",
       "id": "explore_label",
       "label": "Explore Link Label",
-      "default": "EXPLORE THE JOURNAL"
+      "default": "EXPLOREAZĂ JURNALUL"
     },
     {
       "type": "url",
@@ -966,19 +964,19 @@
       "type": "text",
       "id": "featured_category",
       "label": "Category Eyebrow",
-      "default": "SCIENCE"
+      "default": "ȘTIINȚĂ"
     },
     {
       "type": "text",
       "id": "featured_title",
       "label": "Custom Article Title (Override)",
-      "default": "Exosomes: Nature's messengers for renewal"
+      "default": "Exozomii: Mesagerii naturii pentru reînnoire"
     },
     {
       "type": "textarea",
       "id": "featured_excerpt",
       "label": "Custom Article Excerpt (Override)",
-      "default": "Microvesicles that may hold the key to cellular communication, repair and radiant skin."
+      "default": "Microveziculele care pot deține cheia comunicării celulare, reparării și pielii radiante."
     },
     {
       "type": "url",
@@ -999,25 +997,25 @@
       "type": "text",
       "id": "submission_btn_text",
       "label": "Button Label",
-      "default": "SUBMIT YOUR STORY"
+      "default": "TRIMITE JURNALUL TĂU"
     },
     {
       "type": "text",
       "id": "modal_eyebrow",
       "label": "Modal Eyebrow",
-      "default": "JOIN THE JOURNAL"
+      "default": "FII PARTE DIN JURNAL"
     },
     {
       "type": "text",
       "id": "modal_title",
       "label": "Modal Title",
-      "default": "Submit Your Story"
+      "default": "Trimite Povestea Ta"
     },
     {
       "type": "textarea",
       "id": "modal_desc",
       "label": "Modal Description",
-      "default": "Share your own perspective, experience or research to be published in Lumina Journal."
+      "default": "Împărtășește propria ta perspectivă, experiență sau cercetare pentru a fi publicată în Jurnalul Lumina."
     }
   ],
   "blocks": [
@@ -1062,43 +1060,43 @@
         {
           "type": "article_card",
           "settings": {
-            "category": "EUROPE",
-            "title": "The Hidden Springs of Europe"
+            "category": "EUROPA",
+            "title": "Izvoarele ascunse ale Transilvaniei"
           }
         },
         {
           "type": "article_card",
           "settings": {
-            "category": "CRAFT",
-            "title": "The Art of Handcrafted Glass"
+            "category": "MEȘTEȘUG",
+            "title": "Arta sticlelor lucrate manual"
           }
         },
         {
           "type": "article_card",
           "settings": {
-            "category": "INGREDIENTS",
-            "title": "Bakuchiol: The Gentle Retinol"
+            "category": "INGREDIENTE",
+            "title": "Bakuchiol: Retinolul delicat"
           }
         },
         {
           "type": "article_card",
           "settings": {
-            "category": "CULTURE",
-            "title": "Opera, emotion and beauty"
+            "category": "CULTURĂ",
+            "title": "Operă, emoție și frumusețe"
           }
         },
         {
           "type": "article_card",
           "settings": {
-            "category": "WELLNESS",
-            "title": "The evening light ritual"
+            "category": "BUNĂSTARE",
+            "title": "Ritualul luminii de seară"
           }
         },
         {
           "type": "article_card",
           "settings": {
-            "category": "SCIENCE",
-            "title": "Blue light and skin health"
+            "category": "ȘTIINȚĂ",
+            "title": "Lumina albastră și sănătatea pielii"
           }
         }
       ]

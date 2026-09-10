@@ -169,20 +169,10 @@
               {% if block.settings.image != blank %}
                 <img src="{{ block.settings.image | image_url: width: 300 }}" alt="{{ block.settings.title }}" loading="lazy">
               {% else %}
-                {% case forloop.index %}
-                  {% when 1 %}
-                    <img src="{{ '1._unfold.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-                  {% when 2 %}
-                    <img src="{{ '2._activate.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-                  {% when 3 %}
-                    <img src="{{ '3apply.jpg' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-                  {% when 4 %}
-                    <img src="{{ '5._remove.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-                  {% when 5 %}
-                    <img src="{{ '6._finish.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-                  {% else %}
-                    <img src="{{ '1._unfold.png' | asset_url }}" alt="{{ block.settings.title }}" loading="lazy">
-                {% endcase %}
+                <svg viewBox="0 0 24 24">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <path d="M3 9h18 M9 21V9"/>
+                </svg>
               {% endif %}
             </div>
             <div class="tm-htu-step-title">{{ block.settings.title }}</div>

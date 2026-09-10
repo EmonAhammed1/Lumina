@@ -21,10 +21,8 @@
 
   if section.settings.video != blank
     assign video_url = section.settings.video.sources[0].url
-  elsif section.settings.video_url != blank
-    assign video_url = section.settings.video_url
   else
-    assign video_url = '6_experience_technology_player.mp4' | file_url
+    assign video_url = section.settings.video_url | default: "https://cdn.shopify.com/videos/c/o/v/e3f98bcbeb284f078f969195472fb265.mp4"
   endif
 -%}
 
@@ -542,26 +540,12 @@
         <div class="col-12 col-lg-8 pr-lg-4 mb-4 mb-lg-0 tech-video-col" data-aos="{{ animation }}" data-aos-delay="200">
           <div class="custom-video-player" id="player-{{ section.id }}">
             <video class="video-element" 
+                   src="{{ video_url }}" 
                    {% if section.settings.poster_image != blank %}
                      poster="{{ section.settings.poster_image | image_url: width: 1080 }}"
-                   {% else %}
-                     poster="{{ 'Screenshot_2026-03-31_at_15.38.29.png' | asset_url }}"
                    {% endif %}
                    loop 
                    playsinline>
-              {%- if section.settings.video != blank -%}
-                <source src="{{ section.settings.video.sources[0].url }}" type="video/mp4">
-              {%- elsif section.settings.video_url != blank and section.settings.video_url contains 'http' -%}
-                <source src="{{ section.settings.video_url }}" type="video/mp4">
-              {%- elsif section.settings.video_url != blank -%}
-                <source src="{{ section.settings.video_url | file_url }}" type="video/mp4">
-              {%- else -%}
-                <source src="{{ 'Visual 1. What are nanofibres_.mov' | file_url }}" type="video/mp4">
-                <source src="{{ 'Visual_1._What_are_nanofibres_.mov' | file_url }}" type="video/mp4">
-                <source src="{{ '6_experience_technology_player.mp4' | file_url }}" type="video/mp4">
-                <source src="{{ 'e3f98bcbeb284f078f969195472fb265.mp4' | file_url }}" type="video/mp4">
-                <source src="https://cdn.shopify.com/videos/c/o/v/e3f98bcbeb284f078f969195472fb265.mp4" type="video/mp4">
-              {%- endif -%}
             </video>
             
             <!-- Floating circular rotating badge -->
@@ -864,38 +848,14 @@
       "type": "select",
       "id": "animation",
       "options": [
-        {
-          "value": "",
-          "label": "None"
-        },
-        {
-          "value": "fade",
-          "label": "Fade"
-        },
-        {
-          "value": "fade-up",
-          "label": "Fade Up"
-        },
-        {
-          "value": "fade-down",
-          "label": "Fade Down"
-        },
-        {
-          "value": "fade-left",
-          "label": "Fade Left"
-        },
-        {
-          "value": "fade-right",
-          "label": "Fade Right"
-        },
-        {
-          "value": "zoom-in",
-          "label": "Zoom In"
-        },
-        {
-          "value": "zoom-out",
-          "label": "Zoom Out"
-        }
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "fade-down", "label": "Fade Down" },
+        { "value": "fade-left", "label": "Fade Left" },
+        { "value": "fade-right", "label": "Fade Right" },
+        { "value": "zoom-in", "label": "Zoom In" },
+        { "value": "zoom-out", "label": "Zoom Out" }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -906,18 +866,9 @@
       "label": "Full Width Wrapper",
       "default": "container-fluid",
       "options": [
-        {
-          "value": "container",
-          "label": "Box"
-        },
-        {
-          "value": "container-fluid",
-          "label": "Container Fluid"
-        },
-        {
-          "value": "full",
-          "label": "Full"
-        }
+        { "value": "container", "label": "Box" },
+        { "value": "container-fluid", "label": "Container Fluid" },
+        { "value": "full", "label": "Full" }
       ]
     },
     {
@@ -928,7 +879,7 @@
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle",
-      "default": "ADVANCED TECHNOLOGY"
+      "default": "TEHNOLOGIE AVANSATĂ"
     },
     {
       "type": "text",
@@ -946,7 +897,7 @@
       "type": "richtext",
       "id": "des",
       "label": "Description",
-      "default": "<p>Inspired by medical aesthetics and advanced dermatology, nanofiber technology ensures rapid absorption of active ingredients and visible effectiveness in just 5–8 minutes.</p>"
+      "default": "<p>Inspirată din estetica medicală și dermatologia avansată, tehnologia cu nanofibre asigură absorbția rapidă a ingredientelor active și o eficiență vizibilă în doar 5–8 minute.</p>"
     },
     {
       "type": "header",

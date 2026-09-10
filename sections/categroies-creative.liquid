@@ -109,7 +109,7 @@
                 {%- for block in section.blocks -%}
                     {%- assign featured_collection = collections[block.settings.collection] -%}
                     {%- assign featured_image = block.settings.image -%}
-                    {%- assign collectionTitle = featured_collection.title | default: 'Collection title' -%}
+                    {%- assign collectionTitle = featured_collection.title | default: 'Titlu colecție' -%}
                     <hover-image img-src="{% if featured_image != blank %}{{ featured_image | image_url: width: 600 }}{% endif %}">
                         <div class="position-relative c-list">
                           <a href="{{ featured_collection.url }}" class="hover-text {{ size_text }} {% if outline_text %} categories-creative--heading-outline {% endif %} {% if e_uppercase %} text-uppercase {% endif %}">
@@ -419,30 +419,30 @@
       "label": "Enable Uppercase",
       "default": false
     },
-    {
-      "type": "number",
-      "id": "radius_top_left",
-      "label": "Radius Top Left",
-      "default": 0
-    },
-    {
-      "type": "number",
-      "id": "radius_top_right",
-      "label": "Radius Top Right",
-      "default": 0
-    },
-    {
-      "type": "number",
-      "id": "radius_bottom_right",
-      "label": "Radius Bottom Right",
-      "default": 0
-    },
-    {
-      "type": "number",
-      "id": "radius_bottom_left",
-      "label": "Radius Bottom Left",
-      "default": 0
-    },
+      {
+        "type": "number",
+        "id": "radius_top_left",
+        "label": "Radius Top Left",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "radius_top_right",
+        "label": "Radius Top Right",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "radius_bottom_right",
+        "label": "Radius Bottom Right",
+        "default": 0
+      },
+      {
+        "type": "number",
+        "id": "radius_bottom_left",
+        "label": "Radius Bottom Left",
+        "default": 0
+      },
     {
       "type": "header",
       "content": "Section Padding "

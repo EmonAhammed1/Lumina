@@ -399,22 +399,17 @@
               </div>
             {%- endfor -%}
           {%- else -%}
-            <!-- Fallback demo ingredient slides -->
-            {%- assign demo_ingredients = "HYALURONIC ACID,CENTELLA ASIATICA,VITAMIN C,NIACINAMIDE" | split: "," -%}
-            {%- for ing in demo_ingredients -%}
-              {%- assign ing_file = ing | replace: ' ', '_' | append: '.png' -%}
-              <div class="swiper-slide">
-                <div class="alchemy-card-{{ section.id }}">
-                  <div class="alchemy-card-image-wrap-{{ section.id }}" style="border-bottom: none;">
-                    <img src="{{ ing_file | asset_url }}" 
-                         alt="{{ ing }}" 
-                         class="alchemy-card-image-{{ section.id }}" 
-                         loading="lazy"
-                         onError="this.onerror=null; this.src='{{ 'trans-alchemy.jpg' | asset_url }}';">
-                  </div>
+            <!-- Fallback if no ingredients -->
+            <div class="swiper-slide">
+              <div class="alchemy-card-{{ section.id }}">
+                <div class="alchemy-card-image-wrap-{{ section.id }}" style="border-bottom: none;">
+                  <img src="{{ 'trans-alchemy.jpg' | asset_url }}" 
+                       alt="Alchimia" 
+                       class="alchemy-card-image-{{ section.id }}" 
+                       loading="lazy">
                 </div>
               </div>
-            {%- endfor -%}
+            </div>
           {%- endif -%}
         </div>
         
@@ -478,22 +473,10 @@
       "type": "select",
       "id": "animation",
       "options": [
-        {
-          "value": "",
-          "label": "None"
-        },
-        {
-          "value": "fade",
-          "label": "Fade"
-        },
-        {
-          "value": "fade-up",
-          "label": "Fade Up"
-        },
-        {
-          "value": "zoom-in",
-          "label": "Zoom In"
-        }
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "zoom-in", "label": "Zoom In" }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -504,18 +487,9 @@
       "label": "Section Width",
       "default": "container-fluid",
       "options": [
-        {
-          "value": "container",
-          "label": "Box"
-        },
-        {
-          "value": "container-fluid",
-          "label": "Container Fluid"
-        },
-        {
-          "value": "full",
-          "label": "Full"
-        }
+        { "value": "container", "label": "Box" },
+        { "value": "container-fluid", "label": "Container Fluid" },
+        { "value": "full", "label": "Full" }
       ]
     },
     {
@@ -528,7 +502,7 @@
       "type": "text",
       "id": "section_title",
       "label": "Section Title",
-      "default": "The Alchemy"
+      "default": "Alchimia"
     },
     {
       "type": "checkbox",
@@ -540,13 +514,13 @@
       "type": "text",
       "id": "subtitle",
       "label": "Subtitle",
-      "default": "KEY INGREDIENTS"
+      "default": "INGREDIENTE CHEIE"
     },
     {
       "type": "richtext",
       "id": "desc",
       "label": "Description",
-      "default": "<p>Pure formulas with concentrated active ingredients, delivered directly to the dermis through the nanofiber structure.</p>"
+      "default": "<p>Formule pure cu ingrediente active concentrate, livrate direct în derm prin structura nanofibrelor.</p>"
     },
     {
       "type": "checkbox",

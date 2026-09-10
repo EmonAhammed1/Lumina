@@ -159,16 +159,7 @@
               {% if product != blank and product.featured_image %}
                 <img src="{{ product.featured_image | image_url: width: 400 }}" alt="{{ product.title }}" loading="lazy">
               {% else %}
-                {% case forloop.index %}
-                  {% when 1 %}
-                    <img src="{{ 'ChatGPT_Image_Aug_10_2026_03_22_12_PM.png' | asset_url }}" alt="Lumina Product" loading="lazy">
-                  {% when 2 %}
-                    <img src="{{ 'WhatsApp_Image_2026-07-09_at_14.32.17.jpg' | asset_url }}" alt="Lumina Product" loading="lazy">
-                  {% when 3 %}
-                    <img src="{{ 'pure_by_design.jpg' | asset_url }}" alt="Lumina Product" loading="lazy">
-                  {% else %}
-                    <img src="{{ 'pure_transfer.jpg' | asset_url }}" alt="Lumina Product" loading="lazy">
-                {% endcase %}
+                {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg' }}
               {% endif %}
             </div>
             <div class="tm-freq-card-title">{{ block.settings.title | default: product.title | default: 'Product Title' }}</div>
@@ -257,38 +248,10 @@
     {
       "name": "Mockup - Frequency",
       "blocks": [
-        {
-          "type": "product",
-          "settings": {
-            "title": "HYDRATION",
-            "frequency": "2-3 times per week",
-            "text": "Boosts moisture and radiance."
-          }
-        },
-        {
-          "type": "product",
-          "settings": {
-            "title": "RECOVERY",
-            "frequency": "2-3 times per week",
-            "text": "Boosts and strengthens."
-          }
-        },
-        {
-          "type": "product",
-          "settings": {
-            "title": "RADIANCE",
-            "frequency": "2-3 times per week",
-            "text": "Revitalizes dull and tired skin."
-          }
-        },
-        {
-          "type": "product",
-          "settings": {
-            "title": "RENEWAL",
-            "frequency": "1-2 times per week",
-            "text": "Refines texture and tone."
-          }
-        }
+        { "type": "product", "settings": { "title": "HYDRATION", "frequency": "2-3 times per week", "text": "Boosts moisture and radiance." } },
+        { "type": "product", "settings": { "title": "RECOVERY", "frequency": "2-3 times per week", "text": "Boosts and strengthens." } },
+        { "type": "product", "settings": { "title": "RADIANCE", "frequency": "2-3 times per week", "text": "Revitalizes dull and tired skin." } },
+        { "type": "product", "settings": { "title": "RENEWAL", "frequency": "1-2 times per week", "text": "Refines texture and tone." } }
       ]
     }
   ]

@@ -318,14 +318,14 @@
     <!-- Filter Tabs Bar -->
     <div class="lwag-filter-bar">
       <div class="lwag-nav-tabs">
-        <button class="lwag-tab-btn active" onclick="filterLuminaArticles('all', this)">ALL</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('science', this)">SCIENCE</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('culture', this)">CULTURE</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('people', this)">PEOPLE</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('society', this)">SOCIETY</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('travel', this)">TRAVEL</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('wellness', this)">WELLNESS</button>
-        <button class="lwag-tab-btn" onclick="filterLuminaArticles('sustainability', this)">SUSTAINABILITY</button>
+        <button class="lwag-tab-btn active" onclick="filterLuminaArticles('toate', this)">TOATE</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('știință', this)">ȘTIINȚĂ</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('cultură', this)">CULTURĂ</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('oameni', this)">OAMENI</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('societate', this)">SOCIETATE</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('călătorii', this)">CĂLĂTORII</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('bunăstare', this)">BUNĂSTARE</button>
+        <button class="lwag-tab-btn" onclick="filterLuminaArticles('sustenabilitate', this)">SUSTENABILITATE</button>
       </div>
 
       {%- if section.settings.view_all_label != blank -%}
@@ -357,7 +357,7 @@
               assign card_category = art.tags.first
             endif
             if card_category == blank
-              assign card_category = "SCIENCE"
+              assign card_category = "ȘTIINȚĂ"
             endif
             assign card_date = block.settings.date
             if card_date == blank
@@ -367,8 +367,8 @@
             assign card_title = block.settings.title | default: "Titlu Articol"
             assign card_url = block.settings.link | default: "#"
             assign card_image = block.settings.image
-            assign card_excerpt = block.settings.excerpt | default: "Discover stories from the frontiers of science, beauty and culture."
-            assign card_category = block.settings.category | default: "SCIENCE"
+            assign card_excerpt = block.settings.excerpt | default: "Descoperă povești de la frontierele științei, frumuseții și culturii."
+            assign card_category = block.settings.category | default: "ȘTIINȚĂ"
             assign card_date = block.settings.date | default: "12 MAI 2025"
           endif
         -%}
@@ -378,9 +378,7 @@
             {%- if card_image != blank -%}
               <img src="{{ card_image | image_url: width: 600 }}" alt="{{ card_title | escape }}" loading="lazy">
             {%- else -%}
-              {%- assign article_img_mod = forloop.index | modulo: 5 | plus: 1 -%}
-              {%- assign fallback_art_img = 'lumina-world-hero-' | append: article_img_mod | append: '.png' -%}
-              <img src="{{ fallback_art_img | asset_url }}" alt="{{ card_title | escape }}" loading="lazy">
+              <img src="{{ 'lumina-world-hero-4.png' | asset_url }}" alt="{{ card_title | escape }}" loading="lazy">
             {%- endif -%}
           </div>
 
@@ -401,7 +399,7 @@
             </div>
 
             <div class="lwag-card-link">
-              READ ARTICLE
+              CITEȘTE ARTICOLUL
               <svg viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </div>
           </div>
@@ -452,19 +450,19 @@
       "type": "text",
       "id": "title",
       "label": "Main Title",
-      "default": "ARTICLES"
+      "default": "ARTICOLE"
     },
     {
       "type": "textarea",
       "id": "subtitle",
       "label": "Subtitle",
-      "default": "Dialogues, perspectives and scientific insights exploring light, skin, time and life."
+      "default": "Idei. Perspective. Conversații care modelează lumea în care trăim."
     },
     {
       "type": "text",
       "id": "view_all_label",
       "label": "View All Link Label",
-      "default": "VIEW ALL"
+      "default": "TOATE ARTICOLELE"
     },
     {
       "type": "url",
@@ -480,53 +478,40 @@
         {
           "type": "article",
           "id": "article",
-          "label": "Select Shopify Article (Optional)"
+          "label": "Select Shopify Article",
+          "info": "Selecting a Shopify article automatically loads its image, title, excerpt, date, and link."
         },
         {
           "type": "image_picker",
           "id": "image",
-          "label": "Fallback Card Image"
+          "label": "Custom Image (Override)"
         },
         {
           "type": "text",
           "id": "category",
-          "label": "Category / Tag",
-          "default": "SCIENCE"
+          "label": "Category Eyebrow",
+          "default": "ȘTIINȚĂ"
         },
         {
           "type": "text",
           "id": "date",
-          "label": "Date String",
-          "default": "MAY 12, 2025"
+          "label": "Published Date Text",
+          "default": "12 MAI 2025"
         },
         {
           "type": "text",
           "id": "title",
-          "label": "Article Title",
-          "default": "Skin barrier: More than a shield"
+          "label": "Custom Title (Override)"
         },
         {
           "type": "textarea",
           "id": "excerpt",
-          "label": "Short Excerpt",
-          "default": "Why understanding the skin barrier changes everything in skin care."
-        },
-        {
-          "type": "text",
-          "id": "author",
-          "label": "Author Name",
-          "default": "Dr. Elena Vance"
-        },
-        {
-          "type": "text",
-          "id": "read_time",
-          "label": "Reading Time",
-          "default": "5 min read"
+          "label": "Custom Excerpt (Override)"
         },
         {
           "type": "url",
-          "id": "custom_url",
-          "label": "Custom URL (if no article selected)"
+          "id": "link",
+          "label": "Custom URL (Override)"
         }
       ]
     }
@@ -538,37 +523,37 @@
         {
           "type": "article_card",
           "settings": {
-            "category": "SCIENCE",
-            "date": "MAY 12, 2025",
-            "title": "Skin barrier: More than a shield",
-            "excerpt": "Why understanding the skin barrier changes everything in skin care."
+            "category": "ȘTIINȚĂ",
+            "date": "12 MAI 2025",
+            "title": "Bariera pielii: Mai mult decât un scut",
+            "excerpt": "De ce înțelegerea barierei pielii schimbă totul în îngrijirea tenului."
           }
         },
         {
           "type": "article_card",
           "settings": {
-            "category": "CULTURE",
-            "date": "MAY 5, 2025",
-            "title": "Timeless cities, ageless beauty",
-            "excerpt": "What European cities teach us about beauty, heritage and time."
+            "category": "CULTURĂ",
+            "date": "5 MAI 2025",
+            "title": "Orașe atemporale, frumusețe fără vârstă",
+            "excerpt": "Ce ne învață orașele europene despre frumusețe, patrimoniu și timp."
           }
         },
         {
           "type": "article_card",
           "settings": {
-            "category": "PEOPLE",
-            "date": "APRIL 28, 2025",
-            "title": "The voices of a new generation",
-            "excerpt": "Young Europeans on identity, purpose and future."
+            "category": "OAMENI",
+            "date": "28 APRILIE 2025",
+            "title": "Vocile unei noi generații",
+            "excerpt": "Tineri europeni despre identitate, scop și viitor."
           }
         },
         {
           "type": "article_card",
           "settings": {
-            "category": "SUSTAINABILITY",
-            "date": "APRIL 20, 2025",
-            "title": "Beauty and responsibility",
-            "excerpt": "Why authentic luxury respects the world we come from."
+            "category": "SUSTENABILITATE",
+            "date": "20 APRILIE 2025",
+            "title": "Frumusețe și responsabilitate",
+            "excerpt": "De ce luxul autentic respectă lumea din care provenim."
           }
         }
       ]

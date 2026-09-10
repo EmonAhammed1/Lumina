@@ -27,10 +27,10 @@
             "width": "100%",
             "bgtext": "rgba(0,0,0,0)",
             "title_color": "rgba(0,0,0,0)",
-            "subtitle": "OUR VALUES",
-            "title": "Small team, big vision",
+            "subtitle": "VALORILE NOASTRE",
+            "title": "Echipă mică, viziune mare",
             "size_text": "h2",
-            "text": "<p> We offer a personalized shopping experience in a relaxed and comfortable atmosphere. Our store features carefully selected clothing, designer swimwear and beach accessories. We strive to source sustainable swimwear brands to provide our customers with eco-friendly options.</p><p> ★★★★★<br>4.9 / 5 - From over 3000+ Reviews </p>",
+            "text": "<p>Oferim o experiență de cumpărare personalizată într-o atmosferă relaxată și confortabilă. Magazinul nostru cuprinde haine atent selecționate, costume de baie de designer și accesorii de plajă. Ne străduim să găsim branduri de costume de baie sustenabile pentru a oferi clienților noștri opțiuni ecologice.</p>\n<p>★★★★★  \n<br>4.9 / 5 - From over 3000+ Reviews</p>",
             "answer_content": "",
             "style_btn": "btn-underline btn-underline-white",
             "button": "",
@@ -89,7 +89,7 @@
         "530e8311-5377-448b-8611-a539f687d003": {
           "type": "html",
           "settings": {
-            "code": "<p> Can't find your right role?<a href=\"#\">Send us your resume.</a></p>",
+            "code": "<p>Nu vă găsiți rolul potrivit? <a href=\"#\"> Trimiteți-ne CV-ul. </a></p>",
             "width": "100%",
             "align": "auto"
           }
@@ -112,7 +112,7 @@
         "e_repeat": "no-repeat",
         "e_position": "center center",
         "zindex": "0",
-        "title_top": "JOIN OUR TEAM",
+        "title_top": "ALĂTURĂ-TE ECHIPEI NOASTRE",
         "title": "Pune amprenta asupra lumii",
         "des": "",
         "align-heading": "center",

@@ -148,7 +148,7 @@
                 {%- if block.settings.image != blank -%}
                   {%- assign img_url = block.settings.image | image_url: width: 1 | replace: 'width=1', 'width={width}' -%}
                   <img class="benefit-img lazyload"
-                       src="{{ block.settings.image | image_url: width: 600 }}"
+                       src="{{ block.settings.image | image_url: width: 300 }}"
                        data-src="{{ img_url }}"
                        data-widths="[360, 540, 720]"
                        data-aspectratio="{{ block.settings.image.aspect_ratio }}"
@@ -156,18 +156,7 @@
                        alt="{{ block.settings.title | escape }}"
                        loading="lazy">
                 {%- else -%}
-                  {%- case forloop.index -%}
-                    {%- when 1 -%}
-                      <img class="benefit-img lazyload" src="{{ 'nano-fiber-stracture.webp' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
-                    {%- when 2 -%}
-                      <img class="benefit-img lazyload" src="{{ 'active-ingredients.webp' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
-                    {%- when 3 -%}
-                      <img class="benefit-img lazyload" src="{{ 'deep-penetration.webp' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
-                    {%- when 4 -%}
-                      <img class="benefit-img lazyload" src="{{ 'ChatGPT_Image_Aug_10_2026_03_22_12_PM.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
-                    {%- else -%}
-                      <img class="benefit-img lazyload" src="{{ 'img-1.png' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy">
-                  {%- endcase -%}
+                  {{ 'image' | placeholder_svg_tag: 'benefit-img placeholder-svg' }}
                 {%- endif -%}
               </div>
               {%- if block.settings.title != blank -%}
@@ -192,19 +181,33 @@
                   {%- if block.settings.icon != blank -%}
                     <img src="{{ block.settings.icon | image_url: width: 64 }}" alt="{{ block.settings.title | escape }}" class="lazyload" loading="lazy">
                   {%- else -%}
+                    <!-- Fallback custom colorful SVGs matching mockup exactly -->
                     {%- case forloop.index -%}
                       {%- when 1 -%}
-                        <img src="{{ 'pure_transfer.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}" style="max-width:100%;max-height:100%;object-fit:contain;" loading="lazy">
-                      {%- when 2 -%}
-                        <img src="{{ 'pure_by_design.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}" style="max-width:100%;max-height:100%;object-fit:contain;" loading="lazy">
-                      {%- when 3 -%}
-                        <img src="{{ 'Pure_active_delivery.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}" style="max-width:100%;max-height:100%;object-fit:contain;" loading="lazy">
-                      {%- when 4 -%}
-                        <img src="{{ 'WhatsApp_Image_2026-07-09_at_14.32.17.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}" style="max-width:100%;max-height:100%;object-fit:contain;" loading="lazy">
-                      {%- else -%}
+                        <!-- Golden Stopwatch -->
                         <svg viewBox="0 0 24 24" fill="none" stroke="#b8963e">
                           <circle cx="12" cy="13" r="8"/>
                           <path d="M12 9v4l2.5 2.5M12 2v3M9 2h6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      {%- when 2 -%}
+                        <!-- Pink Target -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#ff4d79">
+                          <circle cx="12" cy="12" r="10"/>
+                          <circle cx="12" cy="12" r="6"/>
+                          <circle cx="12" cy="12" r="2" fill="#ff4d79"/>
+                          <path d="M12 2v2M12 20v2M2 12h2M20 12h2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      {%- when 3 -%}
+                        <!-- Green Test Tube -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#2ec4b6">
+                          <path d="M9 3h6M10 3v15a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V3M8 11h8M8 15h8" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                      {%- when 4 -%}
+                        <!-- Blue Diamond -->
+                        <svg viewBox="0 0 24 24" fill="none" stroke="#00b4d8">
+                          <path d="M6 3h12l4 6-10 12L2 9z" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M11 3 8 9l4 12 4-12-3-6" stroke-linecap="round" stroke-linejoin="round"/>
+                          <path d="M2 9h20" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     {%- endcase -%}
                   {%- endif -%}
@@ -236,38 +239,14 @@
       "type": "select",
       "id": "animation",
       "options": [
-        {
-          "value": "",
-          "label": "None"
-        },
-        {
-          "value": "fade",
-          "label": "Fade"
-        },
-        {
-          "value": "fade-up",
-          "label": "Fade Up"
-        },
-        {
-          "value": "fade-down",
-          "label": "Fade Down"
-        },
-        {
-          "value": "fade-left",
-          "label": "Fade Left"
-        },
-        {
-          "value": "fade-right",
-          "label": "Fade Right"
-        },
-        {
-          "value": "zoom-in",
-          "label": "Zoom In"
-        },
-        {
-          "value": "zoom-out",
-          "label": "Zoom Out"
-        }
+        { "value": "", "label": "None" },
+        { "value": "fade", "label": "Fade" },
+        { "value": "fade-up", "label": "Fade Up" },
+        { "value": "fade-down", "label": "Fade Down" },
+        { "value": "fade-left", "label": "Fade Left" },
+        { "value": "fade-right", "label": "Fade Right" },
+        { "value": "zoom-in", "label": "Zoom In" },
+        { "value": "zoom-out", "label": "Zoom Out" }
       ],
       "default": "fade-up",
       "label": "Select Animation"
@@ -278,18 +257,9 @@
       "label": "Full Width Wrapper",
       "default": "container-fluid",
       "options": [
-        {
-          "value": "container",
-          "label": "Box"
-        },
-        {
-          "value": "container-fluid",
-          "label": "Container Fluid"
-        },
-        {
-          "value": "full",
-          "label": "Full"
-        }
+        { "value": "container", "label": "Box" },
+        { "value": "container-fluid", "label": "Container Fluid" },
+        { "value": "full", "label": "Full" }
       ]
     },
     {
@@ -422,29 +392,29 @@
         {
           "type": "benefit",
           "settings": {
-            "title": "NANOFIBER STRUCTURE",
-            "description": "Ultra-fine fibers create a breathable matrix."
+            "title": "STRUCTURĂ DE NANOFIBRE",
+            "description": "Fibrele ultra-fine creează o matrice respirabilă."
           }
         },
         {
           "type": "benefit",
           "settings": {
-            "title": "ACTIVE INGREDIENTS",
-            "description": "Encapsulated for maximum efficiency."
+            "title": "INGREDIENTE ACTIVE",
+            "description": "Încapsulate pentru o eficiență maximă."
           }
         },
         {
           "type": "benefit",
           "settings": {
-            "title": "DEEP PENETRATION",
-            "description": "Delivers active ingredients beyond the surface."
+            "title": "PENETRARE PROFUNDĂ",
+            "description": "Livrează ingrediente active dincolo de suprafață."
           }
         },
         {
           "type": "benefit",
           "settings": {
             "title": "REZULTATE VIZIBILE",
-            "description": "Healthier, brighter and revitalized skin."
+            "description": "Piele mai sănătoasă, mai luminoasă și revitalizată."
           }
         },
         {
@@ -457,22 +427,22 @@
         {
           "type": "stat",
           "settings": {
-            "title": "95%+ absorption",
-            "subtitle": "Improved Delivery"
+            "title": "Absorbție 95%+",
+            "subtitle": "Livrare Îmbunătățită"
           }
         },
         {
           "type": "stat",
           "settings": {
-            "title": "0% Conservatives",
-            "subtitle": "Pure and Safe Formula"
+            "title": "0% Conservanți",
+            "subtitle": "Formulă Pură și Sigură"
           }
         },
         {
           "type": "stat",
           "settings": {
             "title": "Testat Clinic",
-            "subtitle": "Advanced Performance"
+            "subtitle": "Performanță Avansată"
           }
         }
       ]
